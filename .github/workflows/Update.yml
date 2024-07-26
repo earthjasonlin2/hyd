@@ -28,11 +28,15 @@ jobs:
     - name: Run all Python scripts
       run: |
         for file in *.py; do
-          echo "Running $file"
           python "$file"
         done
+        rm -rf .github
+        rm -f *.py
+        echo "$(date -u '+%Y-%m-%d %H:%M:%S')" > index.html
 
     - name: Commit & Push changes
       uses: actions-js/push@master
       with:
         github_token: ${{ secrets.PAT }}
+        branch: gh-pages
+        force: true
