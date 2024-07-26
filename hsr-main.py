@@ -24,7 +24,7 @@ main_files = [
 
 # Directory to save the files
 save_dir = "./hsr/data"
-dave_dir_live = "./hsr/live"
+save_dir_live = "./hsr/live"
 
 # Create the save directory if it doesn't exist
 if not os.path.exists(save_dir):
