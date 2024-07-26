@@ -48,9 +48,9 @@ def download_file(url, save_path):
     if response.status_code == 200:
         with open(save_path, 'wb') as file:
             file.write(response.content)
-        logger.info(f"Successfully downloaded {url} to {save_path}")
+        logger.info(f"Successfully downloaded {save_path}")
     else:
-        logger.error(f"Failed to download {url} with status code {response.status_code}")
+        logger.error(f"Failed to download {save_path} with status code {response.status_code}")
     time.sleep(0.01)
 
 # Download new.json
