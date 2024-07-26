@@ -44,7 +44,10 @@ logger.addHandler(fhlrd)
 logger.addHandler(fhlri)
 
 def download_file(url, save_path):
-    response = requests.get(url)
+    try:
+        response = requests.get(url)
+    except Exception as e:
+        download_file(url, save_path)
     if response.status_code == 200:
         with open(save_path, 'wb') as file:
             file.write(response.content)

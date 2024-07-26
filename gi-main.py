@@ -54,14 +54,16 @@ logger.addHandler(fhlrd)
 logger.addHandler(fhlri)
 
 def download_file(url, save_path):
-    response = requests.get(url)
+    try:
+        response = requests.get(url)
+    except Exception as e:
+        download_file(url, save_path)
     if response.status_code == 200:
         with open(save_path, 'wb') as file:
             file.write(response.content)
         logger.info(f"Successfully downloaded {save_path}")
     else:
         logger.error(f"Failed to download {save_path} with status code {response.status_code}")
-    time.sleep(0.1)
 
 # Download new.json
 download_file('https://api.hakush.in/gi/new.json', os.path.join(save_dir, "../new.json"))
