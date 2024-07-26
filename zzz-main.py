@@ -50,7 +50,7 @@ def download_file(url, save_path):
         logger.info(f"Successfully downloaded {save_path}")
     else:
         logger.error(f"Failed to download {save_path} with status code {response.status_code}")
-    time.sleep(0.01)
+    time.sleep(0.1)
 
 # Download new.json
 download_file('https://api.hakush.in/zzz/new.json', os.path.join(save_dir, "../new.json"))
