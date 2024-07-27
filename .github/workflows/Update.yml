@@ -32,6 +32,7 @@ jobs:
         done
         rm -rf .github
         rm -f *.py
+        rm -f *.log
         echo "$(date -u '+%Y-%m-%d %H:%M:%S')" > index.html
 
     - name: Commit & Push changes
