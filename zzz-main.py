@@ -6,6 +6,7 @@ import logging
 
 # Base URLs
 base_url = "https://api.hakush.in/zzz/data/"
+base_url_ui = "https://api.hakush.in/zzz/UI/"
 languages = ["zh", "en", "ja", "ko"]
 
 # List of main JSON files to download
@@ -18,6 +19,7 @@ main_files = [
 
 # Directory to save the files
 save_dir = "./zzz/data"
+save_dir_ui = "./zzz/UI"
 
 # Create the save directory if it doesn't exist
 if not os.path.exists(save_dir):
@@ -53,7 +55,6 @@ def download_file(url, save_path):
         logger.info(f"Successfully downloaded {save_path}")
     else:
         logger.error(f"Failed to download {save_path} with status code {response.status_code}")
-    time.sleep(0.1)
 
 # Download new.json
 download_file('https://api.hakush.in/zzz/new.json', os.path.join(save_dir, "../new.json"))
@@ -127,3 +128,37 @@ for lang in languages:
         localized_item_save_path = os.path.join(save_dir, lang, "item", f"{id_}.json")
         os.makedirs(os.path.dirname(localized_item_save_path), exist_ok=True)
         download_file(localized_item_url, localized_item_save_path)
+
+
+
+# Download webp for charecters
+for id_ in character_ids:
+    # Splash Art, Selet Icon, Mindscapes
+    splashArt = character_data[id_]["icon"] + ".webp"
+    icons = [splashArt, splashArt.replace("Role", "RoleSelect")]
+    for i in range(1, 4): icons.append(f"Mindscape_{id_}_{i}.webp")
+    for icon in icons:
+        save_path = os.path.join(save_dir_ui, icon)
+        os.makedirs(os.path.dirname(save_path), exist_ok=True)
+        download_file(f"{base_url_ui}{icon}", save_path)
+
+# Download webp for weapons
+for id_ in weapon_ids:
+    icon = weapon_data[id_]["icon"].split('/')[-1].replace(".png", ".webp")
+    save_path = os.path.join(save_dir_ui, icon)
+    os.makedirs(os.path.dirname(save_path), exist_ok=True)
+    download_file(f"{base_url_ui}{icon}", save_path)
+
+# Download webp for equipment
+for id_ in equipment_ids:
+    icon = equipment_data[id_]["icon"].split('/')[-1].replace(".png", ".webp")
+    save_path = os.path.join(save_dir_ui, icon)
+    os.makedirs(os.path.dirname(save_path), exist_ok=True)
+    download_file(f"{base_url_ui}{icon}", save_path)
+
+# Download webp for items
+for id_ in item_ids[languages[0]]:
+    icon = item_data.get(languages[0])[id_]["icon"].split('/')[-1].replace(".png", ".webp")
+    save_path = os.path.join(save_dir_ui, icon)
+    os.makedirs(os.path.dirname(save_path), exist_ok=True)
+    download_file(f"{base_url_ui}{icon}", save_path)
