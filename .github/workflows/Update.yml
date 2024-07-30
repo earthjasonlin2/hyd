@@ -32,9 +32,9 @@ jobs:
         python ./ww-main.py
         python ./zzz-main.py
         rm -rf .github
+        python ./create-index.py
         rm -f *.py
         rm -f *.log
-        python ./create-index.py
 
     - name: Commit & Push changes
       uses: actions-js/push@master
