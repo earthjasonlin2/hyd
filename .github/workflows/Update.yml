@@ -27,13 +27,14 @@ jobs:
 
     - name: Run all Python scripts
       run: |
-        for file in *.py; do
-          python "$file"
-        done
+        python ./gi-main.py
+        python ./hsr-main.py
+        python ./ww-main.py
+        python ./zzz-main.py
         rm -rf .github
         rm -f *.py
         rm -f *.log
-        echo "$(date -u '+%Y-%m-%d %H:%M:%S')" > index.html
+        python ./create-index.py
 
     - name: Commit & Push changes
       uses: actions-js/push@master
