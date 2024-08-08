@@ -1,0 +1,106 @@
+{
+    "Type": "Character",
+    "Name": "Eremite Scorching Loremaster",
+    "Title": "\"Poetry and Secret Histories\" Eremite Scorching Loremaster",
+    "Desc": "Those who still remember will never betray the spirit of the sands yet flowing through their veins.",
+    "Source": "Reward for accepting the Tavern Challenge at The Cat's Tail and claiming victory in a Friendly Fracas with the Eremite Scorching Loremaster",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_Muscleman",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "Pyro",
+        "Other Weapons",
+        "The Eremites"
+    ],
+    "Talent": {
+        "23031": {
+            "Name": "Searing Glare",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "23032": {
+            "Name": "Blazing Strike",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO"
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 3
+            }
+        },
+        "23033": {
+            "Name": "Spirit of Omen's Awakening: Pyro Scorpion",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], summons 1 <color=#FFFFFFFF>$[C123031]</color>.",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO",
+                "C123031": {
+                    "Name": "Spirit of Omen: Pyro Scorpion",
+                    "Desc": "<color=#FFFFFFFF>End Phase:</color> Deal 1 $[K103].\\n<color=#FFFFFFFF>$[K3]: 2</color>\\n\\n<color=#FFFFFFFF>When entering play, when the Action Phase starts:</color> Attach $[C123033] to your $[A2303]. (When $[C123031] is in play, the character will take -1 DMG, once per Round.)",
+                    "Child": {
+                        "K103": {
+                            "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>Pyro DMG</color>",
+                            "Desc": "Applies {SPRITE_PRESET#2103}Pyro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Melt</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Vaporize</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Overloaded</color>: DMG +2 for this instance, the target is forcibly switched to the next character\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Burning</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Burning Flame</color>] that will deal 1 Pyro DMG at the end of the Round (Takes effect once, max 2 stacks)"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        },
+                        "C123033": {
+                            "Name": "Pyro Scorpion: Guardian Stance",
+                            "Desc": "When <color=#FFFFFFFF>$[C123031] is on the field: </color>the equipping character takes -1 DMG. (Once each Round)",
+                            "Child": {}
+                        },
+                        "A2303": "Eremite Scorching Loremaster"
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "23034": {
+            "Name": "Spirit of Omen's Power",
+            "Desc": "(Passive) <color=#FFFFFFFF>After this character takes DMG:</color> If this character has no greater than 7 HP, they gain 1 $[K310]. (Once per Match)",
+            "Child": {
+                "K310": {
+                    "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}Energy</color>",
+                    "Desc": "Characters must consume {SPRITE_PRESET#1110}Energy to use their Elemental Bursts.\\nWhen characters use an Elemental Skill or a Normal Attack, they will gain 1 {SPRITE_PRESET#1110}Energy."
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        },
+        "23035": {
+            "Name": "",
+            "Desc": "This character's counters will be cleared at the beginning of each Round",
+            "Child": {},
+            "Cost": {}
+        },
+        "23036": {
+            "Name": "Pyro Scorpion: Guardian Stance",
+            "Desc": "If there are summoned entities on the field at the beginning of each Round, refresh shield",
+            "Child": {},
+            "Cost": {}
+        },
+        "23037": {
+            "Name": "Pyro Scorpion: Guardian Stance",
+            "Desc": "If there are summoned entities on the field at the beginning of each Round, refresh shield (Talent)",
+            "Child": {},
+            "Cost": {}
+        }
+    },
+    "Related": 223031
+}

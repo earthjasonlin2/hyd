@@ -1,0 +1,49 @@
+{
+    "Type": "Action",
+    "Name": "The Shrine's Sacred Shade",
+    "Title": "Yae Miko: The Shrine's Sacred Shade",
+    "Desc": "\"Ah... A sight to behold...\"",
+    "Source": "Reward for inviting Yae Miko to a duel at The Cat's Tail and achieving all corresponding challenge objectives",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Yae",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_ELECTRO",
+            "count": 3
+        },
+        {
+            "costType": "GCG_COST_ENERGY",
+            "count": 2
+        }
+    ],
+    "Tag": [
+        "Talent",
+        "Combat Action"
+    ],
+    "Talent": {
+        "Name": "The Shrine's Sacred Shade",
+        "Desc": "$[K1]: When your active character is <color=#FFFFFFFF>$[A1408]</color>, equip this card.\\nAfter $[A1408] equips this card, immediately use <color=#FFD780FF>$[S14083]</color> once.\\nAfter your $[A1408], who has this card equipped, destroys a <color=#FFFFFFFF>$[C114081]</color> through <color=#FFFFFFFF>$[S14083]</color>: The next use of <color=#FFFFFFFF>$[S14082]</color> this Round will cost 2 less Elemental Dice.\\n(You must have $[A1408] in your deck to add this card to your deck.)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+            },
+            "A1408": "The Shrine's Sacred Shade",
+            "S14083": "S14083",
+            "C114081": {
+                "Name": "Sesshou Sakura",
+                "Desc": "<color=#FFFFFFFF>End Phase:</color> Deal 1 $[K104]\\n<color=#FFFFFFFF>$[K3]: 3</color> (Can stack, max 6 stacks)\\n<color=#FFFFFFFF>When you declare the end of your Round:</color> If this summon has at least 4 $[K3] remaining, deal 1 $[K104]. (Consumes $[K3])",
+                "Child": {
+                    "K104": {
+                        "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>Electro DMG</color>",
+                        "Desc": "Applies {SPRITE_PRESET#2104}Electro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Overloaded</color>: DMG +2 for this instance, the target is forcibly switched to the next character\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Superconduct</color>: DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Electro-Charged</color>: DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Quicken</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Catalyzing Field</color>] that grants +1 DMG to the next 2 instances of Dendro or Electro DMG"
+                    },
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                        "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                    }
+                }
+            },
+            "S14082": "S14082"
+        }
+    }
+}

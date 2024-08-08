@@ -1,0 +1,159 @@
+{
+    "Id": 2035011,
+    "Name": "仙舟のボス",
+    "Desc": "...",
+    "MonsterCampID": null,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 4650,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/Monster_2035010.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "BigBoss",
+    "SpeedBase": 108,
+    "StanceBase": 540,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.3000000002793968,
+    "Child": [
+        {
+            "Id": 2035011,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Fire",
+                "Quantum"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 203501101,
+                    "SkillName": "スキル1",
+                    "SkillDesc": "指定した味方単体に風属性ダメージを与える。",
+                    "DamageType": "Wind",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 203501102,
+                    "SkillName": "スキル2",
+                    "SkillDesc": "指定した味方単体に風属性ダメージを与え、高確率で攻撃を受けた味方を虚弱状態にする。",
+                    "DamageType": "Wind",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 203501103,
+                    "SkillName": "スキル3",
+                    "SkillDesc": "自身を強化し、追加ターンを獲得する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 203501104,
+                    "SkillName": "スキル4",
+                    "SkillDesc": "すべての部位と共鳴し、各部位の弱点撃破状態を解除する。次に行動するまで攻撃を受けず、次に行動する時味方全体に「スキル5」を発動する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 203501105,
+                    "SkillName": "スキル5",
+                    "SkillDesc": "味方全体に大量の風属性ダメージを与え、残りの弱点撃破されてない部位の数に応じて強化する。弱点撃破されてない部位1体につき、このスキルの与ダメージがアップし、対応する部位の強化効果を得る。",
+                    "DamageType": "Wind",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 203501106,
+                    "SkillName": "スキル6",
+                    "SkillDesc": "味方全体に風属性ダメージを与える。",
+                    "DamageType": "Wind",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 203501107,
+                    "SkillName": "パッシブ1",
+                    "SkillDesc": "「仙舟BOSS」は追加ターンの行動で部位と共鳴する。共鳴すると、部位の靱性が一定量回復し、攻撃を受ける時に削られる靭性値がアップする。次の行動が強化行動になり、「部位1」との共鳴は高確率で味方全体を怒噪状態にし、「部位2」との共鳴は自身の与ダメージを大幅にアップし、「部位3」との共鳴は高確率で味方全体を虚弱状態にする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 203501108,
+                    "SkillName": "パッシブ2",
+                    "SkillDesc": "「守備」状態に入る。弱点撃破状態でない時の被ダメージがダウンする。弱点撃破された時の行動順遅延量がアップし、弱点撃破状態の時の被ダメージがアップする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 203501109,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 2035011,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2035011,
+            "WorldLevel": 1,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2035011,
+            "WorldLevel": 2,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2035011,
+            "WorldLevel": 3,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2035011,
+            "WorldLevel": 4,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2035011,
+            "WorldLevel": 5,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2035011,
+            "WorldLevel": 6,
+            "DisplayItemList": []
+        }
+    ]
+}

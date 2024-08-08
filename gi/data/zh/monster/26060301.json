@@ -1,0 +1,56 @@
+{
+    "Name": "冰萤",
+    "Desc": "能够稍微导引冰元素的小型生物。\\n与其他的萤族生物通称「飞萤」。尽管力量非常弱小，但也因为力量弱小，所以进化出了奇特的移动方式，以避开掠食者的攻击。",
+    "Icon": "UI_MonsterIcon_Cicin_Ice_01",
+    "Codex": "BEAST",
+    "Title": "冰萤",
+    "SpecialNames": [
+        "冰冰凉凉"
+    ],
+    "Reward": [],
+    "Child": {
+        "26060301": {
+            "MonsterName": "Cicin_Ice_01",
+            "Type": "MONSTER_ORDINARY",
+            "HpDrops": [
+                {
+                    "dropId": 22010016,
+                    "hpPercent": 60
+                },
+                {},
+                {}
+            ],
+            "KillDropId": 22010016,
+            "Prop": [
+                {
+                    "type": "FIGHT_PROP_BASE_HP",
+                    "growCurve": "GROW_CURVE_HP"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_ATTACK",
+                    "growCurve": "GROW_CURVE_ATTACK"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_DEFENSE",
+                    "growCurve": "GROW_CURVE_DEFENSE"
+                }
+            ],
+            "LocalLegend": false,
+            "SubHurt": {
+                "Fire": 0.1000000014901,
+                "Grass": 0.1000000014901,
+                "Water": 0.1000000014901,
+                "Elec": 0.1000000014901,
+                "Wind": 0.1000000014901,
+                "Ice": 0.5,
+                "Rock": 0.1000000014901,
+                "Physical": -0.5
+            },
+            "Base": {
+                "HP": 6.7919998168945,
+                "ATK": 10.0480003356934,
+                "DEF": 500
+            }
+        }
+    }
+}

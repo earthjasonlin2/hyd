@@ -1,0 +1,847 @@
+{
+    "Leyline": {
+        "10": {
+            "Icon": "UI_TowerBlessing_5",
+            "Name": "수호의 달",
+            "Desc": "보호막 존재 시 캐릭터의 공격력이 50% 증가한다"
+        },
+        "11": {
+            "Icon": "UI_TowerBlessing_6",
+            "Name": "보석의 달",
+            "Desc": "결정 반응으로 생성된 조각 획득 시 주변의 적에게 상응하는 결정 원소의 범위 피해를 준다. 해당 피해는 캐릭터의 보호막 강화 효과 속성의 영향을 받는다"
+        },
+        "12": {
+            "Icon": "UI_TowerBlessing_7",
+            "Name": "투쟁의 달",
+            "Desc": "보호막 존재 시 캐릭터가 피격되면 에너지 폭렬을 일으켜 주변의 적에게 피해를 준다. 해당 효과는 4초마다 1번 발동하며 피해는 캐릭터의 보호막 강화 효과 속성의 영향을 받는다"
+        }
+    },
+    "Floor": {
+        "9": {
+            "Open": "2020-11-16 04:00:00",
+            "Close": "2021-01-01 03:59:59",
+            "Buff": [
+                "파티 내 모든 캐릭터가 가하는 불 원소 피해가 75% 증가한다",
+                "파티 내 모든 캐릭터가 가하는 번개 원소 피해가 75% 증가한다",
+                "과부하 반응으로 가하는 피해가 200% 증가한다",
+                "몬스터의 HP가 100% 증가한다"
+            ],
+            "Room": {
+                "1": {
+                    "Level": 72,
+                    "Cond": [
+                        [
+                            2,
+                            60
+                        ],
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 20011301,
+                            "Hp": 55222.10909720505,
+                            "Name": "거대 화염 슬라임",
+                            "Icon": "UI_MonsterIcon_Slime_Fire_03"
+                        },
+                        {
+                            "Id": 20010601,
+                            "Hp": 55222.10909720505,
+                            "Name": "거대 번개 슬라임",
+                            "Icon": "UI_MonsterIcon_Slime_Electric_03"
+                        },
+                        {
+                            "Id": 20010701,
+                            "Hp": 55222.10909720505,
+                            "Name": "돌연변이 번개 슬라임",
+                            "Icon": "UI_MonsterIcon_Slime_Electric_03_Positive"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 20010601,
+                            "Hp": 55222.10909720505,
+                            "Name": "거대 번개 슬라임",
+                            "Icon": "UI_MonsterIcon_Slime_Electric_03"
+                        },
+                        {
+                            "Id": 20010701,
+                            "Hp": 55222.10909720505,
+                            "Name": "돌연변이 번개 슬라임",
+                            "Icon": "UI_MonsterIcon_Slime_Electric_03_Positive"
+                        },
+                        {
+                            "Id": 20011301,
+                            "Hp": 55222.10909720505,
+                            "Name": "거대 화염 슬라임",
+                            "Icon": "UI_MonsterIcon_Slime_Fire_03"
+                        }
+                    ]
+                },
+                "2": {
+                    "Level": 74,
+                    "Cond": [
+                        [
+                            2,
+                            60
+                        ],
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 23030101,
+                            "Hp": 145043.1560897827,
+                            "Name": "우인단·번개 치친 술사",
+                            "Icon": "UI_MonsterIcon_Fatuus_Summoner_01"
+                        },
+                        {
+                            "Id": 25030301,
+                            "Hp": 58017.262435913035,
+                            "Name": "보물 사냥단·바다의 남아",
+                            "Icon": "UI_MonsterIcon_Thoarder_Male_Sailor_01"
+                        },
+                        {
+                            "Id": 25010501,
+                            "Hp": 46413.81076335902,
+                            "Name": "보물 사냥단·번개의 약제사",
+                            "Icon": "UI_MonsterIcon_Thoarder_Male_Chemist_Electric_01"
+                        },
+                        {
+                            "Id": 25010301,
+                            "Hp": 46413.81076335902,
+                            "Name": "보물 사냥단·불의 약제사",
+                            "Icon": "UI_MonsterIcon_Thoarder_Male_Chemist_Fire_01"
+                        },
+                        {
+                            "Id": 25010601,
+                            "Hp": 46413.81076335902,
+                            "Name": "보물 사냥단·얼음의 약제사",
+                            "Icon": "UI_MonsterIcon_Thoarder_Male_Chemist_Ice_01"
+                        },
+                        {
+                            "Id": 25010201,
+                            "Hp": 34810.359090804996,
+                            "Name": "보물 사냥단·척후병",
+                            "Icon": "UI_MonsterIcon_Thoarder_Male_Rogue_01"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 23010101,
+                            "Hp": 116034.52487182627,
+                            "Name": "우인단 선발대·얼음총 중보병",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Fat_SprayGun_Ice_01"
+                        },
+                        {
+                            "Id": 23010301,
+                            "Hp": 116034.52487182627,
+                            "Name": "우인단 선발대·번개 해머 돌격대",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Strong_GreatHammer_Electric_01"
+                        },
+                        {
+                            "Id": 23010401,
+                            "Hp": 87025.89365386966,
+                            "Name": "우인단 선발대·바위 유격대",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Standard_Staff_Rock_01"
+                        },
+                        {
+                            "Id": 23010501,
+                            "Hp": 87025.89365386966,
+                            "Name": "우인단 선발대·풍권 돌격대",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Strong_Gloves_Wind_01"
+                        }
+                    ]
+                },
+                "3": {
+                    "Level": 76,
+                    "Cond": [
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ],
+                        [
+                            2,
+                            420
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 26030101,
+                            "Hp": 91592.15712061155,
+                            "Name": "새끼 바위 용 도마뱀",
+                            "Icon": "UI_MonsterIcon_Wyrm_Rock"
+                        },
+                        {
+                            "Id": 21020501,
+                            "Hp": 274776.4713618347,
+                            "Name": "츄츄 바위왕",
+                            "Icon": "UI_MonsterIcon_Brute_Rock_None"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 24010101,
+                            "Hp": 213715.0332814268,
+                            "Name": "유적 가디언",
+                            "Icon": "UI_MonsterIcon_Defender_Noner_01"
+                        }
+                    ]
+                }
+            }
+        },
+        "10": {
+            "Open": "2020-11-16 04:00:00",
+            "Close": "2021-01-01 03:59:59",
+            "Buff": [
+                "주기적으로 캐릭터에게 「무형의 불」을 부착한다: 부착된 불 원소가 사라지기 전까지 지속해서 불 원소 피해를 받는다",
+                "파티 내 모든 캐릭터의 치유 보너스가 50% 상승한다",
+                "몬스터의 HP가 100% 증가한다"
+            ],
+            "Room": {
+                "1": {
+                    "Level": 80,
+                    "Cond": [
+                        [
+                            2,
+                            60
+                        ],
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 21020201,
+                            "Hp": 111394.36524301399,
+                            "Name": "불도끼 츄츄 폭도",
+                            "Icon": "UI_MonsterIcon_Brute_None_01"
+                        },
+                        {
+                            "Id": 20011301,
+                            "Hp": 74262.91016200923,
+                            "Name": "거대 화염 슬라임",
+                            "Icon": "UI_MonsterIcon_Slime_Fire_03"
+                        },
+                        {
+                            "Id": 21010701,
+                            "Hp": 37131.45508100475,
+                            "Name": "츄츄 돌격병",
+                            "Icon": "UI_MonsterIcon_Hili_Fire_Range"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 22010101,
+                            "Hp": 74262.91016200923,
+                            "Name": "화염의 심연 메이지",
+                            "Icon": "UI_MonsterIcon_Abyss_Fire_01"
+                        },
+                        {
+                            "Id": 21020201,
+                            "Hp": 111394.36524301399,
+                            "Name": "불도끼 츄츄 폭도",
+                            "Icon": "UI_MonsterIcon_Brute_None_01"
+                        }
+                    ]
+                },
+                "2": {
+                    "Level": 82,
+                    "Cond": [
+                        [
+                            2,
+                            60
+                        ],
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 21020201,
+                            "Hp": 116000.3161422797,
+                            "Name": "불도끼 츄츄 폭도",
+                            "Icon": "UI_MonsterIcon_Brute_None_01"
+                        },
+                        {
+                            "Id": 26010201,
+                            "Hp": 116000.3161422797,
+                            "Name": "뜨거운 구라구라꽃",
+                            "Icon": "UI_MonsterIcon_Mimik_Fire"
+                        },
+                        {
+                            "Id": 21010601,
+                            "Hp": 38666.77204742666,
+                            "Name": "화염탄 츄츄",
+                            "Icon": "UI_MonsterIcon_Hili_Fire_Range"
+                        },
+                        {
+                            "Id": 21010201,
+                            "Hp": 38666.77204742666,
+                            "Name": "츄츄 싸움꾼",
+                            "Icon": "UI_MonsterIcon_Hili_None_01"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 22010101,
+                            "Hp": 77333.54409485303,
+                            "Name": "화염의 심연 메이지",
+                            "Icon": "UI_MonsterIcon_Abyss_Fire_01"
+                        },
+                        {
+                            "Id": 21020201,
+                            "Hp": 116000.3161422797,
+                            "Name": "불도끼 츄츄 폭도",
+                            "Icon": "UI_MonsterIcon_Brute_None_01"
+                        },
+                        {
+                            "Id": 21010501,
+                            "Hp": 30933.41818086683,
+                            "Name": "츄츄 화염 궁수",
+                            "Icon": "UI_MonsterIcon_Hili_Fire_Range"
+                        }
+                    ]
+                },
+                "3": {
+                    "Level": 85,
+                    "Cond": [
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ],
+                        [
+                            2,
+                            420
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 23010501,
+                            "Hp": 122546.15571190421,
+                            "Name": "우인단 선발대·풍권 돌격대",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Strong_Gloves_Wind_01"
+                        },
+                        {
+                            "Id": 23010601,
+                            "Hp": 122546.15571190421,
+                            "Name": "우인단 선발대·화승총 유격대",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Standard_Rifle_Fire_01"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 22010101,
+                            "Hp": 81697.43714126937,
+                            "Name": "화염의 심연 메이지",
+                            "Icon": "UI_MonsterIcon_Abyss_Fire_01"
+                        },
+                        {
+                            "Id": 21030201,
+                            "Hp": 40848.71857063483,
+                            "Name": "풀 츄츄 샤먼",
+                            "Icon": "UI_MonsterIcon_Shaman_Grass_01"
+                        },
+                        {
+                            "Id": 21010501,
+                            "Hp": 32678.975430070386,
+                            "Name": "츄츄 화염 궁수",
+                            "Icon": "UI_MonsterIcon_Hili_Fire_Range"
+                        },
+                        {
+                            "Id": 26010201,
+                            "Hp": 122546.15571190421,
+                            "Name": "뜨거운 구라구라꽃",
+                            "Icon": "UI_MonsterIcon_Mimik_Fire"
+                        }
+                    ]
+                }
+            }
+        },
+        "11": {
+            "Open": "2020-11-16 04:00:00",
+            "Close": "2021-01-01 03:59:59",
+            "Buff": [
+                "파티 내 모든 캐릭터가 가하는 번개 원소 피해가 75% 증가한다",
+                "파티 내 모든 캐릭터가 가하는 얼음 원소 피해가 75% 증가한다",
+                "초전도 반응으로 가하는 피해가 300% 증가하고 목표의 물리 내성을 추가로 20% 감소시킨다",
+                "몬스터의 HP가 100% 증가한다"
+            ],
+            "Room": {
+                "1": {
+                    "Level": 88,
+                    "Cond": [
+                        [
+                            2,
+                            60
+                        ],
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 20010901,
+                            "Hp": 86872.88130643211,
+                            "Name": "거대 얼음 슬라임",
+                            "Icon": "UI_MonsterIcon_Slime_Ice_03"
+                        },
+                        {
+                            "Id": 20010601,
+                            "Hp": 86872.88130643211,
+                            "Name": "거대 번개 슬라임",
+                            "Icon": "UI_MonsterIcon_Slime_Electric_03"
+                        },
+                        {
+                            "Id": 20010701,
+                            "Hp": 86872.88130643211,
+                            "Name": "돌연변이 번개 슬라임",
+                            "Icon": "UI_MonsterIcon_Slime_Electric_03_Positive"
+                        },
+                        {
+                            "Id": 21010901,
+                            "Hp": 34749.153132470055,
+                            "Name": "츄츄 얼음 궁수",
+                            "Icon": "UI_MonsterIcon_Hili_Ice_Range"
+                        },
+                        {
+                            "Id": 21010301,
+                            "Hp": 43436.44065321621,
+                            "Name": "나무방패 츄츄",
+                            "Icon": "UI_MonsterIcon_Hili_None_01"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 23030101,
+                            "Hp": 217182.2032660804,
+                            "Name": "우인단·번개 치친 술사",
+                            "Icon": "UI_MonsterIcon_Fatuus_Summoner_01"
+                        },
+                        {
+                            "Id": 22010201,
+                            "Hp": 86872.88130643211,
+                            "Name": "얼음의 심연 메이지",
+                            "Icon": "UI_MonsterIcon_Abyss_Ice_01"
+                        },
+                        {
+                            "Id": 21030101,
+                            "Hp": 43436.44065321621,
+                            "Name": "물 츄츄 샤먼",
+                            "Icon": "UI_MonsterIcon_Shaman_Water_01"
+                        },
+                        {
+                            "Id": 21010901,
+                            "Hp": 34749.153132470055,
+                            "Name": "츄츄 얼음 궁수",
+                            "Icon": "UI_MonsterIcon_Hili_Ice_Range"
+                        },
+                        {
+                            "Id": 21011001,
+                            "Hp": 34749.153132470055,
+                            "Name": "츄츄 번개 궁수",
+                            "Icon": "UI_MonsterIcon_Hili_Electric_Range"
+                        }
+                    ]
+                },
+                "2": {
+                    "Level": 90,
+                    "Cond": [
+                        [
+                            234703002,
+                            2016,
+                            20
+                        ],
+                        [
+                            234703002,
+                            2016,
+                            40
+                        ],
+                        [
+                            234703002,
+                            2016,
+                            60
+                        ]
+                    ],
+                    "Type": "TOWER_COND_LEFT_HP_GREATER_THAN",
+                    "First": [
+                        {
+                            "Id": 21020201,
+                            "Hp": 146124.52006453654,
+                            "Name": "불도끼 츄츄 폭도",
+                            "Icon": "UI_MonsterIcon_Brute_None_01"
+                        },
+                        {
+                            "Id": 21020301,
+                            "Hp": 146124.52006453654,
+                            "Name": "돌방패 츄츄 폭도",
+                            "Icon": "UI_MonsterIcon_Brute_None_01"
+                        },
+                        {
+                            "Id": 21010601,
+                            "Hp": 48708.173354845625,
+                            "Name": "화염탄 츄츄",
+                            "Icon": "UI_MonsterIcon_Hili_Fire_Range"
+                        },
+                        {
+                            "Id": 21011201,
+                            "Hp": 48708.173354845625,
+                            "Name": "돌방패 츄츄",
+                            "Icon": "UI_MonsterIcon_Hili_None_01"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 21020201,
+                            "Hp": 146124.52006453654,
+                            "Name": "불도끼 츄츄 폭도",
+                            "Icon": "UI_MonsterIcon_Brute_None_01"
+                        },
+                        {
+                            "Id": 21020301,
+                            "Hp": 146124.52006453654,
+                            "Name": "돌방패 츄츄 폭도",
+                            "Icon": "UI_MonsterIcon_Brute_None_01"
+                        },
+                        {
+                            "Id": 20010601,
+                            "Hp": 97416.3467096909,
+                            "Name": "거대 번개 슬라임",
+                            "Icon": "UI_MonsterIcon_Slime_Electric_03"
+                        },
+                        {
+                            "Id": 20010701,
+                            "Hp": 97416.3467096909,
+                            "Name": "돌연변이 번개 슬라임",
+                            "Icon": "UI_MonsterIcon_Slime_Electric_03_Positive"
+                        },
+                        {
+                            "Id": 21011001,
+                            "Hp": 38966.539367794714,
+                            "Name": "츄츄 번개 궁수",
+                            "Icon": "UI_MonsterIcon_Hili_Electric_Range"
+                        },
+                        {
+                            "Id": 21010901,
+                            "Hp": 38966.539367794714,
+                            "Name": "츄츄 얼음 궁수",
+                            "Icon": "UI_MonsterIcon_Hili_Ice_Range"
+                        }
+                    ]
+                },
+                "3": {
+                    "Level": 92,
+                    "Cond": [
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ],
+                        [
+                            2,
+                            420
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 23010101,
+                            "Hp": 204567.20776632446,
+                            "Name": "우인단 선발대·얼음총 중보병",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Fat_SprayGun_Ice_01"
+                        },
+                        {
+                            "Id": 23010401,
+                            "Hp": 153425.40582474327,
+                            "Name": "우인단 선발대·바위 유격대",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Standard_Staff_Rock_01"
+                        },
+                        {
+                            "Id": 23010501,
+                            "Hp": 153425.40582474327,
+                            "Name": "우인단 선발대·풍권 돌격대",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Strong_Gloves_Wind_01"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 23010301,
+                            "Hp": 204567.20776632446,
+                            "Name": "우인단 선발대·번개 해머 돌격대",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Strong_GreatHammer_Electric_01"
+                        },
+                        {
+                            "Id": 23010501,
+                            "Hp": 153425.40582474327,
+                            "Name": "우인단 선발대·풍권 돌격대",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Strong_Gloves_Wind_01"
+                        },
+                        {
+                            "Id": 23010401,
+                            "Hp": 153425.40582474327,
+                            "Name": "우인단 선발대·바위 유격대",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Standard_Staff_Rock_01"
+                        }
+                    ]
+                }
+            }
+        },
+        "12": {
+            "Open": "2020-11-16 04:00:00",
+            "Close": "2021-01-01 03:59:59",
+            "Buff": [
+                "주기적으로 캐릭터에게 「응결의 얼음」을 부여한다: 부착된 얼음 원소가 사라지기 전까지 스태미나 소모량이 대폭 증가하며 자동으로 회복되지 않는다",
+                "파티 내 모든 캐릭터가 가하는 불 원소 피해가 75% 증가한다",
+                "몬스터의 HP가 150% 증가한다"
+            ],
+            "Room": {
+                "1": {
+                    "Level": 95,
+                    "Cond": [
+                        [
+                            2,
+                            60
+                        ],
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 21020101,
+                            "Hp": 208116.28469212918,
+                            "Name": "나무방패 츄츄 폭도",
+                            "Icon": "UI_MonsterIcon_Brute_None_01"
+                        },
+                        {
+                            "Id": 20010901,
+                            "Hp": 138744.18979475263,
+                            "Name": "거대 얼음 슬라임",
+                            "Icon": "UI_MonsterIcon_Slime_Ice_03"
+                        },
+                        {
+                            "Id": 26010101,
+                            "Hp": 208116.28469212918,
+                            "Name": "얼어붙은 구라구라꽃",
+                            "Icon": "UI_MonsterIcon_Mimik_Ice"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 22010201,
+                            "Hp": 138744.18979475263,
+                            "Name": "얼음의 심연 메이지",
+                            "Icon": "UI_MonsterIcon_Abyss_Ice_01"
+                        },
+                        {
+                            "Id": 20010901,
+                            "Hp": 138744.18979475263,
+                            "Name": "거대 얼음 슬라임",
+                            "Icon": "UI_MonsterIcon_Slime_Ice_03"
+                        },
+                        {
+                            "Id": 21010901,
+                            "Hp": 55497.676891964446,
+                            "Name": "츄츄 얼음 궁수",
+                            "Icon": "UI_MonsterIcon_Hili_Ice_Range"
+                        }
+                    ]
+                },
+                "2": {
+                    "Level": 98,
+                    "Cond": [
+                        [
+                            234704003,
+                            3024,
+                            20
+                        ],
+                        [
+                            234704003,
+                            3024,
+                            40
+                        ],
+                        [
+                            234704003,
+                            3024,
+                            60
+                        ]
+                    ],
+                    "Type": "TOWER_COND_LEFT_HP_GREATER_THAN",
+                    "First": [
+                        {
+                            "Id": 26010101,
+                            "Hp": 229936.73655504367,
+                            "Name": "얼어붙은 구라구라꽃",
+                            "Icon": "UI_MonsterIcon_Mimik_Ice"
+                        },
+                        {
+                            "Id": 21010501,
+                            "Hp": 61316.46415753632,
+                            "Name": "츄츄 화염 궁수",
+                            "Icon": "UI_MonsterIcon_Hili_Fire_Range"
+                        },
+                        {
+                            "Id": 21010901,
+                            "Hp": 61316.46415753632,
+                            "Name": "츄츄 얼음 궁수",
+                            "Icon": "UI_MonsterIcon_Hili_Ice_Range"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 22010201,
+                            "Hp": 153291.15770336226,
+                            "Name": "얼음의 심연 메이지",
+                            "Icon": "UI_MonsterIcon_Abyss_Ice_01"
+                        },
+                        {
+                            "Id": 21020101,
+                            "Hp": 229936.73655504367,
+                            "Name": "나무방패 츄츄 폭도",
+                            "Icon": "UI_MonsterIcon_Brute_None_01"
+                        },
+                        {
+                            "Id": 20010901,
+                            "Hp": 153291.15770336226,
+                            "Name": "거대 얼음 슬라임",
+                            "Icon": "UI_MonsterIcon_Slime_Ice_03"
+                        },
+                        {
+                            "Id": 21010901,
+                            "Hp": 61316.46415753632,
+                            "Name": "츄츄 얼음 궁수",
+                            "Icon": "UI_MonsterIcon_Hili_Ice_Range"
+                        },
+                        {
+                            "Id": 21011001,
+                            "Hp": 61316.46415753632,
+                            "Name": "츄츄 번개 궁수",
+                            "Icon": "UI_MonsterIcon_Hili_Electric_Range"
+                        },
+                        {
+                            "Id": 21010501,
+                            "Hp": 61316.46415753632,
+                            "Name": "츄츄 화염 궁수",
+                            "Icon": "UI_MonsterIcon_Hili_Fire_Range"
+                        }
+                    ]
+                },
+                "3": {
+                    "Level": 100,
+                    "Cond": [
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ],
+                        [
+                            2,
+                            420
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 23010101,
+                            "Hp": 367651.2154009942,
+                            "Name": "우인단 선발대·얼음총 중보병",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Fat_SprayGun_Ice_01"
+                        },
+                        {
+                            "Id": 23010301,
+                            "Hp": 367651.2154009942,
+                            "Name": "우인단 선발대·번개 해머 돌격대",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Strong_GreatHammer_Electric_01"
+                        },
+                        {
+                            "Id": 23010501,
+                            "Hp": 275738.4115507455,
+                            "Name": "우인단 선발대·풍권 돌격대",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Strong_Gloves_Wind_01"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 23010101,
+                            "Hp": 367651.2154009942,
+                            "Name": "우인단 선발대·얼음총 중보병",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Fat_SprayGun_Ice_01"
+                        },
+                        {
+                            "Id": 23010301,
+                            "Hp": 367651.2154009942,
+                            "Name": "우인단 선발대·번개 해머 돌격대",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Strong_GreatHammer_Electric_01"
+                        },
+                        {
+                            "Id": 23010501,
+                            "Hp": 275738.4115507455,
+                            "Name": "우인단 선발대·풍권 돌격대",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Strong_Gloves_Wind_01"
+                        },
+                        {
+                            "Id": 23010401,
+                            "Hp": 275738.4115507455,
+                            "Name": "우인단 선발대·바위 유격대",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Standard_Staff_Rock_01"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "Type": "Action",
+    "Name": "Molten Mail",
+    "Title": "Emperor of Fire and Iron: Molten Mail",
+    "Desc": "\"Imagine this world: All of humanity has been purged from Teyvat, and the ever-growing Emperor of Fire and Iron eventually wears the Palais Mermonia upon its body like a luxurious coat of white stone.\"",
+    "Source": "Reward for accepting the Tavern Challenge against the Emperor of Fire and Iron at The Cat's Tail and achieving all corresponding challenge objectives in a Friendly Fracas",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_HermitCrabPrimo",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PYRO",
+            "count": 1
+        },
+        {}
+    ],
+    "Tag": [
+        "Talent"
+    ],
+    "Talent": {
+        "Name": "Molten Mail",
+        "Desc": "<color=#FFFFFFFF>When played:</color> Apply $[K203] to the <color=#FFFFFFFF>$[A2304]</color> with this card equipped.\\nAfter your $[K6] Status other than $[K1023] or $[K6] Combat Status is removed: The $[A2304] with this card equipped gains 2 stacks of $[K1023]. (Once per Round)\\n(You must have $[A2304] in your deck to add this card to your deck.)",
+        "Child": {
+            "K203": {
+                "Name": "<color=#FF9999FF>{SPRITE_PRESET#2103}Pyro Application</color>",
+                "Desc": "When {SPRITE_PRESET#2103}Pyro is applied without dealing any DMG, the Elemental Reaction triggered will ignore DMG-dealing effects:\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Melt</color>: No effect\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Vaporize</color>: No effect\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Overloaded</color>: The target is forcibly switched to the next character\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Burning</color>: Creates a [<color=#FFFFFFFF>Burning Flame</color>] that will deal 1 Pyro DMG at the end of the Round (Takes effect once, max 2 stacks)"
+            },
+            "A2304": "Molten Mail",
+            "K6": {
+                "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>Shield</color>",
+                "Desc": "This Shield will be consumed to protect the character who equips it from DMG."
+            },
+            "K1023": {
+                "Name": "<color=#FFFFFFFF>Armored Crab Carapace</color>",
+                "Desc": "Each stack provides 1 {SPRITE_PRESET#4007}<color=#FFFFFFFF>Shield</color> to protect the equipped character."
+            }
+        }
+    }
+}

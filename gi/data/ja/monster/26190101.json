@@ -1,0 +1,266 @@
+{
+    "Name": "山隠れの猊獣",
+    "Desc": "優雅で驕傲な霊獣。仙力が漂う深い山にしか生息しない。\\n古来より、この仙獣は福運の象徴とされている。山に身を隠し、俗世から離れて過ごすその習性は、歴代の文人たちにいつも感銘を与えてきた。沈玉の谷の地元の古い伝説では、猊獣の長は「山主」と呼ばれ、その地位は往々にして仙人と同等とされる。\\n別の説によると、現在山林に潜んでいる玄文獣もこの仙獣の子孫だという。ただ仙縁が浅く、このように高貴な血脈を受け継ぐことが難しかったため、凶暴な野獣に退化したそうだ。この説は玄文獣の起源に関する別の説とは食い違っているが、それでも猊獣に関する数少ない記載では、出現するときは多くの玄文獣を従者として伴っていることが多い。\\n現在、沈玉の谷でよく知られる「獣舞劇」は、伝説の中の猊獣の動作や表情を模して演じられたものである。しかし実際に猊獣を見たことのある人はごくごく少なく、ほとんどの人は想像によってこの生き物の姿を描くことしかできない。数千年の変遷と芸術的な演出の結果、「獣頭」は最終的に現在のスタイルに固定された。",
+    "Icon": "UI_MonsterIcon_Hermit",
+    "Codex": "BEAST",
+    "Title": "山隠れの猊獣",
+    "SpecialNames": [
+        "悠久の群山の主"
+    ],
+    "Reward": [
+        {
+            "Id": 102,
+            "Rank": 3,
+            "Icon": "UI_ItemIcon_102"
+        },
+        {
+            "Id": 202,
+            "Rank": 3,
+            "Icon": "UI_ItemIcon_202"
+        },
+        {
+            "Id": 105,
+            "Rank": 3,
+            "Icon": "UI_ItemIcon_105"
+        },
+        {
+            "Id": 113058,
+            "Rank": 4,
+            "Icon": "UI_ItemIcon_113058"
+        },
+        {
+            "Id": 104151,
+            "Rank": 2,
+            "Icon": "UI_ItemIcon_104151"
+        },
+        {
+            "Id": 104152,
+            "Rank": 3,
+            "Icon": "UI_ItemIcon_104152"
+        },
+        {
+            "Id": 104153,
+            "Rank": 4,
+            "Icon": "UI_ItemIcon_104153"
+        },
+        {
+            "Id": 104154,
+            "Rank": 5,
+            "Icon": "UI_ItemIcon_104154"
+        },
+        {
+            "Id": 104121,
+            "Rank": 2,
+            "Icon": "UI_ItemIcon_104121"
+        },
+        {
+            "Id": 104122,
+            "Rank": 3,
+            "Icon": "UI_ItemIcon_104122"
+        },
+        {
+            "Id": 104123,
+            "Rank": 4,
+            "Icon": "UI_ItemIcon_104123"
+        },
+        {
+            "Id": 104124,
+            "Rank": 5,
+            "Icon": "UI_ItemIcon_104124"
+        },
+        {
+            "Id": 400022,
+            "Rank": 3,
+            "Icon": "UI_RelicIcon_10005_4"
+        },
+        {
+            "Id": 400032,
+            "Rank": 3,
+            "Icon": "UI_RelicIcon_10007_4"
+        },
+        {
+            "Id": 400052,
+            "Rank": 3,
+            "Icon": "UI_RelicIcon_10011_4"
+        },
+        {
+            "Id": 400088,
+            "Rank": 4,
+            "Icon": "UI_RelicIcon_15001_4"
+        },
+        {
+            "Id": 400098,
+            "Rank": 4,
+            "Icon": "UI_RelicIcon_15003_4"
+        },
+        {
+            "Id": 400023,
+            "Rank": 4,
+            "Icon": "UI_RelicIcon_10005_4"
+        },
+        {
+            "Id": 400033,
+            "Rank": 4,
+            "Icon": "UI_RelicIcon_10007_4"
+        },
+        {
+            "Id": 400089,
+            "Rank": 5,
+            "Icon": "UI_RelicIcon_15001_4"
+        },
+        {
+            "Id": 400099,
+            "Rank": 5,
+            "Icon": "UI_RelicIcon_15003_4"
+        }
+    ],
+    "Child": {
+        "26190101": {
+            "MonsterName": "Hermit_Normal_01",
+            "Type": "MONSTER_BOSS",
+            "HpDrops": [
+                {
+                    "dropId": 22010030,
+                    "hpPercent": 75
+                },
+                {
+                    "dropId": 22010030,
+                    "hpPercent": 50
+                },
+                {
+                    "dropId": 22010030,
+                    "hpPercent": 25
+                }
+            ],
+            "KillDropId": 22010030,
+            "Prop": [
+                {
+                    "type": "FIGHT_PROP_BASE_HP",
+                    "growCurve": "GROW_CURVE_HP_2"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_ATTACK",
+                    "growCurve": "GROW_CURVE_ATTACK_2"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_DEFENSE",
+                    "growCurve": "GROW_CURVE_DEFENSE"
+                }
+            ],
+            "LocalLegend": false,
+            "SubHurt": {
+                "Fire": 0.1000000014901,
+                "Grass": 0.1000000014901,
+                "Water": 0.6999999880791,
+                "Elec": 0.1000000014901,
+                "Wind": 0.6999999880791,
+                "Ice": 0.1000000014901,
+                "Rock": 0.1000000014901,
+                "Physical": 0.1000000014901
+            },
+            "Base": {
+                "HP": 225.4944000244141,
+                "ATK": 100.4800033569336,
+                "DEF": 500
+            }
+        },
+        "26190102": {
+            "MonsterName": "Hermit_WQ_01",
+            "Type": "MONSTER_BOSS",
+            "HpDrops": [
+                {
+                    "dropId": 22010030,
+                    "hpPercent": 75
+                },
+                {
+                    "dropId": 22010030,
+                    "hpPercent": 50
+                },
+                {
+                    "dropId": 22010030,
+                    "hpPercent": 25
+                }
+            ],
+            "KillDropId": 22010030,
+            "Prop": [
+                {
+                    "type": "FIGHT_PROP_BASE_HP",
+                    "growCurve": "GROW_CURVE_HP_2"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_ATTACK",
+                    "growCurve": "GROW_CURVE_ATTACK_2"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_DEFENSE",
+                    "growCurve": "GROW_CURVE_DEFENSE"
+                }
+            ],
+            "LocalLegend": false,
+            "SubHurt": {
+                "Fire": 0.1000000014901,
+                "Grass": 0.1000000014901,
+                "Water": 0.6999999880791,
+                "Elec": 0.1000000014901,
+                "Wind": 0.6999999880791,
+                "Ice": 0.1000000014901,
+                "Rock": 0.1000000014901,
+                "Physical": 0.1000000014901
+            },
+            "Base": {
+                "HP": 225.4944000244141,
+                "ATK": 100.4800033569336,
+                "DEF": 500
+            }
+        },
+        "26190103": {
+            "MonsterName": "Hermit_Normal_02",
+            "Type": "MONSTER_BOSS",
+            "HpDrops": [
+                {
+                    "dropId": 22010030,
+                    "hpPercent": 75
+                },
+                {
+                    "dropId": 22010030,
+                    "hpPercent": 50
+                },
+                {
+                    "dropId": 22010030,
+                    "hpPercent": 25
+                }
+            ],
+            "KillDropId": 22010030,
+            "Prop": [
+                {
+                    "type": "FIGHT_PROP_BASE_HP",
+                    "growCurve": "GROW_CURVE_HP_2"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_ATTACK",
+                    "growCurve": "GROW_CURVE_ATTACK_2"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_DEFENSE",
+                    "growCurve": "GROW_CURVE_DEFENSE"
+                }
+            ],
+            "LocalLegend": false,
+            "SubHurt": {
+                "Fire": 0.1000000014901,
+                "Grass": 0.1000000014901,
+                "Water": 0.6999999880791,
+                "Elec": 0.1000000014901,
+                "Wind": 0.6999999880791,
+                "Ice": 0.1000000014901,
+                "Rock": 0.1000000014901,
+                "Physical": 0.1000000014901
+            },
+            "Base": {
+                "HP": 225.4944000244141,
+                "ATK": 100.4800033569336,
+                "DEF": 500
+            }
+        }
+    }
+}

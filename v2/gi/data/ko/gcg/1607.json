@@ -1,0 +1,114 @@
+{
+    "Type": "Character",
+    "Name": "운근",
+    "Title": "무대를 빛내는 가인·운근",
+    "Desc": "무대를 빛내는 가인과, 장엄하고 익살스러운 노랫소리",
+    "Source": "캣테일 술집에서 운근 초대 및 친선 대전 난이도 승리 후 획득",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Yunjin",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "바위 원소",
+        "장병기",
+        "리월"
+    ],
+    "Talent": {
+        "16071": {
+            "Name": "구름을 스치는 격투",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "16072": {
+            "Name": "선운개상",
+            "Desc": "<color=#FFFFFFFF>$[C116073]</color>을 생성하고 본 캐릭터에게 <color=#FFFFFFFF>$[C116071]</color> 부착 및 <color=#FFFFFFFF>$[S16074]</color>의 $[K53]를 한다.",
+            "Child": {
+                "C116073": {
+                    "Name": "비운의 깃발",
+                    "Desc": "<color=#FFFFFFFF>아군 캐릭터가 일반 공격 시:</color> 아군 핸드 카드가 1장 이하일 경우 해당 스킬의 원소 주사위 소모 개수-1\\n<color=#FFFFFFFF>$[K3]: 1</color>(중첩 가능, 최대 중첩수: 4회)",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                },
+                "C116071": {
+                    "Name": "선운 보호막",
+                    "Desc": "<color=#FFFFFFFF>스킬 준비 기간:</color> $[K6]을 2pt 제공해 부착 캐릭터를 보호한다.",
+                    "Child": {
+                        "K6": {
+                            "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>보호막</color>",
+                            "Desc": "해당 보호막의 보호를 받는 캐릭터가 피격 시, 보호막을 소모해 피해를 상쇄한다."
+                        }
+                    }
+                },
+                "S16074": "S16074",
+                "K53": {
+                    "Name": "<color=#FFFFFFFF>스킬 준비</color>",
+                    "Desc": "일부 스킬은 바로 발동할 수 없고, 일정 횟수의 행동 순서 동안 <color=#FFFFFFFF>준비</color>를 해야 한다.\\n한 플레이어의 행동 순서가 됐을 때, 해당 플레이어의 「출전 캐릭터」가 현재 스킬을 <color=#FFFFFFFF>준비</color> 중이면 해당 플레이어의 행동을 건너뛴다. 스킬 <color=#FFFFFFFF>준비</color>를 끝냈을 경우, 캐릭터는 해당 스킬을 즉시 발동한다. (<color=#FFFFFFFF>준비</color>가 필요한 유형의 스킬은 「스킬 사용 후」 및 「캐릭터가 원소 반응 발동 후」 등의 효과를 발동할 수 없다)\\n오직 「출전 캐릭터」만 스킬을 <color=#FFFFFFFF>준비</color>할 수 있다. 만약 스킬을 <color=#FFFFFFFF>준비</color> 중인 「출전 캐릭터」가 교체되어 대기 상태가 되면, 스킬의 <color=#FFFFFFFF>준비</color>가 중단된다."
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 3
+            }
+        },
+        "16073": {
+            "Name": "절벽을 깎는 깃발",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[C116073]</color>을 3스택 생성한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_GEO",
+                "D__KEY__DAMAGE": 3,
+                "C116073": {
+                    "Name": "비운의 깃발",
+                    "Desc": "<color=#FFFFFFFF>아군 캐릭터가 일반 공격 시:</color> 아군 핸드 카드가 1장 이하일 경우 해당 스킬의 원소 주사위 소모 개수-1\\n<color=#FFFFFFFF>$[K3]: 1</color>(중첩 가능, 최대 중첩수: 4회)",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "16074": {
+            "Name": "장창개상",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다. 이번 턴에 아군이 카드를 최소 1장 $[K56] 또는 $[K57]했으면 이번 피해+1pt",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_GEO",
+                "D__KEY__DAMAGE": 2,
+                "K56": {
+                    "Name": "<color=#FFFFFFFF>포기</color>",
+                    "Desc": "행동 카드 또는 캐릭터 스킬의 효과를 통해, 핸드 카드 또는 카드 더미에서 행동 카드를 버린다."
+                },
+                "K57": {
+                    "Name": "<color=#FFFFFFFF>조정</color>",
+                    "Desc": "원소 조정을 진행하기 위해 핸드 카드에서 행동 카드를 버린다."
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {}
+        },
+        "16075": {
+            "Name": "",
+            "Desc": "",
+            "Child": {},
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 216071
+}

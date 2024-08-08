@@ -1,0 +1,106 @@
+{
+    "Type": "Character",
+    "Name": "Wriothesley",
+    "Title": "\"Emissary of Solitary Iniquity\" Wriothesley",
+    "Desc": "Guilty waters run deep.",
+    "Source": "Reward for inviting Wriothesley to a duel at The Cat's Tail and claiming victory in a Friendly Fracas with him",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Wriothesley",
+    "Hp": 10,
+    "Cost": 3,
+    "Tag": [
+        "Cryo",
+        "Catalyst",
+        "Fontaine",
+        "Arkhe: Ousia"
+    ],
+    "Talent": {
+        "11111": {
+            "Name": "Forceful Fists of Frost",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "11112": {
+            "Name": "Icefang Rush",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. This character gains <color=#FFFFFFFF>$[C111111]</color>.",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "C111111": {
+                    "Name": "Chilling Penalty",
+                    "Desc": "<color=#FFFFFFFF>When the attached character uses a Normal Attack:</color> Deal +1 DMG. If this character has at least 6 HP, this Skill costs 1 less {SPRITE_PRESET#1101}<color=#99FFFFFF>Cryo Die</color>.\\nAfter this Skill finalizes, if this character has at least 6 HP, deal 1 $[K5] to them; if this character has no more than 5 HP, heal them for 2 HP.\\n<color=#FFFFFFFF>$[K3]: 2</color>",
+                    "Child": {
+                        "K5": {
+                            "Name": "<color=#FFFFFFFF>Piercing DMG</color>",
+                            "Desc": "Piercing DMG cannot be increased by any bonuses, but cannot be defended against using Shields or DMG Immunity either."
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3
+            }
+        },
+        "11113": {
+            "Name": "Darkgold Wolfbite",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], creates 1 <color=#FFFFFFFF>$[C111112]</color>.\\n<color=#FFFFFFFF>When this character takes DMG or is healed 2 times in total this Round:</color> This Skill costs 1 less Elemental Die (Cost can be reduced by up to 2).",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "C111112": {
+                    "Name": "Lingering Icicles",
+                    "Desc": "<color=#FFFFFFFF>Before you choose your action:</color> Deal 2 $[K101].\\n<color=#FFFFFFFF>$[K3]: 1</color>",
+                    "Child": {
+                        "K101": {
+                            "Name": "{SPRITE_PRESET#2101}<color=#99FFFFFF>Cryo DMG</color>",
+                            "Desc": "Applies {SPRITE_PRESET#2101}Cryo and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Melt</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Superconduct</color>: DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Frozen</color>: DMG +1 for this instance, the target is unable to perform any Actions this Round (Can be removed in advance after the target receives Physical or Pyro DMG, in which case they will take +2 DMG)"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3,
+                "GCG_COST_ENERGY": 3
+            }
+        },
+        "11114": {
+            "Name": "",
+            "Desc": "",
+            "Child": {},
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        },
+        "11115": {
+            "Name": "",
+            "Desc": "",
+            "Child": {},
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        },
+        "11116": {
+            "Name": "Darkgold Wolfbite",
+            "Desc": "<color=#FFFFFFFF>When this character takes DMG or is healed 2 times in total this Round:</color> Elemental Burst costs 1 less Elemental Die (Cost can be reduced by up to 2).",
+            "Child": {},
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 211111
+}

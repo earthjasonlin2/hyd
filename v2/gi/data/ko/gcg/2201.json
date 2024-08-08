@@ -1,0 +1,84 @@
+{
+    "Type": "Character",
+    "Name": "물의 정령·로데이아",
+    "Title": "물의 주인·로데이아",
+    "Desc": "「하지만, 강과 계곡이 흐르고 비가 그치지 않는 한, 물은 사라지지 않아…」",
+    "Source": "캣테일 술집의 왕자님을 통해 술집 도전 진행 및 친선 대전 난이도의 물의 정령·로데이아에게 승리 후 획득",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_Oceanid",
+    "Hp": 10,
+    "Cost": 3,
+    "Tag": [
+        "물 원소",
+        "기타 무기",
+        "마물"
+    ],
+    "Talent": {
+        "22011": {
+            "Name": "솟구침",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "D__KEY__DAMAGE": 1
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "22012": {
+            "Name": "물의 환상",
+            "Desc": "1종류의 <color=#FFFFFFFF>$[C122010]</color>을 랜덤으로 소환한다. (다른 종류를 우선적으로 생성, 소환 구역에 동시에 최대 2종류의 $[C122010]이 존재할 수 있다)",
+            "Child": {
+                "C122010": {
+                    "Name": "물의 환형",
+                    "Desc": "「물의 환형」 총 3종, 동시에 최대 2개 존재 가능:\\n<color=#FFFFFFFF>다람쥐</color>: 종료 단계에서 $[K102]를 2pt 준다. 2회 사용 가능\\n<color=#FFFFFFFF>솔개</color>: 종료 단계에서 $[K102]를 1pt 준다. 3회 사용 가능\\n<color=#FFFFFFFF>개구리</color>: 출전 캐릭터가 받은 피해를 1pt 상쇄한다. 1회 사용 가능, 소진 후 종료 단계에서 $[K102]를 2pt 준다.",
+                    "Child": {
+                        "K102": {
+                            "Name": "{SPRITE_PRESET#2102}<color=#80C0FFFF>물 원소 피해</color>",
+                            "Desc": "{SPRITE_PRESET#2102}물 원소 부착 시 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2103}<color=#FFFFFFFF>증발</color>: 이번 피해+2pt\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}<color=#FFFFFFFF>감전</color>: 이번 피해+1pt, 대상 이외의 모든 상대 캐릭터에게 관통 피해를 1pt 준다.\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2101}<color=#FFFFFFFF>빙결</color>: 이번 피해+1pt, 이번 턴에 대상을 행동 불가로 만든다. (물리 피해 또는 불 원소 피해를 받으면 조기 해제되지만, 해당 피해로 받는 피해량이 2pt 추가된다)\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}<color=#FFFFFFFF>개화</color>: 이번 피해+1pt, 다음번 불 원소 또는 번개 원소 피해를 2pt 증가시키는 [<color=#FFFFFFFF>풀 원핵</color>]을 생성한다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3
+            }
+        },
+        "22013": {
+            "Name": "임야백태",
+            "Desc": "2종류의 <color=#FFFFFFFF>$[C122010]</color>을 랜덤으로 소환한다. (다른 종류를 우선적으로 생성, 소환 구역에 동시에 최대 2종류의 $[C122010]이 존재할 수 있다)",
+            "Child": {
+                "C122010": {
+                    "Name": "물의 환형",
+                    "Desc": "「물의 환형」 총 3종, 동시에 최대 2개 존재 가능:\\n<color=#FFFFFFFF>다람쥐</color>: 종료 단계에서 $[K102]를 2pt 준다. 2회 사용 가능\\n<color=#FFFFFFFF>솔개</color>: 종료 단계에서 $[K102]를 1pt 준다. 3회 사용 가능\\n<color=#FFFFFFFF>개구리</color>: 출전 캐릭터가 받은 피해를 1pt 상쇄한다. 1회 사용 가능, 소진 후 종료 단계에서 $[K102]를 2pt 준다.",
+                    "Child": {
+                        "K102": {
+                            "Name": "{SPRITE_PRESET#2102}<color=#80C0FFFF>물 원소 피해</color>",
+                            "Desc": "{SPRITE_PRESET#2102}물 원소 부착 시 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2103}<color=#FFFFFFFF>증발</color>: 이번 피해+2pt\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}<color=#FFFFFFFF>감전</color>: 이번 피해+1pt, 대상 이외의 모든 상대 캐릭터에게 관통 피해를 1pt 준다.\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2101}<color=#FFFFFFFF>빙결</color>: 이번 피해+1pt, 이번 턴에 대상을 행동 불가로 만든다. (물리 피해 또는 불 원소 피해를 받으면 조기 해제되지만, 해당 피해로 받는 피해량이 2pt 추가된다)\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}<color=#FFFFFFFF>개화</color>: 이번 피해+1pt, 다음번 불 원소 또는 번개 원소 피해를 2pt 증가시키는 [<color=#FFFFFFFF>풀 원핵</color>]을 생성한다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 5
+            }
+        },
+        "22014": {
+            "Name": "밀물과 급류",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다. 아군의 소환물이 1개 있을 때마다 이번 피해가 1pt 증가한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "D__KEY__DAMAGE": 4
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3,
+                "GCG_COST_ENERGY": 3
+            }
+        }
+    },
+    "Related": 222011
+}

@@ -1,0 +1,104 @@
+{
+    "Type": "Character",
+    "Name": "Alhaitham",
+    "Title": "\"Admonishing Instruction\" Alhaitham",
+    "Desc": "Learning, thinking, and taking care of business.",
+    "Source": "Reward for inviting Alhaitham to a duel at The Cat's Tail and claiming victory in a Friendly Fracas with him",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Alhatham",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "Dendro",
+        "Sword",
+        "Sumeru"
+    ],
+    "Talent": {
+        "17061": {
+            "Name": "Abductive Reasoning",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "17062": {
+            "Name": "Universality: An Elaboration on Form",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. This character gains <color=#FFFFFFFF>$[C117061]</color>.",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_DENDRO",
+                "C117061": {
+                    "Name": "Chisel-Light Mirror",
+                    "Desc": "$[K100] dealt by the character is converted to $[K107].\\n<color=#FFFFFFFF>After this character performs a Normal Attack:</color> Deal 1 $[K107]. If it is a $[K51], this state's $[K4] +1.\\n<color=#FFFFFFFF>$[K4]: 2</color> (Can stack. Max 3 Rounds.)",
+                    "Child": {
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>",
+                            "Desc": "Physical DMG will not apply any Elements, nor can it engage in Elemental Reactions."
+                        },
+                        "K107": {
+                            "Name": "{SPRITE_PRESET#2107}<color=#7EC236FF>Dendro DMG</color>",
+                            "Desc": "Applies {SPRITE_PRESET#2107}Dendro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Bloom</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Dendro Core</color>] that grants +2 DMG to the next instance of Pyro or Electro DMG\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Burning</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Burning Flame</color>] that will deal 1 Pyro DMG at the end of the Round (Takes effect once, max 2 stacks)\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Quicken</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Catalyzing Field</color>] that grants +1 DMG to the next 2 instances of Dendro or Electro DMG"
+                        },
+                        "K51": {
+                            "Name": "<color=#FFFFFFFF>Charged Attack</color>",
+                            "Desc": "Before your Action Phase, should the total number of your Elemental Dice be even, your Normal Attack will be considered a Charged Attack."
+                        },
+                        "K4": {
+                            "Name": "<color=#FFFFFFFF>Duration (Rounds)</color>",
+                            "Desc": "Each time you reach the end of a Round, <color=#FFFFFFFF>Duration (Rounds)</color> -1.\\nThis card will be discarded immediately once <color=#FFFFFFFF>Duration (Rounds)</color> runs out."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 3
+            }
+        },
+        "17063": {
+            "Name": "Particular Field: Fetters of Phenomena",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], consumes <color=#FFFFFFFF>$[C117061]</color>, with the DMG bonus based on <color=#FFFFFFFF>$[C117061]</color>'s $[K4] consumed.\\nIf <color=#FFFFFFFF>$[C117061]</color> $[K4] consumed is 0/1/2, then apply <color=#FFFFFFFF>$[C117061]</color> with 3/2/1 $[K4] to this character.",
+            "Child": {
+                "D__KEY__DAMAGE": 4,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_DENDRO",
+                "C117061": {
+                    "Name": "Chisel-Light Mirror",
+                    "Desc": "$[K100] dealt by the character is converted to $[K107].\\n<color=#FFFFFFFF>After this character performs a Normal Attack:</color> Deal 1 $[K107]. If it is a $[K51], this state's $[K4] +1.\\n<color=#FFFFFFFF>$[K4]: 2</color> (Can stack. Max 3 Rounds.)",
+                    "Child": {
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>",
+                            "Desc": "Physical DMG will not apply any Elements, nor can it engage in Elemental Reactions."
+                        },
+                        "K107": {
+                            "Name": "{SPRITE_PRESET#2107}<color=#7EC236FF>Dendro DMG</color>",
+                            "Desc": "Applies {SPRITE_PRESET#2107}Dendro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Bloom</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Dendro Core</color>] that grants +2 DMG to the next instance of Pyro or Electro DMG\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Burning</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Burning Flame</color>] that will deal 1 Pyro DMG at the end of the Round (Takes effect once, max 2 stacks)\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Quicken</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Catalyzing Field</color>] that grants +1 DMG to the next 2 instances of Dendro or Electro DMG"
+                        },
+                        "K51": {
+                            "Name": "<color=#FFFFFFFF>Charged Attack</color>",
+                            "Desc": "Before your Action Phase, should the total number of your Elemental Dice be even, your Normal Attack will be considered a Charged Attack."
+                        },
+                        "K4": {
+                            "Name": "<color=#FFFFFFFF>Duration (Rounds)</color>",
+                            "Desc": "Each time you reach the end of a Round, <color=#FFFFFFFF>Duration (Rounds)</color> -1.\\nThis card will be discarded immediately once <color=#FFFFFFFF>Duration (Rounds)</color> runs out."
+                        }
+                    }
+                },
+                "K4": {
+                    "Name": "<color=#FFFFFFFF>Duration (Rounds)</color>",
+                    "Desc": "Each time you reach the end of a Round, <color=#FFFFFFFF>Duration (Rounds)</color> -1.\\nThis card will be discarded immediately once <color=#FFFFFFFF>Duration (Rounds)</color> runs out."
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 217061
+}

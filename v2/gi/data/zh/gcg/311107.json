@@ -1,0 +1,33 @@
+{
+    "Type": "Action",
+    "Name": "图莱杜拉的回忆",
+    "Title": "堙没的蓝宝石泪滴·图莱杜拉的回忆",
+    "Desc": "「最终，一切良人与恶徒，都平等地被命运的磨盘碾碎，蓝宝石之城邦失色分崩离析，恰似泪滴在烈日下干涸。」",
+    "Source": "",
+    "Icon": "UI_Gcg_CardFace_Modify_Weapon_Tulaidu",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PAIMON",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "武器",
+        "法器"
+    ],
+    "Talent": {
+        "Name": "图莱杜拉的回忆",
+        "Desc": "<color=#FFFFFFFF>角色造成的伤害+1</color>。\\n<color=#FFFFFFFF>角色进行$[K51]时：</color>少花费1个$[K309]。（每回合最多触发2次）\\n（<color=#FFFFFFFF>「{SPRITE_PRESET#3201}法器」角色</color>才能装备。角色最多装备1件「{SPRITE_PRESET#3003}武器」）",
+        "Child": {
+            "K51": {
+                "Name": "<color=#FFFFFFFF>重击</color>",
+                "Desc": "我方行动开始前，如果元素骰总数为偶数，则进行的「普通攻击」将被视为「重击」。"
+            },
+            "K309": {
+                "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1109}无色元素</color>",
+                "Desc": "可以用任意类型的元素骰子组合，来支付此类费用。"
+            }
+        }
+    }
+}

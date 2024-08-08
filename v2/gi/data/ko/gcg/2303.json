@@ -1,0 +1,106 @@
+{
+    "Type": "Character",
+    "Name": "도금 여단·모래의 이야기꾼",
+    "Title": "시와 비사·모래의 이야기꾼",
+    "Desc": "오늘날에도 여전히 이야기를 기억하는 자는 몸속에 흐르는 사막의 피를 배신하지 않을 것이다",
+    "Source": "캣테일 술집의 왕자님을 통해 술집 도전 진행 및 친선 대전 난이도의 도금 여단·모래의 이야기꾼에게 승리 후 획득",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_Muscleman",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "불 원소",
+        "기타 무기",
+        "도금 여단"
+    ],
+    "Talent": {
+        "23031": {
+            "Name": "용해의 빛",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO",
+                "D__KEY__DAMAGE": 1
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "23032": {
+            "Name": "화염 결정 쇄도",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO",
+                "D__KEY__DAMAGE": 3
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 3
+            }
+        },
+        "23033": {
+            "Name": "악령 소생·마의 화염 전갈",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[C123031]</color>을 소환한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO",
+                "D__KEY__DAMAGE": 2,
+                "C123031": {
+                    "Name": "악령·마의 화염 전갈",
+                    "Desc": "<color=#FFFFFFFF>종료 단계:</color> $[K103]를 1pt 준다.\\n<color=#FFFFFFFF>$[K3]: 2</color>\\n\\n<color=#FFFFFFFF>필드 입장 및 행동 단계 시작 시:</color> 아군 $[A2303]에게 $[C123033]를 부착한다. ($[C123031]이 필드에 있을 시, 턴마다 1회씩 캐릭터가 받는 피해-1pt)",
+                    "Child": {
+                        "K103": {
+                            "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>불 원소 피해</color>",
+                            "Desc": "{SPRITE_PRESET#2103}불 원소 부착 시 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>융해</color>: 이번 피해+2pt\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>증발</color>: 이번 피해+2pt\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>과부하</color>: 이번 피해+2pt, 대상이 다음 캐릭터로 강제 교체된다.\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>연소</color>: 이번 피해+1pt, 턴 종료 시 불 원소 피해를 1pt 주는 [<color=#FFFFFFFF>불타는 화염</color>]을 생성한다. (사용 가능 횟수: 1, 최대 중첩수: 2)"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        },
+                        "A2303": "도금 여단·모래의 이야기꾼",
+                        "C123033": {
+                            "Name": "마의 화염 전갈·방어",
+                            "Desc": "<color=#FFFFFFFF>$[C123031]이 필드에 있을 시:</color> 부착 캐릭터가 받는 피해-1pt(턴당 1회)",
+                            "Child": {}
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "23034": {
+            "Name": "악령의 힘",
+            "Desc": "[패시브] <color=#FFFFFFFF>이 캐릭터가 피해를 받은 후: </color>이 캐릭터의 HP가 7pt 이하이면 $[K310]를 1pt 획득한다. (대전당 1회 제한)",
+            "Child": {
+                "K310": {
+                    "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}원소 에너지</color>",
+                    "Desc": "캐릭터가 「원소폭발」을 사용하려면 {SPRITE_PRESET#1110}원소 에너지를 소모해야 한다.\\n캐릭터가 「원소전투 스킬」 또는 「일반 공격」을 사용하면 {SPRITE_PRESET#1110}원소 에너지를 1pt 획득한다."
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        },
+        "23035": {
+            "Name": "",
+            "Desc": "턴이 시작될 때마다 이 캐릭터의 카운트가 초기화된다.",
+            "Child": {},
+            "Cost": {}
+        },
+        "23036": {
+            "Name": "마의 화염 전갈·방어",
+            "Desc": "턴이 시작될 때마다 필드에 소환물이 있다면 보호막이 갱신된다.",
+            "Child": {},
+            "Cost": {}
+        },
+        "23037": {
+            "Name": "마의 화염 전갈·방어",
+            "Desc": "턴이 시작될 때마다 필드에 소환물이 있다면 보호막이 갱신된다. (특성)",
+            "Child": {},
+            "Cost": {}
+        }
+    },
+    "Related": 223031
+}

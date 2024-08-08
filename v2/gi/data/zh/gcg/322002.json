@@ -1,0 +1,32 @@
+{
+    "Type": "Action",
+    "Name": "凯瑟琳",
+    "Title": "协会招待员·凯瑟琳",
+    "Desc": "「向着星辰与深渊！欢迎来到冒险家协会。」",
+    "Source": "在大世界与牌手岚姐的冒险挑战中完成挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Assist_NPC_Katheryne",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PAIMON",
+            "count": 1
+        },
+        {}
+    ],
+    "Tag": [
+        "伙伴"
+    ],
+    "Talent": {
+        "Name": "凯瑟琳",
+        "Desc": "<color=#FFFFFFFF>我方执行「切换角色」行动时：</color>将此次切换视为「$[K2]」而非「$[K1]」。（每回合1次）",
+        "Child": {
+            "K2": {
+                "Name": "<color=#FFFFFFFF>快速行动</color>",
+                "Desc": "执行了一次快速行动后，我方可以继续进行其他行动。\\n只有执行了一次战斗行动后，才会轮到对方行动。"
+            },
+            "K1": {
+                "Name": "<color=#FFFFFFFF>战斗行动</color>",
+                "Desc": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+            }
+        }
+    }
+}

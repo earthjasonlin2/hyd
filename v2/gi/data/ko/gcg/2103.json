@@ -1,0 +1,110 @@
+{
+    "Type": "Character",
+    "Name": "무상의 얼음",
+    "Title": "무상의 얼음",
+    "Desc": "코드 네임이 「달레트」인 고급 얼음 원소 생명체.\\n구기 종목에 서툰 것 같다…",
+    "Source": "캣테일 술집의 왕자님을 통해 술집 도전 진행 및 친선 대전 난이도의 무상의 얼음에게 승리 후 획득",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_EffigyIce",
+    "Hp": 8,
+    "Cost": 2,
+    "Tag": [
+        "얼음 원소",
+        "기타 무기",
+        "마물"
+    ],
+    "Talent": {
+        "21031": {
+            "Name": "얼음송곳 분사",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "D__KEY__DAMAGE": 1
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "21032": {
+            "Name": "얼음고리 원무",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 본 캐릭터에게 <color=#FFFFFFFF>$[C121031]</color>을 부착한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "D__KEY__DAMAGE": 3,
+                "C121031": {
+                    "Name": "흩어지는 얼음송곳",
+                    "Desc": "<color=#FFFFFFFF>캐릭터가 일반 공격 시:</color> 모든 적 대기 캐릭터에게 <color=#FFFFFFFF>$[K5]</color>를 1pt 준다.\\n<color=#FFFFFFFF>$[K3]: 1</color>",
+                    "Child": {
+                        "K5": {
+                            "Name": "<color=#FFFFFFFF>관통 피해</color>",
+                            "Desc": "관통 피해는 피해 보너스를 획득할 수 없으나, 주는 피해가 보호막 또는 피해 면역과 같은 효과에 의해 상쇄되지 않는다."
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3
+            }
+        },
+        "21033": {
+            "Name": "얼음가시 폭격",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 적의 모든 대기 캐릭터에게 <color=#FFFFFFFF>$[K5]</color>를 1pt 주며 <color=#FFFFFFFF>$[C121033]</color>를 소환한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "D__KEY__DAMAGE": 2,
+                "K5": {
+                    "Name": "<color=#FFFFFFFF>관통 피해</color>",
+                    "Desc": "관통 피해는 피해 보너스를 획득할 수 없으나, 주는 피해가 보호막 또는 피해 면역과 같은 효과에 의해 상쇄되지 않는다."
+                },
+                "C121033": {
+                    "Name": "찌르는 얼음가시",
+                    "Desc": "<color=#FFFFFFFF>종료 단계:</color> 적군 중 $[K7]에게 $[K101]를 1pt 준다.\\n<color=#FFFFFFFF>$[K3]: 2</color>",
+                    "Child": {
+                        "K7": {
+                            "Name": "<color=#FFFFFFFF>아군 출전 캐릭터와 가장 가까운 캐릭터</color>",
+                            "Desc": "아군 출전 캐릭터와 「가장 가까운」 적 캐릭터란 위치가 아군 출전 캐릭터와 가장 가까운 적 캐릭터를 가리킨다.\\n가장 가까운 캐릭터가 복수 존재할 경우, 가장 앞에 있는 캐릭터가 「가장 가까운」 것으로 간주된다."
+                        },
+                        "K101": {
+                            "Name": "{SPRITE_PRESET#2101}<color=#99FFFFFF>얼음 원소 피해</color>",
+                            "Desc": "{SPRITE_PRESET#2101}얼음 원소 부착 시 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2103}<color=#FFFFFFFF>융해</color>: 이번 피해+2pt\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2104}<color=#FFFFFFFF>초전도</color>: 이번 피해+1pt, 대상 이외의 모든 상대 캐릭터에게 관통 피해를 1pt 준다.\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2102}<color=#FFFFFFFF>빙결</color>: 이번 피해+1pt, 이번 턴에 대상을 행동 불가로 만든다. (물리 피해 또는 불 원소 피해를 받으면 조기 해제되지만, 해당 피해로 받는 피해량이 2pt 추가된다)"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "21034": {
+            "Name": "얼음수정 코어",
+            "Desc": "[패시브] 전투 시작 시, 시작부터 <color=#FFFFFFFF>$[C121034]</color>가 부착된다.",
+            "Child": {
+                "C121034": {
+                    "Name": "얼음수정 코어",
+                    "Desc": "<color=#FFFFFFFF>부착 캐릭터가 처치될 시:</color> 해당 효과가 제거되며, 캐릭터 $[K54] 및 해당 캐릭터의 HP를 1pt 회복한다.",
+                    "Child": {
+                        "K54": {
+                            "Name": "<color=#FFFFFFFF>처치 면역</color>",
+                            "Desc": "일부 효과는 캐릭터의 HP가 0이 될 때, 해당 캐릭터에게 <color=#FFFFFFFF>처치 면역</color> 및 일정 HP 회복 효과를 부여한다.\\n이때 캐릭터는 <color=#FFFFFFFF>처치</color>된 적 없는 것으로 간주한다. (따라서 캐릭터에 부착된 장비와 상태를 버리지 않고, 원소 에너지도 모두 사라지지 않는다)"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 221031
+}

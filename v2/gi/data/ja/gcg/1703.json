@@ -1,0 +1,106 @@
+{
+    "Type": "Character",
+    "Name": "ナヒーダ",
+    "Title": "白草浄華·ナヒーダ",
+    "Desc": "白草浄華、啓蟄の深宮",
+    "Source": "キャッツテールでナヒーダを招待し、友好対戦に勝利することで獲得",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Nahida",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "草元素",
+        "法器",
+        "スメール"
+    ],
+    "Talent": {
+        "17031": {
+            "Name": "行相",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_DENDRO",
+                "D__KEY__DAMAGE": 1
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "17032": {
+            "Name": "所聞遍計",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、目標キャラに<color=#FFFFFFFF>$[C117031]</color>を付与する。付与する前に、目標キャラにすでに<color=#FFFFFFFF>$[C117031]</color>が付与されている場合、相手のチーム全員に<color=#FFFFFFFF>$[C117031]</color>を付与する。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_DENDRO",
+                "D__KEY__DAMAGE": 2,
+                "C117031": {
+                    "Name": "蘊種印",
+                    "Desc": "<color=#FFFFFFFF>「蘊種印」を持つキャラが元素反応によるダメージを受けると</color>、同一チームの「蘊種印」を持つキャラに$[K5]を1与える。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+                    "Child": {
+                        "K5": {
+                            "Name": "<color=#FFFFFFFF>貫通ダメージ</color>",
+                            "Desc": "貫通ダメージはダメージアップ効果を受けられません。また、シールド、ダメージ無効化などの効果で相殺されることもありません。"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                            "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 3
+            }
+        },
+        "17033": {
+            "Name": "所聞遍計·真如",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、相手のチーム全員に<color=#FFFFFFFF>$[C117031]</color>を付与する。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_DENDRO",
+                "D__KEY__DAMAGE": 3,
+                "C117031": {
+                    "Name": "蘊種印",
+                    "Desc": "<color=#FFFFFFFF>「蘊種印」を持つキャラが元素反応によるダメージを受けると</color>、同一チームの「蘊種印」を持つキャラに$[K5]を1与える。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+                    "Child": {
+                        "K5": {
+                            "Name": "<color=#FFFFFFFF>貫通ダメージ</color>",
+                            "Desc": "貫通ダメージはダメージアップ効果を受けられません。また、シールド、ダメージ無効化などの効果で相殺されることもありません。"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                            "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 5
+            }
+        },
+        "17034": {
+            "Name": "心景幻成",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、<color=#FFFFFFFF>$[C117032]</color>を生成する。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_DENDRO",
+                "D__KEY__DAMAGE": 4,
+                "C117032": {
+                    "Name": "摩耶の宮殿",
+                    "Desc": "<color=#FFFFFFFF>味方が元素反応を起こした時</color>、ダメージがさらに+1。\\n<color=#FFFFFFFF>$[K4]：2</color>",
+                    "Child": {
+                        "K4": {
+                            "Name": "<color=#FFFFFFFF>継続ラウンド数</color>",
+                            "Desc": "各ラウンドのエンドフェーズで、<color=#FFFFFFFF>継続ラウンド数</color>が1マイナスされます。\\n<color=#FFFFFFFF>継続ラウンド数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 217031
+}

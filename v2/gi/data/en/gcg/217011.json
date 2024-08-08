@@ -1,0 +1,39 @@
+{
+    "Type": "Action",
+    "Name": "Floral Sidewinder",
+    "Title": "Collei: Floral Sidewinder",
+    "Desc": "Never underestimate Collei, and never underestimate her cat.",
+    "Source": "Reward for inviting Collei to a duel at The Cat's Tail and achieving all corresponding challenge objectives",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Collei",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_DENDRO",
+            "count": 4
+        },
+        {}
+    ],
+    "Tag": [
+        "Talent",
+        "Combat Action"
+    ],
+    "Talent": {
+        "Name": "Floral Sidewinder",
+        "Desc": "$[K1]: When your active character is <color=#FFFFFFFF>$[A1701]</color>, equip this card.\\nAfter $[A1701] equips this card, immediately use <color=#FFD780FF>$[S17012]</color> once.\\nAfter your $[A1701], who has this card equipped, <color=#FFFFFFFF>uses $[S17012]</color>, during this Round, when your characters' Skills trigger $[K217]: Deal 1 $[K107]. (Once per Round)\\n(You must have $[A1701] in your deck to add this card to your deck.)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+            },
+            "A1701": "Floral Sidewinder",
+            "S17012": "S17012",
+            "K217": {
+                "Name": "<color=#7EC236FF>{SPRITE_PRESET#2107}Dendro-Related Reactions</color>",
+                "Desc": "{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Bloom</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Dendro Core</color>] that grants +2 DMG to the next instance of Pyro or Electro DMG\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Burning</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Burning Flame</color>] that will deal 1 Pyro DMG at the end of the Round (Takes effect once, max 2 stacks)\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Quicken</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Catalyzing Field</color>] that grants +1 DMG to the next 2 instances of Dendro or Electro DMG"
+            },
+            "K107": {
+                "Name": "{SPRITE_PRESET#2107}<color=#7EC236FF>Dendro DMG</color>",
+                "Desc": "Applies {SPRITE_PRESET#2107}Dendro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Bloom</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Dendro Core</color>] that grants +2 DMG to the next instance of Pyro or Electro DMG\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Burning</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Burning Flame</color>] that will deal 1 Pyro DMG at the end of the Round (Takes effect once, max 2 stacks)\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Quicken</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Catalyzing Field</color>] that grants +1 DMG to the next 2 instances of Dendro or Electro DMG"
+            }
+        }
+    }
+}

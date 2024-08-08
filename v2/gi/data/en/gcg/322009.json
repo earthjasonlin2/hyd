@@ -1,0 +1,29 @@
+{
+    "Type": "Action",
+    "Name": "Chang the Ninth",
+    "Title": "Chang the Ninth, Listless Literati",
+    "Desc": "\"He who has not known poverty has yet to become a true man, and at least this man has books to keep him company!\"",
+    "Source": "",
+    "Icon": "UI_Gcg_CardFace_Assist_NPC_Changjiuye",
+    "Cost": [
+        {},
+        {}
+    ],
+    "Tag": [
+        "Companion"
+    ],
+    "Talent": {
+        "Name": "Chang the Ninth",
+        "Desc": "<color=#FFFFFFFF>After either side uses a Skill:</color> If $[K100] or $[K5] was dealt, or an <color=#FFFFFFFF>Elemental Reaction</color> was triggered, this card gains 1 <color=#FFFFFFFF>Inspiration</color>.\\nWhen this card gains 3 <color=#FFFFFFFF>Inspiration</color>, then discard this card and draw 2 cards.",
+        "Child": {
+            "K100": {
+                "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>",
+                "Desc": "Physical DMG will not apply any Elements, nor can it engage in Elemental Reactions."
+            },
+            "K5": {
+                "Name": "<color=#FFFFFFFF>Piercing DMG</color>",
+                "Desc": "Piercing DMG cannot be increased by any bonuses, but cannot be defended against using Shields or DMG Immunity either."
+            }
+        }
+    }
+}

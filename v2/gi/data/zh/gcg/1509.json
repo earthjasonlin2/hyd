@@ -1,0 +1,100 @@
+{
+    "Type": "Character",
+    "Name": "珐露珊",
+    "Title": "机逐封秘·珐露珊",
+    "Desc": "机巧易解，世殊难算。",
+    "Source": "在猫尾酒馆中邀请珐露珊进行对局，在友好对局难度中获得胜利后获取",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Faruzan",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "风元素",
+        "弓",
+        "须弥"
+    ],
+    "Talent": {
+        "15091": {
+            "Name": "迴身箭术",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "15092": {
+            "Name": "非想风天",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，本角色附属<color=#FFFFFFFF>$[C115091]</color>。",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO",
+                "C115091": {
+                    "Name": "疾风示现",
+                    "Desc": "<color=#FFFFFFFF>所附属角色进行$[K51]时：</color>少花费1个<color=#80FFD7FF>$[K309]</color>，造成的$[K100]变为$[K105]，并且使目标角色附属<color=#FFFFFFFF>$[K1024]</color>。\\n<color=#FFFFFFFF>$[K3]：1</color>",
+                    "Child": {
+                        "K51": {
+                            "Name": "<color=#FFFFFFFF>重击</color>",
+                            "Desc": "我方行动开始前，如果元素骰总数为偶数，则进行的「普通攻击」将被视为「重击」。"
+                        },
+                        "K309": {
+                            "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1109}无色元素</color>",
+                            "Desc": "可以用任意类型的元素骰子组合，来支付此类费用。"
+                        },
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>",
+                            "Desc": "物理伤害不会附着元素，也不会发生元素反应。"
+                        },
+                        "K105": {
+                            "Name": "{SPRITE_PRESET#2105}<color=#80FFD7FF>风元素伤害</color>",
+                            "Desc": "和已附着的元素发生元素反应：\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2101}<color=#FFFFFFFF>扩散（冰）</color>：对目标以外的所有敌方角色造成1点冰元素伤害\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2102}<color=#FFFFFFFF>扩散（水）</color>：对目标以外的所有敌方角色造成1点水元素伤害\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2103}<color=#FFFFFFFF>扩散（火）</color>：对目标以外的所有敌方角色造成1点火元素伤害\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2104}<color=#FFFFFFFF>扩散（雷）</color>：对目标以外的所有敌方角色造成1点雷元素伤害"
+                        },
+                        "K1024": {
+                            "Name": "<color=#FFFFFFFF>风压坍陷</color>",
+                            "Desc": "<color=#FFFFFFFF>结束阶段：</color>将所附属角色切换为「出战角色」。\\n<color=#FFFFFFFF><color=#FFFFFFFF>可用次数</color>：1</color>\\n（同一方场上最多存在一个此状态）"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>可用次数</color>",
+                            "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 3
+            }
+        },
+        "15093": {
+            "Name": "抟风秘道",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，召唤<color=#FFFFFFFF>$[C115093]</color>。",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO",
+                "C115093": {
+                    "Name": "赫耀多方面体",
+                    "Desc": "<color=#FFFFFFFF>结束阶段：</color>造成1点$[K105]。\\n<color=#FFFFFFFF>$[K3]：3</color>\\n<color=#FFFFFFFF>此召唤物在场时：</color>敌方角色受到的$[K105]+1。",
+                    "Child": {
+                        "K105": {
+                            "Name": "{SPRITE_PRESET#2105}<color=#80FFD7FF>风元素伤害</color>",
+                            "Desc": "和已附着的元素发生元素反应：\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2101}<color=#FFFFFFFF>扩散（冰）</color>：对目标以外的所有敌方角色造成1点冰元素伤害\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2102}<color=#FFFFFFFF>扩散（水）</color>：对目标以外的所有敌方角色造成1点水元素伤害\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2103}<color=#FFFFFFFF>扩散（火）</color>：对目标以外的所有敌方角色造成1点火元素伤害\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2104}<color=#FFFFFFFF>扩散（雷）</color>：对目标以外的所有敌方角色造成1点雷元素伤害"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>可用次数</color>",
+                            "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 215091
+}

@@ -1,0 +1,78 @@
+{
+    "Type": "Character",
+    "Name": "Eula",
+    "Title": "\"Dance of the Shimmering Wave\" Eula",
+    "Desc": "It's but a game. I won't hold a grudge should luck happen to be on your side.",
+    "Source": "Reward for inviting Eula to a duel at The Cat's Tail and claiming victory in a Friendly Fracas with her",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Eula",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "Cryo",
+        "Claymore",
+        "Mondstadt"
+    ],
+    "Talent": {
+        "11061": {
+            "Name": "Favonius Bladework - Edel",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "11062": {
+            "Name": "Icetide Vortex",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. If this character has not yet gained <color=#FFFFFFFF>$[C111061]</color>, they will gain <color=#FFFFFFFF>$[C111061]</color>.",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "C111061": {
+                    "Name": "Grimheart",
+                    "Desc": "<color=#FFFFFFFF>After the character to which this is attached uses $[S11062]:</color> Remove this status, DMG +3 for this instance.",
+                    "Child": {
+                        "S11062": "S11062"
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3
+            }
+        },
+        "11063": {
+            "Name": "Glacial Illumination",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], summons 1 <color=#FFFFFFFF>$[C111062]</color>.",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "C111062": {
+                    "Name": "Lightfall Sword",
+                    "Desc": "<color=#FFFFFFFF>When $[A1106] uses a Normal Attack or Elemental Skill:</color> This card will accumulate 2 <color=#FFFFFFFF>Zeal</color> stacks, but $[A1106] will not gain Energy.\\n<color=#FFFFFFFF>End Phase:</color> Discard this card and deal 3 $[K100]. Each <color=#FFFFFFFF>Zeal</color> stack adds 1 DMG to this damage instance.\\n(Effects on this card's $[K3] will apply to <color=#FFFFFFFF>Zeal</color> stacks.)",
+                    "Child": {
+                        "A1106": "Eula",
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>",
+                            "Desc": "Physical DMG will not apply any Elements, nor can it engage in Elemental Reactions."
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 211061
+}

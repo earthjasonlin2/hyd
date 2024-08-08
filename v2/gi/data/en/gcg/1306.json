@@ -1,0 +1,88 @@
+{
+    "Type": "Character",
+    "Name": "Klee",
+    "Title": "\"Fleeing Sunlight\" Klee",
+    "Desc": "Every card you draw may bring an \"explosive surprise.\"",
+    "Source": "Reward for inviting Klee to a duel at The Cat's Tail and claiming victory in a Friendly Fracas with her",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Klee",
+    "Hp": 10,
+    "Cost": 3,
+    "Tag": [
+        "Pyro",
+        "Catalyst",
+        "Mondstadt"
+    ],
+    "Talent": {
+        "13061": {
+            "Name": "Kaboom!",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "13062": {
+            "Name": "Jumpy Dumpty",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. This character gains <color=#FFFFFFFF>$[C113061]</color>.",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO",
+                "C113061": {
+                    "Name": "Explosive Spark",
+                    "Desc": "<color=#FFFFFFFF>When the character to which this is attached uses a $[K51]: </color>Spend 1 less <color=#FF9999FF>$[K303]</color> and deal +1 DMG.\\n<color=#FFFFFFFF>$[K3]: 1</color>",
+                    "Child": {
+                        "K51": {
+                            "Name": "<color=#FFFFFFFF>Charged Attack</color>",
+                            "Desc": "Before your Action Phase, should the total number of your Elemental Dice be even, your Normal Attack will be considered a Charged Attack."
+                        },
+                        "K303": {
+                            "Name": "{SPRITE_PRESET#1103}Pyro",
+                            "Desc": "Spend the <color=#FF9999FF>{SPRITE_PRESET#1103}Pyro</color> Dice you have rolled to pay for this cost.\\n({SPRITE_PRESET#1111}Omni Dice may also be used to pay for this.)"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 3
+            }
+        },
+        "13063": {
+            "Name": "Sparks 'n' Splash",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], creates 1 <color=#FFFFFFFF>$[C113063]</color> at the opponent's play area.",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO",
+                "C113063": {
+                    "Name": "Sparks 'n' Splash",
+                    "Desc": "<color=#FFFFFFFF>After a character to which Sparks 'n' Splash is attached uses a Skill:</color> Deals 2 $[K103] to their team's active character.\\n<color=#FFFFFFFF>$[K3]: 2</color>",
+                    "Child": {
+                        "K103": {
+                            "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>Pyro DMG</color>",
+                            "Desc": "Applies {SPRITE_PRESET#2103}Pyro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Melt</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Vaporize</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Overloaded</color>: DMG +2 for this instance, the target is forcibly switched to the next character\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Burning</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Burning Flame</color>] that will deal 1 Pyro DMG at the end of the Round (Takes effect once, max 2 stacks)"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 3,
+                "GCG_COST_ENERGY": 3
+            }
+        }
+    },
+    "Related": 213061
+}

@@ -1,0 +1,49 @@
+{
+    "Type": "Action",
+    "Name": "镜锢之笼",
+    "Title": "藏于镜中之秘",
+    "Desc": "「镜子啊，镜子啊，请你倒映…我的敌人，现在哪里？」",
+    "Source": "在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度藏镜仕女中完成挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Maidenwater",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_HYDRO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "天赋",
+        "战斗行动"
+    ],
+    "Talent": {
+        "Name": "镜锢之笼",
+        "Desc": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A2202]</color>时，装备此牌。\\n$[A2202]装备此牌后，立刻使用一次<color=#FFD780FF>$[S22022]</color>。\\n装备有此牌的$[A2202]生成的<color=#FFFFFFFF>$[C122021]</color>初始$[K4]+1，并且会使所附属角色受到的$[K102]+1。\\n（牌组中包含$[A2202]，才能加入牌组）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>战斗行动</color>",
+                "Desc": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+            },
+            "A2202": "镜锢之笼",
+            "S22022": "S22022",
+            "C122021": {
+                "Name": "水光破镜",
+                "Desc": "<color=#FFFFFFFF>所附属角色切换到其他角色时：</color>需要多花费1个元素骰。\\n<color=#FFFFFFFF>$[K4]：2</color>\\n（同一方场上最多存在一个此状态）",
+                "Child": {
+                    "K4": {
+                        "Name": "<color=#FFFFFFFF>持续回合</color>",
+                        "Desc": "每回合结束阶段，<color=#FFFFFFFF>持续回合</color>-1；\\n<color=#FFFFFFFF>持续回合</color>耗尽后，立刻弃置此牌。"
+                    }
+                }
+            },
+            "K4": {
+                "Name": "<color=#FFFFFFFF>持续回合</color>",
+                "Desc": "每回合结束阶段，<color=#FFFFFFFF>持续回合</color>-1；\\n<color=#FFFFFFFF>持续回合</color>耗尽后，立刻弃置此牌。"
+            },
+            "K102": {
+                "Name": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素伤害</color>",
+                "Desc": "附着{SPRITE_PRESET#2102}水元素，可发生元素反应：\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2103}<color=#FFFFFFFF>蒸发</color>：本伤害+2\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}<color=#FFFFFFFF>感电</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2101}<color=#FFFFFFFF>冻结</color>：本伤害+1，使目标本回合无法行动（受到物理或火元素伤害后提前解除，但是伤害+2）\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}<color=#FFFFFFFF>绽放</color>：本伤害+1，生成使下次火元素或雷元素伤害+2的[<color=#FFFFFFFF>草原核</color>]"
+            }
+        }
+    }
+}

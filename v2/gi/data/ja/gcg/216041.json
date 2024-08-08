@@ -1,0 +1,61 @@
+{
+    "Type": "Action",
+    "Name": "聖なる堕落",
+    "Title": "アルベド·聖なる堕落",
+    "Desc": "「対戦の戦略を確認する過程も、緻密な計算のうちだよ…」",
+    "Source": "キャッツテールでアルベドを招待して対戦し、対応する挑戦目標をクリアすることで獲得",
+    "Icon": "UI_Gcg_CardFace_Modify_Constellation_Albedo",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_GEO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "天賦",
+        "戦闘アクション"
+    ],
+    "Talent": {
+        "Name": "聖なる堕落",
+        "Desc": "$[K1]：味方の出撃キャラが<color=#FFFFFFFF>$[A1604]</color>の時、このカードを装備できる。\\n$[A1604]がこのカードを装備した後、直ちに<color=#FFD780FF>$[S16042]</color>を1回発動する。\\nこのカードを装備した$[A1604]がフィールド上に存在する時、味方のフィールドに<color=#FFFFFFFF>$[C116041]</color>が存在する場合、味方キャラが$[K52]を発動する際、必要な$[K309]-1、かつ与えるダメージ+1。\\n（このカードはデッキに$[A1604]が含まれている場合のみ、デッキに追加できる）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>戦闘アクション</color>",
+                "Desc": "味方が戦闘アクションを1回行った後、相手のターンに移ります。\\n<color=#FFFFFFFF>このようなルールを持つ手札を出すのはクイックアクションではなく、戦闘アクションと見なされます。</color>"
+            },
+            "A1604": "聖なる堕落",
+            "S16042": "S16042",
+            "C116041": {
+                "Name": "陽華",
+                "Desc": "<color=#FFFFFFFF>エンドフェーズ</color>：$[K106]を1与える。\\n<color=#FFFFFFFF>$[K3]：3</color>\\n<color=#FFFFFFFF>この召喚物がフィールドに存在する場合、味方がキャラチェンジを行う時</color>、「$[K1]」ではなく「$[K2]」とみなされる。（各ラウンドで1回のみ）",
+                "Child": {
+                    "K106": {
+                        "Name": "{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素ダメージ</color>",
+                        "Desc": "付着した元素と以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2101}<color=#FFFFFFFF>結晶（氷）</color>：ダメージ+1、味方の出撃キャラはシールドを1獲得する（最大2まで重ねられる）\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2102}<color=#FFFFFFFF>結晶（水）</color>：ダメージ+1、味方の出撃キャラはシールドを1獲得する（最大2まで重ねられる）\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2103}<color=#FFFFFFFF>結晶（炎）</color>：ダメージ+1、味方の出撃キャラはシールドを1獲得する（最大2まで重ねられる）\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2104}<color=#FFFFFFFF>結晶（雷）</color>：ダメージ+1、味方の出撃キャラはシールドを1獲得する（最大2まで重ねられる）"
+                    },
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                        "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                    },
+                    "K1": {
+                        "Name": "<color=#FFFFFFFF>戦闘アクション</color>",
+                        "Desc": "味方が戦闘アクションを1回行った後、相手のターンに移ります。\\n<color=#FFFFFFFF>このようなルールを持つ手札を出すのはクイックアクションではなく、戦闘アクションと見なされます。</color>"
+                    },
+                    "K2": {
+                        "Name": "<color=#FFFFFFFF>クイックアクション</color>",
+                        "Desc": "クイックアクションを1回行った後、あなたは他のアクションを続けて行うことができます。\\nただし、戦闘アクションを1回行うと、相手のターンに移ります。"
+                    }
+                }
+            },
+            "K52": {
+                "Name": "<color=#FFFFFFFF>落下攻撃</color>",
+                "Desc": "キャラを「出撃キャラ」にチェンジした後、本ラウンドにおける次の戦闘アクションが「通常攻撃」の場合、「落下攻撃」として見なされる。"
+            },
+            "K309": {
+                "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1109}無色元素</color>",
+                "Desc": "任意タイプの元素サイコロと組み合わせてコストを支払うことができます。"
+            }
+        }
+    }
+}

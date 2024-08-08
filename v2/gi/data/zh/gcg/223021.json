@@ -1,0 +1,43 @@
+{
+    "Type": "Action",
+    "Name": "烬火重燃",
+    "Title": "深渊咏者·烬火重燃",
+    "Desc": "递播恩典之路，并非一路平顺。",
+    "Source": "在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度深渊咏者·渊火中完成挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_DeaconFire",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PYRO",
+            "count": 2
+        },
+        {}
+    ],
+    "Tag": [
+        "天赋"
+    ],
+    "Talent": {
+        "Name": "烬火重燃",
+        "Desc": "<color=#FFFFFFFF>入场时：</color>如果装备有此牌的<color=#FFFFFFFF>$[A2302]</color>已触发过<color=#FFFFFFFF>$[C123022]</color>，就立刻弃置此牌，为角色附属$[K1006]。\\n装备有此牌的$[A2302]触发<color=#FFFFFFFF>$[C123022]</color>时：弃置此牌，为角色附属$[K1006]。\\n（牌组中包含$[A2302]，才能加入牌组）",
+        "Child": {
+            "A2302": "烬火重燃",
+            "C123022": {
+                "Name": "火之新生",
+                "Desc": "<color=#FFFFFFFF>所附属角色被击倒时：</color>移除此效果，使角色$[K54]，并治疗该角色到4点生命值。此效果触发后，角色造成的$[K103]+1。",
+                "Child": {
+                    "K54": {
+                        "Name": "<color=#FFFFFFFF>免于被击倒</color>",
+                        "Desc": "一些效果会使角色在生命值被降为0的时候<color=#FFFFFFFF>免于被击倒</color>，并治疗该角色到一定生命值。\\n此时，角色不视为被<color=#FFFFFFFF>击倒</color>过。（因此，角色所附属的装备和状态不会被弃置，充能也不会被清空。）"
+                    },
+                    "K103": {
+                        "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>火元素伤害</color>",
+                        "Desc": "附着{SPRITE_PRESET#2103}火元素，可发生元素反应：\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>融化</color>：本伤害+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>蒸发</color>：本伤害+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>超载</color>：本伤害+2，目标强制切换到下一个角色\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>燃烧</color>：本伤害+1，生成回合结束时造成1点火元素伤害的[<color=#FFFFFFFF>燃烧烈焰</color>]（可用次数1，最多叠加到2）"
+                    }
+                }
+            },
+            "K1006": {
+                "Name": "<color=#FFFFFFFF>渊火加护</color>",
+                "Desc": "为所附属角色提供<color=#FFFFFFFF>2点{SPRITE_PRESET#4007}<color=#FFFFFFFF>护盾</color></color>。\\n<color=#FFFFFFFF>此{SPRITE_PRESET#4007}护盾耗尽后：</color>对所有敌方角色造成1点<color=#FFFFFFFF>穿透伤害</color>。"
+            }
+        }
+    }
+}

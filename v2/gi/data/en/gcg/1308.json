@@ -1,0 +1,106 @@
+{
+    "Type": "Character",
+    "Name": "Yanfei",
+    "Title": "Wise Innocence: Yanfei",
+    "Desc": "One who fails to revise the classics is liable to fall foul of the law.",
+    "Source": "Reward for inviting Yanfei to a duel at The Cat's Tail and claiming victory in a Friendly Fracas with her",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Feiyan",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "Pyro",
+        "Catalyst",
+        "Liyue"
+    ],
+    "Talent": {
+        "13081": {
+            "Name": "Seal of Approval",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "13082": {
+            "Name": "Signed Edict",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT] and attaches <color=#FFFFFFFF>$[C113081]</color> to this character.",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO",
+                "C113081": {
+                    "Name": "Scarlet Seal",
+                    "Desc": "<color=#FFFFFFFF>When the character uses a $[K51]: </color>Damage dealt +2.\\n<color=#FFFFFFFF>$[K3]: 1</color>. (Can stack up to 2 times)",
+                    "Child": {
+                        "K51": {
+                            "Name": "<color=#FFFFFFFF>Charged Attack</color>",
+                            "Desc": "Before your Action Phase, should the total number of your Elemental Dice be even, your Normal Attack will be considered a Charged Attack."
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 3
+            }
+        },
+        "13083": {
+            "Name": "Done Deal",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], attaches <color=#FFFFFFFF>$[C113081]</color> and <color=#FFFFFFFF>$[C113082]</color> to this character.",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO",
+                "C113081": {
+                    "Name": "Scarlet Seal",
+                    "Desc": "<color=#FFFFFFFF>When the character uses a $[K51]: </color>Damage dealt +2.\\n<color=#FFFFFFFF>$[K3]: 1</color>. (Can stack up to 2 times)",
+                    "Child": {
+                        "K51": {
+                            "Name": "<color=#FFFFFFFF>Charged Attack</color>",
+                            "Desc": "Before your Action Phase, should the total number of your Elemental Dice be even, your Normal Attack will be considered a Charged Attack."
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        }
+                    }
+                },
+                "C113082": {
+                    "Name": "Brilliance",
+                    "Desc": "<color=#FFFFFFFF>When the character uses a $[K51]: </color>Spend 1 less <color=#FF9999FF>$[K303]</color>. (Once every round.)\\n<color=#FFFFFFFF>End Phase: </color>Attach $[K1010] to this character.\\n<color=#FFFFFFFF>$[K4]: 2</color>.",
+                    "Child": {
+                        "K51": {
+                            "Name": "<color=#FFFFFFFF>Charged Attack</color>",
+                            "Desc": "Before your Action Phase, should the total number of your Elemental Dice be even, your Normal Attack will be considered a Charged Attack."
+                        },
+                        "K303": {
+                            "Name": "{SPRITE_PRESET#1103}Pyro",
+                            "Desc": "Spend the <color=#FF9999FF>{SPRITE_PRESET#1103}Pyro</color> Dice you have rolled to pay for this cost.\\n({SPRITE_PRESET#1111}Omni Dice may also be used to pay for this.)"
+                        },
+                        "K1010": {
+                            "Name": "<color=#FFFFFFFF>Scarlet Seal</color>",
+                            "Desc": "<color=#FFFFFFFF>When the character uses a <color=#FFFFFFFF>Charged Attack</color>:</color> DMG dealt +2.\\n<color=#FFFFFFFF><color=#FFFFFFFF>Usage(s)</color>: 1</color> (Can stack. Max 2 stacks.)"
+                        },
+                        "K4": {
+                            "Name": "<color=#FFFFFFFF>Duration (Rounds)</color>",
+                            "Desc": "Each time you reach the end of a Round, <color=#FFFFFFFF>Duration (Rounds)</color> -1.\\nThis card will be discarded immediately once <color=#FFFFFFFF>Duration (Rounds)</color> runs out."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 213081
+}

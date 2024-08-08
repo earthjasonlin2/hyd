@@ -1,0 +1,102 @@
+{
+    "Type": "Character",
+    "Name": "丘丘水行游侠",
+    "Title": "锐波漫游·丘丘水行游侠",
+    "Desc": "不属于任何部族的丘丘人流浪者，如同自我流放一般在荒野中四处漫游。",
+    "Source": "在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度丘丘水行游侠中获得胜利后获取",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_HilistrayWater",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "水元素",
+        "其他武器",
+        "魔物",
+        "丘丘人"
+    ],
+    "Talent": {
+        "22051": {
+            "Name": "镰刀旋斩",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "22052": {
+            "Name": "狂澜镰击",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。\\n如果有敌方角色附属有<color=#FFFFFFFF>$[C106]</color>或<color=#FFFFFFFF>$[C122052]</color>，则本角色获得1点$[K310]。（每回合1次）",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "C106": {
+                    "Name": "冻结",
+                    "Desc": "<color=#FFFFFFFF>角色无法使用技能。</color>（持续到回合结束）\\n角色受到$[K103]或$[K100]时，移除此效果，使该伤害+2。",
+                    "Child": {
+                        "K103": {
+                            "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>火元素伤害</color>",
+                            "Desc": "附着{SPRITE_PRESET#2103}火元素，可发生元素反应：\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>融化</color>：本伤害+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>蒸发</color>：本伤害+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>超载</color>：本伤害+2，目标强制切换到下一个角色\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>燃烧</color>：本伤害+1，生成回合结束时造成1点火元素伤害的[<color=#FFFFFFFF>燃烧烈焰</color>]（可用次数1，最多叠加到2）"
+                        },
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>",
+                            "Desc": "物理伤害不会附着元素，也不会发生元素反应。"
+                        }
+                    }
+                },
+                "C122052": {
+                    "Name": "水泡围困",
+                    "Desc": "<color=#FFFFFFFF>角色无法使用技能。</color>（持续到回合结束）",
+                    "Child": {}
+                },
+                "K310": {
+                    "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}充能</color>",
+                    "Desc": "角色使用「元素爆发」时，需要消耗{SPRITE_PRESET#1110}充能。\\n角色使用「元素战技」或「普通攻击」后，会获得1点{SPRITE_PRESET#1110}充能。"
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3
+            }
+        },
+        "22053": {
+            "Name": "浮泡攻势",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，生成手牌<color=#FFFFFFFF>$[C122051]</color>。\\n（装备有<color=#FFFFFFFF>$[C122051]</color>的角色可以使用特技：<color=#FFFFFFFF>$[S1220511]</color>）",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "C122051": {
+                    "Name": "水泡史莱姆",
+                    "Desc": "$[K58]：$[S1220511]\\n<color=#FFFFFFFF>$[K3]：2</color>\\n（角色最多装备1个「{SPRITE_PRESET#3008}特技」）",
+                    "Child": {
+                        "K58": {
+                            "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#3008}特技</color>",
+                            "Desc": "出战角色装备有「{SPRITE_PRESET#3008}特技」卡牌时，就可以使用对应的「{SPRITE_PRESET#3008}特技」。\\n使用「{SPRITE_PRESET#3008}特技」是一种「战斗行动」。角色因冻结、石化、眩晕等原因无法使用技能时，也会同时无法使用「{SPRITE_PRESET#3008}特技」。\\n角色使用「{SPRITE_PRESET#3008}特技」时不视为使用技能，无法触发「使用技能后」「角色引发元素反应后」等效果；角色使用「{SPRITE_PRESET#3008}特技」造成的伤害不被视为角色造成的伤害。"
+                        },
+                        "S1220511": "S1220511",
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>可用次数</color>",
+                            "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                },
+                "S1220511": "S1220511"
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "22054": {
+            "Name": "狂澜镰击",
+            "Desc": "",
+            "Child": {},
+            "Cost": {}
+        }
+    },
+    "Related": 222051
+}

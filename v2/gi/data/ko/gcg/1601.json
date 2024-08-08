@@ -1,0 +1,76 @@
+{
+    "Type": "Character",
+    "Name": "응광",
+    "Title": "엄월천권·응광",
+    "Desc": "그녀가 가지고 있는 가장 큰 비밀은, 바로 자신이 리월항의 수많은 비밀을 지키고 있다는 것이다",
+    "Source": "캣테일 술집에서 응광 초대 및 친선 대전 난이도 승리 후 획득",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Ningguang",
+    "Hp": 10,
+    "Cost": 3,
+    "Tag": [
+        "바위 원소",
+        "법구",
+        "리월"
+    ],
+    "Talent": {
+        "16011": {
+            "Name": "천금투",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_GEO",
+                "D__KEY__DAMAGE": 1
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "16012": {
+            "Name": "선기 병풍",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[C116011]</color>을 생성한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_GEO",
+                "D__KEY__DAMAGE": 2,
+                "C116011": {
+                    "Name": "선기 병풍",
+                    "Desc": "<color=#FFFFFFFF>아군 출전 캐릭터가 2pt 이상의 피해를 받을 시:</color> 피해를 1pt 상쇄한다.\\n<color=#FFFFFFFF>$[K3]: 2</color>",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 3
+            }
+        },
+        "16013": {
+            "Name": "천권 붕옥",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다. 만약 필드에 <color=#FFFFFFFF>$[C116011]</color>이 있을 시, 이번 피해가 2pt 증가한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_GEO",
+                "D__KEY__DAMAGE": 6,
+                "C116011": {
+                    "Name": "선기 병풍",
+                    "Desc": "<color=#FFFFFFFF>아군 출전 캐릭터가 2pt 이상의 피해를 받을 시:</color> 피해를 1pt 상쇄한다.\\n<color=#FFFFFFFF>$[K3]: 2</color>",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 3,
+                "GCG_COST_ENERGY": 3
+            }
+        }
+    },
+    "Related": 216011
+}

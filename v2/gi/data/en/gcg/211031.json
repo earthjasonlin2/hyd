@@ -1,0 +1,31 @@
+{
+    "Type": "Action",
+    "Name": "Cold-Blooded Strike",
+    "Title": "Kaeya: Cold-Blooded Strike",
+    "Desc": "A slightly cold joke.",
+    "Source": "Reward for inviting Kaeya to a duel at The Cat's Tail and achieving all corresponding challenge objectives",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Keaya",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_CRYO",
+            "count": 4
+        },
+        {}
+    ],
+    "Tag": [
+        "Talent",
+        "Combat Action"
+    ],
+    "Talent": {
+        "Name": "Cold-Blooded Strike",
+        "Desc": "$[K1]: When your active character is <color=#FFFFFFFF>$[A1103]</color>, equip this card.\\nAfter $[A1103] equips this card, immediately use <color=#FFD780FF>$[S11032]</color> once.\\nAfter your $[A1103], who has this card equipped, uses <color=#FFFFFFFF>$[S11032]</color>, he heals himself for 2 HP. (Once per Round)\\n(You must have $[A1103] in your deck to add this card to your deck.)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+            },
+            "A1103": "Cold-Blooded Strike",
+            "S11032": "S11032"
+        }
+    }
+}

@@ -1,0 +1,72 @@
+{
+    "Type": "Action",
+    "Name": "深渊之灾·凝水盛放",
+    "Title": "达达利亚·凝水盛放",
+    "Desc": "一次鲁莽但精确的攻击。",
+    "Source": "在猫尾酒馆中邀请达达利亚进行对局，完成相应挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Constellation_Tartaglia",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_HYDRO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "天赋",
+        "战斗行动"
+    ],
+    "Talent": {
+        "Name": "深渊之灾·凝水盛放",
+        "Desc": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1204]</color>时，装备此牌。\\n$[A1204]装备此牌后，立刻使用一次<color=#FFD780FF>$[S12042]</color>。\\n结束阶段：装备有此牌的$[A1204]在场时，如果敌方出战角色附属有<color=#FFFFFFFF>$[C112043]</color>，则对其造成1点$[K5]。\\n（牌组中包含$[A1204]，才能加入牌组）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>战斗行动</color>",
+                "Desc": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+            },
+            "A1204": "深渊之灾·凝水盛放",
+            "S12042": "S12042",
+            "C112043": {
+                "Name": "断流",
+                "Desc": "<color=#FFFFFFFF>所附属角色被击倒后：</color>对所在阵营的出战角色附属「断流」。\\n（处于<color=#FFFFFFFF>「$[C112042]」</color>的<color=#FFFFFFFF>$[A1204]</color>攻击所附属角色时，会造成额外伤害。）",
+                "Child": {
+                    "C112042": {
+                        "Name": "近战状态",
+                        "Desc": "角色造成的$[K100]转换为$[K102]。\\n<color=#FFFFFFFF>角色进行$[K51]后：</color>目标角色附属$[K1005]。\\n角色对附属有$[K1005]的角色造成的伤害+1；\\n<color=#FFFFFFFF>角色对已附属有$[K1005]的角色使用技能后：</color>对下一个敌方后台角色造成1点$[K5]。（每回合至多2次）\\n\\n<color=#FFFFFFFF>$[K4]：2</color>",
+                        "Child": {
+                            "K100": {
+                                "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>",
+                                "Desc": "物理伤害不会附着元素，也不会发生元素反应。"
+                            },
+                            "K102": {
+                                "Name": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素伤害</color>",
+                                "Desc": "附着{SPRITE_PRESET#2102}水元素，可发生元素反应：\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2103}<color=#FFFFFFFF>蒸发</color>：本伤害+2\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}<color=#FFFFFFFF>感电</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2101}<color=#FFFFFFFF>冻结</color>：本伤害+1，使目标本回合无法行动（受到物理或火元素伤害后提前解除，但是伤害+2）\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}<color=#FFFFFFFF>绽放</color>：本伤害+1，生成使下次火元素或雷元素伤害+2的[<color=#FFFFFFFF>草原核</color>]"
+                            },
+                            "K51": {
+                                "Name": "<color=#FFFFFFFF>重击</color>",
+                                "Desc": "我方行动开始前，如果元素骰总数为偶数，则进行的「普通攻击」将被视为「重击」。"
+                            },
+                            "K1005": {
+                                "Name": "<color=#FFFFFFFF>断流</color>",
+                                "Desc": "<color=#FFFFFFFF>所附属角色被击倒后：</color>对所在阵营的出战角色附属「断流」。\\n（处于<color=#FFFFFFFF>「近战状态」</color>的<color=#FFFFFFFF>达达利亚</color>攻击所附属角色时，会造成额外伤害。）"
+                            },
+                            "K5": {
+                                "Name": "<color=#FFFFFFFF>穿透伤害</color>",
+                                "Desc": "穿透伤害无法受到伤害加成，但是也无法被护盾、伤害免疫等效果抵消。"
+                            },
+                            "K4": {
+                                "Name": "<color=#FFFFFFFF>持续回合</color>",
+                                "Desc": "每回合结束阶段，<color=#FFFFFFFF>持续回合</color>-1；\\n<color=#FFFFFFFF>持续回合</color>耗尽后，立刻弃置此牌。"
+                            }
+                        }
+                    },
+                    "A1204": "深渊之灾·凝水盛放"
+                }
+            },
+            "K5": {
+                "Name": "<color=#FFFFFFFF>穿透伤害</color>",
+                "Desc": "穿透伤害无法受到伤害加成，但是也无法被护盾、伤害免疫等效果抵消。"
+            }
+        }
+    }
+}

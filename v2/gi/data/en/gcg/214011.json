@@ -1,0 +1,53 @@
+{
+    "Type": "Action",
+    "Name": "Stellar Predator",
+    "Title": "Fischl: Stellar Predator",
+    "Desc": "\"The instant in which Ozvaldo Hrafnavins shows his great might.\"",
+    "Source": "Reward for inviting Fischl to a duel at The Cat's Tail and achieving all corresponding challenge objectives",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Fischl",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_ELECTRO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "Talent",
+        "Combat Action"
+    ],
+    "Talent": {
+        "Name": "Stellar Predator",
+        "Desc": "$[K1]: When your active character is <color=#FFFFFFFF>$[A1401]</color>, equip this card.\\nAfter $[A1401] equips this card, immediately use <color=#FFD780FF>$[S14012]</color> once.\\nWhen your $[A1401], who has this card equipped, creates an <color=#FFFFFFFF>$[C114011]</color>, <color=#FFFFFFFF>$[C114011]</color> will gain the following effect:  after $[A1401] uses a <color=#FFFFFFFF>Normal Attack</color>: Deal 2 $[K104]. (Consumes $[K3])\\n(You must have $[A1401] in your deck to add this card to your deck.)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+            },
+            "A1401": "Stellar Predator",
+            "S14012": "S14012",
+            "C114011": {
+                "Name": "Oz",
+                "Desc": "<color=#FFFFFFFF>End Phase:</color> Deal 1 $[K104].\\n<color=#FFFFFFFF>$[K3]: 2</color>",
+                "Child": {
+                    "K104": {
+                        "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>Electro DMG</color>",
+                        "Desc": "Applies {SPRITE_PRESET#2104}Electro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Overloaded</color>: DMG +2 for this instance, the target is forcibly switched to the next character\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Superconduct</color>: DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Electro-Charged</color>: DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Quicken</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Catalyzing Field</color>] that grants +1 DMG to the next 2 instances of Dendro or Electro DMG"
+                    },
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                        "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                    }
+                }
+            },
+            "K104": {
+                "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>Electro DMG</color>",
+                "Desc": "Applies {SPRITE_PRESET#2104}Electro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Overloaded</color>: DMG +2 for this instance, the target is forcibly switched to the next character\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Superconduct</color>: DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Electro-Charged</color>: DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Quicken</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Catalyzing Field</color>] that grants +1 DMG to the next 2 instances of Dendro or Electro DMG"
+            },
+            "K3": {
+                "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+            }
+        }
+    }
+}

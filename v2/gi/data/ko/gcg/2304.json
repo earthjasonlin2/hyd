@@ -1,0 +1,126 @@
+{
+    "Type": "Character",
+    "Name": "용암철갑 제왕",
+    "Title": "용암철갑 제왕",
+    "Desc": "원류바다 이종의 최정상에 있는 두 패자 중 하나. 천적이 없으며, 항상 사냥하고 성장하는 중갑 게다. 사람들은 반쯤은 경외심으로, 반쯤은 장난으로 이를 「용암철갑 제왕」이라고 부른다",
+    "Source": "캣테일 술집의 왕자님을 통해 술집 도전 진행 및 친선 대전 난이도의 용암철갑 제왕에게 승리 후 획득",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_HermitCrabPrimo",
+    "Hp": 6,
+    "Cost": 2,
+    "Tag": [
+        "불 원소",
+        "기타 무기",
+        "마물"
+    ],
+    "Talent": {
+        "23041": {
+            "Name": "집게 파쇄격",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "23042": {
+            "Name": "용암 불꽃",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다. 본 캐릭터에게 <color=#FFFFFFFF>$[C123041]</color>가 7스택 이상 부착된 경우, 이번 피해+1pt\\n이후 본 캐릭터에게 <color=#FFFFFFFF>$[C123041]</color>를 2스택 부착한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO",
+                "D__KEY__DAMAGE": 1,
+                "C123041": {
+                    "Name": "중갑 게딱지",
+                    "Desc": "스택마다 $[K6]을 1pt 제공해 부착 캐릭터를 보호한다.",
+                    "Child": {
+                        "K6": {
+                            "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>보호막</color>",
+                            "Desc": "해당 보호막의 보호를 받는 캐릭터가 피격 시, 보호막을 소모해 피해를 상쇄한다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 3
+            }
+        },
+        "23043": {
+            "Name": "적진 포격",
+            "Desc": "본 캐릭터가 <color=#FFFFFFFF>$[S23046]</color>의 $[K53]를 한다.",
+            "Child": {
+                "S23046": "S23046",
+                "K53": {
+                    "Name": "<color=#FFFFFFFF>스킬 준비</color>",
+                    "Desc": "일부 스킬은 바로 발동할 수 없고, 일정 횟수의 행동 순서 동안 <color=#FFFFFFFF>준비</color>를 해야 한다.\\n한 플레이어의 행동 순서가 됐을 때, 해당 플레이어의 「출전 캐릭터」가 현재 스킬을 <color=#FFFFFFFF>준비</color> 중이면 해당 플레이어의 행동을 건너뛴다. 스킬 <color=#FFFFFFFF>준비</color>를 끝냈을 경우, 캐릭터는 해당 스킬을 즉시 발동한다. (<color=#FFFFFFFF>준비</color>가 필요한 유형의 스킬은 「스킬 사용 후」 및 「캐릭터가 원소 반응 발동 후」 등의 효과를 발동할 수 없다)\\n오직 「출전 캐릭터」만 스킬을 <color=#FFFFFFFF>준비</color>할 수 있다. 만약 스킬을 <color=#FFFFFFFF>준비</color> 중인 「출전 캐릭터」가 교체되어 대기 상태가 되면, 스킬의 <color=#FFFFFFFF>준비</color>가 중단된다."
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "23044": {
+            "Name": "제왕의 갑주",
+            "Desc": "[패시브] <color=#FFFFFFFF>전투 시작 시:</color> 시작부터 <color=#FFFFFFFF>$[C123041]</color> 5스택을 부착한다.\\n<color=#FFFFFFFF>아군이 임의의 행동 후:</color> 아군 필드에 $[C123041] 이외의 $[K6] 상태 또는 $[K6] 출전 상태가 있을 경우 이를 전부 제거하고, 1개 제거할 때마다 캐릭터에게 <color=#FFFFFFFF>$[C123041]</color>를 2스택 부착한다.",
+            "Child": {
+                "C123041": {
+                    "Name": "중갑 게딱지",
+                    "Desc": "스택마다 $[K6]을 1pt 제공해 부착 캐릭터를 보호한다.",
+                    "Child": {
+                        "K6": {
+                            "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>보호막</color>",
+                            "Desc": "해당 보호막의 보호를 받는 캐릭터가 피격 시, 보호막을 소모해 피해를 상쇄한다."
+                        }
+                    }
+                },
+                "K6": {
+                    "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>보호막</color>",
+                    "Desc": "해당 보호막의 보호를 받는 캐릭터가 피격 시, 보호막을 소모해 피해를 상쇄한다."
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        },
+        "23046": {
+            "Name": "용암 폭발",
+            "Desc": "(1차례 행동 준비 필요)\\n$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 상대의 모든 대기 캐릭터에게 $[K5]를 2pt 준다. 본 캐릭터가 보유한 <color=#FFFFFFFF>$[C123041]</color> 2스택마다 이 스킬이 주는 $[K103]+1pt",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO",
+                "D__KEY__DAMAGE": 1,
+                "K5": {
+                    "Name": "<color=#FFFFFFFF>관통 피해</color>",
+                    "Desc": "관통 피해는 피해 보너스를 획득할 수 없으나, 주는 피해가 보호막 또는 피해 면역과 같은 효과에 의해 상쇄되지 않는다."
+                },
+                "C123041": {
+                    "Name": "중갑 게딱지",
+                    "Desc": "스택마다 $[K6]을 1pt 제공해 부착 캐릭터를 보호한다.",
+                    "Child": {
+                        "K6": {
+                            "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>보호막</color>",
+                            "Desc": "해당 보호막의 보호를 받는 캐릭터가 피격 시, 보호막을 소모해 피해를 상쇄한다."
+                        }
+                    }
+                },
+                "K103": {
+                    "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>불 원소 피해</color>",
+                    "Desc": "{SPRITE_PRESET#2103}불 원소 부착 시 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>융해</color>: 이번 피해+2pt\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>증발</color>: 이번 피해+2pt\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>과부하</color>: 이번 피해+2pt, 대상이 다음 캐릭터로 강제 교체된다.\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>연소</color>: 이번 피해+1pt, 턴 종료 시 불 원소 피해를 1pt 주는 [<color=#FFFFFFFF>불타는 화염</color>]을 생성한다. (사용 가능 횟수: 1, 최대 중첩수: 2)"
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {}
+        },
+        "23047": {
+            "Name": "제왕의 갑주",
+            "Desc": "",
+            "Child": {},
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 223041
+}

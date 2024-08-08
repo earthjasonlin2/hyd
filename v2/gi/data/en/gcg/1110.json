@@ -1,0 +1,85 @@
+{
+    "Type": "Character",
+    "Name": "Charlotte",
+    "Title": "\"Lens of Verity\" Charlotte",
+    "Desc": "\"Your credible source of the unbelievable truth!\"",
+    "Source": "Reward for inviting Charlotte to a duel at The Cat's Tail and claiming victory in a Friendly Fracas with her",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Charlotte",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "Cryo",
+        "Catalyst",
+        "Fontaine",
+        "Arkhe: Pneuma"
+    ],
+    "Talent": {
+        "11101": {
+            "Name": "Cool-Color Capture",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "11102": {
+            "Name": "Framing: Freezing Point Composition",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. Attach <color=#FFFFFFFF>$[C111101]</color> to the target.",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "C111101": {
+                    "Name": "Snappy Silhouette",
+                    "Desc": "<color=#FFFFFFFF>End Phase:</color> Deal 1 $[K101] to the character(s) to which this is attached. If only 1 $[K3] is remaining and the attached character is affected by {SPRITE_PRESET#2101}<color=#99FFFFFF>Cryo</color>, this instance of DMG +1.\\n<color=#FFFFFFFF>$[K3]: 2</color>",
+                    "Child": {
+                        "K101": {
+                            "Name": "{SPRITE_PRESET#2101}<color=#99FFFFFF>Cryo DMG</color>",
+                            "Desc": "Applies {SPRITE_PRESET#2101}Cryo and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Melt</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Superconduct</color>: DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Frozen</color>: DMG +1 for this instance, the target is unable to perform any Actions this Round (Can be removed in advance after the target receives Physical or Pyro DMG, in which case they will take +2 DMG)"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3
+            }
+        },
+        "11103": {
+            "Name": "Still Photo: Comprehensive Confirmation",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], heals all your characters for 1 HP, summons 1 <color=#FFFFFFFF>$[C111102]</color>.",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "C111102": {
+                    "Name": "Newsflash Field",
+                    "Desc": "<color=#FFFFFFFF>End Phase:</color> Deal 1 $[K101], heal your active character for 1 HP.\\n<color=#FFFFFFFF>$[K3]: 2</color>",
+                    "Child": {
+                        "K101": {
+                            "Name": "{SPRITE_PRESET#2101}<color=#99FFFFFF>Cryo DMG</color>",
+                            "Desc": "Applies {SPRITE_PRESET#2101}Cryo and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Melt</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Superconduct</color>: DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Frozen</color>: DMG +1 for this instance, the target is unable to perform any Actions this Round (Can be removed in advance after the target receives Physical or Pyro DMG, in which case they will take +2 DMG)"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 211101
+}

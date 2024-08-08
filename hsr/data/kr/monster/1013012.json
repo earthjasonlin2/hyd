@@ -1,0 +1,302 @@
+{
+    "Id": 1013012,
+    "Name": "자동 기갑병•그리즐리(완벽)",
+    "Desc": "코드가 영향을 받은 완벽한 홀로그램. 원본 레퍼런스는 구세계가 남긴 과학 기술을 조각조각 이어 붙여 만든 자동 로봇 유닛. 두꺼운 갑옷을 장착하고 돌격하며 실버메인 철위대를 보호한다.\\n전투 시 자동 기갑병 「그리즐리」(완벽)는 「스파이더」에게 신호를 보내 함께 싸우며 동력 에너지를 모아 강력한 일격을 일으킨다",
+    "MonsterCampID": null,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 697.5000000004657,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/Monster_1013010.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "Elite",
+    "SpeedBase": 144,
+    "StanceBase": 480,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.20000000018626451,
+    "Child": [
+        {
+            "Id": 1013012,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Ice",
+                "Thunder"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 101301201,
+                    "SkillName": "파괴 지령",
+                    "SkillDesc": "지정된 단일 아군에게 물리 속성 피해를 가한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 101301202,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "Physical",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 101301203,
+                    "SkillName": "폭파 지령",
+                    "SkillDesc": "[자동 기갑병•스파이더]를 소환한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301204,
+                    "SkillName": "분노 지령",
+                    "SkillDesc": "일정 확률로 각 단일 아군을 도발 상태에 빠트린다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301205,
+                    "SkillName": "과부하 지령",
+                    "SkillDesc": "차지 상태에 진입한다. 다음번 행동은 모든 아군에게 [섬멸 지령]을 발동한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301206,
+                    "SkillName": "섬멸 지령",
+                    "SkillDesc": "모든 아군에게 대량의 물리 속성 피해를 준다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 101301207,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301208,
+                    "SkillName": "파멸 지령",
+                    "SkillDesc": "[과부하 지령]을 발동할 때마다 자신이 가하는 피해가 한 단계 증가하며, 피해 증가 효과는 중첩 가능하다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 1013012,
+            "AvatarExpReward": 150,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112011
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182006
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183002
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 1013012,
+            "WorldLevel": 1,
+            "AvatarExpReward": 200,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112011
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112012
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182006
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183002
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 1013012,
+            "WorldLevel": 2,
+            "AvatarExpReward": 250,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112011
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112012
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182006
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183002
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 1013012,
+            "WorldLevel": 3,
+            "AvatarExpReward": 300,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112011
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112012
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182006
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183002
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 1013012,
+            "WorldLevel": 4,
+            "AvatarExpReward": 350,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112012
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112013
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182006
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183002
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 1013012,
+            "WorldLevel": 5,
+            "AvatarExpReward": 400,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112012
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112013
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182006
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183002
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 1013012,
+            "WorldLevel": 6,
+            "AvatarExpReward": 400,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112012
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112013
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182006
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183002
+                }
+            ]
+        }
+    ]
+}

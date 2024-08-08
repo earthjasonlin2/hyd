@@ -1,0 +1,88 @@
+{
+    "Type": "Character",
+    "Name": "노엘",
+    "Title": "수여받지 못한 꽃·노엘",
+    "Desc": "테이블 정리만큼은 그녀에게 맡겨도 된다",
+    "Source": "캣테일 술집에서 노엘 초대 및 친선 대전 난이도 승리 후 획득",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Noel",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "바위 원소",
+        "양손검",
+        "몬드"
+    ],
+    "Talent": {
+        "16021": {
+            "Name": "페보니우스 검술·메이드",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "16022": {
+            "Name": "호심경",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[C116021]</color>를 생성한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_GEO",
+                "D__KEY__DAMAGE": 1,
+                "C116021": {
+                    "Name": "바위 갑주",
+                    "Desc": "아군 출전 캐릭터에게 <color=#FFFFFFFF>$[K6]을 2pt</color> 제공한다.\\n해당 $[K6]이 소진되기 전까지 아군이 받는 $[K100]가 50% 감소한다. (올림 처리)",
+                    "Child": {
+                        "K6": {
+                            "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>보호막</color>",
+                            "Desc": "해당 보호막의 보호를 받는 캐릭터가 피격 시, 보호막을 소모해 피해를 상쇄한다."
+                        },
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>",
+                            "Desc": "물리 피해는 원소를 부착할 수 없고, 원소 반응이 발생하지 않는다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 3
+            }
+        },
+        "16023": {
+            "Name": "대청소",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 본 캐릭터에게 <color=#FFFFFFFF>$[C116022]</color>가 부착된다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_GEO",
+                "D__KEY__DAMAGE": 4,
+                "C116022": {
+                    "Name": "대청소",
+                    "Desc": "캐릭터가 일반 공격 시: {SPRITE_PRESET#1106}<color=#FFE699FF>바위 원소</color> 소모 개수-1 (턴당 1회)\\n캐릭터의 <color=#FFFFFFFF>일반 공격</color>으로 주는 피해+2pt, 주는 $[K100]가 $[K106]로 전환된다.\\n<color=#FFFFFFFF>$[K4]: 2</color>",
+                    "Child": {
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>",
+                            "Desc": "물리 피해는 원소를 부착할 수 없고, 원소 반응이 발생하지 않는다."
+                        },
+                        "K106": {
+                            "Name": "{SPRITE_PRESET#2106}<color=#FFE699FF>바위 원소 피해</color>",
+                            "Desc": "이미 부착된 원소와 원소 반응이 발생한다.\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2101}<color=#FFFFFFFF>결정(얼음)</color>: 이번 피해+1pt, 아군 출전 캐릭터가 보호막을 1pt 획득한다. (중첩 가능, 최대 2pt)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2102}<color=#FFFFFFFF>결정(물)</color>: 이번 피해+1pt, 아군 출전 캐릭터가 보호막을 1pt 획득한다. (중첩 가능, 최대 2pt)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2103}<color=#FFFFFFFF>결정(불)</color>: 이번 피해+1pt, 아군 출전 캐릭터가 보호막을 1pt 획득한다. (중첩 가능, 최대 2pt)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2104}<color=#FFFFFFFF>결정(번개)</color>: 이번 피해+1pt, 아군 출전 캐릭터가 보호막을 1pt 획득한다. (중첩 가능, 최대 2pt)"
+                        },
+                        "K4": {
+                            "Name": "<color=#FFFFFFFF>지속 턴</color>",
+                            "Desc": "턴이 종료 단계에 진입할 때마다 <color=#FFFFFFFF>지속 턴</color>이 1회씩 감소한다.\\n<color=#FFFFFFFF>지속 턴</color>이 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 4,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 216021
+}

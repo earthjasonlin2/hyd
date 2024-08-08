@@ -1,0 +1,35 @@
+{
+    "Type": "Action",
+    "Name": "Dominance of Earth",
+    "Title": "Zhongli: Dominance of Earth",
+    "Desc": "The vastness of rivers flows endless, perpetual upon the tapestry of eons.",
+    "Source": "Reward for inviting Zhongli to a duel at The Cat's Tail and achieving all corresponding challenge objectives",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Zhongli",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_GEO",
+            "count": 5
+        },
+        {}
+    ],
+    "Tag": [
+        "Talent",
+        "Combat Action"
+    ],
+    "Talent": {
+        "Name": "Dominance of Earth",
+        "Desc": "$[K1]: When your active character is <color=#FFFFFFFF>$[A1603]</color>, equip this card.\\nAfter $[A1603] equips this card, immediately use <color=#FFD780FF>$[S16033]</color> once.\\nWhen your $[A1603], who has this card equipped, has at least 7 HP, the DMG dealt by $[A1603] and the $[K106] from your Summons +1.\\n(You must have $[A1603] in your deck to add this card to your deck.)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+            },
+            "A1603": "Dominance of Earth",
+            "S16033": "S16033",
+            "K106": {
+                "Name": "{SPRITE_PRESET#2106}<color=#FFE699FF>Geo DMG</color>",
+                "Desc": "Reacts with Elements if they are already applied:\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Cryo Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Hydro Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Pyro Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Electro Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)"
+            }
+        }
+    }
+}

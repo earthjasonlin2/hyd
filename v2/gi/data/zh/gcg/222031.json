@@ -1,0 +1,47 @@
+{
+    "Type": "Action",
+    "Name": "暗流涌动",
+    "Title": "深渊使徒·暗流涌动",
+    "Desc": "「毁灭，不可阻挡！」",
+    "Source": "在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度深渊使徒·激流中完成挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_InvokerHeraldWater",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_HYDRO",
+            "count": 1
+        },
+        {}
+    ],
+    "Tag": [
+        "天赋"
+    ],
+    "Talent": {
+        "Name": "暗流涌动",
+        "Desc": "<color=#FFFFFFFF>入场时：</color>如果装备有此牌的<color=#FFFFFFFF>$[A2203]</color>已触发过<color=#FFFFFFFF>$[C122031]</color>，则在对方场上生成$[K1022]。\\n装备有此牌的$[A2203]被击倒或触发<color=#FFFFFFFF>$[C122031]</color>时：在对方场上生成$[K1022]。\\n（牌组中包含$[A2203]，才能加入牌组）",
+        "Child": {
+            "A2203": "暗流涌动",
+            "C122031": {
+                "Name": "水之新生",
+                "Desc": "<color=#FFFFFFFF>所附属角色被击倒时：</color>移除此效果，使角色$[K54]，并治疗该角色到4点生命值。此效果触发后，角色造成的$[K100]变为$[K102]，且$[K102]+1。",
+                "Child": {
+                    "K54": {
+                        "Name": "<color=#FFFFFFFF>免于被击倒</color>",
+                        "Desc": "一些效果会使角色在生命值被降为0的时候<color=#FFFFFFFF>免于被击倒</color>，并治疗该角色到一定生命值。\\n此时，角色不视为被<color=#FFFFFFFF>击倒</color>过。（因此，角色所附属的装备和状态不会被弃置，充能也不会被清空。）"
+                    },
+                    "K100": {
+                        "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>",
+                        "Desc": "物理伤害不会附着元素，也不会发生元素反应。"
+                    },
+                    "K102": {
+                        "Name": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素伤害</color>",
+                        "Desc": "附着{SPRITE_PRESET#2102}水元素，可发生元素反应：\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2103}<color=#FFFFFFFF>蒸发</color>：本伤害+2\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}<color=#FFFFFFFF>感电</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2101}<color=#FFFFFFFF>冻结</color>：本伤害+1，使目标本回合无法行动（受到物理或火元素伤害后提前解除，但是伤害+2）\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}<color=#FFFFFFFF>绽放</color>：本伤害+1，生成使下次火元素或雷元素伤害+2的[<color=#FFFFFFFF>草原核</color>]"
+                    }
+                }
+            },
+            "K1022": {
+                "Name": "<color=#FFFFFFFF>暗流的诅咒</color>",
+                "Desc": "<color=#FFFFFFFF>所在阵营的角色使用元素战技或元素爆发时：</color>需要多花费1个元素骰。\\n<color=#FFFFFFFF><color=#FFFFFFFF>可用次数</color>：2</color>"
+            }
+        }
+    }
+}

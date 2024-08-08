@@ -1,0 +1,27 @@
+{
+    "Type": "Action",
+    "Name": "제게 맡기세요!",
+    "Title": "제게 맡기세요!",
+    "Desc": "「뭐든지 다 제게 맡기세요!!」——이 말은 언제나 몬드 사람들을 안심시켜주는 멘트 랭킹 1위를 차지하고 있다",
+    "Source": "시작 카드 덱에서 획득",
+    "Icon": "UI_Gcg_CardFace_Event_Event_Jiaogeiwoba",
+    "Cost": [
+        {},
+        {}
+    ],
+    "Tag": [],
+    "Talent": {
+        "Name": "제게 맡기세요!",
+        "Desc": "<color=#FFFFFFFF>아군이 다음 「캐릭터 교체」 행동 진행 시:</color> 이번 교체를 「$[K1]」이 아닌 「$[K2]」으로 간주한다.",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>전투 행동</color>",
+                "Desc": "아군이 전투 행동을 1회 진행하면 행동 순서가 상대에게 넘어간다.\\n<color=#FFFFFFFF>해당 규칙에 속하는 카드는 사용 시 빠른 행동이 아닌 전투 행동으로 간주한다</color>."
+            },
+            "K2": {
+                "Name": "<color=#FFFFFFFF>빠른 행동</color>",
+                "Desc": "빠른 행동을 1회 진행하면 아군은 계속해서 다른 행동을 진행할 수 있다.\\n전투 행동을 1회 진행해야만 행동 순서가 상대에게 넘어간다."
+            }
+        }
+    }
+}

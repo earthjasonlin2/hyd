@@ -1,0 +1,108 @@
+{
+    "Type": "Character",
+    "Name": "Gorou",
+    "Title": "\"Canine Warrior\" Gorou",
+    "Desc": "The leader of the pack, leading the soldiers onward!",
+    "Source": "Reward for inviting Gorou to a duel at The Cat's Tail and claiming victory in a Friendly Fracas with him",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Gorou",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "Geo",
+        "Bow",
+        "Inazuma"
+    ],
+    "Talent": {
+        "16061": {
+            "Name": "Ripping Fang Fletching",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "16062": {
+            "Name": "Inuzaka All-Round Defense",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], creates 1 <color=#FFFFFFFF>$[C116061]</color>.",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_GEO",
+                "C116061": {
+                    "Name": "General's War Banner",
+                    "Desc": "Your party's characters deal +1 $[K106].\\n<color=#FFFFFFFF>$[K4]: 2</color> (Can stack, can stack till 3 Rounds)",
+                    "Child": {
+                        "K106": {
+                            "Name": "{SPRITE_PRESET#2106}<color=#FFE699FF>Geo DMG</color>",
+                            "Desc": "Reacts with Elements if they are already applied:\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Cryo Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Hydro Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Pyro Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Electro Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)"
+                        },
+                        "K4": {
+                            "Name": "<color=#FFFFFFFF>Duration (Rounds)</color>",
+                            "Desc": "Each time you reach the end of a Round, <color=#FFFFFFFF>Duration (Rounds)</color> -1.\\nThis card will be discarded immediately once <color=#FFFFFFFF>Duration (Rounds)</color> runs out."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 3
+            }
+        },
+        "16063": {
+            "Name": "Juuga: Forward Unto Victory",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], creates 1 <color=#FFFFFFFF>$[C116061]</color>, summons <color=#FFFFFFFF>$[C116062]</color>.",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_GEO",
+                "C116061": {
+                    "Name": "General's War Banner",
+                    "Desc": "Your party's characters deal +1 $[K106].\\n<color=#FFFFFFFF>$[K4]: 2</color> (Can stack, can stack till 3 Rounds)",
+                    "Child": {
+                        "K106": {
+                            "Name": "{SPRITE_PRESET#2106}<color=#FFE699FF>Geo DMG</color>",
+                            "Desc": "Reacts with Elements if they are already applied:\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Cryo Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Hydro Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Pyro Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Electro Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)"
+                        },
+                        "K4": {
+                            "Name": "<color=#FFFFFFFF>Duration (Rounds)</color>",
+                            "Desc": "Each time you reach the end of a Round, <color=#FFFFFFFF>Duration (Rounds)</color> -1.\\nThis card will be discarded immediately once <color=#FFFFFFFF>Duration (Rounds)</color> runs out."
+                        }
+                    }
+                },
+                "C116062": {
+                    "Name": "General's Glory",
+                    "Desc": "<color=#FFFFFFFF>End Phase:</color> Deal 1 $[K106]. If your party has 2 {SPRITE_PRESET#2106}<color=#FFE699FF>Geo</color> characters, create 1 <color=#FFFFFFFF>$[C111]</color>.\\n<color=#FFFFFFFF>$[K3]: 2</color>",
+                    "Child": {
+                        "K106": {
+                            "Name": "{SPRITE_PRESET#2106}<color=#FFE699FF>Geo DMG</color>",
+                            "Desc": "Reacts with Elements if they are already applied:\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Cryo Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Hydro Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Pyro Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Electro Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)"
+                        },
+                        "C111": {
+                            "Name": "Crystallize",
+                            "Desc": "Grants <color=#FFFFFFFF>1 $[K6] point</color> to your active character. (Can stack. Max 2 points.)",
+                            "Child": {
+                                "K6": {
+                                    "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>Shield</color>",
+                                    "Desc": "This Shield will be consumed to protect the character who equips it from DMG."
+                                }
+                            }
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 216061
+}

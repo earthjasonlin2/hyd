@@ -1,0 +1,32 @@
+{
+    "Type": "Action",
+    "Name": "红羽团扇",
+    "Title": "莫名风来·红羽团扇",
+    "Desc": "据说在天狗手中，这把团扇可以发挥各种各样的力量。\\n在一般人手中，它只有着「让身体稍微变得轻盈一点」程度的能力。\\n但即使是这种程度的能力，也足够一般人运用了。",
+    "Source": "",
+    "Icon": "UI_Gcg_CardFace_Assist_Prop_Hongye",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PAIMON",
+            "count": 2
+        },
+        {}
+    ],
+    "Tag": [
+        "道具"
+    ],
+    "Talent": {
+        "Name": "红羽团扇",
+        "Desc": "<color=#FFFFFFFF>我方切换角色后：</color>本回合中，我方执行的下次「切换角色」行动视为「$[K2]」而非「$[K1]」，并且少花费1个元素骰。（每回合1次）",
+        "Child": {
+            "K2": {
+                "Name": "<color=#FFFFFFFF>快速行动</color>",
+                "Desc": "执行了一次快速行动后，我方可以继续进行其他行动。\\n只有执行了一次战斗行动后，才会轮到对方行动。"
+            },
+            "K1": {
+                "Name": "<color=#FFFFFFFF>战斗行动</color>",
+                "Desc": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+            }
+        }
+    }
+}

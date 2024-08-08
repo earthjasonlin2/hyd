@@ -1,0 +1,34 @@
+{
+    "Type": "Action",
+    "Name": "梅洛彼得堡",
+    "Title": "梅洛彼得堡",
+    "Desc": "「黄铜与锻铁的要塞终有崩毁之日，律法与正义的坚城永无陨落之时。」",
+    "Source": "",
+    "Icon": "UI_Gcg_CardFace_Assist_Location_BideBao",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PAIMON",
+            "count": 1
+        },
+        {}
+    ],
+    "Tag": [
+        "场地"
+    ],
+    "Talent": {
+        "Name": "梅洛彼得堡",
+        "Desc": "<color=#FFFFFFFF>我方出战角色受到伤害或治疗后：</color>此牌累积1点<color=#FFFFFFFF>「禁令」</color>。（最多累积到4点）\\n<color=#FFFFFFFF>行动阶段开始时：</color>如果此牌已有4点<color=#FFFFFFFF>「禁令」</color>，则消耗4点，在对方场上生成<color=#FFFFFFFF>$[C301018]</color>。（本回合中打出的1张事件牌无效）",
+        "Child": {
+            "C301018": {
+                "Name": "严格禁令",
+                "Desc": "本回合中，所在阵营打出的事件牌无效。\\n<color=#FFFFFFFF>$[K3]：1</color>",
+                "Child": {
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>可用次数</color>",
+                        "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                    }
+                }
+            }
+        }
+    }
+}

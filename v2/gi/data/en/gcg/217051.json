@@ -1,0 +1,48 @@
+{
+    "Type": "Action",
+    "Name": "All Things Are of the Earth",
+    "Title": "\"All Things Are of the Earth\" Baizhu",
+    "Desc": "\"If you can perceive the heavens and the earth, defend against malignant auras with the flow of qi, and keep your mind clear, surely nothing can hinder you.\"",
+    "Source": "Reward for inviting Baizhu to a duel at The Cat's Tail and achieving all corresponding challenge objectives",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Baizhuer",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_DENDRO",
+            "count": 4
+        },
+        {
+            "costType": "GCG_COST_ENERGY",
+            "count": 2
+        }
+    ],
+    "Tag": [
+        "Talent",
+        "Combat Action"
+    ],
+    "Talent": {
+        "Name": "All Things Are of the Earth",
+        "Desc": "$[K1]: When your active character is <color=#FFFFFFFF>$[A1705]</color>, equip this card.\\nAfter $[A1705] equips this card, immediately use <color=#FFD780FF>$[S17053]</color> once.\\nWhen your $[A1705], who has this card equipped, is on the field, when <color=#FFFFFFFF>$[C117053]</color> activates a healing effect, generate 1 Elemental Dice of the same type as your active character.\\n(You must have $[A1705] in your deck to add this card to your deck)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+            },
+            "A1705": "All Things Are of the Earth",
+            "S17053": "S17053",
+            "C117053": {
+                "Name": "Seamless Shield",
+                "Desc": "Provides <color=#FFFFFFFF>1 $[K6]</color>, protecting your active character.\\n<color=#FFFFFFFF>When this effect is removed, or generated again:</color> Deal 1 $[K107], and heal your active character for 1 HP.",
+                "Child": {
+                    "K6": {
+                        "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>Shield</color>",
+                        "Desc": "This Shield will be consumed to protect the character who equips it from DMG."
+                    },
+                    "K107": {
+                        "Name": "{SPRITE_PRESET#2107}<color=#7EC236FF>Dendro DMG</color>",
+                        "Desc": "Applies {SPRITE_PRESET#2107}Dendro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Bloom</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Dendro Core</color>] that grants +2 DMG to the next instance of Pyro or Electro DMG\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Burning</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Burning Flame</color>] that will deal 1 Pyro DMG at the end of the Round (Takes effect once, max 2 stacks)\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Quicken</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Catalyzing Field</color>] that grants +1 DMG to the next 2 instances of Dendro or Electro DMG"
+                    }
+                }
+            }
+        }
+    }
+}

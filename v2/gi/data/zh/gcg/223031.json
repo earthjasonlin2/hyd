@@ -1,0 +1,54 @@
+{
+    "Type": "Action",
+    "Name": "魔蝎烈祸",
+    "Title": "炽沙叙事人·魔蝎烈祸",
+    "Desc": "「为了永恒绿洲！」",
+    "Source": "在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度镀金旅团·炽沙叙事人中完成挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Muscleman",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PYRO",
+            "count": 3
+        },
+        {
+            "costType": "GCG_COST_ENERGY",
+            "count": 2
+        }
+    ],
+    "Tag": [
+        "天赋",
+        "战斗行动"
+    ],
+    "Talent": {
+        "Name": "魔蝎烈祸",
+        "Desc": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A2303]</color>时，装备此牌。\\n$[A2303]装备此牌后，立刻使用一次<color=#FFD780FF>$[S23033]</color>。\\n装备有此牌的$[A2303]生成的<color=#FFFFFFFF>$[C123031]</color>在$[A2303]使用过<color=#FFFFFFFF>「普通攻击」</color>或<color=#FFFFFFFF>「元素战技」</color>的回合中，造成的伤害+1；\\n<color=#FFFFFFFF>$[C123031]</color>的减伤效果改为每回合至多2次。\\n（牌组中包含$[A2303]，才能加入牌组）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>战斗行动</color>",
+                "Desc": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+            },
+            "A2303": "魔蝎烈祸",
+            "S23033": "S23033",
+            "C123031": {
+                "Name": "厄灵·炎之魔蝎",
+                "Desc": "<color=#FFFFFFFF>结束阶段：</color>造成1点$[K103]。\\n<color=#FFFFFFFF>$[K3]：2</color>\\n\\n<color=#FFFFFFFF>入场时和行动阶段开始：</color>使我方$[A2303]附属$[C123033]。（$[C123031]在场时每回合1次，使角色受到的伤害-1。）",
+                "Child": {
+                    "K103": {
+                        "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>火元素伤害</color>",
+                        "Desc": "附着{SPRITE_PRESET#2103}火元素，可发生元素反应：\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>融化</color>：本伤害+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>蒸发</color>：本伤害+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>超载</color>：本伤害+2，目标强制切换到下一个角色\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>燃烧</color>：本伤害+1，生成回合结束时造成1点火元素伤害的[<color=#FFFFFFFF>燃烧烈焰</color>]（可用次数1，最多叠加到2）"
+                    },
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>可用次数</color>",
+                        "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                    },
+                    "A2303": "魔蝎烈祸",
+                    "C123033": {
+                        "Name": "炎之魔蝎·守势",
+                        "Desc": "<color=#FFFFFFFF>$[C123031]在场时：</color>所附属角色受到的伤害-1。（每回合1次）",
+                        "Child": {}
+                    }
+                }
+            }
+        }
+    }
+}

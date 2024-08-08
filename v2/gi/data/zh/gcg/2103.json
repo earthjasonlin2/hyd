@@ -1,0 +1,110 @@
+{
+    "Type": "Character",
+    "Name": "无相之冰",
+    "Title": "无相之冰",
+    "Desc": "代号为「塔勒特」的高级冰元素生命。\\n似乎很不擅长球类运动…",
+    "Source": "在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度无相之冰中获得胜利后获取",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_EffigyIce",
+    "Hp": 8,
+    "Cost": 2,
+    "Tag": [
+        "冰元素",
+        "其他武器",
+        "魔物"
+    ],
+    "Talent": {
+        "21031": {
+            "Name": "冰锥迸射",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "21032": {
+            "Name": "圆舞冰环",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，本角色附属<color=#FFFFFFFF>$[C121031]</color>。",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "C121031": {
+                    "Name": "四迸冰锥",
+                    "Desc": "<color=#FFFFFFFF>角色进行普通攻击时：</color>对所有敌方后台角色造成1点<color=#FFFFFFFF>$[K5]</color>。\\n<color=#FFFFFFFF>$[K3]：1</color>",
+                    "Child": {
+                        "K5": {
+                            "Name": "<color=#FFFFFFFF>穿透伤害</color>",
+                            "Desc": "穿透伤害无法受到伤害加成，但是也无法被护盾、伤害免疫等效果抵消。"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>可用次数</color>",
+                            "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3
+            }
+        },
+        "21033": {
+            "Name": "冰棱轰坠",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，对所有敌方后台角色造成1点<color=#FFFFFFFF>$[K5]</color>，召唤<color=#FFFFFFFF>$[C121033]</color>。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "K5": {
+                    "Name": "<color=#FFFFFFFF>穿透伤害</color>",
+                    "Desc": "穿透伤害无法受到伤害加成，但是也无法被护盾、伤害免疫等效果抵消。"
+                },
+                "C121033": {
+                    "Name": "刺击冰棱",
+                    "Desc": "<color=#FFFFFFFF>结束阶段：</color>对敌方$[K7]造成1点$[K101]。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+                    "Child": {
+                        "K7": {
+                            "Name": "<color=#FFFFFFFF>距离我方出战角色最近的角色</color>",
+                            "Desc": "对方场上距离我方出战角色「最近」的角色，指的是位置与我方出战角色最接近的敌方角色。\\n如果存在多个位置最接近的角色，则其中靠前的角色被视为「最近」。"
+                        },
+                        "K101": {
+                            "Name": "{SPRITE_PRESET#2101}<color=#99FFFFFF>冰元素伤害</color>",
+                            "Desc": "附着{SPRITE_PRESET#2101}冰元素，可发生元素反应：\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2103}<color=#FFFFFFFF>融化</color>：本伤害+2\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2104}<color=#FFFFFFFF>超导</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2102}<color=#FFFFFFFF>冻结</color>：本伤害+1，使目标本回合无法行动（受到物理或火元素伤害后提前解除，但是伤害+2）"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>可用次数</color>",
+                            "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "21034": {
+            "Name": "冰晶核心",
+            "Desc": "【被动】战斗开始时，初始附属<color=#FFFFFFFF>$[C121034]</color>。",
+            "Child": {
+                "C121034": {
+                    "Name": "冰晶核心",
+                    "Desc": "<color=#FFFFFFFF>所附属角色被击倒时：</color>移除此效果，使角色$[K54]，并治疗该角色到1点生命值。",
+                    "Child": {
+                        "K54": {
+                            "Name": "<color=#FFFFFFFF>免于被击倒</color>",
+                            "Desc": "一些效果会使角色在生命值被降为0的时候<color=#FFFFFFFF>免于被击倒</color>，并治疗该角色到一定生命值。\\n此时，角色不视为被<color=#FFFFFFFF>击倒</color>过。（因此，角色所附属的装备和状态不会被弃置，充能也不会被清空。）"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 221031
+}

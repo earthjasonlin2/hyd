@@ -1,0 +1,66 @@
+{
+    "Type": "Character",
+    "Name": "Mirror Maiden",
+    "Title": "\"Snezhnayan Maiden\" Mirror Envoy",
+    "Desc": "All secrets shall be concealed within the mirror of glaring brightness...",
+    "Source": "Reward for accepting the Tavern Challenge at The Cat's Tail and claiming victory in a Friendly Fracas with Fatui Mirror Maiden",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_Maidenwater",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "Hydro",
+        "Other Weapons",
+        "Fatui"
+    ],
+    "Talent": {
+        "22021": {
+            "Name": "Water Ball",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "22022": {
+            "Name": "Influx Blast",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. The target character receives <color=#FFFFFFFF>$[C122021]</color>.",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "C122021": {
+                    "Name": "Refraction",
+                    "Desc": "<color=#FFFFFFFF>When the character to which this card is attached switches to another character:</color> Elemental Dice Cost +1.\\n<color=#FFFFFFFF>$[K4]: 2</color>\\n(Only one such status can be applied on the same side at a time)",
+                    "Child": {
+                        "K4": {
+                            "Name": "<color=#FFFFFFFF>Duration (Rounds)</color>",
+                            "Desc": "Each time you reach the end of a Round, <color=#FFFFFFFF>Duration (Rounds)</color> -1.\\nThis card will be discarded immediately once <color=#FFFFFFFF>Duration (Rounds)</color> runs out."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3
+            }
+        },
+        "22023": {
+            "Name": "Rippled Reflection",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 5,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO"
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 222021
+}

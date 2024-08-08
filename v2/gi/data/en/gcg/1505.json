@@ -1,0 +1,99 @@
+{
+    "Type": "Character",
+    "Name": "Kaedehara Kazuha",
+    "Title": "Scarlet Leaves Pursue Wild Waves: Kaedehara Kazuha",
+    "Desc": "Flowers and birds are a dear pleasure to one winding under the moonlight.",
+    "Source": "Reward for inviting Kaedehara Kazuha to a duel at The Cat's Tail and claiming victory in a Friendly Fracas with him",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Kazuha",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "Anemo",
+        "Sword",
+        "Inazuma"
+    ],
+    "Talent": {
+        "15051": {
+            "Name": "Garyuu Bladework",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "15052": {
+            "Name": "Chihayaburu",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], attaches <color=#FFFFFFFF>$[C115051]</color> to this character. \\nIf this skill triggers Swirl, <color=#FFFFFFFF>$[C115051]</color> is converted to the Swirled Element.\\n<color=#FFFFFFFF>After the Skill DMG is finalized:</color> Your team switches to the next character.",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO",
+                "C115051": {
+                    "Name": "Midare Ranzan",
+                    "Desc": "<color=#FFFFFFFF>The next time you use Switch Character to switch to the character to which this is attached:</color> This switch is considered a $[K2] rather than a $[K1].\\n<color=#FFFFFFFF>Before you choose an action:</color> If the character to which this is attached is your active character, they immediately use a Normal Attack. The $[K100] this Normal Attack would deal is converted to $[K105]. Once finalized, this effect is removed.",
+                    "Child": {
+                        "K2": {
+                            "Name": "<color=#FFFFFFFF>Fast Action</color>",
+                            "Desc": "You can continue with other actions after conducting 1 Fast Action.\\nOnly after conducting 1 Combat Action will the turn pass over to your opponent."
+                        },
+                        "K1": {
+                            "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                            "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+                        },
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>",
+                            "Desc": "Physical DMG will not apply any Elements, nor can it engage in Elemental Reactions."
+                        },
+                        "K105": {
+                            "Name": "{SPRITE_PRESET#2105}<color=#80FFD7FF>Anemo DMG</color>",
+                            "Desc": "Reacts with Elements if they are already applied:\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Cryo Swirl</color>: Deals 1 Cryo DMG to all opposing characters except the target\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Hydro Swirl</color>: Deals 1 Hydro DMG to all opposing characters except the target\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Pyro Swirl</color>: Deals 1 Pyro DMG to all opposing characters except the target\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Electro Swirl</color>: Deals 1 Electro DMG to all opposing characters except the target"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 3
+            }
+        },
+        "15053": {
+            "Name": "Kazuha Slash",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT] and summons <color=#FFFFFFFF>$[C115052]</color>.",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO",
+                "C115052": {
+                    "Name": "Autumn Whirlwind",
+                    "Desc": "<color=#FFFFFFFF>End Phase:</color> Deal 1 $[K105].\\n<color=#FFFFFFFF>$[K3]: 3</color>\\n\\n<color=#FFFFFFFF>After your Characters or Summons trigger a Swirl reaction:</color> Convert the Elemental Type of this card and change its DMG dealt to the element Swirled. (Can only be converted once before leaving the field)",
+                    "Child": {
+                        "K105": {
+                            "Name": "{SPRITE_PRESET#2105}<color=#80FFD7FF>Anemo DMG</color>",
+                            "Desc": "Reacts with Elements if they are already applied:\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Cryo Swirl</color>: Deals 1 Cryo DMG to all opposing characters except the target\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Hydro Swirl</color>: Deals 1 Hydro DMG to all opposing characters except the target\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Pyro Swirl</color>: Deals 1 Pyro DMG to all opposing characters except the target\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Electro Swirl</color>: Deals 1 Electro DMG to all opposing characters except the target"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "15054": {
+            "Name": "Chihayaburu",
+            "Desc": "",
+            "Child": {},
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 215051
+}

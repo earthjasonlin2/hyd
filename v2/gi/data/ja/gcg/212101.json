@@ -1,0 +1,38 @@
+{
+    "Type": "Action",
+    "Name": "古海継嗣の権威",
+    "Title": "ヌヴィレット·古海継嗣の権威",
+    "Desc": "「海よ、私は帰ってきた」",
+    "Source": "キャッツテールでヌヴィレットを招待して対戦し、対応する挑戦目標をクリアすることで獲得",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Neuvillette",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_HYDRO",
+            "count": 1
+        },
+        {
+            "costType": "GCG_COST_DICE_VOID",
+            "count": 2
+        }
+    ],
+    "Tag": [
+        "天賦",
+        "戦闘アクション"
+    ],
+    "Talent": {
+        "Name": "古海継嗣の権威",
+        "Desc": "$[K1]：味方の出撃キャラが<color=#FFFFFFFF>$[A1210]</color>の時、このカードを装備できる。\\n$[A1210]がこのカードを装備した後、直ちに<color=#FFD780FF>$[S12101]</color>を1回発動する。\\n味方のキャラが$[K212]を起こすと、このカードを装備したヌヴィレットが次の2回で与えるダメージ+1。\\n（このカードはデッキに$[A1210]が含まれている場合のみ、デッキに追加できる）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>戦闘アクション</color>",
+                "Desc": "味方が戦闘アクションを1回行った後、相手のターンに移ります。\\n<color=#FFFFFFFF>このようなルールを持つ手札を出すのはクイックアクションではなく、戦闘アクションと見なされます。</color>"
+            },
+            "A1210": "古海継嗣の権威",
+            "S12101": "S12101",
+            "K212": {
+                "Name": "<color=#80C0FFFF>{SPRITE_PRESET#2102}水元素関連反応</color>",
+                "Desc": "{SPRITE_PRESET#2102}{SPRITE_PRESET#2103}<color=#FFFFFFFF>蒸発</color>：ダメージ+2\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}<color=#FFFFFFFF>感電</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2101}<color=#FFFFFFFF>凍結</color>：ダメージ+1、目標はこのラウンドで行動不能になる（物理ダメージまたは炎ダメージを受けると、即座に解除されるがダメージ+2となる）\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}<color=#FFFFFFFF>開花</color>：次の炎元素または雷元素ダメージを2アップできる「<color=#FFFFFFFF>草原核</color>」を生成する\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2102}<color=#FFFFFFFF>結晶（水）</color>：ダメージ+1、味方の出撃キャラはシールドを1獲得する（最大2まで重ね掛け可能）\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2102}<color=#FFFFFFFF>拡散（水）</color>：目標以外の相手チーム全員に水元素ダメージを1与える"
+            }
+        }
+    }
+}

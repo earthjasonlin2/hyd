@@ -1,0 +1,40 @@
+{
+    "Type": "Action",
+    "Name": "Lunar Cycles Unending",
+    "Title": "Azhdaha: Lunar Cycles Unending",
+    "Desc": "\"Today is the day... We settle this now!\"",
+    "Source": "Reward for accepting the Tavern Challenge against Azhdaha at The Cat's Tail and achieving all corresponding challenge objectives in a Friendly Fracas",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Dahaka",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PAIMON",
+            "count": 2
+        },
+        {}
+    ],
+    "Tag": [
+        "Talent",
+        "Combat Action"
+    ],
+    "Talent": {
+        "Name": "Lunar Cycles Unending",
+        "Desc": "$[K1]: When your active character is <color=#FFFFFFFF>$[A2602]</color>, play this card on them. Attach <color=#FFFFFFFF>$[C126022]</color> to $[A2602], then create 1 Elemental Die for each Elemental Type your characters have.\\n(Deck must contain $[A2602] to add this card to it)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+            },
+            "A2602": "Lunar Cycles Unending",
+            "C126022": {
+                "Name": "Stone Facets: Elemental Crystallization",
+                "Desc": "<color=#FFFFFFFF>After this character takes {SPRITE_PRESET#2101}<color=#99FFFFFF>Cryo</color>/{SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro</color>/{SPRITE_PRESET#2103}<color=#FF9999FF>Pyro</color>/{SPRITE_PRESET#2104}<color=#FFACFFFF>Electro</color> DMG:</color> If this character currently has not absorbed the power of this element, remove this effect, and then this character performs $[K1012].",
+                "Child": {
+                    "K1012": {
+                        "Name": "<color=#FFFFFFFF>Elemental Absorption</color>",
+                        "Desc": "Azhdaha can absorb the power of {SPRITE_PRESET#2101}<color=#99FFFFFF>Cryo</color>/{SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro</color>/{SPRITE_PRESET#2103}<color=#FF9999FF>Pyro</color>/{SPRITE_PRESET#2104}<color=#FFACFFFF>Electro</color>. (Only 1 can be absorbed at any one time)\\n<color=#FFFFFFFF>When Azhdaha has absorbed any of the above Elements:</color> Based on the type of Element that was absorbed, gain the skills {SPRITE_PRESET#2101}<color=#99FFFFFF>Frostspike Wave</color>/{SPRITE_PRESET#2102}<color=#80C0FFFF>Torrential Rebuke</color>/{SPRITE_PRESET#2103}<color=#FF9999FF>Blazing Rebuke</color>/{SPRITE_PRESET#2104}<color=#FFACFFFF>Thunderstorm Wave</color>."
+                    }
+                }
+            }
+        }
+    }
+}

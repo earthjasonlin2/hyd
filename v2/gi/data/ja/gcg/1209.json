@@ -1,0 +1,106 @@
+{
+    "Type": "Character",
+    "Name": "夜蘭",
+    "Title": "幽谷に咲く蘭·夜蘭",
+    "Desc": "渺々たる天地、往来せし幽客。",
+    "Source": "キャッツテールで夜蘭を招待し、友好対戦に勝利することで獲得",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Yelan",
+    "Hp": 10,
+    "Cost": 3,
+    "Tag": [
+        "水元素",
+        "弓",
+        "璃月"
+    ],
+    "Talent": {
+        "12091": {
+            "Name": "匿影隠曜の弓",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "12092": {
+            "Name": "絡み合う命の糸",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、本キャラの<color=#FFFFFFFF>$[C112091]</color>の層数+2。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "D__KEY__DAMAGE": 3,
+                "C112091": {
+                    "Name": "打破",
+                    "Desc": "この状態は初期に<color=#FFFFFFFF>「打破」</color>を1層有する。「打破」を重複して付与する際、<color=#FFFFFFFF>「打破」</color>を1層追加する。<color=#FFFFFFFF>「打破」</color>は、最大3層まで重ね掛け可能。\\n<color=#FFFFFFFF>エンドフェーズ：</color><color=#FFFFFFFF>「打破」</color>を1層追加。\\n\\n<color=#FFFFFFFF>付与されたキャラが通常攻撃を行う時</color>、<color=#FFFFFFFF>「打破」</color>がすでに2層重なっている場合、<color=#FFFFFFFF>「打破」</color>を2層消費して、与える$[K100]を$[K102]に変え、手札を1枚引く。",
+                    "Child": {
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>",
+                            "Desc": "物理ダメージは元素付着させたり、元素反応を起こしたりはしません。"
+                        },
+                        "K102": {
+                            "Name": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素ダメージ</color>",
+                            "Desc": "{SPRITE_PRESET#2102}水元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2103}<color=#FFFFFFFF>蒸発</color>：ダメージ+2\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}<color=#FFFFFFFF>感電</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2101}<color=#FFFFFFFF>凍結</color>：ダメージ+1、目標はこのラウンドで行動不能になる（物理ダメージまたは炎ダメージを受けると、即座に解除されるがダメージ+2となる）\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}<color=#FFFFFFFF>開花</color>：ダメージ+1、次の炎元素または雷元素ダメージを+2できる「<color=#FFFFFFFF>草原核</color>」を生成する"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3
+            }
+        },
+        "12093": {
+            "Name": "深謀玲瓏賽",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、<color=#FFFFFFFF>$[C112092]</color>を生成する。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "D__KEY__DAMAGE": 3,
+                "C112092": {
+                    "Name": "玲瓏一擲",
+                    "Desc": "<color=#FFFFFFFF>味方のキャラが通常攻撃を発動した後</color>、$[K102]を1与える。\\n<color=#FFFFFFFF>$[K4]：2</color>",
+                    "Child": {
+                        "K102": {
+                            "Name": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素ダメージ</color>",
+                            "Desc": "{SPRITE_PRESET#2102}水元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2103}<color=#FFFFFFFF>蒸発</color>：ダメージ+2\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}<color=#FFFFFFFF>感電</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2101}<color=#FFFFFFFF>凍結</color>：ダメージ+1、目標はこのラウンドで行動不能になる（物理ダメージまたは炎ダメージを受けると、即座に解除されるがダメージ+2となる）\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}<color=#FFFFFFFF>開花</color>：ダメージ+1、次の炎元素または雷元素ダメージを+2できる「<color=#FFFFFFFF>草原核</color>」を生成する"
+                        },
+                        "K4": {
+                            "Name": "<color=#FFFFFFFF>継続ラウンド数</color>",
+                            "Desc": "各ラウンドのエンドフェーズで、<color=#FFFFFFFF>継続ラウンド数</color>が1マイナスされます。\\n<color=#FFFFFFFF>継続ラウンド数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3,
+                "GCG_COST_ENERGY": 3
+            }
+        },
+        "12094": {
+            "Name": "打破",
+            "Desc": "【固有】戦闘開始時、<color=#FFFFFFFF>$[C112091]</color>が付与される。",
+            "Child": {
+                "C112091": {
+                    "Name": "打破",
+                    "Desc": "この状態は初期に<color=#FFFFFFFF>「打破」</color>を1層有する。「打破」を重複して付与する際、<color=#FFFFFFFF>「打破」</color>を1層追加する。<color=#FFFFFFFF>「打破」</color>は、最大3層まで重ね掛け可能。\\n<color=#FFFFFFFF>エンドフェーズ：</color><color=#FFFFFFFF>「打破」</color>を1層追加。\\n\\n<color=#FFFFFFFF>付与されたキャラが通常攻撃を行う時</color>、<color=#FFFFFFFF>「打破」</color>がすでに2層重なっている場合、<color=#FFFFFFFF>「打破」</color>を2層消費して、与える$[K100]を$[K102]に変え、手札を1枚引く。",
+                    "Child": {
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>",
+                            "Desc": "物理ダメージは元素付着させたり、元素反応を起こしたりはしません。"
+                        },
+                        "K102": {
+                            "Name": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素ダメージ</color>",
+                            "Desc": "{SPRITE_PRESET#2102}水元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2103}<color=#FFFFFFFF>蒸発</color>：ダメージ+2\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}<color=#FFFFFFFF>感電</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2101}<color=#FFFFFFFF>凍結</color>：ダメージ+1、目標はこのラウンドで行動不能になる（物理ダメージまたは炎ダメージを受けると、即座に解除されるがダメージ+2となる）\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}<color=#FFFFFFFF>開花</color>：ダメージ+1、次の炎元素または雷元素ダメージを+2できる「<color=#FFFFFFFF>草原核</color>」を生成する"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 212091
+}

@@ -1,0 +1,62 @@
+{
+    "Name": "건설 특화 타입 장치",
+    "Desc": "건설 시공과 고고학 발굴에서 모두 가늠하기 힘든 수준의 가치를 지닌 대형 태엽 장치. 이름은 클레멘타인선 건설 당시 칼라스가 고용한 엔지니어에서 유래되었다.\\n해당 엔지니어는 칼라스의 후원하에 푸아송 터널을 뚫기 위해 전설적인 거대 작업용 기계 「황금 음악선」을 만들었으며, 준공 후 이를 기반으로 유사한 구조를 가졌으나 크기는 축소한 태엽 장치를 설계했다",
+    "Icon": "UI_MonsterIcon_MachinaIustitia_Excavator",
+    "Codex": "AUTOMATRON",
+    "Title": "건설 특화 타입",
+    "SpecialNames": [
+        "에티엔-루이 타입 장치"
+    ],
+    "Reward": [],
+    "Child": {
+        "24069201": {
+            "MonsterName": "MachinaIustitia_Excavator_Codex",
+            "Type": "MONSTER_ORDINARY",
+            "HpDrops": [
+                {
+                    "dropId": 22010010,
+                    "hpPercent": 75
+                },
+                {
+                    "dropId": 22010010,
+                    "hpPercent": 50
+                },
+                {
+                    "dropId": 22010010,
+                    "hpPercent": 25
+                }
+            ],
+            "KillDropId": 22010030,
+            "Prop": [
+                {
+                    "type": "FIGHT_PROP_BASE_HP",
+                    "growCurve": "GROW_CURVE_HP_2"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_ATTACK",
+                    "growCurve": "GROW_CURVE_ATTACK_2"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_DEFENSE",
+                    "growCurve": "GROW_CURVE_DEFENSE"
+                }
+            ],
+            "LocalLegend": false,
+            "SubHurt": {
+                "Fire": 0.1000000014901,
+                "Grass": 0.1000000014901,
+                "Water": 0.1000000014901,
+                "Elec": 0.1000000014901,
+                "Wind": 0.1000000014901,
+                "Ice": 0.1000000014901,
+                "Rock": 0.1000000014901,
+                "Physical": 0.1000000014901
+            },
+            "Base": {
+                "HP": 95.0879974365234,
+                "ATK": 37.6800003051758,
+                "DEF": 500
+            }
+        }
+    }
+}

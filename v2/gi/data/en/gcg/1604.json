@@ -1,0 +1,98 @@
+{
+    "Type": "Character",
+    "Name": "Albedo",
+    "Title": "\"Kreideprinz\" Albedo",
+    "Desc": "Nigredo and calx, rubedo and citrinitas.",
+    "Source": "Reward for inviting Albedo to a duel at The Cat's Tail and claiming victory in a Friendly Fracas with him",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Albedo",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "Geo",
+        "Sword",
+        "Mondstadt"
+    ],
+    "Talent": {
+        "16041": {
+            "Name": "Favonius Bladework - Weiss",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "16042": {
+            "Name": "Abiogenesis: Solar Isotoma",
+            "Desc": "Summons <color=#FFFFFFFF>$[C116041]</color>.",
+            "Child": {
+                "C116041": {
+                    "Name": "Solar Isotoma",
+                    "Desc": "<color=#FFFFFFFF>End Phase:</color> Deal 1 $[K106].\\n<color=#FFFFFFFF>$[K3]: 3</color>\\n<color=#FFFFFFFF>When you perform \"Switch Character\" and this Summon is on the field:</color> This switch is considered a $[K2] instead of a $[K1]. (Once per Round)",
+                    "Child": {
+                        "K106": {
+                            "Name": "{SPRITE_PRESET#2106}<color=#FFE699FF>Geo DMG</color>",
+                            "Desc": "Reacts with Elements if they are already applied:\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Cryo Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Hydro Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Pyro Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Electro Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        },
+                        "K2": {
+                            "Name": "<color=#FFFFFFFF>Fast Action</color>",
+                            "Desc": "You can continue with other actions after conducting 1 Fast Action.\\nOnly after conducting 1 Combat Action will the turn pass over to your opponent."
+                        },
+                        "K1": {
+                            "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                            "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 3
+            }
+        },
+        "16043": {
+            "Name": "Rite of Progeniture: Tectonic Tide",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. If <color=#FFFFFFFF>$[C116041]</color> is on the field, deals +2 DMG.",
+            "Child": {
+                "D__KEY__DAMAGE": 4,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_GEO",
+                "C116041": {
+                    "Name": "Solar Isotoma",
+                    "Desc": "<color=#FFFFFFFF>End Phase:</color> Deal 1 $[K106].\\n<color=#FFFFFFFF>$[K3]: 3</color>\\n<color=#FFFFFFFF>When you perform \"Switch Character\" and this Summon is on the field:</color> This switch is considered a $[K2] instead of a $[K1]. (Once per Round)",
+                    "Child": {
+                        "K106": {
+                            "Name": "{SPRITE_PRESET#2106}<color=#FFE699FF>Geo DMG</color>",
+                            "Desc": "Reacts with Elements if they are already applied:\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Cryo Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Hydro Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Pyro Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Electro Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        },
+                        "K2": {
+                            "Name": "<color=#FFFFFFFF>Fast Action</color>",
+                            "Desc": "You can continue with other actions after conducting 1 Fast Action.\\nOnly after conducting 1 Combat Action will the turn pass over to your opponent."
+                        },
+                        "K1": {
+                            "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                            "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 216041
+}

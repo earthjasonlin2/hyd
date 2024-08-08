@@ -1,0 +1,32 @@
+{
+    "Type": "Action",
+    "Name": "田铁嘴",
+    "Title": "书接上回·田铁嘴",
+    "Desc": "「我来给您掰扯掰扯这个道理，您来听听原汁原味的评书！」",
+    "Source": "在大世界与牌手田铁嘴的冒险挑战中完成挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Assist_NPC_Tiantiezui",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_VOID",
+            "count": 2
+        },
+        {}
+    ],
+    "Tag": [
+        "伙伴"
+    ],
+    "Talent": {
+        "Name": "田铁嘴",
+        "Desc": "<color=#FFFFFFFF>结束阶段：</color>我方一名充能未满的角色获得1点$[K310]。（出战角色优先）\\n<color=#FFFFFFFF>$[K3]：2</color>",
+        "Child": {
+            "K310": {
+                "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}充能</color>",
+                "Desc": "角色使用「元素爆发」时，需要消耗{SPRITE_PRESET#1110}充能。\\n角色使用「元素战技」或「普通攻击」后，会获得1点{SPRITE_PRESET#1110}充能。"
+            },
+            "K3": {
+                "Name": "<color=#FFFFFFFF>可用次数</color>",
+                "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+            }
+        }
+    }
+}

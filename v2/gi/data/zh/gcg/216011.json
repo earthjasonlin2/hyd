@@ -1,0 +1,45 @@
+{
+    "Type": "Action",
+    "Name": "储之千日，用之一刻",
+    "Title": "凝光·储之千日，用之一刻",
+    "Desc": "余裕，是自信的代名词。",
+    "Source": "在猫尾酒馆中邀请凝光进行对局，完成相应挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Ningguang",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_GEO",
+            "count": 4
+        },
+        {}
+    ],
+    "Tag": [
+        "天赋",
+        "战斗行动"
+    ],
+    "Talent": {
+        "Name": "储之千日，用之一刻",
+        "Desc": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1601]</color>时，装备此牌。\\n$[A1601]装备此牌后，立刻使用一次<color=#FFD780FF>$[S16012]</color>。\\n装备有此牌的$[A1601]在场时，<color=#FFFFFFFF>$[C116011]</color>会使我方造成的<color=#FFE699FF>$[K106]</color>+1。\\n（牌组中包含$[A1601]，才能加入牌组）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>战斗行动</color>",
+                "Desc": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+            },
+            "A1601": "储之千日，用之一刻",
+            "S16012": "S16012",
+            "C116011": {
+                "Name": "璇玑屏",
+                "Desc": "<color=#FFFFFFFF>我方出战角色受到至少为2的伤害时：</color>抵消1点伤害。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+                "Child": {
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>可用次数</color>",
+                        "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                    }
+                }
+            },
+            "K106": {
+                "Name": "{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素伤害</color>",
+                "Desc": "和已附着的元素发生元素反应：\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2101}<color=#FFFFFFFF>结晶（冰）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2102}<color=#FFFFFFFF>结晶（水）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2103}<color=#FFFFFFFF>结晶（火）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2104}<color=#FFFFFFFF>结晶（雷）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。"
+            }
+        }
+    }
+}

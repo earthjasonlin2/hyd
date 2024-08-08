@@ -1,0 +1,366 @@
+{
+    "Id": 2004024,
+    "Name": "雲騎驍衛・彦卿",
+    "Desc": "景元将軍の護衛であり、まだ総角の歳に過ぎない剣の天才。",
+    "MonsterCampID": null,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 930,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/Monster_2004020.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "LittleBoss",
+    "SpeedBase": 144,
+    "StanceBase": 360,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.3000000002793968,
+    "Child": [
+        {
+            "Id": 2004024,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Thunder",
+                "Wind",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Fire",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 200402401,
+                    "SkillName": "快哉風",
+                    "SkillDesc": "指定した味方単体に氷属性ダメージを与える。彦卿とすべての飛剣が「冷光」を1層獲得し、与ダメージが小アップする。",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200402402,
+                    "SkillName": "帰燕",
+                    "SkillDesc": "「飛剣」を4本召喚して、「剣陣」効果を獲得し、自身の速度がアップする。「飛剣」に「陣眼」を付与する。第三段階の時にこのスキルを発動すると、一定数の「飛剣」が追加で「練磨」を獲得する。",
+                    "DamageType": "",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200402403,
+                    "SkillName": "三尺水",
+                    "SkillDesc": "指定した味方単体に氷属性ダメージを与え、高確率で攻撃された味方を凍結状態にする。",
+                    "DamageType": "Ice",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 200402404,
+                    "SkillName": "破陣歌",
+                    "SkillDesc": "指定した味方単体及び隣接する味方に氷属性ダメージを与える。",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200402405,
+                    "SkillName": "剣気迫近",
+                    "SkillDesc": "チャージ状態に入る。次の行動で味方全体に「天河瀉り」を発動する。",
+                    "DamageType": "",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200402406,
+                    "SkillName": "天河瀉り",
+                    "SkillDesc": "味方全体に大量の氷属性ダメージを与える。",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200402407,
+                    "SkillName": "剣気凝",
+                    "SkillDesc": "味方単体をロックオンし、2ターン後にロックオンした味方に「風帰りて雲動き、天河瀉りし夢」を発動する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 200402408,
+                    "SkillName": "風帰りて雲動き、天河瀉りし夢",
+                    "SkillDesc": "指定した味方単体に連続で氷属性ダメージを与える。このスキルを発動する時、追加でダメージを与える。ダメージ回数はフィールドに存在する「飛剣」の数と同じである。スキル発動後、フィールド上のすべての「飛剣」を消す。",
+                    "DamageType": "Ice",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 200402409,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": 15
+                }
+            ]
+        },
+        {
+            "Id": 200402401,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 7.500000000465661,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": 216,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Thunder",
+                "Wind",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Fire",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 200402401,
+                    "SkillName": "快哉風",
+                    "SkillDesc": "指定した味方単体に氷属性ダメージを与える。彦卿とすべての飛剣が「冷光」を1層獲得し、与ダメージが小アップする。",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200402402,
+                    "SkillName": "帰燕",
+                    "SkillDesc": "「飛剣」を4本召喚して、「剣陣」効果を獲得し、自身の速度がアップする。「飛剣」に「陣眼」を付与する。第三段階の時にこのスキルを発動すると、一定数の「飛剣」が追加で「練磨」を獲得する。",
+                    "DamageType": "",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200402403,
+                    "SkillName": "三尺水",
+                    "SkillDesc": "指定した味方単体に氷属性ダメージを与え、高確率で攻撃された味方を凍結状態にする。",
+                    "DamageType": "Ice",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 200402404,
+                    "SkillName": "破陣歌",
+                    "SkillDesc": "指定した味方単体及び隣接する味方に氷属性ダメージを与える。",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200402405,
+                    "SkillName": "剣気迫近",
+                    "SkillDesc": "チャージ状態に入る。次の行動で味方全体に「天河瀉り」を発動する。",
+                    "DamageType": "",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200402406,
+                    "SkillName": "天河瀉り",
+                    "SkillDesc": "味方全体に大量の氷属性ダメージを与える。",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200402407,
+                    "SkillName": "剣気凝",
+                    "SkillDesc": "味方単体をロックオンし、2ターン後にロックオンした味方に「風帰りて雲動き、天河瀉りし夢」を発動する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 200402408,
+                    "SkillName": "風帰りて雲動き、天河瀉りし夢",
+                    "SkillDesc": "指定した味方単体に連続で氷属性ダメージを与える。このスキルを発動する時、追加でダメージを与える。ダメージ回数はフィールドに存在する「飛剣」の数と同じである。スキル発動後、フィールド上のすべての「飛剣」を消す。",
+                    "DamageType": "Ice",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 200402409,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": 15
+                }
+            ]
+        },
+        {
+            "Id": 200402402,
+            "AttackModifyRatio": 1.4285710006952286,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 49.950000000884756,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": 16,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Thunder",
+                "Wind",
+                "Imaginary",
+                "Fire"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Fire",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 200402401,
+                    "SkillName": "快哉風",
+                    "SkillDesc": "指定した味方単体に氷属性ダメージを与える。彦卿とすべての飛剣が「冷光」を1層獲得し、与ダメージが小アップする。",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200402402,
+                    "SkillName": "帰燕",
+                    "SkillDesc": "「飛剣」を4本召喚して、「剣陣」効果を獲得し、自身の速度がアップする。「飛剣」に「陣眼」を付与する。第三段階の時にこのスキルを発動すると、一定数の「飛剣」が追加で「練磨」を獲得する。",
+                    "DamageType": "",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200402403,
+                    "SkillName": "三尺水",
+                    "SkillDesc": "指定した味方単体に氷属性ダメージを与え、高確率で攻撃された味方を凍結状態にする。",
+                    "DamageType": "Ice",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 200402404,
+                    "SkillName": "破陣歌",
+                    "SkillDesc": "指定した味方単体及び隣接する味方に氷属性ダメージを与える。",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200402405,
+                    "SkillName": "剣気迫近",
+                    "SkillDesc": "チャージ状態に入る。次の行動で味方全体に「天河瀉り」を発動する。",
+                    "DamageType": "",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200402406,
+                    "SkillName": "天河瀉り",
+                    "SkillDesc": "味方全体に大量の氷属性ダメージを与える。",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200402407,
+                    "SkillName": "剣気凝",
+                    "SkillDesc": "味方単体をロックオンし、2ターン後にロックオンした味方に「風帰りて雲動き、天河瀉りし夢」を発動する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 200402408,
+                    "SkillName": "風帰りて雲動き、天河瀉りし夢",
+                    "SkillDesc": "指定した味方単体に連続で氷属性ダメージを与える。このスキルを発動する時、追加でダメージを与える。ダメージ回数はフィールドに存在する「飛剣」の数と同じである。スキル発動後、フィールド上のすべての「飛剣」を消す。",
+                    "DamageType": "Ice",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 200402409,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": 15
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 2004024,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2004024,
+            "WorldLevel": 1,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2004024,
+            "WorldLevel": 2,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2004024,
+            "WorldLevel": 3,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2004024,
+            "WorldLevel": 4,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2004024,
+            "WorldLevel": 5,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2004024,
+            "WorldLevel": 6,
+            "DisplayItemList": []
+        }
+    ]
+}

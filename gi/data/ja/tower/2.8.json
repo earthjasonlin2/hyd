@@ -1,0 +1,932 @@
+{
+    "Leyline": {
+        "50": {
+            "Icon": "UI_TowerBlessing_45",
+            "Name": "勇躍の月",
+            "Desc": "キャラクター登場後、2秒毎に1層の「勇躍」効果を獲得でき、<color=#F39000FF>攻撃力+20%</color>。この効果は最大3層まで重ね掛けできる。「勇躍」効果を3層獲得したキャラクターの重撃が敵に命中すると、敵の位置に<color=#F39000FF>衝撃波を放ち</color>、確定ダメージを与える。この衝撃波は2秒毎に1回のみ発動可能。「勇躍」効果はキャラクターが退場する時に解除される。"
+        },
+        "51": {
+            "Icon": "UI_TowerBlessing_46",
+            "Name": "風洗の月",
+            "Desc": "キャラクターが敵に拡散反応を起こした後、敵の<color=#F39000FF>防御力-12%</color>、継続時間10秒。最大3層まで重ね掛け可能。継続時間は層ごとに独立してカウントされる。"
+        },
+        "52": {
+            "Icon": "UI_TowerBlessing_47",
+            "Name": "砕破の月",
+            "Desc": "フィールド上キャラクターの通常攻撃、重撃、落下攻撃が敵に命中すると、該当キャラクターの<color=#F39000FF>通常攻撃、重撃、落下攻撃ダメージ+12%</color>、継続時間8秒。この効果は0.1秒ごとに1回のみ発動でき、最大4層まで重ね掛け可能。継続時間は層ごとに独立してカウントされる。キャラクターが退場する時、この効果が解除される。"
+        }
+    },
+    "Floor": {
+        "9": {
+            "Open": "2022-07-16 04:00:00",
+            "Close": "2022-09-01 03:59:59",
+            "Buff": [
+                "挑戦開始後、フィールドの周りにプラズマの力場が発生する。キャラクターがプラズマの力場の中にいる時、5秒毎に落雷を受け、雷元素ダメージを受ける。プラズマの力場は挑戦の進捗につれて、フィールドの中心へと蔓延する。",
+                "敵のHP+100%。"
+            ],
+            "Room": {
+                "1": {
+                    "Level": 72,
+                    "Cond": [
+                        [
+                            2,
+                            60
+                        ],
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 21020101,
+                            "Hp": 82833.16364580768,
+                            "Name": "ヒルチャール暴徒·木盾",
+                            "Icon": "UI_MonsterIcon_Brute_None_01"
+                        },
+                        {
+                            "Id": 21030301,
+                            "Hp": 27611.054548602628,
+                            "Name": "ヒルチャールシャーマン·風",
+                            "Icon": "UI_MonsterIcon_Shaman_Wind_01"
+                        },
+                        {
+                            "Id": 21030101,
+                            "Hp": 27611.054548602628,
+                            "Name": "ヒルチャールシャーマン·水",
+                            "Icon": "UI_MonsterIcon_Shaman_Water_01"
+                        },
+                        {
+                            "Id": 21011001,
+                            "Hp": 22088.844026572744,
+                            "Name": "ヒルチャール·雷矢",
+                            "Icon": "UI_MonsterIcon_Hili_Electric_Range"
+                        },
+                        {
+                            "Id": 21010901,
+                            "Hp": 22088.844026572744,
+                            "Name": "ヒルチャール·氷矢",
+                            "Icon": "UI_MonsterIcon_Hili_Ice_Range"
+                        },
+                        {
+                            "Id": 20011101,
+                            "Hp": 55222.10909720505,
+                            "Name": "大型水スライム",
+                            "Icon": "UI_MonsterIcon_Slime_Water_03"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 22010301,
+                            "Hp": 55222.10909720505,
+                            "Name": "アビスの魔術師·水",
+                            "Icon": "UI_MonsterIcon_Abyss_Water_01"
+                        },
+                        {
+                            "Id": 21030601,
+                            "Hp": 27611.054548602628,
+                            "Name": "ヒルチャールシャーマン·雷",
+                            "Icon": "UI_MonsterIcon_Shaman_Electric_01"
+                        },
+                        {
+                            "Id": 21020701,
+                            "Hp": 82833.16364580768,
+                            "Name": "ヒルチャール暴徒·雷斧",
+                            "Icon": "UI_MonsterIcon_Brute_None_01"
+                        },
+                        {
+                            "Id": 21020201,
+                            "Hp": 82833.16364580768,
+                            "Name": "ヒルチャール暴徒·炎斧",
+                            "Icon": "UI_MonsterIcon_Brute_None_01"
+                        }
+                    ]
+                },
+                "2": {
+                    "Level": 74,
+                    "Cond": [
+                        [
+                            2,
+                            60
+                        ],
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 23010101,
+                            "Hp": 116034.52487182627,
+                            "Name": "ファデュイ先遣隊·重衛士·氷銃",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Fat_SprayGun_Ice_01"
+                        },
+                        {
+                            "Id": 23010201,
+                            "Hp": 87025.89365386966,
+                            "Name": "ファデュイ先遣隊·重衛士·水銃",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Fat_SprayGun_Water_01"
+                        },
+                        {
+                            "Id": 23010301,
+                            "Hp": 116034.52487182627,
+                            "Name": "ファデュイ先遣隊·前鋒軍·雷ハンマー",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Strong_GreatHammer_Electric_01"
+                        },
+                        {
+                            "Id": 23010401,
+                            "Hp": 87025.89365386966,
+                            "Name": "ファデュイ先遣隊·遊撃兵·岩使い",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Standard_Staff_Rock_01"
+                        },
+                        {
+                            "Id": 23010501,
+                            "Hp": 87025.89365386966,
+                            "Name": "ファデュイ先遣隊·前鋒軍·風拳",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Strong_Gloves_Wind_01"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 25010701,
+                            "Hp": 58017.262435913035,
+                            "Name": "宝盗団·雑夫",
+                            "Icon": "UI_MonsterIcon_Thoarder_Male_Rogue_Fat_01"
+                        },
+                        {
+                            "Id": 25030201,
+                            "Hp": 58017.262435913035,
+                            "Name": "宝盗団·盗掘者",
+                            "Icon": "UI_MonsterIcon_Thoarder_Male_Rogue_Fat_02"
+                        },
+                        {
+                            "Id": 25030301,
+                            "Hp": 58017.262435913035,
+                            "Name": "宝盗団·海の男児",
+                            "Icon": "UI_MonsterIcon_Thoarder_Male_Sailor_01"
+                        },
+                        {
+                            "Id": 25060101,
+                            "Hp": 58017.262435913035,
+                            "Name": "宝盗団·拳術家",
+                            "Icon": "UI_MonsterIcon_Thoarder_MuscleMan_Boxer_01"
+                        },
+                        {
+                            "Id": 25070101,
+                            "Hp": 58017.262435913035,
+                            "Name": "宝盗団·粉砕者",
+                            "Icon": "UI_MonsterIcon_Thoarder_MuscleMan_Miner_01"
+                        },
+                        {
+                            "Id": 25010301,
+                            "Hp": 46413.81076335902,
+                            "Name": "宝盗団·炎の薬剤師",
+                            "Icon": "UI_MonsterIcon_Thoarder_Male_Chemist_Fire_01"
+                        },
+                        {
+                            "Id": 25010401,
+                            "Hp": 46413.81076335902,
+                            "Name": "宝盗団·水の薬剤師",
+                            "Icon": "UI_MonsterIcon_Thoarder_Male_Chemist_Water_01"
+                        },
+                        {
+                            "Id": 25010501,
+                            "Hp": 46413.81076335902,
+                            "Name": "宝盗団·雷の薬剤師",
+                            "Icon": "UI_MonsterIcon_Thoarder_Male_Chemist_Electric_01"
+                        },
+                        {
+                            "Id": 25010601,
+                            "Hp": 46413.81076335902,
+                            "Name": "宝盗団·氷の薬剤師",
+                            "Icon": "UI_MonsterIcon_Thoarder_Male_Chemist_Ice_01"
+                        },
+                        {
+                            "Id": 25020201,
+                            "Hp": 34810.359090804996,
+                            "Name": "宝盗団·弓使い",
+                            "Icon": "UI_MonsterIcon_Thoarder_Male_Hunter_01"
+                        }
+                    ]
+                },
+                "3": {
+                    "Level": 76,
+                    "Cond": [
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ],
+                        [
+                            2,
+                            420
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 21020401,
+                            "Hp": 274776.4713618347,
+                            "Name": "ヒルチャール·霜鎧の王",
+                            "Icon": "UI_MonsterIcon_Brute_Ice_01"
+                        },
+                        {
+                            "Id": 21020501,
+                            "Hp": 274776.4713618347,
+                            "Name": "ヒルチャール·岩兜の王",
+                            "Icon": "UI_MonsterIcon_Brute_Rock_None"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 23020101,
+                            "Hp": 152653.59520101917,
+                            "Name": "ファデュイ·デットエージェント·炎",
+                            "Icon": "UI_MonsterIcon_Fatuus_Fire_01"
+                        },
+                        {
+                            "Id": 23030101,
+                            "Hp": 152653.59520101917,
+                            "Name": "ファデュイ·雷蛍術師",
+                            "Icon": "UI_MonsterIcon_Fatuus_Summoner_01"
+                        }
+                    ]
+                }
+            }
+        },
+        "10": {
+            "Open": "2022-07-16 04:00:00",
+            "Close": "2022-09-01 03:59:59",
+            "Buff": [
+                "本層の全ての間の挑戦で、「頭領」と護衛役の従者がいる。従者は彼に強化効果をもたらす。従者1体につき、「頭領」の敵の全ての元素耐性と物理耐性+10%。12秒ごとに、従者1体につき、「頭領」の敵のHPを5%回復する。フィールド上に従者がいない時、「頭領」は上記強化効果と回復効果を失う。",
+                "敵のHP+100%。"
+            ],
+            "Room": {
+                "1": {
+                    "Level": 80,
+                    "Cond": [
+                        [
+                            2,
+                            60
+                        ],
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 22010401,
+                            "Hp": 74262.91016200923,
+                            "Name": "アビスの魔術師·雷",
+                            "Icon": "UI_MonsterIcon_Abyss_Electric_01"
+                        },
+                        {
+                            "Id": 21030201,
+                            "Hp": 37131.45508100475,
+                            "Name": "ヒルチャールシャーマン·草",
+                            "Icon": "UI_MonsterIcon_Shaman_Grass_01"
+                        },
+                        {
+                            "Id": 21030301,
+                            "Hp": 37131.45508100475,
+                            "Name": "ヒルチャールシャーマン·風",
+                            "Icon": "UI_MonsterIcon_Shaman_Wind_01"
+                        },
+                        {
+                            "Id": 21030101,
+                            "Hp": 37131.45508100475,
+                            "Name": "ヒルチャールシャーマン·水",
+                            "Icon": "UI_MonsterIcon_Shaman_Water_01"
+                        },
+                        {
+                            "Id": 21020201,
+                            "Hp": 111394.36524301399,
+                            "Name": "ヒルチャール暴徒·炎斧",
+                            "Icon": "UI_MonsterIcon_Brute_None_01"
+                        },
+                        {
+                            "Id": 21010501,
+                            "Hp": 29705.164586171708,
+                            "Name": "ヒルチャール·炎矢",
+                            "Icon": "UI_MonsterIcon_Hili_Fire_Range"
+                        },
+                        {
+                            "Id": 21010901,
+                            "Hp": 29705.164586171708,
+                            "Name": "ヒルチャール·氷矢",
+                            "Icon": "UI_MonsterIcon_Hili_Ice_Range"
+                        },
+                        {
+                            "Id": 21011001,
+                            "Hp": 29705.164586171708,
+                            "Name": "ヒルチャール·雷矢",
+                            "Icon": "UI_MonsterIcon_Hili_Electric_Range"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 21020501,
+                            "Hp": 334183.09572904196,
+                            "Name": "ヒルチャール·岩兜の王",
+                            "Icon": "UI_MonsterIcon_Brute_Rock_None"
+                        },
+                        {
+                            "Id": 21010501,
+                            "Hp": 29705.164586171708,
+                            "Name": "ヒルチャール·炎矢",
+                            "Icon": "UI_MonsterIcon_Hili_Fire_Range"
+                        },
+                        {
+                            "Id": 21010901,
+                            "Hp": 29705.164586171708,
+                            "Name": "ヒルチャール·氷矢",
+                            "Icon": "UI_MonsterIcon_Hili_Ice_Range"
+                        }
+                    ]
+                },
+                "2": {
+                    "Level": 82,
+                    "Cond": [
+                        [
+                            2,
+                            60
+                        ],
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 23020101,
+                            "Hp": 193333.86023713273,
+                            "Name": "ファデュイ·デットエージェント·炎",
+                            "Icon": "UI_MonsterIcon_Fatuus_Fire_01"
+                        },
+                        {
+                            "Id": 23010101,
+                            "Hp": 154667.08818970635,
+                            "Name": "ファデュイ先遣隊·重衛士·氷銃",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Fat_SprayGun_Ice_01"
+                        },
+                        {
+                            "Id": 23010201,
+                            "Hp": 116000.3161422797,
+                            "Name": "ファデュイ先遣隊·重衛士·水銃",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Fat_SprayGun_Water_01"
+                        },
+                        {
+                            "Id": 23010501,
+                            "Hp": 116000.3161422797,
+                            "Name": "ファデュイ先遣隊·前鋒軍·風拳",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Strong_Gloves_Wind_01"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 23030101,
+                            "Hp": 193333.86023713273,
+                            "Name": "ファデュイ·雷蛍術師",
+                            "Icon": "UI_MonsterIcon_Fatuus_Summoner_01"
+                        },
+                        {
+                            "Id": 23010601,
+                            "Hp": 116000.3161422797,
+                            "Name": "ファデュイ先遣隊·遊撃兵·炎銃",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Standard_Rifle_Fire_01"
+                        },
+                        {
+                            "Id": 23010301,
+                            "Hp": 154667.08818970635,
+                            "Name": "ファデュイ先遣隊·前鋒軍·雷ハンマー",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Strong_GreatHammer_Electric_01"
+                        },
+                        {
+                            "Id": 23010401,
+                            "Hp": 116000.3161422797,
+                            "Name": "ファデュイ先遣隊·遊撃兵·岩使い",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Standard_Staff_Rock_01"
+                        }
+                    ]
+                },
+                "3": {
+                    "Level": 85,
+                    "Cond": [
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ],
+                        [
+                            2,
+                            420
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 22030101,
+                            "Hp": 326789.7485650778,
+                            "Name": "アビスの詠唱者·紫電",
+                            "Icon": "UI_MonsterIcon_Invoker_Deacon_Electric_01"
+                        },
+                        {
+                            "Id": 21030301,
+                            "Hp": 40848.71857063483,
+                            "Name": "ヒルチャールシャーマン·風",
+                            "Icon": "UI_MonsterIcon_Shaman_Wind_01"
+                        },
+                        {
+                            "Id": 21030101,
+                            "Hp": 40848.71857063483,
+                            "Name": "ヒルチャールシャーマン·水",
+                            "Icon": "UI_MonsterIcon_Shaman_Water_01"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 22020101,
+                            "Hp": 326789.7485650778,
+                            "Name": "アビスの使徒·激流",
+                            "Icon": "UI_MonsterIcon_Invoker_Herald_Water_01"
+                        },
+                        {
+                            "Id": 21030601,
+                            "Hp": 40848.71857063483,
+                            "Name": "ヒルチャールシャーマン·雷",
+                            "Icon": "UI_MonsterIcon_Shaman_Electric_01"
+                        }
+                    ]
+                }
+            }
+        },
+        "11": {
+            "Open": "2022-07-16 04:00:00",
+            "Close": "2022-09-01 03:59:59",
+            "Buff": [
+                "チーム全員の炎元素ダメージ+75%。"
+            ],
+            "Room": {
+                "1": {
+                    "Level": 88,
+                    "Cond": [
+                        [
+                            233735003,
+                            3024,
+                            20
+                        ],
+                        [
+                            233735003,
+                            3024,
+                            40
+                        ],
+                        [
+                            233735003,
+                            3024,
+                            60
+                        ]
+                    ],
+                    "Type": "TOWER_COND_LEFT_HP_GREATER_THAN",
+                    "First": [
+                        {
+                            "Id": 21020601,
+                            "Hp": 130309.32195964832,
+                            "Name": "ヒルチャール暴徒·氷盾",
+                            "Icon": "UI_MonsterIcon_Brute_None_01"
+                        },
+                        {
+                            "Id": 20060401,
+                            "Hp": 109110.0723610398,
+                            "Name": "氷フライム",
+                            "Icon": "UI_MonsterIcon_Sylph_Ice_01"
+                        },
+                        {
+                            "Id": 20060101,
+                            "Hp": 109110.0723610398,
+                            "Name": "水フライム",
+                            "Icon": "UI_MonsterIcon_Sylph_Water_01"
+                        },
+                        {
+                            "Id": 20010901,
+                            "Hp": 86872.88130643211,
+                            "Name": "大型氷スライム",
+                            "Icon": "UI_MonsterIcon_Slime_Ice_03"
+                        },
+                        {
+                            "Id": 20010801,
+                            "Hp": 34749.153132470055,
+                            "Name": "氷スライム",
+                            "Icon": "UI_MonsterIcon_Slime_Ice_02"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 25030201,
+                            "Hp": 86872.88130643211,
+                            "Name": "宝盗団·盗掘者",
+                            "Icon": "UI_MonsterIcon_Thoarder_Male_Rogue_Fat_02"
+                        },
+                        {
+                            "Id": 25030301,
+                            "Hp": 86872.88130643211,
+                            "Name": "宝盗団·海の男児",
+                            "Icon": "UI_MonsterIcon_Thoarder_Male_Sailor_01"
+                        },
+                        {
+                            "Id": 25060101,
+                            "Hp": 86872.88130643211,
+                            "Name": "宝盗団·拳術家",
+                            "Icon": "UI_MonsterIcon_Thoarder_MuscleMan_Boxer_01"
+                        },
+                        {
+                            "Id": 25070101,
+                            "Hp": 86872.88130643211,
+                            "Name": "宝盗団·粉砕者",
+                            "Icon": "UI_MonsterIcon_Thoarder_MuscleMan_Miner_01"
+                        },
+                        {
+                            "Id": 25010301,
+                            "Hp": 69498.30626494011,
+                            "Name": "宝盗団·炎の薬剤師",
+                            "Icon": "UI_MonsterIcon_Thoarder_Male_Chemist_Fire_01"
+                        },
+                        {
+                            "Id": 25010401,
+                            "Hp": 69498.30626494011,
+                            "Name": "宝盗団·水の薬剤師",
+                            "Icon": "UI_MonsterIcon_Thoarder_Male_Chemist_Water_01"
+                        },
+                        {
+                            "Id": 25010501,
+                            "Hp": 69498.30626494011,
+                            "Name": "宝盗団·雷の薬剤師",
+                            "Icon": "UI_MonsterIcon_Thoarder_Male_Chemist_Electric_01"
+                        },
+                        {
+                            "Id": 25010601,
+                            "Hp": 69498.30626494011,
+                            "Name": "宝盗団·氷の薬剤師",
+                            "Icon": "UI_MonsterIcon_Thoarder_Male_Chemist_Ice_01"
+                        }
+                    ]
+                },
+                "2": {
+                    "Level": 90,
+                    "Cond": [
+                        [
+                            2,
+                            60
+                        ],
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 26051001,
+                            "Hp": 296802.29996725946,
+                            "Name": "アビサルヴィシャップの幼体·噛氷",
+                            "Icon": "UI_MonsterIcon_Drake_Deepsea_Ice"
+                        },
+                        {
+                            "Id": 26051101,
+                            "Hp": 296802.29996725946,
+                            "Name": "アビサルヴィシャップの幼体·吞雷",
+                            "Icon": "UI_MonsterIcon_Drake_Deepsea_Electric"
+                        },
+                        {
+                            "Id": 20060401,
+                            "Hp": 118720.9220706251,
+                            "Name": "氷フライム",
+                            "Icon": "UI_MonsterIcon_Sylph_Ice_01"
+                        },
+                        {
+                            "Id": 20060501,
+                            "Hp": 118720.9220706251,
+                            "Name": "雷フライム",
+                            "Icon": "UI_MonsterIcon_Sylph_Electric_01"
+                        },
+                        {
+                            "Id": 20060101,
+                            "Hp": 118720.9220706251,
+                            "Name": "水フライム",
+                            "Icon": "UI_MonsterIcon_Sylph_Water_01"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 23020101,
+                            "Hp": 243540.8667742274,
+                            "Name": "ファデュイ·デットエージェント·炎",
+                            "Icon": "UI_MonsterIcon_Fatuus_Fire_01"
+                        },
+                        {
+                            "Id": 23040101,
+                            "Hp": 243540.8667742274,
+                            "Name": "ファデュイ·氷蛍術師",
+                            "Icon": "UI_MonsterIcon_Fatuus_Mage_Ice_01"
+                        },
+                        {
+                            "Id": 23030101,
+                            "Hp": 243540.8667742274,
+                            "Name": "ファデュイ·雷蛍術師",
+                            "Icon": "UI_MonsterIcon_Fatuus_Summoner_01"
+                        },
+                        {
+                            "Id": 23010101,
+                            "Hp": 194832.69341938215,
+                            "Name": "ファデュイ先遣隊·重衛士·氷銃",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Fat_SprayGun_Ice_01"
+                        },
+                        {
+                            "Id": 23010201,
+                            "Hp": 146124.52006453654,
+                            "Name": "ファデュイ先遣隊·重衛士·水銃",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Fat_SprayGun_Water_01"
+                        },
+                        {
+                            "Id": 23010601,
+                            "Hp": 146124.52006453654,
+                            "Name": "ファデュイ先遣隊·遊撃兵·炎銃",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Standard_Rifle_Fire_01"
+                        }
+                    ]
+                },
+                "3": {
+                    "Level": 92,
+                    "Cond": [
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ],
+                        [
+                            2,
+                            420
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 20070101,
+                            "Hp": 1116003.903429285,
+                            "Name": "雷音権現",
+                            "Icon": "UI_MonsterIcon_Raijin"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 22010201,
+                            "Hp": 102283.60388316205,
+                            "Name": "アビスの魔術師·氷",
+                            "Icon": "UI_MonsterIcon_Abyss_Ice_01"
+                        },
+                        {
+                            "Id": 22010301,
+                            "Hp": 102283.60388316205,
+                            "Name": "アビスの魔術師·水",
+                            "Icon": "UI_MonsterIcon_Abyss_Water_01"
+                        },
+                        {
+                            "Id": 22010401,
+                            "Hp": 102283.60388316205,
+                            "Name": "アビスの魔術師·雷",
+                            "Icon": "UI_MonsterIcon_Abyss_Electric_01"
+                        }
+                    ]
+                }
+            }
+        },
+        "12": {
+            "Open": "2022-07-16 04:00:00",
+            "Close": "2022-09-01 03:59:59",
+            "Buff": [
+                "この層のみ、地脈の流れに乱れがない。"
+            ],
+            "Room": {
+                "1": {
+                    "Level": 95,
+                    "Cond": [
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ],
+                        [
+                            2,
+                            420
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 21020401,
+                            "Hp": 624348.8540763876,
+                            "Name": "ヒルチャール·霜鎧の王",
+                            "Icon": "UI_MonsterIcon_Brute_Ice_01"
+                        },
+                        {
+                            "Id": 21020601,
+                            "Hp": 208116.28469212918,
+                            "Name": "ヒルチャール暴徒·氷盾",
+                            "Icon": "UI_MonsterIcon_Brute_None_01"
+                        },
+                        {
+                            "Id": 21030501,
+                            "Hp": 69372.09489737656,
+                            "Name": "ヒルチャールシャーマン·氷",
+                            "Icon": "UI_MonsterIcon_Shaman_Ice_01"
+                        },
+                        {
+                            "Id": 21010501,
+                            "Hp": 55497.676891964446,
+                            "Name": "ヒルチャール·炎矢",
+                            "Icon": "UI_MonsterIcon_Hili_Fire_Range"
+                        },
+                        {
+                            "Id": 21010901,
+                            "Hp": 55497.676891964446,
+                            "Name": "ヒルチャール·氷矢",
+                            "Icon": "UI_MonsterIcon_Hili_Ice_Range"
+                        },
+                        {
+                            "Id": 21011001,
+                            "Hp": 55497.676891964446,
+                            "Name": "ヒルチャール·雷矢",
+                            "Icon": "UI_MonsterIcon_Hili_Electric_Range"
+                        },
+                        {
+                            "Id": 21011401,
+                            "Hp": 69372.09489737656,
+                            "Name": "ヒルチャール·氷盾",
+                            "Icon": "UI_MonsterIcon_Hili_None_01"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 25100101,
+                            "Hp": 545143.9322714041,
+                            "Name": "海乱鬼·雷騰",
+                            "Icon": "UI_MonsterIcon_Samurai_Kairagi_01"
+                        },
+                        {
+                            "Id": 25100201,
+                            "Hp": 545143.9322714041,
+                            "Name": "海乱鬼·炎威",
+                            "Icon": "UI_MonsterIcon_Samurai_Kairagi_02"
+                        },
+                        {
+                            "Id": 25080101,
+                            "Hp": 227143.29448191426,
+                            "Name": "野伏·陣刀番",
+                            "Icon": "UI_MonsterIcon_Samurai_Ronin_01"
+                        },
+                        {
+                            "Id": 25080201,
+                            "Hp": 227143.29448191426,
+                            "Name": "野伏·火付番",
+                            "Icon": "UI_MonsterIcon_Samurai_Ronin_02"
+                        },
+                        {
+                            "Id": 25080301,
+                            "Hp": 227143.29448191426,
+                            "Name": "野伏·機巧番",
+                            "Icon": "UI_MonsterIcon_Samurai_Ronin_03"
+                        }
+                    ]
+                },
+                "2": {
+                    "Level": 98,
+                    "Cond": [
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ],
+                        [
+                            2,
+                            420
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 20040501,
+                            "Hp": 536519.0519617682,
+                            "Name": "無相の氷",
+                            "Icon": "UI_MonsterIcon_Effigy_Ice"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 24010301,
+                            "Hp": 689810.209665131,
+                            "Name": "遺跡重機",
+                            "Icon": "UI_MonsterIcon_Konungmathr"
+                        },
+                        {
+                            "Id": 24020101,
+                            "Hp": 386254.4299385325,
+                            "Name": "遺跡巡視者",
+                            "Icon": "UI_MonsterIcon_Apparatus_Enigma_BionicDrone"
+                        },
+                        {
+                            "Id": 24020201,
+                            "Hp": 386254.4299385325,
+                            "Name": "遺跡殲滅者",
+                            "Icon": "UI_MonsterIcon_Apparatus_Enigma_BionicFlora"
+                        },
+                        {
+                            "Id": 24020401,
+                            "Hp": 540756.2091452162,
+                            "Name": "遺跡偵察者",
+                            "Icon": "UI_MonsterIcon_Apparatus_Enigma_BionicNettler"
+                        }
+                    ]
+                },
+                "3": {
+                    "Level": 100,
+                    "Cond": [
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ],
+                        [
+                            2,
+                            420
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 23050101,
+                            "Hp": 831900.2718892137,
+                            "Name": "ファデュイ·ミラーメイデン",
+                            "Icon": "UI_MonsterIcon_Fatuus_Maiden_Water"
+                        },
+                        {
+                            "Id": 23010101,
+                            "Hp": 367651.2154009942,
+                            "Name": "ファデュイ先遣隊·重衛士·氷銃",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Fat_SprayGun_Ice_01"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 24010401,
+                            "Hp": 2218400.7250379026,
+                            "Name": "遺跡サーペント",
+                            "Icon": "UI_MonsterIcon_Nithhoggr_None"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

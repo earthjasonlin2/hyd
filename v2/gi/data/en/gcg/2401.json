@@ -1,0 +1,119 @@
+{
+    "Type": "Character",
+    "Name": "Electro Hypostasis",
+    "Title": "Electro Hypostasis",
+    "Desc": "Code name: Aleph. A high-purity Electro entity.\\nEven if you win at rock-paper-scissors, Aleph is not one to admit defeat.",
+    "Source": "Reward for accepting the Tavern Challenge at The Cat's Tail and claiming victory in a Friendly Fracas with Electro Hypostasis",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_Effigyelectric",
+    "Hp": 8,
+    "Cost": 2,
+    "Tag": [
+        "Electro",
+        "Other Weapons",
+        "Monster"
+    ],
+    "Talent": {
+        "24011": {
+            "Name": "Electro Crystal Projection",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "24012": {
+            "Name": "Rock-Paper-Scissors Combo",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT] and then separately performs \"$[K53]\" for <color=#FFFFFFFF>$[S24015]</color> and <color=#FFFFFFFF>$[S24016]</color>.",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO",
+                "K53": {
+                    "Name": "<color=#FFFFFFFF>Prepare Skill</color>|s1:<color=#FFFFFFFF>prepares</color>",
+                    "Desc": "Some Skills cannot be used directly. Instead, they need to be <color=#FFFFFFFF>prepared</color> over a certain number of turns.\\nWhen it is a certain player's turn, and this player's active character is currently <color=#FFFFFFFF>preparing</color> a Skill, this player's turn will be skipped. If the Skill has finished being <color=#FFFFFFFF>prepared</color>, the character will directly use that Skill at this time. (Skills that require <color=#FFFFFFFF>preparing</color> cannot activate effects triggered by \"using a Skill\" or \"triggering an Elemental Reaction\" or other such effects.)\\nOnly active characters can <color=#FFFFFFFF>prepare</color> Skills, and if an active character who is <color=#FFFFFFFF>preparing</color> a Skill gets switched off-field, their <color=#FFFFFFFF>preparation</color> will be interrupted."
+                },
+                "S24015": "S24015",
+                "S24016": "S24016"
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 5
+            }
+        },
+        "24013": {
+            "Name": "Lightning Lockdown",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], summons <color=#FFFFFFFF>$[C124013]</color>.",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO",
+                "C124013": {
+                    "Name": "Chains of Warding Thunder",
+                    "Desc": "<color=#FFFFFFFF>End Phase:</color> Deal 1 $[K104].\\n<color=#FFFFFFFF>$[K3]: 2</color>\\n<color=#FFFFFFFF>When this Summon is on the field:</color> Your opponent will have to spend 1 additional Elemental Die when performing \"Switch Character.\" (Once per Round)",
+                    "Child": {
+                        "K104": {
+                            "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>Electro DMG</color>",
+                            "Desc": "Applies {SPRITE_PRESET#2104}Electro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Overloaded</color>: DMG +2 for this instance, the target is forcibly switched to the next character\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Superconduct</color>: DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Electro-Charged</color>: DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Quicken</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Catalyzing Field</color>] that grants +1 DMG to the next 2 instances of Dendro or Electro DMG"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "24014": {
+            "Name": "Electro Crystal Core",
+            "Desc": "(Passive) When the battle begins, this character gains an <color=#FFFFFFFF>$[C124014]</color>.",
+            "Child": {
+                "C124014": {
+                    "Name": "Electro Crystal Core",
+                    "Desc": "<color=#FFFFFFFF>When the character to which this is attached would be defeated:</color> Remove this effect, ensure the character $[K54|s1], and heal them to 1 HP.",
+                    "Child": {
+                        "K54": {
+                            "Name": "<color=#FFFFFFFF>Immunity to Defeat</color>|s1:<color=#FFFFFFFF>will not be defeated</color>",
+                            "Desc": "Certain effects will grant characters an <color=#FFFFFFFF>immunity to being defeated</color> when their HP hits 0, and will heal them for a certain amount thereafter.\\nWhen this occurs, characters will not be regarded as having experienced a <color=#FFFFFFFF>defeat.</color> (Hence, their attached equipment and statuses will not be removed, and their Energy will remain uncleared.)"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        },
+        "24015": {
+            "Name": "Rock-Paper-Scissors Combo: Scissors",
+            "Desc": "(Prepare for 1 turn)\\nDeals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. Then, perform \"$[K53]\" for <color=#FFFFFFFF>$[S24016]</color>.",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO",
+                "K53": {
+                    "Name": "<color=#FFFFFFFF>Prepare Skill</color>|s1:<color=#FFFFFFFF>prepares</color>",
+                    "Desc": "Some Skills cannot be used directly. Instead, they need to be <color=#FFFFFFFF>prepared</color> over a certain number of turns.\\nWhen it is a certain player's turn, and this player's active character is currently <color=#FFFFFFFF>preparing</color> a Skill, this player's turn will be skipped. If the Skill has finished being <color=#FFFFFFFF>prepared</color>, the character will directly use that Skill at this time. (Skills that require <color=#FFFFFFFF>preparing</color> cannot activate effects triggered by \"using a Skill\" or \"triggering an Elemental Reaction\" or other such effects.)\\nOnly active characters can <color=#FFFFFFFF>prepare</color> Skills, and if an active character who is <color=#FFFFFFFF>preparing</color> a Skill gets switched off-field, their <color=#FFFFFFFF>preparation</color> will be interrupted."
+                },
+                "S24016": "S24016"
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {}
+        },
+        "24016": {
+            "Name": "Rock-Paper-Scissors Combo: Paper",
+            "Desc": "(Prepare for 1 turn)\\nDeals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO"
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {}
+        }
+    },
+    "Related": 224011
+}

@@ -1,0 +1,49 @@
+{
+    "Type": "Action",
+    "Name": "吐纳真定",
+    "Title": "重云·吐纳真定",
+    "Desc": "吐纳霜华，心神真定。",
+    "Source": "在猫尾酒馆中邀请重云进行对局，完成相应挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Chongyun",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_CRYO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "天赋",
+        "战斗行动"
+    ],
+    "Talent": {
+        "Name": "吐纳真定",
+        "Desc": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1104]</color>时，装备此牌。\\n$[A1104]装备此牌后，立刻使用一次<color=#FFD780FF>$[S11042]</color>。\\n装备有此牌的$[A1104]生成的<color=#FFFFFFFF>$[C111041]</color>获得以下效果：\\n使我方单手剑、双手剑或长柄武器角色的<color=#FFFFFFFF>普通攻击</color>伤害+1。\\n（牌组中包含$[A1104]，才能加入牌组）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>战斗行动</color>",
+                "Desc": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+            },
+            "A1104": "吐纳真定",
+            "S11042": "S11042",
+            "C111041": {
+                "Name": "重华叠霜领域",
+                "Desc": "我方单手剑、双手剑或长柄武器角色造成的$[K100]变为$[K101]。\\n<color=#FFFFFFFF>$[K4]：2</color>",
+                "Child": {
+                    "K100": {
+                        "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>",
+                        "Desc": "物理伤害不会附着元素，也不会发生元素反应。"
+                    },
+                    "K101": {
+                        "Name": "{SPRITE_PRESET#2101}<color=#99FFFFFF>冰元素伤害</color>",
+                        "Desc": "附着{SPRITE_PRESET#2101}冰元素，可发生元素反应：\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2103}<color=#FFFFFFFF>融化</color>：本伤害+2\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2104}<color=#FFFFFFFF>超导</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2102}<color=#FFFFFFFF>冻结</color>：本伤害+1，使目标本回合无法行动（受到物理或火元素伤害后提前解除，但是伤害+2）"
+                    },
+                    "K4": {
+                        "Name": "<color=#FFFFFFFF>持续回合</color>",
+                        "Desc": "每回合结束阶段，<color=#FFFFFFFF>持续回合</color>-1；\\n<color=#FFFFFFFF>持续回合</color>耗尽后，立刻弃置此牌。"
+                    }
+                }
+            }
+        }
+    }
+}

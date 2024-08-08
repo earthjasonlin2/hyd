@@ -1,0 +1,60 @@
+{
+    "Type": "Action",
+    "Name": "正理",
+    "Title": "艾尔海森·正理",
+    "Desc": "「理论的推演。」",
+    "Source": "在猫尾酒馆中邀请艾尔海森进行对局，完成相应挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Constellation_Alhatham",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_DENDRO",
+            "count": 3
+        },
+        {
+            "costType": "GCG_COST_ENERGY",
+            "count": 2
+        }
+    ],
+    "Tag": [
+        "天赋",
+        "战斗行动"
+    ],
+    "Talent": {
+        "Name": "正理",
+        "Desc": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1706]</color>时，装备此牌。\\n$[A1706]装备此牌后，立刻使用一次<color=#FFD780FF>$[S17063]</color>。\\n装备有此牌的$[A1706]使用<color=#FFFFFFFF>$[S17063]</color>时：如果消耗了$[K4]至少为1的<color=#FFFFFFFF>$[C117061]</color>，则总是附属$[K4]为3的<color=#FFFFFFFF>$[C117061]</color>，并且抓1张牌。\\n（牌组中包含$[A1706]，才能加入牌组）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>战斗行动</color>",
+                "Desc": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+            },
+            "A1706": "正理",
+            "S17063": "S17063",
+            "K4": {
+                "Name": "<color=#FFFFFFFF>持续回合</color>",
+                "Desc": "每回合结束阶段，<color=#FFFFFFFF>持续回合</color>-1；\\n<color=#FFFFFFFF>持续回合</color>耗尽后，立刻弃置此牌。"
+            },
+            "C117061": {
+                "Name": "琢光镜",
+                "Desc": "角色造成的$[K100]变为$[K107]。\\n<color=#FFFFFFFF>角色普通攻击后：</color>造成1点$[K107]。如果此技能为$[K51]，则使此状态的$[K4]+1。\\n<color=#FFFFFFFF>$[K4]：2</color>（可叠加，最多叠加到3回合）",
+                "Child": {
+                    "K100": {
+                        "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>",
+                        "Desc": "物理伤害不会附着元素，也不会发生元素反应。"
+                    },
+                    "K107": {
+                        "Name": "{SPRITE_PRESET#2107}<color=#7EC236FF>草元素伤害</color>",
+                        "Desc": "附着{SPRITE_PRESET#2107}草元素，可发生元素反应：\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>绽放</color>：本伤害+1，生成使下次火元素或雷元素伤害+2的[<color=#FFFFFFFF>草原核</color>]\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>燃烧</color>：本伤害+1，生成回合结束时造成1点火元素伤害的[<color=#FFFFFFFF>燃烧烈焰</color>]（可用次数1，最多叠加到2）\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>原激化</color>：本伤害+1，生成使下2次草元素或雷元素伤害+1的[<color=#FFFFFFFF>激化领域</color>]"
+                    },
+                    "K51": {
+                        "Name": "<color=#FFFFFFFF>重击</color>",
+                        "Desc": "我方行动开始前，如果元素骰总数为偶数，则进行的「普通攻击」将被视为「重击」。"
+                    },
+                    "K4": {
+                        "Name": "<color=#FFFFFFFF>持续回合</color>",
+                        "Desc": "每回合结束阶段，<color=#FFFFFFFF>持续回合</color>-1；\\n<color=#FFFFFFFF>持续回合</color>耗尽后，立刻弃置此牌。"
+                    }
+                }
+            }
+        }
+    }
+}

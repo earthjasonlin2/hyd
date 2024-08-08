@@ -1,0 +1,49 @@
+{
+    "Type": "Action",
+    "Name": "히모로기의 그늘",
+    "Title": "야에 미코·히모로기의 그늘",
+    "Desc": "「후… 뇌광이 애처롭구나…」",
+    "Source": "캣테일 술집에서 야에 미코를 초대해 대전하고 상응하는 도전 목표 달성 후 획득",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Yae",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_ELECTRO",
+            "count": 3
+        },
+        {
+            "costType": "GCG_COST_ENERGY",
+            "count": 2
+        }
+    ],
+    "Tag": [
+        "특성",
+        "전투 행동"
+    ],
+    "Talent": {
+        "Name": "히모로기의 그늘",
+        "Desc": "$[K1]: 아군 출전 캐릭터가 <color=#FFFFFFFF>$[A1408]</color>일 때 해당 카드를 장착할 수 있다.\\n$[A1408]가 해당 카드를 장착하면 즉시 <color=#FFD780FF>$[S14083]</color>을 1회 사용한다.\\n해당 카드를 장착한 $[A1408]가 <color=#FFFFFFFF>$[S14083]</color>으로 <color=#FFFFFFFF>$[C114081]</color>을 소멸시킨 후: 이번 턴에서 다음번에 <color=#FFFFFFFF>$[S14082]</color> 사용 시, 원소 주사위 소모 개수-2\\n(카드 덱에 $[A1408]가 있어야만 카드 덱에 추가 가능)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>전투 행동</color>",
+                "Desc": "아군이 전투 행동을 1회 진행하면 행동 순서가 상대에게 넘어간다.\\n<color=#FFFFFFFF>해당 규칙에 속하는 카드는 사용 시 빠른 행동이 아닌 전투 행동으로 간주한다</color>."
+            },
+            "A1408": "히모로기의 그늘",
+            "S14083": "S14083",
+            "C114081": {
+                "Name": "살생앵",
+                "Desc": "<color=#FFFFFFFF>종료 단계:</color> $[K104]를 1pt 준다.\\n<color=#FFFFFFFF>$[K3]: 3</color> (중첩 가능, 최대 중첩수: 6회)\\n<color=#FFFFFFFF>아군 종료 선언 시:</color> 해당 카드의 $[K3]가 4 이상일 경우, $[K104]를 1pt 준다. ($[K3] 소모 필요)",
+                "Child": {
+                    "K104": {
+                        "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>번개 원소 피해</color>",
+                        "Desc": "{SPRITE_PRESET#2104}번개 원소 부착 시 다음 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>과부하</color>: 이번 피해+2pt, 대상이 다음 캐릭터로 강제 교체된다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>초전도</color>: 이번 피해+1pt, 대상 이외의 모든 상대 캐릭터에게 관통 피해를 1pt 준다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>감전</color>: 이번 피해+1pt, 대상 이외의 모든 상대 캐릭터에게 관통 피해를 1pt 준다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>활성</color>: 이번 피해+1pt, 다음 2회의 풀 원소 또는 번개 원소 피해를 1pt 증가시키는 [<color=#FFFFFFFF>격화 영역</color>]을 생성한다."
+                    },
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                        "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                    }
+                }
+            },
+            "S14082": "S14082"
+        }
+    }
+}

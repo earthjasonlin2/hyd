@@ -1,0 +1,78 @@
+{
+    "Type": "Character",
+    "Name": "소",
+    "Title": "호법야차·소",
+    "Desc": "호법야차, 정요항마",
+    "Source": "캣테일 술집에서 소 초대 및 친선 대전 난이도 승리 후 획득",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Xiao",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "바람 원소",
+        "장병기",
+        "리월"
+    ],
+    "Talent": {
+        "15041": {
+            "Name": "권적미진",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "15042": {
+            "Name": "풍륜양립",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO",
+                "D__KEY__DAMAGE": 3
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 3
+            }
+        },
+        "15043": {
+            "Name": "나자의 춤",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 본 캐릭터에게 <color=#FFFFFFFF>$[C115041]</color>을 부착한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO",
+                "D__KEY__DAMAGE": 4,
+                "C115041": {
+                    "Name": "야차의 가면",
+                    "Desc": "부착 캐릭터가 주는 $[K100]가 $[K105]로 전환되며, 캐릭터가 주는 $[K105]가 1pt 증가한다.\\n<color=#FFFFFFFF>부착 캐릭터가 $[K52] 시:</color> 피해 추가+2pt\\n<color=#FFFFFFFF>부착 캐릭터가 출전 캐릭터일 때 아군이 「캐릭터 교체」 행동 시: </color>원소 주사위 소모 개수-1 (턴당 1회)\\n<color=#FFFFFFFF>$[K4]: 2</color>",
+                    "Child": {
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>",
+                            "Desc": "물리 피해는 원소를 부착할 수 없고, 원소 반응이 발생하지 않는다."
+                        },
+                        "K105": {
+                            "Name": "{SPRITE_PRESET#2105}<color=#80FFD7FF>바람 원소 피해</color>",
+                            "Desc": "이미 부착된 원소와 원소 반응이 발생한다.\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2101}<color=#FFFFFFFF>확산(얼음)</color>: 대상 이외의 모든 상대 캐릭터에게 얼음 원소 피해를 1pt 준다.\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2102}<color=#FFFFFFFF>확산(물)</color>: 대상 이외의 모든 상대 캐릭터에게 물 원소 피해를 1pt 준다.\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2103}<color=#FFFFFFFF>확산(불)</color>: 대상 이외의 모든 상대 캐릭터에게 불 원소 피해를 1pt 준다.\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2104}<color=#FFFFFFFF>확산(번개)</color>: 대상 이외의 모든 상대 캐릭터에게 번개 원소 피해를 1pt 준다."
+                        },
+                        "K52": {
+                            "Name": "<color=#FFFFFFFF>낙하 공격</color>",
+                            "Desc": "캐릭터가 「출전 캐릭터」로 교체된 후, 이번 턴 내의 다음 전투 행동이 「일반 공격」일 경우 「낙하 공격」으로 간주된다."
+                        },
+                        "K4": {
+                            "Name": "<color=#FFFFFFFF>지속 턴</color>",
+                            "Desc": "턴이 종료 단계에 진입할 때마다 <color=#FFFFFFFF>지속 턴</color>이 1회씩 감소한다.\\n<color=#FFFFFFFF>지속 턴</color>이 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 215041
+}

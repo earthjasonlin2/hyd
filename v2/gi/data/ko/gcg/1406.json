@@ -1,0 +1,92 @@
+{
+    "Type": "Character",
+    "Name": "쿠죠 사라",
+    "Title": "검은 깃의 효시·쿠죠 사라",
+    "Desc": "「모든 것은 대의를 위해」",
+    "Source": "캣테일 술집에서 쿠죠 사라 초대 및 친선 대전 난이도 승리 후 획득",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Sara",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "번개 원소",
+        "활",
+        "이나즈마"
+    ],
+    "Talent": {
+        "14061": {
+            "Name": "텐구 궁술",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "14062": {
+            "Name": "까마귀 깃 텐구의 뇌정 소환",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[C114061]</color>을 소환한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO",
+                "D__KEY__DAMAGE": 1,
+                "C114061": {
+                    "Name": "텐구 주뢰·매복",
+                    "Desc": "<color=#FFFFFFFF>종료 단계: </color> $[K104]를 1pt 주고 아군 출전 캐릭터에게 $[K1003]를 부착한다.\\n<color=#FFFFFFFF>$[K3]: 1</color>",
+                    "Child": {
+                        "K104": {
+                            "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>번개 원소 피해</color>",
+                            "Desc": "{SPRITE_PRESET#2104}번개 원소 부착 시 다음 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>과부하</color>: 이번 피해+2pt, 대상이 다음 캐릭터로 강제 교체된다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>초전도</color>: 이번 피해+1pt, 대상 이외의 모든 상대 캐릭터에게 관통 피해를 1pt 준다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>감전</color>: 이번 피해+1pt, 대상 이외의 모든 상대 캐릭터에게 관통 피해를 1pt 준다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>활성</color>: 이번 피해+1pt, 다음 2회의 풀 원소 또는 번개 원소 피해를 1pt 증가시키는 [<color=#FFFFFFFF>격화 영역</color>]을 생성한다."
+                        },
+                        "K1003": {
+                            "Name": "<color=#FFFFFFFF>빛나는 깃털의 수호</color>",
+                            "Desc": "부착 캐릭터가 <color=#FFFFFFFF>원소전투 스킬</color> 및 <color=#FFFFFFFF>원소폭발</color>로 주는 피해+1pt\\n<color=#FFFFFFFF>사용 가능 횟수: 2</color>"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 3
+            }
+        },
+        "14063": {
+            "Name": "빛나는 천도의 진법",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[C114062]</color>을 소환한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO",
+                "D__KEY__DAMAGE": 1,
+                "C114062": {
+                    "Name": "텐구 주뢰·번개 자갈",
+                    "Desc": "<color=#FFFFFFFF>종료 단계: </color> $[K104]를 2pt 주고 아군 출전 캐릭터에게 $[K1003]를 부착한다.\\n<color=#FFFFFFFF>$[K3]: 2</color>",
+                    "Child": {
+                        "K104": {
+                            "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>번개 원소 피해</color>",
+                            "Desc": "{SPRITE_PRESET#2104}번개 원소 부착 시 다음 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>과부하</color>: 이번 피해+2pt, 대상이 다음 캐릭터로 강제 교체된다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>초전도</color>: 이번 피해+1pt, 대상 이외의 모든 상대 캐릭터에게 관통 피해를 1pt 준다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>감전</color>: 이번 피해+1pt, 대상 이외의 모든 상대 캐릭터에게 관통 피해를 1pt 준다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>활성</color>: 이번 피해+1pt, 다음 2회의 풀 원소 또는 번개 원소 피해를 1pt 증가시키는 [<color=#FFFFFFFF>격화 영역</color>]을 생성한다."
+                        },
+                        "K1003": {
+                            "Name": "<color=#FFFFFFFF>빛나는 깃털의 수호</color>",
+                            "Desc": "부착 캐릭터가 <color=#FFFFFFFF>원소전투 스킬</color> 및 <color=#FFFFFFFF>원소폭발</color>로 주는 피해+1pt\\n<color=#FFFFFFFF>사용 가능 횟수: 2</color>"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 4,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 214061
+}

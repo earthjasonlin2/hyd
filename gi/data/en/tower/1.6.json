@@ -1,0 +1,810 @@
+{
+    "Leyline": {
+        "24": {
+            "Icon": "UI_TowerBlessing_20",
+            "Name": "Whirlpool Moon",
+            "Desc": "When an active character triggers a Swirl reaction on a nearby opponent, they will trigger a shockwave at that opponent's position that deals AoE DMG. A shockwave can be triggered in this manner once every 3.5s."
+        },
+        "25": {
+            "Icon": "UI_TowerBlessing_21",
+            "Name": "Breezecall Moon",
+            "Desc": "When an active character triggers a Swirl reaction on a nearby opponent, they will regenerate 4 Energy for all characters in the party. This effect can be triggered once every 3.5s."
+        },
+        "26": {
+            "Icon": "UI_TowerBlessing_22",
+            "Name": "Brumous Moon",
+            "Desc": "When an active character triggers a Swirl reaction on nearby enemies, a Brumous Aura that lasts 8s will be left at the location of the Swirl reaction. Deals damage to enemies inside the Aura every 2s. A Brumous Aura can only be generated once every 9s."
+        }
+    },
+    "Floor": {
+        "9": {
+            "Open": "2021-06-16 04:00:00",
+            "Close": "2021-08-01 03:59:59",
+            "Buff": [
+                "Characters on the field will continuously accumulate Sheer Cold, and will continually lose HP after Sheer Cold reaches its limit.",
+                "Opponents will attack the Ruin Braziers, preventing them from diminishing the effects of Sheer Cold in the area. Deactivated Ruin Braziers will restart after a while.",
+                "Opponents' HP increased by 100%."
+            ],
+            "Room": {
+                "1": {
+                    "Level": 72,
+                    "Cond": [
+                        [
+                            2,
+                            60
+                        ],
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 21020601,
+                            "Hp": 82833.16364580768,
+                            "Name": "Ice Shieldwall Mitachurl",
+                            "Icon": "UI_MonsterIcon_Brute_None_01"
+                        },
+                        {
+                            "Id": 21011401,
+                            "Hp": 27611.054548602628,
+                            "Name": "Ice Shield Hilichurl Guard",
+                            "Icon": "UI_MonsterIcon_Hili_None_01"
+                        },
+                        {
+                            "Id": 26010101,
+                            "Hp": 82833.16364580768,
+                            "Name": "Cryo Whopperflower",
+                            "Icon": "UI_MonsterIcon_Mimik_Ice"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 22010201,
+                            "Hp": 55222.10909720505,
+                            "Name": "Cryo Abyss Mage",
+                            "Icon": "UI_MonsterIcon_Abyss_Ice_01"
+                        },
+                        {
+                            "Id": 21020601,
+                            "Hp": 82833.16364580768,
+                            "Name": "Ice Shieldwall Mitachurl",
+                            "Icon": "UI_MonsterIcon_Brute_None_01"
+                        },
+                        {
+                            "Id": 21030501,
+                            "Hp": 27611.054548602628,
+                            "Name": "Cryo Samachurl",
+                            "Icon": "UI_MonsterIcon_Shaman_Ice_01"
+                        },
+                        {
+                            "Id": 21010901,
+                            "Hp": 22088.844026572744,
+                            "Name": "Cryo Hilichurl Shooter",
+                            "Icon": "UI_MonsterIcon_Hili_Ice_Range"
+                        },
+                        {
+                            "Id": 21011001,
+                            "Hp": 22088.844026572744,
+                            "Name": "Electro Hilichurl Shooter",
+                            "Icon": "UI_MonsterIcon_Hili_Electric_Range"
+                        }
+                    ]
+                },
+                "2": {
+                    "Level": 74,
+                    "Cond": [
+                        [
+                            2,
+                            60
+                        ],
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 21020601,
+                            "Hp": 87025.89365386966,
+                            "Name": "Ice Shieldwall Mitachurl",
+                            "Icon": "UI_MonsterIcon_Brute_None_01"
+                        },
+                        {
+                            "Id": 21011401,
+                            "Hp": 29008.631217956623,
+                            "Name": "Ice Shield Hilichurl Guard",
+                            "Icon": "UI_MonsterIcon_Hili_None_01"
+                        },
+                        {
+                            "Id": 21011301,
+                            "Hp": 23206.90538167951,
+                            "Name": "Cryo Hilichurl Grenadier",
+                            "Icon": "UI_MonsterIcon_Hili_Ice_Range"
+                        },
+                        {
+                            "Id": 26010101,
+                            "Hp": 87025.89365386966,
+                            "Name": "Cryo Whopperflower",
+                            "Icon": "UI_MonsterIcon_Mimik_Ice"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 23010101,
+                            "Hp": 116034.52487182627,
+                            "Name": "Fatui Skirmisher - Cryogunner Legionnaire",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Fat_SprayGun_Ice_01"
+                        },
+                        {
+                            "Id": 23010201,
+                            "Hp": 87025.89365386966,
+                            "Name": "Fatui Skirmisher - Hydrogunner Legionnaire",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Fat_SprayGun_Water_01"
+                        },
+                        {
+                            "Id": 23010401,
+                            "Hp": 87025.89365386966,
+                            "Name": "Fatui Skirmisher - Geochanter Bracer",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Standard_Staff_Rock_01"
+                        },
+                        {
+                            "Id": 23010501,
+                            "Hp": 87025.89365386966,
+                            "Name": "Fatui Skirmisher - Anemoboxer Vanguard",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Strong_Gloves_Wind_01"
+                        }
+                    ]
+                },
+                "3": {
+                    "Level": 76,
+                    "Cond": [
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ],
+                        [
+                            2,
+                            420
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 21020401,
+                            "Hp": 274776.4713618347,
+                            "Name": "Frostarm Lawachurl",
+                            "Icon": "UI_MonsterIcon_Brute_Ice_01"
+                        },
+                        {
+                            "Id": 21030501,
+                            "Hp": 30530.719040203923,
+                            "Name": "Cryo Samachurl",
+                            "Icon": "UI_MonsterIcon_Shaman_Ice_01"
+                        },
+                        {
+                            "Id": 21010901,
+                            "Hp": 24424.575660849194,
+                            "Name": "Cryo Hilichurl Shooter",
+                            "Icon": "UI_MonsterIcon_Hili_Ice_Range"
+                        },
+                        {
+                            "Id": 21011001,
+                            "Hp": 24424.575660849194,
+                            "Name": "Electro Hilichurl Shooter",
+                            "Icon": "UI_MonsterIcon_Hili_Electric_Range"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 22010201,
+                            "Hp": 61061.43808040762,
+                            "Name": "Cryo Abyss Mage",
+                            "Icon": "UI_MonsterIcon_Abyss_Ice_01"
+                        },
+                        {
+                            "Id": 22010301,
+                            "Hp": 61061.43808040762,
+                            "Name": "Hydro Abyss Mage",
+                            "Icon": "UI_MonsterIcon_Abyss_Water_01"
+                        },
+                        {
+                            "Id": 21020601,
+                            "Hp": 91592.15712061155,
+                            "Name": "Ice Shieldwall Mitachurl",
+                            "Icon": "UI_MonsterIcon_Brute_None_01"
+                        }
+                    ]
+                }
+            }
+        },
+        "10": {
+            "Open": "2021-06-16 04:00:00",
+            "Close": "2021-08-01 03:59:59",
+            "Buff": [
+                "Characters on the field will continuously accumulate Sheer Cold, and will continually lose HP after Sheer Cold reaches its limit.",
+                "Warming Seelie appear on the field, and will continually alleviate nearby characters' Sheer Cold.",
+                "Opponents' HP increased by 100%."
+            ],
+            "Room": {
+                "1": {
+                    "Level": 80,
+                    "Cond": [
+                        [
+                            2,
+                            60
+                        ],
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 22010301,
+                            "Hp": 74262.91016200923,
+                            "Name": "Hydro Abyss Mage",
+                            "Icon": "UI_MonsterIcon_Abyss_Water_01"
+                        },
+                        {
+                            "Id": 26010101,
+                            "Hp": 111394.36524301399,
+                            "Name": "Cryo Whopperflower",
+                            "Icon": "UI_MonsterIcon_Mimik_Ice"
+                        },
+                        {
+                            "Id": 21011301,
+                            "Hp": 29705.164586171708,
+                            "Name": "Cryo Hilichurl Grenadier",
+                            "Icon": "UI_MonsterIcon_Hili_Ice_Range"
+                        },
+                        {
+                            "Id": 20010901,
+                            "Hp": 74262.91016200923,
+                            "Name": "Large Cryo Slime",
+                            "Icon": "UI_MonsterIcon_Slime_Ice_03"
+                        },
+                        {
+                            "Id": 20011101,
+                            "Hp": 74262.91016200923,
+                            "Name": "Large Hydro Slime",
+                            "Icon": "UI_MonsterIcon_Slime_Water_03"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 22020101,
+                            "Hp": 297051.6406480372,
+                            "Name": "Abyss Herald: Wicked Torrents",
+                            "Icon": "UI_MonsterIcon_Invoker_Herald_Water_01"
+                        },
+                        {
+                            "Id": 22010201,
+                            "Hp": 74262.91016200923,
+                            "Name": "Cryo Abyss Mage",
+                            "Icon": "UI_MonsterIcon_Abyss_Ice_01"
+                        }
+                    ]
+                },
+                "2": {
+                    "Level": 82,
+                    "Cond": [
+                        [
+                            2,
+                            60
+                        ],
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 21020601,
+                            "Hp": 116000.3161422797,
+                            "Name": "Ice Shieldwall Mitachurl",
+                            "Icon": "UI_MonsterIcon_Brute_None_01"
+                        },
+                        {
+                            "Id": 21011401,
+                            "Hp": 38666.77204742666,
+                            "Name": "Ice Shield Hilichurl Guard",
+                            "Icon": "UI_MonsterIcon_Hili_None_01"
+                        },
+                        {
+                            "Id": 21011301,
+                            "Hp": 30933.41818086683,
+                            "Name": "Cryo Hilichurl Grenadier",
+                            "Icon": "UI_MonsterIcon_Hili_Ice_Range"
+                        },
+                        {
+                            "Id": 21030301,
+                            "Hp": 38666.77204742666,
+                            "Name": "Anemo Samachurl",
+                            "Icon": "UI_MonsterIcon_Shaman_Wind_01"
+                        },
+                        {
+                            "Id": 21030101,
+                            "Hp": 38666.77204742666,
+                            "Name": "Hydro Samachurl",
+                            "Icon": "UI_MonsterIcon_Shaman_Water_01"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 22030101,
+                            "Hp": 309334.1763794124,
+                            "Name": "Abyss Lector: Violet Lightning",
+                            "Icon": "UI_MonsterIcon_Invoker_Deacon_Electric_01"
+                        },
+                        {
+                            "Id": 22010201,
+                            "Hp": 77333.54409485303,
+                            "Name": "Cryo Abyss Mage",
+                            "Icon": "UI_MonsterIcon_Abyss_Ice_01"
+                        }
+                    ]
+                },
+                "3": {
+                    "Level": 85,
+                    "Cond": [
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ],
+                        [
+                            2,
+                            420
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 20040501,
+                            "Hp": 285941.02999444294,
+                            "Name": "Cryo Hypostasis",
+                            "Icon": "UI_MonsterIcon_Effigy_Ice"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 21020401,
+                            "Hp": 367638.4671357126,
+                            "Name": "Frostarm Lawachurl",
+                            "Icon": "UI_MonsterIcon_Brute_Ice_01"
+                        },
+                        {
+                            "Id": 22010301,
+                            "Hp": 81697.43714126937,
+                            "Name": "Hydro Abyss Mage",
+                            "Icon": "UI_MonsterIcon_Abyss_Water_01"
+                        }
+                    ]
+                }
+            }
+        },
+        "11": {
+            "Open": "2021-06-16 04:00:00",
+            "Close": "2021-08-01 03:59:59",
+            "Buff": [
+                "Increases Swirl DMG by 300% and its AoE by 100%.",
+                "Opponents' HP increased by 100%."
+            ],
+            "Room": {
+                "1": {
+                    "Level": 88,
+                    "Cond": [
+                        [
+                            233715003,
+                            3024,
+                            20
+                        ],
+                        [
+                            233715003,
+                            3024,
+                            40
+                        ],
+                        [
+                            233715003,
+                            3024,
+                            60
+                        ]
+                    ],
+                    "Type": "TOWER_COND_LEFT_HP_GREATER_THAN",
+                    "First": [
+                        {
+                            "Id": 21020201,
+                            "Hp": 130309.32195964832,
+                            "Name": "Blazing Axe Mitachurl",
+                            "Icon": "UI_MonsterIcon_Brute_None_01"
+                        },
+                        {
+                            "Id": 21020101,
+                            "Hp": 130309.32195964832,
+                            "Name": "Wooden Shieldwall Mitachurl",
+                            "Icon": "UI_MonsterIcon_Brute_None_01"
+                        },
+                        {
+                            "Id": 21010701,
+                            "Hp": 43436.44065321621,
+                            "Name": "Hilichurl Berserker",
+                            "Icon": "UI_MonsterIcon_Hili_Fire_Range"
+                        },
+                        {
+                            "Id": 21010301,
+                            "Hp": 43436.44065321621,
+                            "Name": "Wooden Shield Hilichurl Guard",
+                            "Icon": "UI_MonsterIcon_Hili_None_01"
+                        },
+                        {
+                            "Id": 21010501,
+                            "Hp": 34749.153132470055,
+                            "Name": "Pyro Hilichurl Shooter",
+                            "Icon": "UI_MonsterIcon_Hili_Fire_Range"
+                        },
+                        {
+                            "Id": 21010901,
+                            "Hp": 34749.153132470055,
+                            "Name": "Cryo Hilichurl Shooter",
+                            "Icon": "UI_MonsterIcon_Hili_Ice_Range"
+                        },
+                        {
+                            "Id": 21011001,
+                            "Hp": 34749.153132470055,
+                            "Name": "Electro Hilichurl Shooter",
+                            "Icon": "UI_MonsterIcon_Hili_Electric_Range"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 21020501,
+                            "Hp": 390927.96587894496,
+                            "Name": "Stonehide Lawachurl",
+                            "Icon": "UI_MonsterIcon_Brute_Rock_None"
+                        },
+                        {
+                            "Id": 21011201,
+                            "Hp": 43436.44065321621,
+                            "Name": "Rock Shield Hilichurl Guard",
+                            "Icon": "UI_MonsterIcon_Hili_None_01"
+                        },
+                        {
+                            "Id": 21011301,
+                            "Hp": 34749.153132470055,
+                            "Name": "Cryo Hilichurl Grenadier",
+                            "Icon": "UI_MonsterIcon_Hili_Ice_Range"
+                        },
+                        {
+                            "Id": 21010601,
+                            "Hp": 43436.44065321621,
+                            "Name": "Hilichurl Grenadier",
+                            "Icon": "UI_MonsterIcon_Hili_Fire_Range"
+                        }
+                    ]
+                },
+                "2": {
+                    "Level": 90,
+                    "Cond": [
+                        [
+                            2,
+                            60
+                        ],
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 23010601,
+                            "Hp": 146124.52006453654,
+                            "Name": "Fatui Skirmisher - Pyroslinger Bracer",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Standard_Rifle_Fire_01"
+                        },
+                        {
+                            "Id": 23010301,
+                            "Hp": 194832.69341938215,
+                            "Name": "Fatui Skirmisher - Electrohammer Vanguard",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Strong_GreatHammer_Electric_01"
+                        },
+                        {
+                            "Id": 23010501,
+                            "Hp": 146124.52006453654,
+                            "Name": "Fatui Skirmisher - Anemoboxer Vanguard",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Strong_Gloves_Wind_01"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 23010101,
+                            "Hp": 194832.69341938215,
+                            "Name": "Fatui Skirmisher - Cryogunner Legionnaire",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Fat_SprayGun_Ice_01"
+                        },
+                        {
+                            "Id": 23010201,
+                            "Hp": 146124.52006453654,
+                            "Name": "Fatui Skirmisher - Hydrogunner Legionnaire",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Fat_SprayGun_Water_01"
+                        },
+                        {
+                            "Id": 23010401,
+                            "Hp": 146124.52006453654,
+                            "Name": "Fatui Skirmisher - Geochanter Bracer",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Standard_Staff_Rock_01"
+                        }
+                    ]
+                },
+                "3": {
+                    "Level": 92,
+                    "Cond": [
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ],
+                        [
+                            2,
+                            420
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 24010201,
+                            "Hp": 306850.81164948654,
+                            "Name": "Ruin Hunter",
+                            "Icon": "UI_MonsterIcon_Formathr_None"
+                        },
+                        {
+                            "Id": 24010101,
+                            "Hp": 357992.6135910673,
+                            "Name": "Ruin Guard",
+                            "Icon": "UI_MonsterIcon_Defender_Noner_01"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 22030101,
+                            "Hp": 409134.41553264856,
+                            "Name": "Abyss Lector: Violet Lightning",
+                            "Icon": "UI_MonsterIcon_Invoker_Deacon_Electric_01"
+                        },
+                        {
+                            "Id": 22020101,
+                            "Hp": 409134.41553264856,
+                            "Name": "Abyss Herald: Wicked Torrents",
+                            "Icon": "UI_MonsterIcon_Invoker_Herald_Water_01"
+                        }
+                    ]
+                }
+            }
+        },
+        "12": {
+            "Open": "2021-06-16 04:00:00",
+            "Close": "2021-08-01 03:59:59",
+            "Buff": [
+                "For this floor only, the ley line flow will be normal.",
+                "Opponents' HP increased by 150%."
+            ],
+            "Room": {
+                "1": {
+                    "Level": 95,
+                    "Cond": [
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ],
+                        [
+                            2,
+                            420
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 26040101,
+                            "Hp": 554976.759179011,
+                            "Name": "Geovishap",
+                            "Icon": "UI_MonsterIcon_Drake_Rock"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 26040101,
+                            "Hp": 554976.759179011,
+                            "Name": "Geovishap",
+                            "Icon": "UI_MonsterIcon_Drake_Rock"
+                        }
+                    ]
+                },
+                "2": {
+                    "Level": 98,
+                    "Cond": [
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ],
+                        [
+                            2,
+                            420
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 23040101,
+                            "Hp": 383227.89425840596,
+                            "Name": "Fatui Cryo Cicin Mage",
+                            "Icon": "UI_MonsterIcon_Fatuus_Mage_Ice_01"
+                        },
+                        {
+                            "Id": 25030301,
+                            "Hp": 153291.15770336226,
+                            "Name": "Treasure Hoarders: Seaman",
+                            "Icon": "UI_MonsterIcon_Thoarder_Male_Sailor_01"
+                        },
+                        {
+                            "Id": 25030201,
+                            "Hp": 153291.15770336226,
+                            "Name": "Treasure Hoarders: Gravedigger",
+                            "Icon": "UI_MonsterIcon_Thoarder_Male_Rogue_Fat_02"
+                        },
+                        {
+                            "Id": 25060101,
+                            "Hp": 153291.15770336226,
+                            "Name": "Treasure Hoarders: Pugilist",
+                            "Icon": "UI_MonsterIcon_Thoarder_MuscleMan_Boxer_01"
+                        },
+                        {
+                            "Id": 25070101,
+                            "Hp": 153291.15770336226,
+                            "Name": "Treasure Hoarders: Crusher",
+                            "Icon": "UI_MonsterIcon_Thoarder_MuscleMan_Miner_01"
+                        },
+                        {
+                            "Id": 25010301,
+                            "Hp": 122632.92831507264,
+                            "Name": "Treasure Hoarders: Pyro Potioneer",
+                            "Icon": "UI_MonsterIcon_Thoarder_Male_Chemist_Fire_01"
+                        },
+                        {
+                            "Id": 25010401,
+                            "Hp": 122632.92831507264,
+                            "Name": "Treasure Hoarders: Hydro Potioneer",
+                            "Icon": "UI_MonsterIcon_Thoarder_Male_Chemist_Water_01"
+                        },
+                        {
+                            "Id": 25010501,
+                            "Hp": 122632.92831507264,
+                            "Name": "Treasure Hoarders: Electro Potioneer",
+                            "Icon": "UI_MonsterIcon_Thoarder_Male_Chemist_Electric_01"
+                        },
+                        {
+                            "Id": 25010601,
+                            "Hp": 122632.92831507264,
+                            "Name": "Treasure Hoarders: Cryo Potioneer",
+                            "Icon": "UI_MonsterIcon_Thoarder_Male_Chemist_Ice_01"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 21020501,
+                            "Hp": 689810.209665131,
+                            "Name": "Stonehide Lawachurl",
+                            "Icon": "UI_MonsterIcon_Brute_Rock_None"
+                        },
+                        {
+                            "Id": 26030101,
+                            "Hp": 229936.73655504367,
+                            "Name": "Geovishap Hatchling",
+                            "Icon": "UI_MonsterIcon_Wyrm_Rock"
+                        }
+                    ]
+                },
+                "3": {
+                    "Level": 100,
+                    "Cond": [
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ],
+                        [
+                            2,
+                            420
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 22030101,
+                            "Hp": 735302.4308019876,
+                            "Name": "Abyss Lector: Violet Lightning",
+                            "Icon": "UI_MonsterIcon_Invoker_Deacon_Electric_01"
+                        },
+                        {
+                            "Id": 22010101,
+                            "Hp": 183825.60770049674,
+                            "Name": "Pyro Abyss Mage",
+                            "Icon": "UI_MonsterIcon_Abyss_Fire_01"
+                        },
+                        {
+                            "Id": 22010301,
+                            "Hp": 183825.60770049674,
+                            "Name": "Hydro Abyss Mage",
+                            "Icon": "UI_MonsterIcon_Abyss_Water_01"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 22020101,
+                            "Hp": 735302.4308019876,
+                            "Name": "Abyss Herald: Wicked Torrents",
+                            "Icon": "UI_MonsterIcon_Invoker_Herald_Water_01"
+                        },
+                        {
+                            "Id": 22010101,
+                            "Hp": 183825.60770049674,
+                            "Name": "Pyro Abyss Mage",
+                            "Icon": "UI_MonsterIcon_Abyss_Fire_01"
+                        },
+                        {
+                            "Id": 22010201,
+                            "Hp": 183825.60770049674,
+                            "Name": "Cryo Abyss Mage",
+                            "Icon": "UI_MonsterIcon_Abyss_Ice_01"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

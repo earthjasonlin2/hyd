@@ -1,0 +1,98 @@
+{
+    "Type": "Character",
+    "Name": "Layla",
+    "Title": "\"Fantastical Evening Star\" Layla",
+    "Desc": "As night falls, the stars swirl and the moon wanders amidst dreams.",
+    "Source": "Reward for inviting Layla to a duel at The Cat's Tail and claiming victory in a Friendly Fracas with her",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Layla",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "Cryo",
+        "Sword",
+        "Sumeru"
+    ],
+    "Talent": {
+        "11091": {
+            "Name": "Sword of the Radiant Path",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "11092": {
+            "Name": "Nights of Formal Focus",
+            "Desc": "Creates 1 <color=#FFFFFFFF>$[C111091]</color> and <color=#FFFFFFFF>$[C111092]</color>.",
+            "Child": {
+                "C111091": {
+                    "Name": "Curtain of Slumber Shield",
+                    "Desc": "Grants <color=#FFFFFFFF> 2 $[K6] points</color> to defend your active character.",
+                    "Child": {
+                        "K6": {
+                            "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>Shield</color>",
+                            "Desc": "This Shield will be consumed to protect the character who equips it from DMG."
+                        }
+                    }
+                },
+                "C111092": {
+                    "Name": "Shooting Star",
+                    "Desc": "<color=#FFFFFFFF>After your character uses a Skill:</color> Accumulate 1 <color=#FFFFFFFF>Night Star</color>. If you have at least 4 <color=#FFFFFFFF>Night Stars</color>, consume 4 <color=#FFFFFFFF>Night Stars</color> and deal 1 $[K101]. (The Skill that causes this Combat Status will also trigger this effect)\\n<color=#FFFFFFFF>When causing this Combat Status again:</color> Accumulate 2 <color=#FFFFFFFF>Night Stars</color>.",
+                    "Child": {
+                        "K101": {
+                            "Name": "{SPRITE_PRESET#2101}<color=#99FFFFFF>Cryo DMG</color>",
+                            "Desc": "Applies {SPRITE_PRESET#2101}Cryo and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Melt</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Superconduct</color>: DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Frozen</color>: DMG +1 for this instance, the target is unable to perform any Actions this Round (Can be removed in advance after the target receives Physical or Pyro DMG, in which case they will take +2 DMG)"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3
+            }
+        },
+        "11093": {
+            "Name": "Dream of the Star-Stream Shaker",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], summons 1 <color=#FFFFFFFF>$[C111093]</color>.",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "C111093": {
+                    "Name": "Celestial Dreamsphere",
+                    "Desc": "<color=#FFFFFFFF>End Phase:</color> Deal 1 $[K101]. If <color=#FFFFFFFF>$[C111092]</color> is in play, it will let it gain 1 <color=#FFFFFFFF>Night Star</color>.\\n<color=#FFFFFFFF>$[K3]: 2</color>",
+                    "Child": {
+                        "K101": {
+                            "Name": "{SPRITE_PRESET#2101}<color=#99FFFFFF>Cryo DMG</color>",
+                            "Desc": "Applies {SPRITE_PRESET#2101}Cryo and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Melt</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Superconduct</color>: DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Frozen</color>: DMG +1 for this instance, the target is unable to perform any Actions this Round (Can be removed in advance after the target receives Physical or Pyro DMG, in which case they will take +2 DMG)"
+                        },
+                        "C111092": {
+                            "Name": "Shooting Star",
+                            "Desc": "<color=#FFFFFFFF>After your character uses a Skill:</color> Accumulate 1 <color=#FFFFFFFF>Night Star</color>. If you have at least 4 <color=#FFFFFFFF>Night Stars</color>, consume 4 <color=#FFFFFFFF>Night Stars</color> and deal 1 $[K101]. (The Skill that causes this Combat Status will also trigger this effect)\\n<color=#FFFFFFFF>When causing this Combat Status again:</color> Accumulate 2 <color=#FFFFFFFF>Night Stars</color>.",
+                            "Child": {
+                                "K101": {
+                                    "Name": "{SPRITE_PRESET#2101}<color=#99FFFFFF>Cryo DMG</color>",
+                                    "Desc": "Applies {SPRITE_PRESET#2101}Cryo and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Melt</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Superconduct</color>: DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Frozen</color>: DMG +1 for this instance, the target is unable to perform any Actions this Round (Can be removed in advance after the target receives Physical or Pyro DMG, in which case they will take +2 DMG)"
+                                }
+                            }
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 211091
+}

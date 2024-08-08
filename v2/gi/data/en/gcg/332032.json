@@ -1,0 +1,30 @@
+{
+    "Type": "Action",
+    "Name": "Countdown to the Show: 3",
+    "Title": "Countdown to the Show",
+    "Desc": "\"Would you like to see a magic trick? Now then, count down with me — three... two... one!\"",
+    "Source": "",
+    "Icon": "UI_Gcg_CardFace_Event_Event_MagicCount3",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PAIMON",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [],
+    "Talent": {
+        "Name": "Countdown to the Show: 3",
+        "Desc": "Convert all your Elemental Dice to $[K411] and draw 4 cards.\\n<color=#FFFFFFFF>After you $[K56] this card from your Hand or deck:</color> Place 1 \"Countdown to the Show\" card that costs 1 less Elemental Die than this one on the top of your deck.",
+        "Child": {
+            "K411": {
+                "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1111}Omni Element</color>",
+                "Desc": "The {SPRITE_PRESET#1111}Omni Element can be considered as any kind of element, and can be used to pay for costs of various kinds."
+            },
+            "K56": {
+                "Name": "<color=#FFFFFFFF>Discard</color>",
+                "Desc": "Use Action Cards or Character Skill effects to Discard Action Cards from Hand or Deck."
+            }
+        }
+    }
+}

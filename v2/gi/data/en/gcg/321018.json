@@ -1,0 +1,34 @@
+{
+    "Type": "Action",
+    "Name": "Fortress of Meropide",
+    "Title": "Fortress of Meropide",
+    "Desc": "\"A fastness of bronze and iron will collapse one day, but a city of law and justice will never fall.\"",
+    "Source": "",
+    "Icon": "UI_Gcg_CardFace_Assist_Location_BideBao",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PAIMON",
+            "count": 1
+        },
+        {}
+    ],
+    "Tag": [
+        "Location"
+    ],
+    "Talent": {
+        "Name": "Fortress of Meropide",
+        "Desc": "<color=#FFFFFFFF>When your active character takes DMG or is healed:</color> This card gains 1 <color=#FFFFFFFF>\"Prohibition\"</color> point. (Maximum 4 points)\\n<color=#FFFFFFFF>When Action Phase begins:</color> If this card has accumulated 4 <color=#FFFFFFFF>\"Prohibition\"</color> points, then 4 points will be consumed and 1 <color=#FFFFFFFF>$[C301018]</color> will be created in your opponent's playing field. (1 Event Card played by your opponent this Round will have no effect.)",
+        "Child": {
+            "C301018": {
+                "Name": "Strictly Prohibited",
+                "Desc": "Event Cards played on this side of the field this Round will be invalid.\\n<color=#FFFFFFFF>$[K3]: 1</color>",
+                "Child": {
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                        "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                    }
+                }
+            }
+        }
+    }
+}

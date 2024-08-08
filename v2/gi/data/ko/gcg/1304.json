@@ -1,0 +1,72 @@
+{
+    "Type": "Character",
+    "Name": "엠버",
+    "Title": "정찰 기사·엠버",
+    "Desc": "위대한 플레이어가 되려면…\\n먼저 테이블에 앉을 용기가 필요하다",
+    "Source": "캣테일 술집에서 엠버 초대 및 친선 대전 난이도 승리 후 획득",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Ambor",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "불 원소",
+        "활",
+        "몬드"
+    ],
+    "Talent": {
+        "13041": {
+            "Name": "명사수",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "13042": {
+            "Name": "폭탄 인형",
+            "Desc": "<color=#FFFFFFFF>$[C113041]</color>을 소환한다.",
+            "Child": {
+                "C113041": {
+                    "Name": "토끼 백작",
+                    "Desc": "<color=#FFFFFFFF>아군 출전 캐릭터가 피해를 받을 시:</color> 피해를 2pt 상쇄한다.\\n<color=#FFFFFFFF>$[K3]: 1</color>, 사용 횟수를 소진해도 해당 카드를 버리지 않는다.\\n<color=#FFFFFFFF>종료 단계에 $[K3]가 이미 소진됐을 시:</color> 해당 카드를 버리고 $[K103]를 2pt 준다.",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        },
+                        "K103": {
+                            "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>불 원소 피해</color>",
+                            "Desc": "{SPRITE_PRESET#2103}불 원소 부착 시 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>융해</color>: 이번 피해+2pt\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>증발</color>: 이번 피해+2pt\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>과부하</color>: 이번 피해+2pt, 대상이 다음 캐릭터로 강제 교체된다.\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>연소</color>: 이번 피해+1pt, 턴 종료 시 불 원소 피해를 1pt 주는 [<color=#FFFFFFFF>불타는 화염</color>]을 생성한다. (사용 가능 횟수: 1, 최대 중첩수: 2)"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 3
+            }
+        },
+        "13043": {
+            "Name": "화살비",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 적의 모든 대기 캐릭터에게 <color=#FFFFFFFF>$[K5]</color>를 2pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO",
+                "D__KEY__DAMAGE": 2,
+                "K5": {
+                    "Name": "<color=#FFFFFFFF>관통 피해</color>",
+                    "Desc": "관통 피해는 피해 보너스를 획득할 수 없으나, 주는 피해가 보호막 또는 피해 면역과 같은 효과에 의해 상쇄되지 않는다."
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 213041
+}

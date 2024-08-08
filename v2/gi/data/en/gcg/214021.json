@@ -1,0 +1,31 @@
+{
+    "Type": "Action",
+    "Name": "Awakening",
+    "Title": "Razor: Awakening",
+    "Desc": "The hunt is about to begin.",
+    "Source": "Reward for inviting Razor to a duel at The Cat's Tail and achieving all corresponding challenge objectives",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Razor",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_ELECTRO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "Talent",
+        "Combat Action"
+    ],
+    "Talent": {
+        "Name": "Awakening",
+        "Desc": "$[K1]: When your active character is <color=#FFFFFFFF>$[A1402]</color>, equip this card.\\nAfter $[A1402] equips this card, immediately use <color=#FFD780FF>$[S14022]</color> once.\\nAfter your $[A1402], who has this card equipped, uses <color=#FFFFFFFF>$[S14022]</color>: One of your Electro characters gains 1 Energy. (One per Round, active character prioritized)\\n(You must have $[A1402] in your deck to add this card to your deck.)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+            },
+            "A1402": "Awakening",
+            "S14022": "S14022"
+        }
+    }
+}

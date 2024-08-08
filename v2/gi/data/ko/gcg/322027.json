@@ -1,0 +1,33 @@
+{
+    "Type": "Action",
+    "Name": "세린",
+    "Title": "세린",
+    "Desc": "[오늘도 모두의 고민을 열심히 해결해야지!]",
+    "Source": "",
+    "Icon": "UI_Gcg_CardFace_Assist_NPC_Seling",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_VOID",
+            "count": 2
+        },
+        {}
+    ],
+    "Tag": [
+        "동료"
+    ],
+    "Talent": {
+        "Name": "세린",
+        "Desc": "<color=#FFFFFFFF>턴마다 자동으로 1회 발동:</color> 랜덤으로 <color=#FFFFFFFF>「$[C302218]」</color> 1장을 아군 핸드 카드에 넣는다.\\n<color=#FFFFFFFF>$[K3]: 3</color>",
+        "Child": {
+            "C302218": {
+                "Name": "멜뤼진의 응원",
+                "Desc": "랜덤 효과의 멋진 스티커. 멜뤼진들의 마음이 잔뜩 담겨있다.",
+                "Child": {}
+            },
+            "K3": {
+                "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+            }
+        }
+    }
+}

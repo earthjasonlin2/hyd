@@ -1,0 +1,47 @@
+{
+    "Type": "Action",
+    "Name": "渦巻く暗流",
+    "Title": "アビスの使徒·渦巻く暗流",
+    "Desc": "「破滅は、もう止められない！」",
+    "Source": "キャッツテールのリトルプリンスのところで酒場挑戦を行い、アビスの使徒·激流に挑戦して友好対戦で対応する挑戦目標をクリアすることで獲得",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_InvokerHeraldWater",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_HYDRO",
+            "count": 1
+        },
+        {}
+    ],
+    "Tag": [
+        "天賦"
+    ],
+    "Talent": {
+        "Name": "渦巻く暗流",
+        "Desc": "<color=#FFFFFFFF>登場時</color>、このカードを装備した<color=#FFFFFFFF>$[A2203]</color>がすでに<color=#FFFFFFFF>$[C122031]</color>を発動していた場合、相手のフィールドに$[K1022]を生成する。\\nこのカードを装備した$[A2203]が戦闘不能になる、または<color=#FFFFFFFF>$[C122031]</color>を発動した時、相手のフィールドに$[K1022]を生成する。\\n（このカードはデッキに$[A2203]が含まれている場合のみ、デッキに追加できる）",
+        "Child": {
+            "A2203": "渦巻く暗流",
+            "C122031": {
+                "Name": "水の新生",
+                "Desc": "<color=#FFFFFFFF>付与されたキャラが倒された時</color>、この効果を解除してキャラが$[K54]。また該当キャラのHPを4まで回復する。この効果が発動された後、キャラの与える$[K100]が$[K102]へと変わり、かつ$[K102]+1。",
+                "Child": {
+                    "K54": {
+                        "Name": "<color=#FFFFFFFF>戦闘不能にならない</color>",
+                        "Desc": "一部の効果によってキャラのHPが0になる時も、<color=#FFFFFFFF>戦闘不能にならず</color>、該当キャラのHPを一定値まで回復する。\\nこの時、キャラは<color=#FFFFFFFF>戦闘不能</color>にカウントされない。（そのため、キャラに装備または付与されたものは破棄されず、チャージもクリアされない。）"
+                    },
+                    "K100": {
+                        "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>",
+                        "Desc": "物理ダメージは元素付着させたり、元素反応を起こしたりはしません。"
+                    },
+                    "K102": {
+                        "Name": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素ダメージ</color>",
+                        "Desc": "{SPRITE_PRESET#2102}水元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2103}<color=#FFFFFFFF>蒸発</color>：ダメージ+2\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}<color=#FFFFFFFF>感電</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2101}<color=#FFFFFFFF>凍結</color>：ダメージ+1、目標はこのラウンドで行動不能になる（物理ダメージまたは炎ダメージを受けると、即座に解除されるがダメージ+2となる）\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}<color=#FFFFFFFF>開花</color>：ダメージ+1、次の炎元素または雷元素ダメージを+2できる「<color=#FFFFFFFF>草原核</color>」を生成する"
+                    }
+                }
+            },
+            "K1022": {
+                "Name": "<color=#FFFFFFFF>暗流の呪い</color>",
+                "Desc": "<color=#FFFFFFFF>チームのキャラが元素スキル、または元素爆発を発動する時</color>、必要な元素サイコロの数+1。\\n<color=#FFFFFFFF><color=#FFFFFFFF>使用可能回数</color>：2</color>"
+            }
+        }
+    }
+}

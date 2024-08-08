@@ -1,0 +1,53 @@
+{
+    "Type": "Action",
+    "Name": "こんこんプレゼント",
+    "Title": "クレー·こんこんプレゼント",
+    "Desc": "このカードを引いたら、喜びの大笑いをしよう。",
+    "Source": "キャッツテールでクレーを招待して対戦し、対応する挑戦目標をクリアすることで獲得",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Klee",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PYRO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "天賦",
+        "戦闘アクション"
+    ],
+    "Talent": {
+        "Name": "こんこんプレゼント",
+        "Desc": "$[K1]：味方の出撃キャラが<color=#FFFFFFFF>$[A1306]</color>の時、このカードを装備できる。\\n$[A1306]がこのカードを装備した後、直ちに<color=#FFD780FF>$[S13062]</color>を1回発動する。\\nこのカードを装備した$[A1306]の生成した<color=#FFFFFFFF>$[C113061]</color>は、初期$[K3]+1。\\n（このカードはデッキに$[A1306]が含まれている場合のみ、デッキに追加できる）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>戦闘アクション</color>",
+                "Desc": "味方が戦闘アクションを1回行った後、相手のターンに移ります。\\n<color=#FFFFFFFF>このようなルールを持つ手札を出すのはクイックアクションではなく、戦闘アクションと見なされます。</color>"
+            },
+            "A1306": "こんこんプレゼント",
+            "S13062": "S13062",
+            "C113061": {
+                "Name": "爆裂花火",
+                "Desc": "<color=#FFFFFFFF>付与されたキャラが$[K51]を行う時</color>、必要な<color=#FF9999FF>$[K303]</color>-1、かつ与えるダメージ+1。\\n<color=#FFFFFFFF>$[K3]：1</color>",
+                "Child": {
+                    "K51": {
+                        "Name": "<color=#FFFFFFFF>重撃</color>",
+                        "Desc": "味方のアクションが始まる前、元素サイコロの数が偶数の時に行われる「通常攻撃」は、「重撃」と見なされる。"
+                    },
+                    "K303": {
+                        "Name": "{SPRITE_PRESET#1103}炎元素",
+                        "Desc": "<color=#FF9999FF>{SPRITE_PRESET#1103}炎元素</color>の元素サイコロを消費してコストを支払い可能。\\n（{SPRITE_PRESET#1111}万能元素で代わりに支払うことも可能。）"
+                    },
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                        "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                    }
+                }
+            },
+            "K3": {
+                "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+            }
+        }
+    }
+}

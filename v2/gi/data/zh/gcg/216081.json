@@ -1,0 +1,41 @@
+{
+    "Type": "Action",
+    "Name": "不明流通渠道",
+    "Title": "娜维娅·不明流通渠道",
+    "Desc": "「哪来的？！」",
+    "Source": "在猫尾酒馆中邀请娜维娅进行对局，完成相应挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Navia",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_GEO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "天赋",
+        "战斗行动"
+    ],
+    "Talent": {
+        "Name": "不明流通渠道",
+        "Desc": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1608]</color>时，装备此牌。\\n$[A1608]装备此牌后，立刻使用一次<color=#FFD780FF>$[S16082]</color>。\\n装备有此牌的$[A1608]使用技能后：抓2张<color=#FFFFFFFF>$[C116081]</color>。（每回合1次）\\n（牌组中包含$[A1608]，才能加入牌组）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>战斗行动</color>",
+                "Desc": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+            },
+            "A1608": "不明流通渠道",
+            "S16082": "S16082",
+            "C116081": {
+                "Name": "裂晶弹片",
+                "Desc": "对敌方「出战角色」造成1点$[K100]，抓1张牌。",
+                "Child": {
+                    "K100": {
+                        "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>",
+                        "Desc": "物理伤害不会附着元素，也不会发生元素反应。"
+                    }
+                }
+            }
+        }
+    }
+}

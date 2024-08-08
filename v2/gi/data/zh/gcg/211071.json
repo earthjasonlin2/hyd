@@ -1,0 +1,45 @@
+{
+    "Type": "Action",
+    "Name": "忘玄",
+    "Title": "申鹤·忘玄",
+    "Desc": "炼气化神，意生冰身。",
+    "Source": "在猫尾酒馆中邀请申鹤进行对局，完成相应挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Constellation_Shenhe",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_CRYO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "天赋",
+        "战斗行动"
+    ],
+    "Talent": {
+        "Name": "忘玄",
+        "Desc": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1107]</color>时，装备此牌。\\n$[A1107]装备此牌后，立刻使用一次<color=#FFD780FF>$[S11072]</color>。\\n装备有此牌的$[A1107]生成的<color=#FFFFFFFF>$[C111071]</color>被我方角色的<color=#FFFFFFFF>「普通攻击」</color>触发时：不消耗可用次数。（每回合1次）\\n（牌组中包含$[A1107]，才能加入牌组）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>战斗行动</color>",
+                "Desc": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+            },
+            "A1107": "忘玄",
+            "S11072": "S11072",
+            "C111071": {
+                "Name": "冰翎",
+                "Desc": "我方角色造成的$[K101]+1。（包括角色引发的<color=#99FFFFFF>{SPRITE_PRESET#2101}冰元素</color>扩散的伤害）\\n<color=#FFFFFFFF>$[K3]：2</color>",
+                "Child": {
+                    "K101": {
+                        "Name": "{SPRITE_PRESET#2101}<color=#99FFFFFF>冰元素伤害</color>",
+                        "Desc": "附着{SPRITE_PRESET#2101}冰元素，可发生元素反应：\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2103}<color=#FFFFFFFF>融化</color>：本伤害+2\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2104}<color=#FFFFFFFF>超导</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2102}<color=#FFFFFFFF>冻结</color>：本伤害+1，使目标本回合无法行动（受到物理或火元素伤害后提前解除，但是伤害+2）"
+                    },
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>可用次数</color>",
+                        "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                    }
+                }
+            }
+        }
+    }
+}

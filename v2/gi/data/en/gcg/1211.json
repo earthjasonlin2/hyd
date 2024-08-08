@@ -1,0 +1,143 @@
+{
+    "Type": "Character",
+    "Name": "Furina",
+    "Title": "\"Endless Solo of Solitude\" Furina",
+    "Desc": "Perpetual muse of chansons and rondeaux.",
+    "Source": "Reward for inviting Furina to a duel at The Cat's Tail and claiming victory in a Friendly Fracas with her",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Furina",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "Hydro",
+        "Sword",
+        "Fontaine",
+        "Arkhe: Ousia"
+    ],
+    "Talent": {
+        "12111": {
+            "Name": "Soloist's Solicitation",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].\\n<color=#FFFFFFFF>Once per Round:</color> If you do not have <color=#FFFFFFFF>$[C112113]</color> in your Hand, create 1 <color=#FFFFFFFF>$[C112113]</color> card in your Hand.",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "C112113": {
+                    "Name": "Seats Sacred and Secular",
+                    "Desc": "When in {SPRITE_PRESET#3504}Arkhe: Pneuma or {SPRITE_PRESET#3505}Arkhe: Ousia states, switch $[A1211]'s state.\\nIf you have <color=#FFFFFFFF>$[K1031]</color> or <color=#FFFFFFFF>$[K1032]</color> on the field, change their state as well.",
+                    "Child": {
+                        "A1211": "Furina",
+                        "K1031": {
+                            "Name": "<color=#FFFFFFFF>Salon Members</color>",
+                            "Desc": "<color=#FFFFFFFF>End Phase:</color> Deal 1 {SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro DMG</color>. If your side has characters with at least 6 HP, deal 1 <color=#FFFFFFFF>Piercing DMG</color> to your character who has taken the least DMG, and deal another 1 {SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro DMG</color>.\\n<color=#FFFFFFFF>Usages: 2</color> (Can stack. Max 4 stacks)"
+                        },
+                        "K1032": {
+                            "Name": "<color=#FFFFFFFF>Singer of Many Waters</color>",
+                            "Desc": "<color=#FFFFFFFF>End Phase:</color> Heal all your characters for 1 HP. If your side has characters with no more than 5 HP, heal the most injured character for an additional 1 HP.\\n<color=#FFFFFFFF>Usages: 2</color> (Can stack. Max 4 stacks)"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "12112": {
+            "Name": "Salon Solitaire",
+            "Desc": "<color=#FFFFFFFF>$[A1211]</color> is currently in the {SPRITE_PRESET#3504}Arkhe: Ousia state. Summons <color=#FFFFFFFF>$[C112111]</color>.\\n(When $[A1211] is in the {SPRITE_PRESET#3505}Arkhe: Pneuma state, she will summon <color=#FFFFFFFF>$[C112112]</color> instead)",
+            "Child": {
+                "A1211": "Furina",
+                "C112111": {
+                    "Name": "Salon Members",
+                    "Desc": "<color=#FFFFFFFF>End Phase:</color> Deal 1 $[K102]. If your side has characters with at least 6 HP, deal 1 $[K5] to your character who has taken the least DMG, and deal another 1 $[K102].\\n<color=#FFFFFFFF>$[K3]: 2</color> (Can stack. Max 4 stacks)",
+                    "Child": {
+                        "K102": {
+                            "Name": "{SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro DMG</color>",
+                            "Desc": "Applies {SPRITE_PRESET#2102}Hydro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Vaporize</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Electro-Charged</color>：DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Frozen</color>: DMG +1 for this instance, the target is unable to perform any Actions this Round (Can be removed in advance after the target receives +2 Physical or Pyro DMG)\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Bloom</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Dendro Core</color>] that grants +2 DMG to the next instance of Pyro or Electro DMG"
+                        },
+                        "K5": {
+                            "Name": "<color=#FFFFFFFF>Piercing DMG</color>",
+                            "Desc": "Piercing DMG cannot be increased by any bonuses, but cannot be defended against using Shields or DMG Immunity either."
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        }
+                    }
+                },
+                "C112112": {
+                    "Name": "Singer of Many Waters",
+                    "Desc": "<color=#FFFFFFFF>End Phase:</color> Heal all your characters for 1 HP. If your side has characters with no more than 5 HP, heal the most injured character for an additional 1 HP.\\n<color=#FFFFFFFF>$[K3]: 2</color> (Can stack. Max 4 stacks)",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3
+            }
+        },
+        "12113": {
+            "Name": "Let the People Rejoice",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], creates 1 <color=#FFFFFFFF>$[C112114]</color>.",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "C112114": {
+                    "Name": "Universal Revelry",
+                    "Desc": "<color=#FFFFFFFF>After your active character takes DMG or is healed: </color>Add 1 stack of <color=#FFFFFFFF>$[K1029]</color>.\\n<color=#FFFFFFFF>$[K4]: 2</color>",
+                    "Child": {
+                        "K1029": {
+                            "Name": "<color=#FFFFFFFF>Revelry</color>",
+                            "Desc": "Your side deals +1 DMG. (Including Swirl DMG triggered by Characters)\\n<color=#FFFFFFFF>Usages: 1</color> (Can stack. No stack limit)"
+                        },
+                        "K4": {
+                            "Name": "<color=#FFFFFFFF>Duration (Rounds)</color>",
+                            "Desc": "Each time you reach the end of a Round, <color=#FFFFFFFF>Duration (Rounds)</color> -1.\\nThis card will be discarded immediately once <color=#FFFFFFFF>Duration (Rounds)</color> runs out."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 4,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "12114": {
+            "Name": "",
+            "Desc": "",
+            "Child": {},
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        },
+        "12115": {
+            "Name": "Arkhe: Seats Sacred and Secular",
+            "Desc": "(Passive) When battle begins, create 1 <color=#FFFFFFFF>$[C112113]</color> card in your Hand.",
+            "Child": {
+                "C112113": {
+                    "Name": "Seats Sacred and Secular",
+                    "Desc": "When in {SPRITE_PRESET#3504}Arkhe: Pneuma or {SPRITE_PRESET#3505}Arkhe: Ousia states, switch $[A1211]'s state.\\nIf you have <color=#FFFFFFFF>$[K1031]</color> or <color=#FFFFFFFF>$[K1032]</color> on the field, change their state as well.",
+                    "Child": {
+                        "A1211": "Furina",
+                        "K1031": {
+                            "Name": "<color=#FFFFFFFF>Salon Members</color>",
+                            "Desc": "<color=#FFFFFFFF>End Phase:</color> Deal 1 {SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro DMG</color>. If your side has characters with at least 6 HP, deal 1 <color=#FFFFFFFF>Piercing DMG</color> to your character who has taken the least DMG, and deal another 1 {SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro DMG</color>.\\n<color=#FFFFFFFF>Usages: 2</color> (Can stack. Max 4 stacks)"
+                        },
+                        "K1032": {
+                            "Name": "<color=#FFFFFFFF>Singer of Many Waters</color>",
+                            "Desc": "<color=#FFFFFFFF>End Phase:</color> Heal all your characters for 1 HP. If your side has characters with no more than 5 HP, heal the most injured character for an additional 1 HP.\\n<color=#FFFFFFFF>Usages: 2</color> (Can stack. Max 4 stacks)"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 212111
+}

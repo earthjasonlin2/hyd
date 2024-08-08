@@ -1,0 +1,61 @@
+{
+    "Type": "Action",
+    "Name": "Descent of Divinity",
+    "Title": "Albedo: Descent of Divinity",
+    "Desc": "\"The process of confirming the strategy for a duel also requires meticulous calculations...\"",
+    "Source": "Reward for inviting Albedo to a duel at The Cat's Tail and achieving all corresponding challenge objectives",
+    "Icon": "UI_Gcg_CardFace_Modify_Constellation_Albedo",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_GEO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "Talent",
+        "Combat Action"
+    ],
+    "Talent": {
+        "Name": "Descent of Divinity",
+        "Desc": "$[K1]: When your active character is <color=#FFFFFFFF>$[A1604]</color>, equip this card.\\nAfter $[A1604] equips this card, immediately use <color=#FFD780FF>$[S16042]</color>.\\nWhen there is $[A1604] on the field who has this card equipped, if your side of the field has <color=#FFFFFFFF>$[C116041]</color>, then your characters' $[K52] costs 1 less $[K309] and deals +1 DMG.\\n(You must have $[A1604] in your deck to add this card to your deck.)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+            },
+            "A1604": "Descent of Divinity",
+            "S16042": "S16042",
+            "C116041": {
+                "Name": "Solar Isotoma",
+                "Desc": "<color=#FFFFFFFF>End Phase:</color> Deal 1 $[K106].\\n<color=#FFFFFFFF>$[K3]: 3</color>\\n<color=#FFFFFFFF>When you perform \"Switch Character\" and this Summon is on the field:</color> This switch is considered a $[K2] instead of a $[K1]. (Once per Round)",
+                "Child": {
+                    "K106": {
+                        "Name": "{SPRITE_PRESET#2106}<color=#FFE699FF>Geo DMG</color>",
+                        "Desc": "Reacts with Elements if they are already applied:\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Cryo Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Hydro Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Pyro Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Electro Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)"
+                    },
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                        "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                    },
+                    "K2": {
+                        "Name": "<color=#FFFFFFFF>Fast Action</color>",
+                        "Desc": "You can continue with other actions after conducting 1 Fast Action.\\nOnly after conducting 1 Combat Action will the turn pass over to your opponent."
+                    },
+                    "K1": {
+                        "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                        "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+                    }
+                }
+            },
+            "K52": {
+                "Name": "<color=#FFFFFFFF>Plunging Attack</color>",
+                "Desc": "After a character is switched in to be the Active Character, should their next Combat Action within this Round be a Normal Attack, it will be considered a Plunging Attack for the instance."
+            },
+            "K309": {
+                "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1109}Unaligned Element</color>",
+                "Desc": "You may use Elemental Dice of any element to pay this type of cost."
+            }
+        }
+    }
+}

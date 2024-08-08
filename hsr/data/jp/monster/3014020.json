@@ -1,0 +1,777 @@
+{
+    "Id": 3014020,
+    "Name": "{RUBY_B#きおくいき}記憶域{RUBY_E#}ミーム「{RUBY_B#し}死{RUBY_E#}へ{RUBY_B#む}向{RUBY_E#}かうのは{RUBY_B#なにもの}何物{RUBY_E#}」",
+    "Desc": "特定の認識を持つ実体。記憶域にある潜在意識の欠片が積み重なってできたもの。\\n神秘的で危険な記憶域ミーム。夢の中では存在しないはずの「死亡」と見なされている。それは十二の刻を彷徨い、鋭い刃で悪夢を散布し、死の影で美しき夢を覆う。この記憶域ミームが至るところには、必ず災禍が降りかかる。",
+    "MonsterCampID": 11,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 2046,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/Monster_3014020.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "LittleBoss",
+    "SpeedBase": 144,
+    "StanceBase": 720,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.3000000002793968,
+    "Child": [
+        {
+            "Id": 301402001,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 0.9090910009108484,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Wind",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 301402001,
+                    "SkillName": "葬儀の接吻",
+                    "SkillDesc": "指定した味方単体に物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 301402002,
+                    "SkillName": "死の黒雨",
+                    "SkillDesc": "味方全体に物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 301402003,
+                    "SkillName": "鋭い弔辞",
+                    "SkillDesc": "自身の与ダメージを大アップする、1ターン継続。この効果は弱点撃破された後に解除される。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 301402004,
+                    "SkillName": "消える光明",
+                    "SkillDesc": "「日没」状態に入る。味方が通常攻撃、戦闘スキル、または必殺技を発動するたびに「日没」を1層獲得する。「日没」が3層に達した時、一つ前に行動した味方に対して「黄昏に色褪せて」を発動する。「黄昏に色褪せて」を1回発動した後、または弱点撃破された後に、この状態は解除される。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 301402005,
+                    "SkillName": "黄昏に色褪せて",
+                    "SkillDesc": "最後に通常攻撃、戦闘スキル、または必殺技を発動した味方に致命攻撃を行い、その味方を「夢死」状態にする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 301402006,
+                    "SkillName": "良い夜へ",
+                    "SkillDesc": "「夜の到来」状態に入り、味方全体のEPを回復する。「夜の到来」状態の間で最初に行動した味方2名をロックオンする。次の行動で「水が水に消え逝くように」を発動する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 301402007,
+                    "SkillName": "水が水に消え逝くように",
+                    "SkillDesc": "ロックオンされたすべての味方に致命攻撃を行い、「夢死」状態にする。ロックオンされた味方がない場合、ランダムな味方2名に致命攻撃を行い、「夢死」状態にする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 301402008,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 301402009,
+                    "SkillName": "弔えぬ荒涼",
+                    "SkillDesc": "味方が「夢死」状態になった時、対応する「永眠の墓碑」を1体召喚する。味方全体が「夢死」状態になる、または戦闘不能状態になると、戦闘失敗になる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 301402002,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1.1363640003837645,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Wind",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 301402001,
+                    "SkillName": "葬儀の接吻",
+                    "SkillDesc": "指定した味方単体に物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 301402002,
+                    "SkillName": "死の黒雨",
+                    "SkillDesc": "味方全体に物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 301402003,
+                    "SkillName": "鋭い弔辞",
+                    "SkillDesc": "自身の与ダメージを大アップする、1ターン継続。この効果は弱点撃破された後に解除される。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 301402004,
+                    "SkillName": "消える光明",
+                    "SkillDesc": "「日没」状態に入る。味方が通常攻撃、戦闘スキル、または必殺技を発動するたびに「日没」を1層獲得する。「日没」が3層に達した時、一つ前に行動した味方に対して「黄昏に色褪せて」を発動する。「黄昏に色褪せて」を1回発動した後、または弱点撃破された後に、この状態は解除される。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 301402005,
+                    "SkillName": "黄昏に色褪せて",
+                    "SkillDesc": "最後に通常攻撃、戦闘スキル、または必殺技を発動した味方に致命攻撃を行い、その味方を「夢死」状態にする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 301402006,
+                    "SkillName": "良い夜へ",
+                    "SkillDesc": "「夜の到来」状態に入り、味方全体のEPを回復する。「夜の到来」状態の間で最初に行動した味方2名をロックオンする。次の行動で「水が水に消え逝くように」を発動する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 301402007,
+                    "SkillName": "水が水に消え逝くように",
+                    "SkillDesc": "ロックオンされたすべての味方に致命攻撃を行い、「夢死」状態にする。ロックオンされた味方がない場合、ランダムな味方2名に致命攻撃を行い、「夢死」状態にする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 301402008,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 301402009,
+                    "SkillName": "弔えぬ荒涼",
+                    "SkillDesc": "味方が「夢死」状態になった時、対応する「永眠の墓碑」を1体召喚する。味方全体が「夢死」状態になる、または戦闘不能状態になると、戦闘失敗になる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 3014020,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Wind",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 301402001,
+                    "SkillName": "葬儀の接吻",
+                    "SkillDesc": "指定した味方単体に物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 301402002,
+                    "SkillName": "死の黒雨",
+                    "SkillDesc": "味方全体に物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 301402003,
+                    "SkillName": "鋭い弔辞",
+                    "SkillDesc": "自身の与ダメージを大アップする、1ターン継続。この効果は弱点撃破された後に解除される。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 301402004,
+                    "SkillName": "消える光明",
+                    "SkillDesc": "「日没」状態に入る。味方が通常攻撃、戦闘スキル、または必殺技を発動するたびに「日没」を1層獲得する。「日没」が3層に達した時、一つ前に行動した味方に対して「黄昏に色褪せて」を発動する。「黄昏に色褪せて」を1回発動した後、または弱点撃破された後に、この状態は解除される。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 301402005,
+                    "SkillName": "黄昏に色褪せて",
+                    "SkillDesc": "最後に通常攻撃、戦闘スキル、または必殺技を発動した味方に致命攻撃を行い、その味方を「夢死」状態にする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 301402006,
+                    "SkillName": "良い夜へ",
+                    "SkillDesc": "「夜の到来」状態に入り、味方全体のEPを回復する。「夜の到来」状態の間で最初に行動した味方2名をロックオンする。次の行動で「水が水に消え逝くように」を発動する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 301402007,
+                    "SkillName": "水が水に消え逝くように",
+                    "SkillDesc": "ロックオンされたすべての味方に致命攻撃を行い、「夢死」状態にする。ロックオンされた味方がない場合、ランダムな味方2名に致命攻撃を行い、「夢死」状態にする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 301402008,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 301402009,
+                    "SkillName": "弔えぬ荒涼",
+                    "SkillDesc": "味方が「夢死」状態になった時、対応する「永眠の墓碑」を1体召喚する。味方全体が「夢死」状態になる、または戦闘不能状態になると、戦闘失敗になる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 301402003,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Wind",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 301402001,
+                    "SkillName": "葬儀の接吻",
+                    "SkillDesc": "指定した味方単体に物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 301402002,
+                    "SkillName": "死の黒雨",
+                    "SkillDesc": "味方全体に物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 301402003,
+                    "SkillName": "鋭い弔辞",
+                    "SkillDesc": "自身の与ダメージを大アップする、1ターン継続。この効果は弱点撃破された後に解除される。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 301402004,
+                    "SkillName": "消える光明",
+                    "SkillDesc": "「日没」状態に入る。味方が通常攻撃、戦闘スキル、または必殺技を発動するたびに「日没」を1層獲得する。「日没」が3層に達した時、一つ前に行動した味方に対して「黄昏に色褪せて」を発動する。「黄昏に色褪せて」を1回発動した後、または弱点撃破された後に、この状態は解除される。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 301402005,
+                    "SkillName": "黄昏に色褪せて",
+                    "SkillDesc": "最後に通常攻撃、戦闘スキル、または必殺技を発動した味方に致命攻撃を行い、その味方を「夢死」状態にする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 301402006,
+                    "SkillName": "良い夜へ",
+                    "SkillDesc": "「夜の到来」状態に入り、味方全体のEPを回復する。「夜の到来」状態の間で最初に行動した味方2名をロックオンする。次の行動で「水が水に消え逝くように」を発動する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 301402007,
+                    "SkillName": "水が水に消え逝くように",
+                    "SkillDesc": "ロックオンされたすべての味方に致命攻撃を行い、「夢死」状態にする。ロックオンされた味方がない場合、ランダムな味方2名に致命攻撃を行い、「夢死」状態にする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 301402008,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 301402009,
+                    "SkillName": "弔えぬ荒涼",
+                    "SkillDesc": "味方が「夢死」状態になった時、対応する「永眠の墓碑」を1体召喚する。味方全体が「夢死」状態になる、または戦闘不能状態になると、戦闘失敗になる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 301402004,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Wind",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 301402001,
+                    "SkillName": "葬儀の接吻",
+                    "SkillDesc": "指定した味方単体に物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 301402002,
+                    "SkillName": "死の黒雨",
+                    "SkillDesc": "味方全体に物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 301402003,
+                    "SkillName": "鋭い弔辞",
+                    "SkillDesc": "自身の与ダメージを大アップする、1ターン継続。この効果は弱点撃破された後に解除される。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 301402004,
+                    "SkillName": "消える光明",
+                    "SkillDesc": "「日没」状態に入る。味方が通常攻撃、戦闘スキル、または必殺技を発動するたびに「日没」を1層獲得する。「日没」が3層に達した時、一つ前に行動した味方に対して「黄昏に色褪せて」を発動する。「黄昏に色褪せて」を1回発動した後、または弱点撃破された後に、この状態は解除される。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 301402005,
+                    "SkillName": "黄昏に色褪せて",
+                    "SkillDesc": "最後に通常攻撃、戦闘スキル、または必殺技を発動した味方に致命攻撃を行い、その味方を「夢死」状態にする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 301402006,
+                    "SkillName": "良い夜へ",
+                    "SkillDesc": "「夜の到来」状態に入り、味方全体のEPを回復する。「夜の到来」状態の間で最初に行動した味方2名をロックオンする。次の行動で「水が水に消え逝くように」を発動する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 301402007,
+                    "SkillName": "水が水に消え逝くように",
+                    "SkillDesc": "ロックオンされたすべての味方に致命攻撃を行い、「夢死」状態にする。ロックオンされた味方がない場合、ランダムな味方2名に致命攻撃を行い、「夢死」状態にする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 301402008,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 301402009,
+                    "SkillName": "弔えぬ荒涼",
+                    "SkillDesc": "味方が「夢死」状態になった時、対応する「永眠の墓碑」を1体召喚する。味方全体が「夢死」状態になる、または戦闘不能状態になると、戦闘失敗になる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 301402005,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1.2727270007599145,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Wind",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 301402001,
+                    "SkillName": "葬儀の接吻",
+                    "SkillDesc": "指定した味方単体に物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 301402002,
+                    "SkillName": "死の黒雨",
+                    "SkillDesc": "味方全体に物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 301402003,
+                    "SkillName": "鋭い弔辞",
+                    "SkillDesc": "自身の与ダメージを大アップする、1ターン継続。この効果は弱点撃破された後に解除される。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 301402004,
+                    "SkillName": "消える光明",
+                    "SkillDesc": "「日没」状態に入る。味方が通常攻撃、戦闘スキル、または必殺技を発動するたびに「日没」を1層獲得する。「日没」が3層に達した時、一つ前に行動した味方に対して「黄昏に色褪せて」を発動する。「黄昏に色褪せて」を1回発動した後、または弱点撃破された後に、この状態は解除される。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 301402005,
+                    "SkillName": "黄昏に色褪せて",
+                    "SkillDesc": "最後に通常攻撃、戦闘スキル、または必殺技を発動した味方に致命攻撃を行い、その味方を「夢死」状態にする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 301402006,
+                    "SkillName": "良い夜へ",
+                    "SkillDesc": "「夜の到来」状態に入り、味方全体のEPを回復する。「夜の到来」状態の間で最初に行動した味方2名をロックオンする。次の行動で「水が水に消え逝くように」を発動する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 301402007,
+                    "SkillName": "水が水に消え逝くように",
+                    "SkillDesc": "ロックオンされたすべての味方に致命攻撃を行い、「夢死」状態にする。ロックオンされた味方がない場合、ランダムな味方2名に致命攻撃を行い、「夢死」状態にする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 301402008,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 301402009,
+                    "SkillName": "弔えぬ荒涼",
+                    "SkillDesc": "味方が「夢死」状態になった時、対応する「永眠の墓碑」を1体召喚する。味方全体が「夢死」状態になる、または戦闘不能状態になると、戦闘失敗になる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 301402006,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Ice",
+                "Wind",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Fire",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 301402001,
+                    "SkillName": "葬儀の接吻",
+                    "SkillDesc": "指定した味方単体に物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 301402002,
+                    "SkillName": "死の黒雨",
+                    "SkillDesc": "味方全体に物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 301402003,
+                    "SkillName": "鋭い弔辞",
+                    "SkillDesc": "自身の与ダメージを大アップする、1ターン継続。この効果は弱点撃破された後に解除される。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 301402004,
+                    "SkillName": "消える光明",
+                    "SkillDesc": "「日没」状態に入る。味方が通常攻撃、戦闘スキル、または必殺技を発動するたびに「日没」を1層獲得する。「日没」が3層に達した時、一つ前に行動した味方に対して「黄昏に色褪せて」を発動する。「黄昏に色褪せて」を1回発動した後、または弱点撃破された後に、この状態は解除される。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 301402005,
+                    "SkillName": "黄昏に色褪せて",
+                    "SkillDesc": "最後に通常攻撃、戦闘スキル、または必殺技を発動した味方に致命攻撃を行い、その味方を「夢死」状態にする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 301402006,
+                    "SkillName": "良い夜へ",
+                    "SkillDesc": "「夜の到来」状態に入り、味方全体のEPを回復する。「夜の到来」状態の間で最初に行動した味方2名をロックオンする。次の行動で「水が水に消え逝くように」を発動する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 301402007,
+                    "SkillName": "水が水に消え逝くように",
+                    "SkillDesc": "ロックオンされたすべての味方に致命攻撃を行い、「夢死」状態にする。ロックオンされた味方がない場合、ランダムな味方2名に致命攻撃を行い、「夢死」状態にする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 301402008,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 301402009,
+                    "SkillName": "弔えぬ荒涼",
+                    "SkillDesc": "味方が「夢死」状態になった時、対応する「永眠の墓碑」を1体召喚する。味方全体が「夢死」状態になる、または戦闘不能状態になると、戦闘失敗になる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 3014020,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 3014020,
+            "WorldLevel": 1,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 3014020,
+            "WorldLevel": 2,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 3014020,
+            "WorldLevel": 3,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 3014020,
+            "WorldLevel": 4,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 3014020,
+            "WorldLevel": 5,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 3014020,
+            "WorldLevel": 6,
+            "DisplayItemList": []
+        }
+    ]
+}

@@ -1,0 +1,177 @@
+{
+    "Id": 8024010,
+    "Name": "スウォーム・真蟄虫（スペック）",
+    "Desc": "コードが影響を受けた後の正常な投影。成熟体の真蟄虫を参考としている。博識学会のデュロワ士爵は星海を漫遊し、<unbreak>30</unbreak>巻からなる『諸界異虫記』を書いた。これまで確認された十数種類の物を食い荒らす虫の種類および星系間に存在する数えきれないほどの亜種が記されている。",
+    "MonsterCampID": null,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 1395,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/Monster_8024010.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "LittleBoss",
+    "SpeedBase": 144,
+    "StanceBase": 540,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.40000000037252903,
+    "Child": [
+        {
+            "Id": 8024010,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Quantum",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Fire",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 802401001,
+                    "SkillName": "蟲のブレス",
+                    "SkillDesc": "指定した味方単体に少量の風属性ダメージを与え、高確率で攻撃を受けた味方を2層の風化状態にする。",
+                    "DamageType": "Wind",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 802401002,
+                    "SkillName": "戦争兵器",
+                    "SkillDesc": "指定した味方単体に少量の風属性ダメージを与える。攻撃を受けたターゲットが風化状態であった場合、風化ダメージを1回与える。",
+                    "DamageType": "Wind",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 802401003,
+                    "SkillName": "ハリケーン",
+                    "SkillDesc": "味方全体に風属性ダメージを与え、高確率で攻撃を受けた味方を風化状態にする。",
+                    "DamageType": "Wind",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 802401004,
+                    "SkillName": "増殖",
+                    "SkillDesc": "真蟄虫の群れを増やす。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 802401005,
+                    "SkillName": "強襲準備",
+                    "SkillDesc": "チャージ状態に入り、次の行動で「スウォーム強襲」を発動する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 802401006,
+                    "SkillName": "スウォーム強襲",
+                    "SkillDesc": "フィールド上のすべての真蟄虫の群れの行動制限系デバフと弱点撃破状態を解除し、味方に風属性ダメージを与え、攻撃を受けるたびに1層の風化状態に陥るようにする。",
+                    "DamageType": "Wind",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 802401007,
+                    "SkillName": "スウォーム強襲",
+                    "SkillDesc": "フィールド上のすべての真蟄虫の群れの行動制限系デバフと弱点撃破状態を解除し、味方に風属性ダメージを与え、攻撃を受けるたびに1層の風化状態に陥るようにする。",
+                    "DamageType": "Wind",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 802401008,
+                    "SkillName": "継承フェロモン",
+                    "SkillDesc": "フィールド上に真蟄虫の群れが1つ増えるごとに、すべての真蟄虫の群れがダメージアップを1層獲得する。フィールド上では1つの「継承フェロモン」のみが効果を発揮する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 802401009,
+                    "SkillName": "虫の断末魔",
+                    "SkillDesc": "HPが0になる攻撃を受けた時、敵全体に風属性ダメージを与え、高い確率で攻撃を受けた敵の被ダメージを少しアップさせる。",
+                    "DamageType": "Wind",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 802401010,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "Wind",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 802401011,
+                    "SkillName": "増殖",
+                    "SkillDesc": "真蟄虫の群れを増やす。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 8024010,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 8024010,
+            "WorldLevel": 1,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 8024010,
+            "WorldLevel": 2,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 8024010,
+            "WorldLevel": 3,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 8024010,
+            "WorldLevel": 4,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 8024010,
+            "WorldLevel": 5,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 8024010,
+            "WorldLevel": 6,
+            "DisplayItemList": []
+        }
+    ]
+}

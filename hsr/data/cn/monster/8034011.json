@@ -1,0 +1,180 @@
+{
+    "Id": 8034011,
+    "Name": "「石心十人」诡弈砂金（完整）",
+    "Desc": "代码受到影响后的完整投影。参照本体为星际和平公司「战略投资部」的高级干部，「石心十人」之一。借由基石分得「存护」令使的权能，以身作骰，置之死地而后生。",
+    "MonsterCampID": 9,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 1395,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/Monster_8034010.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "LittleBoss",
+    "SpeedBase": 144,
+    "StanceBase": 600,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.3000000002793968,
+    "Child": [
+        {
+            "Id": 8034011,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Ice",
+                "Thunder"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Fire",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.40000000037252903
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 803401101,
+                    "SkillName": "押以重注",
+                    "SkillDesc": "对指定我方单体造成虚数属性伤害。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 803401102,
+                    "SkillName": "分散投资",
+                    "SkillDesc": "连续对我方随机单体造成少量虚数属性伤害。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 5
+                },
+                {
+                    "Id": 803401103,
+                    "SkillName": "点数喷泉",
+                    "SkillDesc": "对我方全体造成少量虚数属性伤害，并减少我方全体的能量。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401104,
+                    "SkillName": "对赌时刻",
+                    "SkillDesc": "召唤【「所有或一无所有」】并使我方单体进入赌局，每个【「所有或一无所有」】每次受到进入赌局的我方目标攻击时，会使其获得1个随机1到6的点数，并在生命值降为1后获得【<u>时来</u>】效果，首个【「所有或一无所有」】每次受到攻击时会使赌局的赔率翻倍。进入赌局的我方单体回合结束时，点数低于诡弈砂金视为输掉赌局并受到攻击；点数高于诡弈砂金视为赢得赌局且终结技被激活。同时使没有进入赌局的我方目标陷入【观局勿语】状态，赌局结束后解除。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401105,
+                    "SkillName": "豪赌盛宴",
+                    "SkillDesc": "召唤【「所有或一无所有」】并使我方全体进入赌局，每个【「所有或一无所有」】每次受到攻击时会使进行攻击的我方目标获得1个随机1到6的点数，并在生命值降为1后获得【<u>时来</u>】效果，首个【「所有或一无所有」】每次受到攻击时会使赌局的赔率翻倍。下次诡弈砂金行动时，点数低于诡弈砂金的我方目标视为输掉赌局并受到攻击；点数高于诡弈砂金的我方目标视为赢得赌局且终结技被激活。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401106,
+                    "SkillName": "狂热深渊",
+                    "SkillDesc": "召唤【「所有或一无所有」】并成倍获得点数，使我方全体进入赌局，每个【「所有或一无所有」】每次受到攻击时会使进行攻击的我方目标获得1个随机1到6的点数，并在生命值降为1后获得【<u>时来</u>】效果，首个【「所有或一无所有」】每次受到攻击时会使赌局的赔率翻倍。下次诡弈砂金行动时，我方的总点数低于诡弈砂金时视为全体输掉赌局并受到攻击；总点数高于诡弈砂金时视为全体赢得赌局且终结技被激活。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401107,
+                    "SkillName": "败者退席",
+                    "SkillDesc": "对输掉赌局的我方单体造成虚数属性伤害，并大概率使受到攻击的我方单体陷入禁锢状态。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 803401108,
+                    "SkillName": "胜者通杀",
+                    "SkillDesc": "对所有输掉赌局的我方目标造成大量虚数属性伤害，并大概率使受到攻击的我方目标陷入禁锢状态。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 803401109,
+                    "SkillName": "一度阖眼的谎言",
+                    "SkillDesc": "赌局的初始赔率为1，上限为4。每次赢得赌局的我方目标获得赔率层数的【<u>芬戈的礼物</u>】效果；每次输掉赌局的我方目标获得赔率层数的【<u>芬戈的诅咒</u>】效果。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401110,
+                    "SkillName": "二度阖眼的骗术",
+                    "SkillDesc": "赌局的初始赔率为1，上限为8。每次赢得赌局的我方目标获得赔率层数的【<u>芬戈的礼物</u>】效果；每次输掉赌局的我方目标获得赔率层数的【<u>芬戈的诅咒</u>】效果。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401111,
+                    "SkillName": "三度阖眼的诡计",
+                    "SkillDesc": "赌局的初始赔率为1，上限为<unbreak>16</unbreak>。每次赢得赌局的我方全体获得赔率层数的【<u>芬戈的礼物</u>】效果；每次输掉赌局的我方全体获得赔率层数的【<u>芬戈的诅咒</u>】效果。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401112,
+                    "SkillName": "债台高筑",
+                    "SkillDesc": "每开启1次赌局，诡弈砂金的伤害提高。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 8034011,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 8034011,
+            "WorldLevel": 1,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 8034011,
+            "WorldLevel": 2,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 8034011,
+            "WorldLevel": 3,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 8034011,
+            "WorldLevel": 4,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 8034011,
+            "WorldLevel": 5,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 8034011,
+            "WorldLevel": 6,
+            "DisplayItemList": []
+        }
+    ]
+}

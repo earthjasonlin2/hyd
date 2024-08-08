@@ -1,0 +1,66 @@
+{
+    "Type": "Character",
+    "Name": "班尼特",
+    "Title": "命运试金石·班尼特",
+    "Desc": "当你知道自己一定会输时，那你肯定也知道如何能赢。",
+    "Source": "在猫尾酒馆中邀请班尼特进行对局，在友好对局难度中获得胜利后获取",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Bennett",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "火元素",
+        "单手剑",
+        "蒙德"
+    ],
+    "Talent": {
+        "13031": {
+            "Name": "好运剑",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "13032": {
+            "Name": "热情过载",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO"
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 3
+            }
+        },
+        "13033": {
+            "Name": "美妙旅程",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，生成<color=#FFFFFFFF>$[C113031]</color>。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO",
+                "C113031": {
+                    "Name": "鼓舞领域",
+                    "Desc": "<color=#FFFFFFFF>我方角色使用技能时：</color>如果该角色生命值至少为7，则使此伤害额外+2；技能结算后，如果该角色生命值不多于6，则治疗该角色2点。\\n<color=#FFFFFFFF>$[K4]：2</color>",
+                    "Child": {
+                        "K4": {
+                            "Name": "<color=#FFFFFFFF>持续回合</color>",
+                            "Desc": "每回合结束阶段，<color=#FFFFFFFF>持续回合</color>-1；\\n<color=#FFFFFFFF>持续回合</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 4,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 213031
+}

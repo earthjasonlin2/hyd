@@ -1,0 +1,96 @@
+{
+    "Type": "Character",
+    "Name": "闲云",
+    "Title": "鸾音鹤信·闲云",
+    "Desc": "侠中影，云里客。",
+    "Source": "在猫尾酒馆中邀请闲云进行对局，在友好对局难度中获得胜利后获取",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Liuyun",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "风元素",
+        "法器",
+        "璃月"
+    ],
+    "Talent": {
+        "15101": {
+            "Name": "清风散花词",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "15102": {
+            "Name": "朝起鹤云",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，生成<color=#FFFFFFFF>$[C115101]</color>，本角色附属<color=#FFFFFFFF>$[C115104]</color>。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO",
+                "C115101": {
+                    "Name": "步天梯",
+                    "Desc": "<color=#FFFFFFFF>我方执行「切换角色」行动时：</color>少花费1个元素骰。\\n<color=#FFFFFFFF>$[K3]：1</color>（可叠加，最多叠加到2次）",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>可用次数</color>",
+                            "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                },
+                "C115104": {
+                    "Name": "闲云冲击波",
+                    "Desc": "<color=#FFFFFFFF>我方切换到所附属角色后：</color>造成1点$[K105]。\\n<color=#FFFFFFFF>$[K3]：1</color>（可叠加，最多叠加到2次）",
+                    "Child": {
+                        "K105": {
+                            "Name": "{SPRITE_PRESET#2105}<color=#80FFD7FF>风元素伤害</color>",
+                            "Desc": "和已附着的元素发生元素反应：\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2101}<color=#FFFFFFFF>扩散（冰）</color>：对目标以外的所有敌方角色造成1点冰元素伤害\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2102}<color=#FFFFFFFF>扩散（水）</color>：对目标以外的所有敌方角色造成1点水元素伤害\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2103}<color=#FFFFFFFF>扩散（火）</color>：对目标以外的所有敌方角色造成1点火元素伤害\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2104}<color=#FFFFFFFF>扩散（雷）</color>：对目标以外的所有敌方角色造成1点雷元素伤害"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>可用次数</color>",
+                            "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 3
+            }
+        },
+        "15103": {
+            "Name": "暮集竹星",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，治疗所有我方角色1点，生成手牌<color=#FFFFFFFF>$[C115102]</color>。\\n（装备有<color=#FFFFFFFF>$[C115102]</color>的角色可以使用特技：<color=#FFFFFFFF>$[S1151021]</color>）",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO",
+                "C115102": {
+                    "Name": "竹星",
+                    "Desc": "$[K58]：$[S1151021]\\n<color=#FFFFFFFF>$[K3]：2</color>\\n（角色最多装备1个「{SPRITE_PRESET#3008}特技」）",
+                    "Child": {
+                        "K58": {
+                            "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#3008}特技</color>",
+                            "Desc": "出战角色装备有「{SPRITE_PRESET#3008}特技」卡牌时，就可以使用对应的「{SPRITE_PRESET#3008}特技」。\\n使用「{SPRITE_PRESET#3008}特技」是一种「战斗行动」。角色因冻结、石化、眩晕等原因无法使用技能时，也会同时无法使用「{SPRITE_PRESET#3008}特技」。\\n角色使用「{SPRITE_PRESET#3008}特技」时不视为使用技能，无法触发「使用技能后」「角色引发元素反应后」等效果；角色使用「{SPRITE_PRESET#3008}特技」造成的伤害不被视为角色造成的伤害。"
+                        },
+                        "S1151021": "S1151021",
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>可用次数</color>",
+                            "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                },
+                "S1151021": "S1151021"
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 215101
+}

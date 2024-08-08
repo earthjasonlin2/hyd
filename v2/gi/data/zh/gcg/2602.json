@@ -1,0 +1,88 @@
+{
+    "Type": "Character",
+    "Name": "若陀龙王",
+    "Title": "古岩龙祖·若陀龙王",
+    "Desc": "枷锁的隐隐震响与龙祖低沉的怒吼，同记忆一般在山峦间回荡。",
+    "Source": "在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度若陀龙王中获得胜利后获取",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_Dahaka",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "岩元素",
+        "其他武器",
+        "魔物"
+    ],
+    "Talent": {
+        "26021": {
+            "Name": "碎岩冲撞",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "26022": {
+            "Name": "磅礴之气",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，如果发生了结晶反应，则角色$[K1012]。\\n如果本技能中角色未汲取元素的力量，则附属<color=#FFFFFFFF>$[C126022]</color>。",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_GEO",
+                "K1012": {
+                    "Name": "<color=#FFFFFFFF>汲取对应元素的力量</color>",
+                    "Desc": "若陀龙王可以汲取{SPRITE_PRESET#2101}<color=#99FFFFFF>冰</color>/{SPRITE_PRESET#2102}<color=#80C0FFFF>水</color>/{SPRITE_PRESET#2103}<color=#FF9999FF>火</color>/{SPRITE_PRESET#2104}<color=#FFACFFFF>雷</color>元素的力量。（同时只能汲取其中一种）\\n<color=#FFFFFFFF>若陀龙王已汲取上述元素的力量时：</color>根据所汲取的元素类型，获得技能{SPRITE_PRESET#2101}<color=#99FFFFFF>霜刺破袭</color>/{SPRITE_PRESET#2102}<color=#80C0FFFF>洪流重斥</color>/{SPRITE_PRESET#2103}<color=#FF9999FF>炽焰重斥</color>/{SPRITE_PRESET#2104}<color=#FFACFFFF>霆雷破袭</color>。"
+                },
+                "C126022": {
+                    "Name": "磐岩百相·元素凝晶",
+                    "Desc": "<color=#FFFFFFFF>角色受到{SPRITE_PRESET#2101}<color=#99FFFFFF>冰</color>/{SPRITE_PRESET#2102}<color=#80C0FFFF>水</color>/{SPRITE_PRESET#2103}<color=#FF9999FF>火</color>/{SPRITE_PRESET#2104}<color=#FFACFFFF>雷</color>元素伤害后：</color>如果角色当前未汲取该元素的力量，则移除此状态，然后角色$[K1012]。",
+                    "Child": {
+                        "K1012": {
+                            "Name": "<color=#FFFFFFFF>汲取对应元素的力量</color>",
+                            "Desc": "若陀龙王可以汲取{SPRITE_PRESET#2101}<color=#99FFFFFF>冰</color>/{SPRITE_PRESET#2102}<color=#80C0FFFF>水</color>/{SPRITE_PRESET#2103}<color=#FF9999FF>火</color>/{SPRITE_PRESET#2104}<color=#FFACFFFF>雷</color>元素的力量。（同时只能汲取其中一种）\\n<color=#FFFFFFFF>若陀龙王已汲取上述元素的力量时：</color>根据所汲取的元素类型，获得技能{SPRITE_PRESET#2101}<color=#99FFFFFF>霜刺破袭</color>/{SPRITE_PRESET#2102}<color=#80C0FFFF>洪流重斥</color>/{SPRITE_PRESET#2103}<color=#FF9999FF>炽焰重斥</color>/{SPRITE_PRESET#2104}<color=#FFACFFFF>霆雷破袭</color>。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 3
+            }
+        },
+        "26024": {
+            "Name": "山崩毁阵",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，每汲取过一种元素此伤害+1。",
+            "Child": {
+                "D__KEY__DAMAGE": 4,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_GEO"
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "26025": {
+            "Name": "磐岩百相",
+            "Desc": "【被动】战斗开始时，初始附属<color=#FFFFFFFF>$[C126021]</color>。",
+            "Child": {
+                "C126021": {
+                    "Name": "磐岩百相·元素汲取",
+                    "Desc": "角色可以汲取{SPRITE_PRESET#2101}<color=#99FFFFFF>冰</color>/{SPRITE_PRESET#2102}<color=#80C0FFFF>水</color>/{SPRITE_PRESET#2103}<color=#FF9999FF>火</color>/{SPRITE_PRESET#2104}<color=#FFACFFFF>雷</color>元素的力量，然后根据所汲取的元素类型，获得技能{SPRITE_PRESET#2101}<color=#99FFFFFF>$[S66013]</color>/{SPRITE_PRESET#2102}<color=#80C0FFFF>$[S66023]</color>/{SPRITE_PRESET#2103}<color=#FF9999FF>$[S66033]</color>/{SPRITE_PRESET#2104}<color=#FFACFFFF>$[S66043]</color>。（角色同时只能汲取一种元素，此状态会记录角色已汲取过的元素类型数量）\\n<color=#FFFFFFFF>角色汲取了一种和当前不同的元素后：</color>生成1个所汲取元素类型的元素骰。",
+                    "Child": {
+                        "S66013": "S66013",
+                        "S66023": "S66023",
+                        "S66033": "S66033",
+                        "S66043": "S66043"
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 226022
+}

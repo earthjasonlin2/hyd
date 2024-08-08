@@ -1,0 +1,82 @@
+{
+    "Type": "Character",
+    "Name": "Xiangling",
+    "Title": "\"Exquisite Delicacy\" Xiangling",
+    "Desc": "As a chef, she is practically omnipotent.",
+    "Source": "Reward for inviting Xiangling to a duel at The Cat's Tail and claiming victory in a Friendly Fracas with her",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Xiangling",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "Pyro",
+        "Polearm",
+        "Liyue"
+    ],
+    "Talent": {
+        "13021": {
+            "Name": "Dough-Fu",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "13022": {
+            "Name": "Guoba Attack",
+            "Desc": "Summons 1 <color=#FFFFFFFF>$[C113021]</color>.",
+            "Child": {
+                "C113021": {
+                    "Name": "Guoba",
+                    "Desc": "<color=#FFFFFFFF>End Phase:</color> Deal 2 $[K103].\\n<color=#FFFFFFFF>$[K3]: 2</color>",
+                    "Child": {
+                        "K103": {
+                            "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>Pyro DMG</color>",
+                            "Desc": "Applies {SPRITE_PRESET#2103}Pyro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Melt</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Vaporize</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Overloaded</color>: DMG +2 for this instance, the target is forcibly switched to the next character\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Burning</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Burning Flame</color>] that will deal 1 Pyro DMG at the end of the Round (Takes effect once, max 2 stacks)"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 3
+            }
+        },
+        "13023": {
+            "Name": "Pyronado",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], creates 1 <color=#FFFFFFFF>$[C113022]</color>.",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO",
+                "C113022": {
+                    "Name": "Pyronado",
+                    "Desc": "<color=#FFFFFFFF>After your character uses a Skill:</color> Deal 2 $[K103].\\n<color=#FFFFFFFF>$[K3]: 2</color>",
+                    "Child": {
+                        "K103": {
+                            "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>Pyro DMG</color>",
+                            "Desc": "Applies {SPRITE_PRESET#2103}Pyro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Melt</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Vaporize</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Overloaded</color>: DMG +2 for this instance, the target is forcibly switched to the next character\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Burning</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Burning Flame</color>] that will deal 1 Pyro DMG at the end of the Round (Takes effect once, max 2 stacks)"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 4,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 213021
+}

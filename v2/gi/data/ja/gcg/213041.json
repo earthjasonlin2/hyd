@@ -1,0 +1,49 @@
+{
+    "Type": "Action",
+    "Name": "一触即発",
+    "Title": "アンバー·一触即発",
+    "Desc": "「ウサギ伯爵、出撃！」",
+    "Source": "キャッツテールでアンバーを招待して対戦し、対応する挑戦目標をクリアすることで獲得",
+    "Icon": "UI_Gcg_CardFace_Modify_Constellation_Ambor",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PYRO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "天賦",
+        "戦闘アクション"
+    ],
+    "Talent": {
+        "Name": "一触即発",
+        "Desc": "$[K1]：味方の出撃キャラが<color=#FFFFFFFF>$[A1304]</color>の時、このカードを装備できる。\\n$[A1304]がこのカードを装備した後、直ちに<color=#FFD780FF>$[S13042]</color>を1回発動する。\\n$[A1304]が<color=#FFFFFFFF>通常攻撃</color>を発動した後、このカードと<color=#FFFFFFFF>$[C113041]</color>がフィールドに存在する場合、<color=#FFFFFFFF>$[C113041]</color>を爆発させ、$[K103]を4与える。\\n（このカードはデッキに$[A1304]が含まれている場合のみ、デッキに追加できる）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>戦闘アクション</color>",
+                "Desc": "味方が戦闘アクションを1回行った後、相手のターンに移ります。\\n<color=#FFFFFFFF>このようなルールを持つ手札を出すのはクイックアクションではなく、戦闘アクションと見なされます。</color>"
+            },
+            "A1304": "一触即発",
+            "S13042": "S13042",
+            "C113041": {
+                "Name": "ウサギ伯爵",
+                "Desc": "<color=#FFFFFFFF>味方の出撃キャラがダメージを受けた時</color>、ダメージを2相殺してくれる。\\n<color=#FFFFFFFF>$[K3]：1</color>（回数が尽きた時点で破棄されることはない）。\\n<color=#FFFFFFFF>エンドフェーズで$[K3]がすでに尽きている場合</color>、このカードを破棄し、$[K103]を2与える。",
+                "Child": {
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                        "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                    },
+                    "K103": {
+                        "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>炎元素ダメージ</color>",
+                        "Desc": "{SPRITE_PRESET#2103}炎元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>溶解</color>：ダメージ+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>蒸発</color>：ダメージ+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>過負荷</color>：ダメージ+2、目標を強制的に次のキャラにチェンジさせる\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>燃焼</color>：ダメージ+1、ラウンド終了時に炎元素ダメージを1与える「<color=#FFFFFFFF>燃焼烈焔</color>」を生成する（使用可能回数1回、最大2まで重ねられる）"
+                    }
+                }
+            },
+            "K103": {
+                "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>炎元素ダメージ</color>",
+                "Desc": "{SPRITE_PRESET#2103}炎元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>溶解</color>：ダメージ+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>蒸発</color>：ダメージ+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>過負荷</color>：ダメージ+2、目標を強制的に次のキャラにチェンジさせる\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>燃焼</color>：ダメージ+1、ラウンド終了時に炎元素ダメージを1与える「<color=#FFFFFFFF>燃焼烈焔</color>」を生成する（使用可能回数1回、最大2まで重ねられる）"
+            }
+        }
+    }
+}

@@ -1,0 +1,281 @@
+{
+    "Id": 2023021,
+    "Name": "豊穣の霊獣・長右（バグ）",
+    "Desc": "コードが影響を受けた後、バグってしまった投影。凄まじい破壊力を持ち、岩のように大きな蒼猿を参照している。\\n前回「建木」が佇立した時、仙舟人は奇術で数多の珍獣を育種した。その中で、長右は従軍する戦獣の1つである。",
+    "MonsterCampID": null,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 1674,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/Monster_2023020.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "Elite",
+    "SpeedBase": 172,
+    "StanceBase": 360,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.20000000018626451,
+    "Child": [
+        {
+            "Id": 2023021,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Ice",
+                "Wind"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 202302101,
+                    "SkillName": "獣撃",
+                    "SkillDesc": "味方単体に量子属性ダメージを与える。",
+                    "DamageType": "Quantum",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 202302102,
+                    "SkillName": "怒哮",
+                    "SkillDesc": "ランダムな味方単体をロックオンする。味方が戦闘スキルを発動した時、ロックオン対象が最後に戦闘スキルを発動した味方に変わり、「元気」を1層獲得する。次に「獣撃」を発動した時、すべての「元気」を消費し、消費した「元気」の数に応じて攻撃力をアップする。弱点撃破された時、すべての「元気」を失う。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 202302103,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 202302104,
+                    "SkillName": "猿鳴",
+                    "SkillDesc": "味方全体に少量の量子属性ダメージを与える。",
+                    "DamageType": "Quantum",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 202302105,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 2023021,
+            "AvatarExpReward": 150,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 113001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183001
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 2023021,
+            "WorldLevel": 1,
+            "AvatarExpReward": 200,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 113001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 113002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183001
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 2023021,
+            "WorldLevel": 2,
+            "AvatarExpReward": 250,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 113001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 113002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183001
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 2023021,
+            "WorldLevel": 3,
+            "AvatarExpReward": 300,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 113001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 113002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183001
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 2023021,
+            "WorldLevel": 4,
+            "AvatarExpReward": 350,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 113002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 113003
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183001
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 2023021,
+            "WorldLevel": 5,
+            "AvatarExpReward": 400,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 113002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 113003
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183001
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 2023021,
+            "WorldLevel": 6,
+            "AvatarExpReward": 400,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 113002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 113003
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183001
+                }
+            ]
+        }
+    ]
+}

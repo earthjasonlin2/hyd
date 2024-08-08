@@ -1,0 +1,52 @@
+{
+    "Type": "Action",
+    "Name": "妙道合一",
+    "Title": "ファルザン·妙道合一",
+    "Desc": "「真理は、循環する。」",
+    "Source": "キャッツテールでファルザンを招待して対戦し、対応する挑戦目標をクリアすることで獲得",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Faruzan",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_ANEMO",
+            "count": 3
+        },
+        {
+            "costType": "GCG_COST_ENERGY",
+            "count": 2
+        }
+    ],
+    "Tag": [
+        "天賦",
+        "戦闘アクション"
+    ],
+    "Talent": {
+        "Name": "妙道合一",
+        "Desc": "$[K1]：味方の出撃キャラが<color=#FFFFFFFF>$[A1509]</color>の時、このカードを装備できる。\\n$[A1509]がこのカードを装備した後、直ちに<color=#FFD780FF>$[S15093]</color>を1回発動する。\\nこのカードを装備した$[A1509]が生成する<color=#FFFFFFFF>$[C115093]</color>は、登場時とアクションフェーズ開始時に<color=#80FFD7FF>$[K305]</color>を1個生成する。\\n（このカードはデッキに$[A1509]が含まれている場合のみ、デッキに追加できる）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>戦闘アクション</color>",
+                "Desc": "味方が戦闘アクションを1回行った後、相手のターンに移ります。\\n<color=#FFFFFFFF>このようなルールを持つ手札を出すのはクイックアクションではなく、戦闘アクションと見なされます。</color>"
+            },
+            "A1509": "妙道合一",
+            "S15093": "S15093",
+            "C115093": {
+                "Name": "赫耀多面体",
+                "Desc": "<color=#FFFFFFFF>エンドフェーズ：</color>$[K105]を1与える。\\n<color=#FFFFFFFF>$[K3]：3</color>\\n<color=#FFFFFFFF>この召喚物がフィールドに存在する時</color>、相手キャラの受ける$[K105]+1。",
+                "Child": {
+                    "K105": {
+                        "Name": "{SPRITE_PRESET#2105}<color=#80FFD7FF>風元素ダメージ</color>",
+                        "Desc": "付着した元素と以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2101}<color=#FFFFFFFF>拡散（氷）</color>：目標以外の相手チーム全員に氷元素ダメージを1与える\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2102}<color=#FFFFFFFF>拡散（水）</color>：目標以外の相手チーム全員に水元素ダメージを1与える\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2103}<color=#FFFFFFFF>拡散（炎）</color>：目標以外の相手チーム全員に炎元素ダメージを1与える\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2104}<color=#FFFFFFFF>拡散（雷）</color>：目標以外の相手チーム全員に雷元素ダメージを1与える"
+                    },
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                        "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                    }
+                }
+            },
+            "K305": {
+                "Name": "{SPRITE_PRESET#1105}風元素",
+                "Desc": "<color=#80FFD7FF>{SPRITE_PRESET#1105}風元素</color>の元素サイコロを消費してコストを支払い可能。\\n（{SPRITE_PRESET#1111}万能元素で代わりに支払うことも可能。）"
+            }
+        }
+    }
+}

@@ -1,0 +1,119 @@
+{
+    "Type": "Character",
+    "Name": "Millennial Pearl Seahorse",
+    "Title": "Millennial Pearl Seahorse",
+    "Desc": "One of the two sovereigns standing at the apex of the Fontemer Aberrants. Poets and authors view it as a proud and noble creature, thus bestowing it with its high-flown title.",
+    "Source": "Reward for accepting the Tavern Challenge at The Cat's Tail and claiming victory in a Friendly Fracas with Millennial Pearl Seahorse",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_SeaHorsePrimo",
+    "Hp": 8,
+    "Cost": 2,
+    "Tag": [
+        "Electro",
+        "Other Weapons",
+        "Monster"
+    ],
+    "Talent": {
+        "24031": {
+            "Name": "Tail Sweep",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "24032": {
+            "Name": "Swirling School of Fish",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].\\nIf this character has <color=#FFFFFFFF>$[C124032]</color> attached, that $[K3] +1. (Once per Round)",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO",
+                "C124032": {
+                    "Name": "Fontemer Pearl",
+                    "Desc": "<color=#FFFFFFFF>When the character to which this is attached takes DMG:</color> Negate 1 DMG. Once per Round, $[K3] will not be used when negating DMG from Summons.\\n<color=#FFFFFFFF>$[K3]: 2</color>\\n\\n<color=#FFFFFFFF>When you declare the end of your Round:</color> If the character to which this is attached is the active character, draw 1 card.",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        }
+                    }
+                },
+                "K3": {
+                    "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                    "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 3
+            }
+        },
+        "24033": {
+            "Name": "Fontemer Hoarthunder",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], attaches <color=#FFFFFFFF>$[C124032]</color> to this character, and summons 1 <color=#FFFFFFFF>$[C124031]</color>.",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO",
+                "C124032": {
+                    "Name": "Fontemer Pearl",
+                    "Desc": "<color=#FFFFFFFF>When the character to which this is attached takes DMG:</color> Negate 1 DMG. Once per Round, $[K3] will not be used when negating DMG from Summons.\\n<color=#FFFFFFFF>$[K3]: 2</color>\\n\\n<color=#FFFFFFFF>When you declare the end of your Round:</color> If the character to which this is attached is the active character, draw 1 card.",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        }
+                    }
+                },
+                "C124031": {
+                    "Name": "Resonant Coral Orb",
+                    "Desc": "<color=#FFFFFFFF>End Phase:</color> Deal 1 $[K104].\\n<color=#FFFFFFFF>$[K3]: 2</color>",
+                    "Child": {
+                        "K104": {
+                            "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>Electro DMG</color>",
+                            "Desc": "Applies {SPRITE_PRESET#2104}Electro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Overloaded</color>: DMG +2 for this instance, the target is forcibly switched to the next character\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Superconduct</color>: DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Electro-Charged</color>: DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Quicken</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Catalyzing Field</color>] that grants +1 DMG to the next 2 instances of Dendro or Electro DMG"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "24034": {
+            "Name": "Pearl Armor",
+            "Desc": "(Passive) When the battle begins, attach <color=#FFFFFFFF>$[C124032]</color> to this character.",
+            "Child": {
+                "C124032": {
+                    "Name": "Fontemer Pearl",
+                    "Desc": "<color=#FFFFFFFF>When the character to which this is attached takes DMG:</color> Negate 1 DMG. Once per Round, $[K3] will not be used when negating DMG from Summons.\\n<color=#FFFFFFFF>$[K3]: 2</color>\\n\\n<color=#FFFFFFFF>When you declare the end of your Round:</color> If the character to which this is attached is the active character, draw 1 card.",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        },
+        "24037": {
+            "Name": "Swirling School of Fish",
+            "Desc": "",
+            "Child": {},
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 224031
+}

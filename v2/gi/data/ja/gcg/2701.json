@@ -1,0 +1,74 @@
+{
+    "Type": "Character",
+    "Name": "マッシュラプトル",
+    "Title": "幽蕈の王·マッシュラプトル",
+    "Desc": "耳をすませば、幽林から、キノコンの王者が領土を視察する足音が聞こえる…",
+    "Source": "キャッツテールのリトルプリンスのところで酒場挑戦を行い、マッシュラプトルに挑戦して友好対戦に勝利することで獲得",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_Fungusgrass",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "草元素",
+        "他の武器",
+        "魔物"
+    ],
+    "Talent": {
+        "27011": {
+            "Name": "キノコン王のステップ",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "27012": {
+            "Name": "不安定な胞子雲",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_DENDRO",
+                "D__KEY__DAMAGE": 3
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 3
+            }
+        },
+        "27013": {
+            "Name": "奔放な尾羽",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。また、<color=#FFFFFFFF>$[C127011]</color>の層数を全て消費し、層ごとにダメージ+1。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_DENDRO",
+                "D__KEY__DAMAGE": 4,
+                "C127011": {
+                    "Name": "活発激能",
+                    "Desc": "<color=#FFFFFFFF>本キャラが元素ダメージを与える、または受ける時</color>、<color=#FFFFFFFF>「活発激能」</color>を1層重ねる。（最大3層まで重ね掛け可能）\\n<color=#FFFFFFFF>エンドフェーズ：</color><color=#FFFFFFFF>「活発激能」</color>の層数が上限に達した場合、層数がクリアされる。同時に、キャラはすべてのチャージを失う。",
+                    "Child": {}
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "27014": {
+            "Name": "活発激能",
+            "Desc": "【固有】戦闘開始時、<color=#FFFFFFFF>$[C127011]</color>が付与される。",
+            "Child": {
+                "C127011": {
+                    "Name": "活発激能",
+                    "Desc": "<color=#FFFFFFFF>本キャラが元素ダメージを与える、または受ける時</color>、<color=#FFFFFFFF>「活発激能」</color>を1層重ねる。（最大3層まで重ね掛け可能）\\n<color=#FFFFFFFF>エンドフェーズ：</color><color=#FFFFFFFF>「活発激能」</color>の層数が上限に達した場合、層数がクリアされる。同時に、キャラはすべてのチャージを失う。",
+                    "Child": {}
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 227011
+}

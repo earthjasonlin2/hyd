@@ -1,0 +1,75 @@
+{
+    "Type": "Character",
+    "Name": "#{REALNAME[ID(1)|DELAYHANDLE(true)]}",
+    "Title": "기나긴 방황·방랑자",
+    "Desc": "천겁의 고난, 얻지 못한 깨달음",
+    "Source": "캣테일 술집에서 방랑자 초대 및 친선 대전 난이도 승리 후 획득",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Wanderer",
+    "Hp": 10,
+    "Cost": 3,
+    "Tag": [
+        "바람 원소",
+        "법구"
+    ],
+    "Talent": {
+        "15061": {
+            "Name": "깃발과 메이겐",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO",
+                "D__KEY__DAMAGE": 1
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "15062": {
+            "Name": "우화·바람이 전하는 노래",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 본 캐릭터에게 <color=#FFFFFFFF>$[C115061]</color>를 부착한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO",
+                "D__KEY__DAMAGE": 2,
+                "C115061": {
+                    "Name": "바람의 자태",
+                    "Desc": "<color=#FFFFFFFF>부착 캐릭터가 「일반 공격」 시:</color> 주는 피해+2pt. 적에 대기 캐릭터가 있을 경우, 해당 스킬은 다음 적 대기 캐릭터에게 주는 피해로 변경된다.\\n<color=#FFFFFFFF>$[K3]：2</color>",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 3
+            }
+        },
+        "15063": {
+            "Name": "교겐·악극 제5번",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다. 캐릭터에게 <color=#FFFFFFFF>$[C115061]</color>가 부착되었을 시 제거하고 이번 피해가 1pt 증가한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO",
+                "D__KEY__DAMAGE": 7,
+                "C115061": {
+                    "Name": "바람의 자태",
+                    "Desc": "<color=#FFFFFFFF>부착 캐릭터가 「일반 공격」 시:</color> 주는 피해+2pt. 적에 대기 캐릭터가 있을 경우, 해당 스킬은 다음 적 대기 캐릭터에게 주는 피해로 변경된다.\\n<color=#FFFFFFFF>$[K3]：2</color>",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 3,
+                "GCG_COST_ENERGY": 3
+            }
+        }
+    },
+    "Related": 215061
+}

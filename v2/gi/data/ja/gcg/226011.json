@@ -1,0 +1,62 @@
+{
+    "Type": "Action",
+    "Name": "鋳直し：岩兜",
+    "Title": "岩鋳剛体",
+    "Desc": "磐岩から生まれたような体——堅固な力がその体に流れる。",
+    "Source": "キャッツテールのリトルプリンスのところで酒場挑戦を行い、ヒルチャール·岩兜の王に挑戦して友好対戦で対応する挑戦目標をクリアすることで獲得",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Rockbrute",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_GEO",
+            "count": 4
+        },
+        {
+            "costType": "GCG_COST_ENERGY",
+            "count": 2
+        }
+    ],
+    "Tag": [
+        "天賦",
+        "戦闘アクション"
+    ],
+    "Talent": {
+        "Name": "鋳直し：岩兜",
+        "Desc": "$[K1]：味方の出撃キャラが<color=#FFFFFFFF>$[A2601]</color>の時、このカードを装備できる。\\n$[A2601]がこのカードを装備した後、直ちに<color=#FFD780FF>$[S26013]</color>を1回発動する。\\nこのカードを装備した$[A2601]が敵を倒した後、<color=#FFFFFFFF>$[C126011]</color>と<color=#FFFFFFFF>$[C126012]</color>が再び$[A2601]に付与される。\\n（このカードはデッキに$[A2601]が含まれている場合のみ、デッキに追加できる）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>戦闘アクション</color>",
+                "Desc": "味方が戦闘アクションを1回行った後、相手のターンに移ります。\\n<color=#FFFFFFFF>このようなルールを持つ手札を出すのはクイックアクションではなく、戦闘アクションと見なされます。</color>"
+            },
+            "A2601": "鋳直し：岩兜",
+            "S26013": "S26013",
+            "C126011": {
+                "Name": "岩兜",
+                "Desc": "<color=#FFFFFFFF>付与されたキャラがダメージを受けた時</color>、ダメージを1相殺してくれる。$[K106]を相殺する時、$[K3]は追加で1消費される。\\n<color=#FFFFFFFF>$[K3]：3</color>",
+                "Child": {
+                    "K106": {
+                        "Name": "{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素ダメージ</color>",
+                        "Desc": "付着した元素と以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2101}<color=#FFFFFFFF>結晶（氷）</color>：ダメージ+1、味方の出撃キャラはシールドを1獲得する（最大2まで重ねられる）\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2102}<color=#FFFFFFFF>結晶（水）</color>：ダメージ+1、味方の出撃キャラはシールドを1獲得する（最大2まで重ねられる）\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2103}<color=#FFFFFFFF>結晶（炎）</color>：ダメージ+1、味方の出撃キャラはシールドを1獲得する（最大2まで重ねられる）\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2104}<color=#FFFFFFFF>結晶（雷）</color>：ダメージ+1、味方の出撃キャラはシールドを1獲得する（最大2まで重ねられる）"
+                    },
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                        "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                    }
+                }
+            },
+            "C126012": {
+                "Name": "堅岩の力",
+                "Desc": "キャラの$[K100]が$[K106]へと変わる。\\n<color=#FFFFFFFF>各ラウンドで1回のみ：</color>キャラの与えるダメージ+1。\\n<color=#FFFFFFFF>キャラに付与された「$[C126011]」が解除されると</color>、この状態も解除される。",
+                "Child": {
+                    "K100": {
+                        "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>",
+                        "Desc": "物理ダメージは元素付着させたり、元素反応を起こしたりはしません。"
+                    },
+                    "K106": {
+                        "Name": "{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素ダメージ</color>",
+                        "Desc": "付着した元素と以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2101}<color=#FFFFFFFF>結晶（氷）</color>：ダメージ+1、味方の出撃キャラはシールドを1獲得する（最大2まで重ねられる）\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2102}<color=#FFFFFFFF>結晶（水）</color>：ダメージ+1、味方の出撃キャラはシールドを1獲得する（最大2まで重ねられる）\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2103}<color=#FFFFFFFF>結晶（炎）</color>：ダメージ+1、味方の出撃キャラはシールドを1獲得する（最大2まで重ねられる）\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2104}<color=#FFFFFFFF>結晶（雷）</color>：ダメージ+1、味方の出撃キャラはシールドを1獲得する（最大2まで重ねられる）"
+                    }
+                }
+            }
+        }
+    }
+}

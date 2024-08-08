@@ -1,0 +1,111 @@
+{
+    "Name": "愚人众先遣队·风拳前锋军",
+    "Desc": "能利用风的力量，复苏战友的先遣队士兵。\\n远离故土又为了故乡。告别了亲人却获得了能相托以生死的战友。\\n——或许他们以任务的名义干着丑恶的勾当时，也带着这样的想法。",
+    "Icon": "UI_MonsterIcon_Skirmisher_Male_Strong_Gloves_Wind_01",
+    "Codex": "FATUI",
+    "Title": "先遣队·风拳前锋军",
+    "SpecialNames": [
+        "愚人众·狄康德",
+        "愚人众·罗素",
+        "愚人众·阿尔乔姆",
+        "愚人众·伊戈尔",
+        "愚人众·费奥多尔",
+        "愚人众·弗拉基米尔",
+        "愚人众·尼柯莱",
+        "愚人众·马克西姆",
+        "愚人众·尼古拉耶夫",
+        "愚人众·约瑟夫",
+        "愚人众·舍甫琴科",
+        "愚人众·康斯坦丁",
+        "愚人众·萨沙",
+        "愚人众·亚历山大",
+        "愚人众·格里戈尔",
+        "愚人众·谢尔盖",
+        "愚人众·米哈伊尔",
+        "愚人众·帕夫洛维奇",
+        "愚人众·伊斯迈洛维奇",
+        "愚人众·安德烈",
+        "愚人众·伊凡诺夫",
+        "愚人众·基里连科",
+        "愚人众·叶甫根尼",
+        "愚人众·丹尼洛维奇",
+        "愚人众·瓦西列夫",
+        "愚人众·列奥",
+        "愚人众·鲍里亚",
+        "愚人众·谢苗",
+        "愚人众·帕夫洛",
+        "愚人众·彼得罗夫",
+        "愚人众·阿列克谢",
+        "愚人众·列夫"
+    ],
+    "Reward": [
+        {
+            "Id": 202,
+            "Rank": 3,
+            "Icon": "UI_ItemIcon_202"
+        },
+        {
+            "Id": 112032,
+            "Rank": 1,
+            "Icon": "UI_ItemIcon_112032"
+        },
+        {
+            "Id": 112033,
+            "Rank": 2,
+            "Icon": "UI_ItemIcon_112033"
+        },
+        {
+            "Id": 112034,
+            "Rank": 3,
+            "Icon": "UI_ItemIcon_112034"
+        }
+    ],
+    "Child": {
+        "23010501": {
+            "MonsterName": "Skirmisher_Male_Strong_Gloves_Wind_01",
+            "Type": "MONSTER_ORDINARY",
+            "HpDrops": [
+                {
+                    "dropId": 22010025,
+                    "hpPercent": 66
+                },
+                {
+                    "dropId": 22010025,
+                    "hpPercent": 33
+                },
+                {}
+            ],
+            "KillDropId": 22010025,
+            "Prop": [
+                {
+                    "type": "FIGHT_PROP_BASE_HP",
+                    "growCurve": "GROW_CURVE_HP"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_ATTACK",
+                    "growCurve": "GROW_CURVE_ATTACK"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_DEFENSE",
+                    "growCurve": "GROW_CURVE_DEFENSE"
+                }
+            ],
+            "LocalLegend": false,
+            "SubHurt": {
+                "Fire": 0.1000000014901,
+                "Grass": 0.1000000014901,
+                "Water": 0.1000000014901,
+                "Elec": 0.1000000014901,
+                "Wind": 0.1000000014901,
+                "Ice": 0.1000000014901,
+                "Rock": 0.1000000014901,
+                "Physical": -0.2000000029802
+            },
+            "Base": {
+                "HP": 40.7519989013672,
+                "ATK": 75.3600006103516,
+                "DEF": 500
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "Type": "Action",
+    "Name": "Vanguard's Coordinated Tactics",
+    "Title": "Chevreuse: Vanguard's Coordinated Tactics",
+    "Desc": "\"The Special Security and Surveillance Patrol deals with a whole host of heinous crimes and dangerous criminals. As such, the methods we employ to enforce the law can be a bit on the... harsher side.\"",
+    "Source": "Reward for inviting Chevreuse to a duel at The Cat's Tail and achieving all corresponding challenge objectives",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Chevreuse",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PYRO",
+            "count": 2
+        },
+        {}
+    ],
+    "Tag": [
+        "Talent"
+    ],
+    "Talent": {
+        "Name": "Vanguard's Coordinated Tactics",
+        "Desc": "<color=#FFFFFFFF>You can only play this card if your party consists of only <color=#FF9999FF>{SPRITE_PRESET#2103}Pyro</color> and <color=#FFACFFFF>{SPRITE_PRESET#2104}Electro</color> characters:</color> Equip this card to <color=#FFFFFFFF>$[A1313]</color>.\\nWhen <color=#FFFFFFFF>$[A1313]</color>, who has this card equipped, is in play, and after opposing characters take Overloaded reaction DMG: Your next 2 instances of $[K103] or $[K104] dealt +1. (Including $[K103] or $[K104] dealt through Swirl reactions)\\n(You must have $[A1313] in your deck to add this card to your deck)",
+        "Child": {
+            "A1313": "Vanguard's Coordinated Tactics",
+            "K103": {
+                "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>Pyro DMG</color>",
+                "Desc": "Applies {SPRITE_PRESET#2103}Pyro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Melt</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Vaporize</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Overloaded</color>: DMG +2 for this instance, the target is forcibly switched to the next character\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Burning</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Burning Flame</color>] that will deal 1 Pyro DMG at the end of the Round (Takes effect once, max 2 stacks)"
+            },
+            "K104": {
+                "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>Electro DMG</color>",
+                "Desc": "Applies {SPRITE_PRESET#2104}Electro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Overloaded</color>: DMG +2 for this instance, the target is forcibly switched to the next character\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Superconduct</color>: DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Electro-Charged</color>: DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Quicken</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Catalyzing Field</color>] that grants +1 DMG to the next 2 instances of Dendro or Electro DMG"
+            }
+        }
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "Type": "Action",
+    "Name": "Paid in Full",
+    "Title": "Stealthy Extraction",
+    "Desc": "Remember this for so long as you live: You know who it is you owe, and you know when you must pay.",
+    "Source": "Reward for accepting the Tavern Challenge against Fatui Pyro Agent at The Cat's Tail and achieving all corresponding challenge objectives in a Friendly Fracas",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_FatuiPyroAgent",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PYRO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "Talent",
+        "Combat Action"
+    ],
+    "Talent": {
+        "Name": "Paid in Full",
+        "Desc": "$[K1]: When your active character is <color=#FFFFFFFF>$[A2301]</color>, equip this card.\\nAfter $[A2301] equips this card, immediately use <color=#FFD780FF>$[S23012]</color> once.\\nWhen your $[A2301], who has this card equipped, creates a <color=#FFFFFFFF>$[C123012]</color>, it will have the following effects:\\nStarting $[K3] +1, the $[K100] the attached character deals will be converted to $[K103].\\n(You must have $[A2301] in your deck to add this card to your deck.)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+            },
+            "A2301": "Paid in Full",
+            "S23012": "S23012",
+            "C123012": {
+                "Name": "Stealth",
+                "Desc": "The character to which this is attached takes -1 DMG and deals +1 DMG.\\n$[K3]: 3\\nThe character to which this is attached has their $[K100] dealt converted to $[K103].",
+                "Child": {
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                        "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                    },
+                    "K100": {
+                        "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>",
+                        "Desc": "Physical DMG will not apply any Elements, nor can it engage in Elemental Reactions."
+                    },
+                    "K103": {
+                        "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>Pyro DMG</color>",
+                        "Desc": "Applies {SPRITE_PRESET#2103}Pyro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Melt</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Vaporize</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Overloaded</color>: DMG +2 for this instance, the target is forcibly switched to the next character\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Burning</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Burning Flame</color>] that will deal 1 Pyro DMG at the end of the Round (Takes effect once, max 2 stacks)"
+                    }
+                }
+            },
+            "K3": {
+                "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+            },
+            "K100": {
+                "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>",
+                "Desc": "Physical DMG will not apply any Elements, nor can it engage in Elemental Reactions."
+            },
+            "K103": {
+                "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>Pyro DMG</color>",
+                "Desc": "Applies {SPRITE_PRESET#2103}Pyro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Melt</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Vaporize</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Overloaded</color>: DMG +2 for this instance, the target is forcibly switched to the next character\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Burning</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Burning Flame</color>] that will deal 1 Pyro DMG at the end of the Round (Takes effect once, max 2 stacks)"
+            }
+        }
+    }
+}

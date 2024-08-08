@@ -1,0 +1,75 @@
+{
+    "Type": "Character",
+    "Name": "#{REALNAME[ID(1)|DELAYHANDLE(true)]}",
+    "Title": "久世浮倾·流浪者",
+    "Desc": "千般劫渡，不可得知。",
+    "Source": "在猫尾酒馆中邀请流浪者进行对局，在友好对局难度中获得胜利后获取",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Wanderer",
+    "Hp": 10,
+    "Cost": 3,
+    "Tag": [
+        "风元素",
+        "法器"
+    ],
+    "Talent": {
+        "15061": {
+            "Name": "行幡鸣弦",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "15062": {
+            "Name": "羽画·风姿华歌",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，本角色附属<color=#FFFFFFFF>$[C115061]</color>。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO",
+                "C115061": {
+                    "Name": "优风倾姿",
+                    "Desc": "<color=#FFFFFFFF>所附属角色进行「普通攻击」时：</color>造成的伤害+2；如果敌方存在后台角色，则此技能改为对下一个敌方后台角色造成伤害。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>可用次数</color>",
+                            "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 3
+            }
+        },
+        "15063": {
+            "Name": "狂言·式乐五番",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]；如果角色附属有<color=#FFFFFFFF>$[C115061]</color>，则将其移除并使此伤害+1。",
+            "Child": {
+                "D__KEY__DAMAGE": 7,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO",
+                "C115061": {
+                    "Name": "优风倾姿",
+                    "Desc": "<color=#FFFFFFFF>所附属角色进行「普通攻击」时：</color>造成的伤害+2；如果敌方存在后台角色，则此技能改为对下一个敌方后台角色造成伤害。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>可用次数</color>",
+                            "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 3,
+                "GCG_COST_ENERGY": 3
+            }
+        }
+    },
+    "Related": 215061
+}

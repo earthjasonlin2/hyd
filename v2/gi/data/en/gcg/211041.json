@@ -1,0 +1,49 @@
+{
+    "Type": "Action",
+    "Name": "Steady Breathing",
+    "Title": "Chongyun: Steady Breathing",
+    "Desc": "Steady breathing makes a steady heart.",
+    "Source": "Reward for inviting Chongyun to a duel at The Cat's Tail and achieving all corresponding challenge objectives",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Chongyun",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_CRYO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "Talent",
+        "Combat Action"
+    ],
+    "Talent": {
+        "Name": "Steady Breathing",
+        "Desc": "$[K1]: When your active character is <color=#FFFFFFFF>$[A1104]</color>, equip this card.\\nAfter $[A1104] equips this card, immediately use <color=#FFD780FF>$[S11042]</color> once.\\nWhen your $[A1104], who has this card equipped, creates a <color=#FFFFFFFF>$[C111041]</color>, it will have the following effects: Your Sword, Claymore, and Polearm-wielding characters' <color=#FFFFFFFF>Normal Attacks</color> to deal +1 DMG.\\n(You must have $[A1104] in your deck to add this card to your deck.)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+            },
+            "A1104": "Steady Breathing",
+            "S11042": "S11042",
+            "C111041": {
+                "Name": "Chonghua Frost Field",
+                "Desc": "Your Sword, Claymore, and Polearm-wielding characters' $[K100] is converted to $[K101].\\n<color=#FFFFFFFF>$[K4]: 2</color>",
+                "Child": {
+                    "K100": {
+                        "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>",
+                        "Desc": "Physical DMG will not apply any Elements, nor can it engage in Elemental Reactions."
+                    },
+                    "K101": {
+                        "Name": "{SPRITE_PRESET#2101}<color=#99FFFFFF>Cryo DMG</color>",
+                        "Desc": "Applies {SPRITE_PRESET#2101}Cryo and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Melt</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Superconduct</color>: DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Frozen</color>: DMG +1 for this instance, the target is unable to perform any Actions this Round (Can be removed in advance after the target receives Physical or Pyro DMG, in which case they will take +2 DMG)"
+                    },
+                    "K4": {
+                        "Name": "<color=#FFFFFFFF>Duration (Rounds)</color>",
+                        "Desc": "Each time you reach the end of a Round, <color=#FFFFFFFF>Duration (Rounds)</color> -1.\\nThis card will be discarded immediately once <color=#FFFFFFFF>Duration (Rounds)</color> runs out."
+                    }
+                }
+            }
+        }
+    }
+}

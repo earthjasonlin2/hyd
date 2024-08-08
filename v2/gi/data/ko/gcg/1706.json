@@ -1,0 +1,104 @@
+{
+    "Type": "Character",
+    "Name": "알하이탐",
+    "Title": "충고와 직언·알하이탐",
+    "Desc": "학습과 사고 그리고 처세술",
+    "Source": "캣테일 술집에서 알하이탐 초대 및 친선 대전 난이도 승리 후 획득",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Alhatham",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "풀 원소",
+        "한손검",
+        "수메르"
+    ],
+    "Talent": {
+        "17061": {
+            "Name": "귀추법",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "17062": {
+            "Name": "보편성·이데아 모사",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 본 캐릭터에게 <color=#FFFFFFFF>$[C117061]</color>을 부착한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_DENDRO",
+                "D__KEY__DAMAGE": 2,
+                "C117061": {
+                    "Name": "빛조각",
+                    "Desc": "캐릭터가 주는 $[K100]가 $[K107]로 전환된다.\\n<color=#FFFFFFFF>캐릭터가 일반 공격 후: </color>$[K107]를 1pt 준다. 해당 스킬이 $[K51]일 경우，해당 상태의 $[K4]+1\\n<color=#FFFFFFFF>$[K4]: 2</color>(최대 3턴까지 중첩 가능)",
+                    "Child": {
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>",
+                            "Desc": "물리 피해는 원소를 부착할 수 없고, 원소 반응이 발생하지 않는다."
+                        },
+                        "K107": {
+                            "Name": "{SPRITE_PRESET#2107}<color=#7EC236FF>풀 원소 피해</color>",
+                            "Desc": "{SPRITE_PRESET#2107}풀 원소 부착 시 다음 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>개화</color>: 이번 피해+1pt, 다음번 불 원소 또는 번개 원소 피해를 2pt 증가시키는 [<color=#FFFFFFFF>풀 원핵</color>]을 생성한다.\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>연소</color>: 이번 피해+1pt, 턴 종료 시 불 원소 피해를 1pt 주는 [<color=#FFFFFFFF>불타는 화염</color>]을 생성한다. (사용 가능 횟수: 1회, 최대 중첩수: 2)\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>활성</color>: 이번 피해+1pt, 다음 2회의 풀 원소 또는 번개 원소 피해를 1pt 증가시키는 [<color=#FFFFFFFF>격화 영역</color>]을 생성한다."
+                        },
+                        "K51": {
+                            "Name": "<color=#FFFFFFFF>강공격</color>",
+                            "Desc": "아군이 행동을 시작하기 전에 원소 주사위 총개수가 짝수인 경우, 발동한 「일반 공격」을 「강공격」으로 간주한다."
+                        },
+                        "K4": {
+                            "Name": "<color=#FFFFFFFF>지속 턴</color>",
+                            "Desc": "턴이 종료 단계에 진입할 때마다 <color=#FFFFFFFF>지속 턴</color>이 1회씩 감소한다.\\n<color=#FFFFFFFF>지속 턴</color>이 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 3
+            }
+        },
+        "17063": {
+            "Name": "특수 영역·현상의 족쇄",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다. <color=#FFFFFFFF>$[C117061]</color>을 소모하며 이번 피해는 소모한 <color=#FFFFFFFF>$[C117061]</color>의 $[K4]만큼 증가한다.\\n소모한 <color=#FFFFFFFF>$[C117061]</color>의 $[K4]이 0/1/2이면 캐릭터에게 $[K4]이 3/2/1인 <color=#FFFFFFFF>$[C117061]</color>을 부착한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_DENDRO",
+                "D__KEY__DAMAGE": 4,
+                "C117061": {
+                    "Name": "빛조각",
+                    "Desc": "캐릭터가 주는 $[K100]가 $[K107]로 전환된다.\\n<color=#FFFFFFFF>캐릭터가 일반 공격 후: </color>$[K107]를 1pt 준다. 해당 스킬이 $[K51]일 경우，해당 상태의 $[K4]+1\\n<color=#FFFFFFFF>$[K4]: 2</color>(최대 3턴까지 중첩 가능)",
+                    "Child": {
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>",
+                            "Desc": "물리 피해는 원소를 부착할 수 없고, 원소 반응이 발생하지 않는다."
+                        },
+                        "K107": {
+                            "Name": "{SPRITE_PRESET#2107}<color=#7EC236FF>풀 원소 피해</color>",
+                            "Desc": "{SPRITE_PRESET#2107}풀 원소 부착 시 다음 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>개화</color>: 이번 피해+1pt, 다음번 불 원소 또는 번개 원소 피해를 2pt 증가시키는 [<color=#FFFFFFFF>풀 원핵</color>]을 생성한다.\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>연소</color>: 이번 피해+1pt, 턴 종료 시 불 원소 피해를 1pt 주는 [<color=#FFFFFFFF>불타는 화염</color>]을 생성한다. (사용 가능 횟수: 1회, 최대 중첩수: 2)\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>활성</color>: 이번 피해+1pt, 다음 2회의 풀 원소 또는 번개 원소 피해를 1pt 증가시키는 [<color=#FFFFFFFF>격화 영역</color>]을 생성한다."
+                        },
+                        "K51": {
+                            "Name": "<color=#FFFFFFFF>강공격</color>",
+                            "Desc": "아군이 행동을 시작하기 전에 원소 주사위 총개수가 짝수인 경우, 발동한 「일반 공격」을 「강공격」으로 간주한다."
+                        },
+                        "K4": {
+                            "Name": "<color=#FFFFFFFF>지속 턴</color>",
+                            "Desc": "턴이 종료 단계에 진입할 때마다 <color=#FFFFFFFF>지속 턴</color>이 1회씩 감소한다.\\n<color=#FFFFFFFF>지속 턴</color>이 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                },
+                "K4": {
+                    "Name": "<color=#FFFFFFFF>지속 턴</color>",
+                    "Desc": "턴이 종료 단계에 진입할 때마다 <color=#FFFFFFFF>지속 턴</color>이 1회씩 감소한다.\\n<color=#FFFFFFFF>지속 턴</color>이 전부 소진되면 즉시 해당 패를 버린다."
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 217061
+}

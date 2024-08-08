@@ -1,0 +1,83 @@
+{
+    "Type": "Character",
+    "Name": "프레미네",
+    "Title": "심해에 잠긴 아득한 꿈·프레미네",
+    "Desc": "뭇별 아래 시린 고독",
+    "Source": "캣테일 술집에서 프레미네 초대 및 친선 대전 난이도 승리 후 획득",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Freminet",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "얼음 원소",
+        "양손검",
+        "폰타인",
+        "우인단",
+        "아르케의 힘: 프뉴마"
+    ],
+    "Talent": {
+        "11121": {
+            "Name": "소용돌이 검",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "11122": {
+            "Name": "얼음 가압",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 캐릭터에게 <color=#FFFFFFFF>$[C111121]</color>가 부착되지 않았을 경우 <color=#FFFFFFFF>$[C111121]</color>가 부착된다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "D__KEY__DAMAGE": 2,
+                "C111121": {
+                    "Name": "페어 카운트",
+                    "Desc": "<color=#FFFFFFFF>아군이 카드를 1장 드로우할 때마다:</color> 해당 카드가 <color=#FFFFFFFF>「압력 단계」</color>를 1스택 누적한다.\\n<color=#FFFFFFFF>부착 캐릭터가 $[S11122] 사용 시:</color> <color=#FFFFFFFF>「압력 단계」</color>가 2스택 이상일 경우, 해당 효과가 제거되고 스킬의 원소 주사위 소모 개수가 1개 감소한다. 해당 스킬이 결산된 후 남은 「압력 단계」가 4스택 이상일 경우, 추가로 $[K100]를 2pt 준다.",
+                    "Child": {
+                        "S11122": "S11122",
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>",
+                            "Desc": "물리 피해는 원소를 부착할 수 없고, 원소 반응이 발생하지 않는다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3
+            }
+        },
+        "11123": {
+            "Name": "심해의 맹습",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 본 캐릭터에게 <color=#FFFFFFFF>$[C111122]</color>을 부착한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "D__KEY__DAMAGE": 4,
+                "C111122": {
+                    "Name": "잠수 사냥 모드",
+                    "Desc": "<color=#FFFFFFFF>아군이 카드 3장 드로우 후: </color>$[K6]을 1pt 제공해 부착 캐릭터를 보호한다. (중첩 가능, 최대 2pt)\\n<color=#FFFFFFFF>부착 캐릭터가 일반 공격 또는 원소전투 스킬 사용 후: </color>기본 원소 주사위 코스트가 가장 높은 핸드 카드 최대 2장을 카드 더미 맨 밑에 넣고, 동일한 수량의 카드를 드로우한다.\\n<color=#FFFFFFFF>$[K4]: 2</color>",
+                    "Child": {
+                        "K6": {
+                            "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>보호막</color>",
+                            "Desc": "해당 보호막의 보호를 받는 캐릭터가 피격 시, 보호막을 소모해 피해를 상쇄한다."
+                        },
+                        "K4": {
+                            "Name": "<color=#FFFFFFFF>지속 턴</color>",
+                            "Desc": "턴이 종료 단계에 진입할 때마다 <color=#FFFFFFFF>지속 턴</color>이 1회씩 감소한다.\\n<color=#FFFFFFFF>지속 턴</color>이 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 211121
+}

@@ -1,0 +1,32 @@
+{
+    "Type": "Action",
+    "Name": "脉冲的魔女",
+    "Title": "丽莎·脉冲的魔女",
+    "Desc": "作为遍历万千卷藏的图书管理员，当然能轻松记住制胜的技巧…",
+    "Source": "在猫尾酒馆中邀请丽莎进行对局，完成相应挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Constellation_Lisa",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_ELECTRO",
+            "count": 1
+        },
+        {}
+    ],
+    "Tag": [
+        "天赋"
+    ],
+    "Talent": {
+        "Name": "脉冲的魔女",
+        "Desc": "切换到装备有此牌的<color=#FFFFFFFF>$[A1409]</color>后：使敌方出战角色附属<color=#FFFFFFFF>$[C114091]</color>。（每回合1次）\\n（牌组中包含$[A1409]，才能加入牌组）",
+        "Child": {
+            "A1409": "脉冲的魔女",
+            "C114091": {
+                "Name": "引雷",
+                "Desc": "此状态初始具有2层「引雷」；重复附属时，叠加1层「引雷」。「引雷」最多可以叠加到4层。\\n<color=#FFFFFFFF>结束阶段：</color>叠加1层「引雷」。\\n\\n<color=#FFFFFFFF>所附属角色受到$[S14092]伤害时：</color>移除此状态，每层「引雷」使此伤害+1。",
+                "Child": {
+                    "S14092": "S14092"
+                }
+            }
+        }
+    }
+}

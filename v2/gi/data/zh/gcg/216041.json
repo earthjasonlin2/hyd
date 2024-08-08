@@ -1,0 +1,61 @@
+{
+    "Type": "Action",
+    "Name": "神性之陨",
+    "Title": "阿贝多·神性之陨",
+    "Desc": "「确认对局策略的过程，也是一种缜密的计算…」",
+    "Source": "在猫尾酒馆中邀请阿贝多进行对局，完成相应挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Constellation_Albedo",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_GEO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "天赋",
+        "战斗行动"
+    ],
+    "Talent": {
+        "Name": "神性之陨",
+        "Desc": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1604]</color>时，装备此牌。\\n$[A1604]装备此牌后，立刻使用一次<color=#FFD780FF>$[S16042]</color>。\\n装备有此牌的$[A1604]在场时，如果我方场上存在<color=#FFFFFFFF>$[C116041]</color>，则我方角色进行$[K52]时少花费1个$[K309]，并且造成的伤害+1。\\n（牌组中包含$[A1604]，才能加入牌组）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>战斗行动</color>",
+                "Desc": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+            },
+            "A1604": "神性之陨",
+            "S16042": "S16042",
+            "C116041": {
+                "Name": "阳华",
+                "Desc": "<color=#FFFFFFFF>结束阶段：</color>造成1点$[K106]。\\n<color=#FFFFFFFF>$[K3]：3</color>\\n<color=#FFFFFFFF>此召唤物在场，我方执行「切换角色」行动时：</color>将此次切换视为「$[K2]」而非「$[K1]」。（每回合1次）",
+                "Child": {
+                    "K106": {
+                        "Name": "{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素伤害</color>",
+                        "Desc": "和已附着的元素发生元素反应：\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2101}<color=#FFFFFFFF>结晶（冰）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2102}<color=#FFFFFFFF>结晶（水）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2103}<color=#FFFFFFFF>结晶（火）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2104}<color=#FFFFFFFF>结晶（雷）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。"
+                    },
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>可用次数</color>",
+                        "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                    },
+                    "K2": {
+                        "Name": "<color=#FFFFFFFF>快速行动</color>",
+                        "Desc": "执行了一次快速行动后，我方可以继续进行其他行动。\\n只有执行了一次战斗行动后，才会轮到对方行动。"
+                    },
+                    "K1": {
+                        "Name": "<color=#FFFFFFFF>战斗行动</color>",
+                        "Desc": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+                    }
+                }
+            },
+            "K52": {
+                "Name": "<color=#FFFFFFFF>下落攻击</color>",
+                "Desc": "角色被切换为「出战角色」后，本回合内的下一个战斗行动若为「普通攻击」，则被视为「下落攻击」。"
+            },
+            "K309": {
+                "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1109}无色元素</color>",
+                "Desc": "可以用任意类型的元素骰子组合，来支付此类费用。"
+            }
+        }
+    }
+}

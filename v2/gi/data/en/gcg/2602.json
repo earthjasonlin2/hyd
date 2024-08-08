@@ -1,0 +1,88 @@
+{
+    "Type": "Character",
+    "Name": "Azhdaha",
+    "Title": "Ancient Geovishap Ancestor: Azhdaha",
+    "Desc": "The faint rattling of this dragon lord's shackles and his deep, angry growl echo through the bowels of the mountains like memories of a bygone era.",
+    "Source": "Reward for accepting the Tavern Challenge at The Cat's Tail and claiming victory in a Friendly Fracas with Azhdaha",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_Dahaka",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "Geo",
+        "Other Weapons",
+        "Monster"
+    ],
+    "Talent": {
+        "26021": {
+            "Name": "Sundering Charge",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "26022": {
+            "Name": "Aura of Majesty",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. If a Crystallize reaction occurs, then this character will perform $[K1012].\\nIf during the usage of this skill, the character hasn't absorbed an element's power yet, then <color=#FFFFFFFF>$[C126022]</color> will be attached.",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_GEO",
+                "K1012": {
+                    "Name": "<color=#FFFFFFFF>Elemental Absorption</color>",
+                    "Desc": "Azhdaha can absorb the power of {SPRITE_PRESET#2101}<color=#99FFFFFF>Cryo</color>/{SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro</color>/{SPRITE_PRESET#2103}<color=#FF9999FF>Pyro</color>/{SPRITE_PRESET#2104}<color=#FFACFFFF>Electro</color>. (Only 1 can be absorbed at any one time)\\n<color=#FFFFFFFF>When Azhdaha has absorbed any of the above Elements:</color> Based on the type of Element that was absorbed, gain the skills {SPRITE_PRESET#2101}<color=#99FFFFFF>Frostspike Wave</color>/{SPRITE_PRESET#2102}<color=#80C0FFFF>Torrential Rebuke</color>/{SPRITE_PRESET#2103}<color=#FF9999FF>Blazing Rebuke</color>/{SPRITE_PRESET#2104}<color=#FFACFFFF>Thunderstorm Wave</color>."
+                },
+                "C126022": {
+                    "Name": "Stone Facets: Elemental Crystallization",
+                    "Desc": "<color=#FFFFFFFF>After this character takes {SPRITE_PRESET#2101}<color=#99FFFFFF>Cryo</color>/{SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro</color>/{SPRITE_PRESET#2103}<color=#FF9999FF>Pyro</color>/{SPRITE_PRESET#2104}<color=#FFACFFFF>Electro</color> DMG:</color> If this character currently has not absorbed the power of this element, remove this effect, and then this character performs $[K1012].",
+                    "Child": {
+                        "K1012": {
+                            "Name": "<color=#FFFFFFFF>Elemental Absorption</color>",
+                            "Desc": "Azhdaha can absorb the power of {SPRITE_PRESET#2101}<color=#99FFFFFF>Cryo</color>/{SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro</color>/{SPRITE_PRESET#2103}<color=#FF9999FF>Pyro</color>/{SPRITE_PRESET#2104}<color=#FFACFFFF>Electro</color>. (Only 1 can be absorbed at any one time)\\n<color=#FFFFFFFF>When Azhdaha has absorbed any of the above Elements:</color> Based on the type of Element that was absorbed, gain the skills {SPRITE_PRESET#2101}<color=#99FFFFFF>Frostspike Wave</color>/{SPRITE_PRESET#2102}<color=#80C0FFFF>Torrential Rebuke</color>/{SPRITE_PRESET#2103}<color=#FF9999FF>Blazing Rebuke</color>/{SPRITE_PRESET#2104}<color=#FFACFFFF>Thunderstorm Wave</color>."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 3
+            }
+        },
+        "26024": {
+            "Name": "Decimating Rockfall",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. DMG +1 for each element previously absorbed.",
+            "Child": {
+                "D__KEY__DAMAGE": 4,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_GEO"
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "26025": {
+            "Name": "Stone Facets",
+            "Desc": "(Passive) When the battle begins, this character gains <color=#FFFFFFFF>$[C126021]</color>.",
+            "Child": {
+                "C126021": {
+                    "Name": "Stone Facets: Elemental Absorption",
+                    "Desc": "The character can absorb the power of the Elements, including {SPRITE_PRESET#2101}<color=#99FFFFFF>Cryo</color>/{SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro</color>/{SPRITE_PRESET#2103}<color=#FF9999FF>Pyro</color>/{SPRITE_PRESET#2104}<color=#FFACFFFF>Electro</color>, and then based on the element absorbed, gain the skills {SPRITE_PRESET#2101}<color=#99FFFFFF>$[S66013]</color>/{SPRITE_PRESET#2102}<color=#80C0FFFF>$[S66023]</color>/{SPRITE_PRESET#2103}<color=#FF9999FF>$[S66033]</color>/{SPRITE_PRESET#2104}<color=#FFACFFFF>$[S66043]</color>. (The character can only have one Elemental Type absorbed at once, and this status will record the Elemental Type previously absorbed)\\n<color=#FFFFFFFF>After this character absorbs an element of a different type than the currently absorbed element:</color> Generate 1 Elemental Die of the same type as the Element that was just absorbed.",
+                    "Child": {
+                        "S66013": "S66013",
+                        "S66023": "S66023",
+                        "S66033": "S66033",
+                        "S66043": "S66043"
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 226022
+}

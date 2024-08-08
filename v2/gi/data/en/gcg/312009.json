@@ -1,0 +1,38 @@
+{
+    "Type": "Action",
+    "Name": "General's Ancient Helm",
+    "Title": "Ironclad Promise: General's Ancient Helm",
+    "Desc": "\"The last drop of blood had soaked into the battlefield, and the glazed sands shone gloriously once more.\"",
+    "Source": "",
+    "Icon": "UI_Gcg_CardFace_Modify_Artifact_Jiangshuai",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PAIMON",
+            "count": 2
+        },
+        {}
+    ],
+    "Tag": [
+        "Artifact"
+    ],
+    "Talent": {
+        "Name": "General's Ancient Helm",
+        "Desc": "<color=#FFFFFFFF>When Action Phase begins:</color> The character to which this is attached gains <color=#FFFFFFFF>$[C301201]</color> that provides 2 $[K6] points.\\n(A character can equip a maximum of 1 {SPRITE_PRESET#3004}Artifact)",
+        "Child": {
+            "C301201": {
+                "Name": "Unmovable Mountain",
+                "Desc": "Provides 2 $[K6] to protect the equipped character.",
+                "Child": {
+                    "K6": {
+                        "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>Shield</color>",
+                        "Desc": "This Shield will be consumed to protect the character who equips it from DMG."
+                    }
+                }
+            },
+            "K6": {
+                "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>Shield</color>",
+                "Desc": "This Shield will be consumed to protect the character who equips it from DMG."
+            }
+        }
+    }
+}

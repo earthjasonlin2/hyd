@@ -1,0 +1,88 @@
+{
+    "Type": "Character",
+    "Name": "행추",
+    "Title": "고화비운·행추",
+    "Desc": "「어째 요즘 소설 주인공들은 죄다 학생이네…」",
+    "Source": "캣테일 술집에서 행추 초대 및 친선 대전 난이도 승리 후 획득",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Xingqiu",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "물 원소",
+        "한손검",
+        "리월"
+    ],
+    "Talent": {
+        "12021": {
+            "Name": "고화 검법",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "12022": {
+            "Name": "화우농산",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 본 캐릭터에게 $[K202] 효과를 주며 <color=#FFFFFFFF>$[C112021]</color>을 생성한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "D__KEY__DAMAGE": 2,
+                "K202": {
+                    "Name": "<color=#80C0FFFF>{SPRITE_PRESET#2102}물 원소 부착</color>",
+                    "Desc": "피해를 입히지 않고 {SPRITE_PRESET#2102}물 원소를 부착하여 발생한 원소 반응은 피해 효과를 무시한다.\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2103}<color=#FFFFFFFF>증발</color>: 효과 없음.\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}<color=#FFFFFFFF>감전</color>: 효과 없음.\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2101}<color=#FFFFFFFF>빙결</color>: 이번 턴에 대상을 행동 불가로 만든다. (물리 피해 또는 불 원소 피해를 받으면 조기 해제되지만, 해당 피해로 받는 피해량이 2pt 추가된다)\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}<color=#FFFFFFFF>개화</color>: 다음번 불 원소 또는 번개 원소 피해를 2pt 증가시키는 [<color=#FFFFFFFF>풀 원핵</color>]을 생성한다."
+                },
+                "C112021": {
+                    "Name": "우렴검",
+                    "Desc": "<color=#FFFFFFFF>아군 출전 캐릭터가 3pt 이상의 피해를 받을 시:</color> 피해를 1pt 상쇄한다.\\n<color=#FFFFFFFF>$[K3]: 2</color>",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3
+            }
+        },
+        "12023": {
+            "Name": "재우유홍",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 본 캐릭터에게 $[K202] 효과를 주며 <color=#FFFFFFFF>$[C112022]</color>를 생성한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "D__KEY__DAMAGE": 2,
+                "K202": {
+                    "Name": "<color=#80C0FFFF>{SPRITE_PRESET#2102}물 원소 부착</color>",
+                    "Desc": "피해를 입히지 않고 {SPRITE_PRESET#2102}물 원소를 부착하여 발생한 원소 반응은 피해 효과를 무시한다.\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2103}<color=#FFFFFFFF>증발</color>: 효과 없음.\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}<color=#FFFFFFFF>감전</color>: 효과 없음.\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2101}<color=#FFFFFFFF>빙결</color>: 이번 턴에 대상을 행동 불가로 만든다. (물리 피해 또는 불 원소 피해를 받으면 조기 해제되지만, 해당 피해로 받는 피해량이 2pt 추가된다)\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}<color=#FFFFFFFF>개화</color>: 다음번 불 원소 또는 번개 원소 피해를 2pt 증가시키는 [<color=#FFFFFFFF>풀 원핵</color>]을 생성한다."
+                },
+                "C112022": {
+                    "Name": "홍검세",
+                    "Desc": "<color=#FFFFFFFF>아군 캐릭터가 일반 공격 후:</color> $[K102]를 1pt 준다.\\n<color=#FFFFFFFF>$[K3]: 3</color>",
+                    "Child": {
+                        "K102": {
+                            "Name": "{SPRITE_PRESET#2102}<color=#80C0FFFF>물 원소 피해</color>",
+                            "Desc": "{SPRITE_PRESET#2102}물 원소 부착 시 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2103}<color=#FFFFFFFF>증발</color>: 이번 피해+2pt\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}<color=#FFFFFFFF>감전</color>: 이번 피해+1pt, 대상 이외의 모든 상대 캐릭터에게 관통 피해를 1pt 준다.\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2101}<color=#FFFFFFFF>빙결</color>: 이번 피해+1pt, 이번 턴에 대상을 행동 불가로 만든다. (물리 피해 또는 불 원소 피해를 받으면 조기 해제되지만, 해당 피해로 받는 피해량이 2pt 추가된다)\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}<color=#FFFFFFFF>개화</color>: 이번 피해+1pt, 다음번 불 원소 또는 번개 원소 피해를 2pt 증가시키는 [<color=#FFFFFFFF>풀 원핵</color>]을 생성한다."
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 212021
+}

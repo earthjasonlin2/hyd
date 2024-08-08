@@ -1,0 +1,84 @@
+{
+    "Type": "Character",
+    "Name": "도리",
+    "Title": "꿈의 정원에 감춰진 보물·도리",
+    "Desc": "모라가 많을수록, 기쁨도 배가 되지!",
+    "Source": "캣테일 술집에서 도리 초대 및 친선 대전 난이도 승리 후 획득",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Dori",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "번개 원소",
+        "양손검",
+        "수메르"
+    ],
+    "Talent": {
+        "14101": {
+            "Name": "오묘한 검무·개조",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "14102": {
+            "Name": "영혼을 달래는 램프·번뇌 해결포",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[C114101]</color>을 소환한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO",
+                "D__KEY__DAMAGE": 2,
+                "C114101": {
+                    "Name": "A/S 포탄",
+                    "Desc": "<color=#FFFFFFFF>종료 단계:</color> $[K104]를 1pt 준다.\\n<color=#FFFFFFFF>$[K3]: 1</color>",
+                    "Child": {
+                        "K104": {
+                            "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>번개 원소 피해</color>",
+                            "Desc": "{SPRITE_PRESET#2104}번개 원소 부착 시 다음 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>과부하</color>: 이번 피해+2pt, 대상이 다음 캐릭터로 강제 교체된다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>초전도</color>: 이번 피해+1pt, 대상 이외의 모든 상대 캐릭터에게 관통 피해를 1pt 준다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>감전</color>: 이번 피해+1pt, 대상 이외의 모든 상대 캐릭터에게 관통 피해를 1pt 준다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>활성</color>: 이번 피해+1pt, 다음 2회의 풀 원소 또는 번개 원소 피해를 1pt 증가시키는 [<color=#FFFFFFFF>격화 영역</color>]을 생성한다."
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 3
+            }
+        },
+        "14103": {
+            "Name": "지극정성을 다하는 카자르자레궁",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[C114102]</color>을 소환한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO",
+                "D__KEY__DAMAGE": 1,
+                "C114102": {
+                    "Name": "램프의 정령",
+                    "Desc": "<color=#FFFFFFFF>종료 단계:</color> 아군 출전 캐릭터의 HP를 2pt 치유하고 해당 캐릭터가 $[K310]를 1pt 획득한다.\\n<color=#FFFFFFFF>$[K3]: 2</color>",
+                    "Child": {
+                        "K310": {
+                            "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}원소 에너지</color>",
+                            "Desc": "캐릭터가 「원소폭발」을 사용하려면 {SPRITE_PRESET#1110}원소 에너지를 소모해야 한다.\\n캐릭터가 「원소전투 스킬」 또는 「일반 공격」을 사용하면 {SPRITE_PRESET#1110}원소 에너지를 1pt 획득한다."
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 214101
+}

@@ -1,0 +1,187 @@
+{
+    "Id": 1004025,
+    "Name": "Gepard (Illusion)",
+    "Desc": "Leader of the Silvermane Guards.\\nGepard can command his soldiers to focus their attacks, and offer a barrier to immune any attack once. This entity is a phantom borne from your memories.",
+    "MonsterCampID": null,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 3952.5000000004657,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/Monster_1004020.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "LittleBoss",
+    "SpeedBase": 120,
+    "StanceBase": 540,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.20000000018626451,
+    "Child": [
+        {
+            "Id": 1004025,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Thunder",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Fire",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 100402501,
+                    "SkillName": "Fist of Conviction",
+                    "SkillDesc": "Deals minor Ice DMG to a single target.",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 100402502,
+                    "SkillName": "Smite of Frost",
+                    "SkillDesc": "Deals Ice DMG to a single target.",
+                    "DamageType": "Ice",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 100402503,
+                    "SkillName": "Garrison Aura Field",
+                    "SkillDesc": "Grants a Barrier to another friendly unit. The Barrier nullifies all DMG received except for DoT until after the friendly unit is attacked.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100402504,
+                    "SkillName": "Frigid Waterfall",
+                    "SkillDesc": "Deals Ice DMG to all targets.",
+                    "DamageType": "Ice",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 100402505,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100402506,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 100402507,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "Ice",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100402508,
+                    "SkillName": "Siege Support",
+                    "SkillDesc": "Summons Silvermane Cannoneers and locks onto a single target. All friend units will attack this locked target.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100402509,
+                    "SkillName": "Will of Steel",
+                    "SkillDesc": "Slightly increases Gepard's SPD and ATK at the start of Gepard's turn. This effect is stackable, but is dispelled when Gepard's Weakness is broken.",
+                    "DamageType": "Wind",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 100402510,
+                    "SkillName": "Thick and Thin",
+                    "SkillDesc": "When Bronya is downed, Gepard immediately takes action and becomes Enhanced, increasing his SPD. When in this state, Frigid Waterfall has a slight chance to Freeze the attacked target.",
+                    "DamageType": "Wind",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 100402511,
+                    "SkillName": "Balanced Warfare",
+                    "SkillDesc": "Gepard and Bronya take turns switching between the Main Attacker and Support state. When in the Main Attacker state, their Toughness Protection is removed and they take normal actions. When in Support state, their SPD is reduced, they gain Toughness Protection, and they can only use Siege Support.",
+                    "DamageType": "Wind",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 100402512,
+                    "SkillName": "Balanced Warfare",
+                    "SkillDesc": "Gepard and Bronya take turns switching between the Main Attacker and Support state. When in the Main Attacker state, their Toughness Protection is removed and they take normal actions. When in Support state, their SPD is reduced, they gain Toughness Protection, and they can only use Garrison Aura Field and Siege Support.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100402513,
+                    "SkillName": "Frigid Waterfall",
+                    "SkillDesc": "Deals Ice DMG to all targets.",
+                    "DamageType": "Ice",
+                    "SPHitBase": 15
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 1004025,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1004025,
+            "WorldLevel": 1,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1004025,
+            "WorldLevel": 2,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1004025,
+            "WorldLevel": 3,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1004025,
+            "WorldLevel": 4,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1004025,
+            "WorldLevel": 5,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1004025,
+            "WorldLevel": 6,
+            "DisplayItemList": []
+        }
+    ]
+}

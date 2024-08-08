@@ -1,0 +1,102 @@
+{
+    "Type": "Character",
+    "Name": "Hydro Hilichurl Rogue",
+    "Title": "\"Razorwave Roamer\" Hydro Hilichurl Rogue",
+    "Desc": "Hilichurl wanderers unaffiliated with any specific tribe. They can often be found roving the wilds as if in voluntary exile.",
+    "Source": "Reward for accepting the Tavern Challenge at The Cat's Tail and claiming victory in a Friendly Fracas with the Hydro Hilichurl Rogue",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_HilistrayWater",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "Hydro",
+        "Other Weapons",
+        "Monster",
+        "Hilichurl"
+    ],
+    "Talent": {
+        "22051": {
+            "Name": "Whirling Scythe",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "22052": {
+            "Name": "Slash of Surging Tides",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].\\nIf an opposing character has <color=#FFFFFFFF>$[C106]</color> or <color=#FFFFFFFF>$[C122052]</color> attached, this character gains 1 $[K310]. (Once per Round)",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "C106": {
+                    "Name": "Frozen",
+                    "Desc": "<color=#FFFFFFFF>Character cannot use Skills.</color> (Lasts until the end of this Round)\\nWhen this character receives $[K103] or $[K100], removes this effect and increases DMG taken by 2.",
+                    "Child": {
+                        "K103": {
+                            "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>Pyro DMG</color>",
+                            "Desc": "Applies {SPRITE_PRESET#2103}Pyro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Melt</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Vaporize</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Overloaded</color>: DMG +2 for this instance, the target is forcibly switched to the next character\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Burning</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Burning Flame</color>] that will deal 1 Pyro DMG at the end of the Round (Takes effect once, max 2 stacks)"
+                        },
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>",
+                            "Desc": "Physical DMG will not apply any Elements, nor can it engage in Elemental Reactions."
+                        }
+                    }
+                },
+                "C122052": {
+                    "Name": "Mist Bubble Prison",
+                    "Desc": "<color=#FFFFFFFF>Character cannot use Skills.</color> (Lasts until the end of this Round)",
+                    "Child": {}
+                },
+                "K310": {
+                    "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}Energy</color>",
+                    "Desc": "Characters must consume {SPRITE_PRESET#1110}Energy to use their Elemental Bursts.\\nWhen characters use an Elemental Skill or a Normal Attack, they will gain 1 {SPRITE_PRESET#1110}Energy."
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3
+            }
+        },
+        "22053": {
+            "Name": "Bubblefloat Blitz",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. Creates 1 <color=#FFFFFFFF>$[C122051]</color> in your Hand.\\n(Characters with <color=#FFFFFFFF>$[C122051]</color> equipped can use the Technique: <color=#FFFFFFFF>$[S1220511]</color>)",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "C122051": {
+                    "Name": "Mist Bubble Slime",
+                    "Desc": "$[K58]: $[S1220511]\\n<color=#FFFFFFFF>$[K3]: 2</color>\\n(A character can only equip 1 {SPRITE_PRESET#3008}Technique at a time)",
+                    "Child": {
+                        "K58": {
+                            "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#3008}Technique</color>",
+                            "Desc": "When the active character is equipped with a {SPRITE_PRESET#3008}Technique card, they can use the corresponding {SPRITE_PRESET#3008}Technique.\\nUsing a {SPRITE_PRESET#3008} Technique counts as a Combat Action. If the character is unable to use Skills due to conditions like Frozen, Petrification, or Stun, they are also unable to use the {SPRITE_PRESET#3008}Technique.\\nUsing a {SPRITE_PRESET#3008}Technique is not considered as using a Skill. Therefore, it cannot trigger effects such as \"After using a skill\" or \"After the character triggers an Elemental Reaction.\" Damage dealt by using a {SPRITE_PRESET#3008}Technique is not considered Damage dealt by the character."
+                        },
+                        "S1220511": "S1220511",
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        }
+                    }
+                },
+                "S1220511": "S1220511"
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "22054": {
+            "Name": "Slash of Surging Tides",
+            "Desc": "",
+            "Child": {},
+            "Cost": {}
+        }
+    },
+    "Related": 222051
+}

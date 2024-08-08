@@ -1,0 +1,45 @@
+{
+    "Type": "Action",
+    "Name": "完场喝彩",
+    "Title": "林尼·完场喝彩",
+    "Desc": "「响起你的掌声！」",
+    "Source": "在猫尾酒馆中邀请林尼进行对局，完成相应挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Liney",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PYRO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "天赋",
+        "战斗行动"
+    ],
+    "Talent": {
+        "Name": "完场喝彩",
+        "Desc": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1310]</color>时，装备此牌。\\n$[A1310]装备此牌后，立刻使用一次<color=#FFD780FF>$[S13102]</color>。\\n装备有此牌的$[A1310]在场时，$[A1310]自身和<color=#FFFFFFFF>$[C113101]</color>对具有{SPRITE_PRESET#2103}<color=#FF9999FF>火元素附着</color>的角色造成的伤害+2。（每回合1次）\\n（牌组中包含$[A1310]，才能加入牌组）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>战斗行动</color>",
+                "Desc": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+            },
+            "A1310": "完场喝彩",
+            "S13102": "S13102",
+            "C113101": {
+                "Name": "怪笑猫猫帽",
+                "Desc": "<color=#FFFFFFFF>结束阶段：</color>造成1点$[K103]。\\n<color=#FFFFFFFF>$[K3]：1</color>（可叠加，最多叠加到2次）",
+                "Child": {
+                    "K103": {
+                        "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>火元素伤害</color>",
+                        "Desc": "附着{SPRITE_PRESET#2103}火元素，可发生元素反应：\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>融化</color>：本伤害+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>蒸发</color>：本伤害+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>超载</color>：本伤害+2，目标强制切换到下一个角色\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>燃烧</color>：本伤害+1，生成回合结束时造成1点火元素伤害的[<color=#FFFFFFFF>燃烧烈焰</color>]（可用次数1，最多叠加到2）"
+                    },
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>可用次数</color>",
+                        "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,80 @@
+{
+    "Type": "Character",
+    "Name": "Keqing",
+    "Title": "\"Driving Thunder\" Keqing",
+    "Desc": "She can build decks heretofore not conceived and win battles in which victory is unthinkable.",
+    "Source": "Reward for inviting Keqing to a duel at The Cat's Tail and claiming victory in a Friendly Fracas with her",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Keqing",
+    "Hp": 10,
+    "Cost": 3,
+    "Tag": [
+        "Electro",
+        "Sword",
+        "Liyue"
+    ],
+    "Talent": {
+        "14031": {
+            "Name": "Yunlai Swordsmanship",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "14032": {
+            "Name": "Stellar Restoration",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], creates 1 <color=#FFFFFFFF>$[C114031]</color>.",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO",
+                "C114031": {
+                    "Name": "Lightning Stiletto",
+                    "Desc": "$[K1]: Switch your $[A1403] in to be the active character and immediately use $[S14032] once. This instance of $[S14032] will grant $[A1403] <color=#FFFFFFFF>$[K1002]</color> without creating another Lightning Stiletto.\\n(When $[A1403] uses $[S14032] with this card in Hand: Instead of creating another Lightning Stiletto, $[K56] this card and $[A1403] gains <color=#FFFFFFFF>$[K1002]</color>)",
+                    "Child": {
+                        "K1": {
+                            "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                            "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+                        },
+                        "A1403": "Keqing",
+                        "S14032": "S14032",
+                        "K1002": {
+                            "Name": "<color=#FFFFFFFF>Electro Infusion</color>",
+                            "Desc": "When the character to which it is attached to deals {SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical Damage</color>, it will be turned into {SPRITE_PRESET#2104}<color=#FFACFFFF>Electro DMG</color>.\\n<color=#FFFFFFFF>Duration (Rounds)</color>: 2"
+                        },
+                        "K56": {
+                            "Name": "<color=#FFFFFFFF>Discard</color>",
+                            "Desc": "Use Action Cards or Character Skill effects to Discard Action Cards from Hand or Deck."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 3
+            }
+        },
+        "14033": {
+            "Name": "Starward Sword",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], deals <color=#FFFFFFFF>3 $[K5]</color> to all opposing characters on standby.",
+            "Child": {
+                "D__KEY__DAMAGE": 4,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO",
+                "K5": {
+                    "Name": "<color=#FFFFFFFF>Piercing DMG</color>",
+                    "Desc": "Piercing DMG cannot be increased by any bonuses, but cannot be defended against using Shields or DMG Immunity either."
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 4,
+                "GCG_COST_ENERGY": 3
+            }
+        }
+    },
+    "Related": 214031
+}

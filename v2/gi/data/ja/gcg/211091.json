@@ -1,0 +1,41 @@
+{
+    "Type": "Action",
+    "Name": "便りと共に還る星影",
+    "Title": "レイラ·便りと共に還る星影",
+    "Desc": "「星のご加護を。」",
+    "Source": "キャッツテールでレイラを招待して対戦し、対応する挑戦目標をクリアすることで獲得",
+    "Icon": "UI_Gcg_CardFace_Modify_Constellation_Layla",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_CRYO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "天賦",
+        "戦闘アクション"
+    ],
+    "Talent": {
+        "Name": "便りと共に還る星影",
+        "Desc": "$[K1]：味方の出撃キャラが<color=#FFFFFFFF>$[A1109]</color>の時、このカードを装備できる。\\n$[A1109]がこのカードを装備した後、直ちに<color=#FFD780FF>$[S11092]</color>を1回発動する。\\nこのカードを装備した$[A1109]がフィールドに存在する時、<color=#FFFFFFFF>$[C111092]</color>がダメージを与えるたびに、手札を1枚引く。\\n（このカードはデッキに$[A1109]が含まれている場合のみ、デッキに追加できる）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>戦闘アクション</color>",
+                "Desc": "味方が戦闘アクションを1回行った後、相手のターンに移ります。\\n<color=#FFFFFFFF>このようなルールを持つ手札を出すのはクイックアクションではなく、戦闘アクションと見なされます。</color>"
+            },
+            "A1109": "便りと共に還る星影",
+            "S11092": "S11092",
+            "C111092": {
+                "Name": "飛星",
+                "Desc": "<color=#FFFFFFFF>味方のキャラがスキルを発動した後</color>、<color=#FFFFFFFF>「夜星」</color>を1つ蓄積する。<color=#FFFFFFFF>「夜星」</color>を4つ以上蓄積した時、<color=#FFFFFFFF>「夜星」</color>を4つ消費して、$[K101]を1与える。（この出撃状態を生成するスキルも、該当効果を発動できる）\\n<color=#FFFFFFFF>この出撃状態が重複して生成された時</color>、<color=#FFFFFFFF>「夜星」</color>を2つ蓄積する。",
+                "Child": {
+                    "K101": {
+                        "Name": "{SPRITE_PRESET#2101}<color=#99FFFFFF>氷元素ダメージ</color>",
+                        "Desc": "{SPRITE_PRESET#2101}氷元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2103}<color=#FFFFFFFF>溶解</color>：ダメージ+2\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2104}<color=#FFFFFFFF>超電導</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2102}<color=#FFFFFFFF>凍結</color>：ダメージ+1、目標はこのラウンドで行動不能になる（物理ダメージまたは炎ダメージを受けると、即座に解除されるがダメージ+2となる）"
+                    }
+                }
+            }
+        }
+    }
+}

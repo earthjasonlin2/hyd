@@ -1,0 +1,53 @@
+{
+    "Type": "Action",
+    "Name": "噬星魔鸦",
+    "Title": "菲谢尔·噬星魔鸦",
+    "Desc": "「奥兹华尔多·赫芙那梵茵斯展现权能的一瞬。」",
+    "Source": "在猫尾酒馆中邀请菲谢尔进行对局，完成相应挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Fischl",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_ELECTRO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "天赋",
+        "战斗行动"
+    ],
+    "Talent": {
+        "Name": "噬星魔鸦",
+        "Desc": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1401]</color>时，装备此牌。\\n$[A1401]装备此牌后，立刻使用一次<color=#FFD780FF>$[S14012]</color>。\\n装备有此牌的$[A1401]生成的<color=#FFFFFFFF>$[C114011]</color>，会在$[A1401]<color=#FFFFFFFF>普通攻击</color>后造成2点$[K104]。（需消耗$[K3]）\\n（牌组中包含$[A1401]，才能加入牌组）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>战斗行动</color>",
+                "Desc": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+            },
+            "A1401": "噬星魔鸦",
+            "S14012": "S14012",
+            "C114011": {
+                "Name": "奥兹",
+                "Desc": "<color=#FFFFFFFF>结束阶段：</color>造成1点$[K104]。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+                "Child": {
+                    "K104": {
+                        "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素伤害</color>",
+                        "Desc": "附着{SPRITE_PRESET#2104}雷元素，可发生元素反应：\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>超载</color>：本伤害+2，目标强制切换到下一个角色\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>超导</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>感电</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>原激化</color>：本伤害+1，生成使下2次草元素或雷元素伤害+1的[<color=#FFFFFFFF>激化领域</color>]"
+                    },
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>可用次数</color>",
+                        "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                    }
+                }
+            },
+            "K104": {
+                "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素伤害</color>",
+                "Desc": "附着{SPRITE_PRESET#2104}雷元素，可发生元素反应：\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>超载</color>：本伤害+2，目标强制切换到下一个角色\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>超导</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>感电</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>原激化</color>：本伤害+1，生成使下2次草元素或雷元素伤害+1的[<color=#FFFFFFFF>激化领域</color>]"
+            },
+            "K3": {
+                "Name": "<color=#FFFFFFFF>可用次数</color>",
+                "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+            }
+        }
+    }
+}

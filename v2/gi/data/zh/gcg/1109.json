@@ -1,0 +1,98 @@
+{
+    "Type": "Character",
+    "Name": "莱依拉",
+    "Title": "绮思晚星·莱依拉",
+    "Desc": "夜沉星移，月笼梦行。",
+    "Source": "在猫尾酒馆中邀请莱依拉进行对局，在友好对局难度中获得胜利后获取",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Layla",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "冰元素",
+        "单手剑",
+        "须弥"
+    ],
+    "Talent": {
+        "11091": {
+            "Name": "熠辉轨度剑",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "11092": {
+            "Name": "垂裳端凝之夜",
+            "Desc": "生成<color=#FFFFFFFF>$[C111091]</color>和<color=#FFFFFFFF>$[C111092]</color>。",
+            "Child": {
+                "C111091": {
+                    "Name": "安眠帷幕护盾",
+                    "Desc": "提供2点<color=#FFFFFFFF>$[K6]</color>，保护我方出战角色。",
+                    "Child": {
+                        "K6": {
+                            "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>护盾</color>",
+                            "Desc": "此护盾所保护的角色受到伤害时，将会消耗护盾来抵消伤害。"
+                        }
+                    }
+                },
+                "C111092": {
+                    "Name": "飞星",
+                    "Desc": "<color=#FFFFFFFF>我方角色使用技能后：</color>累积1枚<color=#FFFFFFFF>「晚星」</color>。如果<color=#FFFFFFFF>「晚星」</color>已有至少4枚，则消耗4枚<color=#FFFFFFFF>「晚星」</color>，造成1点$[K101]。（生成此出战状态的技能，也会触发此效果）\\n<color=#FFFFFFFF>重复生成此出战状态时：</color>累积2枚<color=#FFFFFFFF>「晚星」</color>。",
+                    "Child": {
+                        "K101": {
+                            "Name": "{SPRITE_PRESET#2101}<color=#99FFFFFF>冰元素伤害</color>",
+                            "Desc": "附着{SPRITE_PRESET#2101}冰元素，可发生元素反应：\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2103}<color=#FFFFFFFF>融化</color>：本伤害+2\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2104}<color=#FFFFFFFF>超导</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2102}<color=#FFFFFFFF>冻结</color>：本伤害+1，使目标本回合无法行动（受到物理或火元素伤害后提前解除，但是伤害+2）"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3
+            }
+        },
+        "11093": {
+            "Name": "星流摇床之梦",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，召唤<color=#FFFFFFFF>$[C111093]</color>。",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "C111093": {
+                    "Name": "饰梦天球",
+                    "Desc": "<color=#FFFFFFFF>结束阶段：</color>造成1点$[K101]。如果<color=#FFFFFFFF>$[C111092]</color>在场，则使其累积1枚<color=#FFFFFFFF>「晚星」</color>。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+                    "Child": {
+                        "K101": {
+                            "Name": "{SPRITE_PRESET#2101}<color=#99FFFFFF>冰元素伤害</color>",
+                            "Desc": "附着{SPRITE_PRESET#2101}冰元素，可发生元素反应：\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2103}<color=#FFFFFFFF>融化</color>：本伤害+2\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2104}<color=#FFFFFFFF>超导</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2102}<color=#FFFFFFFF>冻结</color>：本伤害+1，使目标本回合无法行动（受到物理或火元素伤害后提前解除，但是伤害+2）"
+                        },
+                        "C111092": {
+                            "Name": "飞星",
+                            "Desc": "<color=#FFFFFFFF>我方角色使用技能后：</color>累积1枚<color=#FFFFFFFF>「晚星」</color>。如果<color=#FFFFFFFF>「晚星」</color>已有至少4枚，则消耗4枚<color=#FFFFFFFF>「晚星」</color>，造成1点$[K101]。（生成此出战状态的技能，也会触发此效果）\\n<color=#FFFFFFFF>重复生成此出战状态时：</color>累积2枚<color=#FFFFFFFF>「晚星」</color>。",
+                            "Child": {
+                                "K101": {
+                                    "Name": "{SPRITE_PRESET#2101}<color=#99FFFFFF>冰元素伤害</color>",
+                                    "Desc": "附着{SPRITE_PRESET#2101}冰元素，可发生元素反应：\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2103}<color=#FFFFFFFF>融化</color>：本伤害+2\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2104}<color=#FFFFFFFF>超导</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2102}<color=#FFFFFFFF>冻结</color>：本伤害+1，使目标本回合无法行动（受到物理或火元素伤害后提前解除，但是伤害+2）"
+                                }
+                            }
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>可用次数</color>",
+                            "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 211091
+}

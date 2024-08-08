@@ -1,0 +1,68 @@
+{
+    "Type": "Character",
+    "Name": "ジン",
+    "Title": "蒲公英騎士·ジン",
+    "Desc": "最後に勝利を手にするその瞬間まで、彼女はいつも自分がまだまだだと思い込んでいる。",
+    "Source": "キャッツテールでジンを招待し、友好対戦に勝利することで獲得",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Qin",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "風元素",
+        "片手剣",
+        "モンド"
+    ],
+    "Talent": {
+        "15021": {
+            "Name": "西風剣術",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "15022": {
+            "Name": "風圧剣",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、相手のキャラを次のキャラにチェンジさせる。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO",
+                "D__KEY__DAMAGE": 3
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 3
+            }
+        },
+        "15023": {
+            "Name": "蒲公英の風",
+            "Desc": "味方のチーム全員のHPを2回復する。また、<color=#FFFFFFFF>$[C115021]</color>を召喚する。",
+            "Child": {
+                "C115021": {
+                    "Name": "蒲公英エリア",
+                    "Desc": "<color=#FFFFFFFF>エンドフェーズ：</color>$[K105]を1与え、味方の出撃キャラのHPを1回復する。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+                    "Child": {
+                        "K105": {
+                            "Name": "{SPRITE_PRESET#2105}<color=#80FFD7FF>風元素ダメージ</color>",
+                            "Desc": "付着した元素と以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2101}<color=#FFFFFFFF>拡散（氷）</color>：目標以外の相手チーム全員に氷元素ダメージを1与える\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2102}<color=#FFFFFFFF>拡散（水）</color>：目標以外の相手チーム全員に水元素ダメージを1与える\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2103}<color=#FFFFFFFF>拡散（炎）</color>：目標以外の相手チーム全員に炎元素ダメージを1与える\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2104}<color=#FFFFFFFF>拡散（雷）</color>：目標以外の相手チーム全員に雷元素ダメージを1与える"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                            "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 4,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 215021
+}

@@ -1,0 +1,92 @@
+{
+    "Type": "Character",
+    "Name": "꼭두각시 검귀",
+    "Title": "기발한 기계·꼭두각시 검귀",
+    "Desc": "오늘도 그것은 인연의 흐름이 단절된 땅에서 배회하고 있다",
+    "Source": "캣테일 술집의 왕자님을 통해 술집 도전 진행 및 친선 대전 난이도의 꼭두각시 검귀에게 승리 후 획득",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_Ningyo",
+    "Hp": 10,
+    "Cost": 3,
+    "Tag": [
+        "바람 원소",
+        "기타 무기",
+        "마물"
+    ],
+    "Talent": {
+        "25011": {
+            "Name": "이치몬지",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "25012": {
+            "Name": "고독한 바람의 검세",
+            "Desc": "<color=#FFFFFFFF>$[C125011]</color>을 소환한다.",
+            "Child": {
+                "C125011": {
+                    "Name": "검의 그림자·고독한 바람",
+                    "Desc": "<color=#FFFFFFFF>종료 단계:</color> $[K105]를 1pt 준다.\\n<color=#FFFFFFFF>$[K3]: 2</color>",
+                    "Child": {
+                        "K105": {
+                            "Name": "{SPRITE_PRESET#2105}<color=#80FFD7FF>바람 원소 피해</color>",
+                            "Desc": "이미 부착된 원소와 원소 반응이 발생한다.\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2101}<color=#FFFFFFFF>확산(얼음)</color>: 대상 이외의 모든 상대 캐릭터에게 얼음 원소 피해를 1pt 준다.\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2102}<color=#FFFFFFFF>확산(물)</color>: 대상 이외의 모든 상대 캐릭터에게 물 원소 피해를 1pt 준다.\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2103}<color=#FFFFFFFF>확산(불)</color>: 대상 이외의 모든 상대 캐릭터에게 불 원소 피해를 1pt 준다.\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2104}<color=#FFFFFFFF>확산(번개)</color>: 대상 이외의 모든 상대 캐릭터에게 번개 원소 피해를 1pt 준다."
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 3
+            }
+        },
+        "25013": {
+            "Name": "서리 낀 그림자의 돌진",
+            "Desc": "<color=#FFFFFFFF>$[C125012]</color>를 소환한다.",
+            "Child": {
+                "C125012": {
+                    "Name": "검의 그림자·흩날리는 서리",
+                    "Desc": "<color=#FFFFFFFF>종료 단계:</color> $[K101]를 1pt 준다.\\n<color=#FFFFFFFF>$[K3]: 2</color>",
+                    "Child": {
+                        "K101": {
+                            "Name": "{SPRITE_PRESET#2101}<color=#99FFFFFF>얼음 원소 피해</color>",
+                            "Desc": "{SPRITE_PRESET#2101}얼음 원소 부착 시 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2103}<color=#FFFFFFFF>융해</color>: 이번 피해+2pt\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2104}<color=#FFFFFFFF>초전도</color>: 이번 피해+1pt, 대상 이외의 모든 상대 캐릭터에게 관통 피해를 1pt 준다.\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2102}<color=#FFFFFFFF>빙결</color>: 이번 피해+1pt, 이번 턴에 대상을 행동 불가로 만든다. (물리 피해 또는 불 원소 피해를 받으면 조기 해제되지만, 해당 피해로 받는 피해량이 2pt 추가된다)"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3
+            }
+        },
+        "25014": {
+            "Name": "기계 텐구쇼",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 모든 아군의 <color=#FFFFFFFF>검의 그림자</color> 소환물 효과를 발동한다. (사용 가능 횟수를 소모하지 않음)",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO",
+                "D__KEY__DAMAGE": 4
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 3,
+                "GCG_COST_ENERGY": 3
+            }
+        }
+    },
+    "Related": 225011
+}

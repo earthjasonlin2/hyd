@@ -1,0 +1,32 @@
+{
+    "Type": "Action",
+    "Name": "パイモン",
+    "Title": "最高のガイド·パイモン",
+    "Desc": "「そうだぞ！おまえの幸せがオイラの幸せだ！だから逆もおんなじで、オイラが幸せなら、おまえも幸せってことだ。」",
+    "Source": "プレイヤーハンドブックの報酬獲得条件を達成することで獲得",
+    "Icon": "UI_Gcg_CardFace_Assist_NPC_Paimon",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PAIMON",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "仲間"
+    ],
+    "Talent": {
+        "Name": "パイモン",
+        "Desc": "<color=#FFFFFFFF>アクションフェーズ開始時：</color>$[K411]を2個生成する。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+        "Child": {
+            "K411": {
+                "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1111}万能元素</color>",
+                "Desc": "{SPRITE_PRESET#1111}万能元素は任意タイプの元素と見なされ、コストの支払いに使えます。"
+            },
+            "K3": {
+                "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "Type": "Action",
+    "Name": "草薙の稲光",
+    "Title": "非時の夢·草薙の稲光",
+    "Desc": "薙刀は、穢れを除伐するための武器である。\\n薙刀を振るう者は、恒常の道を守っている。",
+    "Source": "",
+    "Icon": "UI_Gcg_CardFace_Modify_Weapon_Narukami",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PAIMON",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "武器",
+        "長柄武器"
+    ],
+    "Talent": {
+        "Name": "草薙の稲光",
+        "Desc": "<color=#FFFFFFFF>キャラの与えるダメージ+1</color>。\\n<color=#FFFFFFFF>各ラウンドで自動的に1回発動する：</color>付与されたキャラに$[K310]がない場合、$[K310]を1獲得する。\\n（<color=#FFFFFFFF>「{SPRITE_PRESET#3204}長柄武器」キャラのみ</color>装備可能。キャラは最大1つの「{SPRITE_PRESET#3003}武器」を装備できる）",
+        "Child": {
+            "K310": {
+                "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}チャージ</color>",
+                "Desc": "キャラが「元素爆発」を発動するには、{SPRITE_PRESET#1110}チャージを消費する必要があります。\\nキャラが「元素スキル」や「通常攻撃」を発動した後、{SPRITE_PRESET#1110}チャージを1獲得できます。"
+            }
+        }
+    }
+}

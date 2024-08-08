@@ -1,0 +1,105 @@
+{
+    "Type": "Character",
+    "Name": "뇌음의 권현",
+    "Title": "남겨진 증오·뇌음의 권현",
+    "Desc": "땅에 증오가 있는 한 번개는 끊이지 않을 것이다",
+    "Source": "캣테일 술집의 왕자님을 통해 술집 도전 진행 및 친선 대전 난이도의 뇌음의 권현에게 승리 후 획득",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_Raijin",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "번개 원소",
+        "기타 무기",
+        "마물"
+    ],
+    "Talent": {
+        "24021": {
+            "Name": "천둥 날개 베기",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO",
+                "D__KEY__DAMAGE": 1
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "24022": {
+            "Name": "배척의 번개 벽",
+            "Desc": "<color=#FFFFFFFF>$[C124022]</color>가 부착된 적 캐릭터에게 $[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다. (조건에 맞는 상대 캐릭터가 없을 시 출전 캐릭터에게 피해를 준다)",
+            "Child": {
+                "C124022": {
+                    "Name": "뇌명 탐지",
+                    "Desc": "<color=#FFFFFFFF>부착 캐릭터가 $[A2402] 및 그의 소환물이 주는 피해를 받을 시:</color> 해당 상태를 제거하고 이번에 받은 피해+1pt\\n(해당 상태는 한쪽 필드마다 하나씩만 존재할 수 있다. $[A2402]의 일부 스킬은 부착 캐릭터를 목표로 한다)",
+                    "Child": {
+                        "A2402": "뇌음의 권현"
+                    }
+                },
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO",
+                "D__KEY__DAMAGE": 3
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 3
+            }
+        },
+        "24023": {
+            "Name": "속박의 천둥",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[C124023]</color>을 소환한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO",
+                "D__KEY__DAMAGE": 2,
+                "C124023": {
+                    "Name": "속박의 천둥",
+                    "Desc": "<color=#FFFFFFFF>종료 단계: </color><color=#FFFFFFFF>$[C124022]</color>가 부착된 적 캐릭터에게 $[K104]를 3pt 준다. (조건에 맞는 적 캐릭터가 없을 시 출전 캐릭터에게 피해를 준다)\\n<color=#FFFFFFFF>$[K3]: 1</color>",
+                    "Child": {
+                        "C124022": {
+                            "Name": "뇌명 탐지",
+                            "Desc": "<color=#FFFFFFFF>부착 캐릭터가 $[A2402] 및 그의 소환물이 주는 피해를 받을 시:</color> 해당 상태를 제거하고 이번에 받은 피해+1pt\\n(해당 상태는 한쪽 필드마다 하나씩만 존재할 수 있다. $[A2402]의 일부 스킬은 부착 캐릭터를 목표로 한다)",
+                            "Child": {
+                                "A2402": "뇌음의 권현"
+                            }
+                        },
+                        "K104": {
+                            "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>번개 원소 피해</color>",
+                            "Desc": "{SPRITE_PRESET#2104}번개 원소 부착 시 다음 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>과부하</color>: 이번 피해+2pt, 대상이 다음 캐릭터로 강제 교체된다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>초전도</color>: 이번 피해+1pt, 대상 이외의 모든 상대 캐릭터에게 관통 피해를 1pt 준다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>감전</color>: 이번 피해+1pt, 대상 이외의 모든 상대 캐릭터에게 관통 피해를 1pt 준다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>활성</color>: 이번 피해+1pt, 다음 2회의 풀 원소 또는 번개 원소 피해를 1pt 증가시키는 [<color=#FFFFFFFF>격화 영역</color>]을 생성한다."
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "24024": {
+            "Name": "뇌정 탐지",
+            "Desc": "[패시브] 전투 시작 시, 적 필드에 <color=#FFFFFFFF>$[C124021]</color>을 생성한다.",
+            "Child": {
+                "C124021": {
+                    "Name": "뇌정 탐침",
+                    "Desc": "<color=#FFFFFFFF>소속 진영 캐릭터가 스킬 사용 후: </color>소속 진영 출전 캐릭터에게 <color=#FFFFFFFF>$[C124022]</color>를 부착한다. (턴당 1회)",
+                    "Child": {
+                        "C124022": {
+                            "Name": "뇌명 탐지",
+                            "Desc": "<color=#FFFFFFFF>부착 캐릭터가 $[A2402] 및 그의 소환물이 주는 피해를 받을 시:</color> 해당 상태를 제거하고 이번에 받은 피해+1pt\\n(해당 상태는 한쪽 필드마다 하나씩만 존재할 수 있다. $[A2402]의 일부 스킬은 부착 캐릭터를 목표로 한다)",
+                            "Child": {
+                                "A2402": "뇌음의 권현"
+                            }
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 224021
+}

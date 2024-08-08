@@ -1,0 +1,104 @@
+{
+    "Type": "Character",
+    "Name": "艾尔海森",
+    "Title": "诲韬诤言·艾尔海森",
+    "Desc": "学识、思考及处事之道。",
+    "Source": "在猫尾酒馆中邀请艾尔海森进行对局，在友好对局难度中获得胜利后获取",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Alhatham",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "草元素",
+        "单手剑",
+        "须弥"
+    ],
+    "Talent": {
+        "17061": {
+            "Name": "溯因反绎法",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "17062": {
+            "Name": "共相·理式摹写",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，本角色附属<color=#FFFFFFFF>$[C117061]</color>。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_DENDRO",
+                "C117061": {
+                    "Name": "琢光镜",
+                    "Desc": "角色造成的$[K100]变为$[K107]。\\n<color=#FFFFFFFF>角色普通攻击后：</color>造成1点$[K107]。如果此技能为$[K51]，则使此状态的$[K4]+1。\\n<color=#FFFFFFFF>$[K4]：2</color>（可叠加，最多叠加到3回合）",
+                    "Child": {
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>",
+                            "Desc": "物理伤害不会附着元素，也不会发生元素反应。"
+                        },
+                        "K107": {
+                            "Name": "{SPRITE_PRESET#2107}<color=#7EC236FF>草元素伤害</color>",
+                            "Desc": "附着{SPRITE_PRESET#2107}草元素，可发生元素反应：\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>绽放</color>：本伤害+1，生成使下次火元素或雷元素伤害+2的[<color=#FFFFFFFF>草原核</color>]\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>燃烧</color>：本伤害+1，生成回合结束时造成1点火元素伤害的[<color=#FFFFFFFF>燃烧烈焰</color>]（可用次数1，最多叠加到2）\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>原激化</color>：本伤害+1，生成使下2次草元素或雷元素伤害+1的[<color=#FFFFFFFF>激化领域</color>]"
+                        },
+                        "K51": {
+                            "Name": "<color=#FFFFFFFF>重击</color>",
+                            "Desc": "我方行动开始前，如果元素骰总数为偶数，则进行的「普通攻击」将被视为「重击」。"
+                        },
+                        "K4": {
+                            "Name": "<color=#FFFFFFFF>持续回合</color>",
+                            "Desc": "每回合结束阶段，<color=#FFFFFFFF>持续回合</color>-1；\\n<color=#FFFFFFFF>持续回合</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 3
+            }
+        },
+        "17063": {
+            "Name": "殊境·显象缚结",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]；消耗<color=#FFFFFFFF>$[C117061]</color>，此伤害提升所消耗<color=#FFFFFFFF>$[C117061]</color>的$[K4]值。\\n如果消耗<color=#FFFFFFFF>$[C117061]</color>的$[K4]为0/1/2，则为角色附属$[K4]为3/2/1的<color=#FFFFFFFF>$[C117061]</color>。",
+            "Child": {
+                "D__KEY__DAMAGE": 4,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_DENDRO",
+                "C117061": {
+                    "Name": "琢光镜",
+                    "Desc": "角色造成的$[K100]变为$[K107]。\\n<color=#FFFFFFFF>角色普通攻击后：</color>造成1点$[K107]。如果此技能为$[K51]，则使此状态的$[K4]+1。\\n<color=#FFFFFFFF>$[K4]：2</color>（可叠加，最多叠加到3回合）",
+                    "Child": {
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>",
+                            "Desc": "物理伤害不会附着元素，也不会发生元素反应。"
+                        },
+                        "K107": {
+                            "Name": "{SPRITE_PRESET#2107}<color=#7EC236FF>草元素伤害</color>",
+                            "Desc": "附着{SPRITE_PRESET#2107}草元素，可发生元素反应：\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>绽放</color>：本伤害+1，生成使下次火元素或雷元素伤害+2的[<color=#FFFFFFFF>草原核</color>]\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>燃烧</color>：本伤害+1，生成回合结束时造成1点火元素伤害的[<color=#FFFFFFFF>燃烧烈焰</color>]（可用次数1，最多叠加到2）\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>原激化</color>：本伤害+1，生成使下2次草元素或雷元素伤害+1的[<color=#FFFFFFFF>激化领域</color>]"
+                        },
+                        "K51": {
+                            "Name": "<color=#FFFFFFFF>重击</color>",
+                            "Desc": "我方行动开始前，如果元素骰总数为偶数，则进行的「普通攻击」将被视为「重击」。"
+                        },
+                        "K4": {
+                            "Name": "<color=#FFFFFFFF>持续回合</color>",
+                            "Desc": "每回合结束阶段，<color=#FFFFFFFF>持续回合</color>-1；\\n<color=#FFFFFFFF>持续回合</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                },
+                "K4": {
+                    "Name": "<color=#FFFFFFFF>持续回合</color>",
+                    "Desc": "每回合结束阶段，<color=#FFFFFFFF>持续回合</color>-1；\\n<color=#FFFFFFFF>持续回合</color>耗尽后，立刻弃置此牌。"
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 217061
+}

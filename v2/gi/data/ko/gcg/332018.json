@@ -1,0 +1,26 @@
+{
+    "Type": "Action",
+    "Name": "강한 공격",
+    "Title": "바위를 가르는 검술",
+    "Desc": "힘이 약한 사람은…\\n「바위를 가르다」를 「일종의 비유」로 생각하는 것이 좋다",
+    "Source": "",
+    "Icon": "UI_Gcg_CardFace_Event_Event_Zhonggongji",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PAIMON",
+            "count": 1
+        },
+        {}
+    ],
+    "Tag": [],
+    "Talent": {
+        "Name": "강한 공격",
+        "Desc": "이번 턴에서 현재 아군 출전 캐릭터의 다음번 <color=#FFFFFFFF>「일반 공격」</color>이 주는 피해+1pt\\n<color=#FFFFFFFF>해당 「일반 공격」이 $[K51]일 시:</color> 피해 추가+1pt",
+        "Child": {
+            "K51": {
+                "Name": "<color=#FFFFFFFF>강공격</color>",
+                "Desc": "아군이 행동을 시작하기 전에 원소 주사위 총개수가 짝수인 경우, 발동한 「일반 공격」을 「강공격」으로 간주한다."
+            }
+        }
+    }
+}

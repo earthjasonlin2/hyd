@@ -1,0 +1,84 @@
+{
+    "Type": "Character",
+    "Name": "愚人众·火之债务处理人",
+    "Title": "清算之刃·债务处理人",
+    "Desc": "「死债不可免，活债更难逃…」",
+    "Source": "在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度愚人众·火之债务处理人中获得胜利后获取",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_Fatuus",
+    "Hp": 9,
+    "Cost": 2,
+    "Tag": [
+        "火元素",
+        "其他武器",
+        "愚人众"
+    ],
+    "Talent": {
+        "23011": {
+            "Name": "突刺",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "23012": {
+            "Name": "伺机而动",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，本角色附属<color=#FFFFFFFF>$[C123011]</color>。",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO",
+                "C123011": {
+                    "Name": "潜行",
+                    "Desc": "所附属角色受到的伤害-1，造成的伤害+1。\\n$[K3]：2",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>可用次数</color>",
+                            "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 3
+            }
+        },
+        "23013": {
+            "Name": "焚毁之锋",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+            "Child": {
+                "D__KEY__DAMAGE": 5,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO"
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "23014": {
+            "Name": "潜行大师",
+            "Desc": "【被动】战斗开始时，初始附属<color=#FFFFFFFF>$[C123011]</color>。",
+            "Child": {
+                "C123011": {
+                    "Name": "潜行",
+                    "Desc": "所附属角色受到的伤害-1，造成的伤害+1。\\n$[K3]：2",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>可用次数</color>",
+                            "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 223011
+}

@@ -1,0 +1,538 @@
+{
+    "Id": 8003012,
+    "Name": "宇宙からの氷",
+    "Desc": "この世界に属さない怪異なる生命体、星核がもたらした裂界より生まれ、世界の根に寄生しエネルギーを吸収する。その甲冑には暗き星空が映っている。\\n戦闘中、宇宙からの氷は容易に敵を凍結できる。",
+    "MonsterCampID": null,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 744,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/Monster_8003010.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "Elite",
+    "SpeedBase": 100,
+    "StanceBase": 300,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.20000000018626451,
+    "Child": [
+        {
+            "Id": 800301201,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 800301201,
+                    "SkillName": "凍える哀",
+                    "SkillDesc": "指定した味方単体に少量の氷属性ダメージを与える。自身が「氷点」状態の場合、凍結状態の味方単体に攻撃を行った後、さらに氷属性ダメージを与える。",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 800301202,
+                    "SkillName": "霜晶凝結",
+                    "SkillDesc": "自身が「氷点」状態になり、その後の攻撃で「永冬の雨」を発動できる。自身が「凝晶」を1層獲得する。",
+                    "DamageType": "Ice",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 800301203,
+                    "SkillName": "永冬の雨",
+                    "SkillDesc": "「氷点」状態の時のみこのスキルを発動できる。味方全体に氷属性ダメージを与え、確率で攻撃を受けた味方を凍結状態にし、行動順を遅延させる。",
+                    "DamageType": "Ice",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 800301204,
+                    "SkillName": "凍える哀",
+                    "SkillDesc": "指定した味方単体に氷属性ダメージを与える。自身が「氷点」状態の場合、確率で攻撃を受けた味方を凍結状態にする。",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 800301205,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "Ice",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 800301206,
+                    "SkillName": "砕氷裂寒",
+                    "SkillDesc": "凍結状態の味方に氷属性ダメージを与え、同時にその凍結状態解除し、隣接するターゲットに氷属性ダメージを与える。",
+                    "DamageType": "Ice",
+                    "SPHitBase": 15
+                }
+            ]
+        },
+        {
+            "Id": 800301202,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 800301201,
+                    "SkillName": "凍える哀",
+                    "SkillDesc": "指定した味方単体に少量の氷属性ダメージを与える。自身が「氷点」状態の場合、凍結状態の味方単体に攻撃を行った後、さらに氷属性ダメージを与える。",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 800301202,
+                    "SkillName": "霜晶凝結",
+                    "SkillDesc": "自身が「氷点」状態になり、その後の攻撃で「永冬の雨」を発動できる。自身が「凝晶」を1層獲得する。",
+                    "DamageType": "Ice",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 800301203,
+                    "SkillName": "永冬の雨",
+                    "SkillDesc": "「氷点」状態の時のみこのスキルを発動できる。味方全体に氷属性ダメージを与え、確率で攻撃を受けた味方を凍結状態にし、行動順を遅延させる。",
+                    "DamageType": "Ice",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 800301204,
+                    "SkillName": "凍える哀",
+                    "SkillDesc": "指定した味方単体に氷属性ダメージを与える。自身が「氷点」状態の場合、確率で攻撃を受けた味方を凍結状態にする。",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 800301205,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "Ice",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 800301206,
+                    "SkillName": "砕氷裂寒",
+                    "SkillDesc": "凍結状態の味方に氷属性ダメージを与え、同時にその凍結状態解除し、隣接するターゲットに氷属性ダメージを与える。",
+                    "DamageType": "Ice",
+                    "SPHitBase": 15
+                }
+            ]
+        },
+        {
+            "Id": 800301203,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 800301201,
+                    "SkillName": "凍える哀",
+                    "SkillDesc": "指定した味方単体に少量の氷属性ダメージを与える。自身が「氷点」状態の場合、凍結状態の味方単体に攻撃を行った後、さらに氷属性ダメージを与える。",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 800301202,
+                    "SkillName": "霜晶凝結",
+                    "SkillDesc": "自身が「氷点」状態になり、その後の攻撃で「永冬の雨」を発動できる。自身が「凝晶」を1層獲得する。",
+                    "DamageType": "Ice",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 800301203,
+                    "SkillName": "永冬の雨",
+                    "SkillDesc": "「氷点」状態の時のみこのスキルを発動できる。味方全体に氷属性ダメージを与え、確率で攻撃を受けた味方を凍結状態にし、行動順を遅延させる。",
+                    "DamageType": "Ice",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 800301204,
+                    "SkillName": "凍える哀",
+                    "SkillDesc": "指定した味方単体に氷属性ダメージを与える。自身が「氷点」状態の場合、確率で攻撃を受けた味方を凍結状態にする。",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 800301205,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "Ice",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 800301206,
+                    "SkillName": "砕氷裂寒",
+                    "SkillDesc": "凍結状態の味方に氷属性ダメージを与え、同時にその凍結状態解除し、隣接するターゲットに氷属性ダメージを与える。",
+                    "DamageType": "Ice",
+                    "SPHitBase": 15
+                }
+            ]
+        },
+        {
+            "Id": 800301204,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 800301201,
+                    "SkillName": "凍える哀",
+                    "SkillDesc": "指定した味方単体に少量の氷属性ダメージを与える。自身が「氷点」状態の場合、凍結状態の味方単体に攻撃を行った後、さらに氷属性ダメージを与える。",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 800301202,
+                    "SkillName": "霜晶凝結",
+                    "SkillDesc": "自身が「氷点」状態になり、その後の攻撃で「永冬の雨」を発動できる。自身が「凝晶」を1層獲得する。",
+                    "DamageType": "Ice",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 800301203,
+                    "SkillName": "永冬の雨",
+                    "SkillDesc": "「氷点」状態の時のみこのスキルを発動できる。味方全体に氷属性ダメージを与え、確率で攻撃を受けた味方を凍結状態にし、行動順を遅延させる。",
+                    "DamageType": "Ice",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 800301204,
+                    "SkillName": "凍える哀",
+                    "SkillDesc": "指定した味方単体に氷属性ダメージを与える。自身が「氷点」状態の場合、確率で攻撃を受けた味方を凍結状態にする。",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 800301205,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "Ice",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 800301206,
+                    "SkillName": "砕氷裂寒",
+                    "SkillDesc": "凍結状態の味方に氷属性ダメージを与え、同時にその凍結状態解除し、隣接するターゲットに氷属性ダメージを与える。",
+                    "DamageType": "Ice",
+                    "SPHitBase": 15
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 8003012,
+            "AvatarExpReward": 150,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182007
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183004
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 8003012,
+            "WorldLevel": 1,
+            "AvatarExpReward": 200,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182007
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183004
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 8003012,
+            "WorldLevel": 2,
+            "AvatarExpReward": 250,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182007
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183004
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 8003012,
+            "WorldLevel": 3,
+            "AvatarExpReward": 300,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182007
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183004
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 8003012,
+            "WorldLevel": 4,
+            "AvatarExpReward": 350,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111003
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182007
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183004
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 8003012,
+            "WorldLevel": 5,
+            "AvatarExpReward": 400,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111003
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182007
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183004
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 8003012,
+            "WorldLevel": 6,
+            "AvatarExpReward": 400,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111003
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182007
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183004
+                }
+            ]
+        }
+    ]
+}

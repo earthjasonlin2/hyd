@@ -1,0 +1,33 @@
+{
+    "Type": "Action",
+    "Name": "苦痛奉还",
+    "Title": "「女士」·苦痛奉还",
+    "Desc": "「将痛楚…与你分享。」",
+    "Source": "在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度「女士」中完成挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_LaSignora",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PAIMON",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "天赋"
+    ],
+    "Talent": {
+        "Name": "苦痛奉还",
+        "Desc": "我方出战角色为<color=#FFFFFFFF>$[A2102]</color>时，才能打出：入场时，生成3个$[A2102]当前元素类型的元素骰。\\n角色受到至少为3点的伤害时：抵消1点伤害，然后根据$[A2102]的形态对敌方出战角色附属<color=#FFFFFFFF>$[K1016]</color>或<color=#FFFFFFFF>$[K1017]</color>。（每回合1次）\\n（牌组中包含$[A2102]，才能加入牌组）",
+        "Child": {
+            "A2102": "苦痛奉还",
+            "K1016": {
+                "Name": "严寒",
+                "Desc": "<color=#FFFFFFFF>结束阶段：</color>对附属角色造成1点{SPRITE_PRESET#2101}<color=#99FFFFFF>冰元素伤害</color>。\\n<color=#FFFFFFFF><color=#FFFFFFFF>可用次数</color>：1</color>（所附属角色被附属<color=#FFFFFFFF>炽热</color>时，移除此效果。）"
+            },
+            "K1017": {
+                "Name": "炽热",
+                "Desc": "<color=#FFFFFFFF>结束阶段：</color>对所附属角色造成1点{SPRITE_PRESET#2103}<color=#FF9999FF>火元素伤害</color>。\\n<color=#FFFFFFFF><color=#FFFFFFFF>可用次数</color>：1</color>（所附属角色被附属<color=#FFFFFFFF>严寒</color>时，移除此效果。）"
+            }
+        }
+    }
+}

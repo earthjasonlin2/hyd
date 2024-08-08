@@ -1,0 +1,37 @@
+{
+    "Type": "Action",
+    "Name": "熔火铁甲",
+    "Title": "铁甲熔火帝皇·熔火铁甲",
+    "Desc": "「设想这样的世界：将提瓦特所有的人都消除，无限成长下去的铁甲熔火帝皇终究会将沫芒宫穿在身上，作为最为华美的白石铠甲吧。」",
+    "Source": "在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度铁甲熔火帝皇中完成挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_HermitCrabPrimo",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PYRO",
+            "count": 1
+        },
+        {}
+    ],
+    "Tag": [
+        "天赋"
+    ],
+    "Talent": {
+        "Name": "熔火铁甲",
+        "Desc": "<color=#FFFFFFFF>入场时：</color>对装备有此牌的<color=#FFFFFFFF>$[A2304]</color>$[K203]。\\n我方除$[K1023]以外的$[K6]状态或$[K6]出战状态被移除后：装备有此牌的$[A2304]附属2层$[K1023]。（每回合1次）\\n（牌组中包含$[A2304]，才能加入牌组）",
+        "Child": {
+            "A2304": "熔火铁甲",
+            "K203": {
+                "Name": "<color=#FF9999FF>附着{SPRITE_PRESET#2103}火元素</color>",
+                "Desc": "不通过伤害附着{SPRITE_PRESET#2103}火元素时，发生的元素反应会忽略伤害效果：\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>融化</color>：没有效果\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>蒸发</color>：没有效果\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>超载</color>：目标强制切换到下一个角色\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>燃烧</color>：生成回合结束时造成1点火元素伤害的[<color=#FFFFFFFF>燃烧烈焰</color>]（可用次数1，最多叠加到2）"
+            },
+            "K1023": {
+                "Name": "<color=#FFFFFFFF>重甲蟹壳</color>",
+                "Desc": "每层提供1点{SPRITE_PRESET#4007}<color=#FFFFFFFF>护盾</color>，保护所附属角色。"
+            },
+            "K6": {
+                "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>护盾</color>",
+                "Desc": "此护盾所保护的角色受到伤害时，将会消耗护盾来抵消伤害。"
+            }
+        }
+    }
+}

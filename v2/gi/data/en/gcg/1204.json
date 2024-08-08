@@ -1,0 +1,202 @@
+{
+    "Type": "Character",
+    "Name": "Tartaglia",
+    "Title": "\"Childe\" Tartaglia",
+    "Desc": "Should this table be considered a battlefield, then may the strongest claim the win.",
+    "Source": "Reward for inviting Tartaglia to a duel at The Cat's Tail and claiming victory in a Friendly Fracas with him",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Tartaglia",
+    "Hp": 10,
+    "Cost": 3,
+    "Tag": [
+        "Hydro",
+        "Bow",
+        "Fatui"
+    ],
+    "Talent": {
+        "12041": {
+            "Name": "Cutting Torrent",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "12042": {
+            "Name": "Foul Legacy: Raging Tide",
+            "Desc": "Switches to <color=#FFFFFFFF>$[C112042]</color> and deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], and attach <color=#FFFFFFFF>$[C112043]</color> to the target character.",
+            "Child": {
+                "C112042": {
+                    "Name": "Melee Stance",
+                    "Desc": "$[K100] dealt by character is converted to $[K102].\\n<color=#FFFFFFFF>After the character uses $[K51]:</color> Apply $[K1005] to target character.\\nCharacter deals +1 DMG to target characters with $[K1005] attached.\\n<color=#FFFFFFFF>After Skills are used against characters affected by $[K1005]:</color> Deal 1 $[K5] to the next opposing off-field character. (Twice per Round)\\n\\n<color=#FFFFFFFF>$[K4]: 2</color>",
+                    "Child": {
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>",
+                            "Desc": "Physical DMG will not apply any Elements, nor can it engage in Elemental Reactions."
+                        },
+                        "K102": {
+                            "Name": "{SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro DMG</color>",
+                            "Desc": "Applies {SPRITE_PRESET#2102}Hydro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Vaporize</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Electro-Charged</color>：DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Frozen</color>: DMG +1 for this instance, the target is unable to perform any Actions this Round (Can be removed in advance after the target receives +2 Physical or Pyro DMG)\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Bloom</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Dendro Core</color>] that grants +2 DMG to the next instance of Pyro or Electro DMG"
+                        },
+                        "K51": {
+                            "Name": "<color=#FFFFFFFF>Charged Attack</color>",
+                            "Desc": "Before your Action Phase, should the total number of your Elemental Dice be even, your Normal Attack will be considered a Charged Attack."
+                        },
+                        "K1005": {
+                            "Name": "<color=#FFFFFFFF>Riptide</color>",
+                            "Desc": "<color=#FFFFFFFF>When the character to which this is attached is defeated: </color>Apply Riptide to active character.\\nWhen <color=#FFFFFFFF>Tartaglia</color> is in <color=#FFFFFFFF>Melee Stance</color>, he will deal additional DMG when attacking the character to which this is attached."
+                        },
+                        "K5": {
+                            "Name": "<color=#FFFFFFFF>Piercing DMG</color>",
+                            "Desc": "Piercing DMG cannot be increased by any bonuses, but cannot be defended against using Shields or DMG Immunity either."
+                        },
+                        "K4": {
+                            "Name": "<color=#FFFFFFFF>Duration (Rounds)</color>",
+                            "Desc": "Each time you reach the end of a Round, <color=#FFFFFFFF>Duration (Rounds)</color> -1.\\nThis card will be discarded immediately once <color=#FFFFFFFF>Duration (Rounds)</color> runs out."
+                        }
+                    }
+                },
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "C112043": {
+                    "Name": "Riptide",
+                    "Desc": "<color=#FFFFFFFF>When the character to which this is attached is defeated:</color> Apply Riptide to active character.\\n(When <color=#FFFFFFFF>$[A1204]</color> is in <color=#FFFFFFFF>$[C112042]</color>, he will deal additional DMG when attacking the character to which this is attached.)",
+                    "Child": {
+                        "A1204": "Tartaglia"
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3
+            }
+        },
+        "12043": {
+            "Name": "Havoc: Obliteration",
+            "Desc": "Performs different attacks based on the current stance that <color=#FFFFFFFF>$[A1204]</color> is in.\\n<color=#FFFFFFFF>Ranged Stance - Flash of Havoc: </color>Deal $[D__KEY__DAMAGE_5] $[D__KEY__ELEMENT], reclaim 2 $[K310], and apply <color=#FFFFFFFF>$[C112043]</color> to the target character.\\n<color=#FFFFFFFF>Melee Stance - Light of Obliteration</color>: Deal $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "A1204": "Tartaglia",
+                "D__KEY__DAMAGE_5": 5,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "K310": {
+                    "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}Energy</color>",
+                    "Desc": "Characters must consume {SPRITE_PRESET#1110}Energy to use their Elemental Bursts.\\nWhen characters use an Elemental Skill or a Normal Attack, they will gain 1 {SPRITE_PRESET#1110}Energy."
+                },
+                "C112043": {
+                    "Name": "Riptide",
+                    "Desc": "<color=#FFFFFFFF>When the character to which this is attached is defeated:</color> Apply Riptide to active character.\\n(When <color=#FFFFFFFF>$[A1204]</color> is in <color=#FFFFFFFF>$[C112042]</color>, he will deal additional DMG when attacking the character to which this is attached.)",
+                    "Child": {
+                        "A1204": "Tartaglia",
+                        "C112042": {
+                            "Name": "Melee Stance",
+                            "Desc": "$[K100] dealt by character is converted to $[K102].\\n<color=#FFFFFFFF>After the character uses $[K51]:</color> Apply $[K1005] to target character.\\nCharacter deals +1 DMG to target characters with $[K1005] attached.\\n<color=#FFFFFFFF>After Skills are used against characters affected by $[K1005]:</color> Deal 1 $[K5] to the next opposing off-field character. (Twice per Round)\\n\\n<color=#FFFFFFFF>$[K4]: 2</color>",
+                            "Child": {
+                                "K100": {
+                                    "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>",
+                                    "Desc": "Physical DMG will not apply any Elements, nor can it engage in Elemental Reactions."
+                                },
+                                "K102": {
+                                    "Name": "{SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro DMG</color>",
+                                    "Desc": "Applies {SPRITE_PRESET#2102}Hydro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Vaporize</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Electro-Charged</color>：DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Frozen</color>: DMG +1 for this instance, the target is unable to perform any Actions this Round (Can be removed in advance after the target receives +2 Physical or Pyro DMG)\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Bloom</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Dendro Core</color>] that grants +2 DMG to the next instance of Pyro or Electro DMG"
+                                },
+                                "K51": {
+                                    "Name": "<color=#FFFFFFFF>Charged Attack</color>",
+                                    "Desc": "Before your Action Phase, should the total number of your Elemental Dice be even, your Normal Attack will be considered a Charged Attack."
+                                },
+                                "K1005": {
+                                    "Name": "<color=#FFFFFFFF>Riptide</color>",
+                                    "Desc": "<color=#FFFFFFFF>When the character to which this is attached is defeated: </color>Apply Riptide to active character.\\nWhen <color=#FFFFFFFF>Tartaglia</color> is in <color=#FFFFFFFF>Melee Stance</color>, he will deal additional DMG when attacking the character to which this is attached."
+                                },
+                                "K5": {
+                                    "Name": "<color=#FFFFFFFF>Piercing DMG</color>",
+                                    "Desc": "Piercing DMG cannot be increased by any bonuses, but cannot be defended against using Shields or DMG Immunity either."
+                                },
+                                "K4": {
+                                    "Name": "<color=#FFFFFFFF>Duration (Rounds)</color>",
+                                    "Desc": "Each time you reach the end of a Round, <color=#FFFFFFFF>Duration (Rounds)</color> -1.\\nThis card will be discarded immediately once <color=#FFFFFFFF>Duration (Rounds)</color> runs out."
+                                }
+                            }
+                        }
+                    }
+                },
+                "D__KEY__DAMAGE": 7
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3,
+                "GCG_COST_ENERGY": 3
+            }
+        },
+        "12044": {
+            "Name": "Tide Withholder",
+            "Desc": "(Passive) When the battle begins, this character gains <color=#FFFFFFFF>$[C112041]</color>. Once the <color=#FFFFFFFF>$[C112042]</color> attached to the character ends, reapplies <color=#FFFFFFFF>$[C112041]</color>.",
+            "Child": {
+                "C112041": {
+                    "Name": "Ranged Stance",
+                    "Desc": "<color=#FFFFFFFF>After the character to which this is attached uses $[K51]:</color> Apply $[K1005] to target character.",
+                    "Child": {
+                        "K51": {
+                            "Name": "<color=#FFFFFFFF>Charged Attack</color>",
+                            "Desc": "Before your Action Phase, should the total number of your Elemental Dice be even, your Normal Attack will be considered a Charged Attack."
+                        },
+                        "K1005": {
+                            "Name": "<color=#FFFFFFFF>Riptide</color>",
+                            "Desc": "<color=#FFFFFFFF>When the character to which this is attached is defeated: </color>Apply Riptide to active character.\\nWhen <color=#FFFFFFFF>Tartaglia</color> is in <color=#FFFFFFFF>Melee Stance</color>, he will deal additional DMG when attacking the character to which this is attached."
+                        }
+                    }
+                },
+                "C112042": {
+                    "Name": "Melee Stance",
+                    "Desc": "$[K100] dealt by character is converted to $[K102].\\n<color=#FFFFFFFF>After the character uses $[K51]:</color> Apply $[K1005] to target character.\\nCharacter deals +1 DMG to target characters with $[K1005] attached.\\n<color=#FFFFFFFF>After Skills are used against characters affected by $[K1005]:</color> Deal 1 $[K5] to the next opposing off-field character. (Twice per Round)\\n\\n<color=#FFFFFFFF>$[K4]: 2</color>",
+                    "Child": {
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>",
+                            "Desc": "Physical DMG will not apply any Elements, nor can it engage in Elemental Reactions."
+                        },
+                        "K102": {
+                            "Name": "{SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro DMG</color>",
+                            "Desc": "Applies {SPRITE_PRESET#2102}Hydro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Vaporize</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Electro-Charged</color>：DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Frozen</color>: DMG +1 for this instance, the target is unable to perform any Actions this Round (Can be removed in advance after the target receives +2 Physical or Pyro DMG)\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Bloom</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Dendro Core</color>] that grants +2 DMG to the next instance of Pyro or Electro DMG"
+                        },
+                        "K51": {
+                            "Name": "<color=#FFFFFFFF>Charged Attack</color>",
+                            "Desc": "Before your Action Phase, should the total number of your Elemental Dice be even, your Normal Attack will be considered a Charged Attack."
+                        },
+                        "K1005": {
+                            "Name": "<color=#FFFFFFFF>Riptide</color>",
+                            "Desc": "<color=#FFFFFFFF>When the character to which this is attached is defeated: </color>Apply Riptide to active character.\\nWhen <color=#FFFFFFFF>Tartaglia</color> is in <color=#FFFFFFFF>Melee Stance</color>, he will deal additional DMG when attacking the character to which this is attached."
+                        },
+                        "K5": {
+                            "Name": "<color=#FFFFFFFF>Piercing DMG</color>",
+                            "Desc": "Piercing DMG cannot be increased by any bonuses, but cannot be defended against using Shields or DMG Immunity either."
+                        },
+                        "K4": {
+                            "Name": "<color=#FFFFFFFF>Duration (Rounds)</color>",
+                            "Desc": "Each time you reach the end of a Round, <color=#FFFFFFFF>Duration (Rounds)</color> -1.\\nThis card will be discarded immediately once <color=#FFFFFFFF>Duration (Rounds)</color> runs out."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        },
+        "12045": {
+            "Name": "Ranged Stance",
+            "Desc": "",
+            "Child": {},
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        },
+        "12046": {
+            "Name": "Tide Withholder",
+            "Desc": "",
+            "Child": {},
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 212041
+}

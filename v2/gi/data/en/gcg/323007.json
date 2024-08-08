@@ -1,0 +1,32 @@
+{
+    "Type": "Action",
+    "Name": "Lumenstone Adjuvant",
+    "Title": "Lumenstone Adjuvant",
+    "Desc": "\"May it be as a sun in your palm, lighting the way through the lightless tunnels and bringing comfort where all is dark.\"",
+    "Source": "",
+    "Icon": "UI_Gcg_CardFace_Assist_Prop_Liumingshi",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_VOID",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "Item"
+    ],
+    "Talent": {
+        "Name": "Lumenstone Adjuvant",
+        "Desc": "<color=#FFFFFFFF>After you play an Action Card:</color> If, while this card is on the field, you have already played 3 Action Cards this Round, draw 1 card and create 1 $[K411]. (Once per Round)\\n<color=#FFFFFFFF>$[K3]: 3</color>",
+        "Child": {
+            "K411": {
+                "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1111}Omni Element</color>",
+                "Desc": "The {SPRITE_PRESET#1111}Omni Element can be considered as any kind of element, and can be used to pay for costs of various kinds."
+            },
+            "K3": {
+                "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+            }
+        }
+    }
+}

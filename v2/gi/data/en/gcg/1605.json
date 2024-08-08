@@ -1,0 +1,115 @@
+{
+    "Type": "Character",
+    "Name": "Arataki Itto",
+    "Title": "\"Hanamizaka Heroics\" Arataki Itto",
+    "Desc": "Arataki \"The Ultimate TCG Champion\" Itto",
+    "Source": "Reward for inviting Arataki Itto to a duel at The Cat's Tail and claiming victory in a Friendly Fracas with him",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Itto",
+    "Hp": 10,
+    "Cost": 3,
+    "Tag": [
+        "Geo",
+        "Claymore",
+        "Inazuma"
+    ],
+    "Talent": {
+        "16051": {
+            "Name": "Fight Club Legend",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "16052": {
+            "Name": "Masatsu Zetsugi: Akaushi Burst!",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. Summons <color=#FFFFFFFF>$[C116051]</color>. This character gains <color=#FFFFFFFF>$[C116054]</color>.",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_GEO",
+                "C116051": {
+                    "Name": "Ushi",
+                    "Desc": "<color=#FFFFFFFF>When your active character takes DMG: </color>Decrease DMG taken by 1.\\n<color=#FFFFFFFF>$[K3]: 1</color>. When the Usage is depleted, this card will not be discarded.\\n<color=#FFFFFFFF>Can be triggered once while this Summon is present: </color>When your character takes DMG, $[A1605] gains $[K1007].\\n<color=#FFFFFFFF>End Phase:</color> Discard this card, deal 1 $[K106].",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        },
+                        "A1605": "Arataki Itto",
+                        "K1007": {
+                            "Name": "<color=#FFFFFFFF>Superlative Superstrength</color>",
+                            "Desc": "<color=#FFFFFFFF>When the character to which this is attached uses a <color=#FFFFFFFF>Charged Attack</color>: </color>Deal +1 DMG. If the <color=#FFFFFFFF>Usages</color> are no less than 2, then costs 1 less <color=#FFFFFFFF>{SPRITE_PRESET#1109}Unaligned Element</color>.\\n<color=#FFFFFFFF><color=#FFFFFFFF>Usage(s)</color>: 1</color> (Can stack. Max 3 stacks.)"
+                        },
+                        "K106": {
+                            "Name": "{SPRITE_PRESET#2106}<color=#FFE699FF>Geo DMG</color>",
+                            "Desc": "Reacts with Elements if they are already applied:\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Cryo Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Hydro Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Pyro Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Electro Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)"
+                        }
+                    }
+                },
+                "C116054": {
+                    "Name": "Superlative Superstrength",
+                    "Desc": "<color=#FFFFFFFF>When the character to which this is attached uses a $[K51]: </color>Deal +1 DMG. If there are at least 2 $[K3], spend 1 less $[K309].\\n<color=#FFFFFFFF>$[K3]: 1</color> (Can stack. Max 3 stacks.)",
+                    "Child": {
+                        "K51": {
+                            "Name": "<color=#FFFFFFFF>Charged Attack</color>",
+                            "Desc": "Before your Action Phase, should the total number of your Elemental Dice be even, your Normal Attack will be considered a Charged Attack."
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        },
+                        "K309": {
+                            "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1109}Unaligned Element</color>",
+                            "Desc": "You may use Elemental Dice of any element to pay this type of cost."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 3
+            }
+        },
+        "16053": {
+            "Name": "Royal Descent: Behold, Itto the Evil!",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. This character gains <color=#FFFFFFFF>$[C116053]</color>.",
+            "Child": {
+                "D__KEY__DAMAGE": 4,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_GEO",
+                "C116053": {
+                    "Name": "Raging Oni King",
+                    "Desc": "The character to which this is attached has their <color=#FFFFFFFF>Normal Attacks</color> deal +1 DMG, and their $[K100] dealt converted to $[K106].\\n<color=#FFFFFFFF>$[K4]: 2</color>\\n<color=#FFFFFFFF>After the character to which this is attached uses a Normal Attack:</color> Gains $[K1007]. (Once per Round)",
+                    "Child": {
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>",
+                            "Desc": "Physical DMG will not apply any Elements, nor can it engage in Elemental Reactions."
+                        },
+                        "K106": {
+                            "Name": "{SPRITE_PRESET#2106}<color=#FFE699FF>Geo DMG</color>",
+                            "Desc": "Reacts with Elements if they are already applied:\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Cryo Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Hydro Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Pyro Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Electro Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)"
+                        },
+                        "K4": {
+                            "Name": "<color=#FFFFFFFF>Duration (Rounds)</color>",
+                            "Desc": "Each time you reach the end of a Round, <color=#FFFFFFFF>Duration (Rounds)</color> -1.\\nThis card will be discarded immediately once <color=#FFFFFFFF>Duration (Rounds)</color> runs out."
+                        },
+                        "K1007": {
+                            "Name": "<color=#FFFFFFFF>Superlative Superstrength</color>",
+                            "Desc": "<color=#FFFFFFFF>When the character to which this is attached uses a <color=#FFFFFFFF>Charged Attack</color>: </color>Deal +1 DMG. If the <color=#FFFFFFFF>Usages</color> are no less than 2, then costs 1 less <color=#FFFFFFFF>{SPRITE_PRESET#1109}Unaligned Element</color>.\\n<color=#FFFFFFFF><color=#FFFFFFFF>Usage(s)</color>: 1</color> (Can stack. Max 3 stacks.)"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 3,
+                "GCG_COST_ENERGY": 3
+            }
+        }
+    },
+    "Related": 216051
+}

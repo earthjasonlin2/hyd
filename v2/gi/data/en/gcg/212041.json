@@ -1,0 +1,72 @@
+{
+    "Type": "Action",
+    "Name": "Abyssal Mayhem: Hydrospout",
+    "Title": "Tartaglia: Hydrospout",
+    "Desc": "A reckless yet precise blow.",
+    "Source": "Reward for inviting Tartaglia to a duel at The Cat's Tail and achieving all corresponding challenge objectives",
+    "Icon": "UI_Gcg_CardFace_Modify_Constellation_Tartaglia",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_HYDRO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "Talent",
+        "Combat Action"
+    ],
+    "Talent": {
+        "Name": "Abyssal Mayhem: Hydrospout",
+        "Desc": "$[K1]: When your active character is <color=#FFFFFFFF>$[A1204]</color>, equip this card.\\nAfter $[A1204] equips this card, immediately use <color=#FFD780FF>$[S12042]</color> once.\\nEnd Phase: When $[A1204] is on the field and has this card equipped, deal 1 $[K5] to the opponent's active character if they have <color=#FFFFFFFF>$[C112043]</color> attached.\\n(You must have $[A1204] in your deck to add this card to your deck.)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+            },
+            "A1204": "Abyssal Mayhem: Hydrospout",
+            "S12042": "S12042",
+            "K5": {
+                "Name": "<color=#FFFFFFFF>Piercing DMG</color>",
+                "Desc": "Piercing DMG cannot be increased by any bonuses, but cannot be defended against using Shields or DMG Immunity either."
+            },
+            "C112043": {
+                "Name": "Riptide",
+                "Desc": "<color=#FFFFFFFF>When the character to which this is attached is defeated:</color> Apply Riptide to active character.\\n(When <color=#FFFFFFFF>$[A1204]</color> is in <color=#FFFFFFFF>$[C112042]</color>, he will deal additional DMG when attacking the character to which this is attached.)",
+                "Child": {
+                    "A1204": "Abyssal Mayhem: Hydrospout",
+                    "C112042": {
+                        "Name": "Melee Stance",
+                        "Desc": "$[K100] dealt by character is converted to $[K102].\\n<color=#FFFFFFFF>After the character uses $[K51]:</color> Apply $[K1005] to target character.\\nCharacter deals +1 DMG to target characters with $[K1005] attached.\\n<color=#FFFFFFFF>After Skills are used against characters affected by $[K1005]:</color> Deal 1 $[K5] to the next opposing off-field character. (Twice per Round)\\n\\n<color=#FFFFFFFF>$[K4]: 2</color>",
+                        "Child": {
+                            "K100": {
+                                "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>",
+                                "Desc": "Physical DMG will not apply any Elements, nor can it engage in Elemental Reactions."
+                            },
+                            "K102": {
+                                "Name": "{SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro DMG</color>",
+                                "Desc": "Applies {SPRITE_PRESET#2102}Hydro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Vaporize</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Electro-Charged</color>：DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Frozen</color>: DMG +1 for this instance, the target is unable to perform any Actions this Round (Can be removed in advance after the target receives +2 Physical or Pyro DMG)\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Bloom</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Dendro Core</color>] that grants +2 DMG to the next instance of Pyro or Electro DMG"
+                            },
+                            "K51": {
+                                "Name": "<color=#FFFFFFFF>Charged Attack</color>",
+                                "Desc": "Before your Action Phase, should the total number of your Elemental Dice be even, your Normal Attack will be considered a Charged Attack."
+                            },
+                            "K1005": {
+                                "Name": "<color=#FFFFFFFF>Riptide</color>",
+                                "Desc": "<color=#FFFFFFFF>When the character to which this is attached is defeated: </color>Apply Riptide to active character.\\nWhen <color=#FFFFFFFF>Tartaglia</color> is in <color=#FFFFFFFF>Melee Stance</color>, he will deal additional DMG when attacking the character to which this is attached."
+                            },
+                            "K5": {
+                                "Name": "<color=#FFFFFFFF>Piercing DMG</color>",
+                                "Desc": "Piercing DMG cannot be increased by any bonuses, but cannot be defended against using Shields or DMG Immunity either."
+                            },
+                            "K4": {
+                                "Name": "<color=#FFFFFFFF>Duration (Rounds)</color>",
+                                "Desc": "Each time you reach the end of a Round, <color=#FFFFFFFF>Duration (Rounds)</color> -1.\\nThis card will be discarded immediately once <color=#FFFFFFFF>Duration (Rounds)</color> runs out."
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

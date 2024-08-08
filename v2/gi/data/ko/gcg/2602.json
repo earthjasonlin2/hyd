@@ -1,0 +1,88 @@
+{
+    "Type": "Character",
+    "Name": "야타용왕",
+    "Title": "고대 바위 용의 조상·야타용왕",
+    "Desc": "족쇄가 흔들리는 소리와 용의 낮은 포효가 기억처럼 산골짜기에 울려 퍼진다",
+    "Source": "캣테일 술집의 왕자님을 통해 술집 도전 진행 및 친선 대전 난이도의 야타용왕에게 승리 후 획득",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_Dahaka",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "바위 원소",
+        "기타 무기",
+        "마물"
+    ],
+    "Talent": {
+        "26021": {
+            "Name": "바위 분쇄 충돌",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "26022": {
+            "Name": "웅장한 기운",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 결정 반응이 발생하면 캐릭터는 $[K1012]한다. \\n만약 이번 스킬에서 캐릭터가 원소의 힘을 흡수하지 않을 경우 <color=#FFFFFFFF>$[C126022]</color>을 부착한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_GEO",
+                "D__KEY__DAMAGE": 3,
+                "K1012": {
+                    "Name": "<color=#FFFFFFFF>해당 원소의 힘을 흡수</color>",
+                    "Desc": "야타용왕은 {SPRITE_PRESET#2101}<color=#99FFFFFF>얼음</color>/{SPRITE_PRESET#2102}<color=#80C0FFFF>물</color>/{SPRITE_PRESET#2103}<color=#FF9999FF>불</color>/{SPRITE_PRESET#2104}<color=#FFACFFFF>번개</color> 원소의 힘을 흡수할 수 있다. (동시에 한 가지만 흡수 가능)\\n<color=#FFFFFFFF>야타용왕이 상술한 원소의 힘을 흡수했을 시: </color>흡수한 원소 타입에 따라 다음 스킬을 획득한다: {SPRITE_PRESET#2101}<color=#99FFFFFF>서리 습격</color>/{SPRITE_PRESET#2102}<color=#80C0FFFF>격류 범람</color>/{SPRITE_PRESET#2103}<color=#FF9999FF>화염 잠식</color>/{SPRITE_PRESET#2104}<color=#FFACFFFF>벼락 습격</color>"
+                },
+                "C126022": {
+                    "Name": "반암백상·원소 응결",
+                    "Desc": "<color=#FFFFFFFF>캐릭터가 {SPRITE_PRESET#2101}<color=#99FFFFFF>얼음</color>/{SPRITE_PRESET#2102}<color=#80C0FFFF>물</color>/{SPRITE_PRESET#2103}<color=#FF9999FF>불</color>/{SPRITE_PRESET#2104}<color=#FFACFFFF>번개</color> 원소 피해를 받은 후: </color>캐릭터가 현재 해당 원소의 힘을 흡수하지 않았을 경우, 해당 상태를 제거하고 캐릭터는 $[K1012]한다.",
+                    "Child": {
+                        "K1012": {
+                            "Name": "<color=#FFFFFFFF>해당 원소의 힘을 흡수</color>",
+                            "Desc": "야타용왕은 {SPRITE_PRESET#2101}<color=#99FFFFFF>얼음</color>/{SPRITE_PRESET#2102}<color=#80C0FFFF>물</color>/{SPRITE_PRESET#2103}<color=#FF9999FF>불</color>/{SPRITE_PRESET#2104}<color=#FFACFFFF>번개</color> 원소의 힘을 흡수할 수 있다. (동시에 한 가지만 흡수 가능)\\n<color=#FFFFFFFF>야타용왕이 상술한 원소의 힘을 흡수했을 시: </color>흡수한 원소 타입에 따라 다음 스킬을 획득한다: {SPRITE_PRESET#2101}<color=#99FFFFFF>서리 습격</color>/{SPRITE_PRESET#2102}<color=#80C0FFFF>격류 범람</color>/{SPRITE_PRESET#2103}<color=#FF9999FF>화염 잠식</color>/{SPRITE_PRESET#2104}<color=#FFACFFFF>벼락 습격</color>"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 3
+            }
+        },
+        "26024": {
+            "Name": "파멸의 산사태",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 흡수한 원소 타입 하나당 이번 피해가 1pt 증가한다",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_GEO",
+                "D__KEY__DAMAGE": 4
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "26025": {
+            "Name": "반암백상",
+            "Desc": "[패시브] 전투 시작 시, 시작부터 <color=#FFFFFFFF>$[C126021]</color>가 부착된다.",
+            "Child": {
+                "C126021": {
+                    "Name": "반암백상·원소 흡수",
+                    "Desc": "캐릭터는 {SPRITE_PRESET#2101}<color=#99FFFFFF>얼음</color>/{SPRITE_PRESET#2102}<color=#80C0FFFF>물</color>/{SPRITE_PRESET#2103}<color=#FF9999FF>불</color>/{SPRITE_PRESET#2104}<color=#FFACFFFF>번개</color> 원소의 힘을 흡수할 수 있다. 흡수한 원소 타입에 따라 다음 스킬을 획득한다: {SPRITE_PRESET#2101}<color=#99FFFFFF>$[S66013]</color>/{SPRITE_PRESET#2102}<color=#80C0FFFF>$[S66023]</color>/{SPRITE_PRESET#2103}<color=#FF9999FF>$[S66033]</color>/{SPRITE_PRESET#2104}<color=#FFACFFFF>$[S66043]</color>(캐릭터는 동시에 한 가지 원소만 흡수할 수 있으며 해당 상태는 캐릭터가 이미 흡수한 원소 타입의 개수를 기록한다)\\n<color=#FFFFFFFF>캐릭터가 현재와 다른 원소 한 가지를 흡수한 후: </color>흡수한 원소 타입의 원소 주사위를 1개 생성한다.",
+                    "Child": {
+                        "S66013": "S66013",
+                        "S66023": "S66023",
+                        "S66033": "S66033",
+                        "S66043": "S66043"
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 226022
+}

@@ -1,0 +1,50 @@
+{
+    "Type": "Action",
+    "Name": "戦意の表れ",
+    "Title": "エウルア·戦意の表れ",
+    "Desc": "氷浪のように唸れ——怨を絶つ！",
+    "Source": "キャッツテールでエウルアを招待して対戦し、対応する挑戦目標をクリアすることで獲得",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Eula",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_CRYO",
+            "count": 3
+        },
+        {
+            "costType": "GCG_COST_ENERGY",
+            "count": 2
+        }
+    ],
+    "Tag": [
+        "天賦",
+        "戦闘アクション"
+    ],
+    "Talent": {
+        "Name": "戦意の表れ",
+        "Desc": "$[K1]：味方の出撃キャラが<color=#FFFFFFFF>$[A1106]</color>の時、このカードを装備できる。\\n$[A1106]がこのカードを装備した後、直ちに<color=#FFD780FF>$[S11063]</color>を1回発動する。\\nこのカードを装備した$[A1106]が<color=#FFFFFFFF>$[S11062]</color>を発動する時、追加で<color=#FFFFFFFF>$[C111062]</color>に<color=#FFFFFFFF>「エネルギー量」</color>を1層重ねる。\\n（このカードはデッキに$[A1106]が含まれている場合のみ、デッキに追加できる）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>戦闘アクション</color>",
+                "Desc": "味方が戦闘アクションを1回行った後、相手のターンに移ります。\\n<color=#FFFFFFFF>このようなルールを持つ手札を出すのはクイックアクションではなく、戦闘アクションと見なされます。</color>"
+            },
+            "A1106": "戦意の表れ",
+            "S11063": "S11063",
+            "S11062": "S11062",
+            "C111062": {
+                "Name": "光臨の剣",
+                "Desc": "<color=#FFFFFFFF>$[A1106]が「通常攻撃」または「元素スキル」を発動すると</color>、このカードに<color=#FFFFFFFF>「エネルギー量」</color>を2層重ねる。ただし、$[A1106]はチャージを獲得できない。\\n<color=#FFFFFFFF>エンドフェーズ：</color>このカードを破棄し、$[K100]を3与える。<color=#FFFFFFFF>「エネルギー量」</color>1層につき、このダメージ+1。\\n（このカードの「$[K3]」に影響を与える効果は代わりに<color=#FFFFFFFF>「エネルギー量」</color>に影響を与えるようになる。）",
+                "Child": {
+                    "A1106": "戦意の表れ",
+                    "K100": {
+                        "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>",
+                        "Desc": "物理ダメージは元素付着させたり、元素反応を起こしたりはしません。"
+                    },
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                        "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                    }
+                }
+            }
+        }
+    }
+}

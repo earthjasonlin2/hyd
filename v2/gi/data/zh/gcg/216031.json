@@ -1,0 +1,35 @@
+{
+    "Type": "Action",
+    "Name": "炊金馔玉",
+    "Title": "钟离·炊金馔玉",
+    "Desc": "百川千仞，万古不移。",
+    "Source": "在猫尾酒馆中邀请钟离进行对局，完成相应挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Zhongli",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_GEO",
+            "count": 5
+        },
+        {}
+    ],
+    "Tag": [
+        "天赋",
+        "战斗行动"
+    ],
+    "Talent": {
+        "Name": "炊金馔玉",
+        "Desc": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1603]</color>时，装备此牌。\\n$[A1603]装备此牌后，立刻使用一次<color=#FFD780FF>$[S16033]</color>。\\n装备有此牌的$[A1603]生命值至少为7时，$[A1603]造成的伤害和我方召唤物造成的$[K106]+1。\\n（牌组中包含$[A1603]，才能加入牌组）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>战斗行动</color>",
+                "Desc": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+            },
+            "A1603": "炊金馔玉",
+            "S16033": "S16033",
+            "K106": {
+                "Name": "{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素伤害</color>",
+                "Desc": "和已附着的元素发生元素反应：\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2101}<color=#FFFFFFFF>结晶（冰）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2102}<color=#FFFFFFFF>结晶（水）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2103}<color=#FFFFFFFF>结晶（火）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2104}<color=#FFFFFFFF>结晶（雷）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。"
+            }
+        }
+    }
+}

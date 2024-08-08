@@ -1,0 +1,35 @@
+{
+    "Type": "Action",
+    "Name": "교차 화력",
+    "Title": "향릉·교차 화력",
+    "Desc": "주방에서 이 정도 화력은 평범할 뿐이다",
+    "Source": "캣테일 술집에서 향릉을 초대해 대전하고 상응하는 도전 목표 달성 후 획득",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Xiangling",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PYRO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "특성",
+        "전투 행동"
+    ],
+    "Talent": {
+        "Name": "교차 화력",
+        "Desc": "$[K1]: 아군 출전 캐릭터가 <color=#FFFFFFFF>$[A1302]</color>일 때 해당 카드를 장착할 수 있다.\\n$[A1302]이 해당 카드를 장착하면 즉시 <color=#FFD780FF>$[S13022]</color>을 1회 사용한다.\\n해당 카드를 장착한 $[A1302]이 <color=#FFFFFFFF>$[S13022]</color> 사용 시: 자신도 $[K103]를 1pt 준다.\\n(카드 덱에 $[A1302]이 있어야만 카드 덱에 추가 가능)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>전투 행동</color>",
+                "Desc": "아군이 전투 행동을 1회 진행하면 행동 순서가 상대에게 넘어간다.\\n<color=#FFFFFFFF>해당 규칙에 속하는 카드는 사용 시 빠른 행동이 아닌 전투 행동으로 간주한다</color>."
+            },
+            "A1302": "교차 화력",
+            "S13022": "S13022",
+            "K103": {
+                "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>불 원소 피해</color>",
+                "Desc": "{SPRITE_PRESET#2103}불 원소 부착 시 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>융해</color>: 이번 피해+2pt\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>증발</color>: 이번 피해+2pt\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>과부하</color>: 이번 피해+2pt, 대상이 다음 캐릭터로 강제 교체된다.\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>연소</color>: 이번 피해+1pt, 턴 종료 시 불 원소 피해를 1pt 주는 [<color=#FFFFFFFF>불타는 화염</color>]을 생성한다. (사용 가능 횟수: 1, 최대 중첩수: 2)"
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+{
+    "Type": "Action",
+    "Name": "在地为化",
+    "Title": "白术·在地为化",
+    "Desc": "「如能应天地通明，以气卫于外，清静治神，自可宝命无碍。」",
+    "Source": "在猫尾酒馆中邀请白术进行对局，完成相应挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Baizhuer",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_DENDRO",
+            "count": 4
+        },
+        {
+            "costType": "GCG_COST_ENERGY",
+            "count": 2
+        }
+    ],
+    "Tag": [
+        "天赋",
+        "战斗行动"
+    ],
+    "Talent": {
+        "Name": "在地为化",
+        "Desc": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1705]</color>时，装备此牌。\\n$[A1705]装备此牌后，立刻使用一次<color=#FFD780FF>$[S17053]</color>。\\n装备有此牌的$[A1705]在场，<color=#FFFFFFFF>$[C117053]</color>触发治疗效果时：生成1个出战角色类型的元素骰。\\n（牌组中包含$[A1705]，才能加入牌组）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>战斗行动</color>",
+                "Desc": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+            },
+            "A1705": "在地为化",
+            "S17053": "S17053",
+            "C117053": {
+                "Name": "无郤气护盾",
+                "Desc": "提供<color=#FFFFFFFF>1点$[K6]</color>，保护我方出战角色。\\n<color=#FFFFFFFF>此效果被移除，或被重复生成时：</color>造成1点$[K107]，治疗我方出战角色1点。",
+                "Child": {
+                    "K6": {
+                        "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>护盾</color>",
+                        "Desc": "此护盾所保护的角色受到伤害时，将会消耗护盾来抵消伤害。"
+                    },
+                    "K107": {
+                        "Name": "{SPRITE_PRESET#2107}<color=#7EC236FF>草元素伤害</color>",
+                        "Desc": "附着{SPRITE_PRESET#2107}草元素，可发生元素反应：\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>绽放</color>：本伤害+1，生成使下次火元素或雷元素伤害+2的[<color=#FFFFFFFF>草原核</color>]\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>燃烧</color>：本伤害+1，生成回合结束时造成1点火元素伤害的[<color=#FFFFFFFF>燃烧烈焰</color>]（可用次数1，最多叠加到2）\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>原激化</color>：本伤害+1，生成使下2次草元素或雷元素伤害+1的[<color=#FFFFFFFF>激化领域</color>]"
+                    }
+                }
+            }
+        }
+    }
+}

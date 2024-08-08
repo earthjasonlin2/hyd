@@ -1,0 +1,35 @@
+{
+    "Type": "Action",
+    "Name": "Deathly Cyclone",
+    "Title": "Consecrated Flying Serpent: Deathly Cyclone",
+    "Desc": "Though now imbued with the power of elemental manipulation, the Consecrated Beasts themselves still cannot fully digest the pieces of flesh they devoured from immortal carcasses. Instead, the pieces slowly fused with the beasts themselves, changing them...",
+    "Source": "Reward for accepting the Tavern Challenge against the Consecrated Flying Serpent at The Cat's Tail and achieving all corresponding challenge objectives in a Friendly Fracas",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_ChrysopeleaSacred",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_ANEMO",
+            "count": 1
+        },
+        {}
+    ],
+    "Tag": [
+        "Talent"
+    ],
+    "Talent": {
+        "Name": "Deathly Cyclone",
+        "Desc": "<color=#FFFFFFFF>When played: </color>Create 1 <color=#FFFFFFFF>$[C124051]</color> and place it into your Hand.\\nWhen your <color=#FFFFFFFF>$[A2503]</color>, who has this card equipped, is on the field and after you play <color=#FFFFFFFF>$[C124051]</color>: The next time you switch characters this Round, create 1 Elemental Die of your active character's Elemental Type.\\n(You must have $[A2503] in your deck to add this card to your deck)",
+        "Child": {
+            "C124051": {
+                "Name": "Bonecruncher's Energy Block",
+                "Desc": "Randomly $[K56] 1 card from your Hand with the highest original Cost and create 1 Elemental Die of your active character's Element. (Only 1 such card can be played per Round)",
+                "Child": {
+                    "K56": {
+                        "Name": "<color=#FFFFFFFF>Discard</color>",
+                        "Desc": "Use Action Cards or Character Skill effects to Discard Action Cards from Hand or Deck."
+                    }
+                }
+            },
+            "A2503": "Deathly Cyclone"
+        }
+    }
+}

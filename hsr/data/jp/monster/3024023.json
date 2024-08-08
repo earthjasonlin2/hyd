@@ -1,0 +1,173 @@
+{
+    "Id": 3024023,
+    "Name": "「星核ハンター」サム（スペック）",
+    "Desc": "コードが影響を受けた後の正常な投影。参照する本体は「星核ハンター」メンバーの重装甲を纏った謎の戦士。彼の鉄甲は灼熱の炎を放ち、戦場を火の海に変え、烈火の如き攻撃を仕掛けることができる。",
+    "MonsterCampID": null,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 1488,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/Monster_3024020.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "LittleBoss",
+    "SpeedBase": 120,
+    "StanceBase": 720,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.3000000002793968,
+    "Child": [
+        {
+            "Id": 3024023,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Thunder",
+                "Quantum",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Fire",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 302402301,
+                    "SkillName": "BHF-轟炎推進",
+                    "SkillDesc": "指定した味方単体に少量の炎属性ダメージを与える。",
+                    "DamageType": "Fire",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 302402302,
+                    "SkillName": "BHF-轟炎推進",
+                    "SkillDesc": "指定した味方単体に少量の炎属性ダメージを与える。ターゲットをロックオンし、次の行動でターゲットに「DHGDR-流火飛燼」を発動する。",
+                    "DamageType": "Fire",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 302402303,
+                    "SkillName": "BHF-天火",
+                    "SkillDesc": "指定した味方単体および隣接する味方に少量の炎属性ダメージを与える。",
+                    "DamageType": "Fire",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 302402304,
+                    "SkillName": "BBHF-焦土作戦",
+                    "SkillDesc": "味方全体に少量の炎属性ダメージを与える。",
+                    "DamageType": "Fire",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 302402305,
+                    "SkillName": "DHGDR-二次燃焼",
+                    "SkillDesc": "自身のHPを消費し、「二次燃焼」に入り「弱点無効」を解除する。「二次燃焼」に入ると自身を大幅に強化するが、攻撃を行うたびに自身のHPを消費する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302402306,
+                    "SkillName": "DHGDR-オーバーロード・スーパーノヴァ",
+                    "SkillDesc": "味方全体に炎属性ダメージを与え、高確率で攻撃を受けた味方を燃焼状態にする。",
+                    "DamageType": "Fire",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 302402307,
+                    "SkillName": "SGE-熔火フィールド",
+                    "SkillDesc": "「二次燃焼」状態に入った後、フィールドと味方のSPを燃やす。味方が燃えるSPを消費するとHPを消費し、さらに敵に本来のダメージ一定割合分の炎属性固定ダメージを与える。自身以外による治癒効果を受ける時の回復量が大幅にダウンする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302402308,
+                    "SkillName": "SGE-熔火エンジン",
+                    "SkillDesc": "「二次燃焼」のサムは「熔火エネルギー」を持つ。サムが燃えるSPを消費する攻撃を受ける時、対応する数の「熔火エネルギー」が減り、「熔火エネルギー」が尽きる、または弱点を撃破されたとき、「二次燃焼」が解除される。「二次燃焼」を解除した時、サムの受けるダメージがアップし、味方のSPがすべて回復する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302402309,
+                    "SkillName": "DHGDR-流火飛燼",
+                    "SkillDesc": "味方単体に炎属性ダメージを与える。スキル発動時に「熔火エネルギー」の層数が多いほど、ダメージもアップする。",
+                    "DamageType": "Fire",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302402310,
+                    "SkillName": "SEG-熱収束",
+                    "SkillDesc": "サムは「二次燃焼」の効果で攻撃時にHPを失うたびに、自身の与ダメージがアップする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302402311,
+                    "SkillName": "SEG-サーモバリックフィールド",
+                    "SkillDesc": "味方キャラが燃えるSPを使用するか「燃焼」ダメージを受けると、味方を「<u>焼身</u>」状態にする。サムの「二次燃焼」が終了すると「<u>焼身</u>」効果は解除される。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 3024023,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 3024023,
+            "WorldLevel": 1,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 3024023,
+            "WorldLevel": 2,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 3024023,
+            "WorldLevel": 3,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 3024023,
+            "WorldLevel": 4,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 3024023,
+            "WorldLevel": 5,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 3024023,
+            "WorldLevel": 6,
+            "DisplayItemList": []
+        }
+    ]
+}

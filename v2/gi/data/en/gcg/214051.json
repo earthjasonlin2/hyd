@@ -1,0 +1,36 @@
+{
+    "Type": "Action",
+    "Name": "Lightning Storm",
+    "Title": "Beidou: Lightning Storm",
+    "Desc": "Rumbling thunder goes well with lightning storms!",
+    "Source": "Reward for inviting Beidou to a duel at The Cat's Tail and achieving all corresponding challenge objectives",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Beidou",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_ELECTRO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "Talent",
+        "Combat Action"
+    ],
+    "Talent": {
+        "Name": "Lightning Storm",
+        "Desc": "$[K1]: When your active character is <color=#FFFFFFFF>$[A1405]</color>, equip this card.\\nAfter $[A1405] equips this card, immediately use <color=#FFD780FF>$[S14052]</color> once.\\nAftern $[A1405], who has this card equipped, uses <color=#FFFFFFFF>$[S14054]</color>: $[A1405]'s Normal Attacks this Round will cost 1 less $[K309]. (Can be triggered 2 times)\\n(You must have $[A1405] in your deck to add this card to your deck.)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+            },
+            "A1405": "Lightning Storm",
+            "S14052": "S14052",
+            "S14054": "S14054",
+            "K309": {
+                "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1109}Unaligned Element</color>",
+                "Desc": "You may use Elemental Dice of any element to pay this type of cost."
+            }
+        }
+    }
+}

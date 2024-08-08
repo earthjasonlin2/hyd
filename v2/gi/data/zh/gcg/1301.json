@@ -1,0 +1,74 @@
+{
+    "Type": "Character",
+    "Name": "迪卢克",
+    "Title": "晨曦暗面·迪卢克",
+    "Desc": "他的心是他最大的敌人。",
+    "Source": "初始牌组中获取",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Diluc",
+    "Hp": 10,
+    "Cost": 3,
+    "Tag": [
+        "火元素",
+        "双手剑",
+        "蒙德"
+    ],
+    "Talent": {
+        "13011": {
+            "Name": "淬炼之剑",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "13012": {
+            "Name": "逆焰之刃",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。每回合第三次使用本技能时，伤害+2。",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO"
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 3
+            }
+        },
+        "13013": {
+            "Name": "黎明",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，本角色附属<color=#FFFFFFFF>$[C113011]</color>。",
+            "Child": {
+                "D__KEY__DAMAGE": 8,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO",
+                "C113011": {
+                    "Name": "火元素附魔",
+                    "Desc": "所附属角色造成的$[K100]，变为$[K103]。\\n<color=#FFFFFFFF>$[K4]：2</color>",
+                    "Child": {
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>",
+                            "Desc": "物理伤害不会附着元素，也不会发生元素反应。"
+                        },
+                        "K103": {
+                            "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>火元素伤害</color>",
+                            "Desc": "附着{SPRITE_PRESET#2103}火元素，可发生元素反应：\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>融化</color>：本伤害+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>蒸发</color>：本伤害+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>超载</color>：本伤害+2，目标强制切换到下一个角色\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>燃烧</color>：本伤害+1，生成回合结束时造成1点火元素伤害的[<color=#FFFFFFFF>燃烧烈焰</color>]（可用次数1，最多叠加到2）"
+                        },
+                        "K4": {
+                            "Name": "<color=#FFFFFFFF>持续回合</color>",
+                            "Desc": "每回合结束阶段，<color=#FFFFFFFF>持续回合</color>-1；\\n<color=#FFFFFFFF>持续回合</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 4,
+                "GCG_COST_ENERGY": 3
+            }
+        }
+    },
+    "Related": 213011
+}

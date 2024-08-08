@@ -1,0 +1,76 @@
+{
+    "Type": "Character",
+    "Name": "凝光",
+    "Title": "月を覆う天権·凝光",
+    "Desc": "彼女が守っている最大の秘密。それは自分が璃月港の数多くの秘密を守っているということ。",
+    "Source": "キャッツテールで凝光を招待し、友好対戦に勝利することで獲得",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Ningguang",
+    "Hp": 10,
+    "Cost": 3,
+    "Tag": [
+        "岩元素",
+        "法器",
+        "璃月"
+    ],
+    "Talent": {
+        "16011": {
+            "Name": "千金擲",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_GEO",
+                "D__KEY__DAMAGE": 1
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "16012": {
+            "Name": "璇璣屏",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、<color=#FFFFFFFF>$[C116011]</color>を生成する。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_GEO",
+                "D__KEY__DAMAGE": 2,
+                "C116011": {
+                    "Name": "璇璣屏",
+                    "Desc": "<color=#FFFFFFFF>味方の出撃キャラが2以上のダメージを受けた時</color>、ダメージを1相殺してくれる。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                            "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 3
+            }
+        },
+        "16013": {
+            "Name": "天権崩玉",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。もし<color=#FFFFFFFF>$[C116011]</color>がフィールドに存在する場合、このダメージ+2。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_GEO",
+                "D__KEY__DAMAGE": 6,
+                "C116011": {
+                    "Name": "璇璣屏",
+                    "Desc": "<color=#FFFFFFFF>味方の出撃キャラが2以上のダメージを受けた時</color>、ダメージを1相殺してくれる。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                            "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 3,
+                "GCG_COST_ENERGY": 3
+            }
+        }
+    },
+    "Related": 216011
+}

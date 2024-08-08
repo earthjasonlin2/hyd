@@ -1,0 +1,61 @@
+{
+    "Type": "Action",
+    "Name": "目には目を",
+    "Title": "闇中回収",
+    "Desc": "それは一生覚えておかなければならないこと。誰に借りを作り、いつ返すのか。",
+    "Source": "キャッツテールのリトルプリンスのところで酒場挑戦を行い、デットエージェント·炎に挑戦して友好対戦で対応する挑戦目標をクリアすることで獲得",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_FatuiPyroAgent",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PYRO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "天賦",
+        "戦闘アクション"
+    ],
+    "Talent": {
+        "Name": "目には目を",
+        "Desc": "$[K1]：味方の出撃キャラが<color=#FFFFFFFF>$[A2301]</color>の時、このカードを装備できる。\\n$[A2301]がこのカードを装備した後、直ちに<color=#FFD780FF>$[S23012]</color>を1回発動する。\\nこのカードを装備した$[A2301]の生成した<color=#FFFFFFFF>$[C123012]</color>は以下の効果を獲得する。\\n初期$[K3]+1、付与されたキャラの与える$[K100]が$[K103]へと変わる。\\n（このカードはデッキに$[A2301]が含まれている場合のみ、デッキに追加できる）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>戦闘アクション</color>",
+                "Desc": "味方が戦闘アクションを1回行った後、相手のターンに移ります。\\n<color=#FFFFFFFF>このようなルールを持つ手札を出すのはクイックアクションではなく、戦闘アクションと見なされます。</color>"
+            },
+            "A2301": "目には目を",
+            "S23012": "S23012",
+            "C123012": {
+                "Name": "潜行",
+                "Desc": "付与されたキャラの受けるダメージ-1、与えるダメージ+1。\\n$[K3]：3\\n付与されたキャラの与える$[K100]が$[K103]へと変わる。",
+                "Child": {
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                        "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                    },
+                    "K100": {
+                        "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>",
+                        "Desc": "物理ダメージは元素付着させたり、元素反応を起こしたりはしません。"
+                    },
+                    "K103": {
+                        "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>炎元素ダメージ</color>",
+                        "Desc": "{SPRITE_PRESET#2103}炎元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>溶解</color>：ダメージ+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>蒸発</color>：ダメージ+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>過負荷</color>：ダメージ+2、目標を強制的に次のキャラにチェンジさせる\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>燃焼</color>：ダメージ+1、ラウンド終了時に炎元素ダメージを1与える「<color=#FFFFFFFF>燃焼烈焔</color>」を生成する（使用可能回数1回、最大2まで重ねられる）"
+                    }
+                }
+            },
+            "K3": {
+                "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+            },
+            "K100": {
+                "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>",
+                "Desc": "物理ダメージは元素付着させたり、元素反応を起こしたりはしません。"
+            },
+            "K103": {
+                "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>炎元素ダメージ</color>",
+                "Desc": "{SPRITE_PRESET#2103}炎元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>溶解</color>：ダメージ+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>蒸発</color>：ダメージ+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>過負荷</color>：ダメージ+2、目標を強制的に次のキャラにチェンジさせる\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>燃焼</color>：ダメージ+1、ラウンド終了時に炎元素ダメージを1与える「<color=#FFFFFFFF>燃焼烈焔</color>」を生成する（使用可能回数1回、最大2まで重ねられる）"
+            }
+        }
+    }
+}

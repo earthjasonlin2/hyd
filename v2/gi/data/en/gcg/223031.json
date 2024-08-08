@@ -1,0 +1,54 @@
+{
+    "Type": "Action",
+    "Name": "Scorpocalypse",
+    "Title": "Eremite Scorching Loremaster: Scorpocalypse",
+    "Desc": "\"For the Eternal Oasis!\"",
+    "Source": "Reward for accepting the Tavern Challenge against the Eremite Scorching Loremaster at The Cat's Tail and achieving all corresponding challenge objectives in a Friendly Fracas",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Muscleman",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PYRO",
+            "count": 3
+        },
+        {
+            "costType": "GCG_COST_ENERGY",
+            "count": 2
+        }
+    ],
+    "Tag": [
+        "Talent",
+        "Combat Action"
+    ],
+    "Talent": {
+        "Name": "Scorpocalypse",
+        "Desc": "$[K1]: When your active character is <color=#FFFFFFFF>$[A2303]</color>, equip this card.\\nAfter $[A2303] equips this card, immediately use <color=#FFD780FF>$[S23033]</color> once.\\n<color=#FFFFFFFF>$[C123031]</color> created by $[A2303] with this card equipped will deal +1 DMG in Rounds when $[A2303] has used a <color=#FFFFFFFF>Normal Attack</color> or <color=#FFFFFFFF>Elemental Skill</color>.\\n<color=#FFFFFFFF>$[C123031]</color>'s DMG reduction effect can now be triggered twice per Round.\\n(Your deck must contain $[A2303] to add this card to it)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+            },
+            "A2303": "Scorpocalypse",
+            "S23033": "S23033",
+            "C123031": {
+                "Name": "Spirit of Omen: Pyro Scorpion",
+                "Desc": "<color=#FFFFFFFF>End Phase:</color> Deal 1 $[K103].\\n<color=#FFFFFFFF>$[K3]: 2</color>\\n\\n<color=#FFFFFFFF>When entering play, when the Action Phase starts:</color> Attach $[C123033] to your $[A2303]. (When $[C123031] is in play, the character will take -1 DMG, once per Round.)",
+                "Child": {
+                    "K103": {
+                        "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>Pyro DMG</color>",
+                        "Desc": "Applies {SPRITE_PRESET#2103}Pyro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Melt</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Vaporize</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Overloaded</color>: DMG +2 for this instance, the target is forcibly switched to the next character\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Burning</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Burning Flame</color>] that will deal 1 Pyro DMG at the end of the Round (Takes effect once, max 2 stacks)"
+                    },
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                        "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                    },
+                    "C123033": {
+                        "Name": "Pyro Scorpion: Guardian Stance",
+                        "Desc": "When <color=#FFFFFFFF>$[C123031] is on the field: </color>the equipping character takes -1 DMG. (Once each Round)",
+                        "Child": {}
+                    },
+                    "A2303": "Scorpocalypse"
+                }
+            }
+        }
+    }
+}

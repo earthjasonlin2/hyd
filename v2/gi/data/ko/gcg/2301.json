@@ -1,0 +1,84 @@
+{
+    "Type": "Character",
+    "Name": "우인단·화염 채무 처리인",
+    "Title": "청산의 칼날·채무 처리인",
+    "Desc": "「죽음으로도 빚은 면할 수 없다. 빚은 반드시 갚아야 해…」",
+    "Source": "캣테일 술집의 왕자님을 통해 술집 도전 진행 및 친선 대전 난이도의 우인단·화염 채무 처리인에게 승리 후 획득",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_Fatuus",
+    "Hp": 9,
+    "Cost": 2,
+    "Tag": [
+        "불 원소",
+        "기타 무기",
+        "우인단"
+    ],
+    "Talent": {
+        "23011": {
+            "Name": "찌르기",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "23012": {
+            "Name": "기회 포착",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 본 캐릭터에게 <color=#FFFFFFFF>$[C123011]</color>이 부착된다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO",
+                "D__KEY__DAMAGE": 1,
+                "C123011": {
+                    "Name": "잠행",
+                    "Desc": "부착 캐릭터가 받는 피해-1pt, 주는 피해+1pt\\n$[K3]: 2",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 3
+            }
+        },
+        "23013": {
+            "Name": "불태워진 칼날",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO",
+                "D__KEY__DAMAGE": 5
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "23014": {
+            "Name": "잠행 마스터",
+            "Desc": "[패시브] 전투 시작 시, 시작부터 <color=#FFFFFFFF>$[C123011]</color>이 부착된다.",
+            "Child": {
+                "C123011": {
+                    "Name": "잠행",
+                    "Desc": "부착 캐릭터가 받는 피해-1pt, 주는 피해+1pt\\n$[K3]: 2",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 223011
+}

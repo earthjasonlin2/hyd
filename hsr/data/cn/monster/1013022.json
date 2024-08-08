@@ -1,0 +1,302 @@
+{
+    "Id": 1013022,
+    "Name": "自动机兵•齿狼（完整）",
+    "Desc": "代码受到影响后的完整投影。参照本体为以旧世界遗留的科技拼凑制造的自动机器单元，少见的人形机械，其右臂部分统一装置着链锯，似乎曾用于采集或建造作业。\\n战斗中，自动机兵「齿狼」（完整）的链锯会造成裂伤，令对手持续损失生命值。",
+    "MonsterCampID": null,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 441.7500000006985,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/Monster_1013020.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "Elite",
+    "SpeedBase": 172,
+    "StanceBase": 300,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.20000000018626451,
+    "Child": [
+        {
+            "Id": 1013022,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Ice",
+                "Thunder",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Fire",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 101302201,
+                    "SkillName": "砍伐指令",
+                    "SkillDesc": "对指定我方单体造成大量物理属性伤害，每次击中该目标都有概率使其陷入裂伤状态。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 101302202,
+                    "SkillName": "目标锁定",
+                    "SkillDesc": "锁定指定我方单体，下次行动对其施放【砍伐指令】。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101302203,
+                    "SkillName": "瞄准指令",
+                    "SkillDesc": "锁定2个我方目标，下次行动对其施放【砍伐指令】。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101302204,
+                    "SkillName": "协力指令",
+                    "SkillDesc": "锁定2个我方单体，下次行动对其施放【砍伐指令】。同时使【自动机兵·灰熊】进入蓄力状态，下次行动对我方全体施放【剿灭指令】。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101302205,
+                    "SkillName": "解体指令",
+                    "SkillDesc": "对指定我方单体造成物理属性伤害，并大概率对其增加1层裂伤状态。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 101302206,
+                    "SkillName": "解体拆除",
+                    "SkillDesc": "对指定我方单体造成物理属性伤害，并大概率对其增加1层裂伤状态。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 101302207,
+                    "SkillName": "dev_强力普攻",
+                    "SkillDesc": "dev_对指定我方单体造成物理属性伤害，并大概率对其增加多层裂伤。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 101302208,
+                    "SkillName": "作战加速",
+                    "SkillDesc": "使自身速度大幅提高。每次施放【瞄准指令】时使自身速度进一步小幅提高。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 1013022,
+            "AvatarExpReward": 150,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112011
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182006
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183002
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 1013022,
+            "WorldLevel": 1,
+            "AvatarExpReward": 200,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112011
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112012
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182006
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183002
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 1013022,
+            "WorldLevel": 2,
+            "AvatarExpReward": 250,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112011
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112012
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182006
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183002
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 1013022,
+            "WorldLevel": 3,
+            "AvatarExpReward": 300,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112011
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112012
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182006
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183002
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 1013022,
+            "WorldLevel": 4,
+            "AvatarExpReward": 350,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112012
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112013
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182006
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183002
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 1013022,
+            "WorldLevel": 5,
+            "AvatarExpReward": 400,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112012
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112013
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182006
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183002
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 1013022,
+            "WorldLevel": 6,
+            "AvatarExpReward": 400,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112012
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112013
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182006
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183002
+                }
+            ]
+        }
+    ]
+}

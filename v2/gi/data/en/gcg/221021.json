@@ -1,0 +1,33 @@
+{
+    "Type": "Action",
+    "Name": "Pain for Pain",
+    "Title": "La Signora: Pain for Pain",
+    "Desc": "\"You too will experience this suffering.\"",
+    "Source": "Reward for accepting the Tavern Challenge against La Signora at The Cat's Tail and achieving all corresponding challenge objectives in a Friendly Fracas",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_LaSignora",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PAIMON",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "Talent"
+    ],
+    "Talent": {
+        "Name": "Pain for Pain",
+        "Desc": "Can only be played if your active character is $[A2102]: When entering play, generate 3 Elemental Dice of the same Type as <color=#FFFFFFFF>$[A2102]</color>.\\nWhen this character takes at least 3 DMG: Negates 1 DMG, then apply <color=#FFFFFFFF>$[K1016]</color> or <color=#FFFFFFFF>$[K1017]</color> to the opposing active character based on $[A2102]'s state. (Once per Round)\\n(Your deck must contain $[A2102] to add this card to your deck.)",
+        "Child": {
+            "A2102": "Pain for Pain",
+            "K1016": {
+                "Name": "Sheer Cold",
+                "Desc": "<color=#FFFFFFFF>End Phase:</color> Deal 1 {SPRITE_PRESET#2101}<color=#99FFFFFF>Cryo DMG</color> to the character to which this is attached.\\n<color=#FFFFFFFF><color=#FFFFFFFF>Usage(s)</color>:1</color> (When the character with this attached has <color=#FFFFFFFF>Blazing Heat</color> attached to them, remove this effect.)"
+            },
+            "K1017": {
+                "Name": "Blazing Heat",
+                "Desc": "<color=#FFFFFFFF>End Phase:</color> Deal 1 {SPRITE_PRESET#2103}<color=#FF9999FF>Pyro DMG</color> to the character to which this is attached.\\n<color=#FFFFFFFF><color=#FFFFFFFF>Usage(s)</color>:1</color> (When the character with this attached has <color=#FFFFFFFF>Sheer Cold</color> attached to them, remove this effect.)"
+            }
+        }
+    }
+}

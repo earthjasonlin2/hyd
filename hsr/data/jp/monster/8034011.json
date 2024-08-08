@@ -1,0 +1,180 @@
+{
+    "Id": 8034011,
+    "Name": "「十の石心」博戯の砂金石（スペック）",
+    "Desc": "コードが影響を受けた後の正常な投影。参照する本体はスターピースカンパニー「戦略投資部」の高級幹部であり、「十の石心」の1人。基石を通して「存護」の使令の権能を手に入れた。その身をダイスとして、死地に立ちながら生を手にする。",
+    "MonsterCampID": 9,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 1395,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/Monster_8034010.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "LittleBoss",
+    "SpeedBase": 144,
+    "StanceBase": 600,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.3000000002793968,
+    "Child": [
+        {
+            "Id": 8034011,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Ice",
+                "Thunder"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Fire",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.40000000037252903
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 803401101,
+                    "SkillName": "一か八か",
+                    "SkillDesc": "指定した味方単体に虚数属性ダメージを与える。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 803401102,
+                    "SkillName": "分散投資",
+                    "SkillDesc": "連続でランダムな味方単体に少量の虚数属性ダメージを与える。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 5
+                },
+                {
+                    "Id": 803401103,
+                    "SkillName": "サイコロ噴泉",
+                    "SkillDesc": "味方全体に少量の虚数属性ダメージを与え、味方それぞれのEPを減らす。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401104,
+                    "SkillName": "ギャンブルタイム",
+                    "SkillDesc": "「オール・オア・ナッシング」を召喚し、味方単体をギャンブルデュエルに引きずり込む。「オール・オア・ナッシング」はギャンブルデュエルに参加している味方の攻撃を受けた後、攻撃者に1～6のポイントをランダムで与える。\\n「オール・オア・ナッシング」は残りHPが1になった後、「<u>時機到来</u>」を獲得する。1つ目の「オール・オア・ナッシング」が攻撃を受けるたびに、ギャンブルデュエルのオッズが倍になる。\\nギャンブルデュエルに参加している味方単体のターン終了時、ポイントが博戯の砂金石より小さい場合は敗北となり、攻撃を受ける。\\nポイントが博戯の砂金石より大きい場合は勝利となり、必殺技を発動できるようになる。\\nまた、賭けに参加していない味方は「観戦者は語る勿れ」状態になり、賭けが終了した後に解除される。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401105,
+                    "SkillName": "博打の宴",
+                    "SkillDesc": "「オール・オア・ナッシング」を召喚し、味方全体をギャンブルデュエルに引きずり込む。各「オール・オア・ナッシング」は攻撃を受けるたびに、攻撃した味方に1～6のポイントをランダムで与える。さらに残りHPが1になると「<u>時機到来</u>」効果を獲得し、最初の「オール・オア・ナッシング」が攻撃を受けるたびにギャンブルデュエルのオッズが倍増する。博戯の砂金石の次の行動時、ポイントが博戯の砂金石より小さい場合は敗北となり、攻撃を受ける。ポイントが博戯の砂金石より大きい場合は勝利となり、必殺技を発動できるようになる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401106,
+                    "SkillName": "狂熱の深淵",
+                    "SkillDesc": "「オール・オア・ナッシング」を召喚し、獲得ポイントを2倍にして味方全体をギャンブルデュエルに引きずり込む。各「オール・オア・ナッシング」は攻撃を受けるたびに、攻撃した味方に1～6のポイントをランダムで与える。さらに残りHPが1になると「<u>時機到来</u>」効果を獲得し、最初の「オール・オア・ナッシング」が攻撃を受けるたびにギャンブルデュエルのオッズが倍増する。博戯の砂金石の次の行動時、味方の合計ポイントが博戯の砂金石より小さい場合は全体が敗北となり、攻撃を受ける。合計ポイントが博戯の砂金石より大きい場合は全体が勝利となり、必殺技を発動できるようになる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401107,
+                    "SkillName": "敗者の退席",
+                    "SkillDesc": "ギャンブルデュエルに負けた味方単体に虚数属性ダメージを与え、高確率で攻撃を受けた味方を禁錮状態にする。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 803401108,
+                    "SkillName": "勝者総取り",
+                    "SkillDesc": "賭けに負けた味方すべてに大量の虚数属性のダメージを与え、攻撃を受けた味方を高確率で禁錮状態にする。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 803401109,
+                    "SkillName": "一度閉じた目のうそ",
+                    "SkillDesc": "ギャンブルデュエルの初期オッズが1、最大4。ギャンブルデュエルで勝った味方はオッズの層数分の「<u>フェンゴからの贈り物</u>」効果を獲得する。ギャンブルデュエルに負けた味方はオッズの層数分の「<u>フェンゴの呪い</u>」効果を獲得する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401110,
+                    "SkillName": "二度閉じた目のペテン",
+                    "SkillDesc": "ギャンブルデュエルの初期オッズが1、最大8。ギャンブルデュエルで勝った味方はオッズの層数分の「<u>フェンゴからの贈り物</u>」効果を獲得する。ギャンブルデュエルに負けた味方はオッズの層数分の「<u>フェンゴの呪い</u>」効果を獲得する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401111,
+                    "SkillName": "三度閉じた目の詭計",
+                    "SkillDesc": "ギャンブルデュエルの初期オッズが1、最大<unbreak>16</unbreak>。ギャンブルデュエルで勝つと味方全体がオッズの層数分の「<u>フェンゴからの贈り物</u>」効果を獲得する。ギャンブルデュエルに負けると味方全体がオッズの層数分の「<u>フェンゴの呪い</u>」効果を獲得する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401112,
+                    "SkillName": "借金の山",
+                    "SkillDesc": "ギャンブルデュエルを1回発動するたびに、博戯の砂金石のダメージがアップする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 8034011,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 8034011,
+            "WorldLevel": 1,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 8034011,
+            "WorldLevel": 2,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 8034011,
+            "WorldLevel": 3,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 8034011,
+            "WorldLevel": 4,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 8034011,
+            "WorldLevel": 5,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 8034011,
+            "WorldLevel": 6,
+            "DisplayItemList": []
+        }
+    ]
+}

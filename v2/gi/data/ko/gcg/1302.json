@@ -1,0 +1,82 @@
+{
+    "Type": "Character",
+    "Name": "향릉",
+    "Title": "만민백미·향릉",
+    "Desc": "요리사로서 그녀는 뭐든 해낼 수 있다",
+    "Source": "캣테일 술집에서 향릉 초대 및 친선 대전 난이도 승리 후 획득",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Xiangling",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "불 원소",
+        "장병기",
+        "리월"
+    ],
+    "Talent": {
+        "13021": {
+            "Name": "밀가루 음식 솜씨",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "13022": {
+            "Name": "누룽지 출격",
+            "Desc": "<color=#FFFFFFFF>$[C113021]</color>를 소환한다.",
+            "Child": {
+                "C113021": {
+                    "Name": "누룽지",
+                    "Desc": "<color=#FFFFFFFF>종료 단계:</color> $[K103]를 2pt 준다.\\n<color=#FFFFFFFF>$[K3]: 2</color>",
+                    "Child": {
+                        "K103": {
+                            "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>불 원소 피해</color>",
+                            "Desc": "{SPRITE_PRESET#2103}불 원소 부착 시 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>융해</color>: 이번 피해+2pt\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>증발</color>: 이번 피해+2pt\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>과부하</color>: 이번 피해+2pt, 대상이 다음 캐릭터로 강제 교체된다.\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>연소</color>: 이번 피해+1pt, 턴 종료 시 불 원소 피해를 1pt 주는 [<color=#FFFFFFFF>불타는 화염</color>]을 생성한다. (사용 가능 횟수: 1, 최대 중첩수: 2)"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 3
+            }
+        },
+        "13023": {
+            "Name": "화륜",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[C113022]</color>을 생성한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO",
+                "D__KEY__DAMAGE": 3,
+                "C113022": {
+                    "Name": "화륜",
+                    "Desc": "<color=#FFFFFFFF>아군 캐릭터가 스킬 사용 후:</color> $[K103]를 2pt 준다.\\n<color=#FFFFFFFF>$[K3]: 2</color>",
+                    "Child": {
+                        "K103": {
+                            "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>불 원소 피해</color>",
+                            "Desc": "{SPRITE_PRESET#2103}불 원소 부착 시 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>융해</color>: 이번 피해+2pt\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>증발</color>: 이번 피해+2pt\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>과부하</color>: 이번 피해+2pt, 대상이 다음 캐릭터로 강제 교체된다.\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>연소</color>: 이번 피해+1pt, 턴 종료 시 불 원소 피해를 1pt 주는 [<color=#FFFFFFFF>불타는 화염</color>]을 생성한다. (사용 가능 횟수: 1, 최대 중첩수: 2)"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 4,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 213021
+}

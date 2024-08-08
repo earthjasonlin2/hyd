@@ -1,0 +1,49 @@
+{
+    "Type": "Action",
+    "Name": "Gales of Reverie",
+    "Title": "Wanderer: Gales of Reverie",
+    "Desc": "\"Squall and fury!\"",
+    "Source": "Reward for inviting the Wanderer to a duel at The Cat's Tail and achieving all corresponding challenge objectives",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Wanderer",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_ANEMO",
+            "count": 4
+        },
+        {}
+    ],
+    "Tag": [
+        "Talent",
+        "Combat Action"
+    ],
+    "Talent": {
+        "Name": "Gales of Reverie",
+        "Desc": "$[K1]: When your active character is <color=#FFFFFFFF>$[A1506]</color>, equip this card.\\nAfter $[A1506] equips this card, immediately use <color=#FFD780FF>$[S15062]</color> once.\\nWhen your $[A1506], who has this card equipped, is in <color=#FFFFFFFF>$[C115061]</color> state and after using $[K51]: you will spend 1 less Elemental Die the next time you use \"Switch Character\" and deal 1 $[K105].\\n(You must have $[A1506] in your deck to add this card to your deck.)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+            },
+            "A1506": "Gales of Reverie",
+            "S15062": "S15062",
+            "C115061": {
+                "Name": "Windfavored",
+                "Desc": "<color=#FFFFFFFF>When the character to which this is attached performs a Normal Attack:</color> DMG dealt +2. If the opponent has characters on standby, then this Skill will deal damage to the next opposing character on standby instead.\\n<color=#FFFFFFFF>$[K3]: 2</color>",
+                "Child": {
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                        "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                    }
+                }
+            },
+            "K51": {
+                "Name": "<color=#FFFFFFFF>Charged Attack</color>",
+                "Desc": "Before your Action Phase, should the total number of your Elemental Dice be even, your Normal Attack will be considered a Charged Attack."
+            },
+            "K105": {
+                "Name": "{SPRITE_PRESET#2105}<color=#80FFD7FF>Anemo DMG</color>",
+                "Desc": "Reacts with Elements if they are already applied:\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Cryo Swirl</color>: Deals 1 Cryo DMG to all opposing characters except the target\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Hydro Swirl</color>: Deals 1 Hydro DMG to all opposing characters except the target\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Pyro Swirl</color>: Deals 1 Pyro DMG to all opposing characters except the target\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Electro Swirl</color>: Deals 1 Electro DMG to all opposing characters except the target"
+            }
+        }
+    }
+}

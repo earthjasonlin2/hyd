@@ -1,0 +1,62 @@
+{
+    "Name": "深罪の浸礼者",
+    "Desc": "複数の元素力を掌握したアビスの魔物。「進化」によってさらなる肢体を得た。\\n\\n<i>「『アビス』の本質は詰まるところ、元素とは相容れないものだ。だが、たとえ神の元素であっても、それに呑まれて歪められれば、やがて深邃なる意志の道具に成り果ててしまう。結果や効果の観点から簡単に言うなら、いわゆる『アビス』というのは宝盗団が持っている元素力に満ちた容器のようなものだ。そして複雑に言うならば、『神の目』とさほど大差のないものだろう…」</i>\\n——アフラシアブ洞窟にある、忘れ去られた誰かのノートより",
+    "Icon": "UI_MonsterIcon_Invoker_Archdeacon",
+    "Codex": "ABYSS",
+    "Title": "深罪の浸礼者",
+    "SpecialNames": [
+        "漆黒なる楽園の案内人"
+    ],
+    "Reward": [],
+    "Child": {
+        "22100501": {
+            "MonsterName": "Invoker_Archdeacon_01",
+            "Type": "MONSTER_BOSS",
+            "HpDrops": [
+                {
+                    "dropId": 22010030,
+                    "hpPercent": 75
+                },
+                {
+                    "dropId": 22010030,
+                    "hpPercent": 50
+                },
+                {
+                    "dropId": 22010030,
+                    "hpPercent": 25
+                }
+            ],
+            "KillDropId": 22010030,
+            "Prop": [
+                {
+                    "type": "FIGHT_PROP_BASE_HP",
+                    "growCurve": "GROW_CURVE_HP_2"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_ATTACK",
+                    "growCurve": "GROW_CURVE_ATTACK_2"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_DEFENSE",
+                    "growCurve": "GROW_CURVE_DEFENSE"
+                }
+            ],
+            "LocalLegend": false,
+            "SubHurt": {
+                "Fire": 0.1000000014901,
+                "Grass": 0.1000000014901,
+                "Water": 0.1000000014901,
+                "Elec": 0.1000000014901,
+                "Wind": 0.1000000014901,
+                "Ice": 0.1000000014901,
+                "Rock": 0.1000000014901,
+                "Physical": 0.1000000014901
+            },
+            "Base": {
+                "HP": 135.8399963378906,
+                "ATK": 100.4800033569336,
+                "DEF": 500
+            }
+        }
+    }
+}

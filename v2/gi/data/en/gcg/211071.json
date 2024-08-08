@@ -1,0 +1,45 @@
+{
+    "Type": "Action",
+    "Name": "Mystical Abandon",
+    "Title": "Shenhe: Mystical Abandon",
+    "Desc": "Transfigure, and let my will be embodied!",
+    "Source": "Reward for inviting Shenhe to a duel at The Cat's Tail and achieving all corresponding challenge objectives",
+    "Icon": "UI_Gcg_CardFace_Modify_Constellation_Shenhe",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_CRYO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "Talent",
+        "Combat Action"
+    ],
+    "Talent": {
+        "Name": "Mystical Abandon",
+        "Desc": "$[K1]: When your active character is <color=#FFFFFFFF>$[A1107]</color>, equip this card.\\nAfter $[A1107] equips this card, immediately use <color=#FFD780FF>$[S11072]</color> once.\\nWhen the <color=#FFFFFFFF>$[C111071]</color> created by your $[A1107], who has this card equipped, is triggered by your characters' <color=#FFFFFFFF>Normal Attacks</color>, its Usages will not decrease. (Once per Round)\\n(You must have $[A1107] in your deck to add this card to your deck.)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+            },
+            "A1107": "Mystical Abandon",
+            "S11072": "S11072",
+            "C111071": {
+                "Name": "Icy Quill",
+                "Desc": "Your character deals 1 increased $[K101] (Includes the DMG triggered by <color=#99FFFFFF>{SPRITE_PRESET#2101}Cryo-infused</color> Swirl reactions)\\n<color=#FFFFFFFF>$[K3]: 2</color>",
+                "Child": {
+                    "K101": {
+                        "Name": "{SPRITE_PRESET#2101}<color=#99FFFFFF>Cryo DMG</color>",
+                        "Desc": "Applies {SPRITE_PRESET#2101}Cryo and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Melt</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Superconduct</color>: DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Frozen</color>: DMG +1 for this instance, the target is unable to perform any Actions this Round (Can be removed in advance after the target receives Physical or Pyro DMG, in which case they will take +2 DMG)"
+                    },
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                        "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                    }
+                }
+            }
+        }
+    }
+}

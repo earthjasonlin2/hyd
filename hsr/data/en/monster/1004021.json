@@ -1,0 +1,131 @@
+{
+    "Id": 1004021,
+    "Name": "Gepard",
+    "Desc": "Captain of the Silvermane Guards.\\nGepard can command his soldiers to focus their attacks, and provide each of them with a barrier that blocks one attack.",
+    "MonsterCampID": null,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 744,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/Monster_1004020.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "LittleBoss",
+    "SpeedBase": 120,
+    "StanceBase": 180,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.20000000018626451,
+    "Child": [
+        {
+            "Id": 1004021,
+            "AttackModifyRatio": 0.8333330010063946,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Thunder",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Fire",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 100402101,
+                    "SkillName": "Fist of Conviction",
+                    "SkillDesc": "Deals minor Ice DMG to a single target.",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 100402102,
+                    "SkillName": "Smite of Frost",
+                    "SkillDesc": "Deals Ice DMG to a single target.",
+                    "DamageType": "Ice",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 100402103,
+                    "SkillName": "Garrison Aura Field",
+                    "SkillDesc": "Grants a Barrier to another friendly unit. The Barrier nullifies all DMG received except for DoT until after the friendly unit is attacked.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100402104,
+                    "SkillName": "Frigid Waterfall",
+                    "SkillDesc": "Deals Ice DMG to all targets.",
+                    "DamageType": "Ice",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 100402105,
+                    "SkillName": "Siege Support",
+                    "SkillDesc": "Summons Silvermane Gunners and Locks Onto a single target for all attacks.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 1004021,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1004021,
+            "WorldLevel": 1,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1004021,
+            "WorldLevel": 2,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1004021,
+            "WorldLevel": 3,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1004021,
+            "WorldLevel": 4,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1004021,
+            "WorldLevel": 5,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1004021,
+            "WorldLevel": 6,
+            "DisplayItemList": []
+        }
+    ]
+}

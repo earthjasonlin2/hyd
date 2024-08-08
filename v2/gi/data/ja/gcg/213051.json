@@ -1,0 +1,53 @@
+{
+    "Type": "Action",
+    "Name": "長野原龍勢流星群",
+    "Title": "宵宮·長野原龍勢流星群",
+    "Desc": "長野原式·優勢！花火の蓄え学説。",
+    "Source": "キャッツテールで宵宮を招待して対戦し、対応する挑戦目標をクリアすることで獲得",
+    "Icon": "UI_Gcg_CardFace_Modify_Constellation_Yoyimiya",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PYRO",
+            "count": 1
+        },
+        {}
+    ],
+    "Tag": [
+        "天賦",
+        "戦闘アクション"
+    ],
+    "Talent": {
+        "Name": "長野原龍勢流星群",
+        "Desc": "$[K1]：味方の出撃キャラが<color=#FFFFFFFF>$[A1305]</color>の時、このカードを装備できる。\\n$[A1305]がこのカードを装備した後、直ちに<color=#FFD780FF>$[S13052]</color>を1回発動する。\\nこのカードを装備した$[A1305]が生成する<color=#FFFFFFFF>$[C113051]</color>が発動すると、追加で$[K103]を1与える。\\n（このカードはデッキに$[A1305]が含まれている場合のみ、デッキに追加できる）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>戦闘アクション</color>",
+                "Desc": "味方が戦闘アクションを1回行った後、相手のターンに移ります。\\n<color=#FFFFFFFF>このようなルールを持つ手札を出すのはクイックアクションではなく、戦闘アクションと見なされます。</color>"
+            },
+            "A1305": "長野原龍勢流星群",
+            "S13052": "S13052",
+            "C113051": {
+                "Name": "庭火の焔硝",
+                "Desc": "付与されたキャラの<color=#FFFFFFFF>通常攻撃</color>ダメージ+1。また、与える$[K100]が$[K103]へと変わる。\\n<color=#FFFFFFFF>$[K3]：3</color>",
+                "Child": {
+                    "K100": {
+                        "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>",
+                        "Desc": "物理ダメージは元素付着させたり、元素反応を起こしたりはしません。"
+                    },
+                    "K103": {
+                        "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>炎元素ダメージ</color>",
+                        "Desc": "{SPRITE_PRESET#2103}炎元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>溶解</color>：ダメージ+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>蒸発</color>：ダメージ+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>過負荷</color>：ダメージ+2、目標を強制的に次のキャラにチェンジさせる\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>燃焼</color>：ダメージ+1、ラウンド終了時に炎元素ダメージを1与える「<color=#FFFFFFFF>燃焼烈焔</color>」を生成する（使用可能回数1回、最大2まで重ねられる）"
+                    },
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                        "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                    }
+                }
+            },
+            "K103": {
+                "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>炎元素ダメージ</color>",
+                "Desc": "{SPRITE_PRESET#2103}炎元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>溶解</color>：ダメージ+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>蒸発</color>：ダメージ+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>過負荷</color>：ダメージ+2、目標を強制的に次のキャラにチェンジさせる\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>燃焼</color>：ダメージ+1、ラウンド終了時に炎元素ダメージを1与える「<color=#FFFFFFFF>燃焼烈焔</color>」を生成する（使用可能回数1回、最大2まで重ねられる）"
+            }
+        }
+    }
+}

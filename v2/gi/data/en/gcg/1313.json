@@ -1,0 +1,151 @@
+{
+    "Type": "Character",
+    "Name": "Chevreuse",
+    "Title": "Executor of Justice: Chevreuse",
+    "Desc": "Righteous Enforcer of the Law.",
+    "Source": "Reward for inviting Chevreuse to a duel at The Cat's Tail and claiming victory in a Friendly Fracas with her",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Chevreuse",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "Pyro",
+        "Polearm",
+        "Fontaine",
+        "Arkhe: Ousia"
+    ],
+    "Talent": {
+        "13131": {
+            "Name": "Line Bayonet Thrust EX",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "13132": {
+            "Name": "Short-Range Rapid Interdiction Fire",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].\\n<color=#FFFFFFFF>After the Skill finalizes:</color> If your Hand has <color=#FFFFFFFF>$[C113131]</color>: $[K56] 1 of them and heal the character on your team that has taken the most damage for 1 HP.",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO",
+                "C113131": {
+                    "Name": "Overcharged Ball",
+                    "Desc": "$[K1]: Deal 1 $[K103] to the opponent's active character.\\n<color=#FFFFFFFF>When this card is $[K56]ed:</color> Deal 1 $[K103] to the opponent's active character.",
+                    "Child": {
+                        "K1": {
+                            "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                            "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+                        },
+                        "K103": {
+                            "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>Pyro DMG</color>",
+                            "Desc": "Applies {SPRITE_PRESET#2103}Pyro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Melt</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Vaporize</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Overloaded</color>: DMG +2 for this instance, the target is forcibly switched to the next character\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Burning</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Burning Flame</color>] that will deal 1 Pyro DMG at the end of the Round (Takes effect once, max 2 stacks)"
+                        },
+                        "K56": {
+                            "Name": "<color=#FFFFFFFF>Discard</color>",
+                            "Desc": "Use Action Cards or Character Skill effects to Discard Action Cards from Hand or Deck."
+                        }
+                    }
+                },
+                "K56": {
+                    "Name": "<color=#FFFFFFFF>Discard</color>",
+                    "Desc": "Use Action Cards or Character Skill effects to Discard Action Cards from Hand or Deck."
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 3
+            }
+        },
+        "13133": {
+            "Name": "Ring of Bursting Grenades",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], creates 1 <color=#FFFFFFFF>$[C113132]</color> on the opponent's side of the field.",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO",
+                "C113132": {
+                    "Name": "Secondary Explosive Shells",
+                    "Desc": "<color=#FFFFFFFF>After a character switch takes place on this side of the field:</color> Deal 1 $[K103] to the character switched to.\\n<color=#FFFFFFFF>$[K3]: 2</color>",
+                    "Child": {
+                        "K103": {
+                            "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>Pyro DMG</color>",
+                            "Desc": "Applies {SPRITE_PRESET#2103}Pyro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Melt</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Vaporize</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Overloaded</color>: DMG +2 for this instance, the target is forcibly switched to the next character\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Burning</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Burning Flame</color>] that will deal 1 Pyro DMG at the end of the Round (Takes effect once, max 2 stacks)"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "13134": {
+            "Name": "Vertical Force Coordination",
+            "Desc": "(Passive) <color=#FFFFFFFF>After an opponent's character takes Overloaded reaction DMG:</color> Create 1 <color=#FFFFFFFF>$[C113131]</color> card in your Hand (Once per Round)",
+            "Child": {
+                "C113131": {
+                    "Name": "Overcharged Ball",
+                    "Desc": "$[K1]: Deal 1 $[K103] to the opponent's active character.\\n<color=#FFFFFFFF>When this card is $[K56]ed:</color> Deal 1 $[K103] to the opponent's active character.",
+                    "Child": {
+                        "K1": {
+                            "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                            "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+                        },
+                        "K103": {
+                            "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>Pyro DMG</color>",
+                            "Desc": "Applies {SPRITE_PRESET#2103}Pyro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Melt</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Vaporize</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Overloaded</color>: DMG +2 for this instance, the target is forcibly switched to the next character\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Burning</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Burning Flame</color>] that will deal 1 Pyro DMG at the end of the Round (Takes effect once, max 2 stacks)"
+                        },
+                        "K56": {
+                            "Name": "<color=#FFFFFFFF>Discard</color>",
+                            "Desc": "Use Action Cards or Character Skill effects to Discard Action Cards from Hand or Deck."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        },
+        "13135": {
+            "Name": "Short-Range Rapid Interdiction Fire",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].\\n<color=#FFFFFFFF>After the Skill finalizes:</color> If your Hand has <color=#FFFFFFFF>$[C113131]</color>: $[K56] 1 of them and heal the character on your team that has taken the most damage for 1 HP.",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO",
+                "C113131": {
+                    "Name": "Overcharged Ball",
+                    "Desc": "$[K1]: Deal 1 $[K103] to the opponent's active character.\\n<color=#FFFFFFFF>When this card is $[K56]ed:</color> Deal 1 $[K103] to the opponent's active character.",
+                    "Child": {
+                        "K1": {
+                            "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                            "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+                        },
+                        "K103": {
+                            "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>Pyro DMG</color>",
+                            "Desc": "Applies {SPRITE_PRESET#2103}Pyro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Melt</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Vaporize</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Overloaded</color>: DMG +2 for this instance, the target is forcibly switched to the next character\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Burning</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Burning Flame</color>] that will deal 1 Pyro DMG at the end of the Round (Takes effect once, max 2 stacks)"
+                        },
+                        "K56": {
+                            "Name": "<color=#FFFFFFFF>Discard</color>",
+                            "Desc": "Use Action Cards or Character Skill effects to Discard Action Cards from Hand or Deck."
+                        }
+                    }
+                },
+                "K56": {
+                    "Name": "<color=#FFFFFFFF>Discard</color>",
+                    "Desc": "Use Action Cards or Character Skill effects to Discard Action Cards from Hand or Deck."
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {}
+        }
+    },
+    "Related": 213131
+}

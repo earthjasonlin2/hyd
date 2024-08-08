@@ -1,0 +1,97 @@
+{
+    "Type": "Character",
+    "Name": "キャンディス",
+    "Title": "浮金の誓願·キャンディス",
+    "Desc": "赤砂浮金、守護の誓約。",
+    "Source": "キャッツテールでキャンディスを招待し、友好対戦に勝利することで獲得",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Candace",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "水元素",
+        "長柄武器",
+        "スメール"
+    ],
+    "Talent": {
+        "12071": {
+            "Name": "流耀槍術·守勢",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "12072": {
+            "Name": "聖儀·蒼鷺による庇護",
+            "Desc": "本キャラに<color=#FFFFFFFF>$[C112071]</color>を付与し、$[K53]に入る：<color=#FFFFFFFF>$[S12074]</color>。",
+            "Child": {
+                "C112071": {
+                    "Name": "蒼鷺シールド",
+                    "Desc": "スキル準備期間中：$[K6]を2提供し、付与されたキャラを守る。",
+                    "Child": {
+                        "K6": {
+                            "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>シールド</color>",
+                            "Desc": "該当シールドに守られたキャラがダメージを受けた時、シールドを消費してダメージと相殺することができます。"
+                        }
+                    }
+                },
+                "K53": {
+                    "Name": "<color=#FFFFFFFF>スキル準備</color>",
+                    "Desc": "スキルの中には、直接発動のできないものもあります。発動するには、一定のターン数<color=#FFFFFFFF>準備</color>する必要があります。\\nプレイヤーがアクションするとき、もし該当プレイヤーの「出撃キャラ」がスキルを<color=#FFFFFFFF>準備</color>している場合、該当プレイヤーのアクションはスキップされます。もしスキルの<color=#FFFFFFFF>準備</color>が完了した場合、そのスキルは直ちに発動されます（このような<color=#FFFFFFFF>準備</color>を必要とするスキルは、「スキルを発動した後」、「キャラが元素反応を起こした後」に生じる効果を発動させることができません）。\\nスキルを<color=#FFFFFFFF>準備</color>できるのは「出撃キャラ」のみとなります。スキルを<color=#FFFFFFFF>準備</color>している「出撃キャラ」が待機キャラにチェンジすると、スキルの<color=#FFFFFFFF>準備</color>は中断されます。"
+                },
+                "S12074": "S12074"
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3
+            }
+        },
+        "12073": {
+            "Name": "聖儀·灰鴒の呼び潮",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、<color=#FFFFFFFF>$[C112072]</color>を生成する。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "D__KEY__DAMAGE": 2,
+                "C112072": {
+                    "Name": "赤冠より授かりし祝福",
+                    "Desc": "味方キャラの<color=#FFFFFFFF>通常攻撃</color>の与えるダメージ+1。\\n味方の片手剣、両手剣、長柄武器のキャラの与える$[K100]が$[K102]へと変わる。\\n<color=#FFFFFFFF>味方がキャラチェンジした後</color>、$[K102]を1与える。（各ラウンドで1回のみ）\\n\\n<color=#FFFFFFFF>$[K4]：2</color>",
+                    "Child": {
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>",
+                            "Desc": "物理ダメージは元素付着させたり、元素反応を起こしたりはしません。"
+                        },
+                        "K102": {
+                            "Name": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素ダメージ</color>",
+                            "Desc": "{SPRITE_PRESET#2102}水元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2103}<color=#FFFFFFFF>蒸発</color>：ダメージ+2\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}<color=#FFFFFFFF>感電</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2101}<color=#FFFFFFFF>凍結</color>：ダメージ+1、目標はこのラウンドで行動不能になる（物理ダメージまたは炎ダメージを受けると、即座に解除されるがダメージ+2となる）\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}<color=#FFFFFFFF>開花</color>：ダメージ+1、次の炎元素または雷元素ダメージを+2できる「<color=#FFFFFFFF>草原核</color>」を生成する"
+                        },
+                        "K4": {
+                            "Name": "<color=#FFFFFFFF>継続ラウンド数</color>",
+                            "Desc": "各ラウンドのエンドフェーズで、<color=#FFFFFFFF>継続ラウンド数</color>が1マイナスされます。\\n<color=#FFFFFFFF>継続ラウンド数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "12074": {
+            "Name": "蒼鷺盾撃",
+            "Desc": "（1ターンの準備が必要）\\n$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "D__KEY__DAMAGE": 3
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {}
+        }
+    },
+    "Related": 212071
+}

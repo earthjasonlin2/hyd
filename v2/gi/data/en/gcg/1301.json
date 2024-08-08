@@ -1,0 +1,74 @@
+{
+    "Type": "Character",
+    "Name": "Diluc",
+    "Title": "\"Dark Side of Dawn\" Diluc",
+    "Desc": "His heart is his greatest foe.",
+    "Source": "Obtained from the initial deck",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Diluc",
+    "Hp": 10,
+    "Cost": 3,
+    "Tag": [
+        "Pyro",
+        "Claymore",
+        "Mondstadt"
+    ],
+    "Talent": {
+        "13011": {
+            "Name": "Tempered Sword",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "13012": {
+            "Name": "Searing Onslaught",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. For the third use of this Skill each Round, deals +2 DMG.",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO"
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 3
+            }
+        },
+        "13013": {
+            "Name": "Dawn",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. This character gains <color=#FFFFFFFF>$[C113011]</color>.",
+            "Child": {
+                "D__KEY__DAMAGE": 8,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO",
+                "C113011": {
+                    "Name": "Pyro Infusion",
+                    "Desc": "The character to which this is attached has their $[K100] dealt converted to $[K103].\\n<color=#FFFFFFFF>$[K4]: 2</color>",
+                    "Child": {
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>",
+                            "Desc": "Physical DMG will not apply any Elements, nor can it engage in Elemental Reactions."
+                        },
+                        "K103": {
+                            "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>Pyro DMG</color>",
+                            "Desc": "Applies {SPRITE_PRESET#2103}Pyro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Melt</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Vaporize</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Overloaded</color>: DMG +2 for this instance, the target is forcibly switched to the next character\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Burning</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Burning Flame</color>] that will deal 1 Pyro DMG at the end of the Round (Takes effect once, max 2 stacks)"
+                        },
+                        "K4": {
+                            "Name": "<color=#FFFFFFFF>Duration (Rounds)</color>",
+                            "Desc": "Each time you reach the end of a Round, <color=#FFFFFFFF>Duration (Rounds)</color> -1.\\nThis card will be discarded immediately once <color=#FFFFFFFF>Duration (Rounds)</color> runs out."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 4,
+                "GCG_COST_ENERGY": 3
+            }
+        }
+    },
+    "Related": 213011
+}

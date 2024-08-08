@@ -1,0 +1,28 @@
+{
+    "Type": "Action",
+    "Name": "落下斬り",
+    "Title": "落下急襲法",
+    "Desc": "「…途中で風の翼を広げるなよ！見つかっちゃうぞ！」",
+    "Source": "",
+    "Icon": "UI_Gcg_CardFace_Event_Event_Xialuo",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PAIMON",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "戦闘アクション"
+    ],
+    "Talent": {
+        "Name": "落下斬り",
+        "Desc": "$[K1]：目標キャラにチェンジする。その後、該当キャラが<color=#FFFFFFFF>「通常攻撃」</color>を発動する。",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>戦闘アクション</color>",
+                "Desc": "味方が戦闘アクションを1回行った後、相手のターンに移ります。\\n<color=#FFFFFFFF>このようなルールを持つ手札を出すのはクイックアクションではなく、戦闘アクションと見なされます。</color>"
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "Type": "Action",
+    "Name": "Kyouka Fuushi",
+    "Title": "Kamisato Ayato: Kyouka Fuushi",
+    "Desc": "The courtyard remains fragrant even in the bitterest winter.",
+    "Source": "Reward for inviting Kamisato Ayato to a duel at The Cat's Tail and achieving all corresponding challenge objectives",
+    "Icon": "UI_Gcg_CardFace_Modify_Constellation_Ayato",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_HYDRO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "Talent",
+        "Combat Action"
+    ],
+    "Talent": {
+        "Name": "Kyouka Fuushi",
+        "Desc": "$[K1]: When your active character is <color=#FFFFFFFF>$[A1206]</color>, equip this card.\\nAfter $[A1206] equips this card, immediately use <color=#FFD780FF>$[S12062]</color> once.\\nWhen your $[A1206], who has this card equipped, triggers the effects of <color=#FFFFFFFF>$[C112061]</color>, deal +2 additional DMG if the target's remaining HP is equal to or less than 6.\\n(You must have $[A1206] in your deck to add this card to your deck.)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+            },
+            "A1206": "Kyouka Fuushi",
+            "S12062": "S12062",
+            "C112061": {
+                "Name": "Takimeguri Kanka",
+                "Desc": "The character to which this is attached has their <color=#FFFFFFFF>Normal Attacks</color> deal +1 DMG, and their $[K100] dealt converted to $[K102].\\n<color=#FFFFFFFF>$[K3]: 3</color>",
+                "Child": {
+                    "K100": {
+                        "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>",
+                        "Desc": "Physical DMG will not apply any Elements, nor can it engage in Elemental Reactions."
+                    },
+                    "K102": {
+                        "Name": "{SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro DMG</color>",
+                        "Desc": "Applies {SPRITE_PRESET#2102}Hydro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Vaporize</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Electro-Charged</color>：DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Frozen</color>: DMG +1 for this instance, the target is unable to perform any Actions this Round (Can be removed in advance after the target receives +2 Physical or Pyro DMG)\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Bloom</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Dendro Core</color>] that grants +2 DMG to the next instance of Pyro or Electro DMG"
+                    },
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                        "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                    }
+                }
+            }
+        }
+    }
+}

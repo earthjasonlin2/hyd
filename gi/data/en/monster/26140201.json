@@ -1,0 +1,118 @@
+{
+    "Name": "Praetorian Golem",
+    "Desc": "A moving statue shaped like a warrior who will swing their sword at all who dare trespass upon the area under their guardianship. It is unclear if it is a soul or magic that powers them.\\nThey say that legions of golems once conquered the nations that called the high sea home, and this might have been amongst their number. The great towers and palaces that now sleep beneath the waves once bore witness to the fate of those who stand in the path of the wheel of fate.",
+    "Icon": "UI_MonsterIcon_Golem_Legion",
+    "Codex": "BEAST",
+    "Title": "Praetorian of Legion Athanatoi",
+    "SpecialNames": [
+        "Guardian of the Golden Symphony"
+    ],
+    "Reward": [
+        {
+            "Id": 202,
+            "Rank": 3,
+            "Icon": "UI_ItemIcon_202"
+        },
+        {
+            "Id": 112098,
+            "Rank": 2,
+            "Icon": "UI_ItemIcon_112098"
+        },
+        {
+            "Id": 112099,
+            "Rank": 3,
+            "Icon": "UI_ItemIcon_112099"
+        },
+        {
+            "Id": 112100,
+            "Rank": 4,
+            "Icon": "UI_ItemIcon_112100"
+        },
+        {
+            "Id": 400022,
+            "Rank": 3,
+            "Icon": "UI_RelicIcon_10005_4"
+        },
+        {
+            "Id": 400032,
+            "Rank": 3,
+            "Icon": "UI_RelicIcon_10007_4"
+        },
+        {
+            "Id": 400042,
+            "Rank": 3,
+            "Icon": "UI_RelicIcon_10009_4"
+        },
+        {
+            "Id": 400062,
+            "Rank": 3,
+            "Icon": "UI_RelicIcon_10013_4"
+        },
+        {
+            "Id": 400023,
+            "Rank": 4,
+            "Icon": "UI_RelicIcon_10005_4"
+        },
+        {
+            "Id": 400033,
+            "Rank": 4,
+            "Icon": "UI_RelicIcon_10007_4"
+        },
+        {
+            "Id": 400043,
+            "Rank": 4,
+            "Icon": "UI_RelicIcon_10009_4"
+        }
+    ],
+    "Child": {
+        "26140201": {
+            "MonsterName": "Golem_Legion",
+            "Type": "MONSTER_ORDINARY",
+            "HpDrops": [
+                {
+                    "dropId": 22010010,
+                    "hpPercent": 75
+                },
+                {
+                    "dropId": 22010010,
+                    "hpPercent": 50
+                },
+                {
+                    "dropId": 22010010,
+                    "hpPercent": 25
+                }
+            ],
+            "KillDropId": 22010030,
+            "Prop": [
+                {
+                    "type": "FIGHT_PROP_BASE_HP",
+                    "growCurve": "GROW_CURVE_HP_2"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_ATTACK",
+                    "growCurve": "GROW_CURVE_ATTACK_2"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_DEFENSE",
+                    "growCurve": "GROW_CURVE_DEFENSE"
+                }
+            ],
+            "LocalLegend": false,
+            "SubHurt": {
+                "Fire": 0.1000000014901,
+                "Grass": 0.1000000014901,
+                "Water": 0.1000000014901,
+                "Elec": 0.1000000014901,
+                "Wind": 0.1000000014901,
+                "Ice": 0.1000000014901,
+                "Rock": 0.1000000014901,
+                "Physical": 0.1000000014901
+            },
+            "Base": {
+                "HP": 54.3359985351563,
+                "ATK": 62.7999992370605,
+                "DEF": 500
+            }
+        }
+    }
+}

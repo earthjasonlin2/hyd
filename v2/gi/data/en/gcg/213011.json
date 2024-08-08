@@ -1,0 +1,31 @@
+{
+    "Type": "Action",
+    "Name": "Flowing Flame",
+    "Title": "Diluc: Flowing Flame",
+    "Desc": "A simple way out of perilous situations.",
+    "Source": "Reward for inviting Diluc to a duel at The Cat's Tail and achieving all corresponding challenge objectives",
+    "Icon": "UI_Gcg_CardFace_Modify_Constellation_Diluc",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PYRO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "Talent",
+        "Combat Action"
+    ],
+    "Talent": {
+        "Name": "Flowing Flame",
+        "Desc": "$[K1]: When your active character is <color=#FFFFFFFF>$[A1301]</color>, equip this card.\\nAfter $[A1301] equips this card, immediately use <color=#FFD780FF>$[S13012]</color> once.\\nWhen your $[A1301], who has this card equipped, uses <color=#FFFFFFFF>$[S13012]</color> for the second and third times in one Round, spend 1 less {SPRITE_PRESET#1103}<color=#FF9999FF>Pyro Die</color>.\\n(You must have $[A1301] in your deck to add this card to your deck.)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+            },
+            "A1301": "Flowing Flame",
+            "S13012": "S13012"
+        }
+    }
+}

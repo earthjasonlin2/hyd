@@ -1,0 +1,88 @@
+{
+    "Type": "Character",
+    "Name": "若陀龍王",
+    "Title": "古岩龍祖·若陀龍王",
+    "Desc": "鎖の振動と巨龍の轟きが、山々の間に響き渡ったという。",
+    "Source": "キャッツテールのリトルプリンスのところで酒場挑戦を行い、若陀龍王に挑戦して友好対戦に勝利することで獲得",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_Dahaka",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "岩元素",
+        "他の武器",
+        "魔物"
+    ],
+    "Talent": {
+        "26021": {
+            "Name": "砕岩衝撃",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "26022": {
+            "Name": "威厳に満ちた気配",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。結晶反応を起こした場合、キャラは$[K1012]。\\n今回のスキル発動でキャラが元素の力を吸収しなかった場合、<color=#FFFFFFFF>$[C126022]</color>を付与する。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_GEO",
+                "D__KEY__DAMAGE": 3,
+                "K1012": {
+                    "Name": "<color=#FFFFFFFF>対応元素の力を吸収する</color>",
+                    "Desc": "若陀龍王は、{SPRITE_PRESET#2101}<color=#99FFFFFF>氷</color>/{SPRITE_PRESET#2102}<color=#80C0FFFF>水</color>/{SPRITE_PRESET#2103}<color=#FF9999FF>炎</color>/{SPRITE_PRESET#2104}<color=#FFACFFFF>雷</color>元素の力を吸収することができる。（同時に1つの元素のみ吸収可能）\\n<color=#FFFFFFFF>若陀龍王が上記元素の力を吸収した時</color>、吸収した元素のタイプに応じて、スキル{SPRITE_PRESET#2101}<color=#99FFFFFF>氷棘の強襲</color>/{SPRITE_PRESET#2102}<color=#80C0FFFF>激流の掃討</color>/{SPRITE_PRESET#2103}<color=#FF9999FF>熾焔の掃討</color>/{SPRITE_PRESET#2104}<color=#FFACFFFF>雷霆の強襲</color>を獲得する。"
+                },
+                "C126022": {
+                    "Name": "磐岩百相·元素凝晶",
+                    "Desc": "<color=#FFFFFFFF>キャラが{SPRITE_PRESET#2101}<color=#99FFFFFF>氷</color>/{SPRITE_PRESET#2102}<color=#80C0FFFF>水</color>/{SPRITE_PRESET#2103}<color=#FF9999FF>炎</color>/{SPRITE_PRESET#2104}<color=#FFACFFFF>雷</color>元素のダメージを受けた後</color>、キャラが該当元素の力を吸収していない場合、該当状態は解除される。その後、キャラは$[K1012]。",
+                    "Child": {
+                        "K1012": {
+                            "Name": "<color=#FFFFFFFF>対応元素の力を吸収する</color>",
+                            "Desc": "若陀龍王は、{SPRITE_PRESET#2101}<color=#99FFFFFF>氷</color>/{SPRITE_PRESET#2102}<color=#80C0FFFF>水</color>/{SPRITE_PRESET#2103}<color=#FF9999FF>炎</color>/{SPRITE_PRESET#2104}<color=#FFACFFFF>雷</color>元素の力を吸収することができる。（同時に1つの元素のみ吸収可能）\\n<color=#FFFFFFFF>若陀龍王が上記元素の力を吸収した時</color>、吸収した元素のタイプに応じて、スキル{SPRITE_PRESET#2101}<color=#99FFFFFF>氷棘の強襲</color>/{SPRITE_PRESET#2102}<color=#80C0FFFF>激流の掃討</color>/{SPRITE_PRESET#2103}<color=#FF9999FF>熾焔の掃討</color>/{SPRITE_PRESET#2104}<color=#FFACFFFF>雷霆の強襲</color>を獲得する。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 3
+            }
+        },
+        "26024": {
+            "Name": "山崩陣滅",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。吸収した元素が1種類につき、このダメージ+1。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_GEO",
+                "D__KEY__DAMAGE": 4
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "26025": {
+            "Name": "磐岩百相",
+            "Desc": "【固有】戦闘開始時、<color=#FFFFFFFF>$[C126021]</color>が付与される。",
+            "Child": {
+                "C126021": {
+                    "Name": "磐岩百相·元素吸収",
+                    "Desc": "キャラは{SPRITE_PRESET#2101}<color=#99FFFFFF>氷</color>/{SPRITE_PRESET#2102}<color=#80C0FFFF>水</color>/{SPRITE_PRESET#2103}<color=#FF9999FF>炎</color>/{SPRITE_PRESET#2104}<color=#FFACFFFF>雷</color>元素の力を吸収し、吸収した元素のタイプに応じて、スキル{SPRITE_PRESET#2101}<color=#99FFFFFF>$[S66013]</color>/{SPRITE_PRESET#2102}<color=#80C0FFFF>$[S66023]</color>/{SPRITE_PRESET#2103}<color=#FF9999FF>$[S66033]</color>/{SPRITE_PRESET#2104}<color=#FFACFFFF>$[S66043]</color>を獲得する。（キャラは同時に1つの元素のみ吸収可能。この状態は、キャラが吸収した元素タイプの数を記録する）\\n<color=#FFFFFFFF>キャラが現在と異なる元素タイプの元素を吸収した後</color>、吸収した元素タイプの元素サイコロを1個生成する。",
+                    "Child": {
+                        "S66013": "S66013",
+                        "S66023": "S66023",
+                        "S66033": "S66033",
+                        "S66043": "S66043"
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 226022
+}

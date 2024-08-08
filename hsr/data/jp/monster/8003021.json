@@ -1,0 +1,370 @@
+{
+    "Id": 8003021,
+    "Name": "宇宙からの炎（バグ）",
+    "Desc": "コードが影響を受けた後、バグってしまった投影。この世界に属さない怪異なる生命体を参考にしている。星核がもたらした裂界より生まれ、世界の根に寄生しエネルギーを吸収する。その甲冑には星のコアが燃える様が映っている。\\n戦闘中、宇宙からの炎（バグ）は容易に敵を灰に燃やせる。",
+    "MonsterCampID": null,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 1488,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/Monster_8003020.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "Elite",
+    "SpeedBase": 144,
+    "StanceBase": 360,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.20000000018626451,
+    "Child": [
+        {
+            "Id": 8003021,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Ice",
+                "Quantum"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Fire",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 800302101,
+                    "SkillName": "怒号の火",
+                    "SkillDesc": "指定した味方単体に少量の炎属性ダメージを与え、高確率で攻撃を受けた味方を「焼却」状態にする。",
+                    "DamageType": "Fire",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 800302102,
+                    "SkillName": "炎摂取",
+                    "SkillDesc": "自身を「自然発火」状態にし、その後の攻撃で「浄炎の雨」を発動できる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 800302103,
+                    "SkillName": "浄炎の雨",
+                    "SkillDesc": "連続でランダムな味方単体に少量の炎属性ダメージを与え、高確率で攻撃を受けた味方を「焼却」状態にする。",
+                    "DamageType": "Fire",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 800302104,
+                    "SkillName": "溶融",
+                    "SkillDesc": "自身の攻撃力をアップ。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 800302105,
+                    "SkillName": "爆撃前兆",
+                    "SkillDesc": "力を溜め、味方のすべての「焼却」状態を吸収する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 800302106,
+                    "SkillName": "業火爆撃",
+                    "SkillDesc": "味方全体に炎属性ダメージを与え、高確率で味方全体を「焼却」状態にする。吸収した「焼却」状態が多い程、その回の攻撃の与ダメージがアップする。",
+                    "DamageType": "Fire",
+                    "SPHitBase": 15
+                }
+            ]
+        },
+        {
+            "Id": 800302101,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Ice",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Fire",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 800302101,
+                    "SkillName": "怒号の火",
+                    "SkillDesc": "指定した味方単体に少量の炎属性ダメージを与え、高確率で攻撃を受けた味方を「焼却」状態にする。",
+                    "DamageType": "Fire",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 800302102,
+                    "SkillName": "炎摂取",
+                    "SkillDesc": "自身を「自然発火」状態にし、その後の攻撃で「浄炎の雨」を発動できる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 800302103,
+                    "SkillName": "浄炎の雨",
+                    "SkillDesc": "連続でランダムな味方単体に少量の炎属性ダメージを与え、高確率で攻撃を受けた味方を「焼却」状態にする。",
+                    "DamageType": "Fire",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 800302104,
+                    "SkillName": "溶融",
+                    "SkillDesc": "自身の攻撃力をアップ。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 800302105,
+                    "SkillName": "爆撃前兆",
+                    "SkillDesc": "力を溜め、味方のすべての「焼却」状態を吸収する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 800302106,
+                    "SkillName": "業火爆撃",
+                    "SkillDesc": "味方全体に炎属性ダメージを与え、高確率で味方全体を「焼却」状態にする。吸収した「焼却」状態が多い程、その回の攻撃の与ダメージがアップする。",
+                    "DamageType": "Fire",
+                    "SPHitBase": 15
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 8003021,
+            "AvatarExpReward": 150,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182007
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183004
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 8003021,
+            "WorldLevel": 1,
+            "AvatarExpReward": 200,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182007
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183004
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 8003021,
+            "WorldLevel": 2,
+            "AvatarExpReward": 250,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182007
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183004
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 8003021,
+            "WorldLevel": 3,
+            "AvatarExpReward": 300,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182007
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183004
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 8003021,
+            "WorldLevel": 4,
+            "AvatarExpReward": 350,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111003
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182007
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183004
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 8003021,
+            "WorldLevel": 5,
+            "AvatarExpReward": 400,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111003
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182007
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183004
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 8003021,
+            "WorldLevel": 6,
+            "AvatarExpReward": 400,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111003
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182007
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183004
+                }
+            ]
+        }
+    ]
+}
