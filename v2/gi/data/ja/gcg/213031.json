@@ -1,0 +1,44 @@
+{
+    "Type": "Action",
+    "Name": "冒険の憧れ",
+    "Title": "ベネット·冒険の憧れ",
+    "Desc": "次の冒険はいつだって一番素晴らしいものになる。",
+    "Source": "キャッツテールでベネットを招待して対戦し、対応する挑戦目標をクリアすることで獲得",
+    "Icon": "UI_Gcg_CardFace_Modify_Constellation_Bennett",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PYRO",
+            "count": 4
+        },
+        {
+            "costType": "GCG_COST_ENERGY",
+            "count": 2
+        }
+    ],
+    "Tag": [
+        "天賦",
+        "戦闘アクション"
+    ],
+    "Talent": {
+        "Name": "冒険の憧れ",
+        "Desc": "$[K1]：味方の出撃キャラが<color=#FFFFFFFF>$[A1303]</color>の時、このカードを装備できる。\\n$[A1303]がこのカードを装備した後、直ちに<color=#FFD780FF>$[S13033]</color>を1回発動する。\\nこのカードを装備した$[A1303]の生成した<color=#FFFFFFFF>$[C113031]</color>のダメージアップ効果は、HPによる制限がなくなり、常時発動になる。\\n（このカードはデッキに$[A1303]が含まれている場合のみ、デッキに追加できる）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>戦闘アクション</color>",
+                "Desc": "味方が戦闘アクションを1回行った後、相手のターンに移ります。\\n<color=#FFFFFFFF>このようなルールを持つ手札を出すのはクイックアクションではなく、戦闘アクションと見なされます。</color>"
+            },
+            "A1303": "冒険の憧れ",
+            "S13033": "S13033",
+            "C113031": {
+                "Name": "鼓舞エリア",
+                "Desc": "<color=#FFFFFFFF>味方のキャラがスキルを発動する際</color>、そのキャラのHPが7以上の場合、該当ダメージがさらに+2。スキル処理完了後、そのキャラのHPが6以下の場合、そのキャラのHPを2回復する。\\n<color=#FFFFFFFF>$[K4]：2</color>",
+                "Child": {
+                    "K4": {
+                        "Name": "<color=#FFFFFFFF>継続ラウンド数</color>",
+                        "Desc": "各ラウンドのエンドフェーズで、<color=#FFFFFFFF>継続ラウンド数</color>が1マイナスされます。\\n<color=#FFFFFFFF>継続ラウンド数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                    }
+                }
+            }
+        }
+    }
+}

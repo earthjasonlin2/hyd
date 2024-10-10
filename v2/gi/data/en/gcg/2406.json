@@ -1,0 +1,100 @@
+{
+    "Type": "Character",
+    "Name": "Abyss Lector: Violet Lightning",
+    "Title": "Abyss Lector: Violet Lightning",
+    "Desc": "Praise be unto the Abyss, the Wisdom of Corrosion.",
+    "Source": "Reward for accepting the Tavern Challenge at The Cat's Tail and claiming victory in a Friendly Fracas with Abyss Lector: Violet Lightning",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_InvokerElectric",
+    "Hp": 6,
+    "Cost": 2,
+    "Tag": [
+        "Electro",
+        "Other Weapons",
+        "Monster"
+    ],
+    "Talent": {
+        "24061": {
+            "Name": "Den of Thunder",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "24062": {
+            "Name": "Shock of the Enigmatic Abyss",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].\\nIf the target is already affected by Electro, steal 1 Energy from them. (If this character's Energy is already full, then the stolen Energy will be given to the next character who does not have full Energy)",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO"
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 3
+            }
+        },
+        "24063": {
+            "Name": "Wild Thunderburst",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].\\nIf the target has no more than 1 Energy, deals +2 DMG.",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO"
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "24064": {
+            "Name": "Electric Rebirth",
+            "Desc": "(Passive) When the battle begins, this character gains <color=#FFFFFFFF>$[C124061]</color>.",
+            "Child": {
+                "C124061": {
+                    "Name": "Electric Rebirth",
+                    "Desc": "<color=#FFFFFFFF>When the character to which this is attached would be defeated:</color> Remove this effect, ensure the character gains $[K54], and heals them to 4 HP. After this effect is triggered, this character deals +1 $[K104].",
+                    "Child": {
+                        "K54": {
+                            "Name": "<color=#FFFFFFFF>Immunity to Defeat</color>|s1:<color=#FFFFFFFF>will not be defeated</color>",
+                            "Desc": "Certain effects will grant characters an <color=#FFFFFFFF>immunity to being defeated</color> when their HP hits 0, and will heal them for a certain amount thereafter.\\nWhen this occurs, characters will not be regarded as having experienced a <color=#FFFFFFFF>defeat.</color> (Hence, their attached equipment and statuses will not be removed, and their Energy will remain uncleared.)"
+                        },
+                        "K104": {
+                            "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>Electro DMG</color>",
+                            "Desc": "Applies {SPRITE_PRESET#2104}Electro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Overloaded</color>: DMG +2 for this instance, the target is forcibly switched to the next character\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Superconduct</color>: DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Electro-Charged</color>: DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Quicken</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Catalyzing Field</color>] that grants +1 DMG to the next 2 instances of Dendro or Electro DMG"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        },
+        "24065": {
+            "Name": "Electric Rebirth",
+            "Desc": "When the battle begins, this character gains <color=#FFFFFFFF>$[C124061]</color>.",
+            "Child": {
+                "C124061": {
+                    "Name": "Electric Rebirth",
+                    "Desc": "<color=#FFFFFFFF>When the character to which this is attached would be defeated:</color> Remove this effect, ensure the character gains $[K54], and heals them to 4 HP. After this effect is triggered, this character deals +1 $[K104].",
+                    "Child": {
+                        "K54": {
+                            "Name": "<color=#FFFFFFFF>Immunity to Defeat</color>|s1:<color=#FFFFFFFF>will not be defeated</color>",
+                            "Desc": "Certain effects will grant characters an <color=#FFFFFFFF>immunity to being defeated</color> when their HP hits 0, and will heal them for a certain amount thereafter.\\nWhen this occurs, characters will not be regarded as having experienced a <color=#FFFFFFFF>defeat.</color> (Hence, their attached equipment and statuses will not be removed, and their Energy will remain uncleared.)"
+                        },
+                        "K104": {
+                            "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>Electro DMG</color>",
+                            "Desc": "Applies {SPRITE_PRESET#2104}Electro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Overloaded</color>: DMG +2 for this instance, the target is forcibly switched to the next character\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Superconduct</color>: DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Electro-Charged</color>: DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Quicken</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Catalyzing Field</color>] that grants +1 DMG to the next 2 instances of Dendro or Electro DMG"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 224061
+}

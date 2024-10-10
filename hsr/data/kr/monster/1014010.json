@@ -1,0 +1,1803 @@
+{
+    "Id": 1014010,
+    "Name": "스바로그",
+    "Desc": "구세계의 고대 유물. 지오매로우 개척단 시대가 남긴 자동 제어 유닛. 무지하고 명령만 따르는 대부분의 로봇과 달리 스바로그는 복잡한 사고 능력을 갖추고 있다.\\n전투 중 스바로그는 기계팔을 소환해 적을 포획하고 제어하며, 목표에 큰 타격을 준다",
+    "MonsterCampID": 1,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 1488,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/Monster_1014010.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "LittleBoss",
+    "SpeedBase": 120,
+    "StanceBase": 360,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.3000000002793968,
+    "Child": [
+        {
+            "Id": 1014010,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Thunder",
+                "Wind"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 101401001,
+                    "SkillName": "제거의 주먹",
+                    "SkillDesc": "지정된 단일 아군에게 물리 속성 피해를 가한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 101401002,
+                    "SkillName": "연소 레이저",
+                    "SkillDesc": "지정된 단일 아군에게 물리 속성 피해를 가하며, 피격된 아군은 행동 게이지가 감소한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 101401003,
+                    "SkillName": "거대한 손 틈",
+                    "SkillDesc": "지정된 단일 아군이 [구속] 상태에 빠진다. [구속] 상태에서는 행동할 수 없으며 목표로 지정될 수 없다. 보조 기계팔 유닛의 약점이 격파되면 아군의 [구속] 상태는 즉시 해제된다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 101401004,
+                    "SkillName": "고효율 폭격",
+                    "SkillDesc": "모든 아군에게 대량의 물리 피해를 주며 높은 확률로 피격된 아군은 방어력이 감소한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 2
+                },
+                {
+                    "Id": 101401005,
+                    "SkillName": "제어장 폭발",
+                    "SkillDesc": "보조 기계팔 유닛이 폭발하며 지정된 단일 아군에게 대량의 물리 속성 피해를 가한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 25
+                },
+                {
+                    "Id": 101401006,
+                    "SkillName": "과부하 경고",
+                    "SkillDesc": "보조 기계팔 유닛이 [과부하 시간제한] 상태에 진입하며, 해당 상태 진입 후 다음번 행동 시 [제어장 폭발]을 발동한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401007,
+                    "SkillName": "효과적 배치",
+                    "SkillDesc": "[보조 기계팔 유닛]을 소환한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401008,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "Physical",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401009,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401010,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401011,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 101401001,
+            "AttackModifyRatio": 1.1111110001802444,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Thunder",
+                "Wind"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 101401001,
+                    "SkillName": "제거의 주먹",
+                    "SkillDesc": "지정된 단일 아군에게 물리 속성 피해를 가한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 101401002,
+                    "SkillName": "연소 레이저",
+                    "SkillDesc": "지정된 단일 아군에게 물리 속성 피해를 가하며, 피격된 아군은 행동 게이지가 감소한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 101401003,
+                    "SkillName": "거대한 손 틈",
+                    "SkillDesc": "지정된 단일 아군이 [구속] 상태에 빠진다. [구속] 상태에서는 행동할 수 없으며 목표로 지정될 수 없다. 보조 기계팔 유닛의 약점이 격파되면 아군의 [구속] 상태는 즉시 해제된다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 101401004,
+                    "SkillName": "고효율 폭격",
+                    "SkillDesc": "모든 아군에게 대량의 물리 피해를 주며 높은 확률로 피격된 아군은 방어력이 감소한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 2
+                },
+                {
+                    "Id": 101401005,
+                    "SkillName": "제어장 폭발",
+                    "SkillDesc": "보조 기계팔 유닛이 폭발하며 지정된 단일 아군에게 대량의 물리 속성 피해를 가한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 25
+                },
+                {
+                    "Id": 101401006,
+                    "SkillName": "과부하 경고",
+                    "SkillDesc": "보조 기계팔 유닛이 [과부하 시간제한] 상태에 진입하며, 해당 상태 진입 후 다음번 행동 시 [제어장 폭발]을 발동한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401007,
+                    "SkillName": "효과적 배치",
+                    "SkillDesc": "[보조 기계팔 유닛]을 소환한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401008,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "Physical",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401009,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401010,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401011,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 101401002,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 5.468750000698492,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Thunder",
+                "Wind"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 101401001,
+                    "SkillName": "제거의 주먹",
+                    "SkillDesc": "지정된 단일 아군에게 물리 속성 피해를 가한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 101401002,
+                    "SkillName": "연소 레이저",
+                    "SkillDesc": "지정된 단일 아군에게 물리 속성 피해를 가하며, 피격된 아군은 행동 게이지가 감소한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 101401003,
+                    "SkillName": "거대한 손 틈",
+                    "SkillDesc": "지정된 단일 아군이 [구속] 상태에 빠진다. [구속] 상태에서는 행동할 수 없으며 목표로 지정될 수 없다. 보조 기계팔 유닛의 약점이 격파되면 아군의 [구속] 상태는 즉시 해제된다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 101401004,
+                    "SkillName": "고효율 폭격",
+                    "SkillDesc": "모든 아군에게 대량의 물리 피해를 주며 높은 확률로 피격된 아군은 방어력이 감소한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 2
+                },
+                {
+                    "Id": 101401005,
+                    "SkillName": "제어장 폭발",
+                    "SkillDesc": "보조 기계팔 유닛이 폭발하며 지정된 단일 아군에게 대량의 물리 속성 피해를 가한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 25
+                },
+                {
+                    "Id": 101401006,
+                    "SkillName": "과부하 경고",
+                    "SkillDesc": "보조 기계팔 유닛이 [과부하 시간제한] 상태에 진입하며, 해당 상태 진입 후 다음번 행동 시 [제어장 폭발]을 발동한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401007,
+                    "SkillName": "효과적 배치",
+                    "SkillDesc": "[보조 기계팔 유닛]을 소환한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401008,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "Physical",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401009,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401010,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401011,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 101401003,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Thunder",
+                "Wind"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 101401001,
+                    "SkillName": "제거의 주먹",
+                    "SkillDesc": "지정된 단일 아군에게 물리 속성 피해를 가한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 101401002,
+                    "SkillName": "연소 레이저",
+                    "SkillDesc": "지정된 단일 아군에게 물리 속성 피해를 가하며, 피격된 아군은 행동 게이지가 감소한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 101401003,
+                    "SkillName": "거대한 손 틈",
+                    "SkillDesc": "지정된 단일 아군이 [구속] 상태에 빠진다. [구속] 상태에서는 행동할 수 없으며 목표로 지정될 수 없다. 보조 기계팔 유닛의 약점이 격파되면 아군의 [구속] 상태는 즉시 해제된다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 101401004,
+                    "SkillName": "고효율 폭격",
+                    "SkillDesc": "모든 아군에게 대량의 물리 피해를 주며 높은 확률로 피격된 아군은 방어력이 감소한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 2
+                },
+                {
+                    "Id": 101401005,
+                    "SkillName": "제어장 폭발",
+                    "SkillDesc": "보조 기계팔 유닛이 폭발하며 지정된 단일 아군에게 대량의 물리 속성 피해를 가한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 25
+                },
+                {
+                    "Id": 101401006,
+                    "SkillName": "과부하 경고",
+                    "SkillDesc": "보조 기계팔 유닛이 [과부하 시간제한] 상태에 진입하며, 해당 상태 진입 후 다음번 행동 시 [제어장 폭발]을 발동한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401007,
+                    "SkillName": "효과적 배치",
+                    "SkillDesc": "[보조 기계팔 유닛]을 소환한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401008,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "Physical",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401009,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401010,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401011,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 101401004,
+            "AttackModifyRatio": 1.1111110001802444,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Thunder",
+                "Wind"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 101401001,
+                    "SkillName": "제거의 주먹",
+                    "SkillDesc": "지정된 단일 아군에게 물리 속성 피해를 가한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 101401002,
+                    "SkillName": "연소 레이저",
+                    "SkillDesc": "지정된 단일 아군에게 물리 속성 피해를 가하며, 피격된 아군은 행동 게이지가 감소한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 101401003,
+                    "SkillName": "거대한 손 틈",
+                    "SkillDesc": "지정된 단일 아군이 [구속] 상태에 빠진다. [구속] 상태에서는 행동할 수 없으며 목표로 지정될 수 없다. 보조 기계팔 유닛의 약점이 격파되면 아군의 [구속] 상태는 즉시 해제된다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 101401004,
+                    "SkillName": "고효율 폭격",
+                    "SkillDesc": "모든 아군에게 대량의 물리 피해를 주며 높은 확률로 피격된 아군은 방어력이 감소한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 2
+                },
+                {
+                    "Id": 101401005,
+                    "SkillName": "제어장 폭발",
+                    "SkillDesc": "보조 기계팔 유닛이 폭발하며 지정된 단일 아군에게 대량의 물리 속성 피해를 가한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 25
+                },
+                {
+                    "Id": 101401006,
+                    "SkillName": "과부하 경고",
+                    "SkillDesc": "보조 기계팔 유닛이 [과부하 시간제한] 상태에 진입하며, 해당 상태 진입 후 다음번 행동 시 [제어장 폭발]을 발동한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401007,
+                    "SkillName": "효과적 배치",
+                    "SkillDesc": "[보조 기계팔 유닛]을 소환한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401008,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "Physical",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401009,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401010,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401011,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 101401005,
+            "AttackModifyRatio": 1.4285710006952286,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 3.9062500009313226,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Thunder",
+                "Wind"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 101401001,
+                    "SkillName": "제거의 주먹",
+                    "SkillDesc": "지정된 단일 아군에게 물리 속성 피해를 가한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 101401002,
+                    "SkillName": "연소 레이저",
+                    "SkillDesc": "지정된 단일 아군에게 물리 속성 피해를 가하며, 피격된 아군은 행동 게이지가 감소한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 101401003,
+                    "SkillName": "거대한 손 틈",
+                    "SkillDesc": "지정된 단일 아군이 [구속] 상태에 빠진다. [구속] 상태에서는 행동할 수 없으며 목표로 지정될 수 없다. 보조 기계팔 유닛의 약점이 격파되면 아군의 [구속] 상태는 즉시 해제된다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 101401004,
+                    "SkillName": "고효율 폭격",
+                    "SkillDesc": "모든 아군에게 대량의 물리 피해를 주며 높은 확률로 피격된 아군은 방어력이 감소한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 2
+                },
+                {
+                    "Id": 101401005,
+                    "SkillName": "제어장 폭발",
+                    "SkillDesc": "보조 기계팔 유닛이 폭발하며 지정된 단일 아군에게 대량의 물리 속성 피해를 가한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 25
+                },
+                {
+                    "Id": 101401006,
+                    "SkillName": "과부하 경고",
+                    "SkillDesc": "보조 기계팔 유닛이 [과부하 시간제한] 상태에 진입하며, 해당 상태 진입 후 다음번 행동 시 [제어장 폭발]을 발동한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401007,
+                    "SkillName": "효과적 배치",
+                    "SkillDesc": "[보조 기계팔 유닛]을 소환한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401008,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "Physical",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401009,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401010,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401011,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 101401006,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1.375,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Thunder",
+                "Wind"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 101401001,
+                    "SkillName": "제거의 주먹",
+                    "SkillDesc": "지정된 단일 아군에게 물리 속성 피해를 가한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 101401002,
+                    "SkillName": "연소 레이저",
+                    "SkillDesc": "지정된 단일 아군에게 물리 속성 피해를 가하며, 피격된 아군은 행동 게이지가 감소한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 101401003,
+                    "SkillName": "거대한 손 틈",
+                    "SkillDesc": "지정된 단일 아군이 [구속] 상태에 빠진다. [구속] 상태에서는 행동할 수 없으며 목표로 지정될 수 없다. 보조 기계팔 유닛의 약점이 격파되면 아군의 [구속] 상태는 즉시 해제된다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 101401004,
+                    "SkillName": "고효율 폭격",
+                    "SkillDesc": "모든 아군에게 대량의 물리 피해를 주며 높은 확률로 피격된 아군은 방어력이 감소한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 2
+                },
+                {
+                    "Id": 101401005,
+                    "SkillName": "제어장 폭발",
+                    "SkillDesc": "보조 기계팔 유닛이 폭발하며 지정된 단일 아군에게 대량의 물리 속성 피해를 가한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 25
+                },
+                {
+                    "Id": 101401006,
+                    "SkillName": "과부하 경고",
+                    "SkillDesc": "보조 기계팔 유닛이 [과부하 시간제한] 상태에 진입하며, 해당 상태 진입 후 다음번 행동 시 [제어장 폭발]을 발동한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401007,
+                    "SkillName": "효과적 배치",
+                    "SkillDesc": "[보조 기계팔 유닛]을 소환한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401008,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "Physical",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401009,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401010,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401011,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 101401007,
+            "AttackModifyRatio": 0.6666670010890812,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 0.7500000006984919,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Thunder",
+                "Wind"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 101401001,
+                    "SkillName": "제거의 주먹",
+                    "SkillDesc": "지정된 단일 아군에게 물리 속성 피해를 가한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 101401002,
+                    "SkillName": "연소 레이저",
+                    "SkillDesc": "지정된 단일 아군에게 물리 속성 피해를 가하며, 피격된 아군은 행동 게이지가 감소한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 101401003,
+                    "SkillName": "거대한 손 틈",
+                    "SkillDesc": "지정된 단일 아군이 [구속] 상태에 빠진다. [구속] 상태에서는 행동할 수 없으며 목표로 지정될 수 없다. 보조 기계팔 유닛의 약점이 격파되면 아군의 [구속] 상태는 즉시 해제된다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 101401004,
+                    "SkillName": "고효율 폭격",
+                    "SkillDesc": "모든 아군에게 대량의 물리 피해를 주며 높은 확률로 피격된 아군은 방어력이 감소한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 2
+                },
+                {
+                    "Id": 101401005,
+                    "SkillName": "제어장 폭발",
+                    "SkillDesc": "보조 기계팔 유닛이 폭발하며 지정된 단일 아군에게 대량의 물리 속성 피해를 가한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 25
+                },
+                {
+                    "Id": 101401006,
+                    "SkillName": "과부하 경고",
+                    "SkillDesc": "보조 기계팔 유닛이 [과부하 시간제한] 상태에 진입하며, 해당 상태 진입 후 다음번 행동 시 [제어장 폭발]을 발동한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401007,
+                    "SkillName": "효과적 배치",
+                    "SkillDesc": "[보조 기계팔 유닛]을 소환한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401008,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "Physical",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401009,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401010,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401011,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 101401008,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1.7187500009313226,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Thunder",
+                "Wind"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 101401001,
+                    "SkillName": "제거의 주먹",
+                    "SkillDesc": "지정된 단일 아군에게 물리 속성 피해를 가한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 101401002,
+                    "SkillName": "연소 레이저",
+                    "SkillDesc": "지정된 단일 아군에게 물리 속성 피해를 가하며, 피격된 아군은 행동 게이지가 감소한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 101401003,
+                    "SkillName": "거대한 손 틈",
+                    "SkillDesc": "지정된 단일 아군이 [구속] 상태에 빠진다. [구속] 상태에서는 행동할 수 없으며 목표로 지정될 수 없다. 보조 기계팔 유닛의 약점이 격파되면 아군의 [구속] 상태는 즉시 해제된다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 101401004,
+                    "SkillName": "고효율 폭격",
+                    "SkillDesc": "모든 아군에게 대량의 물리 피해를 주며 높은 확률로 피격된 아군은 방어력이 감소한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 2
+                },
+                {
+                    "Id": 101401005,
+                    "SkillName": "제어장 폭발",
+                    "SkillDesc": "보조 기계팔 유닛이 폭발하며 지정된 단일 아군에게 대량의 물리 속성 피해를 가한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 25
+                },
+                {
+                    "Id": 101401006,
+                    "SkillName": "과부하 경고",
+                    "SkillDesc": "보조 기계팔 유닛이 [과부하 시간제한] 상태에 진입하며, 해당 상태 진입 후 다음번 행동 시 [제어장 폭발]을 발동한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401007,
+                    "SkillName": "효과적 배치",
+                    "SkillDesc": "[보조 기계팔 유닛]을 소환한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401008,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "Physical",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401009,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401010,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401011,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 101401009,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1.4375000002328306,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Thunder",
+                "Wind"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 101401001,
+                    "SkillName": "제거의 주먹",
+                    "SkillDesc": "지정된 단일 아군에게 물리 속성 피해를 가한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 101401002,
+                    "SkillName": "연소 레이저",
+                    "SkillDesc": "지정된 단일 아군에게 물리 속성 피해를 가하며, 피격된 아군은 행동 게이지가 감소한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 101401003,
+                    "SkillName": "거대한 손 틈",
+                    "SkillDesc": "지정된 단일 아군이 [구속] 상태에 빠진다. [구속] 상태에서는 행동할 수 없으며 목표로 지정될 수 없다. 보조 기계팔 유닛의 약점이 격파되면 아군의 [구속] 상태는 즉시 해제된다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 101401004,
+                    "SkillName": "고효율 폭격",
+                    "SkillDesc": "모든 아군에게 대량의 물리 피해를 주며 높은 확률로 피격된 아군은 방어력이 감소한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 2
+                },
+                {
+                    "Id": 101401005,
+                    "SkillName": "제어장 폭발",
+                    "SkillDesc": "보조 기계팔 유닛이 폭발하며 지정된 단일 아군에게 대량의 물리 속성 피해를 가한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 25
+                },
+                {
+                    "Id": 101401006,
+                    "SkillName": "과부하 경고",
+                    "SkillDesc": "보조 기계팔 유닛이 [과부하 시간제한] 상태에 진입하며, 해당 상태 진입 후 다음번 행동 시 [제어장 폭발]을 발동한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401007,
+                    "SkillName": "효과적 배치",
+                    "SkillDesc": "[보조 기계팔 유닛]을 소환한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401008,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "Physical",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401009,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401010,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401011,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 101401010,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 5,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": 120,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Thunder",
+                "Wind"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 101401001,
+                    "SkillName": "제거의 주먹",
+                    "SkillDesc": "지정된 단일 아군에게 물리 속성 피해를 가한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 101401002,
+                    "SkillName": "연소 레이저",
+                    "SkillDesc": "지정된 단일 아군에게 물리 속성 피해를 가하며, 피격된 아군은 행동 게이지가 감소한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 101401003,
+                    "SkillName": "거대한 손 틈",
+                    "SkillDesc": "지정된 단일 아군이 [구속] 상태에 빠진다. [구속] 상태에서는 행동할 수 없으며 목표로 지정될 수 없다. 보조 기계팔 유닛의 약점이 격파되면 아군의 [구속] 상태는 즉시 해제된다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 101401004,
+                    "SkillName": "고효율 폭격",
+                    "SkillDesc": "모든 아군에게 대량의 물리 피해를 주며 높은 확률로 피격된 아군은 방어력이 감소한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 2
+                },
+                {
+                    "Id": 101401005,
+                    "SkillName": "제어장 폭발",
+                    "SkillDesc": "보조 기계팔 유닛이 폭발하며 지정된 단일 아군에게 대량의 물리 속성 피해를 가한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 25
+                },
+                {
+                    "Id": 101401006,
+                    "SkillName": "과부하 경고",
+                    "SkillDesc": "보조 기계팔 유닛이 [과부하 시간제한] 상태에 진입하며, 해당 상태 진입 후 다음번 행동 시 [제어장 폭발]을 발동한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401007,
+                    "SkillName": "효과적 배치",
+                    "SkillDesc": "[보조 기계팔 유닛]을 소환한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401008,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "Physical",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401009,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401010,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401011,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 101401011,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1.0625000002328306,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Thunder",
+                "Wind"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 101401001,
+                    "SkillName": "제거의 주먹",
+                    "SkillDesc": "지정된 단일 아군에게 물리 속성 피해를 가한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 101401002,
+                    "SkillName": "연소 레이저",
+                    "SkillDesc": "지정된 단일 아군에게 물리 속성 피해를 가하며, 피격된 아군은 행동 게이지가 감소한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 101401003,
+                    "SkillName": "거대한 손 틈",
+                    "SkillDesc": "지정된 단일 아군이 [구속] 상태에 빠진다. [구속] 상태에서는 행동할 수 없으며 목표로 지정될 수 없다. 보조 기계팔 유닛의 약점이 격파되면 아군의 [구속] 상태는 즉시 해제된다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 101401004,
+                    "SkillName": "고효율 폭격",
+                    "SkillDesc": "모든 아군에게 대량의 물리 피해를 주며 높은 확률로 피격된 아군은 방어력이 감소한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 2
+                },
+                {
+                    "Id": 101401005,
+                    "SkillName": "제어장 폭발",
+                    "SkillDesc": "보조 기계팔 유닛이 폭발하며 지정된 단일 아군에게 대량의 물리 속성 피해를 가한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 25
+                },
+                {
+                    "Id": 101401006,
+                    "SkillName": "과부하 경고",
+                    "SkillDesc": "보조 기계팔 유닛이 [과부하 시간제한] 상태에 진입하며, 해당 상태 진입 후 다음번 행동 시 [제어장 폭발]을 발동한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401007,
+                    "SkillName": "효과적 배치",
+                    "SkillDesc": "[보조 기계팔 유닛]을 소환한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401008,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "Physical",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401009,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401010,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401011,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 101401012,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1.6250000002328306,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Thunder",
+                "Wind"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 101401001,
+                    "SkillName": "제거의 주먹",
+                    "SkillDesc": "지정된 단일 아군에게 물리 속성 피해를 가한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 101401002,
+                    "SkillName": "연소 레이저",
+                    "SkillDesc": "지정된 단일 아군에게 물리 속성 피해를 가하며, 피격된 아군은 행동 게이지가 감소한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 101401003,
+                    "SkillName": "거대한 손 틈",
+                    "SkillDesc": "지정된 단일 아군이 [구속] 상태에 빠진다. [구속] 상태에서는 행동할 수 없으며 목표로 지정될 수 없다. 보조 기계팔 유닛의 약점이 격파되면 아군의 [구속] 상태는 즉시 해제된다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 101401004,
+                    "SkillName": "고효율 폭격",
+                    "SkillDesc": "모든 아군에게 대량의 물리 피해를 주며 높은 확률로 피격된 아군은 방어력이 감소한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 2
+                },
+                {
+                    "Id": 101401005,
+                    "SkillName": "제어장 폭발",
+                    "SkillDesc": "보조 기계팔 유닛이 폭발하며 지정된 단일 아군에게 대량의 물리 속성 피해를 가한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 25
+                },
+                {
+                    "Id": 101401006,
+                    "SkillName": "과부하 경고",
+                    "SkillDesc": "보조 기계팔 유닛이 [과부하 시간제한] 상태에 진입하며, 해당 상태 진입 후 다음번 행동 시 [제어장 폭발]을 발동한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401007,
+                    "SkillName": "효과적 배치",
+                    "SkillDesc": "[보조 기계팔 유닛]을 소환한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401008,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "Physical",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401009,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401010,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401011,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 101401013,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 0.5312500009313226,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Thunder",
+                "Ice",
+                "Wind"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 101401001,
+                    "SkillName": "제거의 주먹",
+                    "SkillDesc": "지정된 단일 아군에게 물리 속성 피해를 가한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 101401002,
+                    "SkillName": "연소 레이저",
+                    "SkillDesc": "지정된 단일 아군에게 물리 속성 피해를 가하며, 피격된 아군은 행동 게이지가 감소한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 101401003,
+                    "SkillName": "거대한 손 틈",
+                    "SkillDesc": "지정된 단일 아군이 [구속] 상태에 빠진다. [구속] 상태에서는 행동할 수 없으며 목표로 지정될 수 없다. 보조 기계팔 유닛의 약점이 격파되면 아군의 [구속] 상태는 즉시 해제된다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 101401004,
+                    "SkillName": "고효율 폭격",
+                    "SkillDesc": "모든 아군에게 대량의 물리 피해를 주며 높은 확률로 피격된 아군은 방어력이 감소한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 2
+                },
+                {
+                    "Id": 101401005,
+                    "SkillName": "제어장 폭발",
+                    "SkillDesc": "보조 기계팔 유닛이 폭발하며 지정된 단일 아군에게 대량의 물리 속성 피해를 가한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 25
+                },
+                {
+                    "Id": 101401006,
+                    "SkillName": "과부하 경고",
+                    "SkillDesc": "보조 기계팔 유닛이 [과부하 시간제한] 상태에 진입하며, 해당 상태 진입 후 다음번 행동 시 [제어장 폭발]을 발동한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401007,
+                    "SkillName": "효과적 배치",
+                    "SkillDesc": "[보조 기계팔 유닛]을 소환한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401008,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "Physical",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401009,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401010,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401011,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 101401014,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 140,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Thunder",
+                "Wind",
+                "Quantum"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 101401001,
+                    "SkillName": "제거의 주먹",
+                    "SkillDesc": "지정된 단일 아군에게 물리 속성 피해를 가한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 101401002,
+                    "SkillName": "연소 레이저",
+                    "SkillDesc": "지정된 단일 아군에게 물리 속성 피해를 가하며, 피격된 아군은 행동 게이지가 감소한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 101401003,
+                    "SkillName": "거대한 손 틈",
+                    "SkillDesc": "지정된 단일 아군이 [구속] 상태에 빠진다. [구속] 상태에서는 행동할 수 없으며 목표로 지정될 수 없다. 보조 기계팔 유닛의 약점이 격파되면 아군의 [구속] 상태는 즉시 해제된다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 101401004,
+                    "SkillName": "고효율 폭격",
+                    "SkillDesc": "모든 아군에게 대량의 물리 피해를 주며 높은 확률로 피격된 아군은 방어력이 감소한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 2
+                },
+                {
+                    "Id": 101401005,
+                    "SkillName": "제어장 폭발",
+                    "SkillDesc": "보조 기계팔 유닛이 폭발하며 지정된 단일 아군에게 대량의 물리 속성 피해를 가한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 25
+                },
+                {
+                    "Id": 101401006,
+                    "SkillName": "과부하 경고",
+                    "SkillDesc": "보조 기계팔 유닛이 [과부하 시간제한] 상태에 진입하며, 해당 상태 진입 후 다음번 행동 시 [제어장 폭발]을 발동한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401007,
+                    "SkillName": "효과적 배치",
+                    "SkillDesc": "[보조 기계팔 유닛]을 소환한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401008,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "Physical",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401009,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401010,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401011,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 1014010,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1014010,
+            "WorldLevel": 1,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1014010,
+            "WorldLevel": 2,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1014010,
+            "WorldLevel": 3,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1014010,
+            "WorldLevel": 4,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1014010,
+            "WorldLevel": 5,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1014010,
+            "WorldLevel": 6,
+            "DisplayItemList": []
+        }
+    ]
+}

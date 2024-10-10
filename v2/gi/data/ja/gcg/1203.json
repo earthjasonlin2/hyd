@@ -1,0 +1,91 @@
+{
+    "Type": "Character",
+    "Name": "モナ",
+    "Title": "星天水鏡·モナ",
+    "Desc": "勝敗がどうであれ、全て運命に定められたこと。",
+    "Source": "キャッツテールでモナを招待し、友好対戦に勝利することで獲得",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Mona",
+    "Hp": 10,
+    "Cost": 3,
+    "Tag": [
+        "水元素",
+        "法器",
+        "モンド"
+    ],
+    "Talent": {
+        "12031": {
+            "Name": "因果点破",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "D__KEY__DAMAGE": 1
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "12032": {
+            "Name": "水中幻願",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、<color=#FFFFFFFF>$[C112031]</color>を召喚する。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "D__KEY__DAMAGE": 1,
+                "C112031": {
+                    "Name": "虚影",
+                    "Desc": "<color=#FFFFFFFF>味方の出撃キャラがダメージを受けた時</color>、ダメージを1相殺してくれる。\\n<color=#FFFFFFFF>$[K3]：1</color>（回数が尽きた時点で破棄されることはない）。\\n<color=#FFFFFFFF>エンドフェーズ：</color>このカードを破棄し、$[K102]を1与える。",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                            "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                        },
+                        "K102": {
+                            "Name": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素ダメージ</color>",
+                            "Desc": "{SPRITE_PRESET#2102}水元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2103}<color=#FFFFFFFF>蒸発</color>：ダメージ+2\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}<color=#FFFFFFFF>感電</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2101}<color=#FFFFFFFF>凍結</color>：ダメージ+1、目標はこのラウンドで行動不能になる（物理ダメージまたは炎ダメージを受けると、即座に解除されるがダメージ+2となる）\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}<color=#FFFFFFFF>開花</color>：ダメージ+1、次の炎元素または雷元素ダメージを+2できる「<color=#FFFFFFFF>草原核</color>」を生成する"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3
+            }
+        },
+        "12033": {
+            "Name": "星命定軌",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、<color=#FFFFFFFF>$[C112032]</color>を生成する。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "D__KEY__DAMAGE": 4,
+                "C112032": {
+                    "Name": "泡影",
+                    "Desc": "<color=#FFFFFFFF>味方がスキルでダメージを与えた時</color>、この状態を解除して今回のダメージを倍にする。",
+                    "Child": {}
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3,
+                "GCG_COST_ENERGY": 3
+            }
+        },
+        "12034": {
+            "Name": "虚実流動",
+            "Desc": "【固有】<color=#FFFFFFFF>本キャラが出撃キャラであり、味方がキャラチェンジを行う時</color>、それが「$[K1]」ではなく、「$[K2]」とみなされる。（各ラウンドで1回のみ）",
+            "Child": {
+                "K1": {
+                    "Name": "<color=#FFFFFFFF>戦闘アクション</color>",
+                    "Desc": "味方が戦闘アクションを1回行った後、相手のターンに移ります。\\n<color=#FFFFFFFF>このようなルールを持つ手札を出すのはクイックアクションではなく、戦闘アクションと見なされます。</color>"
+                },
+                "K2": {
+                    "Name": "<color=#FFFFFFFF>クイックアクション</color>",
+                    "Desc": "クイックアクションを1回行った後、あなたは他のアクションを続けて行うことができます。\\nただし、戦闘アクションを1回行うと、相手のターンに移ります。"
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 212031
+}

@@ -1,0 +1,113 @@
+{
+    "Type": "Character",
+    "Name": "镀金旅团·叶轮舞者",
+    "Title": "旋舞之忆·叶轮舞者",
+    "Desc": "「沙之民有音乐与舞蹈的传统，起初是对神的礼赞，后来则是讨取王者欢心的演艺与战斗的技术。」",
+    "Source": "在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度镀金旅团·叶轮舞者中获得胜利后获取",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_EremiteGrass",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "草元素",
+        "其他武器",
+        "镀金旅团"
+    ],
+    "Talent": {
+        "27031": {
+            "Name": "叶轮轻扫",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "27032": {
+            "Name": "蔓延旋舞",
+            "Desc": "造成$[D__KEY__DAMAGE_3]点$[D__KEY__ELEMENT]，生成1层<color=#FFFFFFFF>$[C127033]</color>。",
+            "Child": {
+                "D__KEY__DAMAGE_3": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_DENDRO",
+                "C127033": {
+                    "Name": "灵蛇祝福",
+                    "Desc": "<color=#FFFFFFFF>我方使用$[C127032]的$[K58]时：</color>此$[K58]造成的伤害+1，并且不消耗$[C127032]的$[K3]。\\n<color=#FFFFFFFF>$[K3]：1</color>（可叠加，没有上限）",
+                    "Child": {
+                        "C127032": {
+                            "Name": "厄灵·草之灵蛇",
+                            "Desc": "$[K58]：$[S1270321]\\n<color=#FFFFFFFF>$[K3]：2</color>\\n（角色最多装备1个「{SPRITE_PRESET#3008}特技」）",
+                            "Child": {
+                                "K58": {
+                                    "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#3008}特技</color>",
+                                    "Desc": "出战角色装备有「{SPRITE_PRESET#3008}特技」卡牌时，就可以使用对应的「{SPRITE_PRESET#3008}特技」。\\n使用「{SPRITE_PRESET#3008}特技」是一种「战斗行动」。角色因冻结、石化、眩晕等原因无法使用技能时，也会同时无法使用「{SPRITE_PRESET#3008}特技」。\\n角色使用「{SPRITE_PRESET#3008}特技」时不视为使用技能，无法触发「使用技能后」「角色引发元素反应后」等效果；角色使用「{SPRITE_PRESET#3008}特技」造成的伤害不被视为角色造成的伤害。"
+                                },
+                                "S1270321": "S1270321",
+                                "K3": {
+                                    "Name": "<color=#FFFFFFFF>可用次数</color>",
+                                    "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                                }
+                            }
+                        },
+                        "K58": {
+                            "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#3008}特技</color>",
+                            "Desc": "出战角色装备有「{SPRITE_PRESET#3008}特技」卡牌时，就可以使用对应的「{SPRITE_PRESET#3008}特技」。\\n使用「{SPRITE_PRESET#3008}特技」是一种「战斗行动」。角色因冻结、石化、眩晕等原因无法使用技能时，也会同时无法使用「{SPRITE_PRESET#3008}特技」。\\n角色使用「{SPRITE_PRESET#3008}特技」时不视为使用技能，无法触发「使用技能后」「角色引发元素反应后」等效果；角色使用「{SPRITE_PRESET#3008}特技」造成的伤害不被视为角色造成的伤害。"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>可用次数</color>",
+                            "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 3
+            }
+        },
+        "27033": {
+            "Name": "厄灵苏醒·草之灵蛇",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。整场牌局限制1次，将1张<color=#FFFFFFFF>$[C127032]</color>加入我方手牌。\\n（装备有<color=#FFFFFFFF>$[C127032]</color>的角色可以使用特技：<color=#FFFFFFFF>$[S1270321]</color>）",
+            "Child": {
+                "D__KEY__DAMAGE": 4,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_DENDRO",
+                "C127032": {
+                    "Name": "厄灵·草之灵蛇",
+                    "Desc": "$[K58]：$[S1270321]\\n<color=#FFFFFFFF>$[K3]：2</color>\\n（角色最多装备1个「{SPRITE_PRESET#3008}特技」）",
+                    "Child": {
+                        "K58": {
+                            "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#3008}特技</color>",
+                            "Desc": "出战角色装备有「{SPRITE_PRESET#3008}特技」卡牌时，就可以使用对应的「{SPRITE_PRESET#3008}特技」。\\n使用「{SPRITE_PRESET#3008}特技」是一种「战斗行动」。角色因冻结、石化、眩晕等原因无法使用技能时，也会同时无法使用「{SPRITE_PRESET#3008}特技」。\\n角色使用「{SPRITE_PRESET#3008}特技」时不视为使用技能，无法触发「使用技能后」「角色引发元素反应后」等效果；角色使用「{SPRITE_PRESET#3008}特技」造成的伤害不被视为角色造成的伤害。"
+                        },
+                        "S1270321": "S1270321",
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>可用次数</color>",
+                            "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                },
+                "S1270321": "S1270321"
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "27034": {
+            "Name": "厄灵之能",
+            "Desc": "【被动】<color=#FFFFFFFF>此角色受到伤害后：</color>如果此角色生命值不多于7，则获得1点$[K310]。（每回合1次）",
+            "Child": {
+                "K310": {
+                    "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}充能</color>",
+                    "Desc": "角色使用「元素爆发」时，需要消耗{SPRITE_PRESET#1110}充能。\\n角色使用「元素战技」或「普通攻击」后，会获得1点{SPRITE_PRESET#1110}充能。"
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 227031
+}

@@ -1,0 +1,39 @@
+{
+    "Type": "Action",
+    "Name": "Elegy for the End",
+    "Title": "The Parting Refrain: Elegy for the End",
+    "Desc": "\"...But no wind in any season on earth\"\\n\"Shall have you gaze upon me again.\"",
+    "Source": "",
+    "Icon": "UI_Gcg_CardFace_Modify_Weapon_Widsith",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PAIMON",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "Weapon",
+        "Bow"
+    ],
+    "Talent": {
+        "Name": "Elegy for the End",
+        "Desc": "<color=#FFFFFFFF>The character deals +1 DMG</color>.\\n<color=#FFFFFFFF>After the character uses an Elemental Burst:</color> Create <color=#FFFFFFFF>$[C301102]</color>. (Your character deals +1 DMG, $[K4]: 2)\\n(<color=#FFFFFFFF>Only {SPRITE_PRESET#3202}Bow Characters</color> can equip this. A character can equip a maximum of 1 {SPRITE_PRESET#3003}Weapon)",
+        "Child": {
+            "C301102": {
+                "Name": "Millennial Movement: Farewell Song",
+                "Desc": "Your character deals 1 increased DMG.\\n<color=#FFFFFFFF>$[K4]: 2</color>",
+                "Child": {
+                    "K4": {
+                        "Name": "<color=#FFFFFFFF>Duration (Rounds)</color>",
+                        "Desc": "Each time you reach the end of a Round, <color=#FFFFFFFF>Duration (Rounds)</color> -1.\\nThis card will be discarded immediately once <color=#FFFFFFFF>Duration (Rounds)</color> runs out."
+                    }
+                }
+            },
+            "K4": {
+                "Name": "<color=#FFFFFFFF>Duration (Rounds)</color>",
+                "Desc": "Each time you reach the end of a Round, <color=#FFFFFFFF>Duration (Rounds)</color> -1.\\nThis card will be discarded immediately once <color=#FFFFFFFF>Duration (Rounds)</color> runs out."
+            }
+        }
+    }
+}

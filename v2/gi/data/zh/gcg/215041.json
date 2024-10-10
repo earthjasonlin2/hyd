@@ -1,0 +1,57 @@
+{
+    "Type": "Action",
+    "Name": "降魔·护法夜叉",
+    "Title": "魈·降魔",
+    "Desc": "诸邪退散，万恶皆除。",
+    "Source": "在猫尾酒馆中邀请魈进行对局，完成相应挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Constellation_Xiao",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_ANEMO",
+            "count": 3
+        },
+        {
+            "costType": "GCG_COST_ENERGY",
+            "count": 2
+        }
+    ],
+    "Tag": [
+        "天赋",
+        "战斗行动"
+    ],
+    "Talent": {
+        "Name": "降魔·护法夜叉",
+        "Desc": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1504]</color>时，装备此牌。\\n$[A1504]装备此牌后，立刻使用一次<color=#FFD780FF>$[S15043]</color>。\\n装备有此牌的$[A1504]附属<color=#FFFFFFFF>$[C115041]</color>期间，使用<color=#FFFFFFFF>$[S15042]</color>时少花费1个{SPRITE_PRESET#1105}<color=#80FFD7FF>风元素</color>。（每附属1次<color=#FFFFFFFF>$[C115041]</color>，可触发2次）\\n（牌组中包含$[A1504]，才能加入牌组）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>战斗行动</color>",
+                "Desc": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+            },
+            "A1504": "降魔·护法夜叉",
+            "S15043": "S15043",
+            "C115041": {
+                "Name": "夜叉傩面",
+                "Desc": "所附属角色造成的$[K100]变为$[K105]，且角色造成的$[K105]+1。\\n<color=#FFFFFFFF>所附属角色进行$[K52]时：</color>伤害额外+2。\\n<color=#FFFFFFFF>所附属角色为出战角色，我方执行「切换角色」行动时：</color>少花费1个元素骰。（每回合1次）\\n<color=#FFFFFFFF>$[K4]：2</color>",
+                "Child": {
+                    "K100": {
+                        "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>",
+                        "Desc": "物理伤害不会附着元素，也不会发生元素反应。"
+                    },
+                    "K105": {
+                        "Name": "{SPRITE_PRESET#2105}<color=#80FFD7FF>风元素伤害</color>",
+                        "Desc": "和已附着的元素发生元素反应：\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2101}<color=#FFFFFFFF>扩散（冰）</color>：对目标以外的所有敌方角色造成1点冰元素伤害\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2102}<color=#FFFFFFFF>扩散（水）</color>：对目标以外的所有敌方角色造成1点水元素伤害\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2103}<color=#FFFFFFFF>扩散（火）</color>：对目标以外的所有敌方角色造成1点火元素伤害\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2104}<color=#FFFFFFFF>扩散（雷）</color>：对目标以外的所有敌方角色造成1点雷元素伤害"
+                    },
+                    "K52": {
+                        "Name": "<color=#FFFFFFFF>下落攻击</color>",
+                        "Desc": "角色被切换为「出战角色」后，本回合内的下一个战斗行动若为「普通攻击」，则被视为「下落攻击」。"
+                    },
+                    "K4": {
+                        "Name": "<color=#FFFFFFFF>持续回合</color>",
+                        "Desc": "每回合结束阶段，<color=#FFFFFFFF>持续回合</color>-1；\\n<color=#FFFFFFFF>持续回合</color>耗尽后，立刻弃置此牌。"
+                    }
+                }
+            },
+            "S15042": "S15042"
+        }
+    }
+}

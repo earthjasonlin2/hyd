@@ -1,0 +1,180 @@
+{
+    "Id": 8034011,
+    "Name": "Ten Stonehearts: Aventurine of Stratagems (Complete)",
+    "Desc": "A complete projection produced by compromised codes. The referent entity is a senior manager in the IPC Strategic Investment Department and one of the Ten Stonehearts. Using his Cornerstone, he obtained a share of the authority of an Emanator of Preservation. He throws his own body into the game as a die, ready to face death in order to walk away alive.",
+    "MonsterCampID": 9,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 1395,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/Monster_8034010.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "LittleBoss",
+    "SpeedBase": 144,
+    "StanceBase": 600,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.3000000002793968,
+    "Child": [
+        {
+            "Id": 8034011,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Ice",
+                "Thunder"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Fire",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.40000000037252903
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 803401101,
+                    "SkillName": "Heavy Stakes",
+                    "SkillDesc": "Deals Imaginary DMG to a single target.",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 803401102,
+                    "SkillName": "Distributed Investment",
+                    "SkillDesc": "Deals successive minor Imaginary DMG to random targets.",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 5
+                },
+                {
+                    "Id": 803401103,
+                    "SkillName": "Points Fountain",
+                    "SkillDesc": "Deals minor Imaginary DMG to all targets and reduce all targets' Energy.",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401104,
+                    "SkillName": "Time For A Bet",
+                    "SkillDesc": "Summons \"All or Nothing\" and makes a single target enter the Gamble. Every time an \"All or Nothing\" is attacked by a target in the Gamble, the target that launched the attack will receive a random number between 1 and 6. When HP is reduced to 1, gains <u>Influx of Fortuity</u>. Each time the first \"All or Nothing\" is attacked, doubles the odds of the Gamble. After a target that is in the Gamble has finished their turn, targets with numbers lower than \"Aventurine of Stratagems\" are considered to have lost the Gamble and will be attacked, while those with a number higher than \"Aventurine of Stratagems\" are considered to have won the Gamble and will have their Ultimate activated. At the same time, targets that have not entered the Gamble are afflicted with the \"Look, Don't Speak\" status, which is dispelled when the Gamble ends.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401105,
+                    "SkillName": "Big Spenders' Mad Party",
+                    "SkillDesc": "Summons \"All or Nothing\" and makes all targets enter the gamble. Every time an \"All or Nothing\" is attacked, the target that launched the attack will receive a random number between 1 and 6. When HP is reduced to 1, gains <u>Influx of Fortuity</u>. Each time the first \"All or Nothing\" is attacked, doubles the odds of the Gamble. The next time \"Aventurine of Stratagems\" takes a turn, targets with numbers lower than \"Aventurine of Stratagems\" are considered to have lost the bet and will be attacked, while targets with numbers higher than \"Aventurine of Stratagems\" are considered to have won the bet and will have their Ultimates activated.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401106,
+                    "SkillName": "The Mad Abyss",
+                    "SkillDesc": "Summons \"All or Nothing,\" multiplies the numbers received, and makes all targets enter the gamble. Every time an \"All or Nothing\" is attacked, the target that launched the attack will receive a random number between 1 and 6. When HP is reduced to 1, gains <u>Influx of Fortuity</u>. Each time the first \"All or Nothing\" is attacked, doubles the odds of the Gamble. The next time \"Aventurine of Stratagems\" takes a turn, if the sum of all targets' numbers is lower than that of \"Aventurine of Stratagems,\" they are considered to have lost the bet and will be attacked. If the sum of all targets' numbers is higher than that of \"Aventurine of Stratagems,\" they are considered to have won the bet and will have their Ultimates activated.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401107,
+                    "SkillName": "The Loser's Time Is Over",
+                    "SkillDesc": "Deals Imaginary DMG to a target that lost the Gamble, with a high chance of inflicting Imprisonment on the attacked target.",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 803401108,
+                    "SkillName": "The Winner Takes It All",
+                    "SkillDesc": "Deals Imaginary DMG to all targets that lost the Gamble, with a high chance of inflicting Imprisonment on the attacked targets.",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 803401109,
+                    "SkillName": "Eyes Once Closed for Lies",
+                    "SkillDesc": "The initial odds for the gamble is 1, up to a maximum of 4. Every time a target wins the gamble, they receive a number of <u>Fenge's Gift</u> stacks equal to the odds. Every time a target loses the gamble, they receive a number of <u>Fenge's Curse</u> stacks equal to the odds.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401110,
+                    "SkillName": "Eyes Twice Closed for Trickery",
+                    "SkillDesc": "The initial odds for the gamble is 1, up to a maximum of 8. Every time a target wins the gamble, they receive a number of <u>Fenge's Gift</u> stacks equal to the odds. Every time a target loses the gamble, they receive a number of <u>Fenge's Curse</u> stacks equal to the odds.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401111,
+                    "SkillName": "Eyes Thrice Closed for Schemes",
+                    "SkillDesc": "The initial odds for the gamble is 1, up to a maximum of <unbreak>16</unbreak>. Every time a target wins the gamble, all targets receive a number of <u>Fenge's Gift</u> stacks equal to the odds. Every time a target loses the gamble, all targets receive a number of <u>Fenge's Curse</u> stacks equal to the odds.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401112,
+                    "SkillName": "Deep in Debt",
+                    "SkillDesc": "Aventurine of Stratagems' DMG increases every time the gamble is initiated.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 8034011,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 8034011,
+            "WorldLevel": 1,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 8034011,
+            "WorldLevel": 2,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 8034011,
+            "WorldLevel": 3,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 8034011,
+            "WorldLevel": 4,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 8034011,
+            "WorldLevel": 5,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 8034011,
+            "WorldLevel": 6,
+            "DisplayItemList": []
+        }
+    ]
+}

@@ -1,0 +1,204 @@
+{
+    "Id": 1014015,
+    "Name": "スヴァローグ",
+    "Desc": "旧世界の古い遺物、地髄開拓団の時代に残した自動コントロールユニット、知能を持たない大半のロボットと違って、スヴァローグは複雑な思考能力を持っている。\\n戦闘中、スヴァローグはマニピュレーターを呼び出して敵を制御し、重い一撃を与える。",
+    "MonsterCampID": null,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 697.5000000004657,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/Monster_1014010.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "LittleBoss",
+    "SpeedBase": 144,
+    "StanceBase": 360,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.3000000002793968,
+    "Child": [
+        {
+            "Id": 1014015,
+            "AttackModifyRatio": 0.6666670010890812,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 20,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Thunder",
+                "Wind",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 101401501,
+                    "SkillName": "追放の拳",
+                    "SkillDesc": "指定した味方単体に物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 101401502,
+                    "SkillName": "バーニングビーム",
+                    "SkillDesc": "指定した味方単体に物理属性ダメージを与え、攻撃を受けた味方の行動順を遅延させる。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 101401503,
+                    "SkillName": "巨大なる掌",
+                    "SkillDesc": "指定した味方単体を「束縛」状態にする、「束縛」状態では行動できず、攻撃のターゲットにもされない。マニピュレーターユニットが弱点撃破されると、味方の束縛状態が解除される。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 101401504,
+                    "SkillName": "過飽和爆撃",
+                    "SkillDesc": "味方全体に大量の物理属性ダメージを与え、高確率で攻撃を受けた味方の防御力をダウンする。このデバフは累積できる。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 2
+                },
+                {
+                    "Id": 101401505,
+                    "SkillName": "制御起爆",
+                    "SkillDesc": "マニピュレーターユニットが爆発し、指定した味方単体に大量の物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 25
+                },
+                {
+                    "Id": 101401506,
+                    "SkillName": "過負荷警告",
+                    "SkillDesc": "マニピュレーターユニットが「過負荷時間制限」状態になる。この状態に入ると次の行動で「制御起爆」を発動する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401507,
+                    "SkillName": "有効配置",
+                    "SkillDesc": "「マニピュレーターユニット」を召喚する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401508,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401509,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401510,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401511,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401512,
+                    "SkillName": "ダメージ増幅",
+                    "SkillDesc": "敵全体の与ダメージを小アップする、与ダメージアップ効果は累積できる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401513,
+                    "SkillName": "応急支援",
+                    "SkillDesc": "ランダムに「自動機兵・ジューク」と「自動機兵・サバーカ」を召喚する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401514,
+                    "SkillName": "戦術支援",
+                    "SkillDesc": "「自動機兵・ヴォルク」を召喚する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401515,
+                    "SkillName": "有効配置",
+                    "SkillDesc": "「マニピュレーターユニット」を2体召喚する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401516,
+                    "SkillName": "有効配置",
+                    "SkillDesc": "「マニピュレーターユニット」を2体召喚する。うち1体は過負荷状態で出現する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 1014015,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1014015,
+            "WorldLevel": 1,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1014015,
+            "WorldLevel": 2,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1014015,
+            "WorldLevel": 3,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1014015,
+            "WorldLevel": 4,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1014015,
+            "WorldLevel": 5,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1014015,
+            "WorldLevel": 6,
+            "DisplayItemList": []
+        }
+    ]
+}

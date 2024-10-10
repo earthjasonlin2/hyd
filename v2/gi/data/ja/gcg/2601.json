@@ -1,0 +1,93 @@
+{
+    "Type": "Character",
+    "Name": "ヒルチャール·岩兜の王",
+    "Title": "千嶂を行く·ヒルチャール·岩兜の王",
+    "Desc": "遠回りして進もう。この先は「王」の領域だから。",
+    "Source": "キャッツテールのリトルプリンスのところで酒場挑戦を行い、ヒルチャール·岩兜の王に挑戦して友好対戦に勝利することで獲得",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_Bruterock",
+    "Hp": 8,
+    "Cost": 2,
+    "Tag": [
+        "岩元素",
+        "他の武器",
+        "魔物",
+        "ヒルチャール"
+    ],
+    "Talent": {
+        "26011": {
+            "Name": "Plama Lawa",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "26012": {
+            "Name": "Movo Lawa",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 3
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 3
+            }
+        },
+        "26013": {
+            "Name": "Upa Shato",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 5
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "26014": {
+            "Name": "魔化：岩兜",
+            "Desc": "【固有】戦闘開始時、<color=#FFFFFFFF>$[C126011]</color>と<color=#FFFFFFFF>$[C126012]</color>が付与される。",
+            "Child": {
+                "C126011": {
+                    "Name": "岩兜",
+                    "Desc": "<color=#FFFFFFFF>付与されたキャラがダメージを受けた時</color>、ダメージを1相殺してくれる。$[K106]を相殺する時、$[K3]は追加で1消費される。\\n<color=#FFFFFFFF>$[K3]：3</color>",
+                    "Child": {
+                        "K106": {
+                            "Name": "{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素ダメージ</color>",
+                            "Desc": "付着した元素と以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2101}<color=#FFFFFFFF>結晶（氷）</color>：ダメージ+1、味方の出撃キャラはシールドを1獲得する（最大2まで重ねられる）\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2102}<color=#FFFFFFFF>結晶（水）</color>：ダメージ+1、味方の出撃キャラはシールドを1獲得する（最大2まで重ねられる）\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2103}<color=#FFFFFFFF>結晶（炎）</color>：ダメージ+1、味方の出撃キャラはシールドを1獲得する（最大2まで重ねられる）\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2104}<color=#FFFFFFFF>結晶（雷）</color>：ダメージ+1、味方の出撃キャラはシールドを1獲得する（最大2まで重ねられる）"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                            "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                        }
+                    }
+                },
+                "C126012": {
+                    "Name": "堅岩の力",
+                    "Desc": "キャラの$[K100]が$[K106]へと変わる。\\n<color=#FFFFFFFF>各ラウンドで1回のみ：</color>キャラの与えるダメージ+1。\\n<color=#FFFFFFFF>キャラに付与された「$[C126011]」が解除されると</color>、この状態も解除される。",
+                    "Child": {
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>",
+                            "Desc": "物理ダメージは元素付着させたり、元素反応を起こしたりはしません。"
+                        },
+                        "K106": {
+                            "Name": "{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素ダメージ</color>",
+                            "Desc": "付着した元素と以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2101}<color=#FFFFFFFF>結晶（氷）</color>：ダメージ+1、味方の出撃キャラはシールドを1獲得する（最大2まで重ねられる）\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2102}<color=#FFFFFFFF>結晶（水）</color>：ダメージ+1、味方の出撃キャラはシールドを1獲得する（最大2まで重ねられる）\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2103}<color=#FFFFFFFF>結晶（炎）</color>：ダメージ+1、味方の出撃キャラはシールドを1獲得する（最大2まで重ねられる）\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2104}<color=#FFFFFFFF>結晶（雷）</color>：ダメージ+1、味方の出撃キャラはシールドを1獲得する（最大2まで重ねられる）"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 226011
+}

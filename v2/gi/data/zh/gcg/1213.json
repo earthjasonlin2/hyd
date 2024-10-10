@@ -1,0 +1,208 @@
+{
+    "Type": "Character",
+    "Name": "希格雯",
+    "Title": "龙女妙变·希格雯",
+    "Desc": "「圣洁之灵，请听我愿。」",
+    "Source": "在猫尾酒馆中邀请希格雯进行对局，在友好对局难度中获得胜利后获取",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Sigewinne",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "水元素",
+        "弓",
+        "枫丹",
+        "始基力：荒性"
+    ],
+    "Talent": {
+        "12131": {
+            "Name": "靶向治疗",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "12132": {
+            "Name": "弹跳水疗法",
+            "Desc": "生成1张<color=#FFFFFFFF>$[C112131]</color>，将其置于我方牌库顶部第3张牌的位置，本角色附属3层<color=#FFFFFFFF>$[C122]</color>。（触发<color=#FFFFFFFF>$[C112131]</color>的效果后，会生成<color=#FFFFFFFF>$[C112132]</color>并置入对方牌库；触发<color=#FFFFFFFF>$[C112132]</color>的效果后，会生成<color=#FFFFFFFF>$[C112133]</color>并置入我方牌库）",
+            "Child": {
+                "C112131": {
+                    "Name": "激愈水球·大",
+                    "Desc": "<color=#FFFFFFFF>抓到此牌时：</color>治疗我方出战角色3点。生成1张<color=#FFFFFFFF>$[C112132]</color>，将其置于对方牌库顶部第2张牌的位置。",
+                    "Child": {
+                        "C112132": {
+                            "Name": "激愈水球·中",
+                            "Desc": "<color=#FFFFFFFF>抓到此牌时：</color>对所在阵营的出战角色造成2点$[K102]。生成1张<color=#FFFFFFFF>$[C112133]</color>，将其置于对方牌库顶部。",
+                            "Child": {
+                                "K102": {
+                                    "Name": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素伤害</color>",
+                                    "Desc": "附着{SPRITE_PRESET#2102}水元素，可发生元素反应：\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2103}<color=#FFFFFFFF>蒸发</color>：本伤害+2\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}<color=#FFFFFFFF>感电</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2101}<color=#FFFFFFFF>冻结</color>：本伤害+1，使目标本回合无法行动（受到物理或火元素伤害后提前解除，但是伤害+2）\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}<color=#FFFFFFFF>绽放</color>：本伤害+1，生成使下次火元素或雷元素伤害+2的[<color=#FFFFFFFF>草原核</color>]"
+                                },
+                                "C112133": {
+                                    "Name": "激愈水球·小",
+                                    "Desc": "<color=#FFFFFFFF>抓到此牌时：</color>治疗所有我方角色1点，生成<color=#FFFFFFFF>$[C112101]</color>。",
+                                    "Child": {
+                                        "C112101": {
+                                            "Name": "源水之滴",
+                                            "Desc": "<color=#FFFFFFFF>$[A1210]进行普通攻击后：</color>治疗$[A1210]2点。如果$[A1210]是我方「出战角色」，则$[K53]：<color=#FFFFFFFF>$[K1020]</color>。\\n<color=#FFFFFFFF>$[K3]：1</color>（可叠加，最多叠加到3次）",
+                                            "Child": {
+                                                "A1210": "希格雯",
+                                                "K53": {
+                                                    "Name": "<color=#FFFFFFFF>准备技能</color>",
+                                                    "Desc": "有些技能无法被直接使用，而是需要一定次数的行动轮来进行<color=#FFFFFFFF>准备</color>。\\n轮到一位牌手行动时，如果该牌手的「出战角色」正在<color=#FFFFFFFF>准备</color>技能，则跳过该牌手的行动；如果技能已经完成<color=#FFFFFFFF>准备</color>，角色将会在此时直接使用此技能。（此类需要<color=#FFFFFFFF>准备</color>的技能，无法触发「使用技能后」「角色引发元素反应后」等效果。）\\n只有「出战角色」才能<color=#FFFFFFFF>准备</color>技能；如果正在<color=#FFFFFFFF>准备</color>技能的「出战角色」被切换到后台，技能的<color=#FFFFFFFF>准备</color>就会被打断。"
+                                                },
+                                                "K1020": {
+                                                    "Name": "<color=#FFFFFFFF>衡平推裁</color>",
+                                                    "Desc": "<color=#D3BC8E>普通攻击</color>\\n（需准备1个行动轮）\\n造成2点{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素伤害</color>，如果本角色生命值至少为6，则此伤害+1并对自身造成1点穿透伤害。"
+                                                },
+                                                "K3": {
+                                                    "Name": "<color=#FFFFFFFF>可用次数</color>",
+                                                    "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "C122": {
+                    "Name": "生命之契",
+                    "Desc": "<color=#FFFFFFFF>所附属角色受到治疗时：</color>此效果每有1次$[K3]，就消耗1次，以抵消1点所受到的治疗。（无法抵消复苏或分配生命值引发的治疗）\\n<color=#FFFFFFFF>$[K3]：1</color>（可叠加，没有上限）。",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>可用次数</color>",
+                            "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3
+            }
+        },
+        "12133": {
+            "Name": "过饱和心意注射",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，然后$[K53]：<color=#FFFFFFFF>$[S12135]</color>。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "K53": {
+                    "Name": "<color=#FFFFFFFF>准备技能</color>",
+                    "Desc": "有些技能无法被直接使用，而是需要一定次数的行动轮来进行<color=#FFFFFFFF>准备</color>。\\n轮到一位牌手行动时，如果该牌手的「出战角色」正在<color=#FFFFFFFF>准备</color>技能，则跳过该牌手的行动；如果技能已经完成<color=#FFFFFFFF>准备</color>，角色将会在此时直接使用此技能。（此类需要<color=#FFFFFFFF>准备</color>的技能，无法触发「使用技能后」「角色引发元素反应后」等效果。）\\n只有「出战角色」才能<color=#FFFFFFFF>准备</color>技能；如果正在<color=#FFFFFFFF>准备</color>技能的「出战角色」被切换到后台，技能的<color=#FFFFFFFF>准备</color>就会被打断。"
+                },
+                "S12135": "S12135"
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "12134": {
+            "Name": "细致入微的诊疗",
+            "Desc": "【被动】我方角色受到治疗，使其所附属的<color=#FFFFFFFF>$[C122]</color>被完全移除后，该角色获得1点额外最大生命值。（对每名角色最多生效3次）\\n<color=#FFFFFFFF>我方切换到本角色时：</color>如果我方场上存在<color=#FFFFFFFF>$[C112101]</color>，则使其$[K3]-1，本角色获得1点$[K310]。",
+            "Child": {
+                "C122": {
+                    "Name": "生命之契",
+                    "Desc": "<color=#FFFFFFFF>所附属角色受到治疗时：</color>此效果每有1次$[K3]，就消耗1次，以抵消1点所受到的治疗。（无法抵消复苏或分配生命值引发的治疗）\\n<color=#FFFFFFFF>$[K3]：1</color>（可叠加，没有上限）。",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>可用次数</color>",
+                            "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                },
+                "C112101": {
+                    "Name": "源水之滴",
+                    "Desc": "<color=#FFFFFFFF>$[A1210]进行普通攻击后：</color>治疗$[A1210]2点。如果$[A1210]是我方「出战角色」，则$[K53]：<color=#FFFFFFFF>$[K1020]</color>。\\n<color=#FFFFFFFF>$[K3]：1</color>（可叠加，最多叠加到3次）",
+                    "Child": {
+                        "A1210": "希格雯",
+                        "K53": {
+                            "Name": "<color=#FFFFFFFF>准备技能</color>",
+                            "Desc": "有些技能无法被直接使用，而是需要一定次数的行动轮来进行<color=#FFFFFFFF>准备</color>。\\n轮到一位牌手行动时，如果该牌手的「出战角色」正在<color=#FFFFFFFF>准备</color>技能，则跳过该牌手的行动；如果技能已经完成<color=#FFFFFFFF>准备</color>，角色将会在此时直接使用此技能。（此类需要<color=#FFFFFFFF>准备</color>的技能，无法触发「使用技能后」「角色引发元素反应后」等效果。）\\n只有「出战角色」才能<color=#FFFFFFFF>准备</color>技能；如果正在<color=#FFFFFFFF>准备</color>技能的「出战角色」被切换到后台，技能的<color=#FFFFFFFF>准备</color>就会被打断。"
+                        },
+                        "K1020": {
+                            "Name": "<color=#FFFFFFFF>衡平推裁</color>",
+                            "Desc": "<color=#D3BC8E>普通攻击</color>\\n（需准备1个行动轮）\\n造成2点{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素伤害</color>，如果本角色生命值至少为6，则此伤害+1并对自身造成1点穿透伤害。"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>可用次数</color>",
+                            "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                },
+                "K3": {
+                    "Name": "<color=#FFFFFFFF>可用次数</color>",
+                    "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                },
+                "K310": {
+                    "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}充能</color>",
+                    "Desc": "角色使用「元素爆发」时，需要消耗{SPRITE_PRESET#1110}充能。\\n角色使用「元素战技」或「普通攻击」后，会获得1点{SPRITE_PRESET#1110}充能。"
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        },
+        "12135": {
+            "Name": "满满心意药剂冲击",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO"
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {}
+        },
+        "12136": {
+            "Name": "细致入微的诊疗",
+            "Desc": "",
+            "Child": {},
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        },
+        "12137": {
+            "Name": "细致入微的诊疗",
+            "Desc": "【被动】<color=#FFFFFFFF>我方切换到本角色时：</color>如果我方场上存在<color=#FFFFFFFF>$[C112101]</color>，则使其$[K3]-1，本角色获得1点$[K310]。",
+            "Child": {
+                "C112101": {
+                    "Name": "源水之滴",
+                    "Desc": "<color=#FFFFFFFF>$[A1210]进行普通攻击后：</color>治疗$[A1210]2点。如果$[A1210]是我方「出战角色」，则$[K53]：<color=#FFFFFFFF>$[K1020]</color>。\\n<color=#FFFFFFFF>$[K3]：1</color>（可叠加，最多叠加到3次）",
+                    "Child": {
+                        "A1210": "希格雯",
+                        "K53": {
+                            "Name": "<color=#FFFFFFFF>准备技能</color>",
+                            "Desc": "有些技能无法被直接使用，而是需要一定次数的行动轮来进行<color=#FFFFFFFF>准备</color>。\\n轮到一位牌手行动时，如果该牌手的「出战角色」正在<color=#FFFFFFFF>准备</color>技能，则跳过该牌手的行动；如果技能已经完成<color=#FFFFFFFF>准备</color>，角色将会在此时直接使用此技能。（此类需要<color=#FFFFFFFF>准备</color>的技能，无法触发「使用技能后」「角色引发元素反应后」等效果。）\\n只有「出战角色」才能<color=#FFFFFFFF>准备</color>技能；如果正在<color=#FFFFFFFF>准备</color>技能的「出战角色」被切换到后台，技能的<color=#FFFFFFFF>准备</color>就会被打断。"
+                        },
+                        "K1020": {
+                            "Name": "<color=#FFFFFFFF>衡平推裁</color>",
+                            "Desc": "<color=#D3BC8E>普通攻击</color>\\n（需准备1个行动轮）\\n造成2点{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素伤害</color>，如果本角色生命值至少为6，则此伤害+1并对自身造成1点穿透伤害。"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>可用次数</color>",
+                            "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                },
+                "K3": {
+                    "Name": "<color=#FFFFFFFF>可用次数</color>",
+                    "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                },
+                "K310": {
+                    "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}充能</color>",
+                    "Desc": "角色使用「元素爆发」时，需要消耗{SPRITE_PRESET#1110}充能。\\n角色使用「元素战技」或「普通攻击」后，会获得1点{SPRITE_PRESET#1110}充能。"
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 212131
+}

@@ -1,0 +1,443 @@
+{
+  "Id": 53010,
+  "CodeName": "Electroboo",
+  "Name": "ビリビリボンプ",
+  "Desc": "パチッ、ビリッ…触る時は、ゴム手袋を忘れずに。",
+  "Rarity": 3,
+  "Icon": "UI/Sprite/A1DynamicLoad/BangbooModGarage/UnPacker/BangbooRole/BangbooGarageRole16.png",
+  "Stats": {
+    "Stamina": 100,
+    "StaminaUpragde": 10,
+    "Endurance": 180,
+    "HpMax": 360,
+    "Hpupgrade": 428397,
+    "Attack": 50,
+    "AttackUpgrade": 252034,
+    "BreakStun": 90,
+    "ElementAbnormalPower": 120,
+    "Defence": 30,
+    "DefUpgrade": 85729,
+    "Crit": 500,
+    "PenRatio": 0,
+    "CritDmg": 5000
+  },
+  "Level": {
+    "1": {
+      "HpMax": 0,
+      "Attack": 0,
+      "Defence": 0,
+      "LevelMax": 10,
+      "LevelMin": 0,
+      "Materials": {
+        "10": 15000,
+        "102010": 4
+      },
+      "Extra": {
+        "20101": {
+          "Prop": 20101,
+          "Name": "会心率",
+          "Format": "{0:0.#%}",
+          "Value": 0
+        },
+        "21101": {
+          "Prop": 21101,
+          "Name": "会心ダメージ",
+          "Format": "{0:0.#%}",
+          "Value": 0
+        }
+      }
+    },
+    "2": {
+      "HpMax": 188,
+      "Attack": 47,
+      "Defence": 38,
+      "LevelMax": 20,
+      "LevelMin": 10,
+      "Materials": {
+        "10": 35000,
+        "102020": 12
+      },
+      "Extra": {
+        "20101": {
+          "Prop": 20101,
+          "Name": "会心率",
+          "Format": "{0:0.#%}",
+          "Value": 450
+        },
+        "21101": {
+          "Prop": 21101,
+          "Name": "会心ダメージ",
+          "Format": "{0:0.#%}",
+          "Value": 0
+        }
+      }
+    },
+    "3": {
+      "HpMax": 376,
+      "Attack": 233,
+      "Defence": 75,
+      "LevelMax": 30,
+      "LevelMin": 20,
+      "Materials": {
+        "10": 75000,
+        "102020": 20
+      },
+      "Extra": {
+        "20101": {
+          "Prop": 20101,
+          "Name": "会心率",
+          "Format": "{0:0.#%}",
+          "Value": 2250
+        },
+        "21101": {
+          "Prop": 21101,
+          "Name": "会心ダメージ",
+          "Format": "{0:0.#%}",
+          "Value": 0
+        }
+      }
+    },
+    "4": {
+      "HpMax": 564,
+      "Attack": 699,
+      "Defence": 113,
+      "LevelMax": 40,
+      "LevelMin": 30,
+      "Materials": {
+        "10": 125000,
+        "102030": 10
+      },
+      "Extra": {
+        "20101": {
+          "Prop": 20101,
+          "Name": "会心率",
+          "Format": "{0:0.#%}",
+          "Value": 2250
+        },
+        "21101": {
+          "Prop": 21101,
+          "Name": "会心ダメージ",
+          "Format": "{0:0.#%}",
+          "Value": 2500
+        }
+      }
+    },
+    "5": {
+      "HpMax": 752,
+      "Attack": 1864,
+      "Defence": 151,
+      "LevelMax": 50,
+      "LevelMin": 40,
+      "Materials": {
+        "10": 250000,
+        "102030": 20
+      },
+      "Extra": {
+        "20101": {
+          "Prop": 20101,
+          "Name": "会心率",
+          "Format": "{0:0.#%}",
+          "Value": 4500
+        },
+        "21101": {
+          "Prop": 21101,
+          "Name": "会心ダメージ",
+          "Format": "{0:0.#%}",
+          "Value": 2500
+        }
+      }
+    },
+    "6": {
+      "HpMax": 940,
+      "Attack": 4661,
+      "Defence": 188,
+      "LevelMax": 60,
+      "LevelMin": 50,
+      "Materials": {},
+      "Extra": {
+        "20101": {
+          "Prop": 20101,
+          "Name": "会心率",
+          "Format": "{0:0.#%}",
+          "Value": 4500
+        },
+        "21101": {
+          "Prop": 21101,
+          "Name": "会心ダメージ",
+          "Format": "{0:0.#%}",
+          "Value": 5000
+        }
+      }
+    }
+  },
+  "Skill": {
+    "A": {
+      "Level": {
+        "1": {
+          "Name": "ひゃくまんボルト！",
+          "Desc": "<color=#FFFFFF>『アクティブスキル』</color>\nスキルを発動すると、敵に突撃し、複数回の電撃攻撃を与え、<color=#2EB6FF>電気属性ダメージ</color>を与え、<color=#2EB6FF>電気属性の状態異常蓄積値</color>を増やす。",
+          "Property": [
+            "ダメージ倍率",
+            "ブレイク倍率",
+            "クールタイム"
+          ],
+          "Param": "{Skill:5301001, Prop:1001}|{Skill:5301001, Prop:1002}|18秒"
+        },
+        "2": {
+          "Name": "ひゃくまんボルト！",
+          "Desc": "<color=#FFFFFF>『アクティブスキル』</color>\nスキルを発動すると、敵に突撃し、複数回の電撃攻撃を与え、<color=#2EB6FF>電気属性ダメージ</color>を与え、<color=#2EB6FF>電気属性の状態異常蓄積値</color>を増やす。",
+          "Property": [
+            "ダメージ倍率",
+            "ブレイク倍率",
+            "クールタイム"
+          ],
+          "Param": "{Skill:5301001, Prop:1001}|{Skill:5301001, Prop:1002}|18秒"
+        },
+        "3": {
+          "Name": "ひゃくまんボルト！",
+          "Desc": "<color=#FFFFFF>『アクティブスキル』</color>\nスキルを発動すると、敵に突撃し、複数回の電撃攻撃を与え、<color=#2EB6FF>電気属性ダメージ</color>を与え、<color=#2EB6FF>電気属性の状態異常蓄積値</color>を増やす。",
+          "Property": [
+            "ダメージ倍率",
+            "ブレイク倍率",
+            "クールタイム"
+          ],
+          "Param": "{Skill:5301001, Prop:1001}|{Skill:5301001, Prop:1002}|18秒"
+        },
+        "4": {
+          "Name": "ひゃくまんボルト！",
+          "Desc": "<color=#FFFFFF>『アクティブスキル』</color>\nスキルを発動すると、敵に突撃し、複数回の電撃攻撃を与え、<color=#2EB6FF>電気属性ダメージ</color>を与え、<color=#2EB6FF>電気属性の状態異常蓄積値</color>を増やす。",
+          "Property": [
+            "ダメージ倍率",
+            "ブレイク倍率",
+            "クールタイム"
+          ],
+          "Param": "{Skill:5301001, Prop:1001}|{Skill:5301001, Prop:1002}|18秒"
+        },
+        "5": {
+          "Name": "ひゃくまんボルト！",
+          "Desc": "<color=#FFFFFF>『アクティブスキル』</color>\nスキルを発動すると、敵に突撃し、複数回の電撃攻撃を与え、<color=#2EB6FF>電気属性ダメージ</color>を与え、<color=#2EB6FF>電気属性の状態異常蓄積値</color>を増やす。",
+          "Property": [
+            "ダメージ倍率",
+            "ブレイク倍率",
+            "クールタイム"
+          ],
+          "Param": "{Skill:5301001, Prop:1001}|{Skill:5301001, Prop:1002}|18秒"
+        },
+        "6": {
+          "Name": "ひゃくまんボルト！",
+          "Desc": "<color=#FFFFFF>『アクティブスキル』</color>\nスキルを発動すると、敵に突撃し、複数回の電撃攻撃を与え、<color=#2EB6FF>電気属性ダメージ</color>を与え、<color=#2EB6FF>電気属性の状態異常蓄積値</color>を増やす。",
+          "Property": [
+            "ダメージ倍率",
+            "ブレイク倍率",
+            "クールタイム"
+          ],
+          "Param": "{Skill:5301001, Prop:1001}|{Skill:5301001, Prop:1002}|18秒"
+        },
+        "7": {
+          "Name": "ひゃくまんボルト！",
+          "Desc": "<color=#FFFFFF>『アクティブスキル』</color>\nスキルを発動すると、敵に突撃し、複数回の電撃攻撃を与え、<color=#2EB6FF>電気属性ダメージ</color>を与え、<color=#2EB6FF>電気属性の状態異常蓄積値</color>を増やす。",
+          "Property": [
+            "ダメージ倍率",
+            "ブレイク倍率",
+            "クールタイム"
+          ],
+          "Param": "{Skill:5301001, Prop:1001}|{Skill:5301001, Prop:1002}|18秒"
+        },
+        "8": {
+          "Name": "ひゃくまんボルト！",
+          "Desc": "<color=#FFFFFF>『アクティブスキル』</color>\nスキルを発動すると、敵に突撃し、複数回の電撃攻撃を与え、<color=#2EB6FF>電気属性ダメージ</color>を与え、<color=#2EB6FF>電気属性の状態異常蓄積値</color>を増やす。",
+          "Property": [
+            "ダメージ倍率",
+            "ブレイク倍率",
+            "クールタイム"
+          ],
+          "Param": "{Skill:5301001, Prop:1001}|{Skill:5301001, Prop:1002}|18秒"
+        },
+        "9": {
+          "Name": "ひゃくまんボルト！",
+          "Desc": "<color=#FFFFFF>『アクティブスキル』</color>\nスキルを発動すると、敵に突撃し、複数回の電撃攻撃を与え、<color=#2EB6FF>電気属性ダメージ</color>を与え、<color=#2EB6FF>電気属性の状態異常蓄積値</color>を増やす。",
+          "Property": [
+            "ダメージ倍率",
+            "ブレイク倍率",
+            "クールタイム"
+          ],
+          "Param": "{Skill:5301001, Prop:1001}|{Skill:5301001, Prop:1002}|18秒"
+        },
+        "10": {
+          "Name": "ひゃくまんボルト！",
+          "Desc": "<color=#FFFFFF>『アクティブスキル』</color>\nスキルを発動すると、敵に突撃し、複数回の電撃攻撃を与え、<color=#2EB6FF>電気属性ダメージ</color>を与え、<color=#2EB6FF>電気属性の状態異常蓄積値</color>を増やす。",
+          "Property": [
+            "ダメージ倍率",
+            "ブレイク倍率",
+            "クールタイム"
+          ],
+          "Param": "{Skill:5301001, Prop:1001}|{Skill:5301001, Prop:1002}|18秒"
+        }
+      }
+    },
+    "B": {
+      "Level": {
+        "1": {
+          "Name": "誘導電流",
+          "Desc": "<color=#FFFFFF>『追加能力』</color>\nチームに<color=#2EB6FF>[電気属性]</color>のメンバーが2名以上いる時に発動：<color=#FFFFFF>『ボンプ連携スキル』</color>による状態異常蓄積値が60%アップする。",
+          "Property": [
+            "状態異常蓄積値アップ"
+          ],
+          "Param": "60%"
+        },
+        "2": {
+          "Name": "誘導電流",
+          "Desc": "<color=#FFFFFF>『追加能力』</color>\nチームに<color=#2EB6FF>[電気属性]</color>のメンバーが2名以上いる時に発動：<color=#FFFFFF>『ボンプ連携スキル』</color>による状態異常蓄積値が75%アップする。",
+          "Property": [
+            "状態異常蓄積値アップ"
+          ],
+          "Param": "75%"
+        },
+        "3": {
+          "Name": "誘導電流",
+          "Desc": "<color=#FFFFFF>『追加能力』</color>\nチームに<color=#2EB6FF>[電気属性]</color>のメンバーが2名以上いる時に発動：<color=#FFFFFF>『ボンプ連携スキル』</color>による状態異常蓄積値が90%アップする。",
+          "Property": [
+            "状態異常蓄積値アップ"
+          ],
+          "Param": "90%"
+        },
+        "4": {
+          "Name": "誘導電流",
+          "Desc": "<color=#FFFFFF>『追加能力』</color>\nチームに<color=#2EB6FF>[電気属性]</color>のメンバーが2名以上いる時に発動：<color=#FFFFFF>『ボンプ連携スキル』</color>による状態異常蓄積値が105%アップする。",
+          "Property": [
+            "状態異常蓄積値アップ"
+          ],
+          "Param": "105%"
+        },
+        "5": {
+          "Name": "誘導電流",
+          "Desc": "<color=#FFFFFF>『追加能力』</color>\nチームに<color=#2EB6FF>[電気属性]</color>のメンバーが2名以上いる時に発動：<color=#FFFFFF>『ボンプ連携スキル』</color>による状態異常蓄積値が120%アップする。",
+          "Property": [
+            "状態異常蓄積値アップ"
+          ],
+          "Param": "120%"
+        }
+      }
+    },
+    "C": {
+      "Level": {
+        "1": {
+          "Name": "いちおくボルト！",
+          "Desc": "<color=#FFFFFF>『ボンプ連携スキル』</color>\nターゲットに連続電撃を放ち、<color=#2EB6FF>電気属性ダメージ</color>を与え、<color=#2EB6FF>電気属性の状態異常蓄積値</color>を大幅に増やす。",
+          "Property": [
+            "ダメージ倍率",
+            "ブレイク倍率"
+          ],
+          "Param": "{Skill:5301002, Prop:1001}|{Skill:5301002, Prop:1002}"
+        },
+        "2": {
+          "Name": "いちおくボルト！",
+          "Desc": "<color=#FFFFFF>『ボンプ連携スキル』</color>\nターゲットに連続電撃を放ち、<color=#2EB6FF>電気属性ダメージ</color>を与え、<color=#2EB6FF>電気属性の状態異常蓄積値</color>を大幅に増やす。",
+          "Property": [
+            "ダメージ倍率",
+            "ブレイク倍率"
+          ],
+          "Param": "{Skill:5301002, Prop:1001}|{Skill:5301002, Prop:1002}"
+        },
+        "3": {
+          "Name": "いちおくボルト！",
+          "Desc": "<color=#FFFFFF>『ボンプ連携スキル』</color>\nターゲットに連続電撃を放ち、<color=#2EB6FF>電気属性ダメージ</color>を与え、<color=#2EB6FF>電気属性の状態異常蓄積値</color>を大幅に増やす。",
+          "Property": [
+            "ダメージ倍率",
+            "ブレイク倍率"
+          ],
+          "Param": "{Skill:5301002, Prop:1001}|{Skill:5301002, Prop:1002}"
+        },
+        "4": {
+          "Name": "いちおくボルト！",
+          "Desc": "<color=#FFFFFF>『ボンプ連携スキル』</color>\nターゲットに連続電撃を放ち、<color=#2EB6FF>電気属性ダメージ</color>を与え、<color=#2EB6FF>電気属性の状態異常蓄積値</color>を大幅に増やす。",
+          "Property": [
+            "ダメージ倍率",
+            "ブレイク倍率"
+          ],
+          "Param": "{Skill:5301002, Prop:1001}|{Skill:5301002, Prop:1002}"
+        },
+        "5": {
+          "Name": "いちおくボルト！",
+          "Desc": "<color=#FFFFFF>『ボンプ連携スキル』</color>\nターゲットに連続電撃を放ち、<color=#2EB6FF>電気属性ダメージ</color>を与え、<color=#2EB6FF>電気属性の状態異常蓄積値</color>を大幅に増やす。",
+          "Property": [
+            "ダメージ倍率",
+            "ブレイク倍率"
+          ],
+          "Param": "{Skill:5301002, Prop:1001}|{Skill:5301002, Prop:1002}"
+        },
+        "6": {
+          "Name": "いちおくボルト！",
+          "Desc": "<color=#FFFFFF>『ボンプ連携スキル』</color>\nターゲットに連続電撃を放ち、<color=#2EB6FF>電気属性ダメージ</color>を与え、<color=#2EB6FF>電気属性の状態異常蓄積値</color>を大幅に増やす。",
+          "Property": [
+            "ダメージ倍率",
+            "ブレイク倍率"
+          ],
+          "Param": "{Skill:5301002, Prop:1001}|{Skill:5301002, Prop:1002}"
+        },
+        "7": {
+          "Name": "いちおくボルト！",
+          "Desc": "<color=#FFFFFF>『ボンプ連携スキル』</color>\nターゲットに連続電撃を放ち、<color=#2EB6FF>電気属性ダメージ</color>を与え、<color=#2EB6FF>電気属性の状態異常蓄積値</color>を大幅に増やす。",
+          "Property": [
+            "ダメージ倍率",
+            "ブレイク倍率"
+          ],
+          "Param": "{Skill:5301002, Prop:1001}|{Skill:5301002, Prop:1002}"
+        },
+        "8": {
+          "Name": "いちおくボルト！",
+          "Desc": "<color=#FFFFFF>『ボンプ連携スキル』</color>\nターゲットに連続電撃を放ち、<color=#2EB6FF>電気属性ダメージ</color>を与え、<color=#2EB6FF>電気属性の状態異常蓄積値</color>を大幅に増やす。",
+          "Property": [
+            "ダメージ倍率",
+            "ブレイク倍率"
+          ],
+          "Param": "{Skill:5301002, Prop:1001}|{Skill:5301002, Prop:1002}"
+        },
+        "9": {
+          "Name": "いちおくボルト！",
+          "Desc": "<color=#FFFFFF>『ボンプ連携スキル』</color>\nターゲットに連続電撃を放ち、<color=#2EB6FF>電気属性ダメージ</color>を与え、<color=#2EB6FF>電気属性の状態異常蓄積値</color>を大幅に増やす。",
+          "Property": [
+            "ダメージ倍率",
+            "ブレイク倍率"
+          ],
+          "Param": "{Skill:5301002, Prop:1001}|{Skill:5301002, Prop:1002}"
+        },
+        "10": {
+          "Name": "いちおくボルト！",
+          "Desc": "<color=#FFFFFF>『ボンプ連携スキル』</color>\nターゲットに連続電撃を放ち、<color=#2EB6FF>電気属性ダメージ</color>を与え、<color=#2EB6FF>電気属性の状態異常蓄積値</color>を大幅に増やす。",
+          "Property": [
+            "ダメージ倍率",
+            "ブレイク倍率"
+          ],
+          "Param": "{Skill:5301002, Prop:1001}|{Skill:5301002, Prop:1002}"
+        }
+      }
+    }
+  },
+  "SkillProp": {
+    "5301001": {
+      "1001": {
+        "Main": 36000,
+        "Growth": 3600,
+        "Format": "%"
+      },
+      "1002": {
+        "Main": 21100,
+        "Growth": 2110,
+        "Format": "%"
+      }
+    },
+    "5301002": {
+      "1001": {
+        "Main": 71200,
+        "Growth": 7120,
+        "Format": "%"
+      },
+      "1002": {
+        "Main": 10200,
+        "Growth": 1020,
+        "Format": "%"
+      }
+    }
+  }
+}

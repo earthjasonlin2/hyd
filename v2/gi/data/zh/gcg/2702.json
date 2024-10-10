@@ -1,0 +1,176 @@
+{
+    "Type": "Character",
+    "Name": "阿佩普的绿洲守望者",
+    "Title": "智慧终景·阿佩普的绿洲守望者",
+    "Desc": "阿佩普曾独自沉溺于末日的风景当中。所有的人、神、龙、走兽、飞鸟与游鱼，所有记忆、智慧、话语与仇恨将都磨为无色尘粉，最后一轮明月之光则化作白焰之雨落在荒土之上。\\n……\\n阿佩普曾视沙海之底为自己的墓场，而非失乡之王的行宫。「智慧」的毒很快就会让它从无数个月亮的仇恨与愤怒中解脱。它已经对终末缺乏颜色的景象感到厌倦了。直到最终年轻的神明与金色的旅人让它再度回想起，即便自己曾经主宰的青绿土地已经化作饰金的荒原，即便自己与子嗣为了在其中生存而变得扭曲丑陋，但它的心中始终珍藏着那一角绿洲的景象。",
+    "Source": "在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度阿佩普的绿洲守望者中获得胜利后获取",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_Apep",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "草元素",
+        "其他武器",
+        "魔物"
+    ],
+    "Talent": {
+        "27021": {
+            "Name": "失乡重击",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "27022": {
+            "Name": "生命流束",
+            "Desc": "造成$[D__KEY__DAMAGE_2]点$[D__KEY__ELEMENT]，抓1张<color=#FFFFFFFF>$[C127021]</color>，生成1层<color=#FFFFFFFF>$[C127026]</color>。",
+            "Child": {
+                "D__KEY__DAMAGE_2": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_DENDRO",
+                "C127021": {
+                    "Name": "唤醒眷属",
+                    "Desc": "<color=#FFFFFFFF>打出此牌或$[K56]此牌时：</color>召唤一个独立的$[C127022]。",
+                    "Child": {
+                        "K56": {
+                            "Name": "<color=#FFFFFFFF>舍弃</color>",
+                            "Desc": "通过行动牌或角色技能的效果，将行动牌从手牌或牌库中弃置。"
+                        },
+                        "C127022": {
+                            "Name": "增殖生命体",
+                            "Desc": "<color=#FFFFFFFF>结束阶段：</color>造成1点$[K107]。\\n<color=#FFFFFFFF>$[K3]：1</color>",
+                            "Child": {
+                                "K107": {
+                                    "Name": "{SPRITE_PRESET#2107}<color=#7EC236FF>草元素伤害</color>",
+                                    "Desc": "附着{SPRITE_PRESET#2107}草元素，可发生元素反应：\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>绽放</color>：本伤害+1，生成使下次火元素或雷元素伤害+2的[<color=#FFFFFFFF>草原核</color>]\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>燃烧</color>：本伤害+1，生成回合结束时造成1点火元素伤害的[<color=#FFFFFFFF>燃烧烈焰</color>]（可用次数1，最多叠加到2）\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>原激化</color>：本伤害+1，生成使下2次草元素或雷元素伤害+1的[<color=#FFFFFFFF>激化领域</color>]"
+                                },
+                                "K3": {
+                                    "Name": "<color=#FFFFFFFF>可用次数</color>",
+                                    "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                                }
+                            }
+                        }
+                    }
+                },
+                "C127026": {
+                    "Name": "绿洲之滋养",
+                    "Desc": "<color=#FFFFFFFF>我方打出$[C127021]时：</color>少花费1个元素骰。\\n<color=#FFFFFFFF>$[K3]：1</color>（可叠加到3）",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>可用次数</color>",
+                            "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 3
+            }
+        },
+        "27023": {
+            "Name": "终景迸落",
+            "Desc": "造成$[D__KEY__DAMAGE_2]点$[D__KEY__ELEMENT]，抓1张<color=#FFFFFFFF>$[C127021]</color>，生成2层<color=#FFFFFFFF>$[C127026]</color>。",
+            "Child": {
+                "D__KEY__DAMAGE_2": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_DENDRO",
+                "C127021": {
+                    "Name": "唤醒眷属",
+                    "Desc": "<color=#FFFFFFFF>打出此牌或$[K56]此牌时：</color>召唤一个独立的$[C127022]。",
+                    "Child": {
+                        "K56": {
+                            "Name": "<color=#FFFFFFFF>舍弃</color>",
+                            "Desc": "通过行动牌或角色技能的效果，将行动牌从手牌或牌库中弃置。"
+                        },
+                        "C127022": {
+                            "Name": "增殖生命体",
+                            "Desc": "<color=#FFFFFFFF>结束阶段：</color>造成1点$[K107]。\\n<color=#FFFFFFFF>$[K3]：1</color>",
+                            "Child": {
+                                "K107": {
+                                    "Name": "{SPRITE_PRESET#2107}<color=#7EC236FF>草元素伤害</color>",
+                                    "Desc": "附着{SPRITE_PRESET#2107}草元素，可发生元素反应：\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>绽放</color>：本伤害+1，生成使下次火元素或雷元素伤害+2的[<color=#FFFFFFFF>草原核</color>]\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>燃烧</color>：本伤害+1，生成回合结束时造成1点火元素伤害的[<color=#FFFFFFFF>燃烧烈焰</color>]（可用次数1，最多叠加到2）\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>原激化</color>：本伤害+1，生成使下2次草元素或雷元素伤害+1的[<color=#FFFFFFFF>激化领域</color>]"
+                                },
+                                "K3": {
+                                    "Name": "<color=#FFFFFFFF>可用次数</color>",
+                                    "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                                }
+                            }
+                        }
+                    }
+                },
+                "C127026": {
+                    "Name": "绿洲之滋养",
+                    "Desc": "<color=#FFFFFFFF>我方打出$[C127021]时：</color>少花费1个元素骰。\\n<color=#FFFFFFFF>$[K3]：1</color>（可叠加到3）",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>可用次数</color>",
+                            "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "27024": {
+            "Name": "增殖感召",
+            "Desc": "【被动】战斗开始时，生成5张<color=#FFFFFFFF>$[C127021]</color>，随机放入牌库。我方召唤4个<color=#FFFFFFFF>$[C127022]</color>后，此角色附属<color=#FFFFFFFF>$[C127027]</color>，并获得1点<color=#FFFFFFFF>$[K6]</color>。",
+            "Child": {
+                "C127021": {
+                    "Name": "唤醒眷属",
+                    "Desc": "<color=#FFFFFFFF>打出此牌或$[K56]此牌时：</color>召唤一个独立的$[C127022]。",
+                    "Child": {
+                        "K56": {
+                            "Name": "<color=#FFFFFFFF>舍弃</color>",
+                            "Desc": "通过行动牌或角色技能的效果，将行动牌从手牌或牌库中弃置。"
+                        },
+                        "C127022": {
+                            "Name": "增殖生命体",
+                            "Desc": "<color=#FFFFFFFF>结束阶段：</color>造成1点$[K107]。\\n<color=#FFFFFFFF>$[K3]：1</color>",
+                            "Child": {
+                                "K107": {
+                                    "Name": "{SPRITE_PRESET#2107}<color=#7EC236FF>草元素伤害</color>",
+                                    "Desc": "附着{SPRITE_PRESET#2107}草元素，可发生元素反应：\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>绽放</color>：本伤害+1，生成使下次火元素或雷元素伤害+2的[<color=#FFFFFFFF>草原核</color>]\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>燃烧</color>：本伤害+1，生成回合结束时造成1点火元素伤害的[<color=#FFFFFFFF>燃烧烈焰</color>]（可用次数1，最多叠加到2）\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>原激化</color>：本伤害+1，生成使下2次草元素或雷元素伤害+1的[<color=#FFFFFFFF>激化领域</color>]"
+                                },
+                                "K3": {
+                                    "Name": "<color=#FFFFFFFF>可用次数</color>",
+                                    "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                                }
+                            }
+                        }
+                    }
+                },
+                "C127027": {
+                    "Name": "重燃的绿洲之心",
+                    "Desc": "所附属角色造成的伤害+3。\\n<color=#FFFFFFFF>所附属角色使用技能后：</color>移除我方场上的<color=#FFFFFFFF>$[C127026]</color>，每移除1层就治疗所附属角色1点。",
+                    "Child": {
+                        "C127026": {
+                            "Name": "绿洲之滋养",
+                            "Desc": "<color=#FFFFFFFF>我方打出$[C127021]时：</color>少花费1个元素骰。\\n<color=#FFFFFFFF>$[K3]：1</color>（可叠加到3）",
+                            "Child": {
+                                "K3": {
+                                    "Name": "<color=#FFFFFFFF>可用次数</color>",
+                                    "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                                }
+                            }
+                        }
+                    }
+                },
+                "K6": {
+                    "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>护盾</color>",
+                    "Desc": "此护盾所保护的角色受到伤害时，将会消耗护盾来抵消伤害。"
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 227021
+}

@@ -1,0 +1,74 @@
+{
+    "Name": "어린 산룡",
+    "Desc": "어린 산룡. 바위와 고체 열소 사이를 넘나들 수 있다.\\n어린 산룡의 이마에는 뿔이 없고 발굴 기술도 미숙하다. 심지어 훈련하다가 바위에 갇혔다는 소문도 자주 들린다. 하지만 언젠가 어린 산룡도 단단한 땅속을 자유롭게 넘나들 수 있는 모습으로 성장할 것이다",
+    "Icon": "UI_MonsterIcon_Natsaurus_Drillhead_Small",
+    "Codex": "BEAST",
+    "Title": "어린 산룡",
+    "SpecialNames": [
+        "나타를 떠도는 용"
+    ],
+    "Reward": [
+        {
+            "Id": 202,
+            "Rank": 3,
+            "Icon": "UI_ItemIcon_202"
+        },
+        {
+            "Id": 112101,
+            "Rank": 1,
+            "Icon": "UI_ItemIcon_112101"
+        },
+        {
+            "Id": 112102,
+            "Rank": 2,
+            "Icon": "UI_ItemIcon_112102"
+        },
+        {
+            "Id": 112103,
+            "Rank": 3,
+            "Icon": "UI_ItemIcon_112103"
+        }
+    ],
+    "Child": {
+        "26200101": {
+            "MonsterName": "Monster_Natsaurus_Drillhead_Small_01",
+            "Type": "MONSTER_ORDINARY",
+            "HpDrops": [
+                {},
+                {},
+                {}
+            ],
+            "KillDropId": 22010017,
+            "Prop": [
+                {
+                    "type": "FIGHT_PROP_BASE_HP",
+                    "growCurve": "GROW_CURVE_HP_2"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_ATTACK",
+                    "growCurve": "GROW_CURVE_ATTACK_2"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_DEFENSE",
+                    "growCurve": "GROW_CURVE_DEFENSE"
+                }
+            ],
+            "LocalLegend": false,
+            "SubHurt": {
+                "Fire": 0.1000000014901,
+                "Grass": 0.1000000014901,
+                "Water": 0.1000000014901,
+                "Elec": 0.1000000014901,
+                "Wind": 0.1000000014901,
+                "Ice": 0.1000000014901,
+                "Rock": 0.3000000119209,
+                "Physical": 0.1000000014901
+            },
+            "Base": {
+                "HP": 14.9423999786377,
+                "ATK": 22.6079998016357,
+                "DEF": 500
+            }
+        }
+    }
+}

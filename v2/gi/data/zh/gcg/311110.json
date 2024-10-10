@@ -1,0 +1,35 @@
+{
+    "Type": "Action",
+    "Name": "纯水流华",
+    "Title": "纯水流华",
+    "Desc": "「…这颗心，如血肉之躯一般跳动着的心，已经在旅途中染上了同样的重罪。最为痛苦的悔恨折磨着这颗心，它又该去哪里寻得安宁？」",
+    "Source": "",
+    "Icon": "UI_Gcg_CardFace_Modify_Weapon_ChunShui",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PAIMON",
+            "count": 1
+        },
+        {}
+    ],
+    "Tag": [
+        "武器",
+        "法器"
+    ],
+    "Talent": {
+        "Name": "纯水流华",
+        "Desc": "<color=#FFFFFFFF>入场时和回合结束时：</color>角色附属1层<color=#FFFFFFFF>$[C122]</color>。\\n<color=#FFFFFFFF>我方行动前：</color>所附属角色如果未附属<color=#FFFFFFFF>$[C122]</color>，则生成1个随机基础元素骰，并且角色下次造成的伤害+1。（每回合1次）\\n（<color=#FFFFFFFF>「{SPRITE_PRESET#3201}法器」角色</color>才能装备。角色最多装备1件「{SPRITE_PRESET#3003}武器」）",
+        "Child": {
+            "C122": {
+                "Name": "生命之契",
+                "Desc": "<color=#FFFFFFFF>所附属角色受到治疗时：</color>此效果每有1次$[K3]，就消耗1次，以抵消1点所受到的治疗。（无法抵消复苏或分配生命值引发的治疗）\\n<color=#FFFFFFFF>$[K3]：1</color>（可叠加，没有上限）。",
+                "Child": {
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>可用次数</color>",
+                        "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "Type": "Action",
+    "Name": "Elemental Resonance: Enduring Rock",
+    "Title": "Elemental Resonance: Enduring Rock",
+    "Desc": "Bedrock shall make the hills unshakable.",
+    "Source": "",
+    "Icon": "UI_Gcg_CardFace_Event_ResonanceA_Rock",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_GEO",
+            "count": 1
+        },
+        {}
+    ],
+    "Tag": [
+        "Elemental Resonance"
+    ],
+    "Talent": {
+        "Name": "Elemental Resonance: Enduring Rock",
+        "Desc": "<color=#FFFFFFFF>During this round, after the next time your character deals $[K106]</color>: Should there be any Combat Status on your side that provides $[K6], grant one such Status with 3 $[K6] points. \\n(You must have at least 2 {SPRITE_PRESET#2106}<color=#FFE699FF>Geo</color> characters in your deck to add this card to your deck.)",
+        "Child": {
+            "K106": {
+                "Name": "{SPRITE_PRESET#2106}<color=#FFE699FF>Geo DMG</color>",
+                "Desc": "Reacts with Elements if they are already applied:\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Cryo Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Hydro Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Pyro Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Electro Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)"
+            },
+            "K6": {
+                "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>Shield</color>",
+                "Desc": "This Shield will be consumed to protect the character who equips it from DMG."
+            }
+        }
+    }
+}

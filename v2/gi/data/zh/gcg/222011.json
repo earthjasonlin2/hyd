@@ -1,0 +1,38 @@
+{
+    "Type": "Action",
+    "Name": "百川奔流",
+    "Title": "如流悬泄",
+    "Desc": "奔涌之水，是对已殁神灵敬爱的显现。",
+    "Source": "在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度纯水精灵·洛蒂娅中完成挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Chunshui",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_HYDRO",
+            "count": 4
+        },
+        {
+            "costType": "GCG_COST_ENERGY",
+            "count": 3
+        }
+    ],
+    "Tag": [
+        "天赋",
+        "战斗行动"
+    ],
+    "Talent": {
+        "Name": "百川奔流",
+        "Desc": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A2201]</color>时，装备此牌。\\n$[A2201]装备此牌后，立刻使用一次<color=#FFD780FF>$[S22014]</color>。\\n装备有此牌的$[A2201]使用<color=#FFFFFFFF>$[S22014]</color>时：我方所有召唤物$[K3]+1。\\n（牌组中包含$[A2201]，才能加入牌组）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>战斗行动</color>",
+                "Desc": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+            },
+            "A2201": "百川奔流",
+            "S22014": "S22014",
+            "K3": {
+                "Name": "<color=#FFFFFFFF>可用次数</color>",
+                "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+            }
+        }
+    }
+}

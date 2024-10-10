@@ -1,0 +1,98 @@
+{
+    "Type": "Character",
+    "Name": "Nilou",
+    "Title": "\"Dance of Lotuslight\" Nilou",
+    "Desc": "Steps floating like lotus petals, emerging from an intoxicating dream.",
+    "Source": "Reward for inviting Nilou to a duel at The Cat's Tail and claiming victory in a Friendly Fracas with her",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Nilou",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "Hydro",
+        "Sword",
+        "Sumeru"
+    ],
+    "Talent": {
+        "12081": {
+            "Name": "Dance of Samser",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "12082": {
+            "Name": "Dance of Haftkarsvar",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], if the party includes <color=#80C0FFFF>{SPRITE_PRESET#2102}Hydro Characters</color> and <color=#7EC236FF>{SPRITE_PRESET#2107}Dendro Characters</color> and characters from no other Elements, create 1 <color=#FFFFFFFF>$[C112081]</color>.",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "C112081": {
+                    "Name": "Golden Chalice's Bounty",
+                    "Desc": "<color=#FFFFFFFF>After opponent's characters are affected by the Bloom reaction:</color> Your team no longer generates <color=#FFFFFFFF>$[C116]</color>, but instead summons $[K1011].",
+                    "Child": {
+                        "C116": {
+                            "Name": "Dendro Core",
+                            "Desc": "<color=#FFFFFFFF>When you deal $[K103] or $[K104] to an opposing active character, </color>DMG dealt +2.\\n<color=#FFFFFFFF>$[K3]: 1</color>",
+                            "Child": {
+                                "K103": {
+                                    "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>Pyro DMG</color>",
+                                    "Desc": "Applies {SPRITE_PRESET#2103}Pyro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Melt</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Vaporize</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Overloaded</color>: DMG +2 for this instance, the target is forcibly switched to the next character\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Burning</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Burning Flame</color>] that will deal 1 Pyro DMG at the end of the Round (Takes effect once, max 2 stacks)"
+                                },
+                                "K104": {
+                                    "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>Electro DMG</color>",
+                                    "Desc": "Applies {SPRITE_PRESET#2104}Electro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Overloaded</color>: DMG +2 for this instance, the target is forcibly switched to the next character\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Superconduct</color>: DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Electro-Charged</color>: DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Quicken</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Catalyzing Field</color>] that grants +1 DMG to the next 2 instances of Dendro or Electro DMG"
+                                },
+                                "K3": {
+                                    "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                                    "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                                }
+                            }
+                        },
+                        "K1011": {
+                            "Name": "<color=#FFFFFFFF>Bountiful Core</color>",
+                            "Desc": "<color=#FFFFFFFF>End Phase:</color> Deal 2 {SPRITE_PRESET#2107}<color=#7EC236FF>Dendro DMG</color>.\\n<color=#FFFFFFFF><color=#FFFFFFFF>Usage(s): </color>1</color> (Can stack, max 3 stacks)\\n<color=#FFFFFFFF>When you declare the end of your Round:</color> If this summon has at least 2 Usages remaining, deal 2 {SPRITE_PRESET#2107}<color=#7EC236FF>Dendro DMG</color>. (Consumes <color=#FFFFFFFF>Usages</color>)"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3
+            }
+        },
+        "12083": {
+            "Name": "Dance of Abzendegi: Distant Dreams, Listening Spring",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. The target character receives <color=#FFFFFFFF>$[C112083]</color>.",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "C112083": {
+                    "Name": "Lingering Aeon",
+                    "Desc": "<color=#FFFFFFFF>End Phase:</color> Deal 3 $[K102] to affected character.\\n<color=#FFFFFFFF>$[K3]: 1</color>",
+                    "Child": {
+                        "K102": {
+                            "Name": "{SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro DMG</color>",
+                            "Desc": "Applies {SPRITE_PRESET#2102}Hydro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Vaporize</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Electro-Charged</color>：DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Frozen</color>: DMG +1 for this instance, the target is unable to perform any Actions this Round (Can be removed in advance after the target receives +2 Physical or Pyro DMG)\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Bloom</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Dendro Core</color>] that grants +2 DMG to the next instance of Pyro or Electro DMG"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 212081
+}

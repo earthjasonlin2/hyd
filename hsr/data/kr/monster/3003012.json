@@ -1,0 +1,384 @@
+{
+    "Id": 3003012,
+    "Name": "나쁜꿈 극단의 오버쿡(오류)",
+    "Desc": "코드가 영향을 받아 오류가 난 홀로그램. 원본 레퍼런스는 페나코니의 서비스 기계. 꿈세계의 감정 교란으로 인해 통제 불능에 빠졌다.\\n원래는 음식을 조리하는 요리 기계였다. 통제 불능에 빠진 후에도 여전히 식자재를 가열하기 위한 맹렬한 화염을 내뿜으며, 식객도 함께 재로 만들어 버리려고 한다",
+    "MonsterCampID": null,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 2511,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/Monster_3003010.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "Elite",
+    "SpeedBase": 120,
+    "StanceBase": 720,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.20000000018626451,
+    "Child": [
+        {
+            "Id": 3003012,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Thunder",
+                "Wind"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 300301201,
+                    "SkillName": "강력한 뒤집기",
+                    "SkillDesc": "단일 아군에게 화염 속성 피해를 가한다",
+                    "DamageType": "Fire",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 300301202,
+                    "SkillName": "토네이도 뒤집기",
+                    "SkillDesc": "단일 아군 및 인접한 목표에게 소량의 화염 속성 피해를 가한다",
+                    "DamageType": "Fire",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 300301203,
+                    "SkillName": "화로 폭파",
+                    "SkillDesc": "차지 상태에 진입하고 속도가 증가한다. [화로 가열]이 일정 스택까지 중첩되기 전까지 행동할 때마다 [맹렬한 볶기]를 발동한다",
+                    "DamageType": "Fire",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 300301204,
+                    "SkillName": "맹렬한 볶기",
+                    "SkillDesc": "모든 아군에게 대량의 화염 속성 피해를 가한다",
+                    "DamageType": "Fire",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 300301205,
+                    "SkillName": "주방 사고",
+                    "SkillDesc": "차지 상태 진입 후 [화로 가열]의 스택 수가 일정 수준에 달하면, 즉시 모든 적에게 대량의 화염 속성 피해를 가하고 자신의 방어력을 감소시킨다. 동시에 모든 [화로 가열] 스택 수가 제거된다",
+                    "DamageType": "Fire",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 300301206,
+                    "SkillName": "불에서 탄생한 최상의 요리",
+                    "SkillDesc": "차지 상태가 아닐 시 [화로 가열] 스택 수가 일정 수준 중첩되면 즉시 행동하고 [화로 폭파]를 발동한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 300301207,
+                    "SkillName": "맹화 화로",
+                    "SkillDesc": "자신이 공격할 시 높은 확률로 목표에게 감속 상태를 부여한다. 자신이 피격되거나 지속 피해를 받을 시 [화로 가열]이 1스택 중첩된다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 300301201,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 0.8333330010063946,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": -19.99999999976717,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Thunder",
+                "Wind"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 300301201,
+                    "SkillName": "강력한 뒤집기",
+                    "SkillDesc": "단일 아군에게 화염 속성 피해를 가한다",
+                    "DamageType": "Fire",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 300301202,
+                    "SkillName": "토네이도 뒤집기",
+                    "SkillDesc": "단일 아군 및 인접한 목표에게 소량의 화염 속성 피해를 가한다",
+                    "DamageType": "Fire",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 300301203,
+                    "SkillName": "화로 폭파",
+                    "SkillDesc": "차지 상태에 진입하고 속도가 증가한다. [화로 가열]이 일정 스택까지 중첩되기 전까지 행동할 때마다 [맹렬한 볶기]를 발동한다",
+                    "DamageType": "Fire",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 300301204,
+                    "SkillName": "맹렬한 볶기",
+                    "SkillDesc": "모든 아군에게 대량의 화염 속성 피해를 가한다",
+                    "DamageType": "Fire",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 300301205,
+                    "SkillName": "주방 사고",
+                    "SkillDesc": "차지 상태 진입 후 [화로 가열]의 스택 수가 일정 수준에 달하면, 즉시 모든 적에게 대량의 화염 속성 피해를 가하고 자신의 방어력을 감소시킨다. 동시에 모든 [화로 가열] 스택 수가 제거된다",
+                    "DamageType": "Fire",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 300301206,
+                    "SkillName": "불에서 탄생한 최상의 요리",
+                    "SkillDesc": "차지 상태가 아닐 시 [화로 가열] 스택 수가 일정 수준 중첩되면 즉시 행동하고 [화로 폭파]를 발동한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 300301207,
+                    "SkillName": "맹화 화로",
+                    "SkillDesc": "자신이 공격할 시 높은 확률로 목표에게 감속 상태를 부여한다. 자신이 피격되거나 지속 피해를 받을 시 [화로 가열]이 1스택 중첩된다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 3003012,
+            "AvatarExpReward": 150,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 114001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182010
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183006
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 3003012,
+            "WorldLevel": 1,
+            "AvatarExpReward": 200,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 114001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 114002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182010
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183006
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 3003012,
+            "WorldLevel": 2,
+            "AvatarExpReward": 250,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 114001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 114002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182010
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183006
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 3003012,
+            "WorldLevel": 3,
+            "AvatarExpReward": 300,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 114001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 114002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182010
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183006
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 3003012,
+            "WorldLevel": 4,
+            "AvatarExpReward": 350,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 114002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 114003
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182010
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183006
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 3003012,
+            "WorldLevel": 5,
+            "AvatarExpReward": 400,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 114002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 114003
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182010
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183006
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 3003012,
+            "WorldLevel": 6,
+            "AvatarExpReward": 400,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 114002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 114003
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182010
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183006
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,183 @@
+{
+    "Id": 2004013,
+    "Name": "「星核ハンター」カフカ（幻像）",
+    "Desc": "「星核ハンター」の一員。掴みどころのない笑みを浮かべる美しい殺し屋で、様々な武器の扱いとマインドコントロールに長けている。星穹列車をここまで誘導したのも、ある計画を実現するためである……ここに現れたのはあなたの記憶をもとにシミュレートされた幻である。",
+    "MonsterCampID": null,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 6510,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/Monster_2004010.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "LittleBoss",
+    "SpeedBase": 108,
+    "StanceBase": 720,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.20000000018626451,
+    "Child": [
+        {
+            "Id": 2004013,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Wind",
+                "Imaginary",
+                "Quantum"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Fire",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.6000000005587935
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 200401301,
+                    "SkillName": "止まない夜の喧騒",
+                    "SkillDesc": "指定した味方単体に雷属性ダメージを与え、確率で攻撃を受けた味方を感電状態にする。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200401302,
+                    "SkillName": "月明かりが撫でる連綿",
+                    "SkillDesc": "指定した味方単体および隣接する味方に雷属性ダメージを与える、メインターゲットが感電状態の場合、サブターゲットを感電状態にする。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200401303,
+                    "SkillName": "沈黙は厳かに嘲笑う",
+                    "SkillDesc": "味方全体に雷属性ダメージを与える。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 200401304,
+                    "SkillName": "言霊",
+                    "SkillDesc": "高確率で指定した味方単体を「支配」状態にし、行動順を早め、他の味方1名をランダムに攻撃させる。",
+                    "DamageType": "",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 200401305,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "Thunder",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200401306,
+                    "SkillName": "圧迫",
+                    "SkillDesc": "アクションバーに「派遣」を追加する。「派遣」が行動する時、スターピースカンパニー社員を<unbreak>#1[i]</unbreak>名召喚する。フィールド上に同時存在できる社員は最大<unbreak>#2[i]</unbreak>名まで。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 200401307,
+                    "SkillName": "心理暗示",
+                    "SkillDesc": "複数の味方を「心理暗示」状態にし、アクションバーに「公開」を追加する。次に「公開」が行動する時、「心理暗示」にかかった味方は「支配」状態になる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 200401308,
+                    "SkillName": "戦慄",
+                    "SkillDesc": "攻撃を受けたターゲットが感電状態の場合、感電ダメージを1回与える、このダメージは感電状態によるものとみなす。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 200401309,
+                    "SkillName": "残酷",
+                    "SkillDesc": "カフカ以外の敵、または「支配」状態の味方が感電状態の味方をメインターゲットとして攻撃を行う時、さらに雷属性攻撃を1回行う。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200401310,
+                    "SkillName": "弔意",
+                    "SkillDesc": "味方が感電状態を触発した時、カフカ自身の与ダメージがアップする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 200401311,
+                    "SkillName": "圧迫",
+                    "SkillDesc": "アクションバーに「派遣」を追加する。「派遣」が行動する時、スターピースカンパニー社員を<unbreak>#1[i]</unbreak>名召喚する。フィールド上に同時存在できる社員は最大<unbreak>#2[i]</unbreak>名まで。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 200401312,
+                    "SkillName": "剥奪",
+                    "SkillDesc": "カフカが行動する時、フィールド上のスターピースカンパニー社員にKPIがある場合、すべてのKPIを奪い、即座に「月明かりが撫でる連綿」を発動する。KPIはカフカのその回の攻撃ダメージを大アップする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 200401313,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 2004013,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2004013,
+            "WorldLevel": 1,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2004013,
+            "WorldLevel": 2,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2004013,
+            "WorldLevel": 3,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2004013,
+            "WorldLevel": 4,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2004013,
+            "WorldLevel": 5,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2004013,
+            "WorldLevel": 6,
+            "DisplayItemList": []
+        }
+    ]
+}

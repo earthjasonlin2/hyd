@@ -1,0 +1,309 @@
+{
+    "Id": 8003051,
+    "Name": "兴风者（错误）",
+    "Desc": "代码受到影响后的错误投影。参照本体为在裂界延展中遭遇侵蚀的怪物，在力量的本源发生畸变后拥有了更为灵活的战斗方式。\\n兴风者会利用风的力量协助自己战斗，借助风向射出更为迅猛的箭矢。并会在战斗中召唤巽风造物，与自己合作战斗。",
+    "MonsterCampID": null,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 1395,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/Monster_8003050.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "Elite",
+    "SpeedBase": 120,
+    "StanceBase": 360,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.20000000018626451,
+    "Child": [
+        {
+            "Id": 8003051,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Ice",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 800305101,
+                    "SkillName": "巡风光陨",
+                    "SkillDesc": "对指定我方单体造成风属性伤害，并大概率使其陷入风化状态。",
+                    "DamageType": "Wind",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 800305102,
+                    "SkillName": "踏风而行",
+                    "SkillDesc": "对指定我方单体及其相邻目标造成少量风属性伤害，并有概率使受到攻击的我方目标陷入风化状态。",
+                    "DamageType": "Wind",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 800305103,
+                    "SkillName": "拈风张弩",
+                    "SkillDesc": "进入蓄力状态，并锁定陷入风化状态的所有我方目标，下次行动施放【风落暴矢】。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 800305104,
+                    "SkillName": "风落暴矢",
+                    "SkillDesc": "对陷入风化状态的我方目标造成风属性伤害，并有概率使受到攻击的我方目标再次陷入风化状态。若场上没有陷入风化状态的我方目标，则本技能施放失败。",
+                    "DamageType": "Wind",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 800305105,
+                    "SkillName": "风浪急旋",
+                    "SkillDesc": "攻击陷入风化状态的我方目标后，自身攻击力小幅提高。当弱点被击破时，该效果解除。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 800305106,
+                    "SkillName": "风落暴矢",
+                    "SkillDesc": "对处于风化状态的我方目标造成风属性伤害。若场上没有处于风化状态的我方目标，则本技能施放失败。",
+                    "DamageType": "",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 800305107,
+                    "SkillName": "",
+                    "SkillDesc": "",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 800305108,
+                    "SkillName": "",
+                    "SkillDesc": "",
+                    "DamageType": "Wind",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 800305109,
+                    "SkillName": "即来之风",
+                    "SkillDesc": "召唤【巽风造物】。",
+                    "DamageType": "Wind",
+                    "SPHitBase": ""
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 8003051,
+            "AvatarExpReward": 150,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182007
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183004
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 8003051,
+            "WorldLevel": 1,
+            "AvatarExpReward": 200,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182007
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183004
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 8003051,
+            "WorldLevel": 2,
+            "AvatarExpReward": 250,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182007
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183004
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 8003051,
+            "WorldLevel": 3,
+            "AvatarExpReward": 300,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182007
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183004
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 8003051,
+            "WorldLevel": 4,
+            "AvatarExpReward": 350,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111003
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182007
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183004
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 8003051,
+            "WorldLevel": 5,
+            "AvatarExpReward": 400,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111003
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182007
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183004
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 8003051,
+            "WorldLevel": 6,
+            "AvatarExpReward": 400,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111003
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182007
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183004
+                }
+            ]
+        }
+    ]
+}

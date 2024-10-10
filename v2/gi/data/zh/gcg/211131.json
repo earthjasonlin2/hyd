@@ -1,0 +1,41 @@
+{
+    "Type": "Action",
+    "Name": "代行裁判",
+    "Title": "罗莎莉亚·代行裁判",
+    "Desc": "「晚安了…」",
+    "Source": "在猫尾酒馆中邀请罗莎莉亚进行对局，完成相应挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Rosaria",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_CRYO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "天赋",
+        "战斗行动"
+    ],
+    "Talent": {
+        "Name": "代行裁判",
+        "Desc": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1113]</color>时，装备此牌。\\n$[A1113]装备此牌后，立刻使用一次<color=#FFD780FF>$[S11132]</color>。\\n装备有此牌的$[A1113]使用<color=#FFFFFFFF>$[S11132]</color>，或我方生成<color=#FFFFFFFF>$[C111133]</color>后，在手牌中生成1张<color=#FFFFFFFF>$[C332002]</color>。（每回合1次）\\n（牌组中包含$[A1113]，才能加入牌组）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>战斗行动</color>",
+                "Desc": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+            },
+            "A1113": "代行裁判",
+            "S11132": "S11132",
+            "C111133": {
+                "Name": "幽影",
+                "Desc": "<color=#FFFFFFFF>我方造成技能伤害时：</color>移除此状态，使本次伤害加倍。",
+                "Child": {}
+            },
+            "C332002": {
+                "Name": "换班时间",
+                "Desc": "<color=#FFFFFFFF>我方下次执行「切换角色」行动时：</color>少花费1个元素骰。",
+                "Child": {}
+            }
+        }
+    }
+}

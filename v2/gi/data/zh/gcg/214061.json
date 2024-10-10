@@ -1,0 +1,41 @@
+{
+    "Type": "Action",
+    "Name": "我界",
+    "Title": "九条裟罗·我界",
+    "Desc": "「持心正弦，遇敌必除！」",
+    "Source": "在猫尾酒馆中邀请九条裟罗进行对局，完成相应挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Constellation_Sara",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_ELECTRO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "天赋",
+        "战斗行动"
+    ],
+    "Talent": {
+        "Name": "我界",
+        "Desc": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1406]</color>时，装备此牌。\\n$[A1406]装备此牌后，立刻使用一次<color=#FFD780FF>$[S14062]</color>。\\n装备有此牌的$[A1406]在场时，我方附属有<color=#FFFFFFFF>$[C114063]</color>的{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素</color>角色，<color=#FFFFFFFF>元素战技</color>和<color=#FFFFFFFF>元素爆发</color>造成的伤害额外+1。\\n（牌组中包含$[A1406]，才能加入牌组）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>战斗行动</color>",
+                "Desc": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+            },
+            "A1406": "我界",
+            "S14062": "S14062",
+            "C114063": {
+                "Name": "鸣煌护持",
+                "Desc": "所附属角色<color=#FFFFFFFF>元素战技</color>和<color=#FFFFFFFF>元素爆发</color>造成的伤害+1。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+                "Child": {
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>可用次数</color>",
+                        "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                    }
+                }
+            }
+        }
+    }
+}

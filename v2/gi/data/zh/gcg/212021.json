@@ -1,0 +1,45 @@
+{
+    "Type": "Action",
+    "Name": "重帘留香",
+    "Title": "行秋·重帘留香",
+    "Desc": "他的运笔方法一直让人印象深刻。",
+    "Source": "在猫尾酒馆中邀请行秋进行对局，完成相应挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Constellation_Xingqiu",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_HYDRO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "天赋",
+        "战斗行动"
+    ],
+    "Talent": {
+        "Name": "重帘留香",
+        "Desc": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1202]</color>时，装备此牌。\\n$[A1202]装备此牌后，立刻使用一次<color=#FFD780FF>$[S12022]</color>。\\n装备有此牌的$[A1202]生成的<color=#FFFFFFFF>$[C112021]</color>改为可以抵挡至少为2的伤害，并且初始$[K3]+1。\\n（牌组中包含$[A1202]，才能加入牌组）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>战斗行动</color>",
+                "Desc": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+            },
+            "A1202": "重帘留香",
+            "S12022": "S12022",
+            "C112021": {
+                "Name": "雨帘剑",
+                "Desc": "<color=#FFFFFFFF>我方出战角色受到至少为3的伤害时：</color>抵消1点伤害。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+                "Child": {
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>可用次数</color>",
+                        "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                    }
+                }
+            },
+            "K3": {
+                "Name": "<color=#FFFFFFFF>可用次数</color>",
+                "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+            }
+        }
+    }
+}

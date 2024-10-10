@@ -1,0 +1,92 @@
+{
+    "Type": "Character",
+    "Name": "綺良々",
+    "Title": "檐宇遊猫·綺良々",
+    "Desc": "岐尾駿足、万戸へ至る。",
+    "Source": "キャッツテールで綺良々を招待し、友好対戦に勝利することで獲得",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Momoka",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "草元素",
+        "片手剣",
+        "稲妻"
+    ],
+    "Talent": {
+        "17071": {
+            "Name": "段板紙·切り裂き術",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "17072": {
+            "Name": "にゃんにゃん町飛脚",
+            "Desc": "<color=#FFFFFFFF>$[C117071]</color>と<color=#FFFFFFFF>$[C117072]</color>を生成する。",
+            "Child": {
+                "C117071": {
+                    "Name": "ネコ箱急便",
+                    "Desc": "<color=#FFFFFFFF>出撃キャラが綺良々の時、味方がキャラチェンジした後</color>、$[K107]を1与え、手札を1枚引く。\\n<color=#FFFFFFFF>$[K3]：1</color>（最大2まで重ねられる）",
+                    "Child": {
+                        "K107": {
+                            "Name": "{SPRITE_PRESET#2107}<color=#7EC236FF>草元素ダメージ</color>",
+                            "Desc": "{SPRITE_PRESET#2107}草元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>開花</color>：ダメージ+1、次の炎元素または雷元素ダメージを2アップできる「<color=#FFFFFFFF>草原核</color>」を生成する\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>燃焼</color>：ダメージ+1、ラウンド終了時に炎元素ダメージを1与える「<color=#FFFFFFFF>燃焼烈焔</color>」を生成する（使用可能回数1回、最大2回まで重ね掛け可能）\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>原激化</color>：ダメージ+1、次の草元素または雷元素ダメージを2回まで+1できる「<color=#FFFFFFFF>激化領域</color>」を生成する"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                            "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                        }
+                    }
+                },
+                "C117072": {
+                    "Name": "安全運送シールド",
+                    "Desc": "味方の出撃キャラは<color=#FFFFFFFF>$[K6]を2</color>獲得する。",
+                    "Child": {
+                        "K6": {
+                            "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>シールド</color>",
+                            "Desc": "該当シールドに守られたキャラがダメージを受けた時、シールドを消費してダメージと相殺することができます。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 3
+            }
+        },
+        "17073": {
+            "Name": "秘法·サプライズ特別配送",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、相手のフィールドに<color=#FFFFFFFF>$[C117073]</color>を生成する。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_DENDRO",
+                "D__KEY__DAMAGE": 4,
+                "C117073": {
+                    "Name": "ニャルダモン",
+                    "Desc": "<color=#FFFFFFFF>チームがアクションカードを2枚使用した後</color>、チームの出撃キャラに$[K107]を1与える。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+                    "Child": {
+                        "K107": {
+                            "Name": "{SPRITE_PRESET#2107}<color=#7EC236FF>草元素ダメージ</color>",
+                            "Desc": "{SPRITE_PRESET#2107}草元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>開花</color>：ダメージ+1、次の炎元素または雷元素ダメージを2アップできる「<color=#FFFFFFFF>草原核</color>」を生成する\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>燃焼</color>：ダメージ+1、ラウンド終了時に炎元素ダメージを1与える「<color=#FFFFFFFF>燃焼烈焔</color>」を生成する（使用可能回数1回、最大2回まで重ね掛け可能）\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>原激化</color>：ダメージ+1、次の草元素または雷元素ダメージを2回まで+1できる「<color=#FFFFFFFF>激化領域</color>」を生成する"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                            "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 217071
+}

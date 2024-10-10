@@ -1,0 +1,872 @@
+{
+    "Leyline": {
+        "96": {
+            "Icon": "UI_TowerBlessing_85",
+            "Name": "예진의 달",
+            "Desc": "현재 필드 위 캐릭터가 원소전투 스킬 발동 후 10초 동안 <color=#F39000FF>일반 공격으로 주는 피해가 20% 증가</color>한다. 또한 해당 캐릭터의 일반 공격이 적에게 명중 시 카운트를 진행한다. 0.1초마다 최대 1회 카운트하며, 3회에 도달하면 적의 위치에 <color=#F39000FF>충격파를 발동</color>해 주변 적에게 고정 피해를 주고, 카운트가 초기화된다. 충격파는 1.5초마다 최대 1회 발동하며, 캐릭터가 퇴장하면 해당 효과는 사라지고 카운트도 초기화된다"
+        },
+        "97": {
+            "Icon": "UI_TowerBlessing_83",
+            "Name": "공료의 달",
+            "Desc": "캐릭터가 치유를 받은 후 해당 캐릭터의 <color=#F39000FF>원소전투 스킬 피해가 20% 증가</color>한다. 지속 시간: 8초, 최대 중첩수: 3회. 지속 시간은 독립적으로 계산한다"
+        }
+    },
+    "Floor": {
+        "9": {
+            "Open": "2024-06-16 04:00:00",
+            "Close": "2024-08-16 03:59:59",
+            "Buff": [
+                "캐릭터가 증발 반응을 발동한 후, 5초 동안 해당 캐릭터가 증발 반응으로 주는 피해가 50% 증가한다"
+            ],
+            "Room": {
+                "1": {
+                    "Level": 72,
+                    "Cond": [
+                        [
+                            2,
+                            60
+                        ],
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 25010301,
+                            "Hp": 44177.68805314549,
+                            "Name": "보물 사냥단·불의 약제사",
+                            "Icon": "UI_MonsterIcon_Thoarder_Male_Chemist_Fire_01"
+                        },
+                        {
+                            "Id": 25010401,
+                            "Hp": 44177.68805314549,
+                            "Name": "보물 사냥단·물의 약제사",
+                            "Icon": "UI_MonsterIcon_Thoarder_Male_Chemist_Water_01"
+                        },
+                        {
+                            "Id": 24060101,
+                            "Hp": 51148.66780006554,
+                            "Name": "장치·정찰 기록 타입·우시아",
+                            "Icon": "UI_MonsterIcon_MachinaIustitia_Sentry"
+                        },
+                        {
+                            "Id": 25080101,
+                            "Hp": 63935.833627916814,
+                            "Name": "「노부시·칼잡이」",
+                            "Icon": "UI_MonsterIcon_Samurai_Ronin_01"
+                        },
+                        {
+                            "Id": 25080201,
+                            "Hp": 63935.833627916814,
+                            "Name": "「노부시·방화범」",
+                            "Icon": "UI_MonsterIcon_Samurai_Ronin_02"
+                        },
+                        {
+                            "Id": 25080301,
+                            "Hp": 63935.833627916814,
+                            "Name": "「노부시·잔재주꾼」",
+                            "Icon": "UI_MonsterIcon_Samurai_Ronin_03"
+                        },
+                        {
+                            "Id": 24060401,
+                            "Hp": 63935.833627916814,
+                            "Name": "장치·지질 조사 타입·우시아",
+                            "Icon": "UI_MonsterIcon_MachinaIustitia_Probe"
+                        },
+                        {
+                            "Id": 24060201,
+                            "Hp": 57542.25295832149,
+                            "Name": "장치·연산 증폭기·우시아",
+                            "Icon": "UI_MonsterIcon_MachinaIustitia_Pylon"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 25080201,
+                            "Hp": 63935.833627916814,
+                            "Name": "「노부시·방화범」",
+                            "Icon": "UI_MonsterIcon_Samurai_Ronin_02"
+                        },
+                        {
+                            "Id": 25080301,
+                            "Hp": 63935.833627916814,
+                            "Name": "「노부시·잔재주꾼」",
+                            "Icon": "UI_MonsterIcon_Samurai_Ronin_03"
+                        },
+                        {
+                            "Id": 24065701,
+                            "Hp": 76723.00394442874,
+                            "Name": "장치·채집 타입·프뉴마",
+                            "Icon": "UI_MonsterIcon_MachinaIustitia_Assimilator"
+                        },
+                        {
+                            "Id": 24065801,
+                            "Hp": 153446.00788885725,
+                            "Name": "돌격 특화 타입 장치·프뉴마",
+                            "Icon": "UI_MonsterIcon_MachinaIustitia_Ruggiero_01"
+                        },
+                        {
+                            "Id": 24065201,
+                            "Hp": 57542.25295832149,
+                            "Name": "장치·연산 증폭기·프뉴마",
+                            "Icon": "UI_MonsterIcon_MachinaIustitia_Pylon"
+                        },
+                        {
+                            "Id": 25010501,
+                            "Hp": 44177.68805314549,
+                            "Name": "보물 사냥단·번개의 약제사",
+                            "Icon": "UI_MonsterIcon_Thoarder_Male_Chemist_Electric_01"
+                        }
+                    ]
+                },
+                "2": {
+                    "Level": 74,
+                    "Cond": [
+                        [
+                            2,
+                            60
+                        ],
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 20050201,
+                            "Hp": 46413.81076335902,
+                            "Name": "환형 돼지·물",
+                            "Icon": "UI_MonsterIcon_Oceanid_Underling"
+                        },
+                        {
+                            "Id": 20011101,
+                            "Hp": 58017.262435913035,
+                            "Name": "거대 물 슬라임",
+                            "Icon": "UI_MonsterIcon_Slime_Water_03"
+                        },
+                        {
+                            "Id": 20010901,
+                            "Hp": 58017.262435913035,
+                            "Name": "거대 얼음 슬라임",
+                            "Icon": "UI_MonsterIcon_Slime_Ice_03"
+                        },
+                        {
+                            "Id": 26160202,
+                            "Hp": 90175.05266278976,
+                            "Name": "큰 천사 군소",
+                            "Icon": "UI_MonsterIcon_Aplysia_Mature"
+                        },
+                        {
+                            "Id": 24061001,
+                            "Hp": 180350.10532557953,
+                            "Name": "섬멸 특화 타입 장치·우시아",
+                            "Icon": "UI_MonsterIcon_MachinaIustitia_Bradamante"
+                        },
+                        {
+                            "Id": 25010601,
+                            "Hp": 46413.81076335902,
+                            "Name": "보물 사냥단·얼음의 약제사",
+                            "Icon": "UI_MonsterIcon_Thoarder_Male_Chemist_Ice_01"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 20011301,
+                            "Hp": 58017.262435913035,
+                            "Name": "거대 화염 슬라임",
+                            "Icon": "UI_MonsterIcon_Slime_Fire_03"
+                        },
+                        {
+                            "Id": 24066001,
+                            "Hp": 180350.10532557953,
+                            "Name": "섬멸 특화 타입 장치·프뉴마",
+                            "Icon": "UI_MonsterIcon_MachinaIustitia_Bradamante"
+                        },
+                        {
+                            "Id": 25010301,
+                            "Hp": 46413.81076335902,
+                            "Name": "보물 사냥단·불의 약제사",
+                            "Icon": "UI_MonsterIcon_Thoarder_Male_Chemist_Fire_01"
+                        },
+                        {
+                            "Id": 26160102,
+                            "Hp": 90175.05266278976,
+                            "Name": "방패 중갑 게",
+                            "Icon": "UI_MonsterIcon_HermitCrab_Mature"
+                        }
+                    ]
+                },
+                "3": {
+                    "Level": 76,
+                    "Cond": [
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ],
+                        [
+                            2,
+                            420
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 21020201,
+                            "Hp": 91592.15712061155,
+                            "Name": "불도끼 츄츄 폭도",
+                            "Icon": "UI_MonsterIcon_Brute_None_01"
+                        },
+                        {
+                            "Id": 21020701,
+                            "Hp": 91592.15712061155,
+                            "Name": "번개도끼 츄츄 폭도",
+                            "Icon": "UI_MonsterIcon_Brute_None_01"
+                        },
+                        {
+                            "Id": 23050101,
+                            "Hp": 231408.11652709552,
+                            "Name": "우인단·거울의 여인",
+                            "Icon": "UI_MonsterIcon_Fatuus_Maiden_Water"
+                        },
+                        {
+                            "Id": 24060901,
+                            "Hp": 154272.07768473044,
+                            "Name": "제압 특화 타입·우시아",
+                            "Icon": "UI_MonsterIcon_MachinaIustitia_Ruggiero_02"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 23020101,
+                            "Hp": 152653.59520101917,
+                            "Name": "우인단·화염 채무 처리인",
+                            "Icon": "UI_MonsterIcon_Fatuus_Fire_01"
+                        },
+                        {
+                            "Id": 24066001,
+                            "Hp": 200553.71398708585,
+                            "Name": "섬멸 특화 타입 장치·프뉴마",
+                            "Icon": "UI_MonsterIcon_MachinaIustitia_Bradamante"
+                        }
+                    ]
+                }
+            }
+        },
+        "10": {
+            "Open": "2024-06-16 04:00:00",
+            "Close": "2024-08-16 03:59:59",
+            "Buff": [
+                "캐릭터가 물 원소 부착 상태인 적에게 주는 피해가 50% 증가한다"
+            ],
+            "Room": {
+                "1": {
+                    "Level": 80,
+                    "Cond": [
+                        [
+                            2,
+                            60
+                        ],
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 23010601,
+                            "Hp": 111394.36524301399,
+                            "Name": "우인단 선발대·화승총 유격대",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Standard_Rifle_Fire_01"
+                        },
+                        {
+                            "Id": 24060701,
+                            "Hp": 113455.76703900858,
+                            "Name": "장치·채집 타입·우시아",
+                            "Icon": "UI_MonsterIcon_MachinaIustitia_Assimilator"
+                        },
+                        {
+                            "Id": 25030201,
+                            "Hp": 74262.91016200923,
+                            "Name": "보물 사냥단·무덤 도굴자",
+                            "Icon": "UI_MonsterIcon_Thoarder_Male_Rogue_Fat_02"
+                        },
+                        {
+                            "Id": 25030301,
+                            "Hp": 74262.91016200923,
+                            "Name": "보물 사냥단·바다의 남아",
+                            "Icon": "UI_MonsterIcon_Thoarder_Male_Sailor_01"
+                        },
+                        {
+                            "Id": 25010701,
+                            "Hp": 74262.91016200923,
+                            "Name": "보물 사냥단·허드레꾼",
+                            "Icon": "UI_MonsterIcon_Thoarder_Male_Rogue_Fat_01"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 24066201,
+                            "Hp": 330912.63837580365,
+                            "Name": "건설 특화 타입 장치·프뉴마",
+                            "Icon": "UI_MonsterIcon_MachinaIustitia_Excavator"
+                        },
+                        {
+                            "Id": 24065401,
+                            "Hp": 94546.46810737244,
+                            "Name": "장치·지질 조사 타입·프뉴마",
+                            "Icon": "UI_MonsterIcon_MachinaIustitia_Probe"
+                        }
+                    ]
+                },
+                "2": {
+                    "Level": 82,
+                    "Cond": [
+                        [
+                            2,
+                            60
+                        ],
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 20060601,
+                            "Hp": 83742.92364343292,
+                            "Name": "떠도는 불의 정령",
+                            "Icon": "UI_MonsterIcon_Sylph_Fire_01"
+                        },
+                        {
+                            "Id": 20060701,
+                            "Hp": 83742.92364343292,
+                            "Name": "떠도는 풀의 정령",
+                            "Icon": "UI_MonsterIcon_Sylph_Grass_01"
+                        },
+                        {
+                            "Id": 20060501,
+                            "Hp": 83742.92364343292,
+                            "Name": "떠도는 번개의 정령",
+                            "Icon": "UI_MonsterIcon_Sylph_Electric_01"
+                        },
+                        {
+                            "Id": 26120101,
+                            "Hp": 104678.65271703144,
+                            "Name": "포롱 풀 버섯몬",
+                            "Icon": "UI_MonsterIcon_Fungus_Amanita_Unu_Anudatta_Grass"
+                        },
+                        {
+                            "Id": 26120201,
+                            "Hp": 146550.11086422848,
+                            "Name": "포롱 얼음 버섯몬",
+                            "Icon": "UI_MonsterIcon_Fungus_Amanita_Unu_Svarita_Ice"
+                        },
+                        {
+                            "Id": 26120301,
+                            "Hp": 104678.65271703144,
+                            "Name": "뚜벅 물 버섯몬",
+                            "Icon": "UI_MonsterIcon_Fungus_Amanita_Du_Anudatta_Water"
+                        },
+                        {
+                            "Id": 26120401,
+                            "Hp": 146550.11086422848,
+                            "Name": "뚜벅 바위 버섯몬",
+                            "Icon": "UI_MonsterIcon_Fungus_Amanita_Du_Udatta_Rock"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 26051001,
+                            "Hp": 209357.30543406328,
+                            "Name": "얼음을 짓씹는 새끼 심해 용 도마뱀",
+                            "Icon": "UI_MonsterIcon_Drake_Deepsea_Ice"
+                        },
+                        {
+                            "Id": 26051101,
+                            "Hp": 209357.30543406328,
+                            "Name": "번개를 삼키는 새끼 심해 용 도마뱀",
+                            "Icon": "UI_MonsterIcon_Drake_Deepsea_Electric"
+                        },
+                        {
+                            "Id": 26050601,
+                            "Hp": 418714.61086812615,
+                            "Name": "심해 용 도마뱀·원종",
+                            "Icon": "UI_MonsterIcon_Drake_Deepsea_Water"
+                        }
+                    ]
+                },
+                "3": {
+                    "Level": 85,
+                    "Cond": [
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ],
+                        [
+                            2,
+                            420
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 25410101,
+                            "Hp": 301981.53146825725,
+                            "Name": "도금 여단·마암역사",
+                            "Icon": "UI_MonsterIcon_Eremite_Male_Strong_Katar"
+                        },
+                        {
+                            "Id": 25310201,
+                            "Hp": 217426.71283354243,
+                            "Name": "도금 여단·태양의 서리",
+                            "Icon": "UI_MonsterIcon_Eremite_Male_Standard_Glaive"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 24010301,
+                            "Hp": 367638.4671357126,
+                            "Name": "파멸의 유적 가디언",
+                            "Icon": "UI_MonsterIcon_Konungmathr"
+                        }
+                    ]
+                }
+            }
+        },
+        "11": {
+            "Open": "2024-06-16 04:00:00",
+            "Close": "2024-08-16 03:59:59",
+            "Buff": [
+                "파티 내 모든 캐릭터가 번개 원소 피해 보너스를 60% 획득한다",
+                "파티 내 모든 캐릭터가 물 원소 피해 보너스를 60% 획득한다"
+            ],
+            "Room": {
+                "1": {
+                    "Level": 88,
+                    "Cond": [
+                        [
+                            233773003,
+                            3024,
+                            20
+                        ],
+                        [
+                            233773003,
+                            3024,
+                            40
+                        ],
+                        [
+                            233773003,
+                            3024,
+                            60
+                        ]
+                    ],
+                    "Type": "TOWER_COND_LEFT_HP_GREATER_THAN",
+                    "First": [
+                        {
+                            "Id": 20011301,
+                            "Hp": 86872.88130643211,
+                            "Name": "거대 화염 슬라임",
+                            "Icon": "UI_MonsterIcon_Slime_Fire_03"
+                        },
+                        {
+                            "Id": 20011201,
+                            "Hp": 34749.153132470055,
+                            "Name": "화염 슬라임",
+                            "Icon": "UI_MonsterIcon_Slime_Fire_02"
+                        },
+                        {
+                            "Id": 20010601,
+                            "Hp": 86872.88130643211,
+                            "Name": "거대 번개 슬라임",
+                            "Icon": "UI_MonsterIcon_Slime_Electric_03"
+                        },
+                        {
+                            "Id": 20010501,
+                            "Hp": 34749.153132470055,
+                            "Name": "번개 슬라임",
+                            "Icon": "UI_MonsterIcon_Slime_Electric_02"
+                        },
+                        {
+                            "Id": 20010701,
+                            "Hp": 86872.88130643211,
+                            "Name": "돌연변이 번개 슬라임",
+                            "Icon": "UI_MonsterIcon_Slime_Electric_03_Positive"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 20011101,
+                            "Hp": 86872.88130643211,
+                            "Name": "거대 물 슬라임",
+                            "Icon": "UI_MonsterIcon_Slime_Water_03"
+                        },
+                        {
+                            "Id": 20011001,
+                            "Hp": 34749.153132470055,
+                            "Name": "물 슬라임",
+                            "Icon": "UI_MonsterIcon_Slime_Water_02"
+                        },
+                        {
+                            "Id": 20010901,
+                            "Hp": 86872.88130643211,
+                            "Name": "거대 얼음 슬라임",
+                            "Icon": "UI_MonsterIcon_Slime_Ice_03"
+                        },
+                        {
+                            "Id": 20010801,
+                            "Hp": 34749.153132470055,
+                            "Name": "얼음 슬라임",
+                            "Icon": "UI_MonsterIcon_Slime_Ice_02"
+                        }
+                    ]
+                },
+                "2": {
+                    "Level": 90,
+                    "Cond": [
+                        [
+                            2,
+                            60
+                        ],
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 26040101,
+                            "Hp": 389665.38683876395,
+                            "Name": "바위 용 도마뱀",
+                            "Icon": "UI_MonsterIcon_Drake_Rock"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 20051401,
+                            "Hp": 1083328.4282200409,
+                            "Name": "노련한 탁한 물의 분쇄 환령",
+                            "Icon": "UI_MonsterIcon_Necalevia_Normal"
+                        },
+                        {
+                            "Id": 20051501,
+                            "Hp": 967575.5278988554,
+                            "Name": "노련한 탁한 물의 분사 환령",
+                            "Icon": "UI_MonsterIcon_Necalevia_Big"
+                        }
+                    ]
+                },
+                "3": {
+                    "Level": 92,
+                    "Cond": [
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ],
+                        [
+                            2,
+                            420
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 23010601,
+                            "Hp": 153425.40582474327,
+                            "Name": "우인단 선발대·화승총 유격대",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Standard_Rifle_Fire_01"
+                        },
+                        {
+                            "Id": 24030201,
+                            "Hp": 558001.9517146421,
+                            "Name": "유적 드레이크·대지의 수호자",
+                            "Icon": "UI_MonsterIcon_Gargoyle"
+                        },
+                        {
+                            "Id": 23010501,
+                            "Hp": 153425.40582474327,
+                            "Name": "우인단 선발대·풍권 돌격대",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Strong_Gloves_Wind_01"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 26110101,
+                            "Hp": 1116003.903429285,
+                            "Name": "공포의 취령 버섯",
+                            "Icon": "UI_MonsterIcon_Fungus_Raptor"
+                        }
+                    ]
+                }
+            }
+        },
+        "12": {
+            "Open": "2024-06-16 04:00:00",
+            "Close": "2024-08-16 03:59:59",
+            "Buff": [
+                "이번 층에서는 지맥의 흐름이 완만해진다"
+            ],
+            "Room": {
+                "1": {
+                    "Level": 95,
+                    "Cond": [
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ],
+                        [
+                            2,
+                            420
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 25410301,
+                            "Hp": 499715.2606176167,
+                            "Name": "도금 여단·모래의 이야기꾼",
+                            "Icon": "UI_MonsterIcon_Eremite_Female_Standard_Oracle"
+                        },
+                        {
+                            "Id": 25410201,
+                            "Hp": 499715.2606176167,
+                            "Name": "도금 여단·바람 사냥꾼",
+                            "Icon": "UI_MonsterIcon_Eremite_Female_Standard_Longbow"
+                        },
+                        {
+                            "Id": 24030201,
+                            "Hp": 795001.5306867005,
+                            "Name": "유적 드레이크·대지의 수호자",
+                            "Icon": "UI_MonsterIcon_Gargoyle"
+                        },
+                        {
+                            "Id": 24040101,
+                            "Hp": 386143.6133766592,
+                            "Name": "태고의 구조체·역장 발생기",
+                            "Icon": "UI_MonsterIcon_Monolith_Ordinator"
+                        },
+                        {
+                            "Id": 24040201,
+                            "Hp": 386143.6133766592,
+                            "Name": "태고의 구조체·재구축기",
+                            "Icon": "UI_MonsterIcon_Monolith_Ordinator"
+                        },
+                        {
+                            "Id": 24040301,
+                            "Hp": 386143.6133766592,
+                            "Name": "태고의 구조체·탐사기",
+                            "Icon": "UI_MonsterIcon_Monolith_Ordinator"
+                        },
+                        {
+                            "Id": 24010101,
+                            "Hp": 485604.6642816344,
+                            "Name": "유적 가디언",
+                            "Icon": "UI_MonsterIcon_Defender_Noner_01"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 21030201,
+                            "Hp": 69372.09489737656,
+                            "Name": "풀 츄츄 샤먼",
+                            "Icon": "UI_MonsterIcon_Shaman_Grass_01"
+                        },
+                        {
+                            "Id": 22010101,
+                            "Hp": 138744.18979475263,
+                            "Name": "화염의 심연 메이지",
+                            "Icon": "UI_MonsterIcon_Abyss_Fire_01"
+                        },
+                        {
+                            "Id": 22030201,
+                            "Hp": 554976.759179011,
+                            "Name": "심연 봉독자·심연의 불꽃",
+                            "Icon": "UI_MonsterIcon_Invoker_Deacon_Fire"
+                        },
+                        {
+                            "Id": 22080101,
+                            "Hp": 795001.5306867005,
+                            "Name": "흑 뱀 기사·바람을 가르는 검",
+                            "Icon": "UI_MonsterIcon_Darkwraith_Strong_Wind"
+                        }
+                    ]
+                },
+                "2": {
+                    "Level": 98,
+                    "Cond": [
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ],
+                        [
+                            2,
+                            420
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 25090101,
+                            "Hp": 1532911.5770336243,
+                            "Name": "꼭두각시 검귀",
+                            "Icon": "UI_MonsterIcon_Samurai_Ningyo"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 24066201,
+                            "Hp": 901260.3365232418,
+                            "Name": "건설 특화 타입 장치·프뉴마",
+                            "Icon": "UI_MonsterIcon_MachinaIustitia_Excavator"
+                        },
+                        {
+                            "Id": 25100101,
+                            "Hp": 618007.1168267353,
+                            "Name": "해란귀·뇌무",
+                            "Icon": "UI_MonsterIcon_Samurai_Kairagi_01"
+                        },
+                        {
+                            "Id": 25100201,
+                            "Hp": 618007.1168267353,
+                            "Name": "해란귀·염위",
+                            "Icon": "UI_MonsterIcon_Samurai_Kairagi_02"
+                        },
+                        {
+                            "Id": 22050101,
+                            "Hp": 901260.3365232418,
+                            "Name": "기암·수계(獸界) 사냥개",
+                            "Icon": "UI_MonsterIcon_Hound_Riftstalker_Rock"
+                        },
+                        {
+                            "Id": 24065801,
+                            "Hp": 618007.1168267353,
+                            "Name": "돌격 특화 타입 장치·프뉴마",
+                            "Icon": "UI_MonsterIcon_MachinaIustitia_Ruggiero_01"
+                        },
+                        {
+                            "Id": 24065901,
+                            "Hp": 515005.90658471035,
+                            "Name": "제압 특화 타입 장치·프뉴마",
+                            "Icon": "UI_MonsterIcon_MachinaIustitia_Ruggiero_02"
+                        },
+                        {
+                            "Id": 24065201,
+                            "Hp": 231752.66881002585,
+                            "Name": "장치·연산 증폭기·프뉴마",
+                            "Icon": "UI_MonsterIcon_MachinaIustitia_Pylon"
+                        }
+                    ]
+                },
+                "3": {
+                    "Level": 100,
+                    "Cond": [
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ],
+                        [
+                            2,
+                            420
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 24050101,
+                            "Hp": 2218400.7250379026,
+                            "Name": "반영구 제어 매트릭스",
+                            "Icon": "UI_MonsterIcon_Monolith_Starchild"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 26100401,
+                            "Hp": 970550.3172040819,
+                            "Name": "성해 독전갈",
+                            "Icon": "UI_MonsterIcon_Scorpion_Sacred_Electric"
+                        },
+                        {
+                            "Id": 26100301,
+                            "Hp": 970550.3172040819,
+                            "Name": "성해 붉은 독수리",
+                            "Icon": "UI_MonsterIcon_Vulture_Sacred_Fire"
+                        },
+                        {
+                            "Id": 23020101,
+                            "Hp": 459564.0192512422,
+                            "Name": "우인단·화염 채무 처리인",
+                            "Icon": "UI_MonsterIcon_Fatuus_Fire_01"
+                        },
+                        {
+                            "Id": 23010601,
+                            "Hp": 275738.4115507455,
+                            "Name": "우인단 선발대·화승총 유격대",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Standard_Rifle_Fire_01"
+                        },
+                        {
+                            "Id": 26160302,
+                            "Hp": 360490.1411803181,
+                            "Name": "수컷 방울 해마",
+                            "Icon": "UI_MonsterIcon_SeaHorse_Mature"
+                        },
+                        {
+                            "Id": 26160102,
+                            "Hp": 360490.1411803181,
+                            "Name": "방패 중갑 게",
+                            "Icon": "UI_MonsterIcon_HermitCrab_Mature"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "Type": "Action",
+    "Name": "\"Hear Me — Let Us Raise the Chalice of Love!\"",
+    "Title": "Furina: Hear Me — Let Us Raise the Chalice of Love!",
+    "Desc": "\"Let the world come alive, hehe!\"",
+    "Source": "Reward for inviting Furina to a duel at The Cat's Tail and achieving all corresponding challenge objectives",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Furina",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_HYDRO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "Talent",
+        "Combat Action"
+    ],
+    "Talent": {
+        "Name": "\"Hear Me — Let Us Raise the Chalice of Love!\"",
+        "Desc": "$[K1]: When your active character is <color=#FFFFFFFF>$[A1211]</color>, equip this card.\\nAfter $[A1211] equips this card, immediately use <color=#FFD780FF>$[S12112]</color> once.\\nWhen $[A1211], who has this card equipped, uses <color=#FFFFFFFF>$[S12123]</color>, she will apply <color=#FFFFFFFF>$[K1030]</color> to herself. (Normal Attack will trigger different effects depending on state)\\n(You must have $[A1211] in your deck to add this card to your deck.)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+            },
+            "A1211": "\"Hear Me — Let Us Raise the Chalice of Love!\"",
+            "S12112": "S12112",
+            "S12123": "S12123",
+            "K1030": {
+                "Name": "<color=#FFFFFFFF>Center of Attention</color>",
+                "Desc": "<color=#FFFFFFFF>When the character uses a Normal Attack:</color> {SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color> dealt by the character is converted to {SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro DMG</color>. If the character is in the {SPRITE_PRESET#3504}Ousia state, heal all of your characters on standby for 1 HP. If the character is in the {SPRITE_PRESET#3505}Pneuma state, deal +2 DMG for this instance, but deal 1 Piercing DMG to your character who has taken the least DMG.\\n<color=#FFFFFFFF>Usage(s): 1</color>"
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "Type": "Action",
+    "Name": "千岩牢固",
+    "Title": "千岩牢固·将帥の兜",
+    "Desc": "「…避難民が安全に逃げ切ることを保証し、岩王帝君の期待に応えるためだ。\\n兜を被った指揮官たちはアビスに長槍を突き刺した。」",
+    "Source": "",
+    "Icon": "UI_Gcg_CardFace_Modify_Artifact_QianyanTaozhuang",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PAIMON",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "聖遺物"
+    ],
+    "Talent": {
+        "Name": "千岩牢固",
+        "Desc": "<color=#FFFFFFFF>アクションフェーズ開始時</color>、キャラに<color=#FFFFFFFF>「$[C301201]」</color>を付与する。（$[K6]を2提供し、該当キャラを守る。）\\n<color=#FFFFFFFF>キャラがダメージを受けた後</color>、付与されたキャラが「出撃キャラ」の場合、該当キャラの元素タイプに応じた元素サイコロが1個生成される。（各ラウンドで1回のみ）\\n（キャラが装備できる「{SPRITE_PRESET#3004}聖遺物」は1つのみ）",
+        "Child": {
+            "C301201": {
+                "Name": "揺るぎない",
+                "Desc": "$[K6]を2提供し、付与されたキャラを守る。",
+                "Child": {
+                    "K6": {
+                        "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>シールド</color>",
+                        "Desc": "該当シールドに守られたキャラがダメージを受けた時、シールドを消費してダメージと相殺することができます。"
+                    }
+                }
+            },
+            "K6": {
+                "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>シールド</color>",
+                "Desc": "該当シールドに守られたキャラがダメージを受けた時、シールドを消費してダメージと相殺することができます。"
+            }
+        }
+    }
+}

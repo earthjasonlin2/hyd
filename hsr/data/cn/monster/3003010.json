@@ -1,0 +1,1003 @@
+{
+    "Id": 3003010,
+    "Name": "惊梦剧团的十七分熟",
+    "Desc": "匹诺康尼的服务器械，因梦境中的情绪干扰而陷入失控。\\n原本是烹饪食物的料理机器，失控后仍在喷吐炙烤食材的烈焰，企图将食客一同烧成焦炭。",
+    "MonsterCampID": 10,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 1674,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/Monster_3003010.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "Elite",
+    "SpeedBase": 100,
+    "StanceBase": 480,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.20000000018626451,
+    "Child": [
+        {
+            "Id": 3003010,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Thunder",
+                "Wind"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 300301001,
+                    "SkillName": "大力颠勺",
+                    "SkillDesc": "对我方单体造成火属性伤害。",
+                    "DamageType": "Fire",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 300301002,
+                    "SkillName": "旋风翻锅",
+                    "SkillDesc": "对我方单体及相邻目标造成少量火属性伤害。",
+                    "DamageType": "Fire",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 300301003,
+                    "SkillName": "点燃炉灶",
+                    "SkillDesc": "进入蓄力状态。若在下次行动时未将【炉灶加温】叠加至一定层数，则释放【烈焰爆炒】，并清除所有【炉灶加温】层数。",
+                    "DamageType": "Fire",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 300301004,
+                    "SkillName": "烈焰爆炒",
+                    "SkillDesc": "对我方全体造成大量火属性伤害。",
+                    "DamageType": "Fire",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 300301005,
+                    "SkillName": "厨房事故",
+                    "SkillDesc": "进入蓄力状态后，当【炉灶加温】叠加至一定层数时，立即对敌方全体目标造成大量火属性伤害，并使自身防御力降低，同时清除所有【炉灶加温】层数。",
+                    "DamageType": "Fire",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 300301006,
+                    "SkillName": "火炼佳肴",
+                    "SkillDesc": "不处于蓄力状态时，当【炉灶加温】叠加一定层数时立即行动，并释放【点燃炉灶】。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 300301007,
+                    "SkillName": "猛火炉灶",
+                    "SkillDesc": "自身在攻击时有概率对目标施加减速状态。当自身受到攻击或持续伤害时，叠加1层【炉灶加温】。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 300301001,
+            "AttackModifyRatio": 0.8333330010063946,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 2.8611110008787364,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Thunder",
+                "Ice"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 300301001,
+                    "SkillName": "大力颠勺",
+                    "SkillDesc": "对我方单体造成火属性伤害。",
+                    "DamageType": "Fire",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 300301002,
+                    "SkillName": "旋风翻锅",
+                    "SkillDesc": "对我方单体及相邻目标造成少量火属性伤害。",
+                    "DamageType": "Fire",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 300301003,
+                    "SkillName": "点燃炉灶",
+                    "SkillDesc": "进入蓄力状态。若在下次行动时未将【炉灶加温】叠加至一定层数，则释放【烈焰爆炒】，并清除所有【炉灶加温】层数。",
+                    "DamageType": "Fire",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 300301004,
+                    "SkillName": "烈焰爆炒",
+                    "SkillDesc": "对我方全体造成大量火属性伤害。",
+                    "DamageType": "Fire",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 300301005,
+                    "SkillName": "厨房事故",
+                    "SkillDesc": "进入蓄力状态后，当【炉灶加温】叠加至一定层数时，立即对敌方全体目标造成大量火属性伤害，并使自身防御力降低，同时清除所有【炉灶加温】层数。",
+                    "DamageType": "Fire",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 300301006,
+                    "SkillName": "火炼佳肴",
+                    "SkillDesc": "不处于蓄力状态时，当【炉灶加温】叠加一定层数时立即行动，并释放【点燃炉灶】。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 300301007,
+                    "SkillName": "猛火炉灶",
+                    "SkillDesc": "自身在攻击时有概率对目标施加减速状态。当自身受到攻击或持续伤害时，叠加1层【炉灶加温】。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 300301002,
+            "AttackModifyRatio": 0.6666670010890812,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 0.5555560009088367,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Thunder",
+                "Wind"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 300301001,
+                    "SkillName": "大力颠勺",
+                    "SkillDesc": "对我方单体造成火属性伤害。",
+                    "DamageType": "Fire",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 300301002,
+                    "SkillName": "旋风翻锅",
+                    "SkillDesc": "对我方单体及相邻目标造成少量火属性伤害。",
+                    "DamageType": "Fire",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 300301003,
+                    "SkillName": "点燃炉灶",
+                    "SkillDesc": "进入蓄力状态。若在下次行动时未将【炉灶加温】叠加至一定层数，则释放【烈焰爆炒】，并清除所有【炉灶加温】层数。",
+                    "DamageType": "Fire",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 300301004,
+                    "SkillName": "烈焰爆炒",
+                    "SkillDesc": "对我方全体造成大量火属性伤害。",
+                    "DamageType": "Fire",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 300301005,
+                    "SkillName": "厨房事故",
+                    "SkillDesc": "进入蓄力状态后，当【炉灶加温】叠加至一定层数时，立即对敌方全体目标造成大量火属性伤害，并使自身防御力降低，同时清除所有【炉灶加温】层数。",
+                    "DamageType": "Fire",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 300301006,
+                    "SkillName": "火炼佳肴",
+                    "SkillDesc": "不处于蓄力状态时，当【炉灶加温】叠加一定层数时立即行动，并释放【点燃炉灶】。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 300301007,
+                    "SkillName": "猛火炉灶",
+                    "SkillDesc": "自身在攻击时有概率对目标施加减速状态。当自身受到攻击或持续伤害时，叠加1层【炉灶加温】。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 300301003,
+            "AttackModifyRatio": 0.9090910009108484,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Thunder",
+                "Wind"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 300301001,
+                    "SkillName": "大力颠勺",
+                    "SkillDesc": "对我方单体造成火属性伤害。",
+                    "DamageType": "Fire",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 300301002,
+                    "SkillName": "旋风翻锅",
+                    "SkillDesc": "对我方单体及相邻目标造成少量火属性伤害。",
+                    "DamageType": "Fire",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 300301003,
+                    "SkillName": "点燃炉灶",
+                    "SkillDesc": "进入蓄力状态。若在下次行动时未将【炉灶加温】叠加至一定层数，则释放【烈焰爆炒】，并清除所有【炉灶加温】层数。",
+                    "DamageType": "Fire",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 300301004,
+                    "SkillName": "烈焰爆炒",
+                    "SkillDesc": "对我方全体造成大量火属性伤害。",
+                    "DamageType": "Fire",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 300301005,
+                    "SkillName": "厨房事故",
+                    "SkillDesc": "进入蓄力状态后，当【炉灶加温】叠加至一定层数时，立即对敌方全体目标造成大量火属性伤害，并使自身防御力降低，同时清除所有【炉灶加温】层数。",
+                    "DamageType": "Fire",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 300301006,
+                    "SkillName": "火炼佳肴",
+                    "SkillDesc": "不处于蓄力状态时，当【炉灶加温】叠加一定层数时立即行动，并释放【点燃炉灶】。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 300301007,
+                    "SkillName": "猛火炉灶",
+                    "SkillDesc": "自身在攻击时有概率对目标施加减速状态。当自身受到攻击或持续伤害时，叠加1层【炉灶加温】。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 300301004,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 0.33333300054073334,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Thunder",
+                "Wind"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 300301001,
+                    "SkillName": "大力颠勺",
+                    "SkillDesc": "对我方单体造成火属性伤害。",
+                    "DamageType": "Fire",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 300301002,
+                    "SkillName": "旋风翻锅",
+                    "SkillDesc": "对我方单体及相邻目标造成少量火属性伤害。",
+                    "DamageType": "Fire",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 300301003,
+                    "SkillName": "点燃炉灶",
+                    "SkillDesc": "进入蓄力状态。若在下次行动时未将【炉灶加温】叠加至一定层数，则释放【烈焰爆炒】，并清除所有【炉灶加温】层数。",
+                    "DamageType": "Fire",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 300301004,
+                    "SkillName": "烈焰爆炒",
+                    "SkillDesc": "对我方全体造成大量火属性伤害。",
+                    "DamageType": "Fire",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 300301005,
+                    "SkillName": "厨房事故",
+                    "SkillDesc": "进入蓄力状态后，当【炉灶加温】叠加至一定层数时，立即对敌方全体目标造成大量火属性伤害，并使自身防御力降低，同时清除所有【炉灶加温】层数。",
+                    "DamageType": "Fire",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 300301006,
+                    "SkillName": "火炼佳肴",
+                    "SkillDesc": "不处于蓄力状态时，当【炉灶加温】叠加一定层数时立即行动，并释放【点燃炉灶】。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 300301007,
+                    "SkillName": "猛火炉灶",
+                    "SkillDesc": "自身在攻击时有概率对目标施加减速状态。当自身受到攻击或持续伤害时，叠加1层【炉灶加温】。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 300301005,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Thunder",
+                "Wind",
+                "Quantum"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Fire",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 300301001,
+                    "SkillName": "大力颠勺",
+                    "SkillDesc": "对我方单体造成火属性伤害。",
+                    "DamageType": "Fire",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 300301002,
+                    "SkillName": "旋风翻锅",
+                    "SkillDesc": "对我方单体及相邻目标造成少量火属性伤害。",
+                    "DamageType": "Fire",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 300301003,
+                    "SkillName": "点燃炉灶",
+                    "SkillDesc": "进入蓄力状态。若在下次行动时未将【炉灶加温】叠加至一定层数，则释放【烈焰爆炒】，并清除所有【炉灶加温】层数。",
+                    "DamageType": "Fire",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 300301004,
+                    "SkillName": "烈焰爆炒",
+                    "SkillDesc": "对我方全体造成大量火属性伤害。",
+                    "DamageType": "Fire",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 300301005,
+                    "SkillName": "厨房事故",
+                    "SkillDesc": "进入蓄力状态后，当【炉灶加温】叠加至一定层数时，立即对敌方全体目标造成大量火属性伤害，并使自身防御力降低，同时清除所有【炉灶加温】层数。",
+                    "DamageType": "Fire",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 300301006,
+                    "SkillName": "火炼佳肴",
+                    "SkillDesc": "不处于蓄力状态时，当【炉灶加温】叠加一定层数时立即行动，并释放【点燃炉灶】。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 300301007,
+                    "SkillName": "猛火炉灶",
+                    "SkillDesc": "自身在攻击时有概率对目标施加减速状态。当自身受到攻击或持续伤害时，叠加1层【炉灶加温】。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 300301006,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Ice",
+                "Thunder",
+                "Wind"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 300301001,
+                    "SkillName": "大力颠勺",
+                    "SkillDesc": "对我方单体造成火属性伤害。",
+                    "DamageType": "Fire",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 300301002,
+                    "SkillName": "旋风翻锅",
+                    "SkillDesc": "对我方单体及相邻目标造成少量火属性伤害。",
+                    "DamageType": "Fire",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 300301003,
+                    "SkillName": "点燃炉灶",
+                    "SkillDesc": "进入蓄力状态。若在下次行动时未将【炉灶加温】叠加至一定层数，则释放【烈焰爆炒】，并清除所有【炉灶加温】层数。",
+                    "DamageType": "Fire",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 300301004,
+                    "SkillName": "烈焰爆炒",
+                    "SkillDesc": "对我方全体造成大量火属性伤害。",
+                    "DamageType": "Fire",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 300301005,
+                    "SkillName": "厨房事故",
+                    "SkillDesc": "进入蓄力状态后，当【炉灶加温】叠加至一定层数时，立即对敌方全体目标造成大量火属性伤害，并使自身防御力降低，同时清除所有【炉灶加温】层数。",
+                    "DamageType": "Fire",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 300301006,
+                    "SkillName": "火炼佳肴",
+                    "SkillDesc": "不处于蓄力状态时，当【炉灶加温】叠加一定层数时立即行动，并释放【点燃炉灶】。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 300301007,
+                    "SkillName": "猛火炉灶",
+                    "SkillDesc": "自身在攻击时有概率对目标施加减速状态。当自身受到攻击或持续伤害时，叠加1层【炉灶加温】。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 300301007,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 140,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Wind",
+                "Fire",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 300301001,
+                    "SkillName": "大力颠勺",
+                    "SkillDesc": "对我方单体造成火属性伤害。",
+                    "DamageType": "Fire",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 300301002,
+                    "SkillName": "旋风翻锅",
+                    "SkillDesc": "对我方单体及相邻目标造成少量火属性伤害。",
+                    "DamageType": "Fire",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 300301003,
+                    "SkillName": "点燃炉灶",
+                    "SkillDesc": "进入蓄力状态。若在下次行动时未将【炉灶加温】叠加至一定层数，则释放【烈焰爆炒】，并清除所有【炉灶加温】层数。",
+                    "DamageType": "Fire",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 300301004,
+                    "SkillName": "烈焰爆炒",
+                    "SkillDesc": "对我方全体造成大量火属性伤害。",
+                    "DamageType": "Fire",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 300301005,
+                    "SkillName": "厨房事故",
+                    "SkillDesc": "进入蓄力状态后，当【炉灶加温】叠加至一定层数时，立即对敌方全体目标造成大量火属性伤害，并使自身防御力降低，同时清除所有【炉灶加温】层数。",
+                    "DamageType": "Fire",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 300301006,
+                    "SkillName": "火炼佳肴",
+                    "SkillDesc": "不处于蓄力状态时，当【炉灶加温】叠加一定层数时立即行动，并释放【点燃炉灶】。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 300301007,
+                    "SkillName": "猛火炉灶",
+                    "SkillDesc": "自身在攻击时有概率对目标施加减速状态。当自身受到攻击或持续伤害时，叠加1层【炉灶加温】。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 300301008,
+            "AttackModifyRatio": 1.1111110001802444,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 0.4444440007209778,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": 40,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Thunder",
+                "Wind"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 300301001,
+                    "SkillName": "大力颠勺",
+                    "SkillDesc": "对我方单体造成火属性伤害。",
+                    "DamageType": "Fire",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 300301002,
+                    "SkillName": "旋风翻锅",
+                    "SkillDesc": "对我方单体及相邻目标造成少量火属性伤害。",
+                    "DamageType": "Fire",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 300301003,
+                    "SkillName": "点燃炉灶",
+                    "SkillDesc": "进入蓄力状态。若在下次行动时未将【炉灶加温】叠加至一定层数，则释放【烈焰爆炒】，并清除所有【炉灶加温】层数。",
+                    "DamageType": "Fire",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 300301004,
+                    "SkillName": "烈焰爆炒",
+                    "SkillDesc": "对我方全体造成大量火属性伤害。",
+                    "DamageType": "Fire",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 300301005,
+                    "SkillName": "厨房事故",
+                    "SkillDesc": "进入蓄力状态后，当【炉灶加温】叠加至一定层数时，立即对敌方全体目标造成大量火属性伤害，并使自身防御力降低，同时清除所有【炉灶加温】层数。",
+                    "DamageType": "Fire",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 300301006,
+                    "SkillName": "火炼佳肴",
+                    "SkillDesc": "不处于蓄力状态时，当【炉灶加温】叠加一定层数时立即行动，并释放【点燃炉灶】。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 300301007,
+                    "SkillName": "猛火炉灶",
+                    "SkillDesc": "自身在攻击时有概率对目标施加减速状态。当自身受到攻击或持续伤害时，叠加1层【炉灶加温】。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 3003010,
+            "AvatarExpReward": 150,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 114001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182010
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183006
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 3003010,
+            "WorldLevel": 1,
+            "AvatarExpReward": 200,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 114001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 114002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182010
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183006
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 3003010,
+            "WorldLevel": 2,
+            "AvatarExpReward": 250,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 114001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 114002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182010
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183006
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 3003010,
+            "WorldLevel": 3,
+            "AvatarExpReward": 300,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 114001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 114002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182010
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183006
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 3003010,
+            "WorldLevel": 4,
+            "AvatarExpReward": 350,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 114002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 114003
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182010
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183006
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 3003010,
+            "WorldLevel": 5,
+            "AvatarExpReward": 400,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 114002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 114003
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182010
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183006
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 3003010,
+            "WorldLevel": 6,
+            "AvatarExpReward": 400,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 114002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 114003
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182010
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183006
+                }
+            ]
+        }
+    ]
+}

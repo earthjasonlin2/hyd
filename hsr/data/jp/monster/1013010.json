@@ -1,0 +1,2454 @@
+{
+    "Id": 1013010,
+    "Name": "{RUBY_B#じどうきへい}自動機兵{RUBY_E#}・グリズリー",
+    "Desc": "旧世界が残した技術で作られた機械ユニット、分厚い鎧を着せられ、敵陣を陥れシルバーメインを保護する役割を果たす。\\n戦闘中、自動機兵「グリズリー」は「パウーク」を召喚し共同作戦を行う、同時に、エネルギーをチャージし強力な一撃を繰り出す。",
+    "MonsterCampID": 1,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 1209,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/Monster_1013010.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "Elite",
+    "SpeedBase": 120,
+    "StanceBase": 420,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.20000000018626451,
+    "Child": [
+        {
+            "Id": 1013010,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Ice",
+                "Thunder"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 101301001,
+                    "SkillName": "爆裂指示",
+                    "SkillDesc": "「自動機兵・パウーク」を召喚する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301002,
+                    "SkillName": "憤怒指示",
+                    "SkillDesc": "確率で味方全体を挑発状態にする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301003,
+                    "SkillName": "過負荷指示",
+                    "SkillDesc": "チャージ状態に入り、次の行動で味方全体に「殲滅指示」を発動。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301004,
+                    "SkillName": "殲滅指示",
+                    "SkillDesc": "味方全体に大量の物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 101301005,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301009,
+                    "SkillName": "破壊指示",
+                    "SkillDesc": "指定した味方単体に物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                }
+            ]
+        },
+        {
+            "Id": 101301001,
+            "AttackModifyRatio": 0.8333330010063946,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Thunder",
+                "Wind",
+                "Physical",
+                "Fire",
+                "Ice",
+                "Imaginary",
+                "Quantum"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Fire",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 101301001,
+                    "SkillName": "爆裂指示",
+                    "SkillDesc": "「自動機兵・パウーク」を召喚する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301002,
+                    "SkillName": "憤怒指示",
+                    "SkillDesc": "確率で味方全体を挑発状態にする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301003,
+                    "SkillName": "過負荷指示",
+                    "SkillDesc": "チャージ状態に入り、次の行動で味方全体に「殲滅指示」を発動。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301004,
+                    "SkillName": "殲滅指示",
+                    "SkillDesc": "味方全体に大量の物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 101301005,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301009,
+                    "SkillName": "破壊指示",
+                    "SkillDesc": "指定した味方単体に物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                }
+            ]
+        },
+        {
+            "Id": 101301002,
+            "AttackModifyRatio": 0.8333330010063946,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 0.9230770012363791,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Ice",
+                "Thunder"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 101301001,
+                    "SkillName": "爆裂指示",
+                    "SkillDesc": "「自動機兵・パウーク」を召喚する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301002,
+                    "SkillName": "憤怒指示",
+                    "SkillDesc": "確率で味方全体を挑発状態にする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301003,
+                    "SkillName": "過負荷指示",
+                    "SkillDesc": "チャージ状態に入り、次の行動で味方全体に「殲滅指示」を発動。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301004,
+                    "SkillName": "殲滅指示",
+                    "SkillDesc": "味方全体に大量の物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 101301005,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301009,
+                    "SkillName": "破壊指示",
+                    "SkillDesc": "指定した味方単体に物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                }
+            ]
+        },
+        {
+            "Id": 101301003,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Ice",
+                "Thunder"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 101301001,
+                    "SkillName": "爆裂指示",
+                    "SkillDesc": "「自動機兵・パウーク」を召喚する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301002,
+                    "SkillName": "憤怒指示",
+                    "SkillDesc": "確率で味方全体を挑発状態にする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301003,
+                    "SkillName": "過負荷指示",
+                    "SkillDesc": "チャージ状態に入り、次の行動で味方全体に「殲滅指示」を発動。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301004,
+                    "SkillName": "殲滅指示",
+                    "SkillDesc": "味方全体に大量の物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 101301005,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301009,
+                    "SkillName": "破壊指示",
+                    "SkillDesc": "指定した味方単体に物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                }
+            ]
+        },
+        {
+            "Id": 101301004,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1.5384620006661862,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Thunder",
+                "Wind",
+                "Physical",
+                "Fire",
+                "Ice",
+                "Imaginary",
+                "Quantum"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Fire",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 101301001,
+                    "SkillName": "爆裂指示",
+                    "SkillDesc": "「自動機兵・パウーク」を召喚する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301002,
+                    "SkillName": "憤怒指示",
+                    "SkillDesc": "確率で味方全体を挑発状態にする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301003,
+                    "SkillName": "過負荷指示",
+                    "SkillDesc": "チャージ状態に入り、次の行動で味方全体に「殲滅指示」を発動。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301004,
+                    "SkillName": "殲滅指示",
+                    "SkillDesc": "味方全体に大量の物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 101301005,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301009,
+                    "SkillName": "破壊指示",
+                    "SkillDesc": "指定した味方単体に物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                }
+            ]
+        },
+        {
+            "Id": 101301005,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 0.7692310004495084,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Ice",
+                "Thunder"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 101301001,
+                    "SkillName": "爆裂指示",
+                    "SkillDesc": "「自動機兵・パウーク」を召喚する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301002,
+                    "SkillName": "憤怒指示",
+                    "SkillDesc": "確率で味方全体を挑発状態にする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301003,
+                    "SkillName": "過負荷指示",
+                    "SkillDesc": "チャージ状態に入り、次の行動で味方全体に「殲滅指示」を発動。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301004,
+                    "SkillName": "殲滅指示",
+                    "SkillDesc": "味方全体に大量の物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 101301005,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301009,
+                    "SkillName": "破壊指示",
+                    "SkillDesc": "指定した味方単体に物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                }
+            ]
+        },
+        {
+            "Id": 101301006,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Ice",
+                "Thunder"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 101301001,
+                    "SkillName": "爆裂指示",
+                    "SkillDesc": "「自動機兵・パウーク」を召喚する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301002,
+                    "SkillName": "憤怒指示",
+                    "SkillDesc": "確率で味方全体を挑発状態にする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301003,
+                    "SkillName": "過負荷指示",
+                    "SkillDesc": "チャージ状態に入り、次の行動で味方全体に「殲滅指示」を発動。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301004,
+                    "SkillName": "殲滅指示",
+                    "SkillDesc": "味方全体に大量の物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 101301005,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301009,
+                    "SkillName": "破壊指示",
+                    "SkillDesc": "指定した味方単体に物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                }
+            ]
+        },
+        {
+            "Id": 101301007,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Ice",
+                "Thunder"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 101301001,
+                    "SkillName": "爆裂指示",
+                    "SkillDesc": "「自動機兵・パウーク」を召喚する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301002,
+                    "SkillName": "憤怒指示",
+                    "SkillDesc": "確率で味方全体を挑発状態にする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301003,
+                    "SkillName": "過負荷指示",
+                    "SkillDesc": "チャージ状態に入り、次の行動で味方全体に「殲滅指示」を発動。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301004,
+                    "SkillName": "殲滅指示",
+                    "SkillDesc": "味方全体に大量の物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 101301005,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301009,
+                    "SkillName": "破壊指示",
+                    "SkillDesc": "指定した味方単体に物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                }
+            ]
+        },
+        {
+            "Id": 101301008,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 4.615385001059622,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Ice",
+                "Thunder"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 101301001,
+                    "SkillName": "爆裂指示",
+                    "SkillDesc": "「自動機兵・パウーク」を召喚する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301002,
+                    "SkillName": "憤怒指示",
+                    "SkillDesc": "確率で味方全体を挑発状態にする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301003,
+                    "SkillName": "過負荷指示",
+                    "SkillDesc": "チャージ状態に入り、次の行動で味方全体に「殲滅指示」を発動。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301004,
+                    "SkillName": "殲滅指示",
+                    "SkillDesc": "味方全体に大量の物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 101301005,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301009,
+                    "SkillName": "破壊指示",
+                    "SkillDesc": "指定した味方単体に物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                }
+            ]
+        },
+        {
+            "Id": 101301010,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 0.4846150006633252,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Ice",
+                "Thunder"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 101301001,
+                    "SkillName": "爆裂指示",
+                    "SkillDesc": "「自動機兵・パウーク」を召喚する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301002,
+                    "SkillName": "憤怒指示",
+                    "SkillDesc": "確率で味方全体を挑発状態にする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301003,
+                    "SkillName": "過負荷指示",
+                    "SkillDesc": "チャージ状態に入り、次の行動で味方全体に「殲滅指示」を発動。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301004,
+                    "SkillName": "殲滅指示",
+                    "SkillDesc": "味方全体に大量の物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 101301005,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301009,
+                    "SkillName": "破壊指示",
+                    "SkillDesc": "指定した味方単体に物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                }
+            ]
+        },
+        {
+            "Id": 101301011,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 0.8461540008429438,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Ice",
+                "Thunder"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 101301001,
+                    "SkillName": "爆裂指示",
+                    "SkillDesc": "「自動機兵・パウーク」を召喚する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301002,
+                    "SkillName": "憤怒指示",
+                    "SkillDesc": "確率で味方全体を挑発状態にする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301003,
+                    "SkillName": "過負荷指示",
+                    "SkillDesc": "チャージ状態に入り、次の行動で味方全体に「殲滅指示」を発動。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301004,
+                    "SkillName": "殲滅指示",
+                    "SkillDesc": "味方全体に大量の物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 101301005,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301009,
+                    "SkillName": "破壊指示",
+                    "SkillDesc": "指定した味方単体に物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                }
+            ]
+        },
+        {
+            "Id": 101301012,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Ice",
+                "Thunder"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 101301001,
+                    "SkillName": "爆裂指示",
+                    "SkillDesc": "「自動機兵・パウーク」を召喚する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301002,
+                    "SkillName": "憤怒指示",
+                    "SkillDesc": "確率で味方全体を挑発状態にする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301003,
+                    "SkillName": "過負荷指示",
+                    "SkillDesc": "チャージ状態に入り、次の行動で味方全体に「殲滅指示」を発動。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301004,
+                    "SkillName": "殲滅指示",
+                    "SkillDesc": "味方全体に大量の物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 101301005,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301009,
+                    "SkillName": "破壊指示",
+                    "SkillDesc": "指定した味方単体に物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                }
+            ]
+        },
+        {
+            "Id": 101301013,
+            "AttackModifyRatio": 1.4285710006952286,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1.7307690016459674,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Ice",
+                "Thunder"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 101301001,
+                    "SkillName": "爆裂指示",
+                    "SkillDesc": "「自動機兵・パウーク」を召喚する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301002,
+                    "SkillName": "憤怒指示",
+                    "SkillDesc": "確率で味方全体を挑発状態にする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301003,
+                    "SkillName": "過負荷指示",
+                    "SkillDesc": "チャージ状態に入り、次の行動で味方全体に「殲滅指示」を発動。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301004,
+                    "SkillName": "殲滅指示",
+                    "SkillDesc": "味方全体に大量の物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 101301005,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301009,
+                    "SkillName": "破壊指示",
+                    "SkillDesc": "指定した味方単体に物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                }
+            ]
+        },
+        {
+            "Id": 101301014,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 0.5153850009664893,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Ice",
+                "Thunder"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 101301001,
+                    "SkillName": "爆裂指示",
+                    "SkillDesc": "「自動機兵・パウーク」を召喚する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301002,
+                    "SkillName": "憤怒指示",
+                    "SkillDesc": "確率で味方全体を挑発状態にする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301003,
+                    "SkillName": "過負荷指示",
+                    "SkillDesc": "チャージ状態に入り、次の行動で味方全体に「殲滅指示」を発動。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301004,
+                    "SkillName": "殲滅指示",
+                    "SkillDesc": "味方全体に大量の物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 101301005,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301009,
+                    "SkillName": "破壊指示",
+                    "SkillDesc": "指定した味方単体に物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                }
+            ]
+        },
+        {
+            "Id": 101301009,
+            "AttackModifyRatio": 0.8333330010063946,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": -29.99999999976717,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Ice",
+                "Thunder"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 101301001,
+                    "SkillName": "爆裂指示",
+                    "SkillDesc": "「自動機兵・パウーク」を召喚する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301002,
+                    "SkillName": "憤怒指示",
+                    "SkillDesc": "確率で味方全体を挑発状態にする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301003,
+                    "SkillName": "過負荷指示",
+                    "SkillDesc": "チャージ状態に入り、次の行動で味方全体に「殲滅指示」を発動。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301004,
+                    "SkillName": "殲滅指示",
+                    "SkillDesc": "味方全体に大量の物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 101301005,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301009,
+                    "SkillName": "破壊指示",
+                    "SkillDesc": "指定した味方単体に物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                }
+            ]
+        },
+        {
+            "Id": 101301015,
+            "AttackModifyRatio": 0.7142860011663288,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Ice",
+                "Thunder"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 101301001,
+                    "SkillName": "爆裂指示",
+                    "SkillDesc": "「自動機兵・パウーク」を召喚する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301002,
+                    "SkillName": "憤怒指示",
+                    "SkillDesc": "確率で味方全体を挑発状態にする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301003,
+                    "SkillName": "過負荷指示",
+                    "SkillDesc": "チャージ状態に入り、次の行動で味方全体に「殲滅指示」を発動。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301004,
+                    "SkillName": "殲滅指示",
+                    "SkillDesc": "味方全体に大量の物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 101301005,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301009,
+                    "SkillName": "破壊指示",
+                    "SkillDesc": "指定した味方単体に物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                }
+            ]
+        },
+        {
+            "Id": 101301016,
+            "AttackModifyRatio": 0.6666670010890812,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 0.692308000754565,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Ice",
+                "Thunder"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 101301001,
+                    "SkillName": "爆裂指示",
+                    "SkillDesc": "「自動機兵・パウーク」を召喚する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301002,
+                    "SkillName": "憤怒指示",
+                    "SkillDesc": "確率で味方全体を挑発状態にする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301003,
+                    "SkillName": "過負荷指示",
+                    "SkillDesc": "チャージ状態に入り、次の行動で味方全体に「殲滅指示」を発動。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301004,
+                    "SkillName": "殲滅指示",
+                    "SkillDesc": "味方全体に大量の物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 101301005,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301009,
+                    "SkillName": "破壊指示",
+                    "SkillDesc": "指定した味方単体に物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                }
+            ]
+        },
+        {
+            "Id": 101301017,
+            "AttackModifyRatio": 0.6666670010890812,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Ice",
+                "Thunder"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 101301001,
+                    "SkillName": "爆裂指示",
+                    "SkillDesc": "「自動機兵・パウーク」を召喚する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301002,
+                    "SkillName": "憤怒指示",
+                    "SkillDesc": "確率で味方全体を挑発状態にする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301003,
+                    "SkillName": "過負荷指示",
+                    "SkillDesc": "チャージ状態に入り、次の行動で味方全体に「殲滅指示」を発動。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301004,
+                    "SkillName": "殲滅指示",
+                    "SkillDesc": "味方全体に大量の物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 101301005,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301009,
+                    "SkillName": "破壊指示",
+                    "SkillDesc": "指定した味方単体に物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                }
+            ]
+        },
+        {
+            "Id": 101301018,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 0.9230770012363791,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Ice",
+                "Thunder"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 101301001,
+                    "SkillName": "爆裂指示",
+                    "SkillDesc": "「自動機兵・パウーク」を召喚する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301002,
+                    "SkillName": "憤怒指示",
+                    "SkillDesc": "確率で味方全体を挑発状態にする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301003,
+                    "SkillName": "過負荷指示",
+                    "SkillDesc": "チャージ状態に入り、次の行動で味方全体に「殲滅指示」を発動。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301004,
+                    "SkillName": "殲滅指示",
+                    "SkillDesc": "味方全体に大量の物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 101301005,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301009,
+                    "SkillName": "破壊指示",
+                    "SkillDesc": "指定した味方単体に物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                }
+            ]
+        },
+        {
+            "Id": 101301019,
+            "AttackModifyRatio": 0.6666670010890812,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1.1538460007868707,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Ice",
+                "Thunder"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 101301001,
+                    "SkillName": "爆裂指示",
+                    "SkillDesc": "「自動機兵・パウーク」を召喚する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301002,
+                    "SkillName": "憤怒指示",
+                    "SkillDesc": "確率で味方全体を挑発状態にする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301003,
+                    "SkillName": "過負荷指示",
+                    "SkillDesc": "チャージ状態に入り、次の行動で味方全体に「殲滅指示」を発動。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301004,
+                    "SkillName": "殲滅指示",
+                    "SkillDesc": "味方全体に大量の物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 101301005,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301009,
+                    "SkillName": "破壊指示",
+                    "SkillDesc": "指定した味方単体に物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                }
+            ]
+        },
+        {
+            "Id": 101301020,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Quantum",
+                "Physical"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 101301001,
+                    "SkillName": "爆裂指示",
+                    "SkillDesc": "「自動機兵・パウーク」を召喚する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301002,
+                    "SkillName": "憤怒指示",
+                    "SkillDesc": "確率で味方全体を挑発状態にする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301003,
+                    "SkillName": "過負荷指示",
+                    "SkillDesc": "チャージ状態に入り、次の行動で味方全体に「殲滅指示」を発動。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301004,
+                    "SkillName": "殲滅指示",
+                    "SkillDesc": "味方全体に大量の物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 101301005,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301009,
+                    "SkillName": "破壊指示",
+                    "SkillDesc": "指定した味方単体に物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                }
+            ]
+        },
+        {
+            "Id": 101301021,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 0.7307690016459674,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Ice",
+                "Thunder"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 101301001,
+                    "SkillName": "爆裂指示",
+                    "SkillDesc": "「自動機兵・パウーク」を召喚する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301002,
+                    "SkillName": "憤怒指示",
+                    "SkillDesc": "確率で味方全体を挑発状態にする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301003,
+                    "SkillName": "過負荷指示",
+                    "SkillDesc": "チャージ状態に入り、次の行動で味方全体に「殲滅指示」を発動。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301004,
+                    "SkillName": "殲滅指示",
+                    "SkillDesc": "味方全体に大量の物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 101301005,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301009,
+                    "SkillName": "破壊指示",
+                    "SkillDesc": "指定した味方単体に物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                }
+            ]
+        },
+        {
+            "Id": 101301022,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 0.8461540008429438,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Thunder",
+                "Quantum"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 101301001,
+                    "SkillName": "爆裂指示",
+                    "SkillDesc": "「自動機兵・パウーク」を召喚する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301002,
+                    "SkillName": "憤怒指示",
+                    "SkillDesc": "確率で味方全体を挑発状態にする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301003,
+                    "SkillName": "過負荷指示",
+                    "SkillDesc": "チャージ状態に入り、次の行動で味方全体に「殲滅指示」を発動。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301004,
+                    "SkillName": "殲滅指示",
+                    "SkillDesc": "味方全体に大量の物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 101301005,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301009,
+                    "SkillName": "破壊指示",
+                    "SkillDesc": "指定した味方単体に物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                }
+            ]
+        },
+        {
+            "Id": 101301023,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 0.42307700077071786,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Ice",
+                "Thunder"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 101301001,
+                    "SkillName": "爆裂指示",
+                    "SkillDesc": "「自動機兵・パウーク」を召喚する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301002,
+                    "SkillName": "憤怒指示",
+                    "SkillDesc": "確率で味方全体を挑発状態にする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301003,
+                    "SkillName": "過負荷指示",
+                    "SkillDesc": "チャージ状態に入り、次の行動で味方全体に「殲滅指示」を発動。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301004,
+                    "SkillName": "殲滅指示",
+                    "SkillDesc": "味方全体に大量の物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 101301005,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301009,
+                    "SkillName": "破壊指示",
+                    "SkillDesc": "指定した味方単体に物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                }
+            ]
+        },
+        {
+            "Id": 101301024,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 0.9230770012363791,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Wind",
+                "Thunder"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 101301001,
+                    "SkillName": "爆裂指示",
+                    "SkillDesc": "「自動機兵・パウーク」を召喚する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301002,
+                    "SkillName": "憤怒指示",
+                    "SkillDesc": "確率で味方全体を挑発状態にする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301003,
+                    "SkillName": "過負荷指示",
+                    "SkillDesc": "チャージ状態に入り、次の行動で味方全体に「殲滅指示」を発動。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301004,
+                    "SkillName": "殲滅指示",
+                    "SkillDesc": "味方全体に大量の物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 101301005,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301009,
+                    "SkillName": "破壊指示",
+                    "SkillDesc": "指定した味方単体に物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                }
+            ]
+        },
+        {
+            "Id": 101301025,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 0.5000000004656613,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Wind",
+                "Thunder"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 101301001,
+                    "SkillName": "爆裂指示",
+                    "SkillDesc": "「自動機兵・パウーク」を召喚する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301002,
+                    "SkillName": "憤怒指示",
+                    "SkillDesc": "確率で味方全体を挑発状態にする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301003,
+                    "SkillName": "過負荷指示",
+                    "SkillDesc": "チャージ状態に入り、次の行動で味方全体に「殲滅指示」を発動。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301004,
+                    "SkillName": "殲滅指示",
+                    "SkillDesc": "味方全体に大量の物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 101301005,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301009,
+                    "SkillName": "破壊指示",
+                    "SkillDesc": "指定した味方単体に物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                }
+            ]
+        },
+        {
+            "Id": 101301026,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Fire",
+                "Ice",
+                "Thunder"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 101301001,
+                    "SkillName": "爆裂指示",
+                    "SkillDesc": "「自動機兵・パウーク」を召喚する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301002,
+                    "SkillName": "憤怒指示",
+                    "SkillDesc": "確率で味方全体を挑発状態にする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301003,
+                    "SkillName": "過負荷指示",
+                    "SkillDesc": "チャージ状態に入り、次の行動で味方全体に「殲滅指示」を発動。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301004,
+                    "SkillName": "殲滅指示",
+                    "SkillDesc": "味方全体に大量の物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 101301005,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101301009,
+                    "SkillName": "破壊指示",
+                    "SkillDesc": "指定した味方単体に物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 1013010,
+            "AvatarExpReward": 150,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112011
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182006
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183002
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 1013010,
+            "WorldLevel": 1,
+            "AvatarExpReward": 200,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112011
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112012
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182006
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183002
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 1013010,
+            "WorldLevel": 2,
+            "AvatarExpReward": 250,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112011
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112012
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182006
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183002
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 1013010,
+            "WorldLevel": 3,
+            "AvatarExpReward": 300,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112011
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112012
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182006
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183002
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 1013010,
+            "WorldLevel": 4,
+            "AvatarExpReward": 350,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112012
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112013
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182006
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183002
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 1013010,
+            "WorldLevel": 5,
+            "AvatarExpReward": 400,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112012
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112013
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182006
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183002
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 1013010,
+            "WorldLevel": 6,
+            "AvatarExpReward": 400,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112012
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112013
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182006
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183002
+                }
+            ]
+        }
+    ]
+}

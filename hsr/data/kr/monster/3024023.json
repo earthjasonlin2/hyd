@@ -1,0 +1,173 @@
+{
+    "Id": 3024023,
+    "Name": "「스텔라론 헌터」 샘(완벽)",
+    "Desc": "코드가 영향을 받은 완벽한 홀로그램. 원본 레퍼런스는 「스텔라론 헌터」 멤버로, 무거운 장갑을 장착한 신비한 전사다. 그의 철갑은 화염을 내뿜어 전장을 불태우고 열화와 같은 공격을 퍼부을 수 있다",
+    "MonsterCampID": null,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 1488,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/Monster_3024020.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "LittleBoss",
+    "SpeedBase": 120,
+    "StanceBase": 720,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.3000000002793968,
+    "Child": [
+        {
+            "Id": 3024023,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Thunder",
+                "Quantum",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Fire",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 302402301,
+                    "SkillName": "BHF-굉염 추진",
+                    "SkillDesc": "지정된 단일 아군에게 소량의 화염 속성 피해를 가한다",
+                    "DamageType": "Fire",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 302402302,
+                    "SkillName": "BHF-굉염 추진",
+                    "SkillDesc": "지정된 단일 아군에게 소량의 화염 속성 피해를 가하고 목표를 고정하며, 다음 행동에 해당 목표에게 [DHGDR-흩날리는 성화]를 발동한다",
+                    "DamageType": "Fire",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 302402303,
+                    "SkillName": "BHF-천공의 불길",
+                    "SkillDesc": "지정된 단일 아군 및 인접한 목표에게 소량의 화염 속성 피해를 가한다",
+                    "DamageType": "Fire",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 302402304,
+                    "SkillName": "BBHF-초토화 작전",
+                    "SkillDesc": "모든 아군에게 소량의 화염 속성 피해를 가한다",
+                    "DamageType": "Fire",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 302402305,
+                    "SkillName": "DHGDR-2차 연소",
+                    "SkillDesc": "자신의 HP를 소모하여 [2차 연소] 상태에 진입하고 [약점 무효] 효과를 해제한다. [2차 연소]에 진입하면 대폭 강화되나 모든 공격은 자신의 HP를 소모한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302402306,
+                    "SkillName": "DHGDR-초신성 과부하",
+                    "SkillDesc": "모든 아군에게 화염 속성 피해를 가하고, 높은 확률로 피격된 아군을 연소 상태에 빠뜨린다",
+                    "DamageType": "Fire",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 302402307,
+                    "SkillName": "SGE-불꽃 코어",
+                    "SkillDesc": "[2차 연소] 진입 후 필드를 불태우고 아군의 전투 스킬 포인트를 연소한다. 아군이 연소하는 전투 스킬 포인트를 소모하면 HP를 소모하고 기존 피해의 일정 비율만큼 고정 수치의 화염 속성 피해를 추가로 가하며, 자신 이외의 치유를 받을 시 HP 회복량이 대폭 감소한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302402308,
+                    "SkillName": "SGE-불꽃 엔진",
+                    "SkillDesc": "샘은 [2차 연소] 상태에서 [불꽃 에너지]를 보유한다. 피격 시 해당 공격이 전투 스킬 포인트를 소모했을 경우 대응하는 수량의 [불꽃 에너지]가 차감된다. [불꽃 에너지]가 전부 차감되거나 약점이 격파되면 [2차 연소]가 해제된다. [2차 연소]가 해제되면 샘이 받는 피해가 증가하고 아군은 모든 전투 스킬 포인트를 회복한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302402309,
+                    "SkillName": "DHGDR-흩날리는 성화",
+                    "SkillDesc": "단일 아군에게 화염 속성 피해를 가한다. 스킬 발동 시 [불꽃 에너지] 스택 수가 높을수록 피해가 증가한다",
+                    "DamageType": "Fire",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302402310,
+                    "SkillName": "SEG-열 누적 업그레이드",
+                    "SkillDesc": "샘이 [2차 연소] 효과로 인해 공격 시 HP를 손실할 때마다 자신이 가하는 피해가 증가한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302402311,
+                    "SkillName": "SEG-열기압 역장",
+                    "SkillDesc": "아군 캐릭터가 연소 전투 스킬 포인트를 사용하거나 [연소] 피해를 받으면 아군을 [<u>분신</u>] 상태에 빠트린다. 샘이 [2차 연소]를 해제하면 [<u>분신</u>] 효과가 해제된다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 3024023,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 3024023,
+            "WorldLevel": 1,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 3024023,
+            "WorldLevel": 2,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 3024023,
+            "WorldLevel": 3,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 3024023,
+            "WorldLevel": 4,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 3024023,
+            "WorldLevel": 5,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 3024023,
+            "WorldLevel": 6,
+            "DisplayItemList": []
+        }
+    ]
+}

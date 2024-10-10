@@ -1,0 +1,85 @@
+{
+    "Type": "Character",
+    "Name": "Sayu",
+    "Title": "\"Mujina Ninja\" Sayu",
+    "Desc": "By your side without a trace, like a character from a dream.",
+    "Source": "Reward for inviting Sayu to a duel at The Cat's Tail and claiming victory in a Friendly Fracas with her",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Sayu",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "Anemo",
+        "Claymore",
+        "Inazuma"
+    ],
+    "Talent": {
+        "15071": {
+            "Name": "Shuumatsuban Ninja Blade",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "15072": {
+            "Name": "Yoohoo Art: Fuuin Dash",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], and this character begins to $[K53]: <color=#FFFFFFFF>$[S15074]</color>.\\nIf this usage of the skill triggers Swirl, then <color=#FFFFFFFF>$[S15074]</color> is converted to DMG of the Swirled Element.",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO",
+                "K53": {
+                    "Name": "<color=#FFFFFFFF>Prepare Skill</color>|s1:<color=#FFFFFFFF>prepares</color>",
+                    "Desc": "Some Skills cannot be used directly. Instead, they need to be <color=#FFFFFFFF>prepared</color> over a certain number of turns.\\nWhen it is a certain player's turn, and this player's active character is currently <color=#FFFFFFFF>preparing</color> a Skill, this player's turn will be skipped. If the Skill has finished being <color=#FFFFFFFF>prepared</color>, the character will directly use that Skill at this time. (Skills that require <color=#FFFFFFFF>preparing</color> cannot activate effects triggered by \"using a Skill\" or \"triggering an Elemental Reaction\" or other such effects.)\\nOnly active characters can <color=#FFFFFFFF>prepare</color> Skills, and if an active character who is <color=#FFFFFFFF>preparing</color> a Skill gets switched off-field, their <color=#FFFFFFFF>preparation</color> will be interrupted."
+                },
+                "S15074": "S15074"
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 3
+            }
+        },
+        "15073": {
+            "Name": "Yoohoo Art: Mujina Flurry",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], summons 1 <color=#FFFFFFFF>$[C115072]</color>.",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO",
+                "C115072": {
+                    "Name": "Muji-Muji Daruma",
+                    "Desc": "<color=#FFFFFFFF>End Phase:</color> Deal 1 $[K105], heal the character on your team that has taken the most damage for 2 HP.\\n<color=#FFFFFFFF>$[K3]: 2</color>",
+                    "Child": {
+                        "K105": {
+                            "Name": "{SPRITE_PRESET#2105}<color=#80FFD7FF>Anemo DMG</color>",
+                            "Desc": "Reacts with Elements if they are already applied:\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Cryo Swirl</color>: Deals 1 Cryo DMG to all opposing characters except the target\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Hydro Swirl</color>: Deals 1 Hydro DMG to all opposing characters except the target\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Pyro Swirl</color>: Deals 1 Pyro DMG to all opposing characters except the target\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Electro Swirl</color>: Deals 1 Electro DMG to all opposing characters except the target"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "15074": {
+            "Name": "Fuufuu Whirlwind Kick",
+            "Desc": "(Prepare for 1 turn)\\nDeals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT] (or the Swirled Element's DMG)",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO"
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {}
+        }
+    },
+    "Related": 215071
+}

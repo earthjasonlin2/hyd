@@ -1,0 +1,736 @@
+{
+    "Id": 8013145,
+    "Name": "反物質エンジン",
+    "Desc": "力の根源を象徴する極致の化身、それが持つエネルギーの形式はまだ解明されていない。\\n反物質エンジンは他の敵にエネルギーを供給し、それらのスキルを強化する。",
+    "MonsterCampID": null,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 1674,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/BossIconTemporary.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "Elite",
+    "SpeedBase": 90,
+    "StanceBase": 420,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.20000000018626451,
+    "Child": [
+        {
+            "Id": 8013145,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Fire",
+                "Ice",
+                "Wind"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.6000000005587935
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.6000000005587935
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 801314501,
+                    "SkillName": "虚明裂変",
+                    "SkillDesc": "敵単体「厄災の右手」に「増幅」状態を付与し、その強化レベルを1アップさせる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314502,
+                    "SkillName": "災厄侵襲",
+                    "SkillDesc": "敵単体「黎明の左手」に「増幅」状態を付与し、その強化レベルを1アップさせる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314503,
+                    "SkillName": "エンジン昇変",
+                    "SkillDesc": "自身以外の敵に「増幅」状態を付与し、その強化レベルを1アップさせる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314504,
+                    "SkillName": "順逆湮滅",
+                    "SkillDesc": "味方単体に量子属性と虚数属性ダメージを与える。",
+                    "DamageType": "",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 801314505,
+                    "SkillName": "厄災の前兆",
+                    "SkillDesc": "チャージ状態に入り、次の行動で味方全体に「終末降臨」を発動する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314506,
+                    "SkillName": "終末降臨",
+                    "SkillDesc": "味方全体に量子属性ダメージと虚数属性ダメージを与える。攻撃を行った後、味方それぞれにランダムで「量子付与」状態または「虚数付与」状態を付与する。",
+                    "DamageType": "",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 801314507,
+                    "SkillName": "末日の呪い",
+                    "SkillDesc": "味方それぞれにランダムで「量子付与」状態または「虚数付与」状態を付与する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314508,
+                    "SkillName": "集団感染",
+                    "SkillDesc": "味方全体に量子属性と虚数属性ダメージを与える。",
+                    "DamageType": "",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 801314509,
+                    "SkillName": "対消滅",
+                    "SkillDesc": "自身がスキルを発動し、味方単体を同時に「量子付与」状態と「虚数付与」状態にした場合、この2つの状態を解除し、その味方に少量の量子属性ダメージと虚数属性ダメージを与え、高確率で「<u>縛り</u>」状態を付与する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314510,
+                    "SkillName": "仮死",
+                    "SkillDesc": "HPが0になる攻撃を受けた後、「仮死」状態に入る。",
+                    "DamageType": "",
+                    "SPHitBase": 15
+                }
+            ]
+        },
+        {
+            "Id": 801314501,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Fire",
+                "Ice",
+                "Wind"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.6000000005587935
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.6000000005587935
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 801314501,
+                    "SkillName": "虚明裂変",
+                    "SkillDesc": "敵単体「厄災の右手」に「増幅」状態を付与し、その強化レベルを1アップさせる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314502,
+                    "SkillName": "災厄侵襲",
+                    "SkillDesc": "敵単体「黎明の左手」に「増幅」状態を付与し、その強化レベルを1アップさせる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314503,
+                    "SkillName": "エンジン昇変",
+                    "SkillDesc": "自身以外の敵に「増幅」状態を付与し、その強化レベルを1アップさせる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314504,
+                    "SkillName": "順逆湮滅",
+                    "SkillDesc": "味方単体に量子属性と虚数属性ダメージを与える。",
+                    "DamageType": "",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 801314505,
+                    "SkillName": "厄災の前兆",
+                    "SkillDesc": "チャージ状態に入り、次の行動で味方全体に「終末降臨」を発動する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314506,
+                    "SkillName": "終末降臨",
+                    "SkillDesc": "味方全体に量子属性ダメージと虚数属性ダメージを与える。攻撃を行った後、味方それぞれにランダムで「量子付与」状態または「虚数付与」状態を付与する。",
+                    "DamageType": "",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 801314507,
+                    "SkillName": "末日の呪い",
+                    "SkillDesc": "味方それぞれにランダムで「量子付与」状態または「虚数付与」状態を付与する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314508,
+                    "SkillName": "集団感染",
+                    "SkillDesc": "味方全体に量子属性と虚数属性ダメージを与える。",
+                    "DamageType": "",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 801314509,
+                    "SkillName": "対消滅",
+                    "SkillDesc": "自身がスキルを発動し、味方単体を同時に「量子付与」状態と「虚数付与」状態にした場合、この2つの状態を解除し、その味方に少量の量子属性ダメージと虚数属性ダメージを与え、高確率で「<u>縛り</u>」状態を付与する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314510,
+                    "SkillName": "仮死",
+                    "SkillDesc": "HPが0になる攻撃を受けた後、「仮死」状態に入る。",
+                    "DamageType": "",
+                    "SPHitBase": 15
+                }
+            ]
+        },
+        {
+            "Id": 801314502,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Fire",
+                "Ice",
+                "Wind"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.6000000005587935
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.6000000005587935
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 801314501,
+                    "SkillName": "虚明裂変",
+                    "SkillDesc": "敵単体「厄災の右手」に「増幅」状態を付与し、その強化レベルを1アップさせる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314502,
+                    "SkillName": "災厄侵襲",
+                    "SkillDesc": "敵単体「黎明の左手」に「増幅」状態を付与し、その強化レベルを1アップさせる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314503,
+                    "SkillName": "エンジン昇変",
+                    "SkillDesc": "自身以外の敵に「増幅」状態を付与し、その強化レベルを1アップさせる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314504,
+                    "SkillName": "順逆湮滅",
+                    "SkillDesc": "味方単体に量子属性と虚数属性ダメージを与える。",
+                    "DamageType": "",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 801314505,
+                    "SkillName": "厄災の前兆",
+                    "SkillDesc": "チャージ状態に入り、次の行動で味方全体に「終末降臨」を発動する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314506,
+                    "SkillName": "終末降臨",
+                    "SkillDesc": "味方全体に量子属性ダメージと虚数属性ダメージを与える。攻撃を行った後、味方それぞれにランダムで「量子付与」状態または「虚数付与」状態を付与する。",
+                    "DamageType": "",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 801314507,
+                    "SkillName": "末日の呪い",
+                    "SkillDesc": "味方それぞれにランダムで「量子付与」状態または「虚数付与」状態を付与する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314508,
+                    "SkillName": "集団感染",
+                    "SkillDesc": "味方全体に量子属性と虚数属性ダメージを与える。",
+                    "DamageType": "",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 801314509,
+                    "SkillName": "対消滅",
+                    "SkillDesc": "自身がスキルを発動し、味方単体を同時に「量子付与」状態と「虚数付与」状態にした場合、この2つの状態を解除し、その味方に少量の量子属性ダメージと虚数属性ダメージを与え、高確率で「<u>縛り</u>」状態を付与する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314510,
+                    "SkillName": "仮死",
+                    "SkillDesc": "HPが0になる攻撃を受けた後、「仮死」状態に入る。",
+                    "DamageType": "",
+                    "SPHitBase": 15
+                }
+            ]
+        },
+        {
+            "Id": 801314503,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Fire",
+                "Ice",
+                "Wind"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.6000000005587935
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.6000000005587935
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 801314501,
+                    "SkillName": "虚明裂変",
+                    "SkillDesc": "敵単体「厄災の右手」に「増幅」状態を付与し、その強化レベルを1アップさせる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314502,
+                    "SkillName": "災厄侵襲",
+                    "SkillDesc": "敵単体「黎明の左手」に「増幅」状態を付与し、その強化レベルを1アップさせる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314503,
+                    "SkillName": "エンジン昇変",
+                    "SkillDesc": "自身以外の敵に「増幅」状態を付与し、その強化レベルを1アップさせる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314504,
+                    "SkillName": "順逆湮滅",
+                    "SkillDesc": "味方単体に量子属性と虚数属性ダメージを与える。",
+                    "DamageType": "",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 801314505,
+                    "SkillName": "厄災の前兆",
+                    "SkillDesc": "チャージ状態に入り、次の行動で味方全体に「終末降臨」を発動する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314506,
+                    "SkillName": "終末降臨",
+                    "SkillDesc": "味方全体に量子属性ダメージと虚数属性ダメージを与える。攻撃を行った後、味方それぞれにランダムで「量子付与」状態または「虚数付与」状態を付与する。",
+                    "DamageType": "",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 801314507,
+                    "SkillName": "末日の呪い",
+                    "SkillDesc": "味方それぞれにランダムで「量子付与」状態または「虚数付与」状態を付与する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314508,
+                    "SkillName": "集団感染",
+                    "SkillDesc": "味方全体に量子属性と虚数属性ダメージを与える。",
+                    "DamageType": "",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 801314509,
+                    "SkillName": "対消滅",
+                    "SkillDesc": "自身がスキルを発動し、味方単体を同時に「量子付与」状態と「虚数付与」状態にした場合、この2つの状態を解除し、その味方に少量の量子属性ダメージと虚数属性ダメージを与え、高確率で「<u>縛り</u>」状態を付与する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314510,
+                    "SkillName": "仮死",
+                    "SkillDesc": "HPが0になる攻撃を受けた後、「仮死」状態に入る。",
+                    "DamageType": "",
+                    "SPHitBase": 15
+                }
+            ]
+        },
+        {
+            "Id": 801314504,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Fire",
+                "Ice",
+                "Wind"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.6000000005587935
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.6000000005587935
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 801314501,
+                    "SkillName": "虚明裂変",
+                    "SkillDesc": "敵単体「厄災の右手」に「増幅」状態を付与し、その強化レベルを1アップさせる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314502,
+                    "SkillName": "災厄侵襲",
+                    "SkillDesc": "敵単体「黎明の左手」に「増幅」状態を付与し、その強化レベルを1アップさせる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314503,
+                    "SkillName": "エンジン昇変",
+                    "SkillDesc": "自身以外の敵に「増幅」状態を付与し、その強化レベルを1アップさせる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314504,
+                    "SkillName": "順逆湮滅",
+                    "SkillDesc": "味方単体に量子属性と虚数属性ダメージを与える。",
+                    "DamageType": "",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 801314505,
+                    "SkillName": "厄災の前兆",
+                    "SkillDesc": "チャージ状態に入り、次の行動で味方全体に「終末降臨」を発動する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314506,
+                    "SkillName": "終末降臨",
+                    "SkillDesc": "味方全体に量子属性ダメージと虚数属性ダメージを与える。攻撃を行った後、味方それぞれにランダムで「量子付与」状態または「虚数付与」状態を付与する。",
+                    "DamageType": "",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 801314507,
+                    "SkillName": "末日の呪い",
+                    "SkillDesc": "味方それぞれにランダムで「量子付与」状態または「虚数付与」状態を付与する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314508,
+                    "SkillName": "集団感染",
+                    "SkillDesc": "味方全体に量子属性と虚数属性ダメージを与える。",
+                    "DamageType": "",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 801314509,
+                    "SkillName": "対消滅",
+                    "SkillDesc": "自身がスキルを発動し、味方単体を同時に「量子付与」状態と「虚数付与」状態にした場合、この2つの状態を解除し、その味方に少量の量子属性ダメージと虚数属性ダメージを与え、高確率で「<u>縛り</u>」状態を付与する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314510,
+                    "SkillName": "仮死",
+                    "SkillDesc": "HPが0になる攻撃を受けた後、「仮死」状態に入る。",
+                    "DamageType": "",
+                    "SPHitBase": 15
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 8013145,
+            "AvatarExpReward": 150,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111011
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183002
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 8013145,
+            "WorldLevel": 1,
+            "AvatarExpReward": 200,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111011
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111012
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183002
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 8013145,
+            "WorldLevel": 2,
+            "AvatarExpReward": 250,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111011
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111012
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183002
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 8013145,
+            "WorldLevel": 3,
+            "AvatarExpReward": 300,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111011
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111012
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183002
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 8013145,
+            "WorldLevel": 4,
+            "AvatarExpReward": 350,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111012
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111013
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183002
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 8013145,
+            "WorldLevel": 5,
+            "AvatarExpReward": 400,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111012
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111013
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183002
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 8013145,
+            "WorldLevel": 6,
+            "AvatarExpReward": 400,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111012
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111013
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183002
+                }
+            ]
+        }
+    ]
+}

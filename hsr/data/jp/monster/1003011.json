@@ -1,0 +1,431 @@
+{
+    "Id": 1003011,
+    "Name": "シルバーメイン・尉官（バグ）",
+    "Desc": "コードが影響を受けた後、バグってしまった投影。ベロブルグの戍衛部隊である「シルバーメイン」の分隊指揮官を参照にしている。\\n戦闘中、敵と味方がいる限り、シルバーメイン・尉官は巨大なシールドを立てている。その状態のシルバーメイン・尉官を攻撃すると、強力なカウンターを受ける。",
+    "MonsterCampID": null,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 1488,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/Monster_1003010.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "Elite",
+    "SpeedBase": 120,
+    "StanceBase": 360,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.20000000018626451,
+    "Child": [
+        {
+            "Id": 1003011,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Ice",
+                "Quantum"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Fire",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 100301101,
+                    "SkillName": "突撃",
+                    "SkillDesc": "指定した味方単体に物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 100301102,
+                    "SkillName": "刺突",
+                    "SkillDesc": "指定した味方単体に大量の物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 100301103,
+                    "SkillName": "ジャストガード",
+                    "SkillDesc": "カウンター状態に入り、味方単体の攻撃を受けた後に追加ターンを1回獲得し、攻撃した味方に物理属性ダメージを与える。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100301104,
+                    "SkillName": "増援",
+                    "SkillDesc": "「シルバーメイン・近衛」または「シルバーメイン・狙撃手」を召喚する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100301105,
+                    "SkillName": "激励",
+                    "SkillDesc": "「シルバーメイン・尉官（バグ）」以外の敵の攻撃力をアップし、直ちに行動させる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 100301101,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Ice",
+                "Wind"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 100301101,
+                    "SkillName": "突撃",
+                    "SkillDesc": "指定した味方単体に物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 100301102,
+                    "SkillName": "刺突",
+                    "SkillDesc": "指定した味方単体に大量の物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 100301103,
+                    "SkillName": "ジャストガード",
+                    "SkillDesc": "カウンター状態に入り、味方単体の攻撃を受けた後に追加ターンを1回獲得し、攻撃した味方に物理属性ダメージを与える。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100301104,
+                    "SkillName": "増援",
+                    "SkillDesc": "「シルバーメイン・近衛」または「シルバーメイン・狙撃手」を召喚する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100301105,
+                    "SkillName": "激励",
+                    "SkillDesc": "「シルバーメイン・尉官（バグ）」以外の敵の攻撃力をアップし、直ちに行動させる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 100301102,
+            "AttackModifyRatio": 0.40000000037252903,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 9.375,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Ice",
+                "Quantum"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Fire",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 100301101,
+                    "SkillName": "突撃",
+                    "SkillDesc": "指定した味方単体に物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 100301102,
+                    "SkillName": "刺突",
+                    "SkillDesc": "指定した味方単体に大量の物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 100301103,
+                    "SkillName": "ジャストガード",
+                    "SkillDesc": "カウンター状態に入り、味方単体の攻撃を受けた後に追加ターンを1回獲得し、攻撃した味方に物理属性ダメージを与える。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100301104,
+                    "SkillName": "増援",
+                    "SkillDesc": "「シルバーメイン・近衛」または「シルバーメイン・狙撃手」を召喚する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100301105,
+                    "SkillName": "激励",
+                    "SkillDesc": "「シルバーメイン・尉官（バグ）」以外の敵の攻撃力をアップし、直ちに行動させる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 1003011,
+            "AvatarExpReward": 150,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182007
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183003
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 1003011,
+            "WorldLevel": 1,
+            "AvatarExpReward": 200,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182007
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183003
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 1003011,
+            "WorldLevel": 2,
+            "AvatarExpReward": 250,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182007
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183003
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 1003011,
+            "WorldLevel": 3,
+            "AvatarExpReward": 300,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182007
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183003
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 1003011,
+            "WorldLevel": 4,
+            "AvatarExpReward": 350,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112003
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182007
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183003
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 1003011,
+            "WorldLevel": 5,
+            "AvatarExpReward": 400,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112003
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182007
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183003
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 1003011,
+            "WorldLevel": 6,
+            "AvatarExpReward": 400,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112003
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182007
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183003
+                }
+            ]
+        }
+    ]
+}

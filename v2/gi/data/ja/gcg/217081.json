@@ -1,0 +1,85 @@
+{
+    "Type": "Action",
+    "Name": "積算士の技巧",
+    "Title": "カーヴェ·積算士の技巧",
+    "Desc": "「脚光を浴びるとしよう！」",
+    "Source": "キャッツテールでカーヴェを招待して対戦し、対応する挑戦目標をクリアすることで獲得",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Kaveh",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_DENDRO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "天賦",
+        "戦闘アクション"
+    ],
+    "Talent": {
+        "Name": "積算士の技巧",
+        "Desc": "$[K1]：味方の出撃キャラが<color=#FFFFFFFF>$[A1708]</color>の時、このカードを装備できる。\\n$[A1708]がこのカードを装備した後、直ちに<color=#FFD780FF>$[S17082]</color>を1回発動する。\\nこのカードを装備した$[A1708]がフィールドに存在する時、味方が<color=#FFFFFFFF>$[C117082]</color>の効果を発動した後、下記の効果が発動する。$[K56]されたカードのコピーを1枚手札に加える。そのカードが「{SPRITE_PRESET#3104}フィールド」カードの場合、本ラウンドで、味方が次に「{SPRITE_PRESET#3104}フィールド」カードを使用する時、必要な元素サイコロの数-2。（各ラウンドで1回のみ）\\n（このカードはデッキに$[A1708]が含まれている場合のみ、デッキに追加できる）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>戦闘アクション</color>",
+                "Desc": "味方が戦闘アクションを1回行った後、相手のターンに移ります。\\n<color=#FFFFFFFF>このようなルールを持つ手札を出すのはクイックアクションではなく、戦闘アクションと見なされます。</color>"
+            },
+            "A1708": "積算士の技巧",
+            "S17082": "S17082",
+            "C117082": {
+                "Name": "炸裂スキャン",
+                "Desc": "<color=#FFFFFFFF>双方がアクションをする前に</color>、味方のフィールドに$[C116]または$[C112082]が存在する場合、その$[K3]-1、味方山札の一番上のカードを1枚$[K56]する。その後、$[K56]したカードの元素サイコロの初期コストの$[K107]を与える。\\n<color=#FFFFFFFF>$[K3]：1</color>（最大3まで重ねられる）",
+                "Child": {
+                    "C116": {
+                        "Name": "草原核",
+                        "Desc": "<color=#FFFFFFFF>味方が相手の出撃キャラに$[K103]や$[K104]を与えた時</color>、ダメージ+2。\\n<color=#FFFFFFFF>$[K3]：1</color>",
+                        "Child": {
+                            "K103": {
+                                "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>炎元素ダメージ</color>",
+                                "Desc": "{SPRITE_PRESET#2103}炎元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>溶解</color>：ダメージ+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>蒸発</color>：ダメージ+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>過負荷</color>：ダメージ+2、目標を強制的に次のキャラにチェンジさせる\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>燃焼</color>：ダメージ+1、ラウンド終了時に炎元素ダメージを1与える「<color=#FFFFFFFF>燃焼烈焔</color>」を生成する（使用可能回数1回、最大2まで重ねられる）"
+                            },
+                            "K104": {
+                                "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素ダメージ</color>",
+                                "Desc": "{SPRITE_PRESET#2104}雷元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>過負荷</color>：ダメージ+2、目標を強制的に次のキャラにチェンジさせる\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>超電導</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>感電</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>原激化</color>：ダメージ+1、次の草元素または雷元素ダメージを2回まで+1できる「<color=#FFFFFFFF>激化領域</color>」を生成する"
+                            },
+                            "K3": {
+                                "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                                "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                            }
+                        }
+                    },
+                    "C112082": {
+                        "Name": "豊穣の核",
+                        "Desc": "<color=#FFFFFFFF>エンドフェーズ：</color>$[K107]を2与える。\\n<color=#FFFFFFFF>$[K3]：1</color>（最大3まで重ねられる）\\n<color=#FFFFFFFF>味方がラウンド終了宣言をする時</color>、このカードの$[K3]が2以上の場合、$[K107]を2与える。（$[K3]の消費が必要）",
+                        "Child": {
+                            "K107": {
+                                "Name": "{SPRITE_PRESET#2107}<color=#7EC236FF>草元素ダメージ</color>",
+                                "Desc": "{SPRITE_PRESET#2107}草元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>開花</color>：ダメージ+1、次の炎元素または雷元素ダメージを2アップできる「<color=#FFFFFFFF>草原核</color>」を生成する\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>燃焼</color>：ダメージ+1、ラウンド終了時に炎元素ダメージを1与える「<color=#FFFFFFFF>燃焼烈焔</color>」を生成する（使用可能回数1回、最大2回まで重ね掛け可能）\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>原激化</color>：ダメージ+1、次の草元素または雷元素ダメージを2回まで+1できる「<color=#FFFFFFFF>激化領域</color>」を生成する"
+                            },
+                            "K3": {
+                                "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                                "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                            }
+                        }
+                    },
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                        "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                    },
+                    "K56": {
+                        "Name": "<color=#FFFFFFFF>破棄</color>",
+                        "Desc": "アクションカードまたはキャラのスキル効果によって、手札または山札からアクションカードを破棄する。"
+                    },
+                    "K107": {
+                        "Name": "{SPRITE_PRESET#2107}<color=#7EC236FF>草元素ダメージ</color>",
+                        "Desc": "{SPRITE_PRESET#2107}草元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>開花</color>：ダメージ+1、次の炎元素または雷元素ダメージを2アップできる「<color=#FFFFFFFF>草原核</color>」を生成する\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>燃焼</color>：ダメージ+1、ラウンド終了時に炎元素ダメージを1与える「<color=#FFFFFFFF>燃焼烈焔</color>」を生成する（使用可能回数1回、最大2回まで重ね掛け可能）\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>原激化</color>：ダメージ+1、次の草元素または雷元素ダメージを2回まで+1できる「<color=#FFFFFFFF>激化領域</color>」を生成する"
+                    }
+                }
+            },
+            "K56": {
+                "Name": "<color=#FFFFFFFF>破棄</color>",
+                "Desc": "アクションカードまたはキャラのスキル効果によって、手札または山札からアクションカードを破棄する。"
+            }
+        }
+    }
+}

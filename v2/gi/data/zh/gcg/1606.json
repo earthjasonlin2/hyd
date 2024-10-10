@@ -1,0 +1,108 @@
+{
+    "Type": "Character",
+    "Name": "五郎",
+    "Title": "戎犬锵锵·五郎",
+    "Desc": "锵锵领兵行！",
+    "Source": "在猫尾酒馆中邀请五郎进行对局，在友好对局难度中获得胜利后获取",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Gorou",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "岩元素",
+        "弓",
+        "稻妻"
+    ],
+    "Talent": {
+        "16061": {
+            "Name": "呲牙裂扇箭",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "16062": {
+            "Name": "犬坂吠吠方圆阵",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，生成<color=#FFFFFFFF>$[C116061]</color>。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_GEO",
+                "C116061": {
+                    "Name": "大将旗指物",
+                    "Desc": "我方角色造成的$[K106]+1。\\n<color=#FFFFFFFF>$[K4]：2</color>（可叠加，最多叠加到3回合）",
+                    "Child": {
+                        "K106": {
+                            "Name": "{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素伤害</color>",
+                            "Desc": "和已附着的元素发生元素反应：\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2101}<color=#FFFFFFFF>结晶（冰）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2102}<color=#FFFFFFFF>结晶（水）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2103}<color=#FFFFFFFF>结晶（火）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2104}<color=#FFFFFFFF>结晶（雷）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。"
+                        },
+                        "K4": {
+                            "Name": "<color=#FFFFFFFF>持续回合</color>",
+                            "Desc": "每回合结束阶段，<color=#FFFFFFFF>持续回合</color>-1；\\n<color=#FFFFFFFF>持续回合</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 3
+            }
+        },
+        "16063": {
+            "Name": "兽牙逐突形胜战法",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，生成<color=#FFFFFFFF>$[C116061]</color>，召唤<color=#FFFFFFFF>$[C116062]</color>。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_GEO",
+                "C116061": {
+                    "Name": "大将旗指物",
+                    "Desc": "我方角色造成的$[K106]+1。\\n<color=#FFFFFFFF>$[K4]：2</color>（可叠加，最多叠加到3回合）",
+                    "Child": {
+                        "K106": {
+                            "Name": "{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素伤害</color>",
+                            "Desc": "和已附着的元素发生元素反应：\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2101}<color=#FFFFFFFF>结晶（冰）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2102}<color=#FFFFFFFF>结晶（水）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2103}<color=#FFFFFFFF>结晶（火）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2104}<color=#FFFFFFFF>结晶（雷）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。"
+                        },
+                        "K4": {
+                            "Name": "<color=#FFFFFFFF>持续回合</color>",
+                            "Desc": "每回合结束阶段，<color=#FFFFFFFF>持续回合</color>-1；\\n<color=#FFFFFFFF>持续回合</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                },
+                "C116062": {
+                    "Name": "大将威仪",
+                    "Desc": "<color=#FFFFFFFF>结束阶段：</color>造成1点$[K106]；如果队伍中存在2名{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素</color>角色，则生成<color=#FFFFFFFF>$[C111]</color>。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+                    "Child": {
+                        "K106": {
+                            "Name": "{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素伤害</color>",
+                            "Desc": "和已附着的元素发生元素反应：\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2101}<color=#FFFFFFFF>结晶（冰）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2102}<color=#FFFFFFFF>结晶（水）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2103}<color=#FFFFFFFF>结晶（火）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2104}<color=#FFFFFFFF>结晶（雷）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。"
+                        },
+                        "C111": {
+                            "Name": "结晶",
+                            "Desc": "为我方出战角色提供<color=#FFFFFFFF>1点$[K6]</color>。（可叠加，最多叠加到2点）",
+                            "Child": {
+                                "K6": {
+                                    "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>护盾</color>",
+                                    "Desc": "此护盾所保护的角色受到伤害时，将会消耗护盾来抵消伤害。"
+                                }
+                            }
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>可用次数</color>",
+                            "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 216061
+}

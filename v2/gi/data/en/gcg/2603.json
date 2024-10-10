@@ -1,0 +1,98 @@
+{
+    "Type": "Character",
+    "Name": "Golden Wolflord",
+    "Title": "\"King of the Riftwolves\" Golden Wolflord",
+    "Desc": "A twisted beast from another world. This creature is the ruler of the Riftwolves, and wields the power to command them to dissolve space itself.",
+    "Source": "Reward for accepting the Tavern Challenge at The Cat's Tail and claiming victory in a Friendly Fracas with the Golden Wolflord",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_Planelurker",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "Geo",
+        "Other Weapons",
+        "Monster"
+    ],
+    "Talent": {
+        "26031": {
+            "Name": "Wolflord's Strike",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "26032": {
+            "Name": "Howling Riftcall",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], attaches <color=#FFFFFFFF>$[C126031]</color> to opposing active character, and summons <color=#FFFFFFFF>$[C126032]</color>.",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_GEO",
+                "C126031": {
+                    "Name": "Golden Corrosion",
+                    "Desc": "<color=#FFFFFFFF>End Phase:</color> If the character to which this is attached is off-field, then that character will take 1 $[K5] for every $[K3] that this effect has.\\n<color=#FFFFFFFF>$[K3]: 1</color> (Can stack. Max 3 stacks.)",
+                    "Child": {
+                        "K5": {
+                            "Name": "<color=#FFFFFFFF>Piercing DMG</color>",
+                            "Desc": "Piercing DMG cannot be increased by any bonuses, but cannot be defended against using Shields or DMG Immunity either."
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        }
+                    }
+                },
+                "C126032": {
+                    "Name": "Rifthound Skull",
+                    "Desc": "<color=#FFFFFFFF>End Phase:</color> Deal 1 $[K106]. Attach <color=#FFFFFFFF>$[C126031]</color> to opposing active character.",
+                    "Child": {
+                        "K106": {
+                            "Name": "{SPRITE_PRESET#2106}<color=#FFE699FF>Geo DMG</color>",
+                            "Desc": "Reacts with Elements if they are already applied:\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Cryo Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Hydro Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Pyro Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Electro Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 3
+            }
+        },
+        "26033": {
+            "Name": "Golden Cankerbind",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], deals 1 $[K5] to all opposing characters on standby, then attaches<color=#FFFFFFFF>$[C126031]</color> to all opposing characters.",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_GEO",
+                "K5": {
+                    "Name": "<color=#FFFFFFFF>Piercing DMG</color>",
+                    "Desc": "Piercing DMG cannot be increased by any bonuses, but cannot be defended against using Shields or DMG Immunity either."
+                },
+                "C126031": {
+                    "Name": "Golden Corrosion",
+                    "Desc": "<color=#FFFFFFFF>End Phase:</color> If the character to which this is attached is off-field, then that character will take 1 $[K5] for every $[K3] that this effect has.\\n<color=#FFFFFFFF>$[K3]: 1</color> (Can stack. Max 3 stacks.)",
+                    "Child": {
+                        "K5": {
+                            "Name": "<color=#FFFFFFFF>Piercing DMG</color>",
+                            "Desc": "Piercing DMG cannot be increased by any bonuses, but cannot be defended against using Shields or DMG Immunity either."
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 226031
+}

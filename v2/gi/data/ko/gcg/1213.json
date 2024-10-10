@@ -1,0 +1,90 @@
+{
+    "Type": "Character",
+    "Name": "시그윈JF0Z",
+    "Title": "",
+    "Desc": "",
+    "Source": "캣테일 술집에서 시그윈 초대 및 친선 대전 난이도 승리 후 획득JF0Z",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Sigewinne",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "물 원소",
+        "활",
+        "폰타인",
+        "아르케의 힘: 우시아"
+    ],
+    "Talent": {
+        "12131": {
+            "Name": "표적 치료",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.JF0Z",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "12132": {
+            "Name": "통통 물요법JF0Z",
+            "Desc": "",
+            "Child": {},
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3
+            }
+        },
+        "12133": {
+            "Name": "",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[S12135]</color>의 $[K53]를 한다.JF0Z",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "D__KEY__DAMAGE": 2,
+                "S12135": "S12135",
+                "K53": {
+                    "Name": "<color=#FFFFFFFF>스킬 준비</color>",
+                    "Desc": "일부 스킬은 바로 발동할 수 없고, 일정 횟수의 행동 순서 동안 <color=#FFFFFFFF>준비</color>를 해야 한다.\\n한 플레이어의 행동 순서가 됐을 때, 해당 플레이어의 「출전 캐릭터」가 현재 스킬을 <color=#FFFFFFFF>준비</color> 중이면 해당 플레이어의 행동을 건너뛴다. 스킬 <color=#FFFFFFFF>준비</color>를 끝냈을 경우, 캐릭터는 해당 스킬을 즉시 발동한다. (<color=#FFFFFFFF>준비</color>가 필요한 유형의 스킬은 「스킬 사용 후」 및 「캐릭터가 원소 반응 발동 후」 등의 효과를 발동할 수 없다)\\n오직 「출전 캐릭터」만 스킬을 <color=#FFFFFFFF>준비</color>할 수 있다. 만약 스킬을 <color=#FFFFFFFF>준비</color> 중인 「출전 캐릭터」가 교체되어 대기 상태가 되면, 스킬의 <color=#FFFFFFFF>준비</color>가 중단된다."
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "12134": {
+            "Name": "",
+            "Desc": "",
+            "Child": {},
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        },
+        "12135": {
+            "Name": "",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.JF0Z",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {}
+        },
+        "12136": {
+            "Name": "",
+            "Desc": "",
+            "Child": {},
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        },
+        "12137": {
+            "Name": "",
+            "Desc": "",
+            "Child": {},
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 212131
+}

@@ -1,0 +1,80 @@
+{
+    "Type": "Character",
+    "Name": "迪奥娜",
+    "Title": "猫尾特调·迪奥娜",
+    "Desc": "用1%的力气调酒，99%的力气…拒绝失败。",
+    "Source": "在猫尾酒馆中邀请迪奥娜进行对局，在友好对局难度中获得胜利后获取",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Diona",
+    "Hp": 10,
+    "Cost": 3,
+    "Tag": [
+        "冰元素",
+        "弓",
+        "蒙德"
+    ],
+    "Talent": {
+        "11021": {
+            "Name": "猎人射术",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "11022": {
+            "Name": "猫爪冻冻",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，生成<color=#FFFFFFFF>$[C111021]</color>。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "C111021": {
+                    "Name": "猫爪护盾",
+                    "Desc": "为我方出战角色提供<color=#FFFFFFFF>1点$[K6]</color>。",
+                    "Child": {
+                        "K6": {
+                            "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>护盾</color>",
+                            "Desc": "此护盾所保护的角色受到伤害时，将会消耗护盾来抵消伤害。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3
+            }
+        },
+        "11023": {
+            "Name": "最烈特调",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，治疗此角色2点，召唤<color=#FFFFFFFF>$[C111023]</color>。",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "C111023": {
+                    "Name": "酒雾领域",
+                    "Desc": "<color=#FFFFFFFF>结束阶段：</color>造成1点$[K101]，治疗我方出战角色2点。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+                    "Child": {
+                        "K101": {
+                            "Name": "{SPRITE_PRESET#2101}<color=#99FFFFFF>冰元素伤害</color>",
+                            "Desc": "附着{SPRITE_PRESET#2101}冰元素，可发生元素反应：\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2103}<color=#FFFFFFFF>融化</color>：本伤害+2\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2104}<color=#FFFFFFFF>超导</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2102}<color=#FFFFFFFF>冻结</color>：本伤害+1，使目标本回合无法行动（受到物理或火元素伤害后提前解除，但是伤害+2）"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>可用次数</color>",
+                            "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3,
+                "GCG_COST_ENERGY": 3
+            }
+        }
+    },
+    "Related": 211021
+}

@@ -1,0 +1,87 @@
+{
+    "Type": "Character",
+    "Name": "宵宮",
+    "Title": "琉焔に舞う大輪·宵宮",
+    "Desc": "花見坂第11回町内招待試合「長野原隊」隊長兼先行プレイヤー。",
+    "Source": "キャッツテールで宵宮を招待し、友好対戦に勝利することで獲得",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Yoimiya",
+    "Hp": 10,
+    "Cost": 3,
+    "Tag": [
+        "炎元素",
+        "弓",
+        "稲妻"
+    ],
+    "Talent": {
+        "13051": {
+            "Name": "打ち上げ花火",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "13052": {
+            "Name": "焔硝の庭火舞い",
+            "Desc": "本キャラに<color=#FFFFFFFF>$[C113051]</color>を付与する。（このスキルは{SPRITE_PRESET#1110}チャージを獲得することができない）",
+            "Child": {
+                "C113051": {
+                    "Name": "庭火の焔硝",
+                    "Desc": "付与されたキャラの<color=#FFFFFFFF>通常攻撃</color>ダメージ+1。また、与える$[K100]が$[K103]へと変わる。\\n<color=#FFFFFFFF>$[K3]：3</color>",
+                    "Child": {
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>",
+                            "Desc": "物理ダメージは元素付着させたり、元素反応を起こしたりはしません。"
+                        },
+                        "K103": {
+                            "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>炎元素ダメージ</color>",
+                            "Desc": "{SPRITE_PRESET#2103}炎元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>溶解</color>：ダメージ+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>蒸発</color>：ダメージ+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>過負荷</color>：ダメージ+2、目標を強制的に次のキャラにチェンジさせる\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>燃焼</color>：ダメージ+1、ラウンド終了時に炎元素ダメージを1与える「<color=#FFFFFFFF>燃焼烈焔</color>」を生成する（使用可能回数1回、最大2まで重ねられる）"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                            "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 1
+            }
+        },
+        "13053": {
+            "Name": "琉金の雲間草",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、<color=#FFFFFFFF>$[C113052]</color>を生成する。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO",
+                "D__KEY__DAMAGE": 3,
+                "C113052": {
+                    "Name": "琉金の炎",
+                    "Desc": "<color=#FFFFFFFF>$[A1305]以外の味方のキャラがスキルを発動した後、</color>$[K103]を1与える。\\n<color=#FFFFFFFF>$[K4]：2</color>",
+                    "Child": {
+                        "A1305": "宵宮",
+                        "K103": {
+                            "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>炎元素ダメージ</color>",
+                            "Desc": "{SPRITE_PRESET#2103}炎元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>溶解</color>：ダメージ+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>蒸発</color>：ダメージ+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>過負荷</color>：ダメージ+2、目標を強制的に次のキャラにチェンジさせる\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>燃焼</color>：ダメージ+1、ラウンド終了時に炎元素ダメージを1与える「<color=#FFFFFFFF>燃焼烈焔</color>」を生成する（使用可能回数1回、最大2まで重ねられる）"
+                        },
+                        "K4": {
+                            "Name": "<color=#FFFFFFFF>継続ラウンド数</color>",
+                            "Desc": "各ラウンドのエンドフェーズで、<color=#FFFFFFFF>継続ラウンド数</color>が1マイナスされます。\\n<color=#FFFFFFFF>継続ラウンド数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 3,
+                "GCG_COST_ENERGY": 3
+            }
+        }
+    },
+    "Related": 213051
+}

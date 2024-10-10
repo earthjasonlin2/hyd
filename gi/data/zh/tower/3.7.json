@@ -1,0 +1,928 @@
+{
+    "Leyline": {
+        "71": {
+            "Icon": "UI_TowerBlessing_66",
+            "Name": "滚奏之月",
+            "Desc": "角色的普通攻击命中敌人后，将为该敌人施加滚奏之印。3秒后，滚奏之印将被移除，并对该敌人造成真实伤害。角色的普通攻击命中<color=#F39000FF>附有滚奏之印</color>的敌人后，将使滚奏之印移除时造成的伤害提高，至多提高9次。"
+        },
+        "72": {
+            "Icon": "UI_TowerBlessing_40",
+            "Name": "强形之月",
+            "Desc": "当前场上的角色的普通攻击命中敌人后，该角色造成的伤害提升<color=#F39000FF>12%</color>，持续2秒。该效果至多叠加<color=#F39000FF>5</color>层，每层独立计时，每0.05秒至多触发一次。角色退场时，该效果将被移除。"
+        },
+        "73": {
+            "Icon": "UI_TowerBlessing_67",
+            "Name": "纤堕之月",
+            "Desc": "角色的普通攻击命中敌人后，基于攻击类型对应的物理抗性或元素抗性，该敌人的<color=#F39000FF>此抗性降低6%</color>，持续2秒，至多叠加<color=#F39000FF>6</color>层，通过这种方式施加的不同属性的抗性降低可以同时存在，独立计算叠加层数与持续时间。"
+        }
+    },
+    "Floor": {
+        "9": {
+            "Open": "2023-06-01 04:00:00",
+            "Close": "2023-07-16 03:59:59",
+            "Buff": [
+                "角色触发绽放反应产生的草原核在迸发时造成的伤害提升125%，角色触发烈绽放、超绽放反应造成的伤害提升125%。",
+                "(test)怪物血量提升100%。"
+            ],
+            "Room": {
+                "1": {
+                    "Level": 72,
+                    "Cond": [
+                        [
+                            2,
+                            60
+                        ],
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 26120201,
+                            "Hp": 89510.16528361938,
+                            "Name": "有翼冰本真蕈",
+                            "Icon": "UI_MonsterIcon_Fungus_Amanita_Unu_Svarita_Ice"
+                        },
+                        {
+                            "Id": 20011101,
+                            "Hp": 55222.10909720505,
+                            "Name": "大型水史莱姆",
+                            "Icon": "UI_MonsterIcon_Slime_Water_03"
+                        },
+                        {
+                            "Id": 26090701,
+                            "Hp": 31967.916813958524,
+                            "Name": "伸缩火蕈兽",
+                            "Icon": "UI_MonsterIcon_Fungus_Deux_Alpha_Fire"
+                        },
+                        {
+                            "Id": 26090901,
+                            "Hp": 31967.916813958524,
+                            "Name": "伸缩岩蕈兽",
+                            "Icon": "UI_MonsterIcon_Fungus_Deux_Beta_Rock"
+                        },
+                        {
+                            "Id": 26090401,
+                            "Hp": 31967.916813958524,
+                            "Name": "旋转雷蕈兽",
+                            "Icon": "UI_MonsterIcon_Fungus_Trois_Epsilon_Electric"
+                        },
+                        {
+                            "Id": 26090501,
+                            "Hp": 31967.916813958524,
+                            "Name": "旋转冰蕈兽",
+                            "Icon": "UI_MonsterIcon_Fungus_Trois_Alpha_Ice"
+                        },
+                        {
+                            "Id": 26090101,
+                            "Hp": 31967.916813958524,
+                            "Name": "浮游水蕈兽",
+                            "Icon": "UI_MonsterIcon_Fungus_Un_Gamma_Water"
+                        },
+                        {
+                            "Id": 26090201,
+                            "Hp": 31967.916813958524,
+                            "Name": "浮游草蕈兽",
+                            "Icon": "UI_MonsterIcon_Fungus_Un_Delta_Grass"
+                        },
+                        {
+                            "Id": 20011001,
+                            "Hp": 22088.844026572744,
+                            "Name": "水史莱姆",
+                            "Icon": "UI_MonsterIcon_Slime_Water_02"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 25310101,
+                            "Hp": 115084.50591664299,
+                            "Name": "镀金旅团·沙中净水",
+                            "Icon": "UI_MonsterIcon_Eremite_Female_Slim_PushDagger"
+                        },
+                        {
+                            "Id": 25210501,
+                            "Hp": 51148.66780006554,
+                            "Name": "镀金旅团·刀舞者",
+                            "Icon": "UI_MonsterIcon_Eremite_MuscleMan_Simitar"
+                        },
+                        {
+                            "Id": 25210401,
+                            "Hp": 51148.66780006554,
+                            "Name": "镀金旅团·破阵者",
+                            "Icon": "UI_MonsterIcon_Eremite_MuscleMan_Gloves"
+                        },
+                        {
+                            "Id": 25210301,
+                            "Hp": 38361.50197221425,
+                            "Name": "镀金旅团·鸦喙戟手",
+                            "Icon": "UI_MonsterIcon_Eremite_Male_Standard_Pole"
+                        },
+                        {
+                            "Id": 25210201,
+                            "Hp": 38361.50197221425,
+                            "Name": "镀金旅团·机弩兵",
+                            "Icon": "UI_MonsterIcon_Eremite_Male_Standard_Crossbow"
+                        },
+                        {
+                            "Id": 25210101,
+                            "Hp": 51148.66780006554,
+                            "Name": "镀金旅团·阵前斧手",
+                            "Icon": "UI_MonsterIcon_Eremite_Female_Hatchet"
+                        }
+                    ]
+                },
+                "2": {
+                    "Level": 74,
+                    "Cond": [
+                        [
+                            2,
+                            60
+                        ],
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 21020101,
+                            "Hp": 87025.89365386966,
+                            "Name": "木盾丘丘暴徒",
+                            "Icon": "UI_MonsterIcon_Brute_None_01"
+                        },
+                        {
+                            "Id": 21020201,
+                            "Hp": 87025.89365386966,
+                            "Name": "火斧丘丘暴徒",
+                            "Icon": "UI_MonsterIcon_Brute_None_01"
+                        },
+                        {
+                            "Id": 21020301,
+                            "Hp": 87025.89365386966,
+                            "Name": "岩盾丘丘暴徒",
+                            "Icon": "UI_MonsterIcon_Brute_None_01"
+                        },
+                        {
+                            "Id": 21020701,
+                            "Hp": 87025.89365386966,
+                            "Name": "雷斧丘丘暴徒",
+                            "Icon": "UI_MonsterIcon_Brute_None_01"
+                        },
+                        {
+                            "Id": 21030401,
+                            "Hp": 29008.631217956623,
+                            "Name": "岩丘丘萨满",
+                            "Icon": "UI_MonsterIcon_Shaman_Rock_01"
+                        },
+                        {
+                            "Id": 21030501,
+                            "Hp": 29008.631217956623,
+                            "Name": "冰丘丘萨满",
+                            "Icon": "UI_MonsterIcon_Shaman_Ice_01"
+                        },
+                        {
+                            "Id": 21010301,
+                            "Hp": 29008.631217956623,
+                            "Name": "木盾丘丘人",
+                            "Icon": "UI_MonsterIcon_Hili_None_01"
+                        },
+                        {
+                            "Id": 21010701,
+                            "Hp": 29008.631217956623,
+                            "Name": "冲锋丘丘人",
+                            "Icon": "UI_MonsterIcon_Hili_Fire_Range"
+                        },
+                        {
+                            "Id": 21010501,
+                            "Hp": 23206.90538167951,
+                            "Name": "火箭丘丘人",
+                            "Icon": "UI_MonsterIcon_Hili_Fire_Range"
+                        },
+                        {
+                            "Id": 21010901,
+                            "Hp": 23206.90538167951,
+                            "Name": "冰箭丘丘人",
+                            "Icon": "UI_MonsterIcon_Hili_Ice_Range"
+                        },
+                        {
+                            "Id": 21011001,
+                            "Hp": 23206.90538167951,
+                            "Name": "雷箭丘丘人",
+                            "Icon": "UI_MonsterIcon_Hili_Electric_Range"
+                        },
+                        {
+                            "Id": 21010601,
+                            "Hp": 29008.631217956623,
+                            "Name": "爆弹丘丘人",
+                            "Icon": "UI_MonsterIcon_Hili_Fire_Range"
+                        },
+                        {
+                            "Id": 21011301,
+                            "Hp": 23206.90538167951,
+                            "Name": "冰弹丘丘人",
+                            "Icon": "UI_MonsterIcon_Hili_Ice_Range"
+                        },
+                        {
+                            "Id": 21011601,
+                            "Hp": 29008.631217956623,
+                            "Name": "雷弹丘丘人",
+                            "Icon": "UI_MonsterIcon_Hili_Electric_Range"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 22010301,
+                            "Hp": 58017.262435913035,
+                            "Name": "水深渊法师",
+                            "Icon": "UI_MonsterIcon_Abyss_Water_01"
+                        },
+                        {
+                            "Id": 21030201,
+                            "Hp": 29008.631217956623,
+                            "Name": "草丘丘萨满",
+                            "Icon": "UI_MonsterIcon_Shaman_Grass_01"
+                        },
+                        {
+                            "Id": 20011101,
+                            "Hp": 58017.262435913035,
+                            "Name": "大型水史莱姆",
+                            "Icon": "UI_MonsterIcon_Slime_Water_03"
+                        },
+                        {
+                            "Id": 20011301,
+                            "Hp": 58017.262435913035,
+                            "Name": "大型火史莱姆",
+                            "Icon": "UI_MonsterIcon_Slime_Fire_03"
+                        }
+                    ]
+                },
+                "3": {
+                    "Level": 76,
+                    "Cond": [
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ],
+                        [
+                            2,
+                            420
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 26120301,
+                            "Hp": 77136.03884236507,
+                            "Name": "陆行水本真蕈",
+                            "Icon": "UI_MonsterIcon_Fungus_Amanita_Du_Anudatta_Water"
+                        },
+                        {
+                            "Id": 26120101,
+                            "Hp": 77136.03884236507,
+                            "Name": "有翼草本真蕈",
+                            "Icon": "UI_MonsterIcon_Fungus_Amanita_Unu_Anudatta_Grass"
+                        },
+                        {
+                            "Id": 26090401,
+                            "Hp": 38568.01942118268,
+                            "Name": "旋转雷蕈兽",
+                            "Icon": "UI_MonsterIcon_Fungus_Trois_Epsilon_Electric"
+                        },
+                        {
+                            "Id": 26090201,
+                            "Hp": 38568.01942118268,
+                            "Name": "浮游草蕈兽",
+                            "Icon": "UI_MonsterIcon_Fungus_Un_Delta_Grass"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 25310201,
+                            "Hp": 138844.8764147256,
+                            "Name": "镀金旅团·炽阳凝冰",
+                            "Icon": "UI_MonsterIcon_Eremite_Male_Standard_Glaive"
+                        },
+                        {
+                            "Id": 25310301,
+                            "Hp": 154272.07768473044,
+                            "Name": "镀金旅团·白日鸣雷",
+                            "Icon": "UI_MonsterIcon_Eremite_Male_Standard_Polearm"
+                        },
+                        {
+                            "Id": 25210401,
+                            "Hp": 61708.83215697009,
+                            "Name": "镀金旅团·破阵者",
+                            "Icon": "UI_MonsterIcon_Eremite_MuscleMan_Gloves"
+                        }
+                    ]
+                }
+            }
+        },
+        "10": {
+            "Open": "2023-06-01 04:00:00",
+            "Close": "2023-07-16 03:59:59",
+            "Buff": [
+                "对敌人触发蔓激化、超激化反应时，这些反应带来的伤害提升提高75%。",
+                "(test)怪物血量提升100%。"
+            ],
+            "Room": {
+                "1": {
+                    "Level": 80,
+                    "Cond": [
+                        [
+                            2,
+                            60
+                        ],
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 26120201,
+                            "Hp": 132365.05269524074,
+                            "Name": "有翼冰本真蕈",
+                            "Icon": "UI_MonsterIcon_Fungus_Amanita_Unu_Svarita_Ice"
+                        },
+                        {
+                            "Id": 20010601,
+                            "Hp": 74262.91016200923,
+                            "Name": "大型雷史莱姆",
+                            "Icon": "UI_MonsterIcon_Slime_Electric_03"
+                        },
+                        {
+                            "Id": 20010701,
+                            "Hp": 74262.91016200923,
+                            "Name": "变异雷史莱姆",
+                            "Icon": "UI_MonsterIcon_Slime_Electric_03_Positive"
+                        },
+                        {
+                            "Id": 26090501,
+                            "Hp": 47273.23405368639,
+                            "Name": "旋转冰蕈兽",
+                            "Icon": "UI_MonsterIcon_Fungus_Trois_Alpha_Ice"
+                        },
+                        {
+                            "Id": 26090401,
+                            "Hp": 47273.23405368639,
+                            "Name": "旋转雷蕈兽",
+                            "Icon": "UI_MonsterIcon_Fungus_Trois_Epsilon_Electric"
+                        },
+                        {
+                            "Id": 26090201,
+                            "Hp": 47273.23405368639,
+                            "Name": "浮游草蕈兽",
+                            "Icon": "UI_MonsterIcon_Fungus_Un_Delta_Grass"
+                        },
+                        {
+                            "Id": 20010501,
+                            "Hp": 29705.164586171708,
+                            "Name": "雷史莱姆",
+                            "Icon": "UI_MonsterIcon_Slime_Electric_02"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 26050601,
+                            "Hp": 378185.8724294901,
+                            "Name": "深海龙蜥·原种",
+                            "Icon": "UI_MonsterIcon_Drake_Deepsea_Water"
+                        }
+                    ]
+                },
+                "2": {
+                    "Level": 82,
+                    "Cond": [
+                        [
+                            2,
+                            60
+                        ],
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 25100101,
+                            "Hp": 251228.77827933797,
+                            "Name": "海乱鬼·雷腾",
+                            "Icon": "UI_MonsterIcon_Samurai_Kairagi_01"
+                        },
+                        {
+                            "Id": 25100201,
+                            "Hp": 251228.77827933797,
+                            "Name": "海乱鬼·炎威",
+                            "Icon": "UI_MonsterIcon_Samurai_Kairagi_02"
+                        },
+                        {
+                            "Id": 25210201,
+                            "Hp": 62807.1945698344,
+                            "Name": "镀金旅团·机弩兵",
+                            "Icon": "UI_MonsterIcon_Eremite_Male_Standard_Crossbow"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 22010401,
+                            "Hp": 77333.54409485303,
+                            "Name": "雷深渊法师",
+                            "Icon": "UI_MonsterIcon_Abyss_Electric_01"
+                        },
+                        {
+                            "Id": 21020801,
+                            "Hp": 348000.9484268391,
+                            "Name": "丘丘雷兜王",
+                            "Icon": "UI_MonsterIcon_Brute_Electric_01"
+                        }
+                    ]
+                },
+                "3": {
+                    "Level": 85,
+                    "Cond": [
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ],
+                        [
+                            2,
+                            420
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 25310101,
+                            "Hp": 217426.71283354243,
+                            "Name": "镀金旅团·沙中净水",
+                            "Icon": "UI_MonsterIcon_Eremite_Female_Slim_PushDagger"
+                        },
+                        {
+                            "Id": 25310201,
+                            "Hp": 217426.71283354243,
+                            "Name": "镀金旅团·炽阳凝冰",
+                            "Icon": "UI_MonsterIcon_Eremite_Male_Standard_Glaive"
+                        },
+                        {
+                            "Id": 25310301,
+                            "Hp": 241585.22517460608,
+                            "Name": "镀金旅团·白日鸣雷",
+                            "Icon": "UI_MonsterIcon_Eremite_Male_Standard_Polearm"
+                        },
+                        {
+                            "Id": 23010601,
+                            "Hp": 122546.15571190421,
+                            "Name": "愚人众先遣队·火铳游击兵",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Standard_Rifle_Fire_01"
+                        },
+                        {
+                            "Id": 23010201,
+                            "Hp": 122546.15571190421,
+                            "Name": "愚人众先遣队·水铳重卫士",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Fat_SprayGun_Water_01"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 23050101,
+                            "Hp": 362377.8377619089,
+                            "Name": "愚人众·藏镜仕女",
+                            "Icon": "UI_MonsterIcon_Fatuus_Maiden_Water"
+                        },
+                        {
+                            "Id": 23030101,
+                            "Hp": 204243.59285317358,
+                            "Name": "愚人众·雷萤术士",
+                            "Icon": "UI_MonsterIcon_Fatuus_Summoner_01"
+                        }
+                    ]
+                }
+            }
+        },
+        "11": {
+            "Open": "2023-06-01 04:00:00",
+            "Close": "2023-07-16 03:59:59",
+            "Buff": [
+                "队伍中所有角色普通攻击造成的伤害提升50%。",
+                "(test)怪物血量提升100%。"
+            ],
+            "Room": {
+                "1": {
+                    "Level": 88,
+                    "Cond": [
+                        [
+                            233753003,
+                            3024,
+                            20
+                        ],
+                        [
+                            233753003,
+                            3024,
+                            40
+                        ],
+                        [
+                            233753003,
+                            3024,
+                            60
+                        ]
+                    ],
+                    "Type": "TOWER_COND_LEFT_HP_GREATER_THAN",
+                    "First": [
+                        {
+                            "Id": 21020401,
+                            "Hp": 390927.96587894496,
+                            "Name": "丘丘霜铠王",
+                            "Icon": "UI_MonsterIcon_Brute_Ice_01"
+                        },
+                        {
+                            "Id": 21020201,
+                            "Hp": 130309.32195964832,
+                            "Name": "火斧丘丘暴徒",
+                            "Icon": "UI_MonsterIcon_Brute_None_01"
+                        },
+                        {
+                            "Id": 20060401,
+                            "Hp": 109110.0723610398,
+                            "Name": "冰飘浮灵",
+                            "Icon": "UI_MonsterIcon_Sylph_Ice_01"
+                        },
+                        {
+                            "Id": 20060101,
+                            "Hp": 109110.0723610398,
+                            "Name": "水飘浮灵",
+                            "Icon": "UI_MonsterIcon_Sylph_Water_01"
+                        },
+                        {
+                            "Id": 20060201,
+                            "Hp": 109110.0723610398,
+                            "Name": "岩飘浮灵",
+                            "Icon": "UI_MonsterIcon_Sylph_Rock_01"
+                        },
+                        {
+                            "Id": 20060501,
+                            "Hp": 109110.0723610398,
+                            "Name": "雷飘浮灵",
+                            "Icon": "UI_MonsterIcon_Sylph_Electric_01"
+                        },
+                        {
+                            "Id": 20060701,
+                            "Hp": 109110.0723610398,
+                            "Name": "草飘浮灵",
+                            "Icon": "UI_MonsterIcon_Sylph_Grass_01"
+                        },
+                        {
+                            "Id": 20060301,
+                            "Hp": 109110.0723610398,
+                            "Name": "风飘浮灵",
+                            "Icon": "UI_MonsterIcon_Sylph_Wind_01"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 25410301,
+                            "Hp": 300052.7013866567,
+                            "Name": "镀金旅团·炽沙叙事人",
+                            "Icon": "UI_MonsterIcon_Eremite_Female_Standard_Oracle"
+                        },
+                        {
+                            "Id": 25310201,
+                            "Hp": 245497.66999373032,
+                            "Name": "镀金旅团·炽阳凝冰",
+                            "Icon": "UI_MonsterIcon_Eremite_Male_Standard_Glaive"
+                        },
+                        {
+                            "Id": 21040101,
+                            "Hp": 340968.9701437577,
+                            "Name": "丘丘风行游侠",
+                            "Icon": "UI_MonsterIcon_Hilistray_Wind"
+                        },
+                        {
+                            "Id": 21040201,
+                            "Hp": 340968.9701437577,
+                            "Name": "丘丘水行游侠",
+                            "Icon": "UI_MonsterIcon_Hilistray_Water"
+                        },
+                        {
+                            "Id": 21020201,
+                            "Hp": 130309.32195964832,
+                            "Name": "火斧丘丘暴徒",
+                            "Icon": "UI_MonsterIcon_Brute_None_01"
+                        }
+                    ]
+                },
+                "2": {
+                    "Level": 90,
+                    "Cond": [
+                        [
+                            2,
+                            60
+                        ],
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 22030101,
+                            "Hp": 389665.38683876395,
+                            "Name": "深渊咏者·紫电",
+                            "Icon": "UI_MonsterIcon_Invoker_Deacon_Electric_01"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 25410201,
+                            "Hp": 326482.5382988715,
+                            "Name": "镀金旅团·灵风猎手",
+                            "Icon": "UI_MonsterIcon_Eremite_Female_Standard_Longbow"
+                        },
+                        {
+                            "Id": 25410301,
+                            "Hp": 326482.5382988715,
+                            "Name": "镀金旅团·炽沙叙事人",
+                            "Icon": "UI_MonsterIcon_Eremite_Female_Standard_Oracle"
+                        },
+                        {
+                            "Id": 26120101,
+                            "Hp": 148401.14998362944,
+                            "Name": "有翼草本真蕈",
+                            "Icon": "UI_MonsterIcon_Fungus_Amanita_Unu_Anudatta_Grass"
+                        },
+                        {
+                            "Id": 26120201,
+                            "Hp": 207761.60580963816,
+                            "Name": "有翼冰本真蕈",
+                            "Icon": "UI_MonsterIcon_Fungus_Amanita_Unu_Svarita_Ice"
+                        },
+                        {
+                            "Id": 26120301,
+                            "Hp": 148401.14998362944,
+                            "Name": "陆行水本真蕈",
+                            "Icon": "UI_MonsterIcon_Fungus_Amanita_Du_Anudatta_Water"
+                        },
+                        {
+                            "Id": 26120401,
+                            "Hp": 207761.60580963816,
+                            "Name": "陆行岩本真蕈",
+                            "Icon": "UI_MonsterIcon_Fungus_Amanita_Du_Udatta_Rock"
+                        }
+                    ]
+                },
+                "3": {
+                    "Level": 92,
+                    "Cond": [
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ],
+                        [
+                            2,
+                            420
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 23050101,
+                            "Hp": 478287.3871839793,
+                            "Name": "愚人众·藏镜仕女",
+                            "Icon": "UI_MonsterIcon_Fatuus_Maiden_Water"
+                        },
+                        {
+                            "Id": 24030101,
+                            "Hp": 398572.8226533159,
+                            "Name": "遗迹龙兽·空巡",
+                            "Icon": "UI_MonsterIcon_Gargoyle"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 22020101,
+                            "Hp": 409134.41553264856,
+                            "Name": "深渊使徒·激流",
+                            "Icon": "UI_MonsterIcon_Invoker_Herald_Water_01"
+                        },
+                        {
+                            "Id": 22010101,
+                            "Hp": 102283.60388316205,
+                            "Name": "火深渊法师",
+                            "Icon": "UI_MonsterIcon_Abyss_Fire_01"
+                        },
+                        {
+                            "Id": 22010201,
+                            "Hp": 102283.60388316205,
+                            "Name": "冰深渊法师",
+                            "Icon": "UI_MonsterIcon_Abyss_Ice_01"
+                        },
+                        {
+                            "Id": 22010301,
+                            "Hp": 102283.60388316205,
+                            "Name": "水深渊法师",
+                            "Icon": "UI_MonsterIcon_Abyss_Water_01"
+                        }
+                    ]
+                }
+            }
+        },
+        "12": {
+            "Open": "2023-06-01 04:00:00",
+            "Close": "2023-07-16 03:59:59",
+            "Buff": [
+                "仅在此层，地脉的涌流平缓通顺。",
+                "(test)怪物血量提升150%。"
+            ],
+            "Room": {
+                "1": {
+                    "Level": 95,
+                    "Cond": [
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ],
+                        [
+                            2,
+                            420
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 26010101,
+                            "Hp": 208116.28469212918,
+                            "Name": "冰霜骗骗花",
+                            "Icon": "UI_MonsterIcon_Mimik_Ice"
+                        },
+                        {
+                            "Id": 26010201,
+                            "Hp": 208116.28469212918,
+                            "Name": "炽热骗骗花",
+                            "Icon": "UI_MonsterIcon_Mimik_Fire"
+                        },
+                        {
+                            "Id": 24040101,
+                            "Hp": 386143.6133766592,
+                            "Name": "元能构装体·力场发生器",
+                            "Icon": "UI_MonsterIcon_Monolith_Ordinator"
+                        },
+                        {
+                            "Id": 24040201,
+                            "Hp": 386143.6133766592,
+                            "Name": "元能构装体·重塑仪",
+                            "Icon": "UI_MonsterIcon_Monolith_Ordinator"
+                        },
+                        {
+                            "Id": 24040301,
+                            "Hp": 386143.6133766592,
+                            "Name": "元能构装体·勘探机",
+                            "Icon": "UI_MonsterIcon_Monolith_Ordinator"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 22020201,
+                            "Hp": 554976.759179011,
+                            "Name": "深渊使徒·霜落",
+                            "Icon": "UI_MonsterIcon_Invoker_Herald_Ice"
+                        },
+                        {
+                            "Id": 22020101,
+                            "Hp": 554976.759179011,
+                            "Name": "深渊使徒·激流",
+                            "Icon": "UI_MonsterIcon_Invoker_Herald_Water_01"
+                        },
+                        {
+                            "Id": 22010201,
+                            "Hp": 138744.18979475263,
+                            "Name": "冰深渊法师",
+                            "Icon": "UI_MonsterIcon_Abyss_Ice_01"
+                        },
+                        {
+                            "Id": 22010301,
+                            "Hp": 138744.18979475263,
+                            "Name": "水深渊法师",
+                            "Icon": "UI_MonsterIcon_Abyss_Water_01"
+                        }
+                    ]
+                },
+                "2": {
+                    "Level": 98,
+                    "Cond": [
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ],
+                        [
+                            2,
+                            420
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 26110101,
+                            "Hp": 1802520.6730464848,
+                            "Name": "翠翎恐蕈",
+                            "Icon": "UI_MonsterIcon_Fungus_Raptor"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 20070101,
+                            "Hp": 1802520.6730464848,
+                            "Name": "雷音权现",
+                            "Icon": "UI_MonsterIcon_Raijin"
+                        }
+                    ]
+                },
+                "3": {
+                    "Level": 100,
+                    "Cond": [
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ],
+                        [
+                            2,
+                            420
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 26100101,
+                            "Hp": 970550.3172040819,
+                            "Name": "圣骸角鳄",
+                            "Icon": "UI_MonsterIcon_Gator_Sacred_Water"
+                        },
+                        {
+                            "Id": 26100201,
+                            "Hp": 970550.3172040819,
+                            "Name": "圣骸牙兽",
+                            "Icon": "UI_MonsterIcon_Panther_Sacred_Grass"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 22100201,
+                            "Hp": 1386500.453148689,
+                            "Name": "深罪浸礼者·水火冰驱役者",
+                            "Icon": "UI_MonsterIcon_Invoker_Archdeacon"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

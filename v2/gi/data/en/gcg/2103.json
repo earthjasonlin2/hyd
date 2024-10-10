@@ -1,0 +1,110 @@
+{
+    "Type": "Character",
+    "Name": "Cryo Hypostasis",
+    "Title": "Cryo Hypostasis",
+    "Desc": "Code name: Daleth. A high-purity Cryo entity.\\nIt doesn't seem all that good at ball sports...",
+    "Source": "Reward for accepting the Tavern Challenge at The Cat's Tail and claiming victory in a Friendly Fracas with Cryo Hypostasis",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_EffigyIce",
+    "Hp": 8,
+    "Cost": 2,
+    "Tag": [
+        "Cryo",
+        "Other Weapons",
+        "Monster"
+    ],
+    "Talent": {
+        "21031": {
+            "Name": "Icespike Shot",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "21032": {
+            "Name": "Ice Ring Waltz",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. This character gains <color=#FFFFFFFF>$[C121031]</color>.",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "C121031": {
+                    "Name": "Overwhelming Ice",
+                    "Desc": "<color=#FFFFFFFF>When the character uses a Normal Attack:</color> Deal 1 <color=#FFFFFFFF>$[K5] to all opposing characters on standby </color>. \\n<color=#FFFFFFFF>$[K3]: 1</color>",
+                    "Child": {
+                        "K5": {
+                            "Name": "<color=#FFFFFFFF>Piercing DMG</color>",
+                            "Desc": "Piercing DMG cannot be increased by any bonuses, but cannot be defended against using Shields or DMG Immunity either."
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3
+            }
+        },
+        "21033": {
+            "Name": "Plunging Ice Shards",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], deals 1 <color=#FFFFFFFF>$[K5]</color> to all opposing characters on standby, summons 1 <color=#FFFFFFFF>$[C121033]</color>.",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "K5": {
+                    "Name": "<color=#FFFFFFFF>Piercing DMG</color>",
+                    "Desc": "Piercing DMG cannot be increased by any bonuses, but cannot be defended against using Shields or DMG Immunity either."
+                },
+                "C121033": {
+                    "Name": "Piercing Iceridge",
+                    "Desc": "<color=#FFFFFFFF>End Phase:</color> Deal 1 $[K101] to the opposing $[K7].\\n<color=#FFFFFFFF>$[K3]: 2</color>",
+                    "Child": {
+                        "K101": {
+                            "Name": "{SPRITE_PRESET#2101}<color=#99FFFFFF>Cryo DMG</color>",
+                            "Desc": "Applies {SPRITE_PRESET#2101}Cryo and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Melt</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Superconduct</color>: DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Frozen</color>: DMG +1 for this instance, the target is unable to perform any Actions this Round (Can be removed in advance after the target receives Physical or Pyro DMG, in which case they will take +2 DMG)"
+                        },
+                        "K7": {
+                            "Name": "<color=#FFFFFFFF>Character Closest to Your Current Active Character</color>",
+                            "Desc": "The opposing \"character closest to your current active character\" is the opposing character whose position is closest to that of your active character.\\nIf multiple such characters exist, the one with the foremost position will be viewed as being \"closest.\""
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "21034": {
+            "Name": "Cryo Crystal Core",
+            "Desc": "(Passive) When the battle begins, this character gains <color=#FFFFFFFF>$[C121034]</color>.",
+            "Child": {
+                "C121034": {
+                    "Name": "Cryo Crystal Core",
+                    "Desc": "<color=#FFFFFFFF>When the character to which this is attached would be defeated:</color> Remove this effect, ensure the character $[K54|s1], and heal them to 1 HP.",
+                    "Child": {
+                        "K54": {
+                            "Name": "<color=#FFFFFFFF>Immunity to Defeat</color>|s1:<color=#FFFFFFFF>will not be defeated</color>",
+                            "Desc": "Certain effects will grant characters an <color=#FFFFFFFF>immunity to being defeated</color> when their HP hits 0, and will heal them for a certain amount thereafter.\\nWhen this occurs, characters will not be regarded as having experienced a <color=#FFFFFFFF>defeat.</color> (Hence, their attached equipment and statuses will not be removed, and their Energy will remain uncleared.)"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 221031
+}

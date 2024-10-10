@@ -1,0 +1,38 @@
+{
+    "Type": "Action",
+    "Name": "Grieving Echo",
+    "Title": "Thunder Manifestation: Grieving Echo",
+    "Desc": "That which drives the Thunder Manifestation is a much more primal fury...",
+    "Source": "Reward for accepting the Tavern Challenge against the Thunder Manifestation at The Cat's Tail and achieving all corresponding challenge objectives in a Friendly Fracas",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Raijin",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_ELECTRO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "Talent",
+        "Combat Action"
+    ],
+    "Talent": {
+        "Name": "Grieving Echo",
+        "Desc": "$[K1]: When your active character is <color=#FFFFFFFF>$[A2402]</color>, equip this card.\\nAfter $[A2402] equips this card, immediately use <color=#FFD780FF>$[S24022]</color> once.\\nWhen your $[A2402] is on the field and has this card equipped, when an opponent with <color=#FFFFFFFF>$[C124022]</color> attached takes DMG: You draw 1 card. (Once per Round)\\n(You must have $[A2402] in your deck to add this card to your deck.)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+            },
+            "A2402": "Grieving Echo",
+            "S24022": "S24022",
+            "C124022": {
+                "Name": "Lightning Rod",
+                "Desc": "<color=#FFFFFFFF>When the attached character takes DMG from $[A2402] or its summons:</color> Remove this state, cause this DMG instance to increase by 1.\\n(Only one of this status can exist on the field at once. Some of $[A2402]'s skills will target the character to which this is attached.)",
+                "Child": {
+                    "A2402": "Grieving Echo"
+                }
+            }
+        }
+    }
+}

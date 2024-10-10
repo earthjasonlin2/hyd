@@ -1,0 +1,87 @@
+{
+    "Type": "Character",
+    "Name": "雷電将軍",
+    "Title": "一心浄土·雷電将軍",
+    "Desc": "雷鳴寂滅、浮世の泡影。",
+    "Source": "キャッツテールで雷電将軍を招待し、友好対戦に勝利することで獲得",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Shougun",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "雷元素",
+        "長柄武器",
+        "稲妻"
+    ],
+    "Talent": {
+        "14071": {
+            "Name": "源流",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "14072": {
+            "Name": "神変·悪曜開眼",
+            "Desc": "<color=#FFFFFFFF>$[C114071]</color>を召喚する。",
+            "Child": {
+                "C114071": {
+                    "Name": "雷罰悪曜の眼",
+                    "Desc": "<color=#FFFFFFFF>エンドフェーズ：</color>$[K104]を1与える。\\n<color=#FFFFFFFF>$[K3]：3</color>\\n<color=#FFFFFFFF>この召喚物がフィールドに存在する時</color>、味方キャラの「元素爆発」の与えるダメージ+1。",
+                    "Child": {
+                        "K104": {
+                            "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素ダメージ</color>",
+                            "Desc": "{SPRITE_PRESET#2104}雷元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>過負荷</color>：ダメージ+2、目標を強制的に次のキャラにチェンジさせる\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>超電導</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>感電</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>原激化</color>：ダメージ+1、次の草元素または雷元素ダメージを2回まで+1できる「<color=#FFFFFFFF>激化領域</color>」を生成する"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                            "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 3
+            }
+        },
+        "14073": {
+            "Name": "奥義·夢想真説",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、他の味方キャラが$[K310]を2獲得する。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO",
+                "D__KEY__DAMAGE": 3,
+                "K310": {
+                    "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}チャージ</color>",
+                    "Desc": "キャラが「元素爆発」を発動するには、{SPRITE_PRESET#1110}チャージを消費する必要があります。\\nキャラが「元素スキル」や「通常攻撃」を発動した後、{SPRITE_PRESET#1110}チャージを1獲得できます。"
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 4,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "14074": {
+            "Name": "諸願百目の輪",
+            "Desc": "【固有】戦闘開始時、<color=#FFFFFFFF>$[C114072]</color>が付与される。",
+            "Child": {
+                "C114072": {
+                    "Name": "諸願百目の輪",
+                    "Desc": "<color=#FFFFFFFF>他の味方キャラが「元素爆発」を発動した後</color>、<color=#FFFFFFFF>「願力」</color>を1蓄積する。（最大3まで蓄積可能）\\n<color=#FFFFFFFF>付与されたキャラが$[S14073]を発動する時</color>、<color=#FFFFFFFF>「願力」</color>をすべて消費し、1消費するごとに与えるダメージ+1。",
+                    "Child": {
+                        "S14073": "S14073"
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 214071
+}

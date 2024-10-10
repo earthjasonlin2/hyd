@@ -1,0 +1,726 @@
+{
+    "Id": 2004014,
+    "Name": "魂魄蠱惑の支配者",
+    "Desc": "「星核ハンター」の一員。掴みどころのない笑みを浮かべる美しい殺し屋で、様々な武器の扱いとマインドコントロールに長けている。星穹列車をここまで誘導したのも、ある計画を実現するためである……",
+    "MonsterCampID": null,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 7207.500000000466,
+    "InitialDelayRatio": 1.5000000004656613,
+    "ImagePath": "SpriteOutput/MonsterFigure/Monster_2004010.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "LittleBoss",
+    "SpeedBase": 150,
+    "StanceBase": 900,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.20000000018626451,
+    "Child": [
+        {
+            "Id": 2004014,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Fire",
+                "Wind",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.40000000037252903
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 200401401,
+                    "SkillName": "止まない夜の喧騒",
+                    "SkillDesc": "指定した味方単体に雷属性ダメージを与え、確率で攻撃を受けた味方を感電状態にする。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200401402,
+                    "SkillName": "月明かりが撫でる連綿",
+                    "SkillDesc": "指定した味方および隣接する味方に雷属性ダメージを与える。指定した味方が感電状態の場合、隣接する味方を感電状態にする。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200401403,
+                    "SkillName": "沈黙は厳かに嘲笑う",
+                    "SkillDesc": "味方全体に雷属性ダメージを与える。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 200401404,
+                    "SkillName": "言霊",
+                    "SkillDesc": "高確率で指定した味方単体を「支配」状態にし、行動順を早め、他の味方1名をランダムに攻撃させる。",
+                    "DamageType": "",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 200401405,
+                    "SkillName": "死者は歯ぎしりしながら囁く",
+                    "SkillDesc": "指定した味方単体に雷属性ダメージを与え、確率で攻撃を受けた味方を感電状態にする。同時に感電状態の全味方に雷属性ダメージを与える。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200401406,
+                    "SkillName": "心理暗示",
+                    "SkillDesc": "複数の味方を「心理暗示」状態にし、アクションバーに「公開」を追加する。次に「公開」が行動する時、「心理暗示」にかかった味方は「支配」状態になる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 200401407,
+                    "SkillName": "戦慄",
+                    "SkillDesc": "攻撃を受けたターゲットが感電状態の場合、感電ダメージを1回与える、このダメージは感電状態によるものとみなす。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 200401408,
+                    "SkillName": "残酷",
+                    "SkillDesc": "自身以外の敵、または「支配」状態の味方が感電状態の味方をメインターゲットとして攻撃を行う時、さらに雷属性攻撃を1回行う。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200401409,
+                    "SkillName": "傀儡スタンバイ",
+                    "SkillDesc": "召喚物に「<u>誘狂</u>」を付与する。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200401410,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 200401411,
+                    "SkillName": "叫喚の霊",
+                    "SkillDesc": "精鋭エネミーを2体召喚して戦闘を支援させる。味方キャラが召喚物にダメージを与えた時、「魂魄蠱惑の支配者」も同時に同量のHPを失う。召喚物が弱点撃破される時、さらに行動順が遅延される。いずれかの召喚物が倒された後、弱点属性がフィールド上にいる他の召喚物に移、その召喚物に「<u>血眼</u>」を付与する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 200401412,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 200401413,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 200401414,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 200401401,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Fire",
+                "Wind",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.40000000037252903
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 200401401,
+                    "SkillName": "止まない夜の喧騒",
+                    "SkillDesc": "指定した味方単体に雷属性ダメージを与え、確率で攻撃を受けた味方を感電状態にする。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200401402,
+                    "SkillName": "月明かりが撫でる連綿",
+                    "SkillDesc": "指定した味方および隣接する味方に雷属性ダメージを与える。指定した味方が感電状態の場合、隣接する味方を感電状態にする。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200401403,
+                    "SkillName": "沈黙は厳かに嘲笑う",
+                    "SkillDesc": "味方全体に雷属性ダメージを与える。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 200401404,
+                    "SkillName": "言霊",
+                    "SkillDesc": "高確率で指定した味方単体を「支配」状態にし、行動順を早め、他の味方1名をランダムに攻撃させる。",
+                    "DamageType": "",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 200401405,
+                    "SkillName": "死者は歯ぎしりしながら囁く",
+                    "SkillDesc": "指定した味方単体に雷属性ダメージを与え、確率で攻撃を受けた味方を感電状態にする。同時に感電状態の全味方に雷属性ダメージを与える。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200401406,
+                    "SkillName": "心理暗示",
+                    "SkillDesc": "複数の味方を「心理暗示」状態にし、アクションバーに「公開」を追加する。次に「公開」が行動する時、「心理暗示」にかかった味方は「支配」状態になる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 200401407,
+                    "SkillName": "戦慄",
+                    "SkillDesc": "攻撃を受けたターゲットが感電状態の場合、感電ダメージを1回与える、このダメージは感電状態によるものとみなす。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 200401408,
+                    "SkillName": "残酷",
+                    "SkillDesc": "自身以外の敵、または「支配」状態の味方が感電状態の味方をメインターゲットとして攻撃を行う時、さらに雷属性攻撃を1回行う。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200401409,
+                    "SkillName": "傀儡スタンバイ",
+                    "SkillDesc": "召喚物に「<u>誘狂</u>」を付与する。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200401410,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 200401411,
+                    "SkillName": "叫喚の霊",
+                    "SkillDesc": "精鋭エネミーを2体召喚して戦闘を支援させる。味方キャラが召喚物にダメージを与えた時、「魂魄蠱惑の支配者」も同時に同量のHPを失う。召喚物が弱点撃破される時、さらに行動順が遅延される。いずれかの召喚物が倒された後、弱点属性がフィールド上にいる他の召喚物に移、その召喚物に「<u>血眼</u>」を付与する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 200401412,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 200401413,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 200401414,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 200401402,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Fire",
+                "Wind",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.40000000037252903
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 200401401,
+                    "SkillName": "止まない夜の喧騒",
+                    "SkillDesc": "指定した味方単体に雷属性ダメージを与え、確率で攻撃を受けた味方を感電状態にする。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200401402,
+                    "SkillName": "月明かりが撫でる連綿",
+                    "SkillDesc": "指定した味方および隣接する味方に雷属性ダメージを与える。指定した味方が感電状態の場合、隣接する味方を感電状態にする。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200401403,
+                    "SkillName": "沈黙は厳かに嘲笑う",
+                    "SkillDesc": "味方全体に雷属性ダメージを与える。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 200401404,
+                    "SkillName": "言霊",
+                    "SkillDesc": "高確率で指定した味方単体を「支配」状態にし、行動順を早め、他の味方1名をランダムに攻撃させる。",
+                    "DamageType": "",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 200401405,
+                    "SkillName": "死者は歯ぎしりしながら囁く",
+                    "SkillDesc": "指定した味方単体に雷属性ダメージを与え、確率で攻撃を受けた味方を感電状態にする。同時に感電状態の全味方に雷属性ダメージを与える。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200401406,
+                    "SkillName": "心理暗示",
+                    "SkillDesc": "複数の味方を「心理暗示」状態にし、アクションバーに「公開」を追加する。次に「公開」が行動する時、「心理暗示」にかかった味方は「支配」状態になる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 200401407,
+                    "SkillName": "戦慄",
+                    "SkillDesc": "攻撃を受けたターゲットが感電状態の場合、感電ダメージを1回与える、このダメージは感電状態によるものとみなす。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 200401408,
+                    "SkillName": "残酷",
+                    "SkillDesc": "自身以外の敵、または「支配」状態の味方が感電状態の味方をメインターゲットとして攻撃を行う時、さらに雷属性攻撃を1回行う。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200401409,
+                    "SkillName": "傀儡スタンバイ",
+                    "SkillDesc": "召喚物に「<u>誘狂</u>」を付与する。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200401410,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 200401411,
+                    "SkillName": "叫喚の霊",
+                    "SkillDesc": "精鋭エネミーを2体召喚して戦闘を支援させる。味方キャラが召喚物にダメージを与えた時、「魂魄蠱惑の支配者」も同時に同量のHPを失う。召喚物が弱点撃破される時、さらに行動順が遅延される。いずれかの召喚物が倒された後、弱点属性がフィールド上にいる他の召喚物に移、その召喚物に「<u>血眼</u>」を付与する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 200401412,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 200401413,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 200401414,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 200401403,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Fire",
+                "Wind",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.40000000037252903
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 200401401,
+                    "SkillName": "止まない夜の喧騒",
+                    "SkillDesc": "指定した味方単体に雷属性ダメージを与え、確率で攻撃を受けた味方を感電状態にする。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200401402,
+                    "SkillName": "月明かりが撫でる連綿",
+                    "SkillDesc": "指定した味方および隣接する味方に雷属性ダメージを与える。指定した味方が感電状態の場合、隣接する味方を感電状態にする。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200401403,
+                    "SkillName": "沈黙は厳かに嘲笑う",
+                    "SkillDesc": "味方全体に雷属性ダメージを与える。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 200401404,
+                    "SkillName": "言霊",
+                    "SkillDesc": "高確率で指定した味方単体を「支配」状態にし、行動順を早め、他の味方1名をランダムに攻撃させる。",
+                    "DamageType": "",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 200401405,
+                    "SkillName": "死者は歯ぎしりしながら囁く",
+                    "SkillDesc": "指定した味方単体に雷属性ダメージを与え、確率で攻撃を受けた味方を感電状態にする。同時に感電状態の全味方に雷属性ダメージを与える。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200401406,
+                    "SkillName": "心理暗示",
+                    "SkillDesc": "複数の味方を「心理暗示」状態にし、アクションバーに「公開」を追加する。次に「公開」が行動する時、「心理暗示」にかかった味方は「支配」状態になる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 200401407,
+                    "SkillName": "戦慄",
+                    "SkillDesc": "攻撃を受けたターゲットが感電状態の場合、感電ダメージを1回与える、このダメージは感電状態によるものとみなす。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 200401408,
+                    "SkillName": "残酷",
+                    "SkillDesc": "自身以外の敵、または「支配」状態の味方が感電状態の味方をメインターゲットとして攻撃を行う時、さらに雷属性攻撃を1回行う。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200401409,
+                    "SkillName": "傀儡スタンバイ",
+                    "SkillDesc": "召喚物に「<u>誘狂</u>」を付与する。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200401410,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 200401411,
+                    "SkillName": "叫喚の霊",
+                    "SkillDesc": "精鋭エネミーを2体召喚して戦闘を支援させる。味方キャラが召喚物にダメージを与えた時、「魂魄蠱惑の支配者」も同時に同量のHPを失う。召喚物が弱点撃破される時、さらに行動順が遅延される。いずれかの召喚物が倒された後、弱点属性がフィールド上にいる他の召喚物に移、その召喚物に「<u>血眼</u>」を付与する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 200401412,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 200401413,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 200401414,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 200401404,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Fire",
+                "Wind",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.40000000037252903
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 200401401,
+                    "SkillName": "止まない夜の喧騒",
+                    "SkillDesc": "指定した味方単体に雷属性ダメージを与え、確率で攻撃を受けた味方を感電状態にする。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200401402,
+                    "SkillName": "月明かりが撫でる連綿",
+                    "SkillDesc": "指定した味方および隣接する味方に雷属性ダメージを与える。指定した味方が感電状態の場合、隣接する味方を感電状態にする。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200401403,
+                    "SkillName": "沈黙は厳かに嘲笑う",
+                    "SkillDesc": "味方全体に雷属性ダメージを与える。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 200401404,
+                    "SkillName": "言霊",
+                    "SkillDesc": "高確率で指定した味方単体を「支配」状態にし、行動順を早め、他の味方1名をランダムに攻撃させる。",
+                    "DamageType": "",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 200401405,
+                    "SkillName": "死者は歯ぎしりしながら囁く",
+                    "SkillDesc": "指定した味方単体に雷属性ダメージを与え、確率で攻撃を受けた味方を感電状態にする。同時に感電状態の全味方に雷属性ダメージを与える。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200401406,
+                    "SkillName": "心理暗示",
+                    "SkillDesc": "複数の味方を「心理暗示」状態にし、アクションバーに「公開」を追加する。次に「公開」が行動する時、「心理暗示」にかかった味方は「支配」状態になる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 200401407,
+                    "SkillName": "戦慄",
+                    "SkillDesc": "攻撃を受けたターゲットが感電状態の場合、感電ダメージを1回与える、このダメージは感電状態によるものとみなす。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 200401408,
+                    "SkillName": "残酷",
+                    "SkillDesc": "自身以外の敵、または「支配」状態の味方が感電状態の味方をメインターゲットとして攻撃を行う時、さらに雷属性攻撃を1回行う。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200401409,
+                    "SkillName": "傀儡スタンバイ",
+                    "SkillDesc": "召喚物に「<u>誘狂</u>」を付与する。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200401410,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 200401411,
+                    "SkillName": "叫喚の霊",
+                    "SkillDesc": "精鋭エネミーを2体召喚して戦闘を支援させる。味方キャラが召喚物にダメージを与えた時、「魂魄蠱惑の支配者」も同時に同量のHPを失う。召喚物が弱点撃破される時、さらに行動順が遅延される。いずれかの召喚物が倒された後、弱点属性がフィールド上にいる他の召喚物に移、その召喚物に「<u>血眼</u>」を付与する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 200401412,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 200401413,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 200401414,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 2004014,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2004014,
+            "WorldLevel": 1,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2004014,
+            "WorldLevel": 2,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2004014,
+            "WorldLevel": 3,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2004014,
+            "WorldLevel": 4,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2004014,
+            "WorldLevel": 5,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2004014,
+            "WorldLevel": 6,
+            "DisplayItemList": []
+        }
+    ]
+}

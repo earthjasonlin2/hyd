@@ -1,0 +1,35 @@
+{
+    "Type": "Action",
+    "Name": "唯此一心",
+    "Title": "甘雨·唯此一心",
+    "Desc": "先矢夺人，好箭成霜。",
+    "Source": "在猫尾酒馆中邀请甘雨进行对局，完成相应挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Ganyu",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_CRYO",
+            "count": 5
+        },
+        {}
+    ],
+    "Tag": [
+        "天赋",
+        "战斗行动"
+    ],
+    "Talent": {
+        "Name": "唯此一心",
+        "Desc": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1101]</color>时，装备此牌。\\n$[A1101]装备此牌后，立刻使用一次<color=#FFD780FF>$[S11013]</color>。\\n装备有此牌的$[A1101]使用<color=#FFFFFFFF>$[S11013]</color>时：如果此技能在本场对局中曾经被使用过，则其对敌方后台角色造成的$[K5]改为3点。\\n（牌组中包含$[A1101]，才能加入牌组）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>战斗行动</color>",
+                "Desc": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+            },
+            "A1101": "唯此一心",
+            "S11013": "S11013",
+            "K5": {
+                "Name": "<color=#FFFFFFFF>穿透伤害</color>",
+                "Desc": "穿透伤害无法受到伤害加成，但是也无法被护盾、伤害免疫等效果抵消。"
+            }
+        }
+    }
+}

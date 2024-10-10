@@ -1,0 +1,98 @@
+{
+    "Type": "Character",
+    "Name": "알베도",
+    "Title": "백악의 아이·알베도",
+    "Desc": "흑토와 백악, 적성과 황금",
+    "Source": "캣테일 술집에서 알베도 초대 및 친선 대전 난이도 승리 후 획득",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Albedo",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "바위 원소",
+        "한손검",
+        "몬드"
+    ],
+    "Talent": {
+        "16041": {
+            "Name": "페보니우스 검술·백",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "16042": {
+            "Name": "창생법·모조 태양꽃",
+            "Desc": "<color=#FFFFFFFF>$[C116041]</color>을 소환한다.",
+            "Child": {
+                "C116041": {
+                    "Name": "태양꽃",
+                    "Desc": "<color=#FFFFFFFF>종료 단계: </color>$[K106]를 1pt 준다.\\n<color=#FFFFFFFF>$[K3]: 3</color>\\n<color=#FFFFFFFF>해당 소환물이 필드에 있고 아군이 「캐릭터 교체」 행동 시: </color>이번 교체를 「$[K1]」이 아닌 「$[K2]」으로 간주한다. (턴당 1회)",
+                    "Child": {
+                        "K106": {
+                            "Name": "{SPRITE_PRESET#2106}<color=#FFE699FF>바위 원소 피해</color>",
+                            "Desc": "이미 부착된 원소와 원소 반응이 발생한다.\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2101}<color=#FFFFFFFF>결정(얼음)</color>: 이번 피해+1pt, 아군 출전 캐릭터가 보호막을 1pt 획득한다. (중첩 가능, 최대 2pt)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2102}<color=#FFFFFFFF>결정(물)</color>: 이번 피해+1pt, 아군 출전 캐릭터가 보호막을 1pt 획득한다. (중첩 가능, 최대 2pt)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2103}<color=#FFFFFFFF>결정(불)</color>: 이번 피해+1pt, 아군 출전 캐릭터가 보호막을 1pt 획득한다. (중첩 가능, 최대 2pt)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2104}<color=#FFFFFFFF>결정(번개)</color>: 이번 피해+1pt, 아군 출전 캐릭터가 보호막을 1pt 획득한다. (중첩 가능, 최대 2pt)"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        },
+                        "K1": {
+                            "Name": "<color=#FFFFFFFF>전투 행동</color>",
+                            "Desc": "아군이 전투 행동을 1회 진행하면 행동 순서가 상대에게 넘어간다.\\n<color=#FFFFFFFF>해당 규칙에 속하는 카드는 사용 시 빠른 행동이 아닌 전투 행동으로 간주한다</color>."
+                        },
+                        "K2": {
+                            "Name": "<color=#FFFFFFFF>빠른 행동</color>",
+                            "Desc": "빠른 행동을 1회 진행하면 아군은 계속해서 다른 행동을 진행할 수 있다.\\n전투 행동을 1회 진행해야만 행동 순서가 상대에게 넘어간다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 3
+            }
+        },
+        "16043": {
+            "Name": "탄생식·대지의 파동",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다. 만약 필드에 <color=#FFFFFFFF>$[C116041]</color>이 있으면 이번 피해가 2pt 증가한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_GEO",
+                "D__KEY__DAMAGE": 4,
+                "C116041": {
+                    "Name": "태양꽃",
+                    "Desc": "<color=#FFFFFFFF>종료 단계: </color>$[K106]를 1pt 준다.\\n<color=#FFFFFFFF>$[K3]: 3</color>\\n<color=#FFFFFFFF>해당 소환물이 필드에 있고 아군이 「캐릭터 교체」 행동 시: </color>이번 교체를 「$[K1]」이 아닌 「$[K2]」으로 간주한다. (턴당 1회)",
+                    "Child": {
+                        "K106": {
+                            "Name": "{SPRITE_PRESET#2106}<color=#FFE699FF>바위 원소 피해</color>",
+                            "Desc": "이미 부착된 원소와 원소 반응이 발생한다.\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2101}<color=#FFFFFFFF>결정(얼음)</color>: 이번 피해+1pt, 아군 출전 캐릭터가 보호막을 1pt 획득한다. (중첩 가능, 최대 2pt)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2102}<color=#FFFFFFFF>결정(물)</color>: 이번 피해+1pt, 아군 출전 캐릭터가 보호막을 1pt 획득한다. (중첩 가능, 최대 2pt)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2103}<color=#FFFFFFFF>결정(불)</color>: 이번 피해+1pt, 아군 출전 캐릭터가 보호막을 1pt 획득한다. (중첩 가능, 최대 2pt)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2104}<color=#FFFFFFFF>결정(번개)</color>: 이번 피해+1pt, 아군 출전 캐릭터가 보호막을 1pt 획득한다. (중첩 가능, 최대 2pt)"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        },
+                        "K1": {
+                            "Name": "<color=#FFFFFFFF>전투 행동</color>",
+                            "Desc": "아군이 전투 행동을 1회 진행하면 행동 순서가 상대에게 넘어간다.\\n<color=#FFFFFFFF>해당 규칙에 속하는 카드는 사용 시 빠른 행동이 아닌 전투 행동으로 간주한다</color>."
+                        },
+                        "K2": {
+                            "Name": "<color=#FFFFFFFF>빠른 행동</color>",
+                            "Desc": "빠른 행동을 1회 진행하면 아군은 계속해서 다른 행동을 진행할 수 있다.\\n전투 행동을 1회 진행해야만 행동 순서가 상대에게 넘어간다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 216041
+}

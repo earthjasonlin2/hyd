@@ -1,0 +1,34 @@
+{
+    "Type": "Action",
+    "Name": "千万の願望",
+    "Title": "雷電将軍·千万の願望",
+    "Desc": "悪曜開眼、裁きの雷。",
+    "Source": "キャッツテールで雷電将軍を招待して対戦し、対応する挑戦目標をクリアすることで獲得",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Shougun",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_ELECTRO",
+            "count": 4
+        },
+        {
+            "costType": "GCG_COST_ENERGY",
+            "count": 2
+        }
+    ],
+    "Tag": [
+        "天賦",
+        "戦闘アクション"
+    ],
+    "Talent": {
+        "Name": "千万の願望",
+        "Desc": "$[K1]：味方の出撃キャラが<color=#FFFFFFFF>$[A1407]</color>の時、このカードを装備できる。\\n$[A1407]がこのカードを装備した後、直ちに<color=#FFD780FF>$[S14073]</color>を1回発動する。\\nこのカードを装備した$[A1407]が<color=#FFFFFFFF>$[S14073]</color>を発動する時、<color=#FFFFFFFF>「願力」</color>を1消費するごとに、与えるダメージがさらに+1。\\n（このカードはデッキに$[A1407]が含まれている場合のみ、デッキに追加できる）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>戦闘アクション</color>",
+                "Desc": "味方が戦闘アクションを1回行った後、相手のターンに移ります。\\n<color=#FFFFFFFF>このようなルールを持つ手札を出すのはクイックアクションではなく、戦闘アクションと見なされます。</color>"
+            },
+            "A1407": "千万の願望",
+            "S14073": "S14073"
+        }
+    }
+}

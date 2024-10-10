@@ -1,0 +1,33 @@
+{
+    "Type": "Action",
+    "Name": "Tulaytullah's Remembrance",
+    "Title": "Bygone Azure Teardrop: Tulaytullah's Remembrance",
+    "Desc": "\"In the end, all people, good or evil, will find themselves ground beneath the wheels of fate, and the sapphire city would fade, dissipating like tears beneath the scorching sun.\"",
+    "Source": "",
+    "Icon": "UI_Gcg_CardFace_Modify_Weapon_Tulaidu",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PAIMON",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "Weapon",
+        "Catalyst"
+    ],
+    "Talent": {
+        "Name": "Tulaytullah's Remembrance",
+        "Desc": "<color=#FFFFFFFF>The character deals +1 DMG</color>.\\n<color=#FFFFFFFF>When the character uses a $[K51]:</color> Spend 1 less $[K309]. (Can be triggered up to twice per Round)\\n(<color=#FFFFFFFF>Only {SPRITE_PRESET#3201}Catalyst Characters</color> can equip this. A character can equip a maximum of 1 {SPRITE_PRESET#3003}Weapon)",
+        "Child": {
+            "K51": {
+                "Name": "<color=#FFFFFFFF>Charged Attack</color>",
+                "Desc": "Before your Action Phase, should the total number of your Elemental Dice be even, your Normal Attack will be considered a Charged Attack."
+            },
+            "K309": {
+                "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1109}Unaligned Element</color>",
+                "Desc": "You may use Elemental Dice of any element to pay this type of cost."
+            }
+        }
+    }
+}

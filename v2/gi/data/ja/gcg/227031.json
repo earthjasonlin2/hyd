@@ -1,0 +1,50 @@
+{
+    "Type": "Action",
+    "Name": "とぐろ巻く霊蛇の威嚇",
+    "Title": "フローラルリングダンサー・とぐろ巻く霊蛇の威嚇",
+    "Desc": "「…彼らの神と王都が流砂に沈んだ今でも、踊り子の記憶は変わらず民族の血筋に刻まれている。」",
+    "Source": "キャッツテールのリトルプリンスのところで酒場挑戦を行い、エルマイト旅団・フローラルリングダンサーに挑戦して友好対戦で対応する挑戦目標をクリアすることで獲得",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_EremiteGrass",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_DENDRO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "天賦",
+        "戦闘アクション"
+    ],
+    "Talent": {
+        "Name": "とぐろ巻く霊蛇の威嚇",
+        "Desc": "$[K1]：味方の出撃キャラが<color=#FFFFFFFF>$[A2703]</color>の時、このカードを装備できる。\\n$[A2703]がこのカードを装備した後、直ちに<color=#FFD780FF>$[S27032]</color>を1回発動する。\\nこのカードを装備した<color=#FFFFFFFF>$[A2703]</color>がフィールドにいる、かつ味方の<color=#FFFFFFFF>$[C127032]</color>を装備したキャラが出撃キャラにチェンジした時、$[K107]を1与える。（各ラウンドで1回のみ）\\n（このカードはデッキに$[A2703]が含まれている場合のみ、デッキに追加できる）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>戦闘アクション</color>",
+                "Desc": "味方が戦闘アクションを1回行った後、相手のターンに移ります。\\n<color=#FFFFFFFF>このようなルールを持つ手札を出すのはクイックアクションではなく、戦闘アクションと見なされます。</color>"
+            },
+            "A2703": "とぐろ巻く霊蛇の威嚇",
+            "S27032": "S27032",
+            "C127032": {
+                "Name": "悪霊・草の霊蛇",
+                "Desc": "$[K58]：$[S1270321]\\n<color=#FFFFFFFF>$[K3]：2</color>\\n（キャラが装備できる「{SPRITE_PRESET#3008}特技」は1つのみ）",
+                "Child": {
+                    "K58": {
+                        "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#3008}特技</color>",
+                        "Desc": "出撃キャラが「{SPRITE_PRESET#3008}特技」カードを装備している場合、対応する「{SPRITE_PRESET#3008}特技」を使用できる。\\n「{SPRITE_PRESET#3008}特技」の使用は「戦闘アクション」と見なされる。キャラが凍結、石化、スタンなどの原因でスキルを発動できない時、「{SPRITE_PRESET#3008}特技」も発動できなくなる。\\nキャラが「{SPRITE_PRESET#3008}特技」を発動した場合、スキル発動として見なされることなく、対応する効果（「スキルを発動した後」「キャラが元素反応を起こした後」などによって発動される効果）も発動されない。また、キャラが「{SPRITE_PRESET#3008}特技」で与えたダメージは、キャラ自身のダメージとして見なされない。"
+                    },
+                    "S1270321": "S1270321",
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                        "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                    }
+                }
+            },
+            "K107": {
+                "Name": "{SPRITE_PRESET#2107}<color=#7EC236FF>草元素ダメージ</color>",
+                "Desc": "{SPRITE_PRESET#2107}草元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>開花</color>：ダメージ+1、次の炎元素または雷元素ダメージを2アップできる「<color=#FFFFFFFF>草原核</color>」を生成する\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>燃焼</color>：ダメージ+1、ラウンド終了時に炎元素ダメージを1与える「<color=#FFFFFFFF>燃焼烈焔</color>」を生成する（使用可能回数1回、最大2回まで重ね掛け可能）\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>原激化</color>：ダメージ+1、次の草元素または雷元素ダメージを2回まで+1できる「<color=#FFFFFFFF>激化領域</color>」を生成する"
+            }
+        }
+    }
+}

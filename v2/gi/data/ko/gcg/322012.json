@@ -1,0 +1,32 @@
+{
+    "Type": "Action",
+    "Name": "유소",
+    "Title": "다음 화를 기대하시게·유소",
+    "Desc": "「그럼 다들 어떤 이야기가 듣고 싶으신가?」",
+    "Source": "월드 플레이어 유소의 모험 도전에서 목표 달성 후 획득",
+    "Icon": "UI_Gcg_CardFace_Assist_NPC_Liusu",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PAIMON",
+            "count": 1
+        },
+        {}
+    ],
+    "Tag": [
+        "동료"
+    ],
+    "Talent": {
+        "Name": "유소",
+        "Desc": "<color=#FFFFFFFF>아군 캐릭터 교체 후:</color> 교체 후 출전한 캐릭터에게 $[K310]가 없으면 해당 캐릭터가 $[K310]를 1pt 획득한다. (턴당 1회)\\n<color=#FFFFFFFF>$[K3]: 2</color>",
+        "Child": {
+            "K310": {
+                "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}원소 에너지</color>",
+                "Desc": "캐릭터가 「원소폭발」을 사용하려면 {SPRITE_PRESET#1110}원소 에너지를 소모해야 한다.\\n캐릭터가 「원소전투 스킬」 또는 「일반 공격」을 사용하면 {SPRITE_PRESET#1110}원소 에너지를 1pt 획득한다."
+            },
+            "K3": {
+                "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+            }
+        }
+    }
+}

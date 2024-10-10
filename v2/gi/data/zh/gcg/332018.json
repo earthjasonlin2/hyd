@@ -1,0 +1,26 @@
+{
+    "Type": "Action",
+    "Name": "重攻击",
+    "Title": "劈石破岩法",
+    "Desc": "对某些力气不是那么大的人来说…\\n最好把「劈石破岩」仅仅看为「一个比喻」。",
+    "Source": "",
+    "Icon": "UI_Gcg_CardFace_Event_Event_Zhonggongji",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PAIMON",
+            "count": 1
+        },
+        {}
+    ],
+    "Tag": [],
+    "Talent": {
+        "Name": "重攻击",
+        "Desc": "本回合中，当前我方出战角色下次<color=#FFFFFFFF>「普通攻击」</color>造成的伤害+1。\\n<color=#FFFFFFFF>此次「普通攻击」为$[K51]时：</color>伤害额外+1。",
+        "Child": {
+            "K51": {
+                "Name": "<color=#FFFFFFFF>重击</color>",
+                "Desc": "我方行动开始前，如果元素骰总数为偶数，则进行的「普通攻击」将被视为「重击」。"
+            }
+        }
+    }
+}

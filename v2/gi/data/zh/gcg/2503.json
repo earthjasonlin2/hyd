@@ -1,0 +1,89 @@
+{
+    "Type": "Character",
+    "Name": "圣骸飞蛇",
+    "Title": "亡骸恶风·圣骸飞蛇",
+    "Desc": "因为啃噬伟大的生命体，而扭曲异变的飞蛇，驾驭着凌厉的狂风。",
+    "Source": "在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度圣骸飞蛇中获得胜利后获取",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_ChrysopeleaSacred",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "风元素",
+        "其他武器",
+        "魔物",
+        "圣骸兽"
+    ],
+    "Talent": {
+        "25031": {
+            "Name": "旋尾迅击",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "25032": {
+            "Name": "盘绕风引",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，抓1张牌。",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO"
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 3
+            }
+        },
+        "25033": {
+            "Name": "错落风涡",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，$[K56]手牌中所有的<color=#FFFFFFFF>$[C124051]</color>，每$[K56]2张，此次伤害翻倍1次。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO",
+                "K56": {
+                    "Name": "<color=#FFFFFFFF>舍弃</color>",
+                    "Desc": "通过行动牌或角色技能的效果，将行动牌从手牌或牌库中弃置。"
+                },
+                "C124051": {
+                    "Name": "噬骸能量块",
+                    "Desc": "随机$[K56]1张原本元素骰费用最高的手牌，生成1个我方出战角色类型的元素骰。（每回合最多打出1张）",
+                    "Child": {
+                        "K56": {
+                            "Name": "<color=#FFFFFFFF>舍弃</color>",
+                            "Desc": "通过行动牌或角色技能的效果，将行动牌从手牌或牌库中弃置。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "25034": {
+            "Name": "不朽亡骸·风",
+            "Desc": "【被动】战斗开始时，生成6张<color=#FFFFFFFF>$[C124051]</color>，均匀放入牌库。",
+            "Child": {
+                "C124051": {
+                    "Name": "噬骸能量块",
+                    "Desc": "随机$[K56]1张原本元素骰费用最高的手牌，生成1个我方出战角色类型的元素骰。（每回合最多打出1张）",
+                    "Child": {
+                        "K56": {
+                            "Name": "<color=#FFFFFFFF>舍弃</color>",
+                            "Desc": "通过行动牌或角色技能的效果，将行动牌从手牌或牌库中弃置。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 225031
+}

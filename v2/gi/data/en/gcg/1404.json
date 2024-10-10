@@ -1,0 +1,106 @@
+{
+    "Type": "Character",
+    "Name": "Cyno",
+    "Title": "\"Judicator of Secrets\" Cyno",
+    "Desc": "The card bears the General Mahamatra's ardent fondness, which reminds one of the scorching sun hanging above the desert.",
+    "Source": "Reward for inviting Cyno to a duel at The Cat's Tail and claiming victory in a Friendly Fracas with him",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Cyno",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "Electro",
+        "Polearm",
+        "Sumeru"
+    ],
+    "Talent": {
+        "14041": {
+            "Name": "Invoker's Spear",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "14042": {
+            "Name": "Secret Rite: Chasmic Soulfarer",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].\\n<color=#FFFFFFFF>$[C114041]</color>'s Indwelling Level +1.",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO",
+                "C114041": {
+                    "Name": "Pactsworn Pathclearer",
+                    "Desc": "<color=#FFFFFFFF>End Phase:</color> Gain 1 level of Indwelling. If Indwelling Level is at least 8, decrease the Indwelling level by 6.\\n<color=#FFFFFFFF>Indwelling grants the following effects based on its level</color>:\\nIf equal to or greater than 2: $[K100] dealt is converted to $[K104];\\nIf equal to or greater than 4: DMG dealt +2.",
+                    "Child": {
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>",
+                            "Desc": "Physical DMG will not apply any Elements, nor can it engage in Elemental Reactions."
+                        },
+                        "K104": {
+                            "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>Electro DMG</color>",
+                            "Desc": "Applies {SPRITE_PRESET#2104}Electro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Overloaded</color>: DMG +2 for this instance, the target is forcibly switched to the next character\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Superconduct</color>: DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Electro-Charged</color>: DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Quicken</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Catalyzing Field</color>] that grants +1 DMG to the next 2 instances of Dendro or Electro DMG"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 3
+            }
+        },
+        "14043": {
+            "Name": "Sacred Rite: Wolf's Swiftness",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].\\n<color=#FFFFFFFF>$[C114041]</color>'s Indwelling Level +2.",
+            "Child": {
+                "D__KEY__DAMAGE": 4,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO",
+                "C114041": {
+                    "Name": "Pactsworn Pathclearer",
+                    "Desc": "<color=#FFFFFFFF>End Phase:</color> Gain 1 level of Indwelling. If Indwelling Level is at least 8, decrease the Indwelling level by 6.\\n<color=#FFFFFFFF>Indwelling grants the following effects based on its level</color>:\\nIf equal to or greater than 2: $[K100] dealt is converted to $[K104];\\nIf equal to or greater than 4: DMG dealt +2.",
+                    "Child": {
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>",
+                            "Desc": "Physical DMG will not apply any Elements, nor can it engage in Elemental Reactions."
+                        },
+                        "K104": {
+                            "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>Electro DMG</color>",
+                            "Desc": "Applies {SPRITE_PRESET#2104}Electro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Overloaded</color>: DMG +2 for this instance, the target is forcibly switched to the next character\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Superconduct</color>: DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Electro-Charged</color>: DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Quicken</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Catalyzing Field</color>] that grants +1 DMG to the next 2 instances of Dendro or Electro DMG"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 4,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "14044": {
+            "Name": "Lawful Enforcer",
+            "Desc": "(Passive) When the battle begins, this character gains <color=#FFFFFFFF>$[C114041]</color>.",
+            "Child": {
+                "C114041": {
+                    "Name": "Pactsworn Pathclearer",
+                    "Desc": "<color=#FFFFFFFF>End Phase:</color> Gain 1 level of Indwelling. If Indwelling Level is at least 8, decrease the Indwelling level by 6.\\n<color=#FFFFFFFF>Indwelling grants the following effects based on its level</color>:\\nIf equal to or greater than 2: $[K100] dealt is converted to $[K104];\\nIf equal to or greater than 4: DMG dealt +2.",
+                    "Child": {
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>",
+                            "Desc": "Physical DMG will not apply any Elements, nor can it engage in Elemental Reactions."
+                        },
+                        "K104": {
+                            "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>Electro DMG</color>",
+                            "Desc": "Applies {SPRITE_PRESET#2104}Electro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Overloaded</color>: DMG +2 for this instance, the target is forcibly switched to the next character\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Superconduct</color>: DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Electro-Charged</color>: DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Quicken</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Catalyzing Field</color>] that grants +1 DMG to the next 2 instances of Dendro or Electro DMG"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 214041
+}

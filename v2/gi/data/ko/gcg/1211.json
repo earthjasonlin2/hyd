@@ -1,0 +1,143 @@
+{
+    "Type": "Character",
+    "Name": "푸리나",
+    "Title": "멈추지 않는 독무·푸리나",
+    "Desc": "영원한 선창, 끝없는 왈츠",
+    "Source": "캣테일 술집에서 푸리나 초대 및 친선 대전 난이도 승리 후 획득",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Furina",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "물 원소",
+        "한손검",
+        "폰타인",
+        "아르케의 힘: 우시아"
+    ],
+    "Talent": {
+        "12111": {
+            "Name": "독무자의 초대",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.\\n<color=#FFFFFFFF>턴당 1회:</color> 핸드 카드에 <color=#FFFFFFFF>$[C112113]</color>이 없으면 핸드 카드 <color=#FFFFFFFF>$[C112113]</color>을 생성한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2,
+                "C112113": {
+                    "Name": "성과 속",
+                    "Desc": "「{SPRITE_PRESET#3504}아르케의 힘: 우시아」 또는 「{SPRITE_PRESET#3505}아르케의 힘: 프뉴마」로 $[A1211]의 형태를 전환한다.\\n아군 필드에 <color=#FFFFFFFF>$[K1031]</color> 또는 <color=#FFFFFFFF>$[K1032]</color>가 있을 경우 이 또한 형태를 전환한다.",
+                    "Child": {
+                        "A1211": "푸리나",
+                        "K1031": {
+                            "Name": "<color=#FFFFFFFF>살롱 멤버</color>",
+                            "Desc": "<color=#FFFFFFFF>종료 단계:</color> {SPRITE_PRESET#2102}<color=#80C0FFFF>물 원소 피해</color>를 1pt 준다. 아군에 HP가 6pt 이상인 캐릭터가 존재할 경우 피해를 가장 적게 받은 아군 캐릭터 1명에게 <color=#FFFFFFFF>관통 피해</color>를 1pt 주고, {SPRITE_PRESET#2102}<color=#80C0FFFF>물 원소 피해</color>를 1pt 추가로 준다.\\n<color=#FFFFFFFF><color=#FFFFFFFF>사용 가능 횟수</color>: 2</color>(중첩 가능, 최대 중첩수: 4회)"
+                        },
+                        "K1032": {
+                            "Name": "<color=#FFFFFFFF>물들의 가수</color>",
+                            "Desc": "<color=#FFFFFFFF>종료 단계:</color> 모든 아군 캐릭터를 1pt 치유한다. 아군에 HP가 5 이하인 캐릭터가 존재할 경우 피해를 가장 많이 받은 캐릭터의 HP를 1pt 치유한다.\\n<color=#FFFFFFFF><color=#FFFFFFFF>사용 가능 횟수</color>: 2</color>(중첩 가능, 최대 중첩수: 4회)"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "12112": {
+            "Name": "고고한 살롱",
+            "Desc": "<color=#FFFFFFFF>$[A1211]</color>가 현재 「{SPRITE_PRESET#3504}아르케의 힘: 우시아」 형태일 때: <color=#FFFFFFFF>$[C112111]</color>를 소환한다.\\n($[A1211]가 「{SPRITE_PRESET#3505}아르케의 힘: 프뉴마」 형태일 경우, <color=#FFFFFFFF>$[C112112]</color>를 소환하는 것으로 변경된다)",
+            "Child": {
+                "A1211": "푸리나",
+                "C112111": {
+                    "Name": "살롱 멤버",
+                    "Desc": "<color=#FFFFFFFF>종료 단계:</color> $[K102]를 1pt 준다. 아군에 HP가 6pt 이상인 캐릭터가 존재할 경우 피해를 가장 적게 받은 아군 캐릭터 1명에게 $[K5]를 1pt 주고, 다시 $[K102]를 1pt 준다.\\n<color=#FFFFFFFF>$[K3]: 2</color>(중첩 가능, 최대 중첩수: 4회)",
+                    "Child": {
+                        "K102": {
+                            "Name": "{SPRITE_PRESET#2102}<color=#80C0FFFF>물 원소 피해</color>",
+                            "Desc": "{SPRITE_PRESET#2102}물 원소 부착 시 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2103}<color=#FFFFFFFF>증발</color>: 이번 피해+2pt\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}<color=#FFFFFFFF>감전</color>: 이번 피해+1pt, 대상 이외의 모든 상대 캐릭터에게 관통 피해를 1pt 준다.\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2101}<color=#FFFFFFFF>빙결</color>: 이번 피해+1pt, 이번 턴에 대상을 행동 불가로 만든다. (물리 피해 또는 불 원소 피해를 받으면 조기 해제되지만, 해당 피해로 받는 피해량이 2pt 추가된다)\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}<color=#FFFFFFFF>개화</color>: 이번 피해+1pt, 다음번 불 원소 또는 번개 원소 피해를 2pt 증가시키는 [<color=#FFFFFFFF>풀 원핵</color>]을 생성한다."
+                        },
+                        "K5": {
+                            "Name": "<color=#FFFFFFFF>관통 피해</color>",
+                            "Desc": "관통 피해는 피해 보너스를 획득할 수 없으나, 주는 피해가 보호막 또는 피해 면역과 같은 효과에 의해 상쇄되지 않는다."
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                },
+                "C112112": {
+                    "Name": "물들의 가수",
+                    "Desc": "<color=#FFFFFFFF>종료 단계:</color> 모든 아군 캐릭터의 HP를 1pt 치유한다. 아군에 HP가 5pt 이하인 캐릭터가 존재할 경우, 다시 피해를 가장 많이 받은 캐릭터의 HP를 1pt 치유한다.\\n<color=#FFFFFFFF>$[K3]: 2</color>(중첩 가능, 최대 중첩수: 4회)",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3
+            }
+        },
+        "12113": {
+            "Name": "성대한 카니발",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[C112114]</color>를 생성한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "D__KEY__DAMAGE": 2,
+                "C112114": {
+                    "Name": "열광의 도가니",
+                    "Desc": "<color=#FFFFFFFF>아군 출전 캐릭터가 피해 또는 치유를 받은 후:</color> <color=#FFFFFFFF>$[K1029]</color>가 1pt 중첩된다.\\n<color=#FFFFFFFF>$[K4]: 2</color>",
+                    "Child": {
+                        "K1029": {
+                            "Name": "<color=#FFFFFFFF>열광도</color>",
+                            "Desc": "아군이 주는 피해+1pt (캐릭터가 일으킨 확산 피해 포함)\\n<color=#FFFFFFFF>사용 가능 횟수: 1</color> (중첩 가능, 상한 없음)"
+                        },
+                        "K4": {
+                            "Name": "<color=#FFFFFFFF>지속 턴</color>",
+                            "Desc": "턴이 종료 단계에 진입할 때마다 <color=#FFFFFFFF>지속 턴</color>이 1회씩 감소한다.\\n<color=#FFFFFFFF>지속 턴</color>이 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 4,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "12114": {
+            "Name": "",
+            "Desc": "",
+            "Child": {},
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        },
+        "12115": {
+            "Name": "아르케의 힘: 성과 속",
+            "Desc": "[패시브] 전투 시작 시, 핸드 카드에 <color=#FFFFFFFF>$[C112113]</color>을 생성한다.",
+            "Child": {
+                "C112113": {
+                    "Name": "성과 속",
+                    "Desc": "「{SPRITE_PRESET#3504}아르케의 힘: 우시아」 또는 「{SPRITE_PRESET#3505}아르케의 힘: 프뉴마」로 $[A1211]의 형태를 전환한다.\\n아군 필드에 <color=#FFFFFFFF>$[K1031]</color> 또는 <color=#FFFFFFFF>$[K1032]</color>가 있을 경우 이 또한 형태를 전환한다.",
+                    "Child": {
+                        "A1211": "푸리나",
+                        "K1031": {
+                            "Name": "<color=#FFFFFFFF>살롱 멤버</color>",
+                            "Desc": "<color=#FFFFFFFF>종료 단계:</color> {SPRITE_PRESET#2102}<color=#80C0FFFF>물 원소 피해</color>를 1pt 준다. 아군에 HP가 6pt 이상인 캐릭터가 존재할 경우 피해를 가장 적게 받은 아군 캐릭터 1명에게 <color=#FFFFFFFF>관통 피해</color>를 1pt 주고, {SPRITE_PRESET#2102}<color=#80C0FFFF>물 원소 피해</color>를 1pt 추가로 준다.\\n<color=#FFFFFFFF><color=#FFFFFFFF>사용 가능 횟수</color>: 2</color>(중첩 가능, 최대 중첩수: 4회)"
+                        },
+                        "K1032": {
+                            "Name": "<color=#FFFFFFFF>물들의 가수</color>",
+                            "Desc": "<color=#FFFFFFFF>종료 단계:</color> 모든 아군 캐릭터를 1pt 치유한다. 아군에 HP가 5 이하인 캐릭터가 존재할 경우 피해를 가장 많이 받은 캐릭터의 HP를 1pt 치유한다.\\n<color=#FFFFFFFF><color=#FFFFFFFF>사용 가능 횟수</color>: 2</color>(중첩 가능, 최대 중첩수: 4회)"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 212111
+}

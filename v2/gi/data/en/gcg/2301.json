@@ -1,0 +1,84 @@
+{
+    "Type": "Character",
+    "Name": "Fatui Pyro Agent",
+    "Title": "\"Blade of Settlement\" Agent",
+    "Desc": "\"There is no running from your debt, be you living or otherwise.\"",
+    "Source": "Reward for accepting the Tavern Challenge at The Cat's Tail and claiming victory in a Friendly Fracas with Fatui Pyro Agent",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_Fatuus",
+    "Hp": 9,
+    "Cost": 2,
+    "Tag": [
+        "Pyro",
+        "Other Weapons",
+        "Fatui"
+    ],
+    "Talent": {
+        "23011": {
+            "Name": "Thrust",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "23012": {
+            "Name": "Prowl",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. This character gains <color=#FFFFFFFF>$[C123011]</color>.",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO",
+                "C123011": {
+                    "Name": "Stealth",
+                    "Desc": "The character to which this is attached takes -1 DMG and deals +1 DMG.\\n$[K3]: 2",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 3
+            }
+        },
+        "23013": {
+            "Name": "Blade Ablaze",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 5,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO"
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "23014": {
+            "Name": "Stealth Master",
+            "Desc": "(Passive) When the battle begins, this character gains <color=#FFFFFFFF>$[C123011]</color>.",
+            "Child": {
+                "C123011": {
+                    "Name": "Stealth",
+                    "Desc": "The character to which this is attached takes -1 DMG and deals +1 DMG.\\n$[K3]: 2",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 223011
+}

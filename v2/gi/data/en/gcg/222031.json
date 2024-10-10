@@ -1,0 +1,47 @@
+{
+    "Type": "Action",
+    "Name": "Surging Undercurrent",
+    "Title": "Abyss Herald: Surging Undercurrent",
+    "Desc": "\"Destruction inexorable!\"",
+    "Source": "Reward for accepting the Tavern Challenge against the Abyss Herald: Wicked Torrents at The Cat's Tail and achieving all corresponding challenge objectives in a Friendly Fracas",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_InvokerHeraldWater",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_HYDRO",
+            "count": 1
+        },
+        {}
+    ],
+    "Tag": [
+        "Talent"
+    ],
+    "Talent": {
+        "Name": "Surging Undercurrent",
+        "Desc": "<color=#FFFFFFFF>When played:</color> If <color=#FFFFFFFF>$[A2203]</color>, who has this card equipped, has already triggered <color=#FFFFFFFF>$[C122031]</color>, then create 1 $[K1022] on the opposing playing field.\\nWhen $[A2203], who has this card equipped, is defeated or triggers $[C122031]: Create 1 $[K1022] on the opposing playing field.\\n(You must have $[A2203] in your deck to add this card to your deck.)",
+        "Child": {
+            "A2203": "Surging Undercurrent",
+            "C122031": {
+                "Name": "Watery Rebirth",
+                "Desc": "<color=#FFFFFFFF>When the character to which this is attached would be defeated:</color> Remove this effect, ensure the character $[K54|s1], and heal them to 4 HP. After this effect is triggered, $[K100] this character deals is converted to $[K102], and $[K102] +1.",
+                "Child": {
+                    "K54": {
+                        "Name": "<color=#FFFFFFFF>Immunity to Defeat</color>|s1:<color=#FFFFFFFF>will not be defeated</color>",
+                        "Desc": "Certain effects will grant characters an <color=#FFFFFFFF>immunity to being defeated</color> when their HP hits 0, and will heal them for a certain amount thereafter.\\nWhen this occurs, characters will not be regarded as having experienced a <color=#FFFFFFFF>defeat.</color> (Hence, their attached equipment and statuses will not be removed, and their Energy will remain uncleared.)"
+                    },
+                    "K100": {
+                        "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>",
+                        "Desc": "Physical DMG will not apply any Elements, nor can it engage in Elemental Reactions."
+                    },
+                    "K102": {
+                        "Name": "{SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro DMG</color>",
+                        "Desc": "Applies {SPRITE_PRESET#2102}Hydro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Vaporize</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Electro-Charged</color>：DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Frozen</color>: DMG +1 for this instance, the target is unable to perform any Actions this Round (Can be removed in advance after the target receives +2 Physical or Pyro DMG)\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Bloom</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Dendro Core</color>] that grants +2 DMG to the next instance of Pyro or Electro DMG"
+                    }
+                }
+            },
+            "K1022": {
+                "Name": "<color=#FFFFFFFF>Curse of the Undercurrent</color>",
+                "Desc": "<color=#FFFFFFFF>When character(s) on this side of the playing field use Elemental Skills or Elemental Bursts:</color> They must spend 1 extra Elemental Die.\\n<color=#FFFFFFFF><color=#FFFFFFFF>Usages</color>: 2</color>"
+            }
+        }
+    }
+}

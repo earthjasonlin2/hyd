@@ -1,0 +1,53 @@
+{
+    "Type": "Action",
+    "Name": "나가노하라 유성군",
+    "Title": "요이미야·나가노하라 유성군",
+    "Desc": "나가노하라·이상적인 폭죽 저장량 학설",
+    "Source": "캣테일 술집에서 요이미야를 초대해 대전하고 상응하는 도전 목표 달성 후 획득",
+    "Icon": "UI_Gcg_CardFace_Modify_Constellation_Yoyimiya",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PYRO",
+            "count": 1
+        },
+        {}
+    ],
+    "Tag": [
+        "특성",
+        "전투 행동"
+    ],
+    "Talent": {
+        "Name": "나가노하라 유성군",
+        "Desc": "$[K1]: 아군 출전 캐릭터가 <color=#FFFFFFFF>$[A1305]</color>일 때 해당 카드를 장착할 수 있다.\\n$[A1305]가 해당 카드를 장착하면 즉시 <color=#FFD780FF>$[S13052]</color>을 1회 사용한다.\\n해당 카드를 장착한 $[A1305]가 생성한 <color=#FFFFFFFF>$[C113051]</color> 발동 후 추가로 $[K103]를 1pt 준다.\\n(카드 덱에 $[A1305]가 있어야만 카드 덱에 추가 가능)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>전투 행동</color>",
+                "Desc": "아군이 전투 행동을 1회 진행하면 행동 순서가 상대에게 넘어간다.\\n<color=#FFFFFFFF>해당 규칙에 속하는 카드는 사용 시 빠른 행동이 아닌 전투 행동으로 간주한다</color>."
+            },
+            "A1305": "나가노하라 유성군",
+            "S13052": "S13052",
+            "C113051": {
+                "Name": "정화 염초",
+                "Desc": "부착 캐릭터의 <color=#FFFFFFFF>일반 공격</color> 피해+1pt, 주는 $[K100]가 $[K103]로 전환된다.\\n<color=#FFFFFFFF>$[K3]: 3</color>",
+                "Child": {
+                    "K100": {
+                        "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>",
+                        "Desc": "물리 피해는 원소를 부착할 수 없고, 원소 반응이 발생하지 않는다."
+                    },
+                    "K103": {
+                        "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>불 원소 피해</color>",
+                        "Desc": "{SPRITE_PRESET#2103}불 원소 부착 시 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>융해</color>: 이번 피해+2pt\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>증발</color>: 이번 피해+2pt\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>과부하</color>: 이번 피해+2pt, 대상이 다음 캐릭터로 강제 교체된다.\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>연소</color>: 이번 피해+1pt, 턴 종료 시 불 원소 피해를 1pt 주는 [<color=#FFFFFFFF>불타는 화염</color>]을 생성한다. (사용 가능 횟수: 1, 최대 중첩수: 2)"
+                    },
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                        "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                    }
+                }
+            },
+            "K103": {
+                "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>불 원소 피해</color>",
+                "Desc": "{SPRITE_PRESET#2103}불 원소 부착 시 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>융해</color>: 이번 피해+2pt\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>증발</color>: 이번 피해+2pt\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>과부하</color>: 이번 피해+2pt, 대상이 다음 캐릭터로 강제 교체된다.\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>연소</color>: 이번 피해+1pt, 턴 종료 시 불 원소 피해를 1pt 주는 [<color=#FFFFFFFF>불타는 화염</color>]을 생성한다. (사용 가능 횟수: 1, 최대 중첩수: 2)"
+            }
+        }
+    }
+}

@@ -1,0 +1,85 @@
+{
+    "Type": "Character",
+    "Name": "シャルロット",
+    "Title": "真実を求める曇りなきモノクル·シャルロット",
+    "Desc": "「真実至上主義、優れたストーリー性！」",
+    "Source": "キャッツテールでシャルロットを招待し、友好対戦に勝利することで獲得",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Charlotte",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "氷元素",
+        "法器",
+        "フォンテーヌ",
+        "アルケー：プネウマ"
+    ],
+    "Talent": {
+        "11101": {
+            "Name": "寒色撮影技法",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "D__KEY__DAMAGE": 1
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "11102": {
+            "Name": "フレーミング·氷点法",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、目標に<color=#FFFFFFFF>$[C111101]</color>を付与する。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "D__KEY__DAMAGE": 1,
+                "C111101": {
+                    "Name": "スナップシルエット",
+                    "Desc": "<color=#FFFFFFFF>エンドフェーズ：</color>付与されたキャラに$[K101]を1与える。$[K3]が残り1かつ付与されたキャラが{SPRITE_PRESET#2101}<color=#99FFFFFF>氷元素付着</color>状態にある場合、このダメージ+1。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+                    "Child": {
+                        "K101": {
+                            "Name": "{SPRITE_PRESET#2101}<color=#99FFFFFF>氷元素ダメージ</color>",
+                            "Desc": "{SPRITE_PRESET#2101}氷元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2103}<color=#FFFFFFFF>溶解</color>：ダメージ+2\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2104}<color=#FFFFFFFF>超電導</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2102}<color=#FFFFFFFF>凍結</color>：ダメージ+1、目標はこのラウンドで行動不能になる（物理ダメージまたは炎ダメージを受けると、即座に解除されるがダメージ+2となる）"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                            "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3
+            }
+        },
+        "11103": {
+            "Name": "スチルフォト·多角的立証",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、味方のチーム全員のHPを1回復し、<color=#FFFFFFFF>$[C111102]</color>を召喚する。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "D__KEY__DAMAGE": 1,
+                "C111102": {
+                    "Name": "スクープフィールド",
+                    "Desc": "<color=#FFFFFFFF>エンドフェーズ：</color>$[K101]を1与え、味方の出撃キャラのHPを1回復する。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+                    "Child": {
+                        "K101": {
+                            "Name": "{SPRITE_PRESET#2101}<color=#99FFFFFF>氷元素ダメージ</color>",
+                            "Desc": "{SPRITE_PRESET#2101}氷元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2103}<color=#FFFFFFFF>溶解</color>：ダメージ+2\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2104}<color=#FFFFFFFF>超電導</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2102}<color=#FFFFFFFF>凍結</color>：ダメージ+1、目標はこのラウンドで行動不能になる（物理ダメージまたは炎ダメージを受けると、即座に解除されるがダメージ+2となる）"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                            "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 211101
+}

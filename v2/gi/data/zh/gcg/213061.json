@@ -1,0 +1,53 @@
+{
+    "Type": "Action",
+    "Name": "砰砰礼物",
+    "Title": "可莉·砰砰礼物",
+    "Desc": "抽到这张牌时，发出一阵欢乐的大笑吧。",
+    "Source": "在猫尾酒馆中邀请可莉进行对局，完成相应挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Klee",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PYRO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "天赋",
+        "战斗行动"
+    ],
+    "Talent": {
+        "Name": "砰砰礼物",
+        "Desc": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1306]</color>时，装备此牌。\\n$[A1306]装备此牌后，立刻使用一次<color=#FFD780FF>$[S13062]</color>。\\n装备有此牌的$[A1306]生成的<color=#FFFFFFFF>$[C113061]</color>的$[K3]+1。\\n（牌组中包含$[A1306]，才能加入牌组）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>战斗行动</color>",
+                "Desc": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+            },
+            "A1306": "砰砰礼物",
+            "S13062": "S13062",
+            "C113061": {
+                "Name": "爆裂火花",
+                "Desc": "<color=#FFFFFFFF>所附属角色进行$[K51]时：</color>少花费1个<color=#FF9999FF>$[K303]</color>，并且伤害+1。\\n<color=#FFFFFFFF>$[K3]：1</color>",
+                "Child": {
+                    "K51": {
+                        "Name": "<color=#FFFFFFFF>重击</color>",
+                        "Desc": "我方行动开始前，如果元素骰总数为偶数，则进行的「普通攻击」将被视为「重击」。"
+                    },
+                    "K303": {
+                        "Name": "{SPRITE_PRESET#1103}火元素",
+                        "Desc": "花费投出了<color=#FF9999FF>{SPRITE_PRESET#1103}火元素</color>的元素骰，来支付此费用。\\n（{SPRITE_PRESET#1111}万能元素也可以支付此费用。）"
+                    },
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>可用次数</color>",
+                        "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                    }
+                }
+            },
+            "K3": {
+                "Name": "<color=#FFFFFFFF>可用次数</color>",
+                "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+            }
+        }
+    }
+}

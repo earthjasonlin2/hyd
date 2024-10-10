@@ -1,0 +1,40 @@
+{
+    "Type": "Action",
+    "Name": "에너지 흡수 결정",
+    "Title": "무상의 뇌전·에너지 흡수 결정",
+    "Desc": "「좋은 기회다!」\\n「하하, 녀석은 우리 편이야!」",
+    "Source": "캣테일 술집의 왕자님을 통해 술집 도전 진행 및 친선 대전 난이도의 무상의 뇌전 도전 목표 달성 후 획득",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Effigyelectric",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_ELECTRO",
+            "count": 2
+        },
+        {}
+    ],
+    "Tag": [
+        "특성",
+        "전투 행동"
+    ],
+    "Talent": {
+        "Name": "에너지 흡수 결정",
+        "Desc": "<color=#FFFFFFFF>$[K1]:</color> 아군 출전 캐릭터가 <color=#FFFFFFFF>$[A2401]</color>일 때, 해당 캐릭터의 HP를 3pt 회복하고 <color=#FFFFFFFF>$[C124014]</color>를 부착한다.\\n(카드 덱에 $[A2401]이 있어야만 카드 덱에 추가 가능)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>전투 행동</color>",
+                "Desc": "아군이 전투 행동을 1회 진행하면 행동 순서가 상대에게 넘어간다.\\n<color=#FFFFFFFF>해당 규칙에 속하는 카드는 사용 시 빠른 행동이 아닌 전투 행동으로 간주한다</color>."
+            },
+            "A2401": "에너지 흡수 결정",
+            "C124014": {
+                "Name": "번개수정 코어",
+                "Desc": "<color=#FFFFFFFF>부착 캐릭터가 처치될 시:</color> 해당 효과가 제거되며, 캐릭터 $[K54] 및 해당 캐릭터의 HP를 1pt 회복한다.",
+                "Child": {
+                    "K54": {
+                        "Name": "<color=#FFFFFFFF>처치 면역</color>",
+                        "Desc": "일부 효과는 캐릭터의 HP가 0이 될 때, 해당 캐릭터에게 <color=#FFFFFFFF>처치 면역</color> 및 일정 HP 회복 효과를 부여한다.\\n이때 캐릭터는 <color=#FFFFFFFF>처치</color>된 적 없는 것으로 간주한다. (따라서 캐릭터에 부착된 장비와 상태를 버리지 않고, 원소 에너지도 모두 사라지지 않는다)"
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,102 @@
+{
+    "Type": "Character",
+    "Name": "우인단·서리 심부름꾼",
+    "Title": "걸러낸 열매·서리 심부름꾼",
+    "Desc": "어린 나이에 선택받아, 오랜 교화와 훈련 속에서 무수한 시험을 거쳐 살아남은 자만이 소위 말하는 「심부름꾼」이 될 수 있다",
+    "Source": "캣테일 술집의 왕자님을 통해 술집 도전 진행 및 친선 대전 난이도의 우인단·서리 심부름꾼에게 승리 후 획득",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_EscadronIce",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "얼음 원소",
+        "기타 무기",
+        "우인단"
+    ],
+    "Talent": {
+        "21041": {
+            "Name": "빠른 칼끝",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "21042": {
+            "Name": "서늘한 요격",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "D__KEY__DAMAGE": 3
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3
+            }
+        },
+        "21043": {
+            "Name": "기습 찌르기",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 본 캐릭터에게 <color=#FFFFFFFF>$[C121042]</color>을 부착한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "D__KEY__DAMAGE": 4,
+                "C121042": {
+                    "Name": "예리한 기습",
+                    "Desc": "<color=#FFFFFFFF>종료 단계:</color> <color=#FFFFFFFF>$[C122]</color>이 부착된 모든 상대 캐릭터에게 $[K5]를 1pt 준다.\\n<color=#FFFFFFFF>$[K4]: 2</color>",
+                    "Child": {
+                        "C122": {
+                            "Name": "생명의 계약",
+                            "Desc": "<color=#FFFFFFFF>부착 캐릭터가 치유를 받을 시:</color> 해당 효과의 $[K3] 1회당 1회 소모해 받는 치유 효과를 1pt 상쇄한다.(부활 또는 HP 분배로 받은 치유는 상쇄할 수 없음)\\n<color=#FFFFFFFF>$[K3]: 1</color> (중첩 가능, 상한 없음)",
+                            "Child": {
+                                "K3": {
+                                    "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                                    "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                                }
+                            }
+                        },
+                        "K5": {
+                            "Name": "<color=#FFFFFFFF>관통 피해</color>",
+                            "Desc": "관통 피해는 피해 보너스를 획득할 수 없으나, 주는 피해가 보호막 또는 피해 면역과 같은 효과에 의해 상쇄되지 않는다."
+                        },
+                        "K4": {
+                            "Name": "<color=#FFFFFFFF>지속 턴</color>",
+                            "Desc": "턴이 종료 단계에 진입할 때마다 <color=#FFFFFFFF>지속 턴</color>이 1회씩 감소한다.\\n<color=#FFFFFFFF>지속 턴</color>이 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "21044": {
+            "Name": "기습 핏빛 계약",
+            "Desc": "[패시브] <color=#FFFFFFFF>본 캐릭터가 스킬 사용 후:</color> 상대 출전 캐릭터에게 $[K3]가 (해당 스킬 최종 피해량-2)인 <color=#FFFFFFFF>$[C122]</color>을 부착한다. (최대 5스택)",
+            "Child": {
+                "K3": {
+                    "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                    "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                },
+                "C122": {
+                    "Name": "생명의 계약",
+                    "Desc": "<color=#FFFFFFFF>부착 캐릭터가 치유를 받을 시:</color> 해당 효과의 $[K3] 1회당 1회 소모해 받는 치유 효과를 1pt 상쇄한다.(부활 또는 HP 분배로 받은 치유는 상쇄할 수 없음)\\n<color=#FFFFFFFF>$[K3]: 1</color> (중첩 가능, 상한 없음)",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 221041
+}

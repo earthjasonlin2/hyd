@@ -1,0 +1,105 @@
+{
+    "Type": "Character",
+    "Name": "雷音権現",
+    "Title": "残されし怨恨·雷音権現",
+    "Desc": "大地に晴らせぬ怨恨がある限り、雷鳴も響き続けるだろう。",
+    "Source": "キャッツテールのリトルプリンスのところで酒場挑戦を行い、雷音権現に挑戦して友好対戦に勝利することで獲得",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_Raijin",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "雷元素",
+        "他の武器",
+        "魔物"
+    ],
+    "Talent": {
+        "24021": {
+            "Name": "雷霆の翼斬り",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO",
+                "D__KEY__DAMAGE": 1
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "24022": {
+            "Name": "雷壁傾斜",
+            "Desc": "<color=#FFFFFFFF>$[C124022]</color>が付与されている相手のキャラに$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。（相手に条件を満たすキャラが存在しない場合、代わりにその出撃キャラにダメージを与えるようになる）",
+            "Child": {
+                "C124022": {
+                    "Name": "雷鳴探知",
+                    "Desc": "<color=#FFFFFFFF>付与されたキャラが$[A2402]およびその召喚物からダメージを受けた時</color>、この状態を解除し、受けるダメージ+1。\\n（この状態は同一チーム内で重複不可。$[A2402]の一部のスキルは、付与されたキャラをターゲットにする）",
+                    "Child": {
+                        "A2402": "雷音権現"
+                    }
+                },
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO",
+                "D__KEY__DAMAGE": 3
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 3
+            }
+        },
+        "24023": {
+            "Name": "轟雷禁錮",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、<color=#FFFFFFFF>$[C124023]</color>を召喚する。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO",
+                "D__KEY__DAMAGE": 2,
+                "C124023": {
+                    "Name": "轟雷禁錮",
+                    "Desc": "<color=#FFFFFFFF>エンドフェーズ：</color><color=#FFFFFFFF>$[C124022]</color>が付与されている相手のキャラに$[K104]を3与える。（相手に条件を満たすキャラが存在しない場合、代わりにその出撃キャラにダメージを与えるようになる）\\n<color=#FFFFFFFF>$[K3]：1</color>",
+                    "Child": {
+                        "C124022": {
+                            "Name": "雷鳴探知",
+                            "Desc": "<color=#FFFFFFFF>付与されたキャラが$[A2402]およびその召喚物からダメージを受けた時</color>、この状態を解除し、受けるダメージ+1。\\n（この状態は同一チーム内で重複不可。$[A2402]の一部のスキルは、付与されたキャラをターゲットにする）",
+                            "Child": {
+                                "A2402": "雷音権現"
+                            }
+                        },
+                        "K104": {
+                            "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素ダメージ</color>",
+                            "Desc": "{SPRITE_PRESET#2104}雷元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>過負荷</color>：ダメージ+2、目標を強制的に次のキャラにチェンジさせる\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>超電導</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>感電</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>原激化</color>：ダメージ+1、次の草元素または雷元素ダメージを2回まで+1できる「<color=#FFFFFFFF>激化領域</color>」を生成する"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                            "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "24024": {
+            "Name": "雷霆探知",
+            "Desc": "【固有】戦闘開始時、相手のフィールドに<color=#FFFFFFFF>$[C124021]</color>を生成する。",
+            "Child": {
+                "C124021": {
+                    "Name": "雷霆探針",
+                    "Desc": "<color=#FFFFFFFF>チームのキャラがスキルを発動した後</color>、そのチームの出撃キャラに<color=#FFFFFFFF>$[C124022]</color>を付与する。（各ラウンドで1回のみ）",
+                    "Child": {
+                        "C124022": {
+                            "Name": "雷鳴探知",
+                            "Desc": "<color=#FFFFFFFF>付与されたキャラが$[A2402]およびその召喚物からダメージを受けた時</color>、この状態を解除し、受けるダメージ+1。\\n（この状態は同一チーム内で重複不可。$[A2402]の一部のスキルは、付与されたキャラをターゲットにする）",
+                            "Child": {
+                                "A2402": "雷音権現"
+                            }
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 224021
+}

@@ -1,0 +1,32 @@
+{
+    "Type": "Action",
+    "Name": "ガンダルヴァー村",
+    "Title": "ガンダルヴァー村",
+    "Desc": "旅する者やレンジャーたちが集う喜びの地であり、雨林の鼓動が響く村。",
+    "Source": "",
+    "Icon": "UI_Gcg_CardFace_Assist_Location_Gandharva",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PAIMON",
+            "count": 1
+        },
+        {}
+    ],
+    "Tag": [
+        "フィールド"
+    ],
+    "Talent": {
+        "Name": "ガンダルヴァー村",
+        "Desc": "<color=#FFFFFFFF>味方がアクションをする前に、残り元素サイコロの数が0の時</color>、$[K411]を1個生成する。（各ラウンドで1回のみ）\\n<color=#FFFFFFFF>$[K3]：3</color>",
+        "Child": {
+            "K411": {
+                "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1111}万能元素</color>",
+                "Desc": "{SPRITE_PRESET#1111}万能元素は任意タイプの元素と見なされ、コストの支払いに使えます。"
+            },
+            "K3": {
+                "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+            }
+        }
+    }
+}

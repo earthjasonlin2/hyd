@@ -1,0 +1,115 @@
+{
+    "Name": "溶岩の像·流燃体",
+    "Desc": "熱を吸収し続けなければ活動状態を維持できない特異な魔物。\\nかつて、ナタの大地には古く幽邃なる火がさまざまな形で燃え広がっていた。その時代、この地に古くから住んでいた偉大な者たちはこれらの火を使って光、熱、そして知恵を伝えていた。彼らは生命と魂もまた、火打石を打ち合わせたときに飛び散る火花から初めて形を得ると信じていた。\\nもし永遠に燃え続ける芯を持つならば、頑固な石でさえも生命を生み出すことができるだろう。溶岩の像に包まれた燃えさしは、その偉大な時代の、冷えた灰のような残滓であるという。",
+    "Icon": "UI_MonsterIcon_Lava_Liquid",
+    "Codex": "BEAST",
+    "Title": "溶岩の像·流燃体",
+    "SpecialNames": [
+        "燃え盛るストーンハート"
+    ],
+    "Reward": [
+        {
+            "Id": 202,
+            "Rank": 3,
+            "Icon": "UI_ItemIcon_202"
+        },
+        {
+            "Id": 112110,
+            "Rank": 2,
+            "Icon": "UI_ItemIcon_112110"
+        },
+        {
+            "Id": 112111,
+            "Rank": 3,
+            "Icon": "UI_ItemIcon_112111"
+        },
+        {
+            "Id": 112112,
+            "Rank": 4,
+            "Icon": "UI_ItemIcon_112112"
+        },
+        {
+            "Id": 400022,
+            "Rank": 3,
+            "Icon": "UI_RelicIcon_10005_4"
+        },
+        {
+            "Id": 400032,
+            "Rank": 3,
+            "Icon": "UI_RelicIcon_10007_4"
+        },
+        {
+            "Id": 400042,
+            "Rank": 3,
+            "Icon": "UI_RelicIcon_10009_4"
+        },
+        {
+            "Id": 400062,
+            "Rank": 3,
+            "Icon": "UI_RelicIcon_10013_4"
+        },
+        {
+            "Id": 400023,
+            "Rank": 4,
+            "Icon": "UI_RelicIcon_10005_4"
+        },
+        {
+            "Id": 400033,
+            "Rank": 4,
+            "Icon": "UI_RelicIcon_10007_4"
+        },
+        {
+            "Id": 400043,
+            "Rank": 4,
+            "Icon": "UI_RelicIcon_10009_4"
+        }
+    ],
+    "Child": {
+        "26270101": {
+            "MonsterName": "Monster_Lava_Liquid_01",
+            "Type": "MONSTER_ORDINARY",
+            "HpDrops": [
+                {
+                    "dropId": 22010011,
+                    "hpPercent": 66
+                },
+                {
+                    "dropId": 22010011,
+                    "hpPercent": 33
+                },
+                {}
+            ],
+            "KillDropId": 22010011,
+            "Prop": [
+                {
+                    "type": "FIGHT_PROP_BASE_HP",
+                    "growCurve": "GROW_CURVE_HP_2"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_ATTACK",
+                    "growCurve": "GROW_CURVE_ATTACK_2"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_DEFENSE",
+                    "growCurve": "GROW_CURVE_DEFENSE"
+                }
+            ],
+            "LocalLegend": false,
+            "SubHurt": {
+                "Fire": 0.6999999880791,
+                "Grass": 0.1000000014901,
+                "Water": 0.1000000014901,
+                "Elec": 0.1000000014901,
+                "Wind": 0.1000000014901,
+                "Ice": 0.1000000014901,
+                "Rock": 0.1000000014901,
+                "Physical": 0.1000000014901
+            },
+            "Base": {
+                "HP": 103.2384033203125,
+                "ATK": 87.9199981689453,
+                "DEF": 500
+            }
+        }
+    }
+}

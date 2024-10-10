@@ -1,0 +1,87 @@
+{
+    "Type": "Character",
+    "Name": "雷电将军",
+    "Title": "一心净土·雷电将军",
+    "Desc": "鸣雷寂灭，浮世泡影。",
+    "Source": "在猫尾酒馆中邀请雷电将军进行对局，在友好对局难度中获得胜利后获取",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Shougun",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "雷元素",
+        "长柄武器",
+        "稻妻"
+    ],
+    "Talent": {
+        "14071": {
+            "Name": "源流",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "14072": {
+            "Name": "神变·恶曜开眼",
+            "Desc": "召唤<color=#FFFFFFFF>$[C114071]</color>。",
+            "Child": {
+                "C114071": {
+                    "Name": "雷罚恶曜之眼",
+                    "Desc": "<color=#FFFFFFFF>结束阶段：</color>造成1点$[K104]。\\n<color=#FFFFFFFF>$[K3]：3</color>\\n<color=#FFFFFFFF>此召唤物在场时：</color>我方角色「元素爆发」造成的伤害+1。",
+                    "Child": {
+                        "K104": {
+                            "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素伤害</color>",
+                            "Desc": "附着{SPRITE_PRESET#2104}雷元素，可发生元素反应：\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>超载</color>：本伤害+2，目标强制切换到下一个角色\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>超导</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>感电</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>原激化</color>：本伤害+1，生成使下2次草元素或雷元素伤害+1的[<color=#FFFFFFFF>激化领域</color>]"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>可用次数</color>",
+                            "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 3
+            }
+        },
+        "14073": {
+            "Name": "奥义·梦想真说",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，其他我方角色获得2点$[K310]。",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO",
+                "K310": {
+                    "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}充能</color>",
+                    "Desc": "角色使用「元素爆发」时，需要消耗{SPRITE_PRESET#1110}充能。\\n角色使用「元素战技」或「普通攻击」后，会获得1点{SPRITE_PRESET#1110}充能。"
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 4,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "14074": {
+            "Name": "诸愿百眼之轮",
+            "Desc": "【被动】战斗开始时，初始附属<color=#FFFFFFFF>$[C114072]</color>。",
+            "Child": {
+                "C114072": {
+                    "Name": "诸愿百眼之轮",
+                    "Desc": "<color=#FFFFFFFF>其他我方角色使用「元素爆发」后：</color>累积1点<color=#FFFFFFFF>「愿力」</color>。（最多累积3点）\\n<color=#FFFFFFFF>所附属角色使用$[S14073]时：</color>消耗所有<color=#FFFFFFFF>「愿力」</color>，每点<color=#FFFFFFFF>「愿力」</color>使造成的伤害+1。",
+                    "Child": {
+                        "S14073": "S14073"
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 214071
+}

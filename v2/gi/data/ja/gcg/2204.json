@@ -1,0 +1,102 @@
+{
+    "Type": "Character",
+    "Name": "呑星の鯨",
+    "Title": "深秘の異獣·呑星の鯨",
+    "Desc": "最も幻想的な物語、または荒唐無稽なでたらめの中で、宇宙の最奥にある真の星々もまた、テイワットのように活気に溢れている。そして宇宙そのものは、まるで海原のようだ。\\nもしかすると宇宙は、テイワットへと浸入し続けているのかもしれない。より上位の意志が彼らとの境界を定めたのは、おそらくこの世界を守るためだろう。",
+    "Source": "キャッツテールのリトルプリンスのところで酒場挑戦を行い、呑星の鯨に挑戦して友好対戦に勝利することで獲得",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_Ptahur",
+    "Hp": 5,
+    "Cost": 2,
+    "Tag": [
+        "水元素",
+        "他の武器",
+        "魔物"
+    ],
+    "Talent": {
+        "22041": {
+            "Name": "波を打ち砕く跳躍",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "22042": {
+            "Name": "降り注ぐ星の雨",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE_2]与える。本キャラに<color=#FFFFFFFF>$[S22044]</color>が提供したHP上限3につき、このダメージ+1（最大+3）。その後、元素サイコロの初期コストが最も高い手札を1枚$[K56]する。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "D__KEY__DAMAGE_2": 2,
+                "S22044": "S22044",
+                "K56": {
+                    "Name": "<color=#FFFFFFFF>破棄</color>",
+                    "Desc": "アクションカードまたはキャラのスキル効果によって、手札または山札からアクションカードを破棄する。"
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3
+            }
+        },
+        "22043": {
+            "Name": "横行する鯨の呑噬",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、相手の待機キャラ全員に$[K5]を1与える。<color=#FFFFFFFF>$[C122043]</color>を召喚する。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "D__KEY__DAMAGE": 1,
+                "K5": {
+                    "Name": "<color=#FFFFFFFF>貫通ダメージ</color>",
+                    "Desc": "貫通ダメージはダメージアップ効果を受けられません。また、シールド、ダメージ無効化などの効果で相殺されることもありません。"
+                },
+                "C122043": {
+                    "Name": "黒い幻影",
+                    "Desc": "<color=#FFFFFFFF>登場時</color>、黒い幻影は味方が呑み込んだカードの中で元素サイコロのコストが最も高いカードのコストに相当する「攻撃力」と、呑み込んだ該当コストのカードの枚数分の$[K3]を獲得する。\\n<color=#FFFFFFFF>エンドフェーズおよび味方が終了宣言をした時</color>、「攻撃力」分の$[K104]を与える。\\n<color=#FFFFFFFF>味方の出撃キャラがダメージを受けた時</color>、ダメージを1相殺してくれる。その後、このカードの$[K3]-2。<color=#FFFFFFFF></color>",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                            "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                        },
+                        "K104": {
+                            "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素ダメージ</color>",
+                            "Desc": "{SPRITE_PRESET#2104}雷元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>過負荷</color>：ダメージ+2、目標を強制的に次のキャラにチェンジさせる\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>超電導</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>感電</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>原激化</color>：ダメージ+1、次の草元素または雷元素ダメージを2回まで+1できる「<color=#FFFFFFFF>激化領域</color>」を生成する"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "22044": {
+            "Name": "底なしの食欲",
+            "Desc": "【固有】戦闘開始時、<color=#FFFFFFFF>$[C122041]</color>を生成する。",
+            "Child": {
+                "C122041": {
+                    "Name": "呑噬の領域",
+                    "Desc": "$[K56]または$[K57]された味方のカードは呑み込まれる。\\n<color=#FFFFFFFF>3枚のカードを呑み込むたびに</color>、$[A2204]はラウンド終了時にHP上限+1。3枚のカードのうち、元素サイコロの初期コストが同じカードがある場合、さらにHP上限+1。3枚とも同じだった場合、さらにHP上限+1。",
+                    "Child": {
+                        "K56": {
+                            "Name": "<color=#FFFFFFFF>破棄</color>",
+                            "Desc": "アクションカードまたはキャラのスキル効果によって、手札または山札からアクションカードを破棄する。"
+                        },
+                        "K57": {
+                            "Name": "<color=#FFFFFFFF>調和</color>",
+                            "Desc": "元素調和を行うために、アクションカードを手札から破棄する。"
+                        },
+                        "A2204": "呑星の鯨"
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 222041
+}

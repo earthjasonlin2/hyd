@@ -1,0 +1,80 @@
+{
+    "Type": "Character",
+    "Name": "디오나",
+    "Title": "캐츠라인 칵테일·디오나",
+    "Desc": "1%의 힘으로 술을 섞고, 99%의 힘으로… 거절에 실패",
+    "Source": "캣테일 술집에서 디오나 초대 및 친선 대전 난이도 승리 후 획득",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Diona",
+    "Hp": 10,
+    "Cost": 3,
+    "Tag": [
+        "얼음 원소",
+        "활",
+        "몬드"
+    ],
+    "Talent": {
+        "11021": {
+            "Name": "사냥꾼의 사격술",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "11022": {
+            "Name": "꽁꽁젤리",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[C111021]</color>을 생성한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "D__KEY__DAMAGE": 2,
+                "C111021": {
+                    "Name": "꽁꽁젤리 보호막",
+                    "Desc": "아군 출전 캐릭터에게 <color=#FFFFFFFF>$[K6]을 1pt</color> 제공한다.",
+                    "Child": {
+                        "K6": {
+                            "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>보호막</color>",
+                            "Desc": "해당 보호막의 보호를 받는 캐릭터가 피격 시, 보호막을 소모해 피해를 상쇄한다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3
+            }
+        },
+        "11023": {
+            "Name": "특제 칵테일",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 해당 캐릭터의 HP를 2pt 치유하며 <color=#FFFFFFFF>$[C111023]</color>을 소환한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "D__KEY__DAMAGE": 1,
+                "C111023": {
+                    "Name": "술 안개 영역",
+                    "Desc": "<color=#FFFFFFFF>종료 단계:</color> $[K101]를 1pt 주고 아군 출전 캐릭터의 HP를 2pt 치유한다.\\n<color=#FFFFFFFF>$[K3]: 2</color>",
+                    "Child": {
+                        "K101": {
+                            "Name": "{SPRITE_PRESET#2101}<color=#99FFFFFF>얼음 원소 피해</color>",
+                            "Desc": "{SPRITE_PRESET#2101}얼음 원소 부착 시 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2103}<color=#FFFFFFFF>융해</color>: 이번 피해+2pt\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2104}<color=#FFFFFFFF>초전도</color>: 이번 피해+1pt, 대상 이외의 모든 상대 캐릭터에게 관통 피해를 1pt 준다.\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2102}<color=#FFFFFFFF>빙결</color>: 이번 피해+1pt, 이번 턴에 대상을 행동 불가로 만든다. (물리 피해 또는 불 원소 피해를 받으면 조기 해제되지만, 해당 피해로 받는 피해량이 2pt 추가된다)"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3,
+                "GCG_COST_ENERGY": 3
+            }
+        }
+    },
+    "Related": 211021
+}

@@ -1,0 +1,98 @@
+{
+    "Type": "Character",
+    "Name": "Dehya",
+    "Title": "\"Flame-Mane\" Dehya",
+    "Desc": "The eyes of a vulture, the spirit of a lion, an unbridled daughter of the desert.",
+    "Source": "Reward for inviting Dehya to a duel at The Cat's Tail and claiming victory in a Friendly Fracas with her",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Dehya",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "Pyro",
+        "Claymore",
+        "Sumeru",
+        "The Eremites"
+    ],
+    "Talent": {
+        "13091": {
+            "Name": "Sandstorm Assault",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "13092": {
+            "Name": "Molten Inferno",
+            "Desc": "Summon <color=#FFFFFFFF>$[C113093]</color>. If $[C113093] already exists, then first deal $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "C113093": {
+                    "Name": "Fiery Sanctum Field",
+                    "Desc": "<color=#FFFFFFFF>End Phase:</color> Deal 1 $[K103].\\n<color=#FFFFFFFF>$[K3]: 3</color>\\n<color=#FFFFFFFF>When this Summon is on the field and $[A1309] is on standby on your side, then when your active character takes damage: </color>Decrease DMG taken by 1, and if $[A1309] has at least 7 HP, deal 1 $[K5] to her (once per round).",
+                    "Child": {
+                        "K103": {
+                            "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>Pyro DMG</color>",
+                            "Desc": "Applies {SPRITE_PRESET#2103}Pyro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Melt</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Vaporize</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Overloaded</color>: DMG +2 for this instance, the target is forcibly switched to the next character\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Burning</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Burning Flame</color>] that will deal 1 Pyro DMG at the end of the Round (Takes effect once, max 2 stacks)"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        },
+                        "A1309": "Dehya",
+                        "K5": {
+                            "Name": "<color=#FFFFFFFF>Piercing DMG</color>",
+                            "Desc": "Piercing DMG cannot be increased by any bonuses, but cannot be defended against using Shields or DMG Immunity either."
+                        }
+                    }
+                },
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO"
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 3
+            }
+        },
+        "13093": {
+            "Name": "Leonine Bite",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], then performs \"$[K53]\" for <color=#FFFFFFFF>$[S13095]</color>.",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO",
+                "K53": {
+                    "Name": "<color=#FFFFFFFF>Prepare Skill</color>|s1:<color=#FFFFFFFF>prepares</color>",
+                    "Desc": "Some Skills cannot be used directly. Instead, they need to be <color=#FFFFFFFF>prepared</color> over a certain number of turns.\\nWhen it is a certain player's turn, and this player's active character is currently <color=#FFFFFFFF>preparing</color> a Skill, this player's turn will be skipped. If the Skill has finished being <color=#FFFFFFFF>prepared</color>, the character will directly use that Skill at this time. (Skills that require <color=#FFFFFFFF>preparing</color> cannot activate effects triggered by \"using a Skill\" or \"triggering an Elemental Reaction\" or other such effects.)\\nOnly active characters can <color=#FFFFFFFF>prepare</color> Skills, and if an active character who is <color=#FFFFFFFF>preparing</color> a Skill gets switched off-field, their <color=#FFFFFFFF>preparation</color> will be interrupted."
+                },
+                "S13095": "S13095"
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 4,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "13095": {
+            "Name": "Incineration Drive",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO"
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {}
+        },
+        "13096": {
+            "Name": "Fiery Sanctum: Redmane's Blood",
+            "Desc": "",
+            "Child": {},
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 213091
+}

@@ -1,0 +1,100 @@
+{
+    "Type": "Character",
+    "Name": "ファルザン",
+    "Title": "機求封秘·ファルザン",
+    "Desc": "機巧は容易く、世上は測り難し。",
+    "Source": "キャッツテールでファルザンを招待し、友好対戦に勝利することで獲得",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Faruzan",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "風元素",
+        "弓",
+        "スメール"
+    ],
+    "Talent": {
+        "15091": {
+            "Name": "転回弓術",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "15092": {
+            "Name": "非想風天",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、本キャラに<color=#FFFFFFFF>$[C115091]</color>を付与する。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO",
+                "D__KEY__DAMAGE": 3,
+                "C115091": {
+                    "Name": "疾風示現",
+                    "Desc": "<color=#FFFFFFFF>付与されたキャラが$[K51]を行う時</color>、必要な<color=#80FFD7FF>$[K309]</color>-1、与える$[K100]が$[K105]へと変わり、目標キャラに<color=#FFFFFFFF>$[K1024]</color>を付与する。\\n<color=#FFFFFFFF>$[K3]：1</color>",
+                    "Child": {
+                        "K51": {
+                            "Name": "<color=#FFFFFFFF>重撃</color>",
+                            "Desc": "味方のアクションが始まる前、元素サイコロの数が偶数の時に行われる「通常攻撃」は、「重撃」と見なされる。"
+                        },
+                        "K309": {
+                            "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1109}無色元素</color>",
+                            "Desc": "任意タイプの元素サイコロと組み合わせてコストを支払うことができます。"
+                        },
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>",
+                            "Desc": "物理ダメージは元素付着させたり、元素反応を起こしたりはしません。"
+                        },
+                        "K105": {
+                            "Name": "{SPRITE_PRESET#2105}<color=#80FFD7FF>風元素ダメージ</color>",
+                            "Desc": "付着した元素と以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2101}<color=#FFFFFFFF>拡散（氷）</color>：目標以外の相手チーム全員に氷元素ダメージを1与える\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2102}<color=#FFFFFFFF>拡散（水）</color>：目標以外の相手チーム全員に水元素ダメージを1与える\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2103}<color=#FFFFFFFF>拡散（炎）</color>：目標以外の相手チーム全員に炎元素ダメージを1与える\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2104}<color=#FFFFFFFF>拡散（雷）</color>：目標以外の相手チーム全員に雷元素ダメージを1与える"
+                        },
+                        "K1024": {
+                            "Name": "<color=#FFFFFFFF>風圧崩潰</color>",
+                            "Desc": "<color=#FFFFFFFF>エンドフェーズ：</color>付与されたキャラを「出撃キャラ」にチェンジする。\\n<color=#FFFFFFFF><color=#FFFFFFFF>使用可能回数</color>：1</color>\\n（この状態は同一チーム内で重複不可）"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                            "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 3
+            }
+        },
+        "15093": {
+            "Name": "搏風秘道",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、<color=#FFFFFFFF>$[C115093]</color>を召喚する。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO",
+                "D__KEY__DAMAGE": 1,
+                "C115093": {
+                    "Name": "赫耀多面体",
+                    "Desc": "<color=#FFFFFFFF>エンドフェーズ：</color>$[K105]を1与える。\\n<color=#FFFFFFFF>$[K3]：3</color>\\n<color=#FFFFFFFF>この召喚物がフィールドに存在する時</color>、相手キャラの受ける$[K105]+1。",
+                    "Child": {
+                        "K105": {
+                            "Name": "{SPRITE_PRESET#2105}<color=#80FFD7FF>風元素ダメージ</color>",
+                            "Desc": "付着した元素と以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2101}<color=#FFFFFFFF>拡散（氷）</color>：目標以外の相手チーム全員に氷元素ダメージを1与える\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2102}<color=#FFFFFFFF>拡散（水）</color>：目標以外の相手チーム全員に水元素ダメージを1与える\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2103}<color=#FFFFFFFF>拡散（炎）</color>：目標以外の相手チーム全員に炎元素ダメージを1与える\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2104}<color=#FFFFFFFF>拡散（雷）</color>：目標以外の相手チーム全員に雷元素ダメージを1与える"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                            "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 215091
+}

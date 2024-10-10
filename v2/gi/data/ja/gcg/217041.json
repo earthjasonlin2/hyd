@@ -1,0 +1,49 @@
+{
+    "Type": "Action",
+    "Name": "慈恵仁心",
+    "Title": "ヨォーヨ·慈恵仁心",
+    "Desc": "「いたいの飛んでけ～」",
+    "Source": "キャッツテールでヨォーヨを招待して対戦し、対応する挑戦目標をクリアすることで獲得",
+    "Icon": "UI_Gcg_CardFace_Modify_Constellation_Yaoyao",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_DENDRO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "天賦",
+        "戦闘アクション"
+    ],
+    "Talent": {
+        "Name": "慈恵仁心",
+        "Desc": "$[K1]：味方の出撃キャラが<color=#FFFFFFFF>$[A1704]</color>の時、このカードを装備できる。\\n$[A1704]がこのカードを装備した後、直ちに<color=#FFD780FF>$[S17042]</color>を1回発動する。\\nこのカードを装備した$[A1704]が生成した<color=#FFFFFFFF>$[C117041]</color>は、$[K3]が残り1の時、与えるダメージと回復量がそれぞれ+1。\\n（このカードはデッキに$[A1704]が含まれている場合のみ、デッキに追加できる）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>戦闘アクション</color>",
+                "Desc": "味方が戦闘アクションを1回行った後、相手のターンに移ります。\\n<color=#FFFFFFFF>このようなルールを持つ手札を出すのはクイックアクションではなく、戦闘アクションと見なされます。</color>"
+            },
+            "A1704": "慈恵仁心",
+            "S17042": "S17042",
+            "C117041": {
+                "Name": "月桂·投擲型",
+                "Desc": "<color=#FFFFFFFF>エンドフェーズ：</color>$[K107]を1与え、HPを最も失っている味方キャラのHPを1回復する。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+                "Child": {
+                    "K107": {
+                        "Name": "{SPRITE_PRESET#2107}<color=#7EC236FF>草元素ダメージ</color>",
+                        "Desc": "{SPRITE_PRESET#2107}草元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>開花</color>：ダメージ+1、次の炎元素または雷元素ダメージを2アップできる「<color=#FFFFFFFF>草原核</color>」を生成する\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>燃焼</color>：ダメージ+1、ラウンド終了時に炎元素ダメージを1与える「<color=#FFFFFFFF>燃焼烈焔</color>」を生成する（使用可能回数1回、最大2回まで重ね掛け可能）\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>原激化</color>：ダメージ+1、次の草元素または雷元素ダメージを2回まで+1できる「<color=#FFFFFFFF>激化領域</color>」を生成する"
+                    },
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                        "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                    }
+                }
+            },
+            "K3": {
+                "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+            }
+        }
+    }
+}

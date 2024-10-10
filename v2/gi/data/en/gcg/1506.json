@@ -1,0 +1,75 @@
+{
+    "Type": "Character",
+    "Name": "#{REALNAME[ID(1)|DELAYHANDLE(true)]}",
+    "Title": "\"Eons Adrift\" Wanderer",
+    "Desc": "Tribulations uncounted, trials unknowable.",
+    "Source": "Reward for inviting the Wanderer to a duel at The Cat's Tail and claiming victory in a Friendly Fracas with him",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Wanderer",
+    "Hp": 10,
+    "Cost": 3,
+    "Tag": [
+        "Anemo",
+        "Catalyst"
+    ],
+    "Talent": {
+        "15061": {
+            "Name": "Yuuban Meigen",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "15062": {
+            "Name": "Hanega: Song of the Wind",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. This character gains <color=#FFFFFFFF>$[C115061]</color>.",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO",
+                "C115061": {
+                    "Name": "Windfavored",
+                    "Desc": "<color=#FFFFFFFF>When the character to which this is attached performs a Normal Attack:</color> DMG dealt +2. If the opponent has characters on standby, then this Skill will deal damage to the next opposing character on standby instead.\\n<color=#FFFFFFFF>$[K3]: 2</color>",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 3
+            }
+        },
+        "15063": {
+            "Name": "Kyougen: Five Ceremonial Plays",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. If the character has <color=#FFFFFFFF>$[C115061]</color> attached, then remove it and increase DMG by 1.",
+            "Child": {
+                "D__KEY__DAMAGE": 7,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO",
+                "C115061": {
+                    "Name": "Windfavored",
+                    "Desc": "<color=#FFFFFFFF>When the character to which this is attached performs a Normal Attack:</color> DMG dealt +2. If the opponent has characters on standby, then this Skill will deal damage to the next opposing character on standby instead.\\n<color=#FFFFFFFF>$[K3]: 2</color>",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 3,
+                "GCG_COST_ENERGY": 3
+            }
+        }
+    },
+    "Related": 215061
+}

@@ -1,0 +1,92 @@
+{
+    "Type": "Character",
+    "Name": "绮良良",
+    "Title": "檐宇猫游·绮良良",
+    "Desc": "歧尾骏足，通达万户。",
+    "Source": "在猫尾酒馆中邀请绮良良进行对局，在友好对局难度中获得胜利后获取",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Momoka",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "草元素",
+        "单手剑",
+        "稻妻"
+    ],
+    "Talent": {
+        "17071": {
+            "Name": "箱纸切削术",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "17072": {
+            "Name": "呜喵町飞足",
+            "Desc": "生成<color=#FFFFFFFF>$[C117071]</color>和<color=#FFFFFFFF>$[C117072]</color>。",
+            "Child": {
+                "C117071": {
+                    "Name": "猫箱急件",
+                    "Desc": "<color=#FFFFFFFF>绮良良为出战角色时，我方切换角色后：</color>造成1点$[K107]，抓1张牌。\\n<color=#FFFFFFFF>$[K3]：1</color>（可叠加，最多叠加到2次）",
+                    "Child": {
+                        "K107": {
+                            "Name": "{SPRITE_PRESET#2107}<color=#7EC236FF>草元素伤害</color>",
+                            "Desc": "附着{SPRITE_PRESET#2107}草元素，可发生元素反应：\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>绽放</color>：本伤害+1，生成使下次火元素或雷元素伤害+2的[<color=#FFFFFFFF>草原核</color>]\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>燃烧</color>：本伤害+1，生成回合结束时造成1点火元素伤害的[<color=#FFFFFFFF>燃烧烈焰</color>]（可用次数1，最多叠加到2）\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>原激化</color>：本伤害+1，生成使下2次草元素或雷元素伤害+1的[<color=#FFFFFFFF>激化领域</color>]"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>可用次数</color>",
+                            "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                },
+                "C117072": {
+                    "Name": "安全运输护盾",
+                    "Desc": "为我方出战角色提供<color=#FFFFFFFF>2点$[K6]</color>。",
+                    "Child": {
+                        "K6": {
+                            "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>护盾</color>",
+                            "Desc": "此护盾所保护的角色受到伤害时，将会消耗护盾来抵消伤害。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 3
+            }
+        },
+        "17073": {
+            "Name": "秘法·惊喜特派",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，在敌方场上生成<color=#FFFFFFFF>$[C117073]</color>。",
+            "Child": {
+                "D__KEY__DAMAGE": 4,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_DENDRO",
+                "C117073": {
+                    "Name": "猫草豆蔻",
+                    "Desc": "<color=#FFFFFFFF>所在阵营打出2张行动牌后：</color>对所在阵营的出战角色造成1点$[K107]。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+                    "Child": {
+                        "K107": {
+                            "Name": "{SPRITE_PRESET#2107}<color=#7EC236FF>草元素伤害</color>",
+                            "Desc": "附着{SPRITE_PRESET#2107}草元素，可发生元素反应：\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>绽放</color>：本伤害+1，生成使下次火元素或雷元素伤害+2的[<color=#FFFFFFFF>草原核</color>]\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>燃烧</color>：本伤害+1，生成回合结束时造成1点火元素伤害的[<color=#FFFFFFFF>燃烧烈焰</color>]（可用次数1，最多叠加到2）\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>原激化</color>：本伤害+1，生成使下2次草元素或雷元素伤害+1的[<color=#FFFFFFFF>激化领域</color>]"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>可用次数</color>",
+                            "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 217071
+}

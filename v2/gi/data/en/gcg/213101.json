@@ -1,0 +1,45 @@
+{
+    "Type": "Action",
+    "Name": "Conclusive Ovation",
+    "Title": "Lyney: Conclusive Ovation",
+    "Desc": "\"A round of applause!\"",
+    "Source": "Reward for inviting Lyney to a duel at The Cat's Tail and achieving all corresponding challenge objectives",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Liney",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PYRO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "Talent",
+        "Combat Action"
+    ],
+    "Talent": {
+        "Name": "Conclusive Ovation",
+        "Desc": "$[K1]: When your active character is <color=#FFFFFFFF>$[A1310]</color>, equip this card.\\nAfter $[A1310] equips this card, immediately use <color=#FFD780FF>$[S13102]</color>.\\nWhen $[A1310] is on the field and has this card equipped, the DMG dealt by $[A1310] and your <color=#FFFFFFFF>$[C113101]</color> will deal +2 DMG to characters <color=#FF9999FF>affected by {SPRITE_PRESET#2103}Pyro</color>. (Once per Round)\\n(You must have $[A1310] in your deck to add this card to your deck.)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+            },
+            "A1310": "Conclusive Ovation",
+            "S13102": "S13102",
+            "C113101": {
+                "Name": "Grin-Malkin Hat",
+                "Desc": "<color=#FFFFFFFF>End Phase:</color> Deal 1 $[K103].\\n<color=#FFFFFFFF>$[K3]: 1</color> (Can stack. Max 2 stacks.)",
+                "Child": {
+                    "K103": {
+                        "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>Pyro DMG</color>",
+                        "Desc": "Applies {SPRITE_PRESET#2103}Pyro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Melt</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Vaporize</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Overloaded</color>: DMG +2 for this instance, the target is forcibly switched to the next character\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Burning</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Burning Flame</color>] that will deal 1 Pyro DMG at the end of the Round (Takes effect once, max 2 stacks)"
+                    },
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                        "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                    }
+                }
+            }
+        }
+    }
+}

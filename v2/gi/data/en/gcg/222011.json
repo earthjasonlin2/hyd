@@ -1,0 +1,38 @@
+{
+    "Type": "Action",
+    "Name": "Streaming Surge",
+    "Title": "Flowing",
+    "Desc": "The racing waters are a display of love toward a deceased deity.",
+    "Source": "Reward for accepting the Tavern Challenge against Rhodeia of Loch at The Cat's Tail and achieving all corresponding challenge objectives in a Friendly Fracas",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Chunshui",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_HYDRO",
+            "count": 4
+        },
+        {
+            "costType": "GCG_COST_ENERGY",
+            "count": 3
+        }
+    ],
+    "Tag": [
+        "Talent",
+        "Combat Action"
+    ],
+    "Talent": {
+        "Name": "Streaming Surge",
+        "Desc": "$[K1]: When your active character is <color=#FFFFFFFF>$[A2201]</color>, equip this card.\\nAfter $[A2201] equips this card, immediately use <color=#FFD780FF>$[S22014]</color> once.\\nWhen your $[A2201], who has this card equipped, uses <color=#FFFFFFFF>$[S22014]</color>: All of your Summon(s) gain +1 $[K3].\\n(You must have $[A2201] in your deck to add this card to your deck.)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+            },
+            "A2201": "Streaming Surge",
+            "S22014": "S22014",
+            "K3": {
+                "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+            }
+        }
+    }
+}

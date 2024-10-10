@@ -1,0 +1,74 @@
+{
+    "Type": "Character",
+    "Name": "翠翎恐蕈",
+    "Title": "幽蕈之王·翠翎恐蕈",
+    "Desc": "悄声静听，可以听到幽林之中，蕈类王者巡视领土的脚步…",
+    "Source": "在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度翠翎恐蕈中获得胜利后获取",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_Fungusgrass",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "草元素",
+        "其他武器",
+        "魔物"
+    ],
+    "Talent": {
+        "27011": {
+            "Name": "菌王舞步",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "27012": {
+            "Name": "不稳定孢子云",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_DENDRO"
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 3
+            }
+        },
+        "27013": {
+            "Name": "尾羽豪放",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，消耗所有<color=#FFFFFFFF>$[C127011]</color>层数，每层使此伤害+1。",
+            "Child": {
+                "D__KEY__DAMAGE": 4,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_DENDRO",
+                "C127011": {
+                    "Name": "活化激能",
+                    "Desc": "<color=#FFFFFFFF>本角色造成或受到元素伤害后：</color>累积1层<color=#FFFFFFFF>「活化激能」</color>。（最多累积3层）\\n<color=#FFFFFFFF>结束阶段：</color>如果<color=#FFFFFFFF>「活化激能」</color>层数已达到上限，就将其清空。同时，角色失去所有充能。",
+                    "Child": {}
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "27014": {
+            "Name": "活化激能",
+            "Desc": "【被动】战斗开始时，初始附属<color=#FFFFFFFF>$[C127011]</color>。",
+            "Child": {
+                "C127011": {
+                    "Name": "活化激能",
+                    "Desc": "<color=#FFFFFFFF>本角色造成或受到元素伤害后：</color>累积1层<color=#FFFFFFFF>「活化激能」</color>。（最多累积3层）\\n<color=#FFFFFFFF>结束阶段：</color>如果<color=#FFFFFFFF>「活化激能」</color>层数已达到上限，就将其清空。同时，角色失去所有充能。",
+                    "Child": {}
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 227011
+}

@@ -1,0 +1,98 @@
+{
+    "Type": "Character",
+    "Name": "黄金王兽",
+    "Title": "狼群魔主·黄金王兽",
+    "Desc": "来自异界的扭曲魔兽，统领兽境群狼的王者，拥有指挥狼群溶解空间的权威。",
+    "Source": "在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度黄金王兽中获得胜利后获取",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_Planelurker",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "岩元素",
+        "其他武器",
+        "魔物"
+    ],
+    "Talent": {
+        "26031": {
+            "Name": "王狼直击",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "26032": {
+            "Name": "兽境轰召",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，并使对方出战角色附属<color=#FFFFFFFF>$[C126031]</color>，召唤<color=#FFFFFFFF>$[C126032]</color>。",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_GEO",
+                "C126031": {
+                    "Name": "黄金侵蚀",
+                    "Desc": "<color=#FFFFFFFF>结束阶段：</color>如果所附属角色位于后台，则此效果每有1次$[K3]，就对所附属角色造成1点$[K5]。\\n<color=#FFFFFFFF>$[K3]：1</color>（可叠加，最多叠加到3次）",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>可用次数</color>",
+                            "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                        },
+                        "K5": {
+                            "Name": "<color=#FFFFFFFF>穿透伤害</color>",
+                            "Desc": "穿透伤害无法受到伤害加成，但是也无法被护盾、伤害免疫等效果抵消。"
+                        }
+                    }
+                },
+                "C126032": {
+                    "Name": "兽境犬首",
+                    "Desc": "<color=#FFFFFFFF>结束阶段：</color>造成1点$[K106]，使敌方出战角色附属<color=#FFFFFFFF>$[C126031]</color>。",
+                    "Child": {
+                        "K106": {
+                            "Name": "{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素伤害</color>",
+                            "Desc": "和已附着的元素发生元素反应：\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2101}<color=#FFFFFFFF>结晶（冰）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2102}<color=#FFFFFFFF>结晶（水）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2103}<color=#FFFFFFFF>结晶（火）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2104}<color=#FFFFFFFF>结晶（雷）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 3
+            }
+        },
+        "26033": {
+            "Name": "黄金侵绞",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，对所有敌方后台角色造成1点$[K5]，并使所有敌方角色附属<color=#FFFFFFFF>$[C126031]</color>。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_GEO",
+                "K5": {
+                    "Name": "<color=#FFFFFFFF>穿透伤害</color>",
+                    "Desc": "穿透伤害无法受到伤害加成，但是也无法被护盾、伤害免疫等效果抵消。"
+                },
+                "C126031": {
+                    "Name": "黄金侵蚀",
+                    "Desc": "<color=#FFFFFFFF>结束阶段：</color>如果所附属角色位于后台，则此效果每有1次$[K3]，就对所附属角色造成1点$[K5]。\\n<color=#FFFFFFFF>$[K3]：1</color>（可叠加，最多叠加到3次）",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>可用次数</color>",
+                            "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                        },
+                        "K5": {
+                            "Name": "<color=#FFFFFFFF>穿透伤害</color>",
+                            "Desc": "穿透伤害无法受到伤害加成，但是也无法被护盾、伤害免疫等效果抵消。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 226031
+}

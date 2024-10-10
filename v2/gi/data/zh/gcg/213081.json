@@ -1,0 +1,42 @@
+{
+    "Type": "Action",
+    "Name": "最终解释权",
+    "Title": "烟绯·最终解释权",
+    "Desc": "「在打牌这方面，自然是…律无禁止即可为呀。」",
+    "Source": "在猫尾酒馆中邀请烟绯进行对局，完成相应挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Constellation_Feiyan",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PYRO",
+            "count": 1
+        },
+        {
+            "costType": "GCG_COST_DICE_VOID",
+            "count": 2
+        }
+    ],
+    "Tag": [
+        "天赋",
+        "战斗行动"
+    ],
+    "Talent": {
+        "Name": "最终解释权",
+        "Desc": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1308]</color>时，装备此牌。\\n$[A1308]装备此牌后，立刻使用一次<color=#FFD780FF>$[S13081]</color>。\\n装备有此牌的$[A1308]进行$[K51]时：对生命值不多于6的敌人造成的伤害+1；如果触发了$[K1010]，则在技能结算后抓1张牌。\\n（牌组中包含$[A1308]，才能加入牌组）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>战斗行动</color>",
+                "Desc": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+            },
+            "A1308": "最终解释权",
+            "S13081": "S13081",
+            "K51": {
+                "Name": "<color=#FFFFFFFF>重击</color>",
+                "Desc": "我方行动开始前，如果元素骰总数为偶数，则进行的「普通攻击」将被视为「重击」。"
+            },
+            "K1010": {
+                "Name": "<color=#FFFFFFFF>丹火印</color>",
+                "Desc": "<color=#FFFFFFFF>角色进行<color=#FFFFFFFF>重击</color>时：</color>造成的伤害+2。\\n<color=#FFFFFFFF><color=#FFFFFFFF>可用次数</color>：1</color>（可叠加，最多叠加到2次）"
+            }
+        }
+    }
+}

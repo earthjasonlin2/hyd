@@ -1,0 +1,33 @@
+{
+    "Type": "Action",
+    "Name": "尖兵协同战法",
+    "Title": "夏沃蕾·尖兵协同战法",
+    "Desc": "「特巡队专门应对各类危急凶案和恶劣罪犯，所以，我们在执法时会相对…强硬一些。」",
+    "Source": "在猫尾酒馆中邀请夏沃蕾进行对局，完成相应挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Chevreuse",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PYRO",
+            "count": 2
+        },
+        {}
+    ],
+    "Tag": [
+        "天赋"
+    ],
+    "Talent": {
+        "Name": "尖兵协同战法",
+        "Desc": "<color=#FFFFFFFF>队伍中包含<color=#FF9999FF>{SPRITE_PRESET#2103}火元素角色</color>和<color=#FFACFFFF>{SPRITE_PRESET#2104}雷元素角色</color>且不包含其他元素的角色，才能打出：</color>将此牌装备给<color=#FFFFFFFF>$[A1313]</color>。\\n装备有此牌的<color=#FFFFFFFF>$[A1313]</color>在场，敌方角色受到超载反应伤害后：我方接下来造成的2次$[K103]或$[K104]+1。（包括扩散反应造成的$[K103]或$[K104]）\\n（牌组中包含$[A1313]，才能加入牌组）",
+        "Child": {
+            "A1313": "尖兵协同战法",
+            "K103": {
+                "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>火元素伤害</color>",
+                "Desc": "附着{SPRITE_PRESET#2103}火元素，可发生元素反应：\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>融化</color>：本伤害+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>蒸发</color>：本伤害+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>超载</color>：本伤害+2，目标强制切换到下一个角色\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>燃烧</color>：本伤害+1，生成回合结束时造成1点火元素伤害的[<color=#FFFFFFFF>燃烧烈焰</color>]（可用次数1，最多叠加到2）"
+            },
+            "K104": {
+                "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素伤害</color>",
+                "Desc": "附着{SPRITE_PRESET#2104}雷元素，可发生元素反应：\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>超载</color>：本伤害+2，目标强制切换到下一个角色\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>超导</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>感电</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>原激化</color>：本伤害+1，生成使下2次草元素或雷元素伤害+1的[<color=#FFFFFFFF>激化领域</color>]"
+            }
+        }
+    }
+}

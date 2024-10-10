@@ -1,0 +1,31 @@
+{
+    "Type": "Action",
+    "Name": "流火焼灼",
+    "Title": "ディルック·流火焼灼",
+    "Desc": "膠着状態を解決してくれる簡単な手段の一つ。",
+    "Source": "キャッツテールでディルックを招待して対戦し、対応する挑戦目標をクリアすることで獲得",
+    "Icon": "UI_Gcg_CardFace_Modify_Constellation_Diluc",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PYRO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "天賦",
+        "戦闘アクション"
+    ],
+    "Talent": {
+        "Name": "流火焼灼",
+        "Desc": "$[K1]：味方の出撃キャラが<color=#FFFFFFFF>$[A1301]</color>の時、このカードを装備できる。\\n$[A1301]がこのカードを装備した後、直ちに<color=#FFD780FF>$[S13012]</color>を1回発動する。\\nこのカードを装備した$[A1301]が各ラウンドで2回目と3回目に<color=#FFFFFFFF>$[S13012]</color>を発動する時、必要な{SPRITE_PRESET#1103}<color=#FF9999FF>炎元素</color>-1。\\n（このカードはデッキに$[A1301]が含まれている場合のみ、デッキに追加できる）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>戦闘アクション</color>",
+                "Desc": "味方が戦闘アクションを1回行った後、相手のターンに移ります。\\n<color=#FFFFFFFF>このようなルールを持つ手札を出すのはクイックアクションではなく、戦闘アクションと見なされます。</color>"
+            },
+            "A1301": "流火焼灼",
+            "S13012": "S13012"
+        }
+    }
+}

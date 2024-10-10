@@ -1,0 +1,92 @@
+{
+    "Type": "Character",
+    "Name": "九条裟羅",
+    "Title": "黒羽鳴鏑·九条裟羅",
+    "Desc": "「これぞ、大義のため。」",
+    "Source": "キャッツテールで九条裟羅を招待し、友好対戦に勝利することで獲得",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Sara",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "雷元素",
+        "弓",
+        "稲妻"
+    ],
+    "Talent": {
+        "14061": {
+            "Name": "天狗伝弓術",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "14062": {
+            "Name": "烏天狗雷霆召呪",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、<color=#FFFFFFFF>$[C114061]</color>を召喚する。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO",
+                "D__KEY__DAMAGE": 1,
+                "C114061": {
+                    "Name": "天狗呪雷·伏",
+                    "Desc": "<color=#FFFFFFFF>エンドフェーズ：</color>$[K104]を1与え、味方の出撃キャラに$[K1003]を付与する。\\n<color=#FFFFFFFF>$[K3]：1</color>",
+                    "Child": {
+                        "K104": {
+                            "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素ダメージ</color>",
+                            "Desc": "{SPRITE_PRESET#2104}雷元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>過負荷</color>：ダメージ+2、目標を強制的に次のキャラにチェンジさせる\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>超電導</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>感電</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>原激化</color>：ダメージ+1、次の草元素または雷元素ダメージを2回まで+1できる「<color=#FFFFFFFF>激化領域</color>」を生成する"
+                        },
+                        "K1003": {
+                            "Name": "<color=#FFFFFFFF>鳴煌護持</color>",
+                            "Desc": "付与されたキャラの<color=#FFFFFFFF>元素スキル</color>および<color=#FFFFFFFF>元素爆発</color>の与えるダメージ+1。\\n<color=#FFFFFFFF>使用可能回数：2</color>"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                            "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 3
+            }
+        },
+        "14063": {
+            "Name": "煌煌千道鎮式",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、<color=#FFFFFFFF>$[C114062]</color>を召喚する。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO",
+                "D__KEY__DAMAGE": 1,
+                "C114062": {
+                    "Name": "天狗呪雷·雷礫",
+                    "Desc": "<color=#FFFFFFFF>エンドフェーズ：</color>$[K104]を2与え、味方の出撃キャラに$[K1003]を付与する。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+                    "Child": {
+                        "K104": {
+                            "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素ダメージ</color>",
+                            "Desc": "{SPRITE_PRESET#2104}雷元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>過負荷</color>：ダメージ+2、目標を強制的に次のキャラにチェンジさせる\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>超電導</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>感電</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>原激化</color>：ダメージ+1、次の草元素または雷元素ダメージを2回まで+1できる「<color=#FFFFFFFF>激化領域</color>」を生成する"
+                        },
+                        "K1003": {
+                            "Name": "<color=#FFFFFFFF>鳴煌護持</color>",
+                            "Desc": "付与されたキャラの<color=#FFFFFFFF>元素スキル</color>および<color=#FFFFFFFF>元素爆発</color>の与えるダメージ+1。\\n<color=#FFFFFFFF>使用可能回数：2</color>"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                            "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 4,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 214061
+}

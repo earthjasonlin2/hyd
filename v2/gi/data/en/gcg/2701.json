@@ -1,0 +1,74 @@
+{
+    "Type": "Character",
+    "Name": "Jadeplume Terrorshroom",
+    "Title": "\"Lord of Fungi\" Jadeplume Terrorshroom",
+    "Desc": "If you keep silent and listen closely, you can hear the sound of the ruler of the Shroom-Kin inspecting its territory...",
+    "Source": "Reward for accepting the Tavern Challenge at The Cat's Tail and claiming victory in a Friendly Fracas with Jadeplume Terrorshroom",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_Fungusgrass",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "Dendro",
+        "Other Weapons",
+        "Monster"
+    ],
+    "Talent": {
+        "27011": {
+            "Name": "Majestic Dance",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "27012": {
+            "Name": "Volatile Spore Cloud",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_DENDRO"
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 3
+            }
+        },
+        "27013": {
+            "Name": "Feather Spreading",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], then consumes all <color=#FFFFFFFF>$[C127011]</color> stacks. For each stack consumed, this instance deals +1 DMG.",
+            "Child": {
+                "D__KEY__DAMAGE": 4,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_DENDRO",
+                "C127011": {
+                    "Name": "Radical Vitality",
+                    "Desc": "<color=#FFFFFFFF>After this character deals or takes Elemental DMG:</color> Gain 1 stack of <color=#FFFFFFFF>Radical Vitality</color>. (Max 3 stacks)\\n<color=#FFFFFFFF>End Phase:</color> If <color=#FFFFFFFF>Radical Vitality</color> stacks reach the maximum limit, they will be cleared and the character will lose all Energy.",
+                    "Child": {}
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "27014": {
+            "Name": "Radical Vitality",
+            "Desc": "(Passive) When the battle begins, this character gains <color=#FFFFFFFF>$[C127011]</color>.",
+            "Child": {
+                "C127011": {
+                    "Name": "Radical Vitality",
+                    "Desc": "<color=#FFFFFFFF>After this character deals or takes Elemental DMG:</color> Gain 1 stack of <color=#FFFFFFFF>Radical Vitality</color>. (Max 3 stacks)\\n<color=#FFFFFFFF>End Phase:</color> If <color=#FFFFFFFF>Radical Vitality</color> stacks reach the maximum limit, they will be cleared and the character will lose all Energy.",
+                    "Child": {}
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 227011
+}

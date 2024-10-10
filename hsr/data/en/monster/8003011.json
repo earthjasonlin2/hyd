@@ -1,0 +1,370 @@
+{
+    "Id": 8003011,
+    "Name": "Ice Out of Space (Bug)",
+    "Desc": "A false projection produced by compromised codes. The referent entity is an alien life form that was born out of the Fragmentum brought by a Stellaron and feeds on this world's energy. Its armor reflects the gloomy and profound starry sky.\\nIn combat, the Ice Out of Space (Bug) will freeze targets it touches and delay their actions.",
+    "MonsterCampID": null,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 1395,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/Monster_8003010.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "Elite",
+    "SpeedBase": 100,
+    "StanceBase": 360,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.20000000018626451,
+    "Child": [
+        {
+            "Id": 8003011,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Wind",
+                "Quantum"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 800301101,
+                    "SkillName": "Chilling Lament",
+                    "SkillDesc": "Deals minor Ice DMG to a single target. Deals extra Ice DMG to the target if the target is currently Frozen and this unit is in the Freezing Point state.",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 800301102,
+                    "SkillName": "Frosty Absorption",
+                    "SkillDesc": "Enters the Freezing Point state. Everwinter Rain can be used in subsequent attacks.",
+                    "DamageType": "Ice",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 800301103,
+                    "SkillName": "Everwinter Rain",
+                    "SkillDesc": "The ability will only be used when in the Freezing Point state. Casting the ability to deal Ice DMG to all targets, with a chance to Freeze the targets and delay their actions.",
+                    "DamageType": "Ice",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 800301104,
+                    "SkillName": "Chilling Lament",
+                    "SkillDesc": "Deals Ice DMG to a single target. There is a chance to Freeze the target if the user is in the Freezing Point state.",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 800301105,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "Ice",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 800301106,
+                    "SkillName": "Freeze Burst",
+                    "SkillDesc": "Deals Ice DMG to Frozen targets. This also removes their Frozen state and deals Ice DMG to their adjacent units.",
+                    "DamageType": "Ice",
+                    "SPHitBase": 15
+                }
+            ]
+        },
+        {
+            "Id": 800301101,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Wind",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 800301101,
+                    "SkillName": "Chilling Lament",
+                    "SkillDesc": "Deals minor Ice DMG to a single target. Deals extra Ice DMG to the target if the target is currently Frozen and this unit is in the Freezing Point state.",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 800301102,
+                    "SkillName": "Frosty Absorption",
+                    "SkillDesc": "Enters the Freezing Point state. Everwinter Rain can be used in subsequent attacks.",
+                    "DamageType": "Ice",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 800301103,
+                    "SkillName": "Everwinter Rain",
+                    "SkillDesc": "The ability will only be used when in the Freezing Point state. Casting the ability to deal Ice DMG to all targets, with a chance to Freeze the targets and delay their actions.",
+                    "DamageType": "Ice",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 800301104,
+                    "SkillName": "Chilling Lament",
+                    "SkillDesc": "Deals Ice DMG to a single target. There is a chance to Freeze the target if the user is in the Freezing Point state.",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 800301105,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "Ice",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 800301106,
+                    "SkillName": "Freeze Burst",
+                    "SkillDesc": "Deals Ice DMG to Frozen targets. This also removes their Frozen state and deals Ice DMG to their adjacent units.",
+                    "DamageType": "Ice",
+                    "SPHitBase": 15
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 8003011,
+            "AvatarExpReward": 150,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182007
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183004
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 8003011,
+            "WorldLevel": 1,
+            "AvatarExpReward": 200,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182007
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183004
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 8003011,
+            "WorldLevel": 2,
+            "AvatarExpReward": 250,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182007
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183004
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 8003011,
+            "WorldLevel": 3,
+            "AvatarExpReward": 300,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182007
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183004
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 8003011,
+            "WorldLevel": 4,
+            "AvatarExpReward": 350,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111003
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182007
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183004
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 8003011,
+            "WorldLevel": 5,
+            "AvatarExpReward": 400,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111003
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182007
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183004
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 8003011,
+            "WorldLevel": 6,
+            "AvatarExpReward": 400,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111003
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182007
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183004
+                }
+            ]
+        }
+    ]
+}

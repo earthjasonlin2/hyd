@@ -1,0 +1,849 @@
+{
+    "Leyline": {
+        "90": {
+            "Icon": "UI_TowerBlessing_80",
+            "Name": "迸発の月",
+            "Desc": "キャラクターが岩元素創造物を創造する時、キャラクターの位置に<color=#F39000FF>衝撃波を発生</color>させ、近くの敵に確定ダメージを与える。この衝撃波は6秒毎に1回のみ発動可能。"
+        },
+        "91": {
+            "Icon": "UI_TowerBlessing_81",
+            "Name": "礫石の月",
+            "Desc": "キャラクターが敵に岩元素ダメージを与えた時、そのキャラクターに対してカウントが行われる（このカウントは0.1秒毎に1回まで）。カウントが3になると、該当キャラクターに礫石の印が付与される。礫石の印：該当キャラクターは<color=#F39000FF>岩元素ダメージ+50%</color>、継続時間10秒。"
+        },
+        "92": {
+            "Icon": "UI_TowerBlessing_56",
+            "Name": "矢風の月",
+            "Desc": "キャラクターが拡散反応を引き起こすと、チーム全員の<color=#F39000FF>通常攻撃、重撃、落下攻撃のダメージ+20%</color>、継続時間10秒、0.1秒毎に1回のみ発動でき、最大3層まで重ね掛け可能。継続時間は層ごとに独立してカウントされる。"
+        }
+    },
+    "Floor": {
+        "9": {
+            "Open": "2024-03-16 04:00:00",
+            "Close": "2024-05-01 03:59:59",
+            "Buff": [
+                "キャラクターが蒸発反応を起こした後の5秒間、該当キャラクターの蒸発反応によるダメージ+50%。"
+            ],
+            "Room": {
+                "1": {
+                    "Level": 72,
+                    "Cond": [
+                        [
+                            2,
+                            60
+                        ],
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 25010301,
+                            "Hp": 44177.68805314549,
+                            "Name": "宝盗団·炎の薬剤師",
+                            "Icon": "UI_MonsterIcon_Thoarder_Male_Chemist_Fire_01"
+                        },
+                        {
+                            "Id": 25010401,
+                            "Hp": 44177.68805314549,
+                            "Name": "宝盗団·水の薬剤師",
+                            "Icon": "UI_MonsterIcon_Thoarder_Male_Chemist_Water_01"
+                        },
+                        {
+                            "Id": 24060101,
+                            "Hp": 51148.66780006554,
+                            "Name": "マシナリー·偵察記録型·ウーシア",
+                            "Icon": "UI_MonsterIcon_MachinaIustitia_Sentry"
+                        },
+                        {
+                            "Id": 25080101,
+                            "Hp": 63935.833627916814,
+                            "Name": "野伏·陣刀番",
+                            "Icon": "UI_MonsterIcon_Samurai_Ronin_01"
+                        },
+                        {
+                            "Id": 25080201,
+                            "Hp": 63935.833627916814,
+                            "Name": "野伏·火付番",
+                            "Icon": "UI_MonsterIcon_Samurai_Ronin_02"
+                        },
+                        {
+                            "Id": 25080301,
+                            "Hp": 63935.833627916814,
+                            "Name": "野伏·機巧番",
+                            "Icon": "UI_MonsterIcon_Samurai_Ronin_03"
+                        },
+                        {
+                            "Id": 24060401,
+                            "Hp": 63935.833627916814,
+                            "Name": "マシナリー·地質探知型·ウーシア",
+                            "Icon": "UI_MonsterIcon_MachinaIustitia_Probe"
+                        },
+                        {
+                            "Id": 24060201,
+                            "Hp": 57542.25295832149,
+                            "Name": "マシナリー·演算力増幅器·ウーシア",
+                            "Icon": "UI_MonsterIcon_MachinaIustitia_Pylon"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 25080201,
+                            "Hp": 63935.833627916814,
+                            "Name": "野伏·火付番",
+                            "Icon": "UI_MonsterIcon_Samurai_Ronin_02"
+                        },
+                        {
+                            "Id": 25080301,
+                            "Hp": 63935.833627916814,
+                            "Name": "野伏·機巧番",
+                            "Icon": "UI_MonsterIcon_Samurai_Ronin_03"
+                        },
+                        {
+                            "Id": 24065701,
+                            "Hp": 76723.00394442874,
+                            "Name": "マシナリー·機敏採集型·プネウマ",
+                            "Icon": "UI_MonsterIcon_MachinaIustitia_Assimilator"
+                        },
+                        {
+                            "Id": 24065801,
+                            "Hp": 153446.00788885725,
+                            "Name": "攻堅特化型マシナリー·プネウマ",
+                            "Icon": "UI_MonsterIcon_MachinaIustitia_Ruggiero_01"
+                        },
+                        {
+                            "Id": 24065201,
+                            "Hp": 57542.25295832149,
+                            "Name": "マシナリー·演算力増幅器·プネウマ",
+                            "Icon": "UI_MonsterIcon_MachinaIustitia_Pylon"
+                        },
+                        {
+                            "Id": 25010501,
+                            "Hp": 44177.68805314549,
+                            "Name": "宝盗団·雷の薬剤師",
+                            "Icon": "UI_MonsterIcon_Thoarder_Male_Chemist_Electric_01"
+                        }
+                    ]
+                },
+                "2": {
+                    "Level": 74,
+                    "Cond": [
+                        [
+                            2,
+                            60
+                        ],
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 20050201,
+                            "Hp": 46413.81076335902,
+                            "Name": "幻形イノシシ·水",
+                            "Icon": "UI_MonsterIcon_Oceanid_Underling"
+                        },
+                        {
+                            "Id": 20011101,
+                            "Hp": 58017.262435913035,
+                            "Name": "大型水スライム",
+                            "Icon": "UI_MonsterIcon_Slime_Water_03"
+                        },
+                        {
+                            "Id": 20010901,
+                            "Hp": 58017.262435913035,
+                            "Name": "大型氷スライム",
+                            "Icon": "UI_MonsterIcon_Slime_Ice_03"
+                        },
+                        {
+                            "Id": 26160202,
+                            "Hp": 90175.05266278976,
+                            "Name": "チェルビックアプリシア",
+                            "Icon": "UI_MonsterIcon_Aplysia_Mature"
+                        },
+                        {
+                            "Id": 24061001,
+                            "Hp": 180350.10532557953,
+                            "Name": "殲滅特化型マシナリー·ウーシア",
+                            "Icon": "UI_MonsterIcon_MachinaIustitia_Bradamante"
+                        },
+                        {
+                            "Id": 25010601,
+                            "Hp": 46413.81076335902,
+                            "Name": "宝盗団·氷の薬剤師",
+                            "Icon": "UI_MonsterIcon_Thoarder_Male_Chemist_Ice_01"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 20011301,
+                            "Hp": 58017.262435913035,
+                            "Name": "大型炎スライム",
+                            "Icon": "UI_MonsterIcon_Slime_Fire_03"
+                        },
+                        {
+                            "Id": 24066001,
+                            "Hp": 180350.10532557953,
+                            "Name": "殲滅特化型マシナリー·プネウマ",
+                            "Icon": "UI_MonsterIcon_MachinaIustitia_Bradamante"
+                        },
+                        {
+                            "Id": 25010301,
+                            "Hp": 46413.81076335902,
+                            "Name": "宝盗団·炎の薬剤師",
+                            "Icon": "UI_MonsterIcon_Thoarder_Male_Chemist_Fire_01"
+                        },
+                        {
+                            "Id": 26160102,
+                            "Hp": 90175.05266278976,
+                            "Name": "堅盾重甲ヤドカニ",
+                            "Icon": "UI_MonsterIcon_HermitCrab_Mature"
+                        }
+                    ]
+                },
+                "3": {
+                    "Level": 76,
+                    "Cond": [
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ],
+                        [
+                            2,
+                            420
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 21020201,
+                            "Hp": 91592.15712061155,
+                            "Name": "ヒルチャール暴徒·炎斧",
+                            "Icon": "UI_MonsterIcon_Brute_None_01"
+                        },
+                        {
+                            "Id": 21020701,
+                            "Hp": 91592.15712061155,
+                            "Name": "ヒルチャール暴徒·雷斧",
+                            "Icon": "UI_MonsterIcon_Brute_None_01"
+                        },
+                        {
+                            "Id": 23050101,
+                            "Hp": 231408.11652709552,
+                            "Name": "ファデュイ·ミラーメイデン",
+                            "Icon": "UI_MonsterIcon_Fatuus_Maiden_Water"
+                        },
+                        {
+                            "Id": 24060901,
+                            "Hp": 154272.07768473044,
+                            "Name": "制圧特化型マシナリー·ウーシア",
+                            "Icon": "UI_MonsterIcon_MachinaIustitia_Ruggiero_02"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 23020101,
+                            "Hp": 152653.59520101917,
+                            "Name": "ファデュイ·デットエージェント·炎",
+                            "Icon": "UI_MonsterIcon_Fatuus_Fire_01"
+                        },
+                        {
+                            "Id": 24066001,
+                            "Hp": 200553.71398708585,
+                            "Name": "殲滅特化型マシナリー·プネウマ",
+                            "Icon": "UI_MonsterIcon_MachinaIustitia_Bradamante"
+                        }
+                    ]
+                }
+            }
+        },
+        "10": {
+            "Open": "2024-03-16 04:00:00",
+            "Close": "2024-05-01 03:59:59",
+            "Buff": [
+                "キャラクターが水元素付着状態の敵に与えるダメージ+50%。"
+            ],
+            "Room": {
+                "1": {
+                    "Level": 80,
+                    "Cond": [
+                        [
+                            2,
+                            60
+                        ],
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 23010601,
+                            "Hp": 111394.36524301399,
+                            "Name": "ファデュイ先遣隊·遊撃兵·炎銃",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Standard_Rifle_Fire_01"
+                        },
+                        {
+                            "Id": 24060701,
+                            "Hp": 113455.76703900858,
+                            "Name": "マシナリー·機敏採集型·ウーシア",
+                            "Icon": "UI_MonsterIcon_MachinaIustitia_Assimilator"
+                        },
+                        {
+                            "Id": 25030201,
+                            "Hp": 74262.91016200923,
+                            "Name": "宝盗団·盗掘者",
+                            "Icon": "UI_MonsterIcon_Thoarder_Male_Rogue_Fat_02"
+                        },
+                        {
+                            "Id": 25030301,
+                            "Hp": 74262.91016200923,
+                            "Name": "宝盗団·海の男児",
+                            "Icon": "UI_MonsterIcon_Thoarder_Male_Sailor_01"
+                        },
+                        {
+                            "Id": 25010701,
+                            "Hp": 74262.91016200923,
+                            "Name": "宝盗団·雑夫",
+                            "Icon": "UI_MonsterIcon_Thoarder_Male_Rogue_Fat_01"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 24066201,
+                            "Hp": 330912.63837580365,
+                            "Name": "建造特化型マシナリー·プネウマ",
+                            "Icon": "UI_MonsterIcon_MachinaIustitia_Excavator"
+                        },
+                        {
+                            "Id": 24065401,
+                            "Hp": 94546.46810737244,
+                            "Name": "マシナリー·地質探知型·プネウマ",
+                            "Icon": "UI_MonsterIcon_MachinaIustitia_Probe"
+                        }
+                    ]
+                },
+                "2": {
+                    "Level": 82,
+                    "Cond": [
+                        [
+                            2,
+                            60
+                        ],
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 20060601,
+                            "Hp": 83742.92364343292,
+                            "Name": "炎フライム",
+                            "Icon": "UI_MonsterIcon_Sylph_Fire_01"
+                        },
+                        {
+                            "Id": 20060701,
+                            "Hp": 83742.92364343292,
+                            "Name": "草フライム",
+                            "Icon": "UI_MonsterIcon_Sylph_Grass_01"
+                        },
+                        {
+                            "Id": 20060501,
+                            "Hp": 83742.92364343292,
+                            "Name": "雷フライム",
+                            "Icon": "UI_MonsterIcon_Sylph_Electric_01"
+                        },
+                        {
+                            "Id": 26120101,
+                            "Hp": 104678.65271703144,
+                            "Name": "パタパタ草マッシュロン",
+                            "Icon": "UI_MonsterIcon_Fungus_Amanita_Unu_Anudatta_Grass"
+                        },
+                        {
+                            "Id": 26120201,
+                            "Hp": 146550.11086422848,
+                            "Name": "パタパタ氷マッシュロン",
+                            "Icon": "UI_MonsterIcon_Fungus_Amanita_Unu_Svarita_Ice"
+                        },
+                        {
+                            "Id": 26120301,
+                            "Hp": 104678.65271703144,
+                            "Name": "トコトコ水マッシュロン",
+                            "Icon": "UI_MonsterIcon_Fungus_Amanita_Du_Anudatta_Water"
+                        },
+                        {
+                            "Id": 26120401,
+                            "Hp": 146550.11086422848,
+                            "Name": "トコトコ岩マッシュロン",
+                            "Icon": "UI_MonsterIcon_Fungus_Amanita_Du_Udatta_Rock"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 26051001,
+                            "Hp": 209357.30543406328,
+                            "Name": "アビサルヴィシャップの幼体·噛氷",
+                            "Icon": "UI_MonsterIcon_Drake_Deepsea_Ice"
+                        },
+                        {
+                            "Id": 26051101,
+                            "Hp": 209357.30543406328,
+                            "Name": "アビサルヴィシャップの幼体·吞雷",
+                            "Icon": "UI_MonsterIcon_Drake_Deepsea_Electric"
+                        },
+                        {
+                            "Id": 26050601,
+                            "Hp": 418714.61086812615,
+                            "Name": "アビサルヴィシャップ·原種",
+                            "Icon": "UI_MonsterIcon_Drake_Deepsea_Water"
+                        }
+                    ]
+                },
+                "3": {
+                    "Level": 85,
+                    "Cond": [
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ],
+                        [
+                            2,
+                            420
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 25410101,
+                            "Hp": 301981.53146825725,
+                            "Name": "エルマイト旅団·ストーンエンチャンター",
+                            "Icon": "UI_MonsterIcon_Eremite_Male_Strong_Katar"
+                        },
+                        {
+                            "Id": 25310201,
+                            "Hp": 217426.71283354243,
+                            "Name": "エルマイト旅団·サンフロスト",
+                            "Icon": "UI_MonsterIcon_Eremite_Male_Standard_Glaive"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 24010301,
+                            "Hp": 367638.4671357126,
+                            "Name": "遺跡重機",
+                            "Icon": "UI_MonsterIcon_Konungmathr"
+                        }
+                    ]
+                }
+            }
+        },
+        "11": {
+            "Open": "2024-03-16 04:00:00",
+            "Close": "2024-05-01 03:59:59",
+            "Buff": [
+                "チーム全員の岩元素ダメージ+75%。"
+            ],
+            "Room": {
+                "1": {
+                    "Level": 88,
+                    "Cond": [
+                        [
+                            2,
+                            60
+                        ],
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 21011201,
+                            "Hp": 43436.44065321621,
+                            "Name": "ヒルチャール·岩盾",
+                            "Icon": "UI_MonsterIcon_Hili_None_01"
+                        },
+                        {
+                            "Id": 21020301,
+                            "Hp": 130309.32195964832,
+                            "Name": "ヒルチャール暴徒·岩盾",
+                            "Icon": "UI_MonsterIcon_Brute_None_01"
+                        },
+                        {
+                            "Id": 21010501,
+                            "Hp": 34749.153132470055,
+                            "Name": "ヒルチャール·炎矢",
+                            "Icon": "UI_MonsterIcon_Hili_Fire_Range"
+                        },
+                        {
+                            "Id": 21010901,
+                            "Hp": 34749.153132470055,
+                            "Name": "ヒルチャール·氷矢",
+                            "Icon": "UI_MonsterIcon_Hili_Ice_Range"
+                        },
+                        {
+                            "Id": 21030401,
+                            "Hp": 43436.44065321621,
+                            "Name": "ヒルチャールシャーマン·岩",
+                            "Icon": "UI_MonsterIcon_Shaman_Rock_01"
+                        },
+                        {
+                            "Id": 21011001,
+                            "Hp": 34749.153132470055,
+                            "Name": "ヒルチャール·雷矢",
+                            "Icon": "UI_MonsterIcon_Hili_Electric_Range"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 26120101,
+                            "Hp": 136387.588057503,
+                            "Name": "パタパタ草マッシュロン",
+                            "Icon": "UI_MonsterIcon_Fungus_Amanita_Unu_Anudatta_Grass"
+                        },
+                        {
+                            "Id": 26120201,
+                            "Hp": 190942.61945042934,
+                            "Name": "パタパタ氷マッシュロン",
+                            "Icon": "UI_MonsterIcon_Fungus_Amanita_Unu_Svarita_Ice"
+                        },
+                        {
+                            "Id": 26120301,
+                            "Hp": 136387.588057503,
+                            "Name": "トコトコ水マッシュロン",
+                            "Icon": "UI_MonsterIcon_Fungus_Amanita_Du_Anudatta_Water"
+                        },
+                        {
+                            "Id": 26120401,
+                            "Hp": 190942.61945042934,
+                            "Name": "トコトコ岩マッシュロン",
+                            "Icon": "UI_MonsterIcon_Fungus_Amanita_Du_Udatta_Rock"
+                        },
+                        {
+                            "Id": 26160102,
+                            "Hp": 177303.8759649786,
+                            "Name": "堅盾重甲ヤドカニ",
+                            "Icon": "UI_MonsterIcon_HermitCrab_Mature"
+                        },
+                        {
+                            "Id": 26160202,
+                            "Hp": 177303.8759649786,
+                            "Name": "チェルビックアプリシア",
+                            "Icon": "UI_MonsterIcon_Aplysia_Mature"
+                        },
+                        {
+                            "Id": 26160302,
+                            "Hp": 177303.8759649786,
+                            "Name": "アワアワタツノコ·オス",
+                            "Icon": "UI_MonsterIcon_SeaHorse_Mature"
+                        }
+                    ]
+                },
+                "2": {
+                    "Level": 90,
+                    "Cond": [
+                        [
+                            2,
+                            60
+                        ],
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 26190201,
+                            "Hp": 311642.4191330652,
+                            "Name": "玄文獣",
+                            "Icon": "UI_MonsterIcon_Striped"
+                        },
+                        {
+                            "Id": 24065801,
+                            "Hp": 356162.7766304835,
+                            "Name": "攻堅特化型マシナリー·プネウマ",
+                            "Icon": "UI_MonsterIcon_MachinaIustitia_Ruggiero_01"
+                        },
+                        {
+                            "Id": 24066001,
+                            "Hp": 385843.01496209553,
+                            "Name": "殲滅特化型マシナリー·プネウマ",
+                            "Icon": "UI_MonsterIcon_MachinaIustitia_Bradamante"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 26100201,
+                            "Hp": 519404.0249427033,
+                            "Name": "聖骸牙獣",
+                            "Icon": "UI_MonsterIcon_Panther_Sacred_Grass"
+                        },
+                        {
+                            "Id": 26100301,
+                            "Hp": 519404.0249427033,
+                            "Name": "聖骸赤鷲",
+                            "Icon": "UI_MonsterIcon_Vulture_Sacred_Fire"
+                        }
+                    ]
+                },
+                "3": {
+                    "Level": 92,
+                    "Cond": [
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ],
+                        [
+                            2,
+                            420
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 20051401,
+                            "Hp": 1163832.6779647542,
+                            "Name": "百戦錬磨の濁水粉砕の幻霊",
+                            "Icon": "UI_MonsterIcon_Necalevia_Normal"
+                        },
+                        {
+                            "Id": 20051501,
+                            "Hp": 1039477.9537152125,
+                            "Name": "百戦錬磨の濁水噴出の幻霊",
+                            "Icon": "UI_MonsterIcon_Necalevia_Big"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 24061201,
+                            "Hp": 558001.9517146421,
+                            "Name": "建造特化型マシナリー·ウーシア",
+                            "Icon": "UI_MonsterIcon_MachinaIustitia_Excavator"
+                        },
+                        {
+                            "Id": 24060201,
+                            "Hp": 143486.22287089474,
+                            "Name": "マシナリー·演算力増幅器·ウーシア",
+                            "Icon": "UI_MonsterIcon_MachinaIustitia_Pylon"
+                        }
+                    ]
+                }
+            }
+        },
+        "12": {
+            "Open": "2024-03-16 04:00:00",
+            "Close": "2024-05-01 03:59:59",
+            "Buff": [
+                "この層のみ、地脈の流れに乱れがない。"
+            ],
+            "Room": {
+                "1": {
+                    "Level": 95,
+                    "Cond": [
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ],
+                        [
+                            2,
+                            420
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 23060302,
+                            "Hp": 1499145.8456398735,
+                            "Name": "百戦錬磨のファデュイ·氷霜の従者",
+                            "Icon": "UI_MonsterIcon_Fatuus_Escadron_Ice"
+                        },
+                        {
+                            "Id": 23060402,
+                            "Hp": 1421917.1102071365,
+                            "Name": "百戦錬磨のファデュイ·烈風の従者",
+                            "Icon": "UI_MonsterIcon_Fatuus_Escadron_Wind"
+                        },
+                        {
+                            "Id": 22110301,
+                            "Hp": 954001.8495814453,
+                            "Name": "大型狂蔓ブリーチャープリムス",
+                            "Icon": "UI_MonsterIcon_Ovacua_Chaos_01"
+                        },
+                        {
+                            "Id": 22010101,
+                            "Hp": 138744.18979475263,
+                            "Name": "アビスの魔術師·炎",
+                            "Icon": "UI_MonsterIcon_Abyss_Fire_01"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 26110101,
+                            "Hp": 1590003.0613734017,
+                            "Name": "マッシュラプトル",
+                            "Icon": "UI_MonsterIcon_Fungus_Raptor"
+                        }
+                    ]
+                },
+                "2": {
+                    "Level": 98,
+                    "Cond": [
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ],
+                        [
+                            2,
+                            420
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 20060601,
+                            "Hp": 206002.36624951917,
+                            "Name": "炎フライム",
+                            "Icon": "UI_MonsterIcon_Sylph_Fire_01"
+                        },
+                        {
+                            "Id": 20060501,
+                            "Hp": 206002.36624951917,
+                            "Name": "雷フライム",
+                            "Icon": "UI_MonsterIcon_Sylph_Electric_01"
+                        },
+                        {
+                            "Id": 20060701,
+                            "Hp": 206002.36624951917,
+                            "Name": "草フライム",
+                            "Icon": "UI_MonsterIcon_Sylph_Grass_01"
+                        },
+                        {
+                            "Id": 26010201,
+                            "Hp": 229936.73655504367,
+                            "Name": "トリックフラワー·炎",
+                            "Icon": "UI_MonsterIcon_Mimik_Fire"
+                        },
+                        {
+                            "Id": 22070201,
+                            "Hp": 772508.859877065,
+                            "Name": "シャドウハスク·破陣",
+                            "Icon": "UI_MonsterIcon_ForlornVessel_Strong_Lance_Water"
+                        },
+                        {
+                            "Id": 22070301,
+                            "Hp": 515005.90658471035,
+                            "Name": "シャドウハスク·守衛",
+                            "Icon": "UI_MonsterIcon_ForlornVessel_Strong_Chargebow_Ice"
+                        },
+                        {
+                            "Id": 22070101,
+                            "Hp": 643757.3832308872,
+                            "Name": "シャドウハスク·旗令",
+                            "Icon": "UI_MonsterIcon_ForlornVessel_Strong_Warbanner_Fire"
+                        },
+                        {
+                            "Id": 22080201,
+                            "Hp": 1030011.8131694198,
+                            "Name": "黒蛇騎士·砕岩の斧",
+                            "Icon": "UI_MonsterIcon_Darkwraith_Fat_Rock"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 24021101,
+                            "Hp": 2060023.6263388395,
+                            "Name": "恒常からくり陣形",
+                            "Icon": "UI_MonsterIcon_Apparatus_Perpetual"
+                        }
+                    ]
+                },
+                "3": {
+                    "Level": 100,
+                    "Cond": [
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ],
+                        [
+                            2,
+                            420
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 24070201,
+                            "Hp": 2079750.6797230334,
+                            "Name": "氷風組曲·コッペリアの葬送",
+                            "Icon": "UI_MonsterIcon_MachinaIustitia_Nutcracker"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 24061302,
+                            "Hp": 2107480.813381523,
+                            "Name": "百戦錬磨のマシナリー·演算力増幅器",
+                            "Icon": "UI_MonsterIcon_MachinaIustitia_Pylon"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

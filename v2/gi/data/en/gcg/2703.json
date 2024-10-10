@@ -1,0 +1,113 @@
+{
+    "Type": "Character",
+    "Name": "Eremite Floral Ring-Dancer",
+    "Title": "\"Whirling Memories\" Eremite Floral Ring-Dancer",
+    "Desc": "\"The children of the desert have a rich tradition of song and dance. Originally used to praise and serve the gods, the crafts were later adapted for battle and the seduction of kings.\"",
+    "Source": "Reward for accepting the Tavern Challenge at The Cat's Tail and claiming victory in a Friendly Fracas with the Eremite Floral Ring-Dancer",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_EremiteGrass",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "Dendro",
+        "Other Weapons",
+        "The Eremites"
+    ],
+    "Talent": {
+        "27031": {
+            "Name": "Floral-Ring Caress",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "27032": {
+            "Name": "Spiraling Whirl",
+            "Desc": "Deals $[D__KEY__DAMAGE_3] $[D__KEY__ELEMENT], creates 1 stack of <color=#FFFFFFFF>$[C127033]</color>.",
+            "Child": {
+                "D__KEY__DAMAGE_3": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_DENDRO",
+                "C127033": {
+                    "Name": "Spirit-Serpent's Blessing",
+                    "Desc": "<color=#FFFFFFFF>When your $[C127032] uses $[K58]:</color> The DMG dealt by this $[K58] +1, and does not consume $[K3] of $[C127032].\\n<color=#FFFFFFFF>$[K3]: 1</color> (Can stack, no limit)",
+                    "Child": {
+                        "C127032": {
+                            "Name": "Spirit of Omen: Dendro Spirit-Serpent",
+                            "Desc": "$[K58]: $[S1270321]\\n<color=#FFFFFFFF>$[K3]: 2</color>\\n(A character can only equip 1 {SPRITE_PRESET#3008}Technique at a time)",
+                            "Child": {
+                                "K58": {
+                                    "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#3008}Technique</color>",
+                                    "Desc": "When the active character is equipped with a {SPRITE_PRESET#3008}Technique card, they can use the corresponding {SPRITE_PRESET#3008}Technique.\\nUsing a {SPRITE_PRESET#3008} Technique counts as a Combat Action. If the character is unable to use Skills due to conditions like Frozen, Petrification, or Stun, they are also unable to use the {SPRITE_PRESET#3008}Technique.\\nUsing a {SPRITE_PRESET#3008}Technique is not considered as using a Skill. Therefore, it cannot trigger effects such as \"After using a skill\" or \"After the character triggers an Elemental Reaction.\" Damage dealt by using a {SPRITE_PRESET#3008}Technique is not considered Damage dealt by the character."
+                                },
+                                "S1270321": "S1270321",
+                                "K3": {
+                                    "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                                    "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                                }
+                            }
+                        },
+                        "K58": {
+                            "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#3008}Technique</color>",
+                            "Desc": "When the active character is equipped with a {SPRITE_PRESET#3008}Technique card, they can use the corresponding {SPRITE_PRESET#3008}Technique.\\nUsing a {SPRITE_PRESET#3008} Technique counts as a Combat Action. If the character is unable to use Skills due to conditions like Frozen, Petrification, or Stun, they are also unable to use the {SPRITE_PRESET#3008}Technique.\\nUsing a {SPRITE_PRESET#3008}Technique is not considered as using a Skill. Therefore, it cannot trigger effects such as \"After using a skill\" or \"After the character triggers an Elemental Reaction.\" Damage dealt by using a {SPRITE_PRESET#3008}Technique is not considered Damage dealt by the character."
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 3
+            }
+        },
+        "27033": {
+            "Name": "Spirit of Omen's Awakening: Dendro Spirit-Serpent",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. Once each Match, add 1 <color=#FFFFFFFF>$[C127032]</color> card to your Hand.\\n(Characters with <color=#FFFFFFFF>$[C127032]</color> equipped can use the Technique: <color=#FFFFFFFF>$[S1270321]</color>)",
+            "Child": {
+                "D__KEY__DAMAGE": 4,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_DENDRO",
+                "C127032": {
+                    "Name": "Spirit of Omen: Dendro Spirit-Serpent",
+                    "Desc": "$[K58]: $[S1270321]\\n<color=#FFFFFFFF>$[K3]: 2</color>\\n(A character can only equip 1 {SPRITE_PRESET#3008}Technique at a time)",
+                    "Child": {
+                        "K58": {
+                            "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#3008}Technique</color>",
+                            "Desc": "When the active character is equipped with a {SPRITE_PRESET#3008}Technique card, they can use the corresponding {SPRITE_PRESET#3008}Technique.\\nUsing a {SPRITE_PRESET#3008} Technique counts as a Combat Action. If the character is unable to use Skills due to conditions like Frozen, Petrification, or Stun, they are also unable to use the {SPRITE_PRESET#3008}Technique.\\nUsing a {SPRITE_PRESET#3008}Technique is not considered as using a Skill. Therefore, it cannot trigger effects such as \"After using a skill\" or \"After the character triggers an Elemental Reaction.\" Damage dealt by using a {SPRITE_PRESET#3008}Technique is not considered Damage dealt by the character."
+                        },
+                        "S1270321": "S1270321",
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        }
+                    }
+                },
+                "S1270321": "S1270321"
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "27034": {
+            "Name": "Spirit of Omen's Power",
+            "Desc": "(Passive) <color=#FFFFFFFF>After this character takes DMG:</color> If this character has no more than 7 HP, they gain 1 $[K310]. (Once per Round)",
+            "Child": {
+                "K310": {
+                    "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}Energy</color>",
+                    "Desc": "Characters must consume {SPRITE_PRESET#1110}Energy to use their Elemental Bursts.\\nWhen characters use an Elemental Skill or a Normal Attack, they will gain 1 {SPRITE_PRESET#1110}Energy."
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 227031
+}

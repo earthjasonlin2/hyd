@@ -1,0 +1,78 @@
+{
+    "Type": "Character",
+    "Name": "유라",
+    "Title": "물보라의 춤·유라",
+    "Desc": "그저 게임일 뿐이다. 이기든 지든 원한을 살 일은 없다",
+    "Source": "캣테일 술집에서 유라 초대 및 친선 대전 난이도 승리 후 획득",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Eula",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "얼음 원소",
+        "양손검",
+        "몬드"
+    ],
+    "Talent": {
+        "11061": {
+            "Name": "페보니우스 검술·왕실",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "11062": {
+            "Name": "얼음 파도의 와류",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 본 캐릭터에게 <color=#FFFFFFFF>$[C111061]</color>이 부착되지 않았을 경우 <color=#FFFFFFFF>$[C111061]</color>이 부착된다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "D__KEY__DAMAGE": 2,
+                "C111061": {
+                    "Name": "냉혹한 마음",
+                    "Desc": "<color=#FFFFFFFF>부착 캐릭터가 $[S11062] 사용 시:</color> 해당 상태를 제거하고 이번에 주는 피해+3pt",
+                    "Child": {
+                        "S11062": "S11062"
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3
+            }
+        },
+        "11063": {
+            "Name": "파도를 얼리는 광검",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[C111062]</color>을 소환한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "D__KEY__DAMAGE": 2,
+                "C111062": {
+                    "Name": "빛의 검",
+                    "Desc": "<color=#FFFFFFFF>$[A1106]가 「일반 공격」 또는 「원소전투 스킬」 사용 시:</color> 이 카드에 <color=#FFFFFFFF>「에너지 스택」</color>을 2pt 누적한다. 단, $[A1106]는 원소 에너지를 획득하지 않는다.\\n<color=#FFFFFFFF>종료 단계:</color> 이 카드를 버리고 $[K100]를 3pt 준다. <color=#FFFFFFFF>「에너지 스택」</color> 1pt마다 이번 피해+1pt\\n(이 카드 「$[K3]」에 영향을 주는 효과는 <color=#FFFFFFFF>「에너지 스택」</color>에 적용됨)",
+                    "Child": {
+                        "A1106": "유라",
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>",
+                            "Desc": "물리 피해는 원소를 부착할 수 없고, 원소 반응이 발생하지 않는다."
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 211061
+}

@@ -1,0 +1,104 @@
+{
+    "Type": "Character",
+    "Name": "감우",
+    "Title": "리월의 수호자·감우",
+    "Desc": "「내일 아침까지 필요한 거라면 밤을 새워서 완성하면 되겠네요」",
+    "Source": "캣테일 술집에서 감우 초대 및 친선 대전 난이도 승리 후 획득",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Ganyu",
+    "Hp": 10,
+    "Cost": 3,
+    "Tag": [
+        "얼음 원소",
+        "활",
+        "리월"
+    ],
+    "Talent": {
+        "11011": {
+            "Name": "유천 사격술",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "11012": {
+            "Name": "산과 강의 기린 흔적",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[C111012]</color>을 생성한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "D__KEY__DAMAGE": 1,
+                "C111012": {
+                    "Name": "얼음 연꽃",
+                    "Desc": "<color=#FFFFFFFF>아군 출전 캐릭터가 피해를 받을 시:</color> 피해를 1pt 상쇄한다.\\n<color=#FFFFFFFF>$[K3]: 2</color>",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3
+            }
+        },
+        "11013": {
+            "Name": "서리꽃 화살",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 적의 모든 대기 캐릭터에게 $[K5]를 2pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "D__KEY__DAMAGE": 2,
+                "K5": {
+                    "Name": "<color=#FFFFFFFF>관통 피해</color>",
+                    "Desc": "관통 피해는 피해 보너스를 획득할 수 없으나, 주는 피해가 보호막 또는 피해 면역과 같은 효과에 의해 상쇄되지 않는다."
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 5
+            }
+        },
+        "11014": {
+            "Name": "쏟아지는 천화",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 적의 모든 대기 캐릭터에게 $[K5]를 1pt 주며 <color=#FFFFFFFF>$[C111011]</color>를 소환한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "D__KEY__DAMAGE": 2,
+                "K5": {
+                    "Name": "<color=#FFFFFFFF>관통 피해</color>",
+                    "Desc": "관통 피해는 피해 보너스를 획득할 수 없으나, 주는 피해가 보호막 또는 피해 면역과 같은 효과에 의해 상쇄되지 않는다."
+                },
+                "C111011": {
+                    "Name": "빙령주",
+                    "Desc": "<color=#FFFFFFFF>종료 단계:</color> $[K101]를 1pt 주고 적의 모든 대기 캐릭터에게 $[K5]를 1pt 준다.\\n<color=#FFFFFFFF>$[K3]: 2</color>",
+                    "Child": {
+                        "K101": {
+                            "Name": "{SPRITE_PRESET#2101}<color=#99FFFFFF>얼음 원소 피해</color>",
+                            "Desc": "{SPRITE_PRESET#2101}얼음 원소 부착 시 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2103}<color=#FFFFFFFF>융해</color>: 이번 피해+2pt\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2104}<color=#FFFFFFFF>초전도</color>: 이번 피해+1pt, 대상 이외의 모든 상대 캐릭터에게 관통 피해를 1pt 준다.\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2102}<color=#FFFFFFFF>빙결</color>: 이번 피해+1pt, 이번 턴에 대상을 행동 불가로 만든다. (물리 피해 또는 불 원소 피해를 받으면 조기 해제되지만, 해당 피해로 받는 피해량이 2pt 추가된다)"
+                        },
+                        "K5": {
+                            "Name": "<color=#FFFFFFFF>관통 피해</color>",
+                            "Desc": "관통 피해는 피해 보너스를 획득할 수 없으나, 주는 피해가 보호막 또는 피해 면역과 같은 효과에 의해 상쇄되지 않는다."
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3,
+                "GCG_COST_ENERGY": 3
+            }
+        }
+    },
+    "Related": 211011
+}

@@ -1,0 +1,135 @@
+{
+    "Type": "Character",
+    "Name": "娜维娅",
+    "Title": "明花蔓舵·娜维娅",
+    "Desc": "《飞翔的黄玫瑰》。",
+    "Source": "在猫尾酒馆中邀请娜维娅进行对局，在友好对局难度中获得胜利后获取",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Navia",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "岩元素",
+        "双手剑",
+        "枫丹",
+        "始基力：荒性"
+    ],
+    "Talent": {
+        "16081": {
+            "Name": "直率的辞绝",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "16082": {
+            "Name": "典仪式晶火",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，本角色附属<color=#FFFFFFFF>$[C116084]</color>；从手牌中$[K56]至多5张<color=#FFFFFFFF>$[C116081]</color>，每$[K56]1张都使此伤害+1并抓1张牌。",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_GEO",
+                "C116084": {
+                    "Name": "岩元素附魔",
+                    "Desc": "所附属角色造成的$[K100]，变为$[K106]。\\n<color=#FFFFFFFF>$[K4]：2</color>",
+                    "Child": {
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>",
+                            "Desc": "物理伤害不会附着元素，也不会发生元素反应。"
+                        },
+                        "K106": {
+                            "Name": "{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素伤害</color>",
+                            "Desc": "和已附着的元素发生元素反应：\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2101}<color=#FFFFFFFF>结晶（冰）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2102}<color=#FFFFFFFF>结晶（水）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2103}<color=#FFFFFFFF>结晶（火）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2104}<color=#FFFFFFFF>结晶（雷）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。"
+                        },
+                        "K4": {
+                            "Name": "<color=#FFFFFFFF>持续回合</color>",
+                            "Desc": "每回合结束阶段，<color=#FFFFFFFF>持续回合</color>-1；\\n<color=#FFFFFFFF>持续回合</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                },
+                "K56": {
+                    "Name": "<color=#FFFFFFFF>舍弃</color>",
+                    "Desc": "通过行动牌或角色技能的效果，将行动牌从手牌或牌库中弃置。"
+                },
+                "C116081": {
+                    "Name": "裂晶弹片",
+                    "Desc": "对敌方「出战角色」造成1点$[K100]，抓1张牌。",
+                    "Child": {
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>",
+                            "Desc": "物理伤害不会附着元素，也不会发生元素反应。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 3
+            }
+        },
+        "16083": {
+            "Name": "如霰澄天的鸣礼",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，对所有敌方后台角色造成1点$[K5]。召唤<color=#FFFFFFFF>$[C116082]</color>，生成1张<color=#FFFFFFFF>$[C116081]</color>加入手牌。",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_GEO",
+                "K5": {
+                    "Name": "<color=#FFFFFFFF>穿透伤害</color>",
+                    "Desc": "穿透伤害无法受到伤害加成，但是也无法被护盾、伤害免疫等效果抵消。"
+                },
+                "C116082": {
+                    "Name": "金花礼炮",
+                    "Desc": "<color=#FFFFFFFF>结束阶段：</color>造成1点$[K106]，抓1张<color=#FFFFFFFF>$[C116081]</color>。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+                    "Child": {
+                        "K106": {
+                            "Name": "{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素伤害</color>",
+                            "Desc": "和已附着的元素发生元素反应：\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2101}<color=#FFFFFFFF>结晶（冰）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2102}<color=#FFFFFFFF>结晶（水）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2103}<color=#FFFFFFFF>结晶（火）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2104}<color=#FFFFFFFF>结晶（雷）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。"
+                        },
+                        "C116081": {
+                            "Name": "裂晶弹片",
+                            "Desc": "对敌方「出战角色」造成1点$[K100]，抓1张牌。",
+                            "Child": {
+                                "K100": {
+                                    "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>",
+                                    "Desc": "物理伤害不会附着元素，也不会发生元素反应。"
+                                }
+                            }
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>可用次数</color>",
+                            "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "16084": {
+            "Name": "互助关系网",
+            "Desc": "【被动】<color=#FFFFFFFF>敌方角色受到结晶反应伤害后：</color>生成3张<color=#FFFFFFFF>$[C116081]</color>，随机置入我方牌库中。",
+            "Child": {
+                "C116081": {
+                    "Name": "裂晶弹片",
+                    "Desc": "对敌方「出战角色」造成1点$[K100]，抓1张牌。",
+                    "Child": {
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>",
+                            "Desc": "物理伤害不会附着元素，也不会发生元素反应。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 216081
+}

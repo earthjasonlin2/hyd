@@ -1,0 +1,45 @@
+{
+    "Type": "Action",
+    "Name": "支援就交给我吧",
+    "Title": "诺艾尔·支援就交给我吧",
+    "Desc": "坚毅之心，才是最牢固的岩铠。",
+    "Source": "在猫尾酒馆中邀请诺艾尔进行对局，完成相应挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Constellation_Noel",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_GEO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "天赋",
+        "战斗行动"
+    ],
+    "Talent": {
+        "Name": "支援就交给我吧",
+        "Desc": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1602]</color>时，装备此牌。\\n$[A1602]装备此牌后，立刻使用一次<color=#FFD780FF>$[S16022]</color>。\\n$[A1602]<color=#FFFFFFFF>普通攻击</color>后：如果此牌和<color=#FFFFFFFF>$[C116021]</color>仍在场，则治疗我方所有角色1点。（每回合1次）\\n（牌组中包含$[A1602]，才能加入牌组）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>战斗行动</color>",
+                "Desc": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+            },
+            "A1602": "支援就交给我吧",
+            "S16022": "S16022",
+            "C116021": {
+                "Name": "护体岩铠",
+                "Desc": "为我方出战角色提供<color=#FFFFFFFF>2点$[K6]</color>。\\n此$[K6]耗尽前，我方受到的$[K100]减半。（向上取整）",
+                "Child": {
+                    "K6": {
+                        "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>护盾</color>",
+                        "Desc": "此护盾所保护的角色受到伤害时，将会消耗护盾来抵消伤害。"
+                    },
+                    "K100": {
+                        "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>",
+                        "Desc": "物理伤害不会附着元素，也不会发生元素反应。"
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,54 @@
+{
+    "Type": "Action",
+    "Name": "In Five Colors Dyed",
+    "Title": "Chiori: In Five Colors Dyed",
+    "Desc": "\"Scraps of color, scatter!\"",
+    "Source": "Reward for inviting Chiori to a duel at The Cat's Tail and achieving all corresponding challenge objectives",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Chiori",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_GEO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "Talent",
+        "Combat Action"
+    ],
+    "Talent": {
+        "Name": "In Five Colors Dyed",
+        "Desc": "$[K1]: When your active character is <color=#FFFFFFFF>$[A1609]</color>, equip this card.\\nAfter $[A1609] equips this card, immediately use <color=#FFD780FF>$[S16092]</color> once.\\nWhen your $[A1609], who has this equipped, uses <color=#FFFFFFFF>$[S16092]</color>: Summon 1 additional <color=#FFFFFFFF>$[C116094]</color>, and $[K59] 1 of 4 <color=#FFFFFFFF>$[C116097]</color> before also summoning it.\\n(You must have $[A1609] in your deck to add this card to your deck.)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+            },
+            "A1609": "In Five Colors Dyed",
+            "S16092": "S16092",
+            "C116094": {
+                "Name": "Tranquilly Taking Ten Tamoto",
+                "Desc": "<color=#FFFFFFFF>End Phase:</color> Deal 1 $[K106].\\n<color=#FFFFFFFF>$[K3]: 2</color>",
+                "Child": {
+                    "K106": {
+                        "Name": "{SPRITE_PRESET#2106}<color=#FFE699FF>Geo DMG</color>",
+                        "Desc": "Reacts with Elements if they are already applied:\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Cryo Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Hydro Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Pyro Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Electro Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)"
+                    },
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                        "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                    }
+                }
+            },
+            "K59": {
+                "Name": "<color=#FFFFFFFF>Select</color>",
+                "Desc": "Select 1 card from a specific number of cards and activate its effects."
+            },
+            "C116097": {
+                "Name": "Chiori's Automaton Dolls",
+                "Desc": "Varied humanoid automatons of Chiori's that can not only attack autonomously but also provide varied buffs.",
+                "Child": {}
+            }
+        }
+    }
+}

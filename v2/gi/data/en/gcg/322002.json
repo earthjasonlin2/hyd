@@ -1,0 +1,32 @@
+{
+    "Type": "Action",
+    "Name": "Katheryne",
+    "Title": "Katheryne, Guild Receptionist",
+    "Desc": "\"Ad astra abyssosque! Welcome to the Adventurers' Guild.\"",
+    "Source": "Reward for accepting Lan's Adventure Challenge in the open world and achieving all corresponding challenge objectives",
+    "Icon": "UI_Gcg_CardFace_Assist_NPC_Katheryne",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PAIMON",
+            "count": 1
+        },
+        {}
+    ],
+    "Tag": [
+        "Companion"
+    ],
+    "Talent": {
+        "Name": "Katheryne",
+        "Desc": "<color=#FFFFFFFF>When you perform \"Switch Character\":</color> This switch is considered a $[K2] instead of a $[K1]. (Once per Round)",
+        "Child": {
+            "K2": {
+                "Name": "<color=#FFFFFFFF>Fast Action</color>",
+                "Desc": "You can continue with other actions after conducting 1 Fast Action.\\nOnly after conducting 1 Combat Action will the turn pass over to your opponent."
+            },
+            "K1": {
+                "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+            }
+        }
+    }
+}

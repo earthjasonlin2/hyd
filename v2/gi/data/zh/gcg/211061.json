@@ -1,0 +1,50 @@
+{
+    "Type": "Action",
+    "Name": "战欲涌现",
+    "Title": "优菈·战欲涌现",
+    "Desc": "冰浪怒涛，断绝深仇。",
+    "Source": "在猫尾酒馆中邀请优菈进行对局，完成相应挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Eula",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_CRYO",
+            "count": 3
+        },
+        {
+            "costType": "GCG_COST_ENERGY",
+            "count": 2
+        }
+    ],
+    "Tag": [
+        "天赋",
+        "战斗行动"
+    ],
+    "Talent": {
+        "Name": "战欲涌现",
+        "Desc": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1106]</color>时，装备此牌。\\n$[A1106]装备此牌后，立刻使用一次<color=#FFD780FF>$[S11063]</color>。\\n装备有此牌的$[A1106]使用<color=#FFFFFFFF>$[S11062]</color>时：额外为<color=#FFFFFFFF>$[C111062]</color>累积1点<color=#FFFFFFFF>「能量层数」</color>。\\n（牌组中包含$[A1106]，才能加入牌组）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>战斗行动</color>",
+                "Desc": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+            },
+            "A1106": "战欲涌现",
+            "S11063": "S11063",
+            "S11062": "S11062",
+            "C111062": {
+                "Name": "光降之剑",
+                "Desc": "<color=#FFFFFFFF>$[A1106]使用「普通攻击」或「元素战技」时：</color>此牌累积2点<color=#FFFFFFFF>「能量层数」</color>，但是$[A1106]不会获得充能。\\n<color=#FFFFFFFF>结束阶段：</color>弃置此牌，造成3点$[K100]；每有1点<color=#FFFFFFFF>「能量层数」</color>，都使此伤害+1。\\n（影响此牌「$[K3]」的效果会作用于<color=#FFFFFFFF>「能量层数」</color>。）",
+                "Child": {
+                    "A1106": "战欲涌现",
+                    "K100": {
+                        "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>",
+                        "Desc": "物理伤害不会附着元素，也不会发生元素反应。"
+                    },
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>可用次数</color>",
+                        "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                    }
+                }
+            }
+        }
+    }
+}

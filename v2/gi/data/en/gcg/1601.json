@@ -1,0 +1,76 @@
+{
+    "Type": "Character",
+    "Name": "Ningguang",
+    "Title": "\"Eclipsing Star\" Ningguang",
+    "Desc": "The greatest secret she keeps is that she keeps a great many of Liyue's secrets.",
+    "Source": "Reward for inviting Ningguang to a duel at The Cat's Tail and claiming victory in a Friendly Fracas with her",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Ningguang",
+    "Hp": 10,
+    "Cost": 3,
+    "Tag": [
+        "Geo",
+        "Catalyst",
+        "Liyue"
+    ],
+    "Talent": {
+        "16011": {
+            "Name": "Sparkling Scatter",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_GEO"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "16012": {
+            "Name": "Jade Screen",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], creates 1 <color=#FFFFFFFF>$[C116011]</color>.",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_GEO",
+                "C116011": {
+                    "Name": "Jade Screen",
+                    "Desc": "<color=#FFFFFFFF>When your active character receives at least 2 DMG: </color>Decrease DMG taken by 1.\\n<color=#FFFFFFFF>$[K3]: 2</color>",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 3
+            }
+        },
+        "16013": {
+            "Name": "Starshatter",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. If <color=#FFFFFFFF>$[C116011]</color> is on the field, deals +2 DMG.",
+            "Child": {
+                "D__KEY__DAMAGE": 6,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_GEO",
+                "C116011": {
+                    "Name": "Jade Screen",
+                    "Desc": "<color=#FFFFFFFF>When your active character receives at least 2 DMG: </color>Decrease DMG taken by 1.\\n<color=#FFFFFFFF>$[K3]: 2</color>",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 3,
+                "GCG_COST_ENERGY": 3
+            }
+        }
+    },
+    "Related": 216011
+}

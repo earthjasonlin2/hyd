@@ -1,0 +1,102 @@
+{
+    "Type": "Character",
+    "Name": "All-Devouring Narwhal",
+    "Title": "Cryptic Creature: All-Devouring Narwhal",
+    "Desc": "In the most fantastical of fables, or perhaps in the most rabid of ravings, the true stars in the depths of cosmos are just as full of life as on Teyvat, while the universe itself is akin to an ocean.\\nPerhaps the universe's infiltration of Teyvat has never ceased, and perhaps the drawing of borders around this world was the work of a higher will, meant to protect it.",
+    "Source": "Reward for accepting the Tavern Challenge at The Cat's Tail and claiming victory in a Friendly Fracas with the All-Devouring Narwhal",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_Ptahur",
+    "Hp": 5,
+    "Cost": 2,
+    "Tag": [
+        "Hydro",
+        "Other Weapons",
+        "Monster"
+    ],
+    "Talent": {
+        "22041": {
+            "Name": "Shattering Waves",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "22042": {
+            "Name": "Starfall Shower",
+            "Desc": "Deals $[D__KEY__DAMAGE_2] $[D__KEY__ELEMENT]. This character deals +1 DMG for every 3 additional max HP provided by <color=#FFFFFFFF>$[S22044]</color> (Max +3.) After this, $[K56] 1 card from your Hand with the highest original Elemental Dice Cost.",
+            "Child": {
+                "D__KEY__DAMAGE_2": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "S22044": "S22044",
+                "K56": {
+                    "Name": "<color=#FFFFFFFF>Discard</color>",
+                    "Desc": "Use Action Cards or Character Skill effects to Discard Action Cards from Hand or Deck."
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3
+            }
+        },
+        "22043": {
+            "Name": "Ravaging Devourer",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], deals 1 $[K5] to all opposing characters on standby. Summons 1 <color=#FFFFFFFF>$[C122043]</color>.",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "K5": {
+                    "Name": "<color=#FFFFFFFF>Piercing DMG</color>",
+                    "Desc": "Piercing DMG cannot be increased by any bonuses, but cannot be defended against using Shields or DMG Immunity either."
+                },
+                "C122043": {
+                    "Name": "Dark Shadow",
+                    "Desc": "<color=#FFFFFFFF>When played:</color> Gain \"Attack Power\" equal to the Elemental Dice Cost of the devoured card with the highest Cost, and gain $[K3] based on the number of devoured Cards with said Cost.\\n<color=#FFFFFFFF>End Phase and when you declare the end of your Round:</color> Deals $[K104] equal to \"Attack Power.\"\\n<color=#FFFFFFFF>When your active character takes DMG:</color> Reduce DMG taken by 1, then this card's $[K3] -2.",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        },
+                        "K104": {
+                            "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>Electro DMG</color>",
+                            "Desc": "Applies {SPRITE_PRESET#2104}Electro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Overloaded</color>: DMG +2 for this instance, the target is forcibly switched to the next character\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Superconduct</color>: DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Electro-Charged</color>: DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Quicken</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Catalyzing Field</color>] that grants +1 DMG to the next 2 instances of Dendro or Electro DMG"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "22044": {
+            "Name": "Insatiable Appetite",
+            "Desc": "(Passive) When battle begins, create 1 <color=#FFFFFFFF>$[C122041]</color>.",
+            "Child": {
+                "C122041": {
+                    "Name": "Deep Devourer's Domain",
+                    "Desc": "Cards you have $[K56]ed or used for $[K57] will be consumed.\\n<color=#FFFFFFFF>For every 3 cards consumed</color>, the $[A2204] gains 1 extra Max HP when the Round ends. If there are at least 2 Cards amongst these that have the same original Elemental Dice Cost, gain another 1 extra Max HP. If all 3 Cards have the same original Elemental Dice Cost, gain yet another 1 extra Max HP.",
+                    "Child": {
+                        "K56": {
+                            "Name": "<color=#FFFFFFFF>Discard</color>",
+                            "Desc": "Use Action Cards or Character Skill effects to Discard Action Cards from Hand or Deck."
+                        },
+                        "K57": {
+                            "Name": "<color=#FFFFFFFF>Tune</color>",
+                            "Desc": "Discard Action Cards from Hand to initiate Elemental Tuning"
+                        },
+                        "A2204": "All-Devouring Narwhal"
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 222041
+}

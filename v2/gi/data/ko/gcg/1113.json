@@ -1,0 +1,64 @@
+{
+    "Type": "Character",
+    "Name": "로자리아JF0Z",
+    "Title": "",
+    "Desc": "",
+    "Source": "캣테일 술집에서 로자리아 초대 및 친선 대전 난이도 승리 후 획득JF0Z",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Rosaria",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "얼음 원소",
+        "장병기",
+        "몬드"
+    ],
+    "Talent": {
+        "11131": {
+            "Name": "성당 창술JF0Z",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.JF0Z",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "11132": {
+            "Name": "죄를 삼키는 고해JF0Z",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[C111131]</color>을 2스택 생성한다.JF0Z",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "D__KEY__DAMAGE": 1,
+                "C111131": {
+                    "Name": "",
+                    "Desc": "<color=#FFFFFFFF>아군 캐릭터가 스킬 사용 후: </color>해당 효과의 스택 수*10%의 확률로 <color=#FFFFFFFF>$[C111133]</color>을 획득하고, 해당 효과의 스택 수가 절반으로 감소한다.JF0Z",
+                    "Child": {
+                        "C111133": {
+                            "Name": "",
+                            "Desc": "<color=#FFFFFFFF>아군이 스킬 피해를 줄 시:</color> 해당 상태가 제거되고 이번에 주는 피해가 2배가 된다.",
+                            "Child": {}
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3
+            }
+        },
+        "11133": {
+            "Name": "죽음의 성례JF0Z",
+            "Desc": "",
+            "Child": {},
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 211131
+}

@@ -1,0 +1,288 @@
+{
+    "Id": 8003052,
+    "Name": "바람 소환사",
+    "Desc": "열계가 펼쳐지는 중 침식된 괴물. 힘의 근원이 일그러진 후 더욱 유연한 전투 방식을 갖게 되었다.\\n바람 소환사는 풍향을 이용하여 더 사나운 화살을 발사한다",
+    "MonsterCampID": null,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 1023,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/Monster_8003050.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "Elite",
+    "SpeedBase": 100,
+    "StanceBase": 300,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.20000000018626451,
+    "Child": [
+        {
+            "Id": 8003052,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 0.86363600124605,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": 1,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Fire",
+                "Ice"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 800305201,
+                    "SkillName": "회오리 광선",
+                    "SkillDesc": "지정된 단일 아군에게 바람 속성 피해를 가하며, 높은 확률로 풍화 상태에 빠뜨린다",
+                    "DamageType": "Wind",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 800305202,
+                    "SkillName": "바람을 걷다",
+                    "SkillDesc": "지정된 단일 아군 및 인접한 목표에게 소량의 바람 속성 피해를 가하며, 피격된 아군은 일정 확률로 풍화 상태에 빠진다",
+                    "DamageType": "Wind",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 800305203,
+                    "SkillName": "바람을 잡는 활시위",
+                    "SkillDesc": "차지 상태에 진입하고 풍화 상태에 빠진 모든 아군을 고정한다. 다음번 행동에 [떨어지는 폭풍]을 발동한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 800305204,
+                    "SkillName": "떨어지는 폭풍",
+                    "SkillDesc": "풍화 상태에 진입한 아군에게 바람 속성 피해를 가한다. 필드에 풍화 상태에 진입한 아군이 없을 경우 해당 스킬은 발동에 실패한다",
+                    "DamageType": "Wind",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 800305205,
+                    "SkillName": "폭풍 사이클론",
+                    "SkillDesc": "풍화 상태에 빠진 아군을 공격한 후 자신의 공격력이 소폭 증가한다. 약점을 격파당할 시 해당 효과는 해제된다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 800305206,
+                    "SkillName": "떨어지는 폭풍",
+                    "SkillDesc": "풍화 상태에 진입한 아군에게 바람 속성 피해를 가한다. 필드에 풍화 상태에 진입한 아군이 없을 경우 해당 스킬은 발동에 실패한다",
+                    "DamageType": "",
+                    "SPHitBase": 10
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 8003052,
+            "AvatarExpReward": 150,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182007
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183004
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 8003052,
+            "WorldLevel": 1,
+            "AvatarExpReward": 200,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182007
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183004
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 8003052,
+            "WorldLevel": 2,
+            "AvatarExpReward": 250,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182007
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183004
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 8003052,
+            "WorldLevel": 3,
+            "AvatarExpReward": 300,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182007
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183004
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 8003052,
+            "WorldLevel": 4,
+            "AvatarExpReward": 350,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111003
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182007
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183004
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 8003052,
+            "WorldLevel": 5,
+            "AvatarExpReward": 400,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111003
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182007
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183004
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 8003052,
+            "WorldLevel": 6,
+            "AvatarExpReward": 400,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111003
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182007
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183004
+                }
+            ]
+        }
+    ]
+}

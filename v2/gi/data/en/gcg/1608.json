@@ -1,0 +1,135 @@
+{
+    "Type": "Character",
+    "Name": "Navia",
+    "Title": "Helm of the Radiant Rose: Navia",
+    "Desc": "\"The Soaring Yellow Rose.\"",
+    "Source": "Reward for inviting Navia to a duel at The Cat's Tail and claiming victory in a Friendly Fracas with her",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Navia",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "Geo",
+        "Claymore",
+        "Fontaine",
+        "Arkhe: Ousia"
+    ],
+    "Talent": {
+        "16081": {
+            "Name": "Blunt Refusal",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "16082": {
+            "Name": "Ceremonial Crystalshot",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], attaches <color=#FFFFFFFF>$[C116084]</color> to this character. $[K56] up to 5 <color=#FFFFFFFF>$[C116081]</color> from your Hand. Each card you $[K56] causes this to deal +1 DMG, and you draw 1 card.",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_GEO",
+                "C116084": {
+                    "Name": "Geo Infusion",
+                    "Desc": "The character to which this is attached has their $[K100] dealt converted to $[K106].\\n<color=#FFFFFFFF>$[K4]: 2</color>",
+                    "Child": {
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>",
+                            "Desc": "Physical DMG will not apply any Elements, nor can it engage in Elemental Reactions."
+                        },
+                        "K106": {
+                            "Name": "{SPRITE_PRESET#2106}<color=#FFE699FF>Geo DMG</color>",
+                            "Desc": "Reacts with Elements if they are already applied:\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Cryo Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Hydro Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Pyro Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Electro Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)"
+                        },
+                        "K4": {
+                            "Name": "<color=#FFFFFFFF>Duration (Rounds)</color>",
+                            "Desc": "Each time you reach the end of a Round, <color=#FFFFFFFF>Duration (Rounds)</color> -1.\\nThis card will be discarded immediately once <color=#FFFFFFFF>Duration (Rounds)</color> runs out."
+                        }
+                    }
+                },
+                "K56": {
+                    "Name": "<color=#FFFFFFFF>Discard</color>",
+                    "Desc": "Use Action Cards or Character Skill effects to Discard Action Cards from Hand or Deck."
+                },
+                "C116081": {
+                    "Name": "Crystal Shrapnel",
+                    "Desc": "Deal 1 $[K100] to the opponent's active character and draw 1 card.",
+                    "Child": {
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>",
+                            "Desc": "Physical DMG will not apply any Elements, nor can it engage in Elemental Reactions."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 3
+            }
+        },
+        "16083": {
+            "Name": "As the Sunlit Sky's Singing Salute",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], deals 1 $[K5] to all opposing characters on standby. Summons 1 <color=#FFFFFFFF>$[C116082]</color> and creates 1 <color=#FFFFFFFF>$[C116081]</color> card before adding it to your Hand.",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_GEO",
+                "K5": {
+                    "Name": "<color=#FFFFFFFF>Piercing DMG</color>",
+                    "Desc": "Piercing DMG cannot be increased by any bonuses, but cannot be defended against using Shields or DMG Immunity either."
+                },
+                "C116082": {
+                    "Name": "Rosula Dorata Salute",
+                    "Desc": "<color=#FFFFFFFF>End Phase:</color> Deal 1 $[K106], draw 1 <color=#FFFFFFFF>$[C116081]</color> card.\\n<color=#FFFFFFFF>$[K3]: 2</color>",
+                    "Child": {
+                        "K106": {
+                            "Name": "{SPRITE_PRESET#2106}<color=#FFE699FF>Geo DMG</color>",
+                            "Desc": "Reacts with Elements if they are already applied:\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Cryo Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Hydro Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Pyro Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Electro Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)"
+                        },
+                        "C116081": {
+                            "Name": "Crystal Shrapnel",
+                            "Desc": "Deal 1 $[K100] to the opponent's active character and draw 1 card.",
+                            "Child": {
+                                "K100": {
+                                    "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>",
+                                    "Desc": "Physical DMG will not apply any Elements, nor can it engage in Elemental Reactions."
+                                }
+                            }
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "16084": {
+            "Name": "Mutual Assistance Network",
+            "Desc": "(Passive) <color=#FFFFFFFF>After an opponent's character takes Crystallize reaction DMG:</color> Create 3 <color=#FFFFFFFF>$[C116081]</color> and randomly place them into your deck.",
+            "Child": {
+                "C116081": {
+                    "Name": "Crystal Shrapnel",
+                    "Desc": "Deal 1 $[K100] to the opponent's active character and draw 1 card.",
+                    "Child": {
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>",
+                            "Desc": "Physical DMG will not apply any Elements, nor can it engage in Elemental Reactions."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 216081
+}

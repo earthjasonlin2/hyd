@@ -1,0 +1,57 @@
+{
+    "Type": "Action",
+    "Name": "魔蝎烈祸",
+    "Title": "炽沙叙事人·魔蝎烈祸",
+    "Desc": "「为了永恒绿洲！」",
+    "Source": "在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度镀金旅团·炽沙叙事人中完成挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Muscleman",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PYRO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "天赋",
+        "战斗行动"
+    ],
+    "Talent": {
+        "Name": "魔蝎烈祸",
+        "Desc": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A2303]</color>时，装备此牌。\\n$[A2303]装备此牌后，立刻使用一次<color=#FFD780FF>$[S23032]</color>。\\n装备有此牌的$[A2303]在场，我方使用<color=#FFFFFFFF>$[S1230311]</color>击倒敌方角色后：将1张<color=#FFFFFFFF>$[C123031]</color>加入手牌。\\n回合结束时：生成1层<color=#FFFFFFFF>$[C123032]</color>。\\n（牌组中包含$[A2303]，才能加入牌组）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>战斗行动</color>",
+                "Desc": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+            },
+            "A2303": "魔蝎烈祸",
+            "S23032": "S23032",
+            "S1230311": "S1230311",
+            "C123031": {
+                "Name": "厄灵·炎之魔蝎",
+                "Desc": "<color=#FFFFFFFF>所附属角色受到伤害时：</color>如可能，失去1点充能，以抵消1点伤害，然后生成<color=#FFFFFFFF>$[C123032]</color>。（每回合至多2次）\\n$[K58]：$[S1230311]\\n<color=#FFFFFFFF>$[K3]：1</color>\\n（角色最多装备1个「{SPRITE_PRESET#3008}特技」）",
+                "Child": {
+                    "C123032": {
+                        "Name": "魔蝎祝福",
+                        "Desc": "<color=#FFFFFFFF>我方使用$[C123031]的$[K58]时：</color>移除此效果，每有1层<color=#FFFFFFFF>「魔蝎祝福」</color>，就使此$[K58]造成的伤害+1。\\n（<color=#FFFFFFFF>「魔蝎祝福」</color>的层数可叠加，没有上限）",
+                        "Child": {
+                            "K58": {
+                                "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#3008}特技</color>",
+                                "Desc": "出战角色装备有「{SPRITE_PRESET#3008}特技」卡牌时，就可以使用对应的「{SPRITE_PRESET#3008}特技」。\\n使用「{SPRITE_PRESET#3008}特技」是一种「战斗行动」。角色因冻结、石化、眩晕等原因无法使用技能时，也会同时无法使用「{SPRITE_PRESET#3008}特技」。\\n角色使用「{SPRITE_PRESET#3008}特技」时不视为使用技能，无法触发「使用技能后」「角色引发元素反应后」等效果；角色使用「{SPRITE_PRESET#3008}特技」造成的伤害不被视为角色造成的伤害。"
+                            }
+                        }
+                    },
+                    "K58": {
+                        "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#3008}特技</color>",
+                        "Desc": "出战角色装备有「{SPRITE_PRESET#3008}特技」卡牌时，就可以使用对应的「{SPRITE_PRESET#3008}特技」。\\n使用「{SPRITE_PRESET#3008}特技」是一种「战斗行动」。角色因冻结、石化、眩晕等原因无法使用技能时，也会同时无法使用「{SPRITE_PRESET#3008}特技」。\\n角色使用「{SPRITE_PRESET#3008}特技」时不视为使用技能，无法触发「使用技能后」「角色引发元素反应后」等效果；角色使用「{SPRITE_PRESET#3008}特技」造成的伤害不被视为角色造成的伤害。"
+                    },
+                    "S1230311": "S1230311",
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>可用次数</color>",
+                        "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                    }
+                }
+            }
+        }
+    }
+}

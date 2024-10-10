@@ -1,0 +1,115 @@
+{
+    "Type": "Character",
+    "Name": "아라타키 이토",
+    "Title": "하나미자카 쾌걸·아라타키 이토",
+    "Desc": "「아라타키 카드 게임 왕중왕 이토」",
+    "Source": "캣테일 술집에서 아라타키 이토 초대 및 친선 대전 난이도 승리 후 획득",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Itto",
+    "Hp": 10,
+    "Cost": 3,
+    "Tag": [
+        "바위 원소",
+        "양손검",
+        "이나즈마"
+    ],
+    "Talent": {
+        "16051": {
+            "Name": "싸움꾼 전설",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "16052": {
+            "Name": "마살 절기·적우발파!",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[C116051]</color>를 소환해 본 캐릭터에게 <color=#FFFFFFFF>$[C116054]</color>을 부착한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_GEO",
+                "D__KEY__DAMAGE": 1,
+                "C116051": {
+                    "Name": "우시",
+                    "Desc": "<color=#FFFFFFFF>아군 출전 캐릭터가 피해를 받을 시:</color> 피해를 1pt 상쇄한다.\\n<color=#FFFFFFFF>$[K3]: 1</color>, 사용 횟수를 소진해도 해당 카드를 버리지 않는다.\\n<color=#FFFFFFFF>해당 소환물이 필드 위에 있는 동안 다음 효과 1회 발동 가능:</color> 아군 캐릭터가 피해를 받은 후, $[A1605]에게 $[K1007]을 부착한다.\\n<color=#FFFFFFFF>종료 단계:</color> 해당 카드를 버리고 $[K106]를 1pt 준다.",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        },
+                        "A1605": "아라타키 이토",
+                        "K1007": {
+                            "Name": "<color=#FFFFFFFF>난신의 괴력</color>",
+                            "Desc": "<color=#FFFFFFFF>부착 캐릭터가 <color=#FFFFFFFF>강공격</color> 시:</color> 주는 피해+1pt. 만약 <color=#FFFFFFFF>사용 가능 횟수</color>가 2 이상일 경우 소모하는 <color=#FFFFFFFF>{SPRITE_PRESET#1109}무색 원소</color>가 1개 감소한다.\\n<color=#FFFFFFFF><color=#FFFFFFFF>사용 가능 횟수</color>: 1</color> (중첩 가능, 최대 중첩수: 3회)"
+                        },
+                        "K106": {
+                            "Name": "{SPRITE_PRESET#2106}<color=#FFE699FF>바위 원소 피해</color>",
+                            "Desc": "이미 부착된 원소와 원소 반응이 발생한다.\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2101}<color=#FFFFFFFF>결정(얼음)</color>: 이번 피해+1pt, 아군 출전 캐릭터가 보호막을 1pt 획득한다. (중첩 가능, 최대 2pt)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2102}<color=#FFFFFFFF>결정(물)</color>: 이번 피해+1pt, 아군 출전 캐릭터가 보호막을 1pt 획득한다. (중첩 가능, 최대 2pt)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2103}<color=#FFFFFFFF>결정(불)</color>: 이번 피해+1pt, 아군 출전 캐릭터가 보호막을 1pt 획득한다. (중첩 가능, 최대 2pt)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2104}<color=#FFFFFFFF>결정(번개)</color>: 이번 피해+1pt, 아군 출전 캐릭터가 보호막을 1pt 획득한다. (중첩 가능, 최대 2pt)"
+                        }
+                    }
+                },
+                "C116054": {
+                    "Name": "난신의 괴력",
+                    "Desc": "<color=#FFFFFFFF>부착 캐릭터가 $[K51] 발동 시:</color> 주는 피해+1pt. 만약 $[K3]가 2 이상일 경우 소모하는 $[K309]가 1개 감소한다.\\n<color=#FFFFFFFF>$[K3]: 1</color> (중첩 가능, 최대 중첩수: 3회)",
+                    "Child": {
+                        "K51": {
+                            "Name": "<color=#FFFFFFFF>강공격</color>",
+                            "Desc": "아군이 행동을 시작하기 전에 원소 주사위 총개수가 짝수인 경우, 발동한 「일반 공격」을 「강공격」으로 간주한다."
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        },
+                        "K309": {
+                            "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1109}무색 원소</color>",
+                            "Desc": "어떤 타입의 원소 주사위든 사용할 수 있다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 3
+            }
+        },
+        "16053": {
+            "Name": "최흉의 귀왕·이토 강림!!",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 본 캐릭터에게 <color=#FFFFFFFF>$[C116053]</color>을 부착한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_GEO",
+                "D__KEY__DAMAGE": 4,
+                "C116053": {
+                    "Name": "분노의 귀왕",
+                    "Desc": "부착 캐릭터의 <color=#FFFFFFFF>일반 공격</color>으로 주는 피해+1pt, $[K100]가 $[K106]로 전환된다.\\n<color=#FFFFFFFF>$[K4]: 2</color>\\n<color=#FFFFFFFF>부착 캐릭터가 일반 공격 후:</color> 부착 캐릭터에게 $[K1007]을 부착한다. (턴당 1회)",
+                    "Child": {
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>",
+                            "Desc": "물리 피해는 원소를 부착할 수 없고, 원소 반응이 발생하지 않는다."
+                        },
+                        "K106": {
+                            "Name": "{SPRITE_PRESET#2106}<color=#FFE699FF>바위 원소 피해</color>",
+                            "Desc": "이미 부착된 원소와 원소 반응이 발생한다.\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2101}<color=#FFFFFFFF>결정(얼음)</color>: 이번 피해+1pt, 아군 출전 캐릭터가 보호막을 1pt 획득한다. (중첩 가능, 최대 2pt)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2102}<color=#FFFFFFFF>결정(물)</color>: 이번 피해+1pt, 아군 출전 캐릭터가 보호막을 1pt 획득한다. (중첩 가능, 최대 2pt)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2103}<color=#FFFFFFFF>결정(불)</color>: 이번 피해+1pt, 아군 출전 캐릭터가 보호막을 1pt 획득한다. (중첩 가능, 최대 2pt)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2104}<color=#FFFFFFFF>결정(번개)</color>: 이번 피해+1pt, 아군 출전 캐릭터가 보호막을 1pt 획득한다. (중첩 가능, 최대 2pt)"
+                        },
+                        "K4": {
+                            "Name": "<color=#FFFFFFFF>지속 턴</color>",
+                            "Desc": "턴이 종료 단계에 진입할 때마다 <color=#FFFFFFFF>지속 턴</color>이 1회씩 감소한다.\\n<color=#FFFFFFFF>지속 턴</color>이 전부 소진되면 즉시 해당 패를 버린다."
+                        },
+                        "K1007": {
+                            "Name": "<color=#FFFFFFFF>난신의 괴력</color>",
+                            "Desc": "<color=#FFFFFFFF>부착 캐릭터가 <color=#FFFFFFFF>강공격</color> 시:</color> 주는 피해+1pt. 만약 <color=#FFFFFFFF>사용 가능 횟수</color>가 2 이상일 경우 소모하는 <color=#FFFFFFFF>{SPRITE_PRESET#1109}무색 원소</color>가 1개 감소한다.\\n<color=#FFFFFFFF><color=#FFFFFFFF>사용 가능 횟수</color>: 1</color> (중첩 가능, 최대 중첩수: 3회)"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 3,
+                "GCG_COST_ENERGY": 3
+            }
+        }
+    },
+    "Related": 216051
+}

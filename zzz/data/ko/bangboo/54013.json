@@ -1,0 +1,475 @@
+{
+  "Id": 54013,
+  "CodeName": "Bangvolver",
+  "Name": "리볼버부",
+  "Desc": "오늘의 운세: 대길!",
+  "Rarity": 4,
+  "Icon": "UI/Sprite/A1DynamicLoad/BangbooModGarage/UnPacker/BangbooRole/BangbooGarageRole23.png",
+  "Stats": {
+    "Stamina": 100,
+    "StaminaUpragde": 10,
+    "Endurance": 180,
+    "HpMax": 396,
+    "Hpupgrade": 471237,
+    "Attack": 65,
+    "AttackUpgrade": 327644,
+    "BreakStun": 103,
+    "ElementAbnormalPower": 123,
+    "Defence": 32,
+    "DefUpgrade": 92587,
+    "Crit": 500,
+    "PenRatio": 0,
+    "CritDmg": 5000
+  },
+  "Level": {
+    "1": {
+      "HpMax": 0,
+      "Attack": 0,
+      "Defence": 0,
+      "LevelMax": 10,
+      "LevelMin": 0,
+      "Materials": {
+        "10": 15000,
+        "102010": 4
+      },
+      "Extra": {
+        "20101": {
+          "Prop": 20101,
+          "Name": "치명타 확률",
+          "Format": "{0:0.#%}",
+          "Value": 0
+        },
+        "21101": {
+          "Prop": 21101,
+          "Name": "치명타 피해",
+          "Format": "{0:0.#%}",
+          "Value": 0
+        }
+      }
+    },
+    "2": {
+      "HpMax": 207,
+      "Attack": 61,
+      "Defence": 41,
+      "LevelMax": 20,
+      "LevelMin": 10,
+      "Materials": {
+        "10": 35000,
+        "102020": 12
+      },
+      "Extra": {
+        "20101": {
+          "Prop": 20101,
+          "Name": "치명타 확률",
+          "Format": "{0:0.#%}",
+          "Value": 450
+        },
+        "21101": {
+          "Prop": 21101,
+          "Name": "치명타 피해",
+          "Format": "{0:0.#%}",
+          "Value": 0
+        }
+      }
+    },
+    "3": {
+      "HpMax": 414,
+      "Attack": 303,
+      "Defence": 81,
+      "LevelMax": 30,
+      "LevelMin": 20,
+      "Materials": {
+        "10": 75000,
+        "102020": 20
+      },
+      "Extra": {
+        "20101": {
+          "Prop": 20101,
+          "Name": "치명타 확률",
+          "Format": "{0:0.#%}",
+          "Value": 2250
+        },
+        "21101": {
+          "Prop": 21101,
+          "Name": "치명타 피해",
+          "Format": "{0:0.#%}",
+          "Value": 0
+        }
+      }
+    },
+    "4": {
+      "HpMax": 621,
+      "Attack": 909,
+      "Defence": 122,
+      "LevelMax": 40,
+      "LevelMin": 30,
+      "Materials": {
+        "10": 125000,
+        "102030": 10
+      },
+      "Extra": {
+        "20101": {
+          "Prop": 20101,
+          "Name": "치명타 확률",
+          "Format": "{0:0.#%}",
+          "Value": 2250
+        },
+        "21101": {
+          "Prop": 21101,
+          "Name": "치명타 피해",
+          "Format": "{0:0.#%}",
+          "Value": 2500
+        }
+      }
+    },
+    "5": {
+      "HpMax": 828,
+      "Attack": 2424,
+      "Defence": 163,
+      "LevelMax": 50,
+      "LevelMin": 40,
+      "Materials": {
+        "10": 250000,
+        "102030": 20
+      },
+      "Extra": {
+        "20101": {
+          "Prop": 20101,
+          "Name": "치명타 확률",
+          "Format": "{0:0.#%}",
+          "Value": 4500
+        },
+        "21101": {
+          "Prop": 21101,
+          "Name": "치명타 피해",
+          "Format": "{0:0.#%}",
+          "Value": 2500
+        }
+      }
+    },
+    "6": {
+      "HpMax": 1034,
+      "Attack": 6059,
+      "Defence": 203,
+      "LevelMax": 60,
+      "LevelMin": 50,
+      "Materials": {},
+      "Extra": {
+        "20101": {
+          "Prop": 20101,
+          "Name": "치명타 확률",
+          "Format": "{0:0.#%}",
+          "Value": 4500
+        },
+        "21101": {
+          "Prop": 21101,
+          "Name": "치명타 피해",
+          "Format": "{0:0.#%}",
+          "Value": 5000
+        }
+      }
+    }
+  },
+  "Skill": {
+    "A": {
+      "Level": {
+        "1": {
+          "Name": "행운의 리볼버",
+          "Desc": "<color=#FFFFFF>[액티브 스킬]</color>\n랜덤 총알을 1발 사용해 총알 유형에 따라 각기 다른 스킬을 시전한다.\n·강력 불꽃탄: 적을 강력하게 사격해 대량의 <color=#F0D12B>물리 피해</color>를 주고, 대량의 <color=#F0D12B>물리 이상 축적치</color>를 누적한다.\n·일반 불꽃탄: 적을 사격해 <color=#F0D12B>물리 피해</color>를 주고, <color=#F0D12B>물리 이상 축적치</color>를 누적한다.\n·페인트탄: 사격 실패, 총구에서 꽃잎을 발사한다.",
+          "Property": [
+            "강력한 사격 피해 배율",
+            "강력한 사격 그로기 배율",
+            "사격 피해 배율",
+            "사격 그로기 배율",
+            "재사용 대기시간"
+          ],
+          "Param": "{Skill:5401303, Prop:1001}|{Skill:5401303, Prop:1002}|{Skill:5401301, Prop:1001}|{Skill:5401301, Prop:1002}|18초"
+        },
+        "2": {
+          "Name": "행운의 리볼버",
+          "Desc": "<color=#FFFFFF>[액티브 스킬]</color>\n랜덤 총알을 1발 사용해 총알 유형에 따라 각기 다른 스킬을 시전한다.\n·강력 불꽃탄: 적을 강력하게 사격해 대량의 <color=#F0D12B>물리 피해</color>를 주고, 대량의 <color=#F0D12B>물리 이상 축적치</color>를 누적한다.\n·일반 불꽃탄: 적을 사격해 <color=#F0D12B>물리 피해</color>를 주고, <color=#F0D12B>물리 이상 축적치</color>를 누적한다.\n·페인트탄: 사격 실패, 총구에서 꽃잎을 발사한다.",
+          "Property": [
+            "강력한 사격 피해 배율",
+            "강력한 사격 그로기 배율",
+            "사격 피해 배율",
+            "사격 그로기 배율",
+            "재사용 대기시간"
+          ],
+          "Param": "{Skill:5401303, Prop:1001}|{Skill:5401303, Prop:1002}|{Skill:5401301, Prop:1001}|{Skill:5401301, Prop:1002}|18초"
+        },
+        "3": {
+          "Name": "행운의 리볼버",
+          "Desc": "<color=#FFFFFF>[액티브 스킬]</color>\n랜덤 총알을 1발 사용해 총알 유형에 따라 각기 다른 스킬을 시전한다.\n·강력 불꽃탄: 적을 강력하게 사격해 대량의 <color=#F0D12B>물리 피해</color>를 주고, 대량의 <color=#F0D12B>물리 이상 축적치</color>를 누적한다.\n·일반 불꽃탄: 적을 사격해 <color=#F0D12B>물리 피해</color>를 주고, <color=#F0D12B>물리 이상 축적치</color>를 누적한다.\n·페인트탄: 사격 실패, 총구에서 꽃잎을 발사한다.",
+          "Property": [
+            "강력한 사격 피해 배율",
+            "강력한 사격 그로기 배율",
+            "사격 피해 배율",
+            "사격 그로기 배율",
+            "재사용 대기시간"
+          ],
+          "Param": "{Skill:5401303, Prop:1001}|{Skill:5401303, Prop:1002}|{Skill:5401301, Prop:1001}|{Skill:5401301, Prop:1002}|18초"
+        },
+        "4": {
+          "Name": "행운의 리볼버",
+          "Desc": "<color=#FFFFFF>[액티브 스킬]</color>\n랜덤 총알을 1발 사용해 총알 유형에 따라 각기 다른 스킬을 시전한다.\n·강력 불꽃탄: 적을 강력하게 사격해 대량의 <color=#F0D12B>물리 피해</color>를 주고, 대량의 <color=#F0D12B>물리 이상 축적치</color>를 누적한다.\n·일반 불꽃탄: 적을 사격해 <color=#F0D12B>물리 피해</color>를 주고, <color=#F0D12B>물리 이상 축적치</color>를 누적한다.\n·페인트탄: 사격 실패, 총구에서 꽃잎을 발사한다.",
+          "Property": [
+            "강력한 사격 피해 배율",
+            "강력한 사격 그로기 배율",
+            "사격 피해 배율",
+            "사격 그로기 배율",
+            "재사용 대기시간"
+          ],
+          "Param": "{Skill:5401303, Prop:1001}|{Skill:5401303, Prop:1002}|{Skill:5401301, Prop:1001}|{Skill:5401301, Prop:1002}|18초"
+        },
+        "5": {
+          "Name": "행운의 리볼버",
+          "Desc": "<color=#FFFFFF>[액티브 스킬]</color>\n랜덤 총알을 1발 사용해 총알 유형에 따라 각기 다른 스킬을 시전한다.\n·강력 불꽃탄: 적을 강력하게 사격해 대량의 <color=#F0D12B>물리 피해</color>를 주고, 대량의 <color=#F0D12B>물리 이상 축적치</color>를 누적한다.\n·일반 불꽃탄: 적을 사격해 <color=#F0D12B>물리 피해</color>를 주고, <color=#F0D12B>물리 이상 축적치</color>를 누적한다.\n·페인트탄: 사격 실패, 총구에서 꽃잎을 발사한다.",
+          "Property": [
+            "강력한 사격 피해 배율",
+            "강력한 사격 그로기 배율",
+            "사격 피해 배율",
+            "사격 그로기 배율",
+            "재사용 대기시간"
+          ],
+          "Param": "{Skill:5401303, Prop:1001}|{Skill:5401303, Prop:1002}|{Skill:5401301, Prop:1001}|{Skill:5401301, Prop:1002}|18초"
+        },
+        "6": {
+          "Name": "행운의 리볼버",
+          "Desc": "<color=#FFFFFF>[액티브 스킬]</color>\n랜덤 총알을 1발 사용해 총알 유형에 따라 각기 다른 스킬을 시전한다.\n·강력 불꽃탄: 적을 강력하게 사격해 대량의 <color=#F0D12B>물리 피해</color>를 주고, 대량의 <color=#F0D12B>물리 이상 축적치</color>를 누적한다.\n·일반 불꽃탄: 적을 사격해 <color=#F0D12B>물리 피해</color>를 주고, <color=#F0D12B>물리 이상 축적치</color>를 누적한다.\n·페인트탄: 사격 실패, 총구에서 꽃잎을 발사한다.",
+          "Property": [
+            "강력한 사격 피해 배율",
+            "강력한 사격 그로기 배율",
+            "사격 피해 배율",
+            "사격 그로기 배율",
+            "재사용 대기시간"
+          ],
+          "Param": "{Skill:5401303, Prop:1001}|{Skill:5401303, Prop:1002}|{Skill:5401301, Prop:1001}|{Skill:5401301, Prop:1002}|18초"
+        },
+        "7": {
+          "Name": "행운의 리볼버",
+          "Desc": "<color=#FFFFFF>[액티브 스킬]</color>\n랜덤 총알을 1발 사용해 총알 유형에 따라 각기 다른 스킬을 시전한다.\n·강력 불꽃탄: 적을 강력하게 사격해 대량의 <color=#F0D12B>물리 피해</color>를 주고, 대량의 <color=#F0D12B>물리 이상 축적치</color>를 누적한다.\n·일반 불꽃탄: 적을 사격해 <color=#F0D12B>물리 피해</color>를 주고, <color=#F0D12B>물리 이상 축적치</color>를 누적한다.\n·페인트탄: 사격 실패, 총구에서 꽃잎을 발사한다.",
+          "Property": [
+            "강력한 사격 피해 배율",
+            "강력한 사격 그로기 배율",
+            "사격 피해 배율",
+            "사격 그로기 배율",
+            "재사용 대기시간"
+          ],
+          "Param": "{Skill:5401303, Prop:1001}|{Skill:5401303, Prop:1002}|{Skill:5401301, Prop:1001}|{Skill:5401301, Prop:1002}|18초"
+        },
+        "8": {
+          "Name": "행운의 리볼버",
+          "Desc": "<color=#FFFFFF>[액티브 스킬]</color>\n랜덤 총알을 1발 사용해 총알 유형에 따라 각기 다른 스킬을 시전한다.\n·강력 불꽃탄: 적을 강력하게 사격해 대량의 <color=#F0D12B>물리 피해</color>를 주고, 대량의 <color=#F0D12B>물리 이상 축적치</color>를 누적한다.\n·일반 불꽃탄: 적을 사격해 <color=#F0D12B>물리 피해</color>를 주고, <color=#F0D12B>물리 이상 축적치</color>를 누적한다.\n·페인트탄: 사격 실패, 총구에서 꽃잎을 발사한다.",
+          "Property": [
+            "강력한 사격 피해 배율",
+            "강력한 사격 그로기 배율",
+            "사격 피해 배율",
+            "사격 그로기 배율",
+            "재사용 대기시간"
+          ],
+          "Param": "{Skill:5401303, Prop:1001}|{Skill:5401303, Prop:1002}|{Skill:5401301, Prop:1001}|{Skill:5401301, Prop:1002}|18초"
+        },
+        "9": {
+          "Name": "행운의 리볼버",
+          "Desc": "<color=#FFFFFF>[액티브 스킬]</color>\n랜덤 총알을 1발 사용해 총알 유형에 따라 각기 다른 스킬을 시전한다.\n·강력 불꽃탄: 적을 강력하게 사격해 대량의 <color=#F0D12B>물리 피해</color>를 주고, 대량의 <color=#F0D12B>물리 이상 축적치</color>를 누적한다.\n·일반 불꽃탄: 적을 사격해 <color=#F0D12B>물리 피해</color>를 주고, <color=#F0D12B>물리 이상 축적치</color>를 누적한다.\n·페인트탄: 사격 실패, 총구에서 꽃잎을 발사한다.",
+          "Property": [
+            "강력한 사격 피해 배율",
+            "강력한 사격 그로기 배율",
+            "사격 피해 배율",
+            "사격 그로기 배율",
+            "재사용 대기시간"
+          ],
+          "Param": "{Skill:5401303, Prop:1001}|{Skill:5401303, Prop:1002}|{Skill:5401301, Prop:1001}|{Skill:5401301, Prop:1002}|18초"
+        },
+        "10": {
+          "Name": "행운의 리볼버",
+          "Desc": "<color=#FFFFFF>[액티브 스킬]</color>\n랜덤 총알을 1발 사용해 총알 유형에 따라 각기 다른 스킬을 시전한다.\n·강력 불꽃탄: 적을 강력하게 사격해 대량의 <color=#F0D12B>물리 피해</color>를 주고, 대량의 <color=#F0D12B>물리 이상 축적치</color>를 누적한다.\n·일반 불꽃탄: 적을 사격해 <color=#F0D12B>물리 피해</color>를 주고, <color=#F0D12B>물리 이상 축적치</color>를 누적한다.\n·페인트탄: 사격 실패, 총구에서 꽃잎을 발사한다.",
+          "Property": [
+            "강력한 사격 피해 배율",
+            "강력한 사격 그로기 배율",
+            "사격 피해 배율",
+            "사격 그로기 배율",
+            "재사용 대기시간"
+          ],
+          "Param": "{Skill:5401303, Prop:1001}|{Skill:5401303, Prop:1002}|{Skill:5401301, Prop:1001}|{Skill:5401301, Prop:1002}|18초"
+        }
+      }
+    },
+    "B": {
+      "Level": {
+        "1": {
+          "Name": "운도 실력",
+          "Desc": "<color=#FFFFFF>[추가 능력]</color>\n파티 내 <color=#F0D12B>[물리 속성]</color> 캐릭터가 2명 이상 존재 시 발동: <color=#FFFFFF>[「Bangboo」 콤보 스킬]</color>이 누적하는 속성 이상 축적치가 100% 증가한다.",
+          "Property": [
+            "속성 이상 축적치 증가"
+          ],
+          "Param": "100%"
+        },
+        "2": {
+          "Name": "운도 실력",
+          "Desc": "<color=#FFFFFF>[추가 능력]</color>\n파티 내 <color=#F0D12B>[물리 속성]</color> 캐릭터가 2명 이상 존재 시 발동: <color=#FFFFFF>[「Bangboo」 콤보 스킬]</color>이 누적하는 속성 이상 축적치가 125% 증가한다.",
+          "Property": [
+            "속성 이상 축적치 증가"
+          ],
+          "Param": "125%"
+        },
+        "3": {
+          "Name": "운도 실력",
+          "Desc": "<color=#FFFFFF>[추가 능력]</color>\n파티 내 <color=#F0D12B>[물리 속성]</color> 캐릭터가 2명 이상 존재 시 발동: <color=#FFFFFF>[「Bangboo」 콤보 스킬]</color>이 누적하는 속성 이상 축적치가 150% 증가한다.",
+          "Property": [
+            "속성 이상 축적치 증가"
+          ],
+          "Param": "150%"
+        },
+        "4": {
+          "Name": "운도 실력",
+          "Desc": "<color=#FFFFFF>[추가 능력]</color>\n파티 내 <color=#F0D12B>[물리 속성]</color> 캐릭터가 2명 이상 존재 시 발동: <color=#FFFFFF>[「Bangboo」 콤보 스킬]</color>이 누적하는 속성 이상 축적치가 175% 증가한다.",
+          "Property": [
+            "속성 이상 축적치 증가"
+          ],
+          "Param": "175%"
+        },
+        "5": {
+          "Name": "운도 실력",
+          "Desc": "<color=#FFFFFF>[추가 능력]</color>\n파티 내 <color=#F0D12B>[물리 속성]</color> 캐릭터가 2명 이상 존재 시 발동: <color=#FFFFFF>[「Bangboo」 콤보 스킬]</color>이 누적하는 속성 이상 축적치가 200% 증가한다.",
+          "Property": [
+            "속성 이상 축적치 증가"
+          ],
+          "Param": "200%"
+        }
+      }
+    },
+    "C": {
+      "Level": {
+        "1": {
+          "Name": "행운 트리거",
+          "Desc": "<color=#FFFFFF>[「Bangboo」 콤보 스킬]</color>\n타깃을 연속 사격해 <color=#F0D12B>물리 피해</color>를 주고, 대량의 <color=#F0D12B>물리 이상 축적치</color>를 누적한다.",
+          "Property": [
+            "피해 배율",
+            "그로기 배율"
+          ],
+          "Param": "{Skill:5401302, Prop:1001}|{Skill:5401302, Prop:1002}"
+        },
+        "2": {
+          "Name": "행운 트리거",
+          "Desc": "<color=#FFFFFF>[「Bangboo」 콤보 스킬]</color>\n타깃을 연속 사격해 <color=#F0D12B>물리 피해</color>를 주고, 대량의 <color=#F0D12B>물리 이상 축적치</color>를 누적한다.",
+          "Property": [
+            "피해 배율",
+            "그로기 배율"
+          ],
+          "Param": "{Skill:5401302, Prop:1001}|{Skill:5401302, Prop:1002}"
+        },
+        "3": {
+          "Name": "행운 트리거",
+          "Desc": "<color=#FFFFFF>[「Bangboo」 콤보 스킬]</color>\n타깃을 연속 사격해 <color=#F0D12B>물리 피해</color>를 주고, 대량의 <color=#F0D12B>물리 이상 축적치</color>를 누적한다.",
+          "Property": [
+            "피해 배율",
+            "그로기 배율"
+          ],
+          "Param": "{Skill:5401302, Prop:1001}|{Skill:5401302, Prop:1002}"
+        },
+        "4": {
+          "Name": "행운 트리거",
+          "Desc": "<color=#FFFFFF>[「Bangboo」 콤보 스킬]</color>\n타깃을 연속 사격해 <color=#F0D12B>물리 피해</color>를 주고, 대량의 <color=#F0D12B>물리 이상 축적치</color>를 누적한다.",
+          "Property": [
+            "피해 배율",
+            "그로기 배율"
+          ],
+          "Param": "{Skill:5401302, Prop:1001}|{Skill:5401302, Prop:1002}"
+        },
+        "5": {
+          "Name": "행운 트리거",
+          "Desc": "<color=#FFFFFF>[「Bangboo」 콤보 스킬]</color>\n타깃을 연속 사격해 <color=#F0D12B>물리 피해</color>를 주고, 대량의 <color=#F0D12B>물리 이상 축적치</color>를 누적한다.",
+          "Property": [
+            "피해 배율",
+            "그로기 배율"
+          ],
+          "Param": "{Skill:5401302, Prop:1001}|{Skill:5401302, Prop:1002}"
+        },
+        "6": {
+          "Name": "행운 트리거",
+          "Desc": "<color=#FFFFFF>[「Bangboo」 콤보 스킬]</color>\n타깃을 연속 사격해 <color=#F0D12B>물리 피해</color>를 주고, 대량의 <color=#F0D12B>물리 이상 축적치</color>를 누적한다.",
+          "Property": [
+            "피해 배율",
+            "그로기 배율"
+          ],
+          "Param": "{Skill:5401302, Prop:1001}|{Skill:5401302, Prop:1002}"
+        },
+        "7": {
+          "Name": "행운 트리거",
+          "Desc": "<color=#FFFFFF>[「Bangboo」 콤보 스킬]</color>\n타깃을 연속 사격해 <color=#F0D12B>물리 피해</color>를 주고, 대량의 <color=#F0D12B>물리 이상 축적치</color>를 누적한다.",
+          "Property": [
+            "피해 배율",
+            "그로기 배율"
+          ],
+          "Param": "{Skill:5401302, Prop:1001}|{Skill:5401302, Prop:1002}"
+        },
+        "8": {
+          "Name": "행운 트리거",
+          "Desc": "<color=#FFFFFF>[「Bangboo」 콤보 스킬]</color>\n타깃을 연속 사격해 <color=#F0D12B>물리 피해</color>를 주고, 대량의 <color=#F0D12B>물리 이상 축적치</color>를 누적한다.",
+          "Property": [
+            "피해 배율",
+            "그로기 배율"
+          ],
+          "Param": "{Skill:5401302, Prop:1001}|{Skill:5401302, Prop:1002}"
+        },
+        "9": {
+          "Name": "행운 트리거",
+          "Desc": "<color=#FFFFFF>[「Bangboo」 콤보 스킬]</color>\n타깃을 연속 사격해 <color=#F0D12B>물리 피해</color>를 주고, 대량의 <color=#F0D12B>물리 이상 축적치</color>를 누적한다.",
+          "Property": [
+            "피해 배율",
+            "그로기 배율"
+          ],
+          "Param": "{Skill:5401302, Prop:1001}|{Skill:5401302, Prop:1002}"
+        },
+        "10": {
+          "Name": "행운 트리거",
+          "Desc": "<color=#FFFFFF>[「Bangboo」 콤보 스킬]</color>\n타깃을 연속 사격해 <color=#F0D12B>물리 피해</color>를 주고, 대량의 <color=#F0D12B>물리 이상 축적치</color>를 누적한다.",
+          "Property": [
+            "피해 배율",
+            "그로기 배율"
+          ],
+          "Param": "{Skill:5401302, Prop:1001}|{Skill:5401302, Prop:1002}"
+        }
+      }
+    }
+  },
+  "SkillProp": {
+    "5401301": {
+      "1001": {
+        "Main": 57600,
+        "Growth": 5760,
+        "Format": "%"
+      },
+      "1002": {
+        "Main": 21100,
+        "Growth": 2110,
+        "Format": "%"
+      }
+    },
+    "5401302": {
+      "1001": {
+        "Main": 77600,
+        "Growth": 7760,
+        "Format": "%"
+      },
+      "1002": {
+        "Main": 11100,
+        "Growth": 1110,
+        "Format": "%"
+      }
+    },
+    "5401303": {
+      "1001": {
+        "Main": 115200,
+        "Growth": 11520,
+        "Format": "%"
+      },
+      "1002": {
+        "Main": 42100,
+        "Growth": 4210,
+        "Format": "%"
+      }
+    }
+  }
+}

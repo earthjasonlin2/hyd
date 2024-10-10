@@ -1,0 +1,102 @@
+{
+    "Type": "Character",
+    "Name": "츄츄 물걸음 순찰자",
+    "Title": "배회하는 예리한 물결·츄츄 물걸음 순찰자",
+    "Desc": "어떤 부족에도 소속되지 않은 츄츄족 방랑자. 스스로를 추방한 것처럼 황야를 배회한다",
+    "Source": "캣테일 술집의 왕자님을 통해 술집 도전 진행 및 친선 대전 난이도의 츄츄 물걸음 순찰자에게 승리 후 획득",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_HilistrayWater",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "물 원소",
+        "기타 무기",
+        "마물",
+        "츄츄족"
+    ],
+    "Talent": {
+        "22051": {
+            "Name": "낫 회전 베기",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "22052": {
+            "Name": "광란의 낫",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.\\n상대 캐릭터에게 <color=#FFFFFFFF>$[C106]</color> 또는 <color=#FFFFFFFF>$[C122052]</color>가 부착되었을 시, 본 캐릭터가 $[K310]를 1pt 획득한다. (턴당 1회)",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "D__KEY__DAMAGE": 3,
+                "C106": {
+                    "Name": "빙결",
+                    "Desc": "<color=#FFFFFFFF>캐릭터 스킬 사용 불가</color> (턴 종료까지 지속)\\n캐릭터가 $[K103] 혹은 $[K100]를 받으면 본 효과가 제거되며 해당 공격으로 받는 피해+2pt",
+                    "Child": {
+                        "K103": {
+                            "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>불 원소 피해</color>",
+                            "Desc": "{SPRITE_PRESET#2103}불 원소 부착 시 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>융해</color>: 이번 피해+2pt\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>증발</color>: 이번 피해+2pt\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>과부하</color>: 이번 피해+2pt, 대상이 다음 캐릭터로 강제 교체된다.\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>연소</color>: 이번 피해+1pt, 턴 종료 시 불 원소 피해를 1pt 주는 [<color=#FFFFFFFF>불타는 화염</color>]을 생성한다. (사용 가능 횟수: 1, 최대 중첩수: 2)"
+                        },
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>",
+                            "Desc": "물리 피해는 원소를 부착할 수 없고, 원소 반응이 발생하지 않는다."
+                        }
+                    }
+                },
+                "C122052": {
+                    "Name": "방울방울 포위",
+                    "Desc": "<color=#FFFFFFFF>캐릭터 스킬 사용 불가</color> (턴 종료까지 지속)",
+                    "Child": {}
+                },
+                "K310": {
+                    "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}원소 에너지</color>",
+                    "Desc": "캐릭터가 「원소폭발」을 사용하려면 {SPRITE_PRESET#1110}원소 에너지를 소모해야 한다.\\n캐릭터가 「원소전투 스킬」 또는 「일반 공격」을 사용하면 {SPRITE_PRESET#1110}원소 에너지를 1pt 획득한다."
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3
+            }
+        },
+        "22053": {
+            "Name": "물방울 공세",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고, 핸드 카드 <color=#FFFFFFFF>$[C122051]</color>을 생성한다.\\n(<color=#FFFFFFFF>$[C122051]</color>을 장착한 캐릭터는 특수 스킬 사용 가능: <color=#FFFFFFFF>$[S1220511]</color>)",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "D__KEY__DAMAGE": 3,
+                "C122051": {
+                    "Name": "물방울 슬라임",
+                    "Desc": "$[K58]: $[S1220511]\\n<color=#FFFFFFFF>$[K3]: 2</color>\\n(캐릭터는 「{SPRITE_PRESET#3008}특수 스킬」을 1개만 장착할 수 있다)",
+                    "Child": {
+                        "K58": {
+                            "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#3008}특수 스킬</color>",
+                            "Desc": "출전 캐릭터가 「{SPRITE_PRESET#3008}특수 스킬」 카드 장착 시, 상응하는 「{SPRITE_PRESET#3008}특수 스킬」을 사용할 수 있다.\\n「{SPRITE_PRESET#3008}특수 스킬」 사용은 「전투 행동」으로 간주한다. 캐릭터가 빙결, 석화, 기절 등의 원인으로 스킬 사용 불가 시, 「{SPRITE_PRESET#3008}특수 스킬」 역시 사용할 수 없다.\\n캐릭터가 「{SPRITE_PRESET#3008}특수 스킬」 사용 시, 스킬 사용으로 간주하지 않아, 「스킬 사용 후」 「캐릭터가 원소 반응 발동 후」 등의 효과를 발동할 수 없다. 캐릭터가 「{SPRITE_PRESET#3008}특수 스킬」로 주는 피해는 캐릭터가 주는 피해로 간주하지 않는다"
+                        },
+                        "S1220511": "S1220511",
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                },
+                "S1220511": "S1220511"
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "22054": {
+            "Name": "광란의 낫",
+            "Desc": "",
+            "Child": {},
+            "Cost": {}
+        }
+    },
+    "Related": 222051
+}

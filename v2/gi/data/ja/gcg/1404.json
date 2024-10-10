@@ -1,0 +1,106 @@
+{
+    "Type": "Character",
+    "Name": "セノ",
+    "Title": "緘秘の裁き·セノ",
+    "Desc": "カードには、砂漠で燃えたぎる太陽のような大マハマトラの熱い情愛が込められている。",
+    "Source": "キャッツテールでセノを招待し、友好対戦に勝利することで獲得",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Cyno",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "雷元素",
+        "長柄武器",
+        "スメール"
+    ],
+    "Talent": {
+        "14041": {
+            "Name": "七聖槍術",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "14042": {
+            "Name": "秘儀·律淵渡魂",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。\\n<color=#FFFFFFFF>$[C114041]</color>の「憑依」レベル+1。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO",
+                "D__KEY__DAMAGE": 3,
+                "C114041": {
+                    "Name": "啓途誓使",
+                    "Desc": "<color=#FFFFFFFF>エンドフェーズ</color>：「憑依」を1レベル重ねる。「憑依」のレベルが8以上の場合、レベル-6。\\n<color=#FFFFFFFF>「憑依」のレベルによって以下の効果を得る。</color>\\nレベル2以上：$[K100]が$[K104]へと変わる。\\nレベル4以上：与えるダメージ+2。",
+                    "Child": {
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>",
+                            "Desc": "物理ダメージは元素付着させたり、元素反応を起こしたりはしません。"
+                        },
+                        "K104": {
+                            "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素ダメージ</color>",
+                            "Desc": "{SPRITE_PRESET#2104}雷元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>過負荷</color>：ダメージ+2、目標を強制的に次のキャラにチェンジさせる\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>超電導</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>感電</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>原激化</color>：ダメージ+1、次の草元素または雷元素ダメージを2回まで+1できる「<color=#FFFFFFFF>激化領域</color>」を生成する"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 3
+            }
+        },
+        "14043": {
+            "Name": "聖儀·狼駆憑走",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。\\n<color=#FFFFFFFF>$[C114041]</color>の「憑依」レベル+2。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO",
+                "D__KEY__DAMAGE": 4,
+                "C114041": {
+                    "Name": "啓途誓使",
+                    "Desc": "<color=#FFFFFFFF>エンドフェーズ</color>：「憑依」を1レベル重ねる。「憑依」のレベルが8以上の場合、レベル-6。\\n<color=#FFFFFFFF>「憑依」のレベルによって以下の効果を得る。</color>\\nレベル2以上：$[K100]が$[K104]へと変わる。\\nレベル4以上：与えるダメージ+2。",
+                    "Child": {
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>",
+                            "Desc": "物理ダメージは元素付着させたり、元素反応を起こしたりはしません。"
+                        },
+                        "K104": {
+                            "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素ダメージ</color>",
+                            "Desc": "{SPRITE_PRESET#2104}雷元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>過負荷</color>：ダメージ+2、目標を強制的に次のキャラにチェンジさせる\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>超電導</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>感電</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>原激化</color>：ダメージ+1、次の草元素または雷元素ダメージを2回まで+1できる「<color=#FFFFFFFF>激化領域</color>」を生成する"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 4,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "14044": {
+            "Name": "行度誓戒",
+            "Desc": "【固有】戦闘開始時、<color=#FFFFFFFF>$[C114041]</color>が付与される。",
+            "Child": {
+                "C114041": {
+                    "Name": "啓途誓使",
+                    "Desc": "<color=#FFFFFFFF>エンドフェーズ</color>：「憑依」を1レベル重ねる。「憑依」のレベルが8以上の場合、レベル-6。\\n<color=#FFFFFFFF>「憑依」のレベルによって以下の効果を得る。</color>\\nレベル2以上：$[K100]が$[K104]へと変わる。\\nレベル4以上：与えるダメージ+2。",
+                    "Child": {
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>",
+                            "Desc": "物理ダメージは元素付着させたり、元素反応を起こしたりはしません。"
+                        },
+                        "K104": {
+                            "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素ダメージ</color>",
+                            "Desc": "{SPRITE_PRESET#2104}雷元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>過負荷</color>：ダメージ+2、目標を強制的に次のキャラにチェンジさせる\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>超電導</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>感電</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>原激化</color>：ダメージ+1、次の草元素または雷元素ダメージを2回まで+1できる「<color=#FFFFFFFF>激化領域</color>」を生成する"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 214041
+}

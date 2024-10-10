@@ -1,0 +1,111 @@
+{
+    "Name": "Fatui Skirmisher - Geochanter Bracer",
+    "Desc": "A skirmisher with the ability to generate a Geo Ward and defend their allies.\\nUnlike the elite Mages and Agents, Fatui Skirmishers are soldiers of lesser individual might.\\nTo complete their tasks and reduce losses in men and material, their tactics are thus more reliant on teamwork.",
+    "Icon": "UI_MonsterIcon_Skirmisher_Male_Standard_Staff_Rock_01",
+    "Codex": "FATUI",
+    "Title": "Fatui Skirmisher - Geochanter Bracer",
+    "SpecialNames": [
+        "Decord",
+        "Russell",
+        "Artyom",
+        "Igor",
+        "Feodor",
+        "Vladimir",
+        "Nikolai",
+        "Maksim",
+        "Nikolayev",
+        "Iosef",
+        "Shevchenko",
+        "Konstantin",
+        "Sasha",
+        "Aleksandr",
+        "Grigor",
+        "Sergei",
+        "Mikhail",
+        "Pavlovich",
+        "Ismailovich",
+        "Andrei",
+        "Ivanov",
+        "Kirilyenko",
+        "Yevgeni",
+        "Danilovich",
+        "Vasilyev",
+        "Leo",
+        "Borya",
+        "Semyon",
+        "Pavlo",
+        "Pyotrov",
+        "Aleksey",
+        "Liev"
+    ],
+    "Reward": [
+        {
+            "Id": 202,
+            "Rank": 3,
+            "Icon": "UI_ItemIcon_202"
+        },
+        {
+            "Id": 112032,
+            "Rank": 1,
+            "Icon": "UI_ItemIcon_112032"
+        },
+        {
+            "Id": 112033,
+            "Rank": 2,
+            "Icon": "UI_ItemIcon_112033"
+        },
+        {
+            "Id": 112034,
+            "Rank": 3,
+            "Icon": "UI_ItemIcon_112034"
+        }
+    ],
+    "Child": {
+        "23010401": {
+            "MonsterName": "Skirmisher_Male_Standard_Staff_Rock_01",
+            "Type": "MONSTER_ORDINARY",
+            "HpDrops": [
+                {
+                    "dropId": 22010027,
+                    "hpPercent": 66
+                },
+                {
+                    "dropId": 22010027,
+                    "hpPercent": 33
+                },
+                {}
+            ],
+            "KillDropId": 22010027,
+            "Prop": [
+                {
+                    "type": "FIGHT_PROP_BASE_HP",
+                    "growCurve": "GROW_CURVE_HP"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_ATTACK",
+                    "growCurve": "GROW_CURVE_ATTACK"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_DEFENSE",
+                    "growCurve": "GROW_CURVE_DEFENSE"
+                }
+            ],
+            "LocalLegend": false,
+            "SubHurt": {
+                "Fire": 0.1000000014901,
+                "Grass": 0.1000000014901,
+                "Water": 0.1000000014901,
+                "Elec": 0.1000000014901,
+                "Wind": 0.1000000014901,
+                "Ice": 0.1000000014901,
+                "Rock": 0.1000000014901,
+                "Physical": -0.2000000029802
+            },
+            "Base": {
+                "HP": 40.7519989013672,
+                "ATK": 37.6800003051758,
+                "DEF": 500
+            }
+        }
+    }
+}

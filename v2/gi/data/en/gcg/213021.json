@@ -1,0 +1,35 @@
+{
+    "Type": "Action",
+    "Name": "Crossfire",
+    "Title": "Xiangling: Crossfire",
+    "Desc": "This heat's just normal for a restaurant's standards!",
+    "Source": "Reward for inviting Xiangling to a duel at The Cat's Tail and achieving all corresponding challenge objectives",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Xiangling",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PYRO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "Talent",
+        "Combat Action"
+    ],
+    "Talent": {
+        "Name": "Crossfire",
+        "Desc": "$[K1]: When your active character is <color=#FFFFFFFF>$[A1302]</color>, equip this card.\\nAfter $[A1302] equips this card, immediately use <color=#FFD780FF>$[S13022]</color> once.\\nWhen your $[A1302], who has this card equipped, uses <color=#FFFFFFFF>$[S13022]</color>, she will also deal 1 $[K103].\\n(You must have $[A1302] in your deck to add this card to your deck.)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+            },
+            "A1302": "Crossfire",
+            "S13022": "S13022",
+            "K103": {
+                "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>Pyro DMG</color>",
+                "Desc": "Applies {SPRITE_PRESET#2103}Pyro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Melt</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Vaporize</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Overloaded</color>: DMG +2 for this instance, the target is forcibly switched to the next character\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Burning</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Burning Flame</color>] that will deal 1 Pyro DMG at the end of the Round (Takes effect once, max 2 stacks)"
+            }
+        }
+    }
+}

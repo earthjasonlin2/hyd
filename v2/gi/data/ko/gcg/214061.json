@@ -1,0 +1,41 @@
+{
+    "Type": "Action",
+    "Name": "아계(我界)",
+    "Title": "쿠죠 사라·아계(我界)",
+    "Desc": "「활과 하나가 되어 어떤 적이든 모두 제거할 것이다!」",
+    "Source": "캣테일 술집에서 쿠죠 사라를 초대해 대전하고 상응하는 도전 목표 달성 후 획득",
+    "Icon": "UI_Gcg_CardFace_Modify_Constellation_Sara",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_ELECTRO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "특성",
+        "전투 행동"
+    ],
+    "Talent": {
+        "Name": "아계(我界)",
+        "Desc": "$[K1]: 아군 출전 캐릭터가 <color=#FFFFFFFF>$[A1406]</color>일 때 해당 카드를 장착할 수 있다.\\n$[A1406]가 해당 카드를 장착하면 즉시 <color=#FFD780FF>$[S14062]</color>을 1회 사용한다.\\n해당 카드를 장착한 $[A1406]가 필드에 있을 경우, <color=#FFFFFFFF>$[C114063]</color>가 부착된 아군 {SPRITE_PRESET#2104}<color=#FFACFFFF>번개 원소</color> 캐릭터의 <color=#FFFFFFFF>원소전투 스킬</color> 및 <color=#FFFFFFFF>원소폭발</color>로 주는 피해 추가+1pt\\n(카드 덱에 $[A1406]가 있어야만 카드 덱에 추가 가능)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>전투 행동</color>",
+                "Desc": "아군이 전투 행동을 1회 진행하면 행동 순서가 상대에게 넘어간다.\\n<color=#FFFFFFFF>해당 규칙에 속하는 카드는 사용 시 빠른 행동이 아닌 전투 행동으로 간주한다</color>."
+            },
+            "A1406": "아계(我界)",
+            "S14062": "S14062",
+            "C114063": {
+                "Name": "빛나는 깃털의 수호",
+                "Desc": "부착 캐릭터가 <color=#FFFFFFFF>원소전투 스킬</color> 및 <color=#FFFFFFFF>원소폭발</color>로 주는 피해+1pt\\n<color=#FFFFFFFF>$[K3]: 2</color>",
+                "Child": {
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                        "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                    }
+                }
+            }
+        }
+    }
+}

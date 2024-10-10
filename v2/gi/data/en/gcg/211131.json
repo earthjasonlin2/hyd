@@ -1,0 +1,42 @@
+{
+    "Type": "Action",
+    "Name": "Divine Retribution",
+    "Title": "Rosaria: Divine Retribution",
+    "Desc": "\"Lights out...\"",
+    "Source": "Reward for inviting Rosaria to a duel at The Cat's Tail and achieving all corresponding challenge objectives",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Rosaria",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_CRYO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "Talent",
+        "Combat Action"
+    ],
+    "Talent": {
+        "Name": "Divine Retribution",
+        "Desc": "$[K1]: When your active character is <color=#FFFFFFFF>$[A1113]</color>, equip this card.\\nAfter $[A1113] equips this card, immediately use <color=#FFD780FF>$[S11132]</color> once.\\nAfter your $[A1113], who has this card equipped, uses <color=#FFFFFFFF>$[S11032]</color>, or after you generate <color=#FFFFFFFF>$[C111133]</color>, create 1 <color=#FFFFFFFF>$[C332002]</color> card in your Hand.\\n(You must have $[A1113] in your deck to add this card to your deck.)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+            },
+            "A1113": "Divine Retribution",
+            "S11132": "S11132",
+            "S11032": "S11032",
+            "C111133": {
+                "Name": "Shadowshade",
+                "Desc": "<color=#FFFFFFFF>When dealing Skill DMG:</color> Remove this status and double the DMG dealt for this instance.",
+                "Child": {}
+            },
+            "C332002": {
+                "Name": "Changing Shifts",
+                "Desc": "<color=#FFFFFFFF>The next time you perform \"Switch Character\":</color> Spend 1 less Elemental Die.",
+                "Child": {}
+            }
+        }
+    }
+}

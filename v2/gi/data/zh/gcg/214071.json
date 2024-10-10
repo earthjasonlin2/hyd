@@ -1,0 +1,34 @@
+{
+    "Type": "Action",
+    "Name": "万千的愿望",
+    "Title": "雷电将军·万千的愿望",
+    "Desc": "恶曜开眼，威光无赦。",
+    "Source": "在猫尾酒馆中邀请雷电将军进行对局，完成相应挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Shougun",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_ELECTRO",
+            "count": 4
+        },
+        {
+            "costType": "GCG_COST_ENERGY",
+            "count": 2
+        }
+    ],
+    "Tag": [
+        "天赋",
+        "战斗行动"
+    ],
+    "Talent": {
+        "Name": "万千的愿望",
+        "Desc": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1407]</color>时，装备此牌。\\n$[A1407]装备此牌后，立刻使用一次<color=#FFD780FF>$[S14073]</color>。\\n装备有此牌的$[A1407]使用<color=#FFFFFFFF>$[S14073]</color>时：每消耗1点<color=#FFFFFFFF>「愿力」</color>，都使造成的伤害额外+1。\\n（牌组中包含$[A1407]，才能加入牌组）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>战斗行动</color>",
+                "Desc": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+            },
+            "A1407": "万千的愿望",
+            "S14073": "S14073"
+        }
+    }
+}

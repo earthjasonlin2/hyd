@@ -1,0 +1,38 @@
+{
+    "Type": "Action",
+    "Name": "장수의 투구",
+    "Title": "변함 없는 맹세·장수의 투구",
+    "Desc": "「최후의 피 한 방울이 대지에 흘러들자, 유리 모래가 다시 반짝이는 빛을 되찾았다」",
+    "Source": "",
+    "Icon": "UI_Gcg_CardFace_Modify_Artifact_Jiangshuai",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PAIMON",
+            "count": 2
+        },
+        {}
+    ],
+    "Tag": [
+        "성유물"
+    ],
+    "Talent": {
+        "Name": "장수의 투구",
+        "Desc": "<color=#FFFFFFFF>행동 단계 시작 시:</color> 캐릭터에게 <color=#FFFFFFFF>「$[C301201]」</color>을 부착한다. ($[K6]을 2pt 제공해 해당 캐릭터를 보호)\\n(캐릭터는 「{SPRITE_PRESET#3004}성유물」을 1개만 장착할 수 있다)",
+        "Child": {
+            "C301201": {
+                "Name": "변하지 않는 위상",
+                "Desc": "$[K6]을 2pt 제공해 부착 캐릭터를 보호한다.",
+                "Child": {
+                    "K6": {
+                        "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>보호막</color>",
+                        "Desc": "해당 보호막의 보호를 받는 캐릭터가 피격 시, 보호막을 소모해 피해를 상쇄한다."
+                    }
+                }
+            },
+            "K6": {
+                "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>보호막</color>",
+                "Desc": "해당 보호막의 보호를 받는 캐릭터가 피격 시, 보호막을 소모해 피해를 상쇄한다."
+            }
+        }
+    }
+}

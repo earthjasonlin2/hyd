@@ -1,0 +1,106 @@
+{
+    "Type": "Character",
+    "Name": "라이오슬리",
+    "Title": "고요한 죄의 밀사·라이오슬리",
+    "Desc": "죄가 잠긴 심해엔 물결이 일지 않는다",
+    "Source": "캣테일 술집에서 라이오슬리 초대 및 친선 대전 난이도 승리 후 획득",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Wriothesley",
+    "Hp": 10,
+    "Cost": 3,
+    "Tag": [
+        "얼음 원소",
+        "법구",
+        "폰타인",
+        "아르케의 힘: 우시아"
+    ],
+    "Talent": {
+        "11111": {
+            "Name": "된서리 연타",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "D__KEY__DAMAGE": 1
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "11112": {
+            "Name": "얼음송곳니 돌진",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 본 캐릭터에게 <color=#FFFFFFFF>$[C111111]</color>을 부착한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "D__KEY__DAMAGE": 2,
+                "C111111": {
+                    "Name": "혹한의 징벌",
+                    "Desc": "<color=#FFFFFFFF>부착 캐릭터가 일반 공격 시:</color> 주는 피해+1pt. 만약 캐릭터의 HP가 6pt 이상이면 해당 스킬의 {SPRITE_PRESET#1101}<color=#99FFFFFF>얼음 원소</color> 소모 개수-1.\\n해당 스킬 결산 후, 만약 캐릭터의 HP가 6pt 이상이면 캐릭터에게 $[K5]를 1pt 준다. 만약 캐릭터의 HP가 5pt 이하일 경우, 캐릭터 HP를 2pt 치유한다.\\n<color=#FFFFFFFF>$[K3]: 2</color>",
+                    "Child": {
+                        "K5": {
+                            "Name": "<color=#FFFFFFFF>관통 피해</color>",
+                            "Desc": "관통 피해는 피해 보너스를 획득할 수 없으나, 주는 피해가 보호막 또는 피해 면역과 같은 효과에 의해 상쇄되지 않는다."
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3
+            }
+        },
+        "11113": {
+            "Name": "짓씹는 흑금늑대",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[C111112]</color>를 생성한다.\\n<color=#FFFFFFFF>본 캐릭터가 이번 턴에 피해 또는 치유를 누적 2회 받을 때마다:</color> 이 스킬의 원소 주사위 소모 개수-1 (최대-2)",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "D__KEY__DAMAGE": 2,
+                "C111112": {
+                    "Name": "얼음송곳의 여파",
+                    "Desc": "<color=#FFFFFFFF>아군이 행동하기 전:</color> $[K101]를 2pt 준다.\\n<color=#FFFFFFFF>$[K3]: 1</color>",
+                    "Child": {
+                        "K101": {
+                            "Name": "{SPRITE_PRESET#2101}<color=#99FFFFFF>얼음 원소 피해</color>",
+                            "Desc": "{SPRITE_PRESET#2101}얼음 원소 부착 시 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2103}<color=#FFFFFFFF>융해</color>: 이번 피해+2pt\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2104}<color=#FFFFFFFF>초전도</color>: 이번 피해+1pt, 대상 이외의 모든 상대 캐릭터에게 관통 피해를 1pt 준다.\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2102}<color=#FFFFFFFF>빙결</color>: 이번 피해+1pt, 이번 턴에 대상을 행동 불가로 만든다. (물리 피해 또는 불 원소 피해를 받으면 조기 해제되지만, 해당 피해로 받는 피해량이 2pt 추가된다)"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3,
+                "GCG_COST_ENERGY": 3
+            }
+        },
+        "11114": {
+            "Name": "",
+            "Desc": "",
+            "Child": {},
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        },
+        "11115": {
+            "Name": "",
+            "Desc": "",
+            "Child": {},
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        },
+        "11116": {
+            "Name": "짓씹는 흑금늑대",
+            "Desc": "<color=#FFFFFFFF>본 캐릭터가 이번 턴에 치유 또는 피해를 누적 2회 받을 시:</color> 원소 폭발의 원소 주사위 소모 개수-1 (최대-2)",
+            "Child": {},
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 211111
+}

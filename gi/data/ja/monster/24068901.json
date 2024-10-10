@@ -1,0 +1,62 @@
+{
+    "Name": "制圧特化型マシナリー",
+    "Desc": "「シェルビウス式」に基づいて調整されたクロックワーク·マシナリー。残念ながら、攻撃以外の能力は持ち合わせていない。\\n対消滅エネルギーに基づくクロックワーク·マシナリーは通常、特殊結晶からなる継力器を用いて、フォンテーヌの環境より抽出したウーシアとプネウマのエネルギーを利用する。だが、フォンテーヌ以外の地域でも、予め用意したエネルギークラスターによって短距離·短時間の活動が可能だ。両者の違いは装置の結晶部品の形状に表れている。",
+    "Icon": "UI_MonsterIcon_MachinaIustitia_Ruggiero_02",
+    "Codex": "AUTOMATRON",
+    "Title": "制圧特化型",
+    "SpecialNames": [
+        "ブレッチリー式マシナリー"
+    ],
+    "Reward": [],
+    "Child": {
+        "24068901": {
+            "MonsterName": "MachinaIustitia_Ruggiero_Codex",
+            "Type": "MONSTER_ORDINARY",
+            "HpDrops": [
+                {
+                    "dropId": 22010010,
+                    "hpPercent": 75
+                },
+                {
+                    "dropId": 22010010,
+                    "hpPercent": 50
+                },
+                {
+                    "dropId": 22010010,
+                    "hpPercent": 25
+                }
+            ],
+            "KillDropId": 22010030,
+            "Prop": [
+                {
+                    "type": "FIGHT_PROP_BASE_HP",
+                    "growCurve": "GROW_CURVE_HP_2"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_ATTACK",
+                    "growCurve": "GROW_CURVE_ATTACK_2"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_DEFENSE",
+                    "growCurve": "GROW_CURVE_DEFENSE"
+                }
+            ],
+            "LocalLegend": false,
+            "SubHurt": {
+                "Fire": 0.1000000014901,
+                "Grass": 0.1000000014901,
+                "Water": 0.1000000014901,
+                "Elec": 0.1000000014901,
+                "Wind": 0.1000000014901,
+                "Ice": 0.1000000014901,
+                "Rock": 0.1000000014901,
+                "Physical": 0.1000000014901
+            },
+            "Base": {
+                "HP": 54.3359985351563,
+                "ATK": 75.3600006103516,
+                "DEF": 500
+            }
+        }
+    }
+}

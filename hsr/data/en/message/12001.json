@@ -1,0 +1,71 @@
+{
+    "Id": 12001,
+    "ContactsId": 13,
+    "ContactsType": 1,
+    "ContactCamp": 3,
+    "Name": "The Astral Express Family",
+    "Signature": "...",
+    "IconPath": "SpriteOutput/AvatarRoundIcon/UI_Message_Group_Train.png",
+    "Sections": [
+        {
+            "Id": 1200100,
+            "Messages": {
+                "120010000": {
+                    "Id": 120010000,
+                    "ItemType": "Text",
+                    "ItemContentID": null,
+                    "ContactsID": 1002,
+                    "Name": "Dan Heng",
+                    "IconPath": "SpriteOutput/AvatarRoundIcon/Avatar/1002.png",
+                    "MainText": "{NICKNAME}, March, where are you?",
+                    "OptionText": null,
+                    "NextItemIDList": [
+                        120010002
+                    ],
+                    "Sender": "PlayerAuto"
+                },
+                "120010002": {
+                    "Id": 120010002,
+                    "ItemType": "Text",
+                    "ItemContentID": null,
+                    "ContactsID": null,
+                    "Name": null,
+                    "IconPath": null,
+                    "MainText": "Message failed to send",
+                    "OptionText": null,
+                    "NextItemIDList": [
+                        120010001
+                    ],
+                    "Sender": "System"
+                },
+                "120010001": {
+                    "Id": 120010001,
+                    "ItemType": "Text",
+                    "ItemContentID": null,
+                    "ContactsID": 1002,
+                    "Name": "Dan Heng",
+                    "IconPath": "SpriteOutput/AvatarRoundIcon/Avatar/1002.png",
+                    "MainText": "I'll go find you folks.",
+                    "OptionText": "I'll go find you folks",
+                    "NextItemIDList": [
+                        120010003
+                    ],
+                    "Sender": "Player"
+                },
+                "120010003": {
+                    "Id": 120010003,
+                    "ItemType": "Text",
+                    "ItemContentID": null,
+                    "ContactsID": null,
+                    "Name": null,
+                    "IconPath": null,
+                    "MainText": "Message failed to send",
+                    "OptionText": null,
+                    "NextItemIDList": [],
+                    "Sender": "System"
+                }
+            },
+            "MessageStart": 120010000
+        }
+    ]
+}

@@ -1,0 +1,564 @@
+{
+    "Id": 2033010,
+    "Name": "Howling Casket",
+    "Desc": "A combat machine developed by the Intelligentsia Guild, utilizing borisin biological tissues. These machines possess the tenacious vitality of long-life species and the \"Slaughter Algorithm\" evolved over countless ages.",
+    "MonsterCampID": 2,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 1116,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/Monster_2033010.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "Elite",
+    "SpeedBase": 120,
+    "StanceBase": 360,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.20000000018626451,
+    "Child": [
+        {
+            "Id": 2033010,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Thunder",
+                "Wind",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Fire",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 203301001,
+                    "SkillName": "Bionic Claws",
+                    "SkillDesc": "Deals Physical DMG to a single target.",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 203301002,
+                    "SkillName": "Thunderous Roar",
+                    "SkillDesc": "Deals minor Physical DMG to a single target and units adjacent to the target.",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 203301003,
+                    "SkillName": "Moon Rage Mimicry",
+                    "SkillDesc": "Enters the <u>Moon Rage</u> state.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 203301004,
+                    "SkillName": "Lupitoxin Synthesis",
+                    "SkillDesc": "Deals minor Physical DMG to all targets, with a high chance of inflicting \"<u>Terror Grip</u>\" on all allies.",
+                    "DamageType": "Physical",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 203301005,
+                    "SkillName": "Slaughter Algorithm",
+                    "SkillDesc": "Deals Physical DMG to a single target and adjacent units. When the target enters the \"<u>Terror Grip</u>\" or \"<u>Terrified</u>\" state, additionally deals DMG.",
+                    "DamageType": "Physical",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 203301006,
+                    "SkillName": "Borisin Instinct",
+                    "SkillDesc": "When entering battle, decreases the number of <u>Bloodlust</u> stacks needed to enter <u>Moon Rage</u>. After a friendly unit launches an attack, applies 1 stack of <u>Bloodlust</u> to <u>friendly units who can enter the Moon Rage effect</u>. When <u>Bloodlust</u> reaches a certain stack, the friendly unit enters the <u>Moon Rage</u> state.\\nA Moon Rage countdown icon appears on the Action Order. When the countdown's turn begins, <u>Moon Rage</u> is dispelled for all friendly units.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 203301002,
+            "AttackModifyRatio": 0.9090910009108484,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 0.7500000006984919,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": -19.99999999976717,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Thunder",
+                "Wind",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Fire",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 203301001,
+                    "SkillName": "Bionic Claws",
+                    "SkillDesc": "Deals Physical DMG to a single target.",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 203301002,
+                    "SkillName": "Thunderous Roar",
+                    "SkillDesc": "Deals minor Physical DMG to a single target and units adjacent to the target.",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 203301003,
+                    "SkillName": "Moon Rage Mimicry",
+                    "SkillDesc": "Enters the <u>Moon Rage</u> state.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 203301004,
+                    "SkillName": "Lupitoxin Synthesis",
+                    "SkillDesc": "Deals minor Physical DMG to all targets, with a high chance of inflicting \"<u>Terror Grip</u>\" on all allies.",
+                    "DamageType": "Physical",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 203301005,
+                    "SkillName": "Slaughter Algorithm",
+                    "SkillDesc": "Deals Physical DMG to a single target and adjacent units. When the target enters the \"<u>Terror Grip</u>\" or \"<u>Terrified</u>\" state, additionally deals DMG.",
+                    "DamageType": "Physical",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 203301006,
+                    "SkillName": "Borisin Instinct",
+                    "SkillDesc": "When entering battle, decreases the number of <u>Bloodlust</u> stacks needed to enter <u>Moon Rage</u>. After a friendly unit launches an attack, applies 1 stack of <u>Bloodlust</u> to <u>friendly units who can enter the Moon Rage effect</u>. When <u>Bloodlust</u> reaches a certain stack, the friendly unit enters the <u>Moon Rage</u> state.\\nA Moon Rage countdown icon appears on the Action Order. When the countdown's turn begins, <u>Moon Rage</u> is dispelled for all friendly units.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 203301001,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 0.958333000773564,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Wind",
+                "Quantum"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 203301001,
+                    "SkillName": "Bionic Claws",
+                    "SkillDesc": "Deals Physical DMG to a single target.",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 203301002,
+                    "SkillName": "Thunderous Roar",
+                    "SkillDesc": "Deals minor Physical DMG to a single target and units adjacent to the target.",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 203301003,
+                    "SkillName": "Moon Rage Mimicry",
+                    "SkillDesc": "Enters the <u>Moon Rage</u> state.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 203301004,
+                    "SkillName": "Lupitoxin Synthesis",
+                    "SkillDesc": "Deals minor Physical DMG to all targets, with a high chance of inflicting \"<u>Terror Grip</u>\" on all allies.",
+                    "DamageType": "Physical",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 203301005,
+                    "SkillName": "Slaughter Algorithm",
+                    "SkillDesc": "Deals Physical DMG to a single target and adjacent units. When the target enters the \"<u>Terror Grip</u>\" or \"<u>Terrified</u>\" state, additionally deals DMG.",
+                    "DamageType": "Physical",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 203301006,
+                    "SkillName": "Borisin Instinct",
+                    "SkillDesc": "When entering battle, decreases the number of <u>Bloodlust</u> stacks needed to enter <u>Moon Rage</u>. After a friendly unit launches an attack, applies 1 stack of <u>Bloodlust</u> to <u>friendly units who can enter the Moon Rage effect</u>. When <u>Bloodlust</u> reaches a certain stack, the friendly unit enters the <u>Moon Rage</u> state.\\nA Moon Rage countdown icon appears on the Action Order. When the countdown's turn begins, <u>Moon Rage</u> is dispelled for all friendly units.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 203301003,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Thunder",
+                "Wind",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Fire",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 203301001,
+                    "SkillName": "Bionic Claws",
+                    "SkillDesc": "Deals Physical DMG to a single target.",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 203301002,
+                    "SkillName": "Thunderous Roar",
+                    "SkillDesc": "Deals minor Physical DMG to a single target and units adjacent to the target.",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 203301003,
+                    "SkillName": "Moon Rage Mimicry",
+                    "SkillDesc": "Enters the <u>Moon Rage</u> state.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 203301004,
+                    "SkillName": "Lupitoxin Synthesis",
+                    "SkillDesc": "Deals minor Physical DMG to all targets, with a high chance of inflicting \"<u>Terror Grip</u>\" on all allies.",
+                    "DamageType": "Physical",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 203301005,
+                    "SkillName": "Slaughter Algorithm",
+                    "SkillDesc": "Deals Physical DMG to a single target and adjacent units. When the target enters the \"<u>Terror Grip</u>\" or \"<u>Terrified</u>\" state, additionally deals DMG.",
+                    "DamageType": "Physical",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 203301006,
+                    "SkillName": "Borisin Instinct",
+                    "SkillDesc": "When entering battle, decreases the number of <u>Bloodlust</u> stacks needed to enter <u>Moon Rage</u>. After a friendly unit launches an attack, applies 1 stack of <u>Bloodlust</u> to <u>friendly units who can enter the Moon Rage effect</u>. When <u>Bloodlust</u> reaches a certain stack, the friendly unit enters the <u>Moon Rage</u> state.\\nA Moon Rage countdown icon appears on the Action Order. When the countdown's turn begins, <u>Moon Rage</u> is dispelled for all friendly units.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 203301004,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 0.5000000004656613,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Thunder",
+                "Wind",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Fire",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 203301001,
+                    "SkillName": "Bionic Claws",
+                    "SkillDesc": "Deals Physical DMG to a single target.",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 203301002,
+                    "SkillName": "Thunderous Roar",
+                    "SkillDesc": "Deals minor Physical DMG to a single target and units adjacent to the target.",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 203301003,
+                    "SkillName": "Moon Rage Mimicry",
+                    "SkillDesc": "Enters the <u>Moon Rage</u> state.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 203301004,
+                    "SkillName": "Lupitoxin Synthesis",
+                    "SkillDesc": "Deals minor Physical DMG to all targets, with a high chance of inflicting \"<u>Terror Grip</u>\" on all allies.",
+                    "DamageType": "Physical",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 203301005,
+                    "SkillName": "Slaughter Algorithm",
+                    "SkillDesc": "Deals Physical DMG to a single target and adjacent units. When the target enters the \"<u>Terror Grip</u>\" or \"<u>Terrified</u>\" state, additionally deals DMG.",
+                    "DamageType": "Physical",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 203301006,
+                    "SkillName": "Borisin Instinct",
+                    "SkillDesc": "When entering battle, decreases the number of <u>Bloodlust</u> stacks needed to enter <u>Moon Rage</u>. After a friendly unit launches an attack, applies 1 stack of <u>Bloodlust</u> to <u>friendly units who can enter the Moon Rage effect</u>. When <u>Bloodlust</u> reaches a certain stack, the friendly unit enters the <u>Moon Rage</u> state.\\nA Moon Rage countdown icon appears on the Action Order. When the countdown's turn begins, <u>Moon Rage</u> is dispelled for all friendly units.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 2033010,
+            "AvatarExpReward": 150,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182008
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183003
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 2033010,
+            "WorldLevel": 1,
+            "AvatarExpReward": 200,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182008
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183003
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 2033010,
+            "WorldLevel": 2,
+            "AvatarExpReward": 250,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182008
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183003
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 2033010,
+            "WorldLevel": 3,
+            "AvatarExpReward": 300,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182008
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183003
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 2033010,
+            "WorldLevel": 4,
+            "AvatarExpReward": 350,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182008
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183003
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 2033010,
+            "WorldLevel": 5,
+            "AvatarExpReward": 400,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182008
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183003
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 2033010,
+            "WorldLevel": 6,
+            "AvatarExpReward": 400,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182008
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183003
+                }
+            ]
+        }
+    ]
+}

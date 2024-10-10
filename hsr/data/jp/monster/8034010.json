@@ -1,0 +1,448 @@
+{
+    "Id": 8034010,
+    "Name": "「{RUBY_B#じゅう}十{RUBY_E#}の{RUBY_B#せきしん}石心{RUBY_E#}」{RUBY_B#はくぎ}博戯{RUBY_E#}の{RUBY_B#さきんせき}砂金石{RUBY_E#}",
+    "Desc": "スターピースカンパニー「戦略投資部」の高級幹部であり、「十の石心」の1人。基石を通して「存護」の使令の権能を手に入れた。その身をダイスとして、死地に立ちながら生を手にする。",
+    "MonsterCampID": 9,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 2232,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/Monster_8034010.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "LittleBoss",
+    "SpeedBase": 120,
+    "StanceBase": 450,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.3000000002793968,
+    "Child": [
+        {
+            "Id": 8034010,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Ice",
+                "Thunder"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.40000000037252903
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 803401001,
+                    "SkillName": "一か八か",
+                    "SkillDesc": "指定した味方単体に虚数属性ダメージを与える。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 803401002,
+                    "SkillName": "分散投資",
+                    "SkillDesc": "連続でランダムな味方単体に少量の虚数属性ダメージを与える。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 5
+                },
+                {
+                    "Id": 803401003,
+                    "SkillName": "サイコロ噴泉",
+                    "SkillDesc": "味方全体に少量の虚数属性ダメージを与え、味方それぞれのEPを減らす。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401004,
+                    "SkillName": "ギャンブルタイム",
+                    "SkillDesc": "「オール・オア・ナッシング」を召喚し、味方単体をギャンブルデュエルに引きずり込む。「オール・オア・ナッシング」はギャンブルデュエルに参加している味方の攻撃を受けた後、攻撃者に1～6のポイントをランダムで与える。\\nギャンブルデュエルに参加している味方単体のターン終了時、ポイントが博戯の砂金石より小さい場合は敗北となり、攻撃を受ける。\\nポイントが博戯の砂金石より大きい場合は勝利となり、必殺技を発動できるようになる。\\nまた、賭けに参加していない味方は「観戦者は語る勿れ」状態になり、賭けが終了した後に解除される。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401005,
+                    "SkillName": "博打の宴",
+                    "SkillDesc": "「オール・オア・ナッシング」を召喚し、味方全体をギャンブルデュエルに引きずり込む。「オール・オア・ナッシング」は味方の攻撃を受けた後、攻撃者に1～6のポイントをランダムで与える。\\n博戯の砂金石の次の行動時、ポイントが博戯の砂金石より小さい味方は敗北となり、攻撃を受ける。\\nポイントが博戯の砂金石より大きい味方は勝利となり、必殺技を発動できるようになる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401006,
+                    "SkillName": "敗者の退席",
+                    "SkillDesc": "ギャンブルデュエルに負けた味方単体に虚数属性ダメージを与え、高確率で攻撃を受けた味方を禁錮状態にする。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 803401007,
+                    "SkillName": "勝者総取り",
+                    "SkillDesc": "ギャンブルデュエルに負けたすべての味方に大量の虚数属性ダメージを与え、高確率で攻撃を受けた味方を禁錮状態にする。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 803401008,
+                    "SkillName": "博戯",
+                    "SkillDesc": "毎回賭けに勝った味方は「豪運」の効果を獲得し、与ダメージが増加する。毎回賭けに負けた味方は「不運」の効果を獲得し、被ダメージが増加する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401009,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 803401001,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1.5000000004656613,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Ice",
+                "Thunder"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.40000000037252903
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 803401001,
+                    "SkillName": "一か八か",
+                    "SkillDesc": "指定した味方単体に虚数属性ダメージを与える。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 803401002,
+                    "SkillName": "分散投資",
+                    "SkillDesc": "連続でランダムな味方単体に少量の虚数属性ダメージを与える。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 5
+                },
+                {
+                    "Id": 803401003,
+                    "SkillName": "サイコロ噴泉",
+                    "SkillDesc": "味方全体に少量の虚数属性ダメージを与え、味方それぞれのEPを減らす。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401004,
+                    "SkillName": "ギャンブルタイム",
+                    "SkillDesc": "「オール・オア・ナッシング」を召喚し、味方単体をギャンブルデュエルに引きずり込む。「オール・オア・ナッシング」はギャンブルデュエルに参加している味方の攻撃を受けた後、攻撃者に1～6のポイントをランダムで与える。\\nギャンブルデュエルに参加している味方単体のターン終了時、ポイントが博戯の砂金石より小さい場合は敗北となり、攻撃を受ける。\\nポイントが博戯の砂金石より大きい場合は勝利となり、必殺技を発動できるようになる。\\nまた、賭けに参加していない味方は「観戦者は語る勿れ」状態になり、賭けが終了した後に解除される。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401005,
+                    "SkillName": "博打の宴",
+                    "SkillDesc": "「オール・オア・ナッシング」を召喚し、味方全体をギャンブルデュエルに引きずり込む。「オール・オア・ナッシング」は味方の攻撃を受けた後、攻撃者に1～6のポイントをランダムで与える。\\n博戯の砂金石の次の行動時、ポイントが博戯の砂金石より小さい味方は敗北となり、攻撃を受ける。\\nポイントが博戯の砂金石より大きい味方は勝利となり、必殺技を発動できるようになる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401006,
+                    "SkillName": "敗者の退席",
+                    "SkillDesc": "ギャンブルデュエルに負けた味方単体に虚数属性ダメージを与え、高確率で攻撃を受けた味方を禁錮状態にする。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 803401007,
+                    "SkillName": "勝者総取り",
+                    "SkillDesc": "ギャンブルデュエルに負けたすべての味方に大量の虚数属性ダメージを与え、高確率で攻撃を受けた味方を禁錮状態にする。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 803401008,
+                    "SkillName": "博戯",
+                    "SkillDesc": "毎回賭けに勝った味方は「豪運」の効果を獲得し、与ダメージが増加する。毎回賭けに負けた味方は「不運」の効果を獲得し、被ダメージが増加する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401009,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 803401002,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1.0416670008562505,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": 120,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Wind",
+                "Thunder"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.40000000037252903
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 803401001,
+                    "SkillName": "一か八か",
+                    "SkillDesc": "指定した味方単体に虚数属性ダメージを与える。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 803401002,
+                    "SkillName": "分散投資",
+                    "SkillDesc": "連続でランダムな味方単体に少量の虚数属性ダメージを与える。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 5
+                },
+                {
+                    "Id": 803401003,
+                    "SkillName": "サイコロ噴泉",
+                    "SkillDesc": "味方全体に少量の虚数属性ダメージを与え、味方それぞれのEPを減らす。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401004,
+                    "SkillName": "ギャンブルタイム",
+                    "SkillDesc": "「オール・オア・ナッシング」を召喚し、味方単体をギャンブルデュエルに引きずり込む。「オール・オア・ナッシング」はギャンブルデュエルに参加している味方の攻撃を受けた後、攻撃者に1～6のポイントをランダムで与える。\\nギャンブルデュエルに参加している味方単体のターン終了時、ポイントが博戯の砂金石より小さい場合は敗北となり、攻撃を受ける。\\nポイントが博戯の砂金石より大きい場合は勝利となり、必殺技を発動できるようになる。\\nまた、賭けに参加していない味方は「観戦者は語る勿れ」状態になり、賭けが終了した後に解除される。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401005,
+                    "SkillName": "博打の宴",
+                    "SkillDesc": "「オール・オア・ナッシング」を召喚し、味方全体をギャンブルデュエルに引きずり込む。「オール・オア・ナッシング」は味方の攻撃を受けた後、攻撃者に1～6のポイントをランダムで与える。\\n博戯の砂金石の次の行動時、ポイントが博戯の砂金石より小さい味方は敗北となり、攻撃を受ける。\\nポイントが博戯の砂金石より大きい味方は勝利となり、必殺技を発動できるようになる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401006,
+                    "SkillName": "敗者の退席",
+                    "SkillDesc": "ギャンブルデュエルに負けた味方単体に虚数属性ダメージを与え、高確率で攻撃を受けた味方を禁錮状態にする。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 803401007,
+                    "SkillName": "勝者総取り",
+                    "SkillDesc": "ギャンブルデュエルに負けたすべての味方に大量の虚数属性ダメージを与え、高確率で攻撃を受けた味方を禁錮状態にする。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 803401008,
+                    "SkillName": "博戯",
+                    "SkillDesc": "毎回賭けに勝った味方は「豪運」の効果を獲得し、与ダメージが増加する。毎回賭けに負けた味方は「不運」の効果を獲得し、被ダメージが増加する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401009,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 803401003,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 3.1249999997671694,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": 120,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Wind",
+                "Thunder"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.40000000037252903
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 803401001,
+                    "SkillName": "一か八か",
+                    "SkillDesc": "指定した味方単体に虚数属性ダメージを与える。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 803401002,
+                    "SkillName": "分散投資",
+                    "SkillDesc": "連続でランダムな味方単体に少量の虚数属性ダメージを与える。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 5
+                },
+                {
+                    "Id": 803401003,
+                    "SkillName": "サイコロ噴泉",
+                    "SkillDesc": "味方全体に少量の虚数属性ダメージを与え、味方それぞれのEPを減らす。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401004,
+                    "SkillName": "ギャンブルタイム",
+                    "SkillDesc": "「オール・オア・ナッシング」を召喚し、味方単体をギャンブルデュエルに引きずり込む。「オール・オア・ナッシング」はギャンブルデュエルに参加している味方の攻撃を受けた後、攻撃者に1～6のポイントをランダムで与える。\\nギャンブルデュエルに参加している味方単体のターン終了時、ポイントが博戯の砂金石より小さい場合は敗北となり、攻撃を受ける。\\nポイントが博戯の砂金石より大きい場合は勝利となり、必殺技を発動できるようになる。\\nまた、賭けに参加していない味方は「観戦者は語る勿れ」状態になり、賭けが終了した後に解除される。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401005,
+                    "SkillName": "博打の宴",
+                    "SkillDesc": "「オール・オア・ナッシング」を召喚し、味方全体をギャンブルデュエルに引きずり込む。「オール・オア・ナッシング」は味方の攻撃を受けた後、攻撃者に1～6のポイントをランダムで与える。\\n博戯の砂金石の次の行動時、ポイントが博戯の砂金石より小さい味方は敗北となり、攻撃を受ける。\\nポイントが博戯の砂金石より大きい味方は勝利となり、必殺技を発動できるようになる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401006,
+                    "SkillName": "敗者の退席",
+                    "SkillDesc": "ギャンブルデュエルに負けた味方単体に虚数属性ダメージを与え、高確率で攻撃を受けた味方を禁錮状態にする。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 803401007,
+                    "SkillName": "勝者総取り",
+                    "SkillDesc": "ギャンブルデュエルに負けたすべての味方に大量の虚数属性ダメージを与え、高確率で攻撃を受けた味方を禁錮状態にする。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 803401008,
+                    "SkillName": "博戯",
+                    "SkillDesc": "毎回賭けに勝った味方は「豪運」の効果を獲得し、与ダメージが増加する。毎回賭けに負けた味方は「不運」の効果を獲得し、被ダメージが増加する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401009,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 8034010,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 8034010,
+            "WorldLevel": 1,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 8034010,
+            "WorldLevel": 2,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 8034010,
+            "WorldLevel": 3,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 8034010,
+            "WorldLevel": 4,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 8034010,
+            "WorldLevel": 5,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 8034010,
+            "WorldLevel": 6,
+            "DisplayItemList": []
+        }
+    ]
+}

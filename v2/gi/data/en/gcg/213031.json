@@ -1,0 +1,44 @@
+{
+    "Type": "Action",
+    "Name": "Grand Expectation",
+    "Title": "Bennett: Grand Expectation",
+    "Desc": "The best adventure is always yet to be.",
+    "Source": "Reward for inviting Bennett to a duel at The Cat's Tail and achieving all corresponding challenge objectives",
+    "Icon": "UI_Gcg_CardFace_Modify_Constellation_Bennett",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PYRO",
+            "count": 4
+        },
+        {
+            "costType": "GCG_COST_ENERGY",
+            "count": 2
+        }
+    ],
+    "Tag": [
+        "Talent",
+        "Combat Action"
+    ],
+    "Talent": {
+        "Name": "Grand Expectation",
+        "Desc": "$[K1]: When your active character is <color=#FFFFFFFF>$[A1303]</color>, equip this card.\\nAfter $[A1303] equips this card, immediately use <color=#FFD780FF>$[S13033]</color> once.\\nWhen your $[A1303], who has this card equipped, creates an <color=#FFFFFFFF>$[C113031]</color>, its DMG Bonus is now always active and will no longer have an HP restriction.\\n(You must have $[A1303] in your deck to add this card to your deck.)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+            },
+            "A1303": "Grand Expectation",
+            "S13033": "S13033",
+            "C113031": {
+                "Name": "Inspiration Field",
+                "Desc": "<color=#FFFFFFFF>When your character uses a Skill:</color> If this character has at least 7 HP, deal +2 additional DMG for this instance. After the Skill DMG is finalized, if this character's HP is not greater than 6, heal this character for 2 HP.\\n<color=#FFFFFFFF>$[K4]: 2</color>",
+                "Child": {
+                    "K4": {
+                        "Name": "<color=#FFFFFFFF>Duration (Rounds)</color>",
+                        "Desc": "Each time you reach the end of a Round, <color=#FFFFFFFF>Duration (Rounds)</color> -1.\\nThis card will be discarded immediately once <color=#FFFFFFFF>Duration (Rounds)</color> runs out."
+                    }
+                }
+            }
+        }
+    }
+}

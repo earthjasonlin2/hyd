@@ -1,0 +1,488 @@
+{
+    "Name": "Ruin Guard",
+    "Desc": "An ancient humanoid war machine.\\nLegend has it that these machines were combat automatons created by a long-destroyed nation. They now wander ruins and ancient detritus, attacking offending travelers. Research indicates that the Ruin Guards and the ruins they operate in do not originate from the same source, suggesting that there may be a difference of as much as several thousand years between them on the timeline. So why then do the Ruin Guards continue staying among these ruins, using their \"explosive firepower\" to protect the crumbling walls and broken tiles?",
+    "Icon": "UI_MonsterIcon_Defender_Noner_01",
+    "Codex": "AUTOMATRON",
+    "Title": "Ruin Guard",
+    "SpecialNames": [
+        "Hu-04510",
+        "Hu-11037",
+        "Hu-41822",
+        "Hu-24601",
+        "Hu-25173",
+        "Hu-13086",
+        "Hu-77514",
+        "Hu-36226",
+        "Hu-11307",
+        "Hu-11226",
+        "Hu-39091",
+        "Hu-41125",
+        "Hu-2734",
+        "Hu-51789",
+        "Hu-23532",
+        "Hu-21258",
+        "Hu-96988",
+        "Hu-95710",
+        "Hu-57113",
+        "Hu-58515",
+        "Hu-95912",
+        "Hu-71419",
+        "Hu-82419",
+        "Hu-41013",
+        "Hu-63616",
+        "Hu-93736",
+        "Hu-63321",
+        "Hu-61412",
+        "Hu-93439",
+        "Hu-89488",
+        "Hu-93511",
+        "Hu-68914",
+        "Hu-91943"
+    ],
+    "Reward": [
+        {
+            "Id": 202,
+            "Rank": 3,
+            "Icon": "UI_ItemIcon_202"
+        },
+        {
+            "Id": 112023,
+            "Rank": 2,
+            "Icon": "UI_ItemIcon_112023"
+        },
+        {
+            "Id": 112024,
+            "Rank": 3,
+            "Icon": "UI_ItemIcon_112024"
+        },
+        {
+            "Id": 112025,
+            "Rank": 4,
+            "Icon": "UI_ItemIcon_112025"
+        },
+        {
+            "Id": 400022,
+            "Rank": 3,
+            "Icon": "UI_RelicIcon_10005_4"
+        },
+        {
+            "Id": 400032,
+            "Rank": 3,
+            "Icon": "UI_RelicIcon_10007_4"
+        },
+        {
+            "Id": 400042,
+            "Rank": 3,
+            "Icon": "UI_RelicIcon_10009_4"
+        },
+        {
+            "Id": 400062,
+            "Rank": 3,
+            "Icon": "UI_RelicIcon_10013_4"
+        },
+        {
+            "Id": 400023,
+            "Rank": 4,
+            "Icon": "UI_RelicIcon_10005_4"
+        },
+        {
+            "Id": 400033,
+            "Rank": 4,
+            "Icon": "UI_RelicIcon_10007_4"
+        },
+        {
+            "Id": 400043,
+            "Rank": 4,
+            "Icon": "UI_RelicIcon_10009_4"
+        }
+    ],
+    "Child": {
+        "24010101": {
+            "MonsterName": "Defender_None_01",
+            "Type": "MONSTER_ORDINARY",
+            "HpDrops": [
+                {
+                    "dropId": 22010040,
+                    "hpPercent": 75
+                },
+                {
+                    "dropId": 22010040,
+                    "hpPercent": 50
+                },
+                {
+                    "dropId": 22010040,
+                    "hpPercent": 25
+                }
+            ],
+            "KillDropId": 22010030,
+            "Prop": [
+                {
+                    "type": "FIGHT_PROP_BASE_HP",
+                    "growCurve": "GROW_CURVE_HP"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_ATTACK",
+                    "growCurve": "GROW_CURVE_ATTACK"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_DEFENSE",
+                    "growCurve": "GROW_CURVE_DEFENSE"
+                }
+            ],
+            "LocalLegend": false,
+            "SubHurt": {
+                "Fire": 0.1000000014901,
+                "Grass": 0.1000000014901,
+                "Water": 0.1000000014901,
+                "Elec": 0.1000000014901,
+                "Wind": 0.1000000014901,
+                "Ice": 0.1000000014901,
+                "Rock": 0.1000000014901,
+                "Physical": 0.6999999880791
+            },
+            "Base": {
+                "HP": 95.0879974365234,
+                "ATK": 60.2879981994629,
+                "DEF": 500
+            }
+        },
+        "24010190": {
+            "MonsterName": "Defender_None_03",
+            "Type": "MONSTER_ORDINARY",
+            "HpDrops": [
+                {},
+                {},
+                {}
+            ],
+            "KillDropId": null,
+            "Prop": [
+                {
+                    "type": "FIGHT_PROP_BASE_HP",
+                    "growCurve": "GROW_CURVE_HP_2"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_ATTACK",
+                    "growCurve": "GROW_CURVE_ATTACK_2"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_DEFENSE",
+                    "growCurve": "GROW_CURVE_DEFENSE"
+                }
+            ],
+            "LocalLegend": false,
+            "SubHurt": {
+                "Fire": 0.1000000014901,
+                "Grass": 0.1000000014901,
+                "Water": 0.1000000014901,
+                "Elec": 0.1000000014901,
+                "Wind": 0.1000000014901,
+                "Ice": 0.1000000014901,
+                "Rock": 0.1000000014901,
+                "Physical": 0.5
+            },
+            "Base": {
+                "HP": 20.3759994506836,
+                "ATK": 44.5999984741211,
+                "DEF": 500
+            }
+        },
+        "24010191": {
+            "MonsterName": "Defender_None_04",
+            "Type": "MONSTER_ORDINARY",
+            "HpDrops": [
+                {},
+                {},
+                {}
+            ],
+            "KillDropId": null,
+            "Prop": [
+                {
+                    "type": "FIGHT_PROP_BASE_HP",
+                    "growCurve": "undefined"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_ATTACK",
+                    "growCurve": "undefined"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_DEFENSE",
+                    "growCurve": "GROW_CURVE_DEFENSE"
+                }
+            ],
+            "LocalLegend": false,
+            "SubHurt": {
+                "Fire": 0.1000000014901,
+                "Grass": 0.1000000014901,
+                "Water": 0.1000000014901,
+                "Elec": 0.1000000014901,
+                "Wind": 0.1000000014901,
+                "Ice": 0.1000000014901,
+                "Rock": 0.1000000014901,
+                "Physical": 0.5
+            },
+            "Base": {
+                "HP": 121.125,
+                "ATK": 36.9749984741211,
+                "DEF": 500
+            }
+        },
+        "24010108": {
+            "MonsterName": "Defender_None_08",
+            "Type": "MONSTER_ORDINARY",
+            "HpDrops": [
+                {},
+                {},
+                {}
+            ],
+            "KillDropId": null,
+            "Prop": [
+                {
+                    "type": "FIGHT_PROP_BASE_HP",
+                    "growCurve": "GROW_CURVE_HP"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_ATTACK",
+                    "growCurve": "GROW_CURVE_ATTACK"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_DEFENSE",
+                    "growCurve": "GROW_CURVE_DEFENSE"
+                }
+            ],
+            "LocalLegend": false,
+            "SubHurt": {
+                "Fire": 0.1000000014901,
+                "Grass": 0.1000000014901,
+                "Water": 0.1000000014901,
+                "Elec": 0.1000000014901,
+                "Wind": 0.1000000014901,
+                "Ice": 0.1000000014901,
+                "Rock": 0.1000000014901,
+                "Physical": 0.1000000014901
+            },
+            "Base": {
+                "HP": 24451.19921875,
+                "ATK": 22.6079998016357,
+                "DEF": 500
+            }
+        },
+        "24010109": {
+            "MonsterName": "Defender_None_09",
+            "Type": "MONSTER_ORDINARY",
+            "HpDrops": [
+                {},
+                {},
+                {}
+            ],
+            "KillDropId": null,
+            "Prop": [
+                {
+                    "type": "FIGHT_PROP_BASE_HP",
+                    "growCurve": "GROW_CURVE_HP"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_ATTACK",
+                    "growCurve": "GROW_CURVE_ATTACK"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_DEFENSE",
+                    "growCurve": "GROW_CURVE_DEFENSE"
+                }
+            ],
+            "LocalLegend": false,
+            "SubHurt": {
+                "Fire": 0.1000000014901,
+                "Grass": 0.1000000014901,
+                "Water": 0.1000000014901,
+                "Elec": 0.1000000014901,
+                "Wind": 0.1000000014901,
+                "Ice": 0.1000000014901,
+                "Rock": 0.1000000014901,
+                "Physical": 0.1000000014901
+            },
+            "Base": {
+                "HP": 24451.19921875,
+                "ATK": 22.6079998016357,
+                "DEF": 500
+            }
+        },
+        "24010102": {
+            "MonsterName": "Defender_None_01",
+            "Type": "MONSTER_ORDINARY",
+            "HpDrops": [
+                {},
+                {},
+                {}
+            ],
+            "KillDropId": null,
+            "Prop": [
+                {
+                    "type": "FIGHT_PROP_BASE_HP",
+                    "growCurve": "GROW_CURVE_HP"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_ATTACK",
+                    "growCurve": "GROW_CURVE_ATTACK"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_DEFENSE",
+                    "growCurve": "GROW_CURVE_DEFENSE"
+                }
+            ],
+            "LocalLegend": false,
+            "SubHurt": {
+                "Fire": 0.1000000014901,
+                "Grass": 0.1000000014901,
+                "Water": 0.1000000014901,
+                "Elec": 0.1000000014901,
+                "Wind": 0.1000000014901,
+                "Ice": 0.1000000014901,
+                "Rock": 0.1000000014901,
+                "Physical": 0.6999999880791
+            },
+            "Base": {
+                "HP": 95.0879974365234,
+                "ATK": 60.2879981994629,
+                "DEF": 500
+            }
+        },
+        "24010103": {
+            "MonsterName": "Defender_None_01",
+            "Type": "MONSTER_ORDINARY",
+            "HpDrops": [
+                {},
+                {},
+                {}
+            ],
+            "KillDropId": null,
+            "Prop": [
+                {
+                    "type": "FIGHT_PROP_BASE_HP",
+                    "growCurve": "GROW_CURVE_HP"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_ATTACK",
+                    "growCurve": "GROW_CURVE_ATTACK"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_DEFENSE",
+                    "growCurve": "GROW_CURVE_DEFENSE"
+                }
+            ],
+            "LocalLegend": false,
+            "SubHurt": {
+                "Fire": 0.1000000014901,
+                "Grass": 0.1000000014901,
+                "Water": 0.1000000014901,
+                "Elec": 0.1000000014901,
+                "Wind": 0.1000000014901,
+                "Ice": 0.1000000014901,
+                "Rock": 0.1000000014901,
+                "Physical": 0.6999999880791
+            },
+            "Base": {
+                "HP": 95.0879974365234,
+                "ATK": 60.2879981994629,
+                "DEF": 500
+            }
+        },
+        "24010181": {
+            "MonsterName": "Defender_None_01",
+            "Type": "MONSTER_ORDINARY",
+            "HpDrops": [
+                {
+                    "dropId": 22010040,
+                    "hpPercent": 75
+                },
+                {
+                    "dropId": 22010040,
+                    "hpPercent": 50
+                },
+                {
+                    "dropId": 22010040,
+                    "hpPercent": 25
+                }
+            ],
+            "KillDropId": 22010030,
+            "Prop": [
+                {
+                    "type": "FIGHT_PROP_BASE_HP",
+                    "growCurve": "GROW_CURVE_HP"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_ATTACK",
+                    "growCurve": "GROW_CURVE_ATTACK"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_DEFENSE",
+                    "growCurve": "GROW_CURVE_DEFENSE"
+                }
+            ],
+            "LocalLegend": false,
+            "SubHurt": {
+                "Fire": 0.1000000014901,
+                "Grass": 0.1000000014901,
+                "Water": 0.1000000014901,
+                "Elec": 0.1000000014901,
+                "Wind": 0.1000000014901,
+                "Ice": 0.1000000014901,
+                "Rock": 0.1000000014901,
+                "Physical": 0.6999999880791
+            },
+            "Base": {
+                "HP": 95.0879974365234,
+                "ATK": 60.2879981994629,
+                "DEF": 500
+            }
+        },
+        "24010182": {
+            "MonsterName": "Defender_None_01",
+            "Type": "MONSTER_ORDINARY",
+            "HpDrops": [
+                {
+                    "dropId": 22010040,
+                    "hpPercent": 75
+                },
+                {
+                    "dropId": 22010040,
+                    "hpPercent": 50
+                },
+                {
+                    "dropId": 22010040,
+                    "hpPercent": 25
+                }
+            ],
+            "KillDropId": 22010030,
+            "Prop": [
+                {
+                    "type": "FIGHT_PROP_BASE_HP",
+                    "growCurve": "GROW_CURVE_HP"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_ATTACK",
+                    "growCurve": "GROW_CURVE_ATTACK"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_DEFENSE",
+                    "growCurve": "GROW_CURVE_DEFENSE"
+                }
+            ],
+            "LocalLegend": false,
+            "SubHurt": {
+                "Fire": 0.1000000014901,
+                "Grass": 0.1000000014901,
+                "Water": 0.1000000014901,
+                "Elec": 0.1000000014901,
+                "Wind": 0.1000000014901,
+                "Ice": 0.1000000014901,
+                "Rock": 0.1000000014901,
+                "Physical": 0.6999999880791
+            },
+            "Base": {
+                "HP": 95.0879974365234,
+                "ATK": 60.2879981994629,
+                "DEF": 500
+            }
+        }
+    }
+}

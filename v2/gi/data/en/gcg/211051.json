@@ -1,0 +1,43 @@
+{
+    "Type": "Action",
+    "Name": "Kanten Senmyou Blessing",
+    "Title": "Kamisato Ayaka: Kanten Senmyou Blessing",
+    "Desc": "The heron holds upon the ice on elegant wing.",
+    "Source": "Reward for inviting Kamisato Ayaka to a duel at The Cat's Tail and achieving all corresponding challenge objectives",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Ayaka",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_CRYO",
+            "count": 2
+        },
+        {}
+    ],
+    "Tag": [
+        "Talent"
+    ],
+    "Talent": {
+        "Name": "Kanten Senmyou Blessing",
+        "Desc": "The <color=#FFFFFFFF>$[C111052]</color> created by your <color=#FFFFFFFF>$[A1105]</color>, who has this card equipped, allows the character to which it is attached to deal +1 <color=#99FFFFFF>$[K101]</color>.\\nWhen you switch to $[A1105], who has this card equipped: Spend 1 less Elemental Die. (Once per Round)\\n(You must have $[A1105] in your deck to add this card to your deck.)",
+        "Child": {
+            "C111052": {
+                "Name": "Cryo Elemental Infusion",
+                "Desc": "The character to which this is attached has their $[K100] dealt converted to $[K101].\\n(Lasts until the Round ends)",
+                "Child": {
+                    "K100": {
+                        "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>",
+                        "Desc": "Physical DMG will not apply any Elements, nor can it engage in Elemental Reactions."
+                    },
+                    "K101": {
+                        "Name": "{SPRITE_PRESET#2101}<color=#99FFFFFF>Cryo DMG</color>",
+                        "Desc": "Applies {SPRITE_PRESET#2101}Cryo and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Melt</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Superconduct</color>: DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Frozen</color>: DMG +1 for this instance, the target is unable to perform any Actions this Round (Can be removed in advance after the target receives Physical or Pyro DMG, in which case they will take +2 DMG)"
+                    }
+                }
+            },
+            "A1105": "Kanten Senmyou Blessing",
+            "K101": {
+                "Name": "{SPRITE_PRESET#2101}<color=#99FFFFFF>Cryo DMG</color>",
+                "Desc": "Applies {SPRITE_PRESET#2101}Cryo and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Melt</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Superconduct</color>: DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Frozen</color>: DMG +1 for this instance, the target is unable to perform any Actions this Round (Can be removed in advance after the target receives Physical or Pyro DMG, in which case they will take +2 DMG)"
+            }
+        }
+    }
+}

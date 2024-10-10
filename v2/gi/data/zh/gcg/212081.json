@@ -1,0 +1,45 @@
+{
+    "Type": "Action",
+    "Name": "星天的花雨",
+    "Title": "妮露·星天的花雨",
+    "Desc": "宛如七天的流绚，宛如摹录的梦景。",
+    "Source": "在猫尾酒馆中邀请妮露进行对局，完成相应挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Constellation_Nilou",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_HYDRO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "天赋",
+        "战斗行动"
+    ],
+    "Talent": {
+        "Name": "星天的花雨",
+        "Desc": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1208]</color>时，装备此牌。\\n$[A1208]装备此牌后，立刻使用一次<color=#FFD780FF>$[S12082]</color>。\\n装备有此牌的$[A1208]在场时：我方<color=#FFFFFFFF>$[C112082]</color>造成的伤害+1。\\n（牌组中包含$[A1208]，才能加入牌组）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>战斗行动</color>",
+                "Desc": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+            },
+            "A1208": "星天的花雨",
+            "S12082": "S12082",
+            "C112082": {
+                "Name": "丰穰之核",
+                "Desc": "<color=#FFFFFFFF>结束阶段：</color>造成2点$[K107]。\\n<color=#FFFFFFFF>$[K3]：1</color>（可叠加，最多叠加到3次）\\n<color=#FFFFFFFF>我方宣布结束时：</color>如果此牌的$[K3]至少为2，则造成2点$[K107]。（需消耗$[K3]）",
+                "Child": {
+                    "K107": {
+                        "Name": "{SPRITE_PRESET#2107}<color=#7EC236FF>草元素伤害</color>",
+                        "Desc": "附着{SPRITE_PRESET#2107}草元素，可发生元素反应：\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>绽放</color>：本伤害+1，生成使下次火元素或雷元素伤害+2的[<color=#FFFFFFFF>草原核</color>]\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>燃烧</color>：本伤害+1，生成回合结束时造成1点火元素伤害的[<color=#FFFFFFFF>燃烧烈焰</color>]（可用次数1，最多叠加到2）\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>原激化</color>：本伤害+1，生成使下2次草元素或雷元素伤害+1的[<color=#FFFFFFFF>激化领域</color>]"
+                    },
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>可用次数</color>",
+                        "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                    }
+                }
+            }
+        }
+    }
+}

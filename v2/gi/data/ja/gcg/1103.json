@@ -1,0 +1,70 @@
+{
+    "Type": "Character",
+    "Name": "ガイア",
+    "Title": "寒風の剣士·ガイア",
+    "Desc": "彼は他人が持つ「騎士のような美徳」を見つけることに長けている。",
+    "Source": "初期デッキで獲得",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Kaeya",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "氷元素",
+        "片手剣",
+        "モンド"
+    ],
+    "Talent": {
+        "11031": {
+            "Name": "儀典の剣術",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "11032": {
+            "Name": "霜の襲撃",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "D__KEY__DAMAGE": 3
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3
+            }
+        },
+        "11033": {
+            "Name": "凛冽なる輪舞",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、<color=#FFFFFFFF>$[C111031]</color>を生成する。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "D__KEY__DAMAGE": 1,
+                "C111031": {
+                    "Name": "氷柱",
+                    "Desc": "<color=#FFFFFFFF>味方がキャラチェンジした後</color>、$[K101]を2与える。\\n<color=#FFFFFFFF>$[K3]：3</color>",
+                    "Child": {
+                        "K101": {
+                            "Name": "{SPRITE_PRESET#2101}<color=#99FFFFFF>氷元素ダメージ</color>",
+                            "Desc": "{SPRITE_PRESET#2101}氷元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2103}<color=#FFFFFFFF>溶解</color>：ダメージ+2\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2104}<color=#FFFFFFFF>超電導</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2102}<color=#FFFFFFFF>凍結</color>：ダメージ+1、目標はこのラウンドで行動不能になる（物理ダメージまたは炎ダメージを受けると、即座に解除されるがダメージ+2となる）"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                            "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 4,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 211031
+}

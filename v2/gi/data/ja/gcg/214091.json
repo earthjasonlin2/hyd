@@ -1,0 +1,46 @@
+{
+    "Type": "Action",
+    "Name": "パルスの魔女",
+    "Title": "リサ·パルスの魔女",
+    "Desc": "数え切れないほどの書籍を読んできた図書館司書にとって、勝利の技を覚えることは当然容易い…",
+    "Source": "キャッツテールでリサを招待して対戦し、対応する挑戦目標をクリアすることで獲得",
+    "Icon": "UI_Gcg_CardFace_Modify_Constellation_Lisa",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_ELECTRO",
+            "count": 1
+        },
+        {}
+    ],
+    "Tag": [
+        "天賦"
+    ],
+    "Talent": {
+        "Name": "パルスの魔女",
+        "Desc": "このカードを装備した<color=#FFFFFFFF>$[A1409]</color>に切り替えると、敵の出撃キャラに<color=#FFFFFFFF>$[C114091]</color>を付与する。（各ラウンドで1回のみ）\\n（このカードはデッキに$[A1409]が含まれている場合のみ、デッキに追加できる）",
+        "Child": {
+            "A1409": "パルスの魔女",
+            "C114091": {
+                "Name": "導雷",
+                "Desc": "この状態は初期に「導雷」を2層有する。「導雷」を重複して付与される際、「導雷」を1層追加する。「導雷」は、最大4層まで重ね掛け可能。\\n<color=#FFFFFFFF>エンドフェーズ：</color>「導雷」を1層追加。\\n\\n<color=#FFFFFFFF>付与されたキャラが$[S14092]、または$[C114092]のダメージを受けると</color>、該当状態を解除し、「導雷」1層ごとに与えるダメージ+1。",
+                "Child": {
+                    "S14092": "S14092",
+                    "C114092": {
+                        "Name": "薔薇雷光",
+                        "Desc": "<color=#FFFFFFFF>エンドフェーズ：</color>$[K104]を2与える。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+                        "Child": {
+                            "K104": {
+                                "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素ダメージ</color>",
+                                "Desc": "{SPRITE_PRESET#2104}雷元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>過負荷</color>：ダメージ+2、目標を強制的に次のキャラにチェンジさせる\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>超電導</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>感電</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>原激化</color>：ダメージ+1、次の草元素または雷元素ダメージを2回まで+1できる「<color=#FFFFFFFF>激化領域</color>」を生成する"
+                            },
+                            "K3": {
+                                "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                                "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,119 @@
+{
+    "Type": "Character",
+    "Name": "无相之雷",
+    "Title": "无相之雷",
+    "Desc": "代号为「阿莱夫」的高级雷元素生命。\\n就算猜拳获胜，它一般也不会认输。",
+    "Source": "在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度无相之雷中获得胜利后获取",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_Effigyelectric",
+    "Hp": 8,
+    "Cost": 2,
+    "Tag": [
+        "雷元素",
+        "其他武器",
+        "魔物"
+    ],
+    "Talent": {
+        "24011": {
+            "Name": "雷晶投射",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "24012": {
+            "Name": "猜拳三连击",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，然后分别$[K53]：<color=#FFFFFFFF>$[S24015]</color>和<color=#FFFFFFFF>$[S24016]</color>。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO",
+                "K53": {
+                    "Name": "<color=#FFFFFFFF>准备技能</color>",
+                    "Desc": "有些技能无法被直接使用，而是需要一定次数的行动轮来进行<color=#FFFFFFFF>准备</color>。\\n轮到一位牌手行动时，如果该牌手的「出战角色」正在<color=#FFFFFFFF>准备</color>技能，则跳过该牌手的行动；如果技能已经完成<color=#FFFFFFFF>准备</color>，角色将会在此时直接使用此技能。（此类需要<color=#FFFFFFFF>准备</color>的技能，无法触发「使用技能后」「角色引发元素反应后」等效果。）\\n只有「出战角色」才能<color=#FFFFFFFF>准备</color>技能；如果正在<color=#FFFFFFFF>准备</color>技能的「出战角色」被切换到后台，技能的<color=#FFFFFFFF>准备</color>就会被打断。"
+                },
+                "S24015": "S24015",
+                "S24016": "S24016"
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 5
+            }
+        },
+        "24013": {
+            "Name": "雳霆镇锁",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，召唤<color=#FFFFFFFF>$[C124013]</color>。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO",
+                "C124013": {
+                    "Name": "雷锁镇域",
+                    "Desc": "<color=#FFFFFFFF>结束阶段：</color>造成1点$[K104]。\\n<color=#FFFFFFFF>$[K3]：2</color>\\n<color=#FFFFFFFF>此召唤物在场时：</color>敌方执行「切换角色」行动的元素骰费用+1。（每回合1次）",
+                    "Child": {
+                        "K104": {
+                            "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素伤害</color>",
+                            "Desc": "附着{SPRITE_PRESET#2104}雷元素，可发生元素反应：\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>超载</color>：本伤害+2，目标强制切换到下一个角色\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>超导</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>感电</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>原激化</color>：本伤害+1，生成使下2次草元素或雷元素伤害+1的[<color=#FFFFFFFF>激化领域</color>]"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>可用次数</color>",
+                            "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "24014": {
+            "Name": "雷晶核心",
+            "Desc": "【被动】战斗开始时，初始附属<color=#FFFFFFFF>$[C124014]</color>。",
+            "Child": {
+                "C124014": {
+                    "Name": "雷晶核心",
+                    "Desc": "<color=#FFFFFFFF>所附属角色被击倒时：</color>移除此效果，使角色$[K54]，并治疗该角色到1点生命值。",
+                    "Child": {
+                        "K54": {
+                            "Name": "<color=#FFFFFFFF>免于被击倒</color>",
+                            "Desc": "一些效果会使角色在生命值被降为0的时候<color=#FFFFFFFF>免于被击倒</color>，并治疗该角色到一定生命值。\\n此时，角色不视为被<color=#FFFFFFFF>击倒</color>过。（因此，角色所附属的装备和状态不会被弃置，充能也不会被清空。）"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        },
+        "24015": {
+            "Name": "猜拳三连击·剪刀",
+            "Desc": "（需准备1个行动轮）\\n造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，然后$[K53]：<color=#FFFFFFFF>$[S24016]</color>。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO",
+                "K53": {
+                    "Name": "<color=#FFFFFFFF>准备技能</color>",
+                    "Desc": "有些技能无法被直接使用，而是需要一定次数的行动轮来进行<color=#FFFFFFFF>准备</color>。\\n轮到一位牌手行动时，如果该牌手的「出战角色」正在<color=#FFFFFFFF>准备</color>技能，则跳过该牌手的行动；如果技能已经完成<color=#FFFFFFFF>准备</color>，角色将会在此时直接使用此技能。（此类需要<color=#FFFFFFFF>准备</color>的技能，无法触发「使用技能后」「角色引发元素反应后」等效果。）\\n只有「出战角色」才能<color=#FFFFFFFF>准备</color>技能；如果正在<color=#FFFFFFFF>准备</color>技能的「出战角色」被切换到后台，技能的<color=#FFFFFFFF>准备</color>就会被打断。"
+                },
+                "S24016": "S24016"
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {}
+        },
+        "24016": {
+            "Name": "猜拳三连击·布",
+            "Desc": "（需准备1个行动轮）\\n造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO"
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {}
+        }
+    },
+    "Related": 224011
+}

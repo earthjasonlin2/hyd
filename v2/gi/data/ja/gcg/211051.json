@@ -1,0 +1,43 @@
+{
+    "Type": "Action",
+    "Name": "寒空の宣命祝詞",
+    "Title": "神里綾華·寒空の宣命祝詞",
+    "Desc": "雪鶴が氷を咥えて、軽やかな羽ばたきの跡を残す。",
+    "Source": "キャッツテールで神里綾華を招待して対戦し、対応する挑戦目標をクリアすることで獲得",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Ayaka",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_CRYO",
+            "count": 2
+        },
+        {}
+    ],
+    "Tag": [
+        "天賦"
+    ],
+    "Talent": {
+        "Name": "寒空の宣命祝詞",
+        "Desc": "このカードを装備した<color=#FFFFFFFF>$[A1105]</color>が生成した<color=#FFFFFFFF>$[C111052]</color>は、付与されたキャラの<color=#99FFFFFF>$[K101]</color>+1。\\nこのカードを装備した$[A1105]にチェンジする時、必要な元素サイコロの数-1。（各ラウンドで1回のみ）\\n（このカードはデッキに$[A1105]が含まれている場合のみ、デッキに追加できる）",
+        "Child": {
+            "A1105": "寒空の宣命祝詞",
+            "C111052": {
+                "Name": "氷元素付与",
+                "Desc": "付与されたキャラの$[K100]が$[K101]へと変わる。\\n（ラウンド終了まで続く）",
+                "Child": {
+                    "K100": {
+                        "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>",
+                        "Desc": "物理ダメージは元素付着させたり、元素反応を起こしたりはしません。"
+                    },
+                    "K101": {
+                        "Name": "{SPRITE_PRESET#2101}<color=#99FFFFFF>氷元素ダメージ</color>",
+                        "Desc": "{SPRITE_PRESET#2101}氷元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2103}<color=#FFFFFFFF>溶解</color>：ダメージ+2\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2104}<color=#FFFFFFFF>超電導</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2102}<color=#FFFFFFFF>凍結</color>：ダメージ+1、目標はこのラウンドで行動不能になる（物理ダメージまたは炎ダメージを受けると、即座に解除されるがダメージ+2となる）"
+                    }
+                }
+            },
+            "K101": {
+                "Name": "{SPRITE_PRESET#2101}<color=#99FFFFFF>氷元素ダメージ</color>",
+                "Desc": "{SPRITE_PRESET#2101}氷元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2103}<color=#FFFFFFFF>溶解</color>：ダメージ+2\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2104}<color=#FFFFFFFF>超電導</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2102}<color=#FFFFFFFF>凍結</color>：ダメージ+1、目標はこのラウンドで行動不能になる（物理ダメージまたは炎ダメージを受けると、即座に解除されるがダメージ+2となる）"
+            }
+        }
+    }
+}

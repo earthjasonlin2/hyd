@@ -1,0 +1,176 @@
+{
+    "Type": "Character",
+    "Name": "アペプのオアシス守護者",
+    "Title": "知恵の終景·アペプのオアシス守護者",
+    "Desc": "アペプはかつて独りで世界の滅亡の景色に溺れていた。すべての人、神、龍、獣、鳥、魚と——それからすべての記憶、知恵、言葉、怨嗟は色のない塵となって、最後の月光は白炎の雨となり荒土に落ちる。\\n……\\nアペプはかつて砂海の底を行宮ではなく、そこを自身の墓だと考えていた。「知恵」の毒は、すぐさまアペプを幾星霜の怨嗟と怒りから解放させた。アペプは既に、終末の色を欠いた景色に退屈を感じていた。やがて、もっとも若い神と金色の旅人によってアペプは思い出すことになる。自分が過去に支配していた青々とした土地が金メッキの荒原となり、自分の子孫がそこで生きるために醜く姿を歪めていようとも、その心の中にはかつてのオアシスの景色がずっと大切に残っていることを。",
+    "Source": "キャッツテールのリトルプリンスのところで酒場挑戦を行い、アペプのオアシス守護者に挑戦して友好対戦に勝利することで獲得",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_Apep",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "草元素",
+        "他の武器",
+        "魔物"
+    ],
+    "Talent": {
+        "27021": {
+            "Name": "ノスタルジックショック",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "27022": {
+            "Name": "生命の流れ",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE_2]与え、<color=#FFFFFFFF>$[C127021]</color>を1枚引く。また、<color=#FFFFFFFF>$[C127026]</color>を1層生成する。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_DENDRO",
+                "D__KEY__DAMAGE_2": 2,
+                "C127021": {
+                    "Name": "眷属召喚",
+                    "Desc": "<color=#FFFFFFFF>このカードを使用、または$[K56]する時</color>、独立した$[C127022]を1体召喚する。",
+                    "Child": {
+                        "K56": {
+                            "Name": "<color=#FFFFFFFF>破棄</color>",
+                            "Desc": "アクションカードまたはキャラのスキル効果によって、手札または山札からアクションカードを破棄する。"
+                        },
+                        "C127022": {
+                            "Name": "増殖生命体",
+                            "Desc": "<color=#FFFFFFFF>エンドフェーズ：</color>$[K107]を1与える。\\n<color=#FFFFFFFF>$[K3]：1</color>",
+                            "Child": {
+                                "K107": {
+                                    "Name": "{SPRITE_PRESET#2107}<color=#7EC236FF>草元素ダメージ</color>",
+                                    "Desc": "{SPRITE_PRESET#2107}草元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>開花</color>：ダメージ+1、次の炎元素または雷元素ダメージを2アップできる「<color=#FFFFFFFF>草原核</color>」を生成する\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>燃焼</color>：ダメージ+1、ラウンド終了時に炎元素ダメージを1与える「<color=#FFFFFFFF>燃焼烈焔</color>」を生成する（使用可能回数1回、最大2回まで重ね掛け可能）\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>原激化</color>：ダメージ+1、次の草元素または雷元素ダメージを2回まで+1できる「<color=#FFFFFFFF>激化領域</color>」を生成する"
+                                },
+                                "K3": {
+                                    "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                                    "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                                }
+                            }
+                        }
+                    }
+                },
+                "C127026": {
+                    "Name": "オアシスの養分供給",
+                    "Desc": "<color=#FFFFFFFF>味方が$[C127021]を使用する時</color>、必要な元素サイコロの数-1。\\n<color=#FFFFFFFF>$[K3]：1</color>（最大3まで重ねられる）",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                            "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 3
+            }
+        },
+        "27023": {
+            "Name": "終景の崩落",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE_2]与え、<color=#FFFFFFFF>$[C127021]</color>を1枚引く。また、<color=#FFFFFFFF>$[C127026]</color>を2層生成する。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_DENDRO",
+                "D__KEY__DAMAGE_2": 2,
+                "C127021": {
+                    "Name": "眷属召喚",
+                    "Desc": "<color=#FFFFFFFF>このカードを使用、または$[K56]する時</color>、独立した$[C127022]を1体召喚する。",
+                    "Child": {
+                        "K56": {
+                            "Name": "<color=#FFFFFFFF>破棄</color>",
+                            "Desc": "アクションカードまたはキャラのスキル効果によって、手札または山札からアクションカードを破棄する。"
+                        },
+                        "C127022": {
+                            "Name": "増殖生命体",
+                            "Desc": "<color=#FFFFFFFF>エンドフェーズ：</color>$[K107]を1与える。\\n<color=#FFFFFFFF>$[K3]：1</color>",
+                            "Child": {
+                                "K107": {
+                                    "Name": "{SPRITE_PRESET#2107}<color=#7EC236FF>草元素ダメージ</color>",
+                                    "Desc": "{SPRITE_PRESET#2107}草元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>開花</color>：ダメージ+1、次の炎元素または雷元素ダメージを2アップできる「<color=#FFFFFFFF>草原核</color>」を生成する\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>燃焼</color>：ダメージ+1、ラウンド終了時に炎元素ダメージを1与える「<color=#FFFFFFFF>燃焼烈焔</color>」を生成する（使用可能回数1回、最大2回まで重ね掛け可能）\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>原激化</color>：ダメージ+1、次の草元素または雷元素ダメージを2回まで+1できる「<color=#FFFFFFFF>激化領域</color>」を生成する"
+                                },
+                                "K3": {
+                                    "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                                    "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                                }
+                            }
+                        }
+                    }
+                },
+                "C127026": {
+                    "Name": "オアシスの養分供給",
+                    "Desc": "<color=#FFFFFFFF>味方が$[C127021]を使用する時</color>、必要な元素サイコロの数-1。\\n<color=#FFFFFFFF>$[K3]：1</color>（最大3まで重ねられる）",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                            "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "27024": {
+            "Name": "増殖召喚",
+            "Desc": "【固有】戦闘開始時、<color=#FFFFFFFF>$[C127021]</color>を5枚生成し、ランダムに山札に配置する。味方が<color=#FFFFFFFF>$[C127022]</color>を4体召喚した後、本キャラに<color=#FFFFFFFF>$[C127027]</color>を付与し、<color=#FFFFFFFF>$[K6]</color>を1獲得する。",
+            "Child": {
+                "C127021": {
+                    "Name": "眷属召喚",
+                    "Desc": "<color=#FFFFFFFF>このカードを使用、または$[K56]する時</color>、独立した$[C127022]を1体召喚する。",
+                    "Child": {
+                        "K56": {
+                            "Name": "<color=#FFFFFFFF>破棄</color>",
+                            "Desc": "アクションカードまたはキャラのスキル効果によって、手札または山札からアクションカードを破棄する。"
+                        },
+                        "C127022": {
+                            "Name": "増殖生命体",
+                            "Desc": "<color=#FFFFFFFF>エンドフェーズ：</color>$[K107]を1与える。\\n<color=#FFFFFFFF>$[K3]：1</color>",
+                            "Child": {
+                                "K107": {
+                                    "Name": "{SPRITE_PRESET#2107}<color=#7EC236FF>草元素ダメージ</color>",
+                                    "Desc": "{SPRITE_PRESET#2107}草元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>開花</color>：ダメージ+1、次の炎元素または雷元素ダメージを2アップできる「<color=#FFFFFFFF>草原核</color>」を生成する\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>燃焼</color>：ダメージ+1、ラウンド終了時に炎元素ダメージを1与える「<color=#FFFFFFFF>燃焼烈焔</color>」を生成する（使用可能回数1回、最大2回まで重ね掛け可能）\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>原激化</color>：ダメージ+1、次の草元素または雷元素ダメージを2回まで+1できる「<color=#FFFFFFFF>激化領域</color>」を生成する"
+                                },
+                                "K3": {
+                                    "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                                    "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                                }
+                            }
+                        }
+                    }
+                },
+                "C127027": {
+                    "Name": "蘇るオアシスの心",
+                    "Desc": "付与されたキャラの与えるダメージ+3。\\n<color=#FFFFFFFF>付与されたキャラがスキルを発動した後</color>、味方のフィールド上の<color=#FFFFFFFF>$[C127026]</color>を取り除く。1層につき、付与されたキャラのHPを1回復する。",
+                    "Child": {
+                        "C127026": {
+                            "Name": "オアシスの養分供給",
+                            "Desc": "<color=#FFFFFFFF>味方が$[C127021]を使用する時</color>、必要な元素サイコロの数-1。\\n<color=#FFFFFFFF>$[K3]：1</color>（最大3まで重ねられる）",
+                            "Child": {
+                                "K3": {
+                                    "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                                    "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                                }
+                            }
+                        }
+                    }
+                },
+                "K6": {
+                    "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>シールド</color>",
+                    "Desc": "該当シールドに守られたキャラがダメージを受けた時、シールドを消費してダメージと相殺することができます。"
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 227021
+}

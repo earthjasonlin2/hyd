@@ -1,0 +1,128 @@
+{
+    "Type": "Character",
+    "Name": "Sigewinne",
+    "Title": "\"Wondrous Dragonheir\" Sigewinne",
+    "Desc": "\"Pure spirit, heed my wish.\"",
+    "Source": "Reward for inviting Sigewinne to a duel at The Cat's Tail and claiming victory in a Friendly Fracas with her",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Sigewinne",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "Hydro",
+        "Bow",
+        "Fontaine",
+        "Arkhe: Ousia"
+    ],
+    "Talent": {
+        "12131": {
+            "Name": "Targeted Treatment",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "12132": {
+            "Name": "Rebound Hydrotherapy",
+            "Desc": "",
+            "Child": {},
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3
+            }
+        },
+        "12133": {
+            "Name": "Super Saturated Syringing",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], then performs \"$[K53]\" for <color=#FFFFFFFF>$[S12135]</color>.",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "K53": {
+                    "Name": "<color=#FFFFFFFF>Prepare Skill</color>|s1:<color=#FFFFFFFF>prepares</color>",
+                    "Desc": "Some Skills cannot be used directly. Instead, they need to be <color=#FFFFFFFF>prepared</color> over a certain number of turns.\\nWhen it is a certain player's turn, and this player's active character is currently <color=#FFFFFFFF>preparing</color> a Skill, this player's turn will be skipped. If the Skill has finished being <color=#FFFFFFFF>prepared</color>, the character will directly use that Skill at this time. (Skills that require <color=#FFFFFFFF>preparing</color> cannot activate effects triggered by \"using a Skill\" or \"triggering an Elemental Reaction\" or other such effects.)\\nOnly active characters can <color=#FFFFFFFF>prepare</color> Skills, and if an active character who is <color=#FFFFFFFF>preparing</color> a Skill gets switched off-field, their <color=#FFFFFFFF>preparation</color> will be interrupted."
+                },
+                "S12135": "S12135"
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "12134": {
+            "Name": "Detailed Diagnosis, Thorough Treatment",
+            "Desc": "(Passive) When your character is healed, after the <color=#FFFFFFFF>$[C122]</color> attached to them has been completely removed, this character gains 1 extra Max HP. (Up to 3 times per character)\\n<color=#FFFFFFFF>When you switch to this character:</color>If your side has <color=#FFFFFFFF>$[C112101]</color>, -1 to their $[K3], and this character gains 1 $[K310].",
+            "Child": {
+                "C122": {
+                    "Name": "Bond of Life",
+                    "Desc": "<color=#FFFFFFFF>When the character to which this is attached is healed:</color> This effect will be consumed once for every $[K3] it has to negate 1 HP of healing received. (Cannot negate revives or healing caused by redistribution of HP)\\n<color=#FFFFFFFF>$[K3]: 1</color> (Can stack, no stack limit).",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        }
+                    }
+                },
+                "C112101": {
+                    "Name": "Sourcewater Droplet",
+                    "Desc": "<color=#FFFFFFFF>After $[A1210] uses a Normal Attack:</color> Heals $[A1210] for 2 HP. If $[A1210] is your active character, then $[K53]: <color=#FFFFFFFF>$[K1020]</color>.\\n<color=#FFFFFFFF>$[K3]: 1</color> (Can stack. Max 3 stacks.)",
+                    "Child": {
+                        "A1210": "Sigewinne",
+                        "K53": {
+                            "Name": "<color=#FFFFFFFF>Prepare Skill</color>|s1:<color=#FFFFFFFF>prepares</color>",
+                            "Desc": "Some Skills cannot be used directly. Instead, they need to be <color=#FFFFFFFF>prepared</color> over a certain number of turns.\\nWhen it is a certain player's turn, and this player's active character is currently <color=#FFFFFFFF>preparing</color> a Skill, this player's turn will be skipped. If the Skill has finished being <color=#FFFFFFFF>prepared</color>, the character will directly use that Skill at this time. (Skills that require <color=#FFFFFFFF>preparing</color> cannot activate effects triggered by \"using a Skill\" or \"triggering an Elemental Reaction\" or other such effects.)\\nOnly active characters can <color=#FFFFFFFF>prepare</color> Skills, and if an active character who is <color=#FFFFFFFF>preparing</color> a Skill gets switched off-field, their <color=#FFFFFFFF>preparation</color> will be interrupted."
+                        },
+                        "K1020": {
+                            "Name": "<color=#FFFFFFFF>Equitable Judgment</color>",
+                            "Desc": "<color=#D3BC8E>Normal Attack</color>\\n(Prepare for 1 turn)\\nDeals 2 {SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro DMG</color>. If this character has at least 6 HP, then this DMG is increased by 1 and this character deals 1 Piercing DMG to self."
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        }
+                    }
+                },
+                "K3": {
+                    "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                    "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                },
+                "K310": {
+                    "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}Energy</color>",
+                    "Desc": "Characters must consume {SPRITE_PRESET#1110}Energy to use their Elemental Bursts.\\nWhen characters use an Elemental Skill or a Normal Attack, they will gain 1 {SPRITE_PRESET#1110}Energy."
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        },
+        "12135": {
+            "Name": "Medical Intervention of Pure Intention",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO"
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {}
+        },
+        "12136": {
+            "Name": "Detailed Diagnosis, Thorough Treatment",
+            "Desc": "",
+            "Child": {},
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        },
+        "12137": {
+            "Name": "Detailed Diagnosis, Thorough Treatment",
+            "Desc": "",
+            "Child": {},
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 212131
+}

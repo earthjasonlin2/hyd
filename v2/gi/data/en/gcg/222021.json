@@ -1,0 +1,49 @@
+{
+    "Type": "Action",
+    "Name": "Mirror Cage",
+    "Title": "The Mirror's Secret",
+    "Desc": "\"Mirror, mirror, in my hand, where do our foes lurk in this land?\"",
+    "Source": "Reward for accepting the Tavern Challenge against Mirror Maiden at The Cat's Tail and achieving all corresponding challenge objectives in a Friendly Fracas",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Maidenwater",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_HYDRO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "Talent",
+        "Combat Action"
+    ],
+    "Talent": {
+        "Name": "Mirror Cage",
+        "Desc": "$[K1]: When your active character is <color=#FFFFFFFF>$[A2202]</color>, equip this card.\\nAfter $[A2202] equips this card, immediately use <color=#FFD780FF>$[S22022]</color> once.\\nWhen your $[A2202], who has this card equipped, creates a <color=#FFFFFFFF>$[C122021]</color>, it will have +1 starting $[K4]. It will also increase the $[K102] the character to which this is attached takes by 1.\\n(You must have $[A2202] in your deck to add this card to your deck.)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+            },
+            "A2202": "Mirror Cage",
+            "S22022": "S22022",
+            "C122021": {
+                "Name": "Refraction",
+                "Desc": "<color=#FFFFFFFF>When the character to which this card is attached switches to another character:</color> Elemental Dice Cost +1.\\n<color=#FFFFFFFF>$[K4]: 2</color>\\n(Only one such status can be applied on the same side at a time)",
+                "Child": {
+                    "K4": {
+                        "Name": "<color=#FFFFFFFF>Duration (Rounds)</color>",
+                        "Desc": "Each time you reach the end of a Round, <color=#FFFFFFFF>Duration (Rounds)</color> -1.\\nThis card will be discarded immediately once <color=#FFFFFFFF>Duration (Rounds)</color> runs out."
+                    }
+                }
+            },
+            "K4": {
+                "Name": "<color=#FFFFFFFF>Duration (Rounds)</color>",
+                "Desc": "Each time you reach the end of a Round, <color=#FFFFFFFF>Duration (Rounds)</color> -1.\\nThis card will be discarded immediately once <color=#FFFFFFFF>Duration (Rounds)</color> runs out."
+            },
+            "K102": {
+                "Name": "{SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro DMG</color>",
+                "Desc": "Applies {SPRITE_PRESET#2102}Hydro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Vaporize</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Electro-Charged</color>：DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Frozen</color>: DMG +1 for this instance, the target is unable to perform any Actions this Round (Can be removed in advance after the target receives +2 Physical or Pyro DMG)\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Bloom</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Dendro Core</color>] that grants +2 DMG to the next instance of Pyro or Electro DMG"
+            }
+        }
+    }
+}

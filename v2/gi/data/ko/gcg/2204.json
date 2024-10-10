@@ -1,0 +1,102 @@
+{
+    "Type": "Character",
+    "Name": "별을 삼킨 고래",
+    "Title": "심비한 괴수·별을 삼킨 고래",
+    "Desc": "가장 환상적인 이야기 또는 가장 허무맹랑한 허풍에 따르면 우주의 깊은 곳에 있는 진정한 별은 티바트처럼 생기가 가득하고, 우주 본연은 바다와 같다고 한다.\\n우주가 티바트로 스며드는 과정은 단 한 번도 멈춘 적이 없을지도 모른다. 어쩌면 더 강한 의지가 경계를 그어 이 세계를 보호하려 했을지도…",
+    "Source": "캣테일 술집의 왕자님을 통해 술집 도전 진행 및 친선 대전 난이도의 별을 삼킨 고래에게 승리 후 획득",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_Ptahur",
+    "Hp": 5,
+    "Cost": 2,
+    "Tag": [
+        "물 원소",
+        "기타 무기",
+        "마물"
+    ],
+    "Talent": {
+        "22041": {
+            "Name": "파도를 가르는 도약",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "22042": {
+            "Name": "빗발치는 유성우",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE_2]pt 준다. 이 캐릭터의 <color=#FFFFFFFF>$[S22044]</color>이 제공하는 추가 최대 HP 3pt마다 해당 피해가 1pt 증가한다. (최대 +3pt) 이후 기본 원소 주사위 코스트가 가장 높은 핸드 카드 1장을 $[K56]한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "D__KEY__DAMAGE_2": 2,
+                "S22044": "S22044",
+                "K56": {
+                    "Name": "<color=#FFFFFFFF>포기</color>",
+                    "Desc": "행동 카드 또는 캐릭터 스킬의 효과를 통해, 핸드 카드 또는 카드 더미에서 행동 카드를 버린다."
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3
+            }
+        },
+        "22043": {
+            "Name": "고래의 포식",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 적의 모든 대기 캐릭터에게 $[K5]를 1pt 주며 <color=#FFFFFFFF>$[C122043]</color>을 소환한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "D__KEY__DAMAGE": 1,
+                "K5": {
+                    "Name": "<color=#FFFFFFFF>관통 피해</color>",
+                    "Desc": "관통 피해는 피해 보너스를 획득할 수 없으나, 주는 피해가 보호막 또는 피해 면역과 같은 효과에 의해 상쇄되지 않는다."
+                },
+                "C122043": {
+                    "Name": "검은 환영",
+                    "Desc": "<color=#FFFFFFFF>필드 입장 시: </color>아군이 삼킨 카드 중에서 가장 높은 원소 주사위 코스트만큼의 「공격력」을 획득하고, 삼킨 해당 코스트의 카드 수량과 동일한 $[K3]를 획득한다.\\n<color=#FFFFFFFF>종료 단계 및 아군 종료 선언 시: </color>이 카드의 「공격력」만큼 $[K104]를 준다.\\n<color=#FFFFFFFF>아군 출전 캐릭터가 피해를 받을 시: </color>피해를 1pt 상쇄한다. 이후 이 카드의 $[K3]-2",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        },
+                        "K104": {
+                            "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>번개 원소 피해</color>",
+                            "Desc": "{SPRITE_PRESET#2104}번개 원소 부착 시 다음 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>과부하</color>: 이번 피해+2pt, 대상이 다음 캐릭터로 강제 교체된다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>초전도</color>: 이번 피해+1pt, 대상 이외의 모든 상대 캐릭터에게 관통 피해를 1pt 준다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>감전</color>: 이번 피해+1pt, 대상 이외의 모든 상대 캐릭터에게 관통 피해를 1pt 준다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>활성</color>: 이번 피해+1pt, 다음 2회의 풀 원소 또는 번개 원소 피해를 1pt 증가시키는 [<color=#FFFFFFFF>격화 영역</color>]을 생성한다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "22044": {
+            "Name": "끝없는 식욕",
+            "Desc": "[패시브] 전투 시작 시, <color=#FFFFFFFF>$[C122041]</color>을 생성한다.",
+            "Child": {
+                "C122041": {
+                    "Name": "깊은 포식의 영역",
+                    "Desc": "아군이 $[K56] 또는 $[K57]한 카드가 삼켜진다.\\n<color=#FFFFFFFF>카드를 3장 삼킬 때마다</color>: $[A2204]가 턴이 종료될 때 추가로 최대 HP를 1pt 획득한다. 만약 삼킨 카드 중 기본 원소 주사위 코스트가 같은 카드가 존재할 경우 추가로 1pt를 획득하고, 3장이 모두 동일할 경우 다시 추가로 1pt를 획득한다.",
+                    "Child": {
+                        "K56": {
+                            "Name": "<color=#FFFFFFFF>포기</color>",
+                            "Desc": "행동 카드 또는 캐릭터 스킬의 효과를 통해, 핸드 카드 또는 카드 더미에서 행동 카드를 버린다."
+                        },
+                        "K57": {
+                            "Name": "<color=#FFFFFFFF>조정</color>",
+                            "Desc": "원소 조정을 진행하기 위해 핸드 카드에서 행동 카드를 버린다."
+                        },
+                        "A2204": "별을 삼킨 고래"
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 222041
+}

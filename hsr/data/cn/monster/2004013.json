@@ -1,0 +1,183 @@
+{
+    "Id": 2004013,
+    "Name": "「星核猎手」卡芙卡（幻象）",
+    "Desc": "「星核猎手」的一员，面带莫测笑容的杀手丽人，善用种类纷繁的武器和心控之术。正是她将星穹列车引至此处，以实现某个计划……出现于此的是基于你的记忆模拟出的幻影。",
+    "MonsterCampID": null,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 6510,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/Monster_2004010.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "LittleBoss",
+    "SpeedBase": 108,
+    "StanceBase": 720,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.20000000018626451,
+    "Child": [
+        {
+            "Id": 2004013,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Wind",
+                "Imaginary",
+                "Quantum"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Fire",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.6000000005587935
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 200401301,
+                    "SkillName": "夜间喧嚣不止",
+                    "SkillDesc": "对指定我方单体造成雷属性伤害，并有概率使受到攻击的我方目标陷入触电状态。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200401302,
+                    "SkillName": "月光摩挲连绵",
+                    "SkillDesc": "对指定我方单体及其相邻目标造成雷属性伤害，如主目标处于触电状态，则会使副目标也陷入触电状态。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200401303,
+                    "SkillName": "缄默厉声嘲笑",
+                    "SkillDesc": "对我方全体造成雷属性伤害。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 200401304,
+                    "SkillName": "言灵",
+                    "SkillDesc": "使指定我方单体大概率陷入【支配】状态，并将其行动提前，立即随机攻击1名我方其他目标。",
+                    "DamageType": "",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 200401305,
+                    "SkillName": "",
+                    "SkillDesc": "",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200401306,
+                    "SkillName": "压迫",
+                    "SkillDesc": "在行动条上添加【外包】，每次【外包】行动时，召唤<unbreak>#1[i]</unbreak>名星际和平公司员工，场上最多存在<unbreak>#2[i]</unbreak>名员工。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 200401307,
+                    "SkillName": "心理暗示",
+                    "SkillDesc": "使我方多名目标进入【心理暗示】状态，并在行动条上添加【揭晓】，下次【揭晓】行动时陷入【心理暗示】的角色陷入【支配】状态。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 200401308,
+                    "SkillName": "颤慄",
+                    "SkillDesc": "如受到攻击的目标正处于触电状态，则直接造成1次触电伤害。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 200401309,
+                    "SkillName": "残酷",
+                    "SkillDesc": "当敌方除卡芙卡外的目标或我方陷入【支配】状态的目标对我方陷入触电状态的主目标进行攻击时，追加1次雷属性攻击。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200401310,
+                    "SkillName": "吊唁",
+                    "SkillDesc": "每当我方目标触发触电状态时，卡芙卡自身伤害提高。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 200401311,
+                    "SkillName": "压迫",
+                    "SkillDesc": "在行动条上添加【外包】，每次【外包】行动时，召唤<unbreak>#1[i]</unbreak>名星际和平公司员工，场上最多存在<unbreak>#2[i]</unbreak>名员工。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 200401312,
+                    "SkillName": "剥夺",
+                    "SkillDesc": "卡芙卡行动时，如果场上的星际和平公司员工存在【绩效点】，则会被卡芙卡夺取，并施放【月光摩挲连绵】。【绩效点】可以大幅提高卡芙卡本次攻击造成的伤害。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 200401313,
+                    "SkillName": "",
+                    "SkillDesc": "",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 2004013,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2004013,
+            "WorldLevel": 1,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2004013,
+            "WorldLevel": 2,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2004013,
+            "WorldLevel": 3,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2004013,
+            "WorldLevel": 4,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2004013,
+            "WorldLevel": 5,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2004013,
+            "WorldLevel": 6,
+            "DisplayItemList": []
+        }
+    ]
+}

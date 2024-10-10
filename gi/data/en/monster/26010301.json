@@ -1,0 +1,62 @@
+{
+    "Name": "Electro Whopperflower",
+    "Desc": "Energetic mimetic Plant monsters that use Electro to attack their prey.\\nWhen fully-charged with Electro energy, they can unleash a strong electric current from their crowns. As such, some researchers have tried to apply them in other areas...",
+    "Icon": "UI_MonsterIcon_Mimik_Electric",
+    "Codex": "BEAST",
+    "Title": "Electro Whopperflower",
+    "SpecialNames": [
+        "Opportunistic Mimetic Plant"
+    ],
+    "Reward": [],
+    "Child": {
+        "26010301": {
+            "MonsterName": "Mimik_Electric",
+            "Type": "MONSTER_ORDINARY",
+            "HpDrops": [
+                {
+                    "dropId": 22010014,
+                    "hpPercent": 75
+                },
+                {
+                    "dropId": 22010014,
+                    "hpPercent": 50
+                },
+                {
+                    "dropId": 22010014,
+                    "hpPercent": 25
+                }
+            ],
+            "KillDropId": 22010034,
+            "Prop": [
+                {
+                    "type": "FIGHT_PROP_BASE_HP",
+                    "growCurve": "GROW_CURVE_HP"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_ATTACK",
+                    "growCurve": "GROW_CURVE_ATTACK"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_DEFENSE",
+                    "growCurve": "GROW_CURVE_DEFENSE"
+                }
+            ],
+            "LocalLegend": false,
+            "SubHurt": {
+                "Fire": 0.1000000014901,
+                "Grass": 0.1000000014901,
+                "Water": 0.1000000014901,
+                "Elec": 0.5,
+                "Wind": 0.1000000014901,
+                "Ice": 0.1000000014901,
+                "Rock": 0.1000000014901,
+                "Physical": 0.1000000014901
+            },
+            "Base": {
+                "HP": 40.7519989013672,
+                "ATK": 25.1200008392334,
+                "DEF": 500
+            }
+        }
+    }
+}

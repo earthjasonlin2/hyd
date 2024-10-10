@@ -1,0 +1,262 @@
+{
+    "Id": 2034011,
+    "Name": "보리인 수장•호뢰",
+    "Desc": "<unbreak>10</unbreak>대 죄악을 저질러 유폐옥 최하층에 영구적으로 수감된 보리인 수장.\\n<unbreak>700</unbreak>년 동안의 고통과 원한을 몸에 지고 감옥에서 탈출한 후, 늑대 무리의 주인은 나부 선주에 도전장을 내밀었다. 그러나 이러한 광기 가득한 행동 뒤에는 또 다른 목적이 숨겨져 있는 것 같다……",
+    "MonsterCampID": null,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 2790,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/Monster_2034010.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "LittleBoss",
+    "SpeedBase": 172,
+    "StanceBase": 600,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.20000000018626451,
+    "Child": [
+        {
+            "Id": 2034011,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Fire",
+                "Wind"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 203401101,
+                    "SkillName": "검을 부숴 이빨로",
+                    "SkillDesc": "지정된 단일 아군에게 번개 속성 피해를 가한다",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 203401102,
+                    "SkillName": "쇠를 잘라 발톱으로",
+                    "SkillDesc": "지정된 단일 아군 및 인접한 목표에게 번개 속성 피해를 가한다",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 203401103,
+                    "SkillName": "갈라진 땅, 흔적 없이 사라진 풀",
+                    "SkillDesc": "자신을 제외한 모든 목표의 행동 게이지를 감소시키고 소량의 번개 속성 피해를 가한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 203401104,
+                    "SkillName": "뇌동의 바람, 파죽의 기세",
+                    "SkillDesc": "모든 아군에게 번개 속성 피해를 가한다",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 203401105,
+                    "SkillName": "질주하는 탐랑, 드리우는 핏빛",
+                    "SkillDesc": "지정된 단일 아군에게 대량의 번개 속성 피해를 가하고, 높은 확률로 [<u>맴도는 공포</u>]를 부여한다",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 203401106,
+                    "SkillName": "수장의 달의 광기",
+                    "SkillDesc": "적이 공격 발동 후 <u>[달의 광기] 상태에 진입할 수 있는 적 유닛</u>에게 [<u>피의 굶주림</u>]을 1스택 부여한다. [<u>피의 굶주림</u>]이 일정 스택에 도달하면 대상이 [<u>달의 광기</u>] 상태에 진입한다.\\n행동 서열에 [달의 광기] 카운트다운이 나타나고, 카운트다운 턴 시작 시 모든 적 유닛이 [<u>달의 광기</u>] 상태를 해제한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 203401107,
+                    "SkillName": "달을 향해 우는 늑대",
+                    "SkillDesc": "호뢰가 [<u>달의 광기</u>] 상태 진입 시 적이 공격을 발동할 때마다 호뢰에게 [분노]를 1스택 부여하며, 호뢰가 공격하면 추가로 [분노]를 1스택 부여한다. 아군이 공격을 발동할 때마다 [분노]가 1스택 감소한다. [분노]는 초기 스택을 보유하며, [분노]가 일정 스택 수에 도달하면 호뢰가 [질주하는 탐랑, 드리우는 핏빛]을 발동하고 모든 [분노] 스택을 제거한다. 아군 캐릭터의 공격으로 [분노] 스택 수가 소진될 때마다 호뢰의 강인성이 감소하고 [분노] 스택이 지정된 스택 수로 초기화된다",
+                    "DamageType": "",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 203401108,
+                    "SkillName": "고독한 포효, 뒤따르는 늑대 무리",
+                    "SkillDesc": "행동 서열에 [소집된 늑대 무리]가 추가되고, [소집된 늑대 무리]가 행동할 때마다 [검은 발톱 늑대 병사] 또는 [식월 늑대 병사]를 소환한다. 적이 [<u>달의 광기</u>]에 진입 시 [소집된 늑대 무리]의 행동 게이지가 감소한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 203401109,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 203401101,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Fire",
+                "Wind"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 203401101,
+                    "SkillName": "검을 부숴 이빨로",
+                    "SkillDesc": "지정된 단일 아군에게 번개 속성 피해를 가한다",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 203401102,
+                    "SkillName": "쇠를 잘라 발톱으로",
+                    "SkillDesc": "지정된 단일 아군 및 인접한 목표에게 번개 속성 피해를 가한다",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 203401103,
+                    "SkillName": "갈라진 땅, 흔적 없이 사라진 풀",
+                    "SkillDesc": "자신을 제외한 모든 목표의 행동 게이지를 감소시키고 소량의 번개 속성 피해를 가한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 203401104,
+                    "SkillName": "뇌동의 바람, 파죽의 기세",
+                    "SkillDesc": "모든 아군에게 번개 속성 피해를 가한다",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 203401105,
+                    "SkillName": "질주하는 탐랑, 드리우는 핏빛",
+                    "SkillDesc": "지정된 단일 아군에게 대량의 번개 속성 피해를 가하고, 높은 확률로 [<u>맴도는 공포</u>]를 부여한다",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 203401106,
+                    "SkillName": "수장의 달의 광기",
+                    "SkillDesc": "적이 공격 발동 후 <u>[달의 광기] 상태에 진입할 수 있는 적 유닛</u>에게 [<u>피의 굶주림</u>]을 1스택 부여한다. [<u>피의 굶주림</u>]이 일정 스택에 도달하면 대상이 [<u>달의 광기</u>] 상태에 진입한다.\\n행동 서열에 [달의 광기] 카운트다운이 나타나고, 카운트다운 턴 시작 시 모든 적 유닛이 [<u>달의 광기</u>] 상태를 해제한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 203401107,
+                    "SkillName": "달을 향해 우는 늑대",
+                    "SkillDesc": "호뢰가 [<u>달의 광기</u>] 상태 진입 시 적이 공격을 발동할 때마다 호뢰에게 [분노]를 1스택 부여하며, 호뢰가 공격하면 추가로 [분노]를 1스택 부여한다. 아군이 공격을 발동할 때마다 [분노]가 1스택 감소한다. [분노]는 초기 스택을 보유하며, [분노]가 일정 스택 수에 도달하면 호뢰가 [질주하는 탐랑, 드리우는 핏빛]을 발동하고 모든 [분노] 스택을 제거한다. 아군 캐릭터의 공격으로 [분노] 스택 수가 소진될 때마다 호뢰의 강인성이 감소하고 [분노] 스택이 지정된 스택 수로 초기화된다",
+                    "DamageType": "",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 203401108,
+                    "SkillName": "고독한 포효, 뒤따르는 늑대 무리",
+                    "SkillDesc": "행동 서열에 [소집된 늑대 무리]가 추가되고, [소집된 늑대 무리]가 행동할 때마다 [검은 발톱 늑대 병사] 또는 [식월 늑대 병사]를 소환한다. 적이 [<u>달의 광기</u>]에 진입 시 [소집된 늑대 무리]의 행동 게이지가 감소한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 203401109,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 2034011,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2034011,
+            "WorldLevel": 1,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2034011,
+            "WorldLevel": 2,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2034011,
+            "WorldLevel": 3,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2034011,
+            "WorldLevel": 4,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2034011,
+            "WorldLevel": 5,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2034011,
+            "WorldLevel": 6,
+            "DisplayItemList": []
+        }
+    ]
+}

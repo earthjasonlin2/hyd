@@ -1,0 +1,31 @@
+{
+    "Type": "Action",
+    "Name": "냉혈의 검",
+    "Title": "케이아·냉혈의 검",
+    "Desc": "약간은 냉혹한 농담",
+    "Source": "캣테일 술집에서 케이아를 초대해 대전하고 상응하는 도전 목표 달성 후 획득",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Keaya",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_CRYO",
+            "count": 4
+        },
+        {}
+    ],
+    "Tag": [
+        "특성",
+        "전투 행동"
+    ],
+    "Talent": {
+        "Name": "냉혈의 검",
+        "Desc": "$[K1]: 아군 출전 캐릭터가 <color=#FFFFFFFF>$[A1103]</color>일 때 해당 카드를 장착할 수 있다.\\n$[A1103]가 해당 카드를 장착하면 즉시 <color=#FFD780FF>$[S11032]</color>을 1회 사용한다.\\n해당 카드를 장착한 $[A1103]가 <color=#FFFFFFFF>$[S11032]</color> 사용 후: 자신의 HP를 2pt 치유한다. (턴당 1회)\\n(카드 덱에 $[A1103]가 있어야만 카드 덱에 추가 가능)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>전투 행동</color>",
+                "Desc": "아군이 전투 행동을 1회 진행하면 행동 순서가 상대에게 넘어간다.\\n<color=#FFFFFFFF>해당 규칙에 속하는 카드는 사용 시 빠른 행동이 아닌 전투 행동으로 간주한다</color>."
+            },
+            "A1103": "냉혈의 검",
+            "S11032": "S11032"
+        }
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "Type": "Action",
+    "Name": "熔炎鉄甲",
+    "Title": "鉄甲熔炎帝王·熔炎鉄甲",
+    "Desc": "「こんな世界を想像してしまう——テイワットのあらゆる人を排除し、際限なく成長する鉄甲熔炎帝王。かの者はついに、この上なく華美な白い鎧「パレ·メルモニア」を身にまとう。」",
+    "Source": "キャッツテールのリトルプリンスのところで酒場挑戦を行い、鉄甲熔炎帝王に挑戦して友好対戦で対応する挑戦目標をクリアすることで獲得",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_HermitCrabPrimo",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PYRO",
+            "count": 1
+        },
+        {}
+    ],
+    "Tag": [
+        "天賦"
+    ],
+    "Talent": {
+        "Name": "熔炎鉄甲",
+        "Desc": "<color=#FFFFFFFF>登場時</color>、このカードを装備した<color=#FFFFFFFF>$[A2304]</color>は$[K203]状態になる。\\n$[K1023]が提供するものを除いて、味方の$[K6]状態、または$[K6]出撃状態が解除された後、このカードを装備した$[A2304]は$[K1023]を2層付与する。（各ラウンドで1回のみ）\\n（このカードはデッキに$[A2304]が含まれている場合のみ、デッキに追加できる）",
+        "Child": {
+            "A2304": "熔炎鉄甲",
+            "K203": {
+                "Name": "<color=#FF9999FF>{SPRITE_PRESET#2103}炎元素付着</color>",
+                "Desc": "ダメージによる方法以外で{SPRITE_PRESET#2103}炎元素が付着した場合、引き起こした元素反応にダメージ効果が乗りません。\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>溶解</color>：効果なし\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>蒸発</color>：効果なし\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>過負荷</color>：目標を強制的に次のキャラにチェンジさせる\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>燃焼</color>：ラウンド終了時に炎元素ダメージを1与える「<color=#FFFFFFFF>燃焼烈焔</color>」を生成する（使用可能回数1回、最大2まで重ねられる）"
+            },
+            "K1023": {
+                "Name": "<color=#FFFFFFFF>重甲ヤドカニの殻</color>",
+                "Desc": "1層につき{SPRITE_PRESET#4007}<color=#FFFFFFFF>シールド</color>を1提供し、付与されたキャラを守る。"
+            },
+            "K6": {
+                "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>シールド</color>",
+                "Desc": "該当シールドに守られたキャラがダメージを受けた時、シールドを消費してダメージと相殺することができます。"
+            }
+        }
+    }
+}

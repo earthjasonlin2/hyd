@@ -1,0 +1,28 @@
+{
+    "Type": "Action",
+    "Name": "Plunging Strike",
+    "Title": "Fallraid",
+    "Desc": "\"...Don't deploy your Wind Glider halfway down! You'll get discovered!\"",
+    "Source": "",
+    "Icon": "UI_Gcg_CardFace_Event_Event_Xialuo",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PAIMON",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "Combat Action"
+    ],
+    "Talent": {
+        "Name": "Plunging Strike",
+        "Desc": "$[K1]: Switch to the target character. That character then uses a <color=#FFFFFFFF>Normal Attack</color>.",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+            }
+        }
+    }
+}

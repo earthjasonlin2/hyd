@@ -1,0 +1,49 @@
+{
+    "Type": "Action",
+    "Name": "Rushing Hound: Swift as the Wind",
+    "Title": "Gorou: Rushing Hound: Swift as the Wind",
+    "Desc": "\"Rally!\"",
+    "Source": "Reward for inviting Gorou to a duel at The Cat's Tail and achieving all corresponding challenge objectives",
+    "Icon": "UI_Gcg_CardFace_Modify_Constellation_Gorou",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_GEO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "Talent",
+        "Combat Action"
+    ],
+    "Talent": {
+        "Name": "Rushing Hound: Swift as the Wind",
+        "Desc": "$[K1]: When your active character is <color=#FFFFFFFF>$[A1606]</color>, equip this card.\\nAfter $[A1606] equips this card, immediately use <color=#FFD780FF>$[S16062]</color> once.\\nWhen your $[A1606], who has this card equipped, is on the field, and after any of your characters deals $[K106]: If <color=#FFFFFFFF>$[C116061]</color> is in play, draw 1 card. (Once per Round)\\n(You must have $[A1606] in your deck to add this card to your deck.)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+            },
+            "A1606": "Rushing Hound: Swift as the Wind",
+            "S16062": "S16062",
+            "K106": {
+                "Name": "{SPRITE_PRESET#2106}<color=#FFE699FF>Geo DMG</color>",
+                "Desc": "Reacts with Elements if they are already applied:\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Cryo Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Hydro Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Pyro Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Electro Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)"
+            },
+            "C116061": {
+                "Name": "General's War Banner",
+                "Desc": "Your party's characters deal +1 $[K106].\\n<color=#FFFFFFFF>$[K4]: 2</color> (Can stack, can stack till 3 Rounds)",
+                "Child": {
+                    "K106": {
+                        "Name": "{SPRITE_PRESET#2106}<color=#FFE699FF>Geo DMG</color>",
+                        "Desc": "Reacts with Elements if they are already applied:\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Cryo Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Hydro Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Pyro Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Electro Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)"
+                    },
+                    "K4": {
+                        "Name": "<color=#FFFFFFFF>Duration (Rounds)</color>",
+                        "Desc": "Each time you reach the end of a Round, <color=#FFFFFFFF>Duration (Rounds)</color> -1.\\nThis card will be discarded immediately once <color=#FFFFFFFF>Duration (Rounds)</color> runs out."
+                    }
+                }
+            }
+        }
+    }
+}

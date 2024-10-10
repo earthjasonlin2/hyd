@@ -1,0 +1,30 @@
+{
+    "Type": "Action",
+    "Name": "トリックカウントダウン：3",
+    "Title": "トリックカウントダウン",
+    "Desc": "「マジックを見せてあげるよ。僕と一緒にカウントダウンをしてね——スリー、ツー、ワン！」",
+    "Source": "",
+    "Icon": "UI_Gcg_CardFace_Event_Event_MagicCount3",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PAIMON",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [],
+    "Talent": {
+        "Name": "トリックカウントダウン：3",
+        "Desc": "味方のすべての元素サイコロを$[K411]に変え、手札を4枚引く。\\n<color=#FFFFFFFF>このカードが手札または山札で$[K56]された後</color>、このカードのコスト-1の元素サイコロコストで使用できる「トリックカウントダウン」を味方の山札の一番上に配置する。",
+        "Child": {
+            "K411": {
+                "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1111}万能元素</color>",
+                "Desc": "{SPRITE_PRESET#1111}万能元素は任意タイプの元素と見なされ、コストの支払いに使えます。"
+            },
+            "K56": {
+                "Name": "<color=#FFFFFFFF>破棄</color>",
+                "Desc": "アクションカードまたはキャラのスキル効果によって、手札または山札からアクションカードを破棄する。"
+            }
+        }
+    }
+}

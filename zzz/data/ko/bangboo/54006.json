@@ -1,0 +1,443 @@
+{
+  "Id": 54006,
+  "CodeName": "Rocketboo",
+  "Name": "날쌘부",
+  "Desc": "해당 「Bangboo」 모델의 제로백은 17.5 발걸음이다",
+  "Rarity": 4,
+  "Icon": "UI/Sprite/A1DynamicLoad/BangbooModGarage/UnPacker/BangbooRole/BangbooGarageRole15.png",
+  "Stats": {
+    "Stamina": 100,
+    "StaminaUpragde": 10,
+    "Endurance": 180,
+    "HpMax": 396,
+    "Hpupgrade": 471237,
+    "Attack": 69,
+    "AttackUpgrade": 347303,
+    "BreakStun": 99,
+    "ElementAbnormalPower": 119,
+    "Defence": 30,
+    "DefUpgrade": 85729,
+    "Crit": 500,
+    "PenRatio": 0,
+    "CritDmg": 5000
+  },
+  "Level": {
+    "1": {
+      "HpMax": 0,
+      "Attack": 0,
+      "Defence": 0,
+      "LevelMax": 10,
+      "LevelMin": 0,
+      "Materials": {
+        "10": 15000,
+        "102010": 4
+      },
+      "Extra": {
+        "20101": {
+          "Prop": 20101,
+          "Name": "치명타 확률",
+          "Format": "{0:0.#%}",
+          "Value": 0
+        },
+        "21101": {
+          "Prop": 21101,
+          "Name": "치명타 피해",
+          "Format": "{0:0.#%}",
+          "Value": 0
+        }
+      }
+    },
+    "2": {
+      "HpMax": 207,
+      "Attack": 64,
+      "Defence": 38,
+      "LevelMax": 20,
+      "LevelMin": 10,
+      "Materials": {
+        "10": 35000,
+        "102020": 12
+      },
+      "Extra": {
+        "20101": {
+          "Prop": 20101,
+          "Name": "치명타 확률",
+          "Format": "{0:0.#%}",
+          "Value": 450
+        },
+        "21101": {
+          "Prop": 21101,
+          "Name": "치명타 피해",
+          "Format": "{0:0.#%}",
+          "Value": 0
+        }
+      }
+    },
+    "3": {
+      "HpMax": 414,
+      "Attack": 321,
+      "Defence": 75,
+      "LevelMax": 30,
+      "LevelMin": 20,
+      "Materials": {
+        "10": 75000,
+        "102020": 20
+      },
+      "Extra": {
+        "20101": {
+          "Prop": 20101,
+          "Name": "치명타 확률",
+          "Format": "{0:0.#%}",
+          "Value": 2250
+        },
+        "21101": {
+          "Prop": 21101,
+          "Name": "치명타 피해",
+          "Format": "{0:0.#%}",
+          "Value": 0
+        }
+      }
+    },
+    "4": {
+      "HpMax": 621,
+      "Attack": 963,
+      "Defence": 113,
+      "LevelMax": 40,
+      "LevelMin": 30,
+      "Materials": {
+        "10": 125000,
+        "102030": 10
+      },
+      "Extra": {
+        "20101": {
+          "Prop": 20101,
+          "Name": "치명타 확률",
+          "Format": "{0:0.#%}",
+          "Value": 2250
+        },
+        "21101": {
+          "Prop": 21101,
+          "Name": "치명타 피해",
+          "Format": "{0:0.#%}",
+          "Value": 2500
+        }
+      }
+    },
+    "5": {
+      "HpMax": 828,
+      "Attack": 2569,
+      "Defence": 151,
+      "LevelMax": 50,
+      "LevelMin": 40,
+      "Materials": {
+        "10": 250000,
+        "102030": 20
+      },
+      "Extra": {
+        "20101": {
+          "Prop": 20101,
+          "Name": "치명타 확률",
+          "Format": "{0:0.#%}",
+          "Value": 4500
+        },
+        "21101": {
+          "Prop": 21101,
+          "Name": "치명타 피해",
+          "Format": "{0:0.#%}",
+          "Value": 2500
+        }
+      }
+    },
+    "6": {
+      "HpMax": 1034,
+      "Attack": 6423,
+      "Defence": 188,
+      "LevelMax": 60,
+      "LevelMin": 50,
+      "Materials": {},
+      "Extra": {
+        "20101": {
+          "Prop": 20101,
+          "Name": "치명타 확률",
+          "Format": "{0:0.#%}",
+          "Value": 4500
+        },
+        "21101": {
+          "Prop": 21101,
+          "Name": "치명타 피해",
+          "Format": "{0:0.#%}",
+          "Value": 5000
+        }
+      }
+    }
+  },
+  "Skill": {
+    "A": {
+      "Level": {
+        "1": {
+          "Name": "Boom!",
+          "Desc": "<color=#FFFFFF>[액티브 스킬]</color>\n스킬 시전 시 로켓을 타고 적을 향해 돌진한다. 타깃에게 명중하면 폭발하여 범위 내 적에게 <color=#FF5521>불 속성 피해</color>를 주고, <color=#FF5521>불 속성 이상 축적치</color>를 누적한다.",
+          "Property": [
+            "피해 배율",
+            "그로기 배율",
+            "재사용 대기시간"
+          ],
+          "Param": "{Skill:5400601, Prop:1001}|{Skill:5400601, Prop:1002}|18초"
+        },
+        "2": {
+          "Name": "Boom!",
+          "Desc": "<color=#FFFFFF>[액티브 스킬]</color>\n스킬 시전 시 로켓을 타고 적을 향해 돌진한다. 타깃에게 명중하면 폭발하여 범위 내 적에게 <color=#FF5521>불 속성 피해</color>를 주고, <color=#FF5521>불 속성 이상 축적치</color>를 누적한다.",
+          "Property": [
+            "피해 배율",
+            "그로기 배율",
+            "재사용 대기시간"
+          ],
+          "Param": "{Skill:5400601, Prop:1001}|{Skill:5400601, Prop:1002}|18초"
+        },
+        "3": {
+          "Name": "Boom!",
+          "Desc": "<color=#FFFFFF>[액티브 스킬]</color>\n스킬 시전 시 로켓을 타고 적을 향해 돌진한다. 타깃에게 명중하면 폭발하여 범위 내 적에게 <color=#FF5521>불 속성 피해</color>를 주고, <color=#FF5521>불 속성 이상 축적치</color>를 누적한다.",
+          "Property": [
+            "피해 배율",
+            "그로기 배율",
+            "재사용 대기시간"
+          ],
+          "Param": "{Skill:5400601, Prop:1001}|{Skill:5400601, Prop:1002}|18초"
+        },
+        "4": {
+          "Name": "Boom!",
+          "Desc": "<color=#FFFFFF>[액티브 스킬]</color>\n스킬 시전 시 로켓을 타고 적을 향해 돌진한다. 타깃에게 명중하면 폭발하여 범위 내 적에게 <color=#FF5521>불 속성 피해</color>를 주고, <color=#FF5521>불 속성 이상 축적치</color>를 누적한다.",
+          "Property": [
+            "피해 배율",
+            "그로기 배율",
+            "재사용 대기시간"
+          ],
+          "Param": "{Skill:5400601, Prop:1001}|{Skill:5400601, Prop:1002}|18초"
+        },
+        "5": {
+          "Name": "Boom!",
+          "Desc": "<color=#FFFFFF>[액티브 스킬]</color>\n스킬 시전 시 로켓을 타고 적을 향해 돌진한다. 타깃에게 명중하면 폭발하여 범위 내 적에게 <color=#FF5521>불 속성 피해</color>를 주고, <color=#FF5521>불 속성 이상 축적치</color>를 누적한다.",
+          "Property": [
+            "피해 배율",
+            "그로기 배율",
+            "재사용 대기시간"
+          ],
+          "Param": "{Skill:5400601, Prop:1001}|{Skill:5400601, Prop:1002}|18초"
+        },
+        "6": {
+          "Name": "Boom!",
+          "Desc": "<color=#FFFFFF>[액티브 스킬]</color>\n스킬 시전 시 로켓을 타고 적을 향해 돌진한다. 타깃에게 명중하면 폭발하여 범위 내 적에게 <color=#FF5521>불 속성 피해</color>를 주고, <color=#FF5521>불 속성 이상 축적치</color>를 누적한다.",
+          "Property": [
+            "피해 배율",
+            "그로기 배율",
+            "재사용 대기시간"
+          ],
+          "Param": "{Skill:5400601, Prop:1001}|{Skill:5400601, Prop:1002}|18초"
+        },
+        "7": {
+          "Name": "Boom!",
+          "Desc": "<color=#FFFFFF>[액티브 스킬]</color>\n스킬 시전 시 로켓을 타고 적을 향해 돌진한다. 타깃에게 명중하면 폭발하여 범위 내 적에게 <color=#FF5521>불 속성 피해</color>를 주고, <color=#FF5521>불 속성 이상 축적치</color>를 누적한다.",
+          "Property": [
+            "피해 배율",
+            "그로기 배율",
+            "재사용 대기시간"
+          ],
+          "Param": "{Skill:5400601, Prop:1001}|{Skill:5400601, Prop:1002}|18초"
+        },
+        "8": {
+          "Name": "Boom!",
+          "Desc": "<color=#FFFFFF>[액티브 스킬]</color>\n스킬 시전 시 로켓을 타고 적을 향해 돌진한다. 타깃에게 명중하면 폭발하여 범위 내 적에게 <color=#FF5521>불 속성 피해</color>를 주고, <color=#FF5521>불 속성 이상 축적치</color>를 누적한다.",
+          "Property": [
+            "피해 배율",
+            "그로기 배율",
+            "재사용 대기시간"
+          ],
+          "Param": "{Skill:5400601, Prop:1001}|{Skill:5400601, Prop:1002}|18초"
+        },
+        "9": {
+          "Name": "Boom!",
+          "Desc": "<color=#FFFFFF>[액티브 스킬]</color>\n스킬 시전 시 로켓을 타고 적을 향해 돌진한다. 타깃에게 명중하면 폭발하여 범위 내 적에게 <color=#FF5521>불 속성 피해</color>를 주고, <color=#FF5521>불 속성 이상 축적치</color>를 누적한다.",
+          "Property": [
+            "피해 배율",
+            "그로기 배율",
+            "재사용 대기시간"
+          ],
+          "Param": "{Skill:5400601, Prop:1001}|{Skill:5400601, Prop:1002}|18초"
+        },
+        "10": {
+          "Name": "Boom!",
+          "Desc": "<color=#FFFFFF>[액티브 스킬]</color>\n스킬 시전 시 로켓을 타고 적을 향해 돌진한다. 타깃에게 명중하면 폭발하여 범위 내 적에게 <color=#FF5521>불 속성 피해</color>를 주고, <color=#FF5521>불 속성 이상 축적치</color>를 누적한다.",
+          "Property": [
+            "피해 배율",
+            "그로기 배율",
+            "재사용 대기시간"
+          ],
+          "Param": "{Skill:5400601, Prop:1001}|{Skill:5400601, Prop:1002}|18초"
+        }
+      }
+    },
+    "B": {
+      "Level": {
+        "1": {
+          "Name": "연료 주입",
+          "Desc": "<color=#FFFFFF>[추가 능력]</color>\n파티 내 <color=#FF5521>[불 속성]</color> 캐릭터가 2명 이상 존재 시 발동: <color=#FFFFFF>[「Bangboo」 콤보 스킬]</color>이 누적하는 속성 이상 축적치가 100% 증가한다.",
+          "Property": [
+            "속성 이상 축적치 증가"
+          ],
+          "Param": "100%"
+        },
+        "2": {
+          "Name": "연료 주입",
+          "Desc": "<color=#FFFFFF>[추가 능력]</color>\n파티 내 <color=#FF5521>[불 속성]</color> 캐릭터가 2명 이상 존재 시 발동: <color=#FFFFFF>[「Bangboo」 콤보 스킬]</color>이 누적하는 속성 이상 축적치가 125% 증가한다.",
+          "Property": [
+            "속성 이상 축적치 증가"
+          ],
+          "Param": "125%"
+        },
+        "3": {
+          "Name": "연료 주입",
+          "Desc": "<color=#FFFFFF>[추가 능력]</color>\n파티 내 <color=#FF5521>[불 속성]</color> 캐릭터가 2명 이상 존재 시 발동: <color=#FFFFFF>[「Bangboo」 콤보 스킬]</color>이 누적하는 속성 이상 축적치가 150% 증가한다.",
+          "Property": [
+            "속성 이상 축적치 증가"
+          ],
+          "Param": "150%"
+        },
+        "4": {
+          "Name": "연료 주입",
+          "Desc": "<color=#FFFFFF>[추가 능력]</color>\n파티 내 <color=#FF5521>[불 속성]</color> 캐릭터가 2명 이상 존재 시 발동: <color=#FFFFFF>[「Bangboo」 콤보 스킬]</color>이 누적하는 속성 이상 축적치가 175% 증가한다.",
+          "Property": [
+            "속성 이상 축적치 증가"
+          ],
+          "Param": "175%"
+        },
+        "5": {
+          "Name": "연료 주입",
+          "Desc": "<color=#FFFFFF>[추가 능력]</color>\n파티 내 <color=#FF5521>[불 속성]</color> 캐릭터가 2명 이상 존재 시 발동: <color=#FFFFFF>[「Bangboo」 콤보 스킬]</color>이 누적하는 속성 이상 축적치가 200% 증가한다.",
+          "Property": [
+            "속성 이상 축적치 증가"
+          ],
+          "Param": "200%"
+        }
+      }
+    },
+    "C": {
+      "Level": {
+        "1": {
+          "Name": "폭격 배송",
+          "Desc": "<color=#FFFFFF>[「Bangboo」 콤보 스킬]</color>\n즉시 로켓을 타고 타깃을 향해 돌진한다. 명중하면 강력한 폭발을 일으켜 넓은 범위 내 적에게 <color=#FF5521>불 속성 피해</color>를 주고 대량의 <color=#FF5521>불 속성 이상 축적치</color>를 누적한다.",
+          "Property": [
+            "피해 배율",
+            "그로기 배율"
+          ],
+          "Param": "{Skill:5400602, Prop:1001}|{Skill:5400602, Prop:1002}"
+        },
+        "2": {
+          "Name": "폭격 배송",
+          "Desc": "<color=#FFFFFF>[「Bangboo」 콤보 스킬]</color>\n즉시 로켓을 타고 타깃을 향해 돌진한다. 명중하면 강력한 폭발을 일으켜 넓은 범위 내 적에게 <color=#FF5521>불 속성 피해</color>를 주고 대량의 <color=#FF5521>불 속성 이상 축적치</color>를 누적한다.",
+          "Property": [
+            "피해 배율",
+            "그로기 배율"
+          ],
+          "Param": "{Skill:5400602, Prop:1001}|{Skill:5400602, Prop:1002}"
+        },
+        "3": {
+          "Name": "폭격 배송",
+          "Desc": "<color=#FFFFFF>[「Bangboo」 콤보 스킬]</color>\n즉시 로켓을 타고 타깃을 향해 돌진한다. 명중하면 강력한 폭발을 일으켜 넓은 범위 내 적에게 <color=#FF5521>불 속성 피해</color>를 주고 대량의 <color=#FF5521>불 속성 이상 축적치</color>를 누적한다.",
+          "Property": [
+            "피해 배율",
+            "그로기 배율"
+          ],
+          "Param": "{Skill:5400602, Prop:1001}|{Skill:5400602, Prop:1002}"
+        },
+        "4": {
+          "Name": "폭격 배송",
+          "Desc": "<color=#FFFFFF>[「Bangboo」 콤보 스킬]</color>\n즉시 로켓을 타고 타깃을 향해 돌진한다. 명중하면 강력한 폭발을 일으켜 넓은 범위 내 적에게 <color=#FF5521>불 속성 피해</color>를 주고 대량의 <color=#FF5521>불 속성 이상 축적치</color>를 누적한다.",
+          "Property": [
+            "피해 배율",
+            "그로기 배율"
+          ],
+          "Param": "{Skill:5400602, Prop:1001}|{Skill:5400602, Prop:1002}"
+        },
+        "5": {
+          "Name": "폭격 배송",
+          "Desc": "<color=#FFFFFF>[「Bangboo」 콤보 스킬]</color>\n즉시 로켓을 타고 타깃을 향해 돌진한다. 명중하면 강력한 폭발을 일으켜 넓은 범위 내 적에게 <color=#FF5521>불 속성 피해</color>를 주고 대량의 <color=#FF5521>불 속성 이상 축적치</color>를 누적한다.",
+          "Property": [
+            "피해 배율",
+            "그로기 배율"
+          ],
+          "Param": "{Skill:5400602, Prop:1001}|{Skill:5400602, Prop:1002}"
+        },
+        "6": {
+          "Name": "폭격 배송",
+          "Desc": "<color=#FFFFFF>[「Bangboo」 콤보 스킬]</color>\n즉시 로켓을 타고 타깃을 향해 돌진한다. 명중하면 강력한 폭발을 일으켜 넓은 범위 내 적에게 <color=#FF5521>불 속성 피해</color>를 주고 대량의 <color=#FF5521>불 속성 이상 축적치</color>를 누적한다.",
+          "Property": [
+            "피해 배율",
+            "그로기 배율"
+          ],
+          "Param": "{Skill:5400602, Prop:1001}|{Skill:5400602, Prop:1002}"
+        },
+        "7": {
+          "Name": "폭격 배송",
+          "Desc": "<color=#FFFFFF>[「Bangboo」 콤보 스킬]</color>\n즉시 로켓을 타고 타깃을 향해 돌진한다. 명중하면 강력한 폭발을 일으켜 넓은 범위 내 적에게 <color=#FF5521>불 속성 피해</color>를 주고 대량의 <color=#FF5521>불 속성 이상 축적치</color>를 누적한다.",
+          "Property": [
+            "피해 배율",
+            "그로기 배율"
+          ],
+          "Param": "{Skill:5400602, Prop:1001}|{Skill:5400602, Prop:1002}"
+        },
+        "8": {
+          "Name": "폭격 배송",
+          "Desc": "<color=#FFFFFF>[「Bangboo」 콤보 스킬]</color>\n즉시 로켓을 타고 타깃을 향해 돌진한다. 명중하면 강력한 폭발을 일으켜 넓은 범위 내 적에게 <color=#FF5521>불 속성 피해</color>를 주고 대량의 <color=#FF5521>불 속성 이상 축적치</color>를 누적한다.",
+          "Property": [
+            "피해 배율",
+            "그로기 배율"
+          ],
+          "Param": "{Skill:5400602, Prop:1001}|{Skill:5400602, Prop:1002}"
+        },
+        "9": {
+          "Name": "폭격 배송",
+          "Desc": "<color=#FFFFFF>[「Bangboo」 콤보 스킬]</color>\n즉시 로켓을 타고 타깃을 향해 돌진한다. 명중하면 강력한 폭발을 일으켜 넓은 범위 내 적에게 <color=#FF5521>불 속성 피해</color>를 주고 대량의 <color=#FF5521>불 속성 이상 축적치</color>를 누적한다.",
+          "Property": [
+            "피해 배율",
+            "그로기 배율"
+          ],
+          "Param": "{Skill:5400602, Prop:1001}|{Skill:5400602, Prop:1002}"
+        },
+        "10": {
+          "Name": "폭격 배송",
+          "Desc": "<color=#FFFFFF>[「Bangboo」 콤보 스킬]</color>\n즉시 로켓을 타고 타깃을 향해 돌진한다. 명중하면 강력한 폭발을 일으켜 넓은 범위 내 적에게 <color=#FF5521>불 속성 피해</color>를 주고 대량의 <color=#FF5521>불 속성 이상 축적치</color>를 누적한다.",
+          "Property": [
+            "피해 배율",
+            "그로기 배율"
+          ],
+          "Param": "{Skill:5400602, Prop:1001}|{Skill:5400602, Prop:1002}"
+        }
+      }
+    }
+  },
+  "SkillProp": {
+    "5400601": {
+      "1001": {
+        "Main": 57600,
+        "Growth": 5760,
+        "Format": "%"
+      },
+      "1002": {
+        "Main": 21100,
+        "Growth": 2110,
+        "Format": "%"
+      }
+    },
+    "5400602": {
+      "1001": {
+        "Main": 54300,
+        "Growth": 5430,
+        "Format": "%"
+      },
+      "1002": {
+        "Main": 7800,
+        "Growth": 780,
+        "Format": "%"
+      }
+    }
+  }
+}

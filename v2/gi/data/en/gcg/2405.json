@@ -1,0 +1,113 @@
+{
+    "Type": "Character",
+    "Name": "Consecrated Scorpion",
+    "Title": "Remnant Venom: Consecrated Scorpion",
+    "Desc": "A poisonous scorpion that became twisted and warped by eating some great being. It now commands perilous lightning.",
+    "Source": "Reward for accepting the Tavern Challenge at The Cat's Tail and claiming victory in a Friendly Fracas with the Consecrated Scorpion",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_ScorpionSacred",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "Electro",
+        "Other Weapons",
+        "Monster",
+        "Consecrated Beast"
+    ],
+    "Talent": {
+        "24051": {
+            "Name": "Scorpion Strike",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "24052": {
+            "Name": "Stinging Spine",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].\\nCreate 1 <color=#FFFFFFFF>$[C124051]</color> card and randomly place it within the top 2 cards of your deck.",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO",
+                "C124051": {
+                    "Name": "Bonecruncher's Energy Block",
+                    "Desc": "Randomly $[K56] 1 card from your Hand with the highest original Cost and create 1 Elemental Die of your active character's Element. (Only 1 such card can be played per Round)",
+                    "Child": {
+                        "K56": {
+                            "Name": "<color=#FFFFFFFF>Discard</color>",
+                            "Desc": "Use Action Cards or Character Skill effects to Discard Action Cards from Hand or Deck."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 3
+            }
+        },
+        "24053": {
+            "Name": "Thunderbore Blast",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. $[K56] up to 3 <color=#FFFFFFFF>$[C124051]</color> cards from your Hand, and create 1 <color=#FFFFFFFF>$[C124052]</color> on the opposing side of the field.",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO",
+                "K56": {
+                    "Name": "<color=#FFFFFFFF>Discard</color>",
+                    "Desc": "Use Action Cards or Character Skill effects to Discard Action Cards from Hand or Deck."
+                },
+                "C124051": {
+                    "Name": "Bonecruncher's Energy Block",
+                    "Desc": "Randomly $[K56] 1 card from your Hand with the highest original Cost and create 1 Elemental Die of your active character's Element. (Only 1 such card can be played per Round)",
+                    "Child": {
+                        "K56": {
+                            "Name": "<color=#FFFFFFFF>Discard</color>",
+                            "Desc": "Use Action Cards or Character Skill effects to Discard Action Cards from Hand or Deck."
+                        }
+                    }
+                },
+                "C124052": {
+                    "Name": "Thunderbore Trap",
+                    "Desc": "<color=#FFFFFFFF>After a character on this side of the field uses a Skill:</color> Deals 2 $[K104] to their team's active character.\\n$[K3]: Initial amount equal to the number of <color=#FFFFFFFF>$[C124051]</color> discarded when created. (Max 3 stacks)",
+                    "Child": {
+                        "K104": {
+                            "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>Electro DMG</color>",
+                            "Desc": "Applies {SPRITE_PRESET#2104}Electro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Overloaded</color>: DMG +2 for this instance, the target is forcibly switched to the next character\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Superconduct</color>: DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Electro-Charged</color>: DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Quicken</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Catalyzing Field</color>] that grants +1 DMG to the next 2 instances of Dendro or Electro DMG"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "24054": {
+            "Name": "Immortal Remnants: Electro",
+            "Desc": "(Passive) When the Round ends, create 2 <color=#FFFFFFFF>$[C124051]</color> cards and randomly place them within the top 10 cards of your deck.",
+            "Child": {
+                "C124051": {
+                    "Name": "Bonecruncher's Energy Block",
+                    "Desc": "Randomly $[K56] 1 card from your Hand with the highest original Cost and create 1 Elemental Die of your active character's Element. (Only 1 such card can be played per Round)",
+                    "Child": {
+                        "K56": {
+                            "Name": "<color=#FFFFFFFF>Discard</color>",
+                            "Desc": "Use Action Cards or Character Skill effects to Discard Action Cards from Hand or Deck."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 224051
+}

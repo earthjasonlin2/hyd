@@ -1,0 +1,262 @@
+{
+    "Id": 2004022,
+    "Name": "운기군 효위•연경(완벽)",
+    "Desc": "코드가 영향을 받은 완벽한 홀로그램. 원본 레퍼런스는 어린 나이임에도 검을 다루는 천재라 불리는 경원 장군의 호위무사이다",
+    "MonsterCampID": null,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 930,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/Monster_2004020.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "LittleBoss",
+    "SpeedBase": 144,
+    "StanceBase": 360,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.3000000002793968,
+    "Child": [
+        {
+            "Id": 2004022,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Thunder",
+                "Wind",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Fire",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 200402201,
+                    "SkillName": "쾌재풍",
+                    "SkillDesc": "지정된 단일 아군에게 얼음 속성 피해를 주고 연경과 모든 비검이 [서늘한 빛]을 1스택 획득하며, 가하는 피해가 소폭 증가한다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200402202,
+                    "SkillName": "돌아온 제비",
+                    "SkillDesc": "[비검]을 4개 소환한다. [검진] 효과를 획득해 자신의 속도를 올리고, [비검]으로 [진안]을 획득한다. 3단계 시 일정 수량의 [비검]이 추가로 [연마]를 획득한다",
+                    "DamageType": "",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200402203,
+                    "SkillName": "삼척수",
+                    "SkillDesc": "지정된 단일 아군에게 얼음 속성 피해를 가하며 피격된 목표는 높은 확률로 빙결 상태에 빠진다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 200402204,
+                    "SkillName": "파진가(破陣歌)",
+                    "SkillDesc": "지정된 단일 아군 및 인접한 목표에게 얼음 속성 피해를 가한다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200402205,
+                    "SkillName": "검기 임박",
+                    "SkillDesc": "차지 상태에 진입한다. 다음번 행동은 모든 아군에게 [은하 폭포]를 발동한다",
+                    "DamageType": "",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200402206,
+                    "SkillName": "은하 폭포",
+                    "SkillDesc": "모든 아군에게 대량의 얼음 속성 피해를 가한다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200402207,
+                    "SkillName": "검기 응집",
+                    "SkillDesc": "단일 아군을 고정하고 2턴 후 [흐르는 구름, 범람하는 은하]를 발동한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 200402208,
+                    "SkillName": "흐르는 구름, 범람하는 은하",
+                    "SkillDesc": "지정된 단일 아군에게 연속으로 얼음 속성 피해를 가한다. 해당 스킬 발동 시 추가로 필드 위 [비검]의 수만큼 피해를 가한다. 스킬 발동 후 필드 위의 모든 [비검]이 제거된다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 200402209,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": 15
+                }
+            ]
+        },
+        {
+            "Id": 200402201,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Thunder",
+                "Wind",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Fire",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 200402201,
+                    "SkillName": "쾌재풍",
+                    "SkillDesc": "지정된 단일 아군에게 얼음 속성 피해를 주고 연경과 모든 비검이 [서늘한 빛]을 1스택 획득하며, 가하는 피해가 소폭 증가한다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200402202,
+                    "SkillName": "돌아온 제비",
+                    "SkillDesc": "[비검]을 4개 소환한다. [검진] 효과를 획득해 자신의 속도를 올리고, [비검]으로 [진안]을 획득한다. 3단계 시 일정 수량의 [비검]이 추가로 [연마]를 획득한다",
+                    "DamageType": "",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200402203,
+                    "SkillName": "삼척수",
+                    "SkillDesc": "지정된 단일 아군에게 얼음 속성 피해를 가하며 피격된 목표는 높은 확률로 빙결 상태에 빠진다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 200402204,
+                    "SkillName": "파진가(破陣歌)",
+                    "SkillDesc": "지정된 단일 아군 및 인접한 목표에게 얼음 속성 피해를 가한다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200402205,
+                    "SkillName": "검기 임박",
+                    "SkillDesc": "차지 상태에 진입한다. 다음번 행동은 모든 아군에게 [은하 폭포]를 발동한다",
+                    "DamageType": "",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200402206,
+                    "SkillName": "은하 폭포",
+                    "SkillDesc": "모든 아군에게 대량의 얼음 속성 피해를 가한다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200402207,
+                    "SkillName": "검기 응집",
+                    "SkillDesc": "단일 아군을 고정하고 2턴 후 [흐르는 구름, 범람하는 은하]를 발동한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 200402208,
+                    "SkillName": "흐르는 구름, 범람하는 은하",
+                    "SkillDesc": "지정된 단일 아군에게 연속으로 얼음 속성 피해를 가한다. 해당 스킬 발동 시 추가로 필드 위 [비검]의 수만큼 피해를 가한다. 스킬 발동 후 필드 위의 모든 [비검]이 제거된다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 200402209,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": 15
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 2004022,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2004022,
+            "WorldLevel": 1,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2004022,
+            "WorldLevel": 2,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2004022,
+            "WorldLevel": 3,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2004022,
+            "WorldLevel": 4,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2004022,
+            "WorldLevel": 5,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2004022,
+            "WorldLevel": 6,
+            "DisplayItemList": []
+        }
+    ]
+}

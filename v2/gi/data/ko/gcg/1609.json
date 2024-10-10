@@ -1,0 +1,59 @@
+{
+    "Type": "Character",
+    "Name": "치오리",
+    "Title": "뇌명의 재단사·치오리",
+    "Desc": "천 가지 색채를 짜는 쿠튀리에르",
+    "Source": "캣테일 술집 술집에서 치오리 초대 및 친선 대전 난이도 승리 후 획득",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Chiori",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "바위 원소",
+        "한손검",
+        "이나즈마"
+    ],
+    "Talent": {
+        "16091": {
+            "Name": "직조 검술",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "16092": {
+            "Name": "하소데의 손길",
+            "Desc": "<color=#FFFFFFFF>$[C116097]</color> 3개 중에서 1개를 선정해 소환한다.",
+            "Child": {
+                "C116097": {
+                    "Name": "치오리의 자동제어 인형",
+                    "Desc": "치오리의 다양한 자동제어 인형은 자동으로 공격할 수 있을 뿐만 아니라 각종 버프 효과도 제공한다.",
+                    "Child": {}
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 3
+            }
+        },
+        "16093": {
+            "Name": "쌍검·비익",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_GEO",
+                "D__KEY__DAMAGE": 5
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 216091
+}

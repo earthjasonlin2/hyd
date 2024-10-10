@@ -1,0 +1,43 @@
+{
+    "Type": "Action",
+    "Name": "再び燃え盛る残火",
+    "Title": "アビスの詠唱者·再び燃え盛る残火",
+    "Desc": "恩恵伝播の道のりは、平坦ではない。",
+    "Source": "キャッツテールのリトルプリンスのところで酒場挑戦を行い、アビスの詠唱者·淵炎に挑戦して友好対戦で対応する挑戦目標をクリアすることで獲得",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_DeaconFire",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PYRO",
+            "count": 2
+        },
+        {}
+    ],
+    "Tag": [
+        "天賦"
+    ],
+    "Talent": {
+        "Name": "再び燃え盛る残火",
+        "Desc": "<color=#FFFFFFFF>登場時</color>、このカードを装備した<color=#FFFFFFFF>$[A2302]</color>がすでに<color=#FFFFFFFF>$[C123022]</color>を発動していた場合、直ちにこのカードを破棄し、キャラに$[K1006]を付与する。\\nこのカードを装備した$[A2302]が<color=#FFFFFFFF>$[C123022]</color>を発動する時、このカードを破棄し、キャラに$[K1006]を付与する。\\n（このカードはデッキに$[A2302]が含まれている場合のみ、デッキに追加できる）",
+        "Child": {
+            "A2302": "再び燃え盛る残火",
+            "C123022": {
+                "Name": "炎の新生",
+                "Desc": "<color=#FFFFFFFF>付与されたキャラが倒された時</color>、この効果を解除してキャラが$[K54]。また該当キャラのHPを4まで回復する。この効果が発動された後、キャラの与える$[K103]+1。",
+                "Child": {
+                    "K54": {
+                        "Name": "<color=#FFFFFFFF>戦闘不能にならない</color>",
+                        "Desc": "一部の効果によってキャラのHPが0になる時も、<color=#FFFFFFFF>戦闘不能にならず</color>、該当キャラのHPを一定値まで回復する。\\nこの時、キャラは<color=#FFFFFFFF>戦闘不能</color>にカウントされない。（そのため、キャラに装備または付与されたものは破棄されず、チャージもクリアされない。）"
+                    },
+                    "K103": {
+                        "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>炎元素ダメージ</color>",
+                        "Desc": "{SPRITE_PRESET#2103}炎元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>溶解</color>：ダメージ+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>蒸発</color>：ダメージ+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>過負荷</color>：ダメージ+2、目標を強制的に次のキャラにチェンジさせる\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>燃焼</color>：ダメージ+1、ラウンド終了時に炎元素ダメージを1与える「<color=#FFFFFFFF>燃焼烈焔</color>」を生成する（使用可能回数1回、最大2まで重ねられる）"
+                    }
+                }
+            },
+            "K1006": {
+                "Name": "<color=#FFFFFFFF>淵炎の加護</color>",
+                "Desc": "付与されたキャラは<color=#FFFFFFFF>{SPRITE_PRESET#4007}<color=#FFFFFFFF>シールド</color>を2</color>獲得する。\\n<color=#FFFFFFFF>該当{SPRITE_PRESET#4007}シールドが尽きた後</color>、相手のキャラ全員に<color=#FFFFFFFF>貫通ダメージ</color>を1与える。"
+            }
+        }
+    }
+}

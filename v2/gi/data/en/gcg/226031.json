@@ -1,0 +1,45 @@
+{
+    "Type": "Action",
+    "Name": "Beastly Corrosion",
+    "Title": "Golden Wolflord: Beastly Corrosion",
+    "Desc": "\"The Wolflord has no name, for it was but one of \"Gold'\"s unintentional creations, and that is precisely why it is obsessed with invading worlds that do not belong to it and making a name for itself.\"",
+    "Source": "Reward for accepting the Tavern Challenge against the Golden Wolflord at The Cat's Tail and achieving all corresponding challenge objectives in a Friendly Fracas",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Planelurker",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_GEO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "Talent",
+        "Combat Action"
+    ],
+    "Talent": {
+        "Name": "Beastly Corrosion",
+        "Desc": "$[K1]: When your active character is <color=#FFFFFFFF>$[A2603]</color>, equip this card.\\nAfter $[A2603] equips this card, immediately use <color=#FFD780FF>$[S26032]</color>.\\nWhen there is $[A2603] on the field who has this card equipped, your opponent's <color=#FFFFFFFF>$[C126031]</color> can reach 5 stacks. This will affect them even if they are on the field.\\n(You must have $[A2603] in your deck to add this card to your deck.)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+            },
+            "A2603": "Beastly Corrosion",
+            "S26032": "S26032",
+            "C126031": {
+                "Name": "Golden Corrosion",
+                "Desc": "<color=#FFFFFFFF>End Phase:</color> If the character to which this is attached is off-field, then that character will take 1 $[K5] for every $[K3] that this effect has.\\n<color=#FFFFFFFF>$[K3]: 1</color> (Can stack. Max 3 stacks.)",
+                "Child": {
+                    "K5": {
+                        "Name": "<color=#FFFFFFFF>Piercing DMG</color>",
+                        "Desc": "Piercing DMG cannot be increased by any bonuses, but cannot be defended against using Shields or DMG Immunity either."
+                    },
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                        "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                    }
+                }
+            }
+        }
+    }
+}

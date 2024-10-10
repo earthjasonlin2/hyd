@@ -1,0 +1,71 @@
+{
+    "Id": 12001,
+    "ContactsId": 13,
+    "ContactsType": 1,
+    "ContactCamp": 3,
+    "Name": "은하열차 패밀리",
+    "Signature": "...",
+    "IconPath": "SpriteOutput/AvatarRoundIcon/UI_Message_Group_Train.png",
+    "Sections": [
+        {
+            "Id": 1200100,
+            "Messages": {
+                "120010000": {
+                    "Id": 120010000,
+                    "ItemType": "Text",
+                    "ItemContentID": null,
+                    "ContactsID": 1002,
+                    "Name": "단항",
+                    "IconPath": "SpriteOutput/AvatarRoundIcon/Avatar/1002.png",
+                    "MainText": "{NICKNAME}, Mar. 7th, 지금 어디야?",
+                    "OptionText": null,
+                    "NextItemIDList": [
+                        120010002
+                    ],
+                    "Sender": "PlayerAuto"
+                },
+                "120010002": {
+                    "Id": 120010002,
+                    "ItemType": "Text",
+                    "ItemContentID": null,
+                    "ContactsID": null,
+                    "Name": null,
+                    "IconPath": null,
+                    "MainText": "메시지 전송에 실패했습니다",
+                    "OptionText": null,
+                    "NextItemIDList": [
+                        120010001
+                    ],
+                    "Sender": "System"
+                },
+                "120010001": {
+                    "Id": 120010001,
+                    "ItemType": "Text",
+                    "ItemContentID": null,
+                    "ContactsID": 1002,
+                    "Name": "단항",
+                    "IconPath": "SpriteOutput/AvatarRoundIcon/Avatar/1002.png",
+                    "MainText": "합류하러 왔어",
+                    "OptionText": "합류하러 왔어",
+                    "NextItemIDList": [
+                        120010003
+                    ],
+                    "Sender": "Player"
+                },
+                "120010003": {
+                    "Id": 120010003,
+                    "ItemType": "Text",
+                    "ItemContentID": null,
+                    "ContactsID": null,
+                    "Name": null,
+                    "IconPath": null,
+                    "MainText": "메시지 전송에 실패했습니다",
+                    "OptionText": null,
+                    "NextItemIDList": [],
+                    "Sender": "System"
+                }
+            },
+            "MessageStart": 120010000
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "Type": "Action",
+    "Name": "益をとって損を補う",
+    "Title": "ドリー·益をとって損を補う",
+    "Desc": "「まずは商品を三割値上げして、それを二割引で売りますわ！」",
+    "Source": "キャッツテールでドリーを招待して対戦し、対応する挑戦目標をクリアすることで獲得",
+    "Icon": "UI_Gcg_CardFace_Modify_Constellation_Dori",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_ELECTRO",
+            "count": 3
+        },
+        {
+            "costType": "GCG_COST_ENERGY",
+            "count": 2
+        }
+    ],
+    "Tag": [
+        "天賦",
+        "戦闘アクション"
+    ],
+    "Talent": {
+        "Name": "益をとって損を補う",
+        "Desc": "$[K1]：味方の出撃キャラが<color=#FFFFFFFF>$[A1410]</color>の時、このカードを装備できる。\\n$[A1410]がこのカードを装備した後、直ちに<color=#FFD780FF>$[S14103]</color>を1回発動する。\\nこのカードを装備した$[A1410]が召喚する<color=#FFFFFFFF>$[C114102]</color>は、HPが6以下のキャラに対する回復量+1、$[K310]のないキャラに$[K310]を与える時の量+1。\\n（このカードはデッキに$[A1410]が含まれている場合のみ、デッキに追加できる）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>戦闘アクション</color>",
+                "Desc": "味方が戦闘アクションを1回行った後、相手のターンに移ります。\\n<color=#FFFFFFFF>このようなルールを持つ手札を出すのはクイックアクションではなく、戦闘アクションと見なされます。</color>"
+            },
+            "A1410": "益をとって損を補う",
+            "S14103": "S14103",
+            "C114102": {
+                "Name": "ランプの精",
+                "Desc": "<color=#FFFFFFFF>エンドフェーズ：</color>味方の出撃キャラのHPを2回復し、$[K310]を1獲得する。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+                "Child": {
+                    "K310": {
+                        "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}チャージ</color>",
+                        "Desc": "キャラが「元素爆発」を発動するには、{SPRITE_PRESET#1110}チャージを消費する必要があります。\\nキャラが「元素スキル」や「通常攻撃」を発動した後、{SPRITE_PRESET#1110}チャージを1獲得できます。"
+                    },
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                        "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                    }
+                }
+            },
+            "K310": {
+                "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}チャージ</color>",
+                "Desc": "キャラが「元素爆発」を発動するには、{SPRITE_PRESET#1110}チャージを消費する必要があります。\\nキャラが「元素スキル」や「通常攻撃」を発動した後、{SPRITE_PRESET#1110}チャージを1獲得できます。"
+            }
+        }
+    }
+}

@@ -1,0 +1,276 @@
+{
+    "Id": 1004022,
+    "Name": "杰帕德（完整）",
+    "Desc": "代码受到影响后的完整投影。参照本体为银鬃铁卫的戍卫长。\\n杰帕德（完整）会指挥麾下士兵集中攻击，并且能为士兵提供抵挡攻击伤害的护盾。",
+    "MonsterCampID": null,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 604.5000000004657,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/Monster_1004020.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "LittleBoss",
+    "SpeedBase": 144,
+    "StanceBase": 300,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.20000000018626451,
+    "Child": [
+        {
+            "Id": 1004022,
+            "AttackModifyRatio": 0.8333330010063946,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Thunder",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Fire",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 100402201,
+                    "SkillName": "一意之拳",
+                    "SkillDesc": "对指定我方单体造成少量冰属性伤害。",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 100402202,
+                    "SkillName": "霜之惩击",
+                    "SkillDesc": "对指定我方单体造成冰属性伤害。",
+                    "DamageType": "Ice",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 100402203,
+                    "SkillName": "戍卫气场",
+                    "SkillDesc": "施放【全体护盾】吸收敌方全体受到的伤害，并使敌方全体的韧性无法被削减。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100402204,
+                    "SkillName": "极寒瀑流",
+                    "SkillDesc": "对我方全体造成冰属性伤害并使自身造成的伤害小幅提高，伤害提高效果可叠加。",
+                    "DamageType": "Ice",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 100402205,
+                    "SkillName": "围攻",
+                    "SkillDesc": "杰帕德锁定指定我方单体，使敌方全体立即集中攻击该目标。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100402207,
+                    "SkillName": "",
+                    "SkillDesc": "",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 100402208,
+                    "SkillName": "以牙还牙",
+                    "SkillDesc": "进入反击状态，持续1回合。在该状态下受到我方目标攻击后，立即对该目标施放【霜之惩击】。该效果最多触发1次。",
+                    "DamageType": "Ice",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100402209,
+                    "SkillName": "支援",
+                    "SkillDesc": "阶段开始时，立即召唤【银鬃近卫】和【银鬃炮手】。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100402210,
+                    "SkillName": "支援",
+                    "SkillDesc": "阶段开始时，立即召唤【银鬃炮手】。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100402211,
+                    "SkillName": "支援",
+                    "SkillDesc": "阶段开始时，立即召唤【银鬃尉官（完整）】。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 100402201,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 3.0769230003934354,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": 96,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Quantum",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Fire",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 100402201,
+                    "SkillName": "一意之拳",
+                    "SkillDesc": "对指定我方单体造成少量冰属性伤害。",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 100402202,
+                    "SkillName": "霜之惩击",
+                    "SkillDesc": "对指定我方单体造成冰属性伤害。",
+                    "DamageType": "Ice",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 100402203,
+                    "SkillName": "戍卫气场",
+                    "SkillDesc": "施放【全体护盾】吸收敌方全体受到的伤害，并使敌方全体的韧性无法被削减。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100402204,
+                    "SkillName": "极寒瀑流",
+                    "SkillDesc": "对我方全体造成冰属性伤害并使自身造成的伤害小幅提高，伤害提高效果可叠加。",
+                    "DamageType": "Ice",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 100402205,
+                    "SkillName": "围攻",
+                    "SkillDesc": "杰帕德锁定指定我方单体，使敌方全体立即集中攻击该目标。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100402207,
+                    "SkillName": "",
+                    "SkillDesc": "",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 100402208,
+                    "SkillName": "以牙还牙",
+                    "SkillDesc": "进入反击状态，持续1回合。在该状态下受到我方目标攻击后，立即对该目标施放【霜之惩击】。该效果最多触发1次。",
+                    "DamageType": "Ice",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100402209,
+                    "SkillName": "支援",
+                    "SkillDesc": "阶段开始时，立即召唤【银鬃近卫】和【银鬃炮手】。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100402210,
+                    "SkillName": "支援",
+                    "SkillDesc": "阶段开始时，立即召唤【银鬃炮手】。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100402211,
+                    "SkillName": "支援",
+                    "SkillDesc": "阶段开始时，立即召唤【银鬃尉官（完整）】。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 1004022,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1004022,
+            "WorldLevel": 1,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1004022,
+            "WorldLevel": 2,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1004022,
+            "WorldLevel": 3,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1004022,
+            "WorldLevel": 4,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1004022,
+            "WorldLevel": 5,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1004022,
+            "WorldLevel": 6,
+            "DisplayItemList": []
+        }
+    ]
+}

@@ -1,0 +1,98 @@
+{
+    "Type": "Character",
+    "Name": "アルベド",
+    "Title": "白亜の申し子·アルベド",
+    "Desc": "黒土と白亜、赤化と黄金。",
+    "Source": "キャッツテールでアルベドを招待し、友好対戦に勝利することで獲得",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Albedo",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "岩元素",
+        "片手剣",
+        "モンド"
+    ],
+    "Talent": {
+        "16041": {
+            "Name": "西風剣術·白",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "16042": {
+            "Name": "創生術·擬似陽華",
+            "Desc": "<color=#FFFFFFFF>$[C116041]</color>を召喚する。",
+            "Child": {
+                "C116041": {
+                    "Name": "陽華",
+                    "Desc": "<color=#FFFFFFFF>エンドフェーズ</color>：$[K106]を1与える。\\n<color=#FFFFFFFF>$[K3]：3</color>\\n<color=#FFFFFFFF>この召喚物がフィールドに存在する場合、味方がキャラチェンジを行う時</color>、「$[K1]」ではなく「$[K2]」とみなされる。（各ラウンドで1回のみ）",
+                    "Child": {
+                        "K106": {
+                            "Name": "{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素ダメージ</color>",
+                            "Desc": "付着した元素と以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2101}<color=#FFFFFFFF>結晶（氷）</color>：ダメージ+1、味方の出撃キャラはシールドを1獲得する（最大2まで重ねられる）\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2102}<color=#FFFFFFFF>結晶（水）</color>：ダメージ+1、味方の出撃キャラはシールドを1獲得する（最大2まで重ねられる）\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2103}<color=#FFFFFFFF>結晶（炎）</color>：ダメージ+1、味方の出撃キャラはシールドを1獲得する（最大2まで重ねられる）\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2104}<color=#FFFFFFFF>結晶（雷）</color>：ダメージ+1、味方の出撃キャラはシールドを1獲得する（最大2まで重ねられる）"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                            "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                        },
+                        "K1": {
+                            "Name": "<color=#FFFFFFFF>戦闘アクション</color>",
+                            "Desc": "味方が戦闘アクションを1回行った後、相手のターンに移ります。\\n<color=#FFFFFFFF>このようなルールを持つ手札を出すのはクイックアクションではなく、戦闘アクションと見なされます。</color>"
+                        },
+                        "K2": {
+                            "Name": "<color=#FFFFFFFF>クイックアクション</color>",
+                            "Desc": "クイックアクションを1回行った後、あなたは他のアクションを続けて行うことができます。\\nただし、戦闘アクションを1回行うと、相手のターンに移ります。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 3
+            }
+        },
+        "16043": {
+            "Name": "誕生式·大地の潮",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。もし<color=#FFFFFFFF>$[C116041]</color>がフィールドに存在する場合、このダメージ+2。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_GEO",
+                "D__KEY__DAMAGE": 4,
+                "C116041": {
+                    "Name": "陽華",
+                    "Desc": "<color=#FFFFFFFF>エンドフェーズ</color>：$[K106]を1与える。\\n<color=#FFFFFFFF>$[K3]：3</color>\\n<color=#FFFFFFFF>この召喚物がフィールドに存在する場合、味方がキャラチェンジを行う時</color>、「$[K1]」ではなく「$[K2]」とみなされる。（各ラウンドで1回のみ）",
+                    "Child": {
+                        "K106": {
+                            "Name": "{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素ダメージ</color>",
+                            "Desc": "付着した元素と以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2101}<color=#FFFFFFFF>結晶（氷）</color>：ダメージ+1、味方の出撃キャラはシールドを1獲得する（最大2まで重ねられる）\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2102}<color=#FFFFFFFF>結晶（水）</color>：ダメージ+1、味方の出撃キャラはシールドを1獲得する（最大2まで重ねられる）\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2103}<color=#FFFFFFFF>結晶（炎）</color>：ダメージ+1、味方の出撃キャラはシールドを1獲得する（最大2まで重ねられる）\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2104}<color=#FFFFFFFF>結晶（雷）</color>：ダメージ+1、味方の出撃キャラはシールドを1獲得する（最大2まで重ねられる）"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                            "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                        },
+                        "K1": {
+                            "Name": "<color=#FFFFFFFF>戦闘アクション</color>",
+                            "Desc": "味方が戦闘アクションを1回行った後、相手のターンに移ります。\\n<color=#FFFFFFFF>このようなルールを持つ手札を出すのはクイックアクションではなく、戦闘アクションと見なされます。</color>"
+                        },
+                        "K2": {
+                            "Name": "<color=#FFFFFFFF>クイックアクション</color>",
+                            "Desc": "クイックアクションを1回行った後、あなたは他のアクションを続けて行うことができます。\\nただし、戦闘アクションを1回行うと、相手のターンに移ります。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 216041
+}

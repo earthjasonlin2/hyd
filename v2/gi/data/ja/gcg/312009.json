@@ -1,0 +1,38 @@
+{
+    "Type": "Action",
+    "Name": "将帥の兜",
+    "Title": "不変の誓願·将帥の兜",
+    "Desc": "「血が大地に染み込むにつれ、琉璃の沙は光沢を取り戻した——最後の一滴が染み込むまで。」",
+    "Source": "",
+    "Icon": "UI_Gcg_CardFace_Modify_Artifact_Jiangshuai",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PAIMON",
+            "count": 2
+        },
+        {}
+    ],
+    "Tag": [
+        "聖遺物"
+    ],
+    "Talent": {
+        "Name": "将帥の兜",
+        "Desc": "<color=#FFFFFFFF>アクションフェーズ開始時</color>、キャラに<color=#FFFFFFFF>「$[C301201]」</color>を付与する。（$[K6]を2提供し、該当キャラを守る。）\\n（キャラが装備できる「{SPRITE_PRESET#3004}聖遺物」は1つのみ）",
+        "Child": {
+            "C301201": {
+                "Name": "揺るぎない",
+                "Desc": "$[K6]を2提供し、付与されたキャラを守る。",
+                "Child": {
+                    "K6": {
+                        "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>シールド</color>",
+                        "Desc": "該当シールドに守られたキャラがダメージを受けた時、シールドを消費してダメージと相殺することができます。"
+                    }
+                }
+            },
+            "K6": {
+                "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>シールド</color>",
+                "Desc": "該当シールドに守られたキャラがダメージを受けた時、シールドを消費してダメージと相殺することができます。"
+            }
+        }
+    }
+}

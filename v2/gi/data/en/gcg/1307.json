@@ -1,0 +1,80 @@
+{
+    "Type": "Character",
+    "Name": "Hu Tao",
+    "Title": "\"Fragrance in Thaw\" Hu Tao",
+    "Desc": "\"Send one, send 'em all!\"",
+    "Source": "Reward for inviting Hu Tao to a duel at The Cat's Tail and claiming victory in a Friendly Fracas with her",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Hutao",
+    "Hp": 10,
+    "Cost": 3,
+    "Tag": [
+        "Pyro",
+        "Polearm",
+        "Liyue"
+    ],
+    "Talent": {
+        "13071": {
+            "Name": "Secret Spear of Wangsheng",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "13072": {
+            "Name": "Guide to Afterlife",
+            "Desc": "This character gains <color=#FFFFFFFF>$[C113071]</color>.",
+            "Child": {
+                "C113071": {
+                    "Name": "Paramita Papilio",
+                    "Desc": "The character to which this is attached has their $[K100] dealt converted to $[K103], and they will deal +1 $[K103].\\n<color=#FFFFFFFF>When the character to which this is attached uses a $[K51]:</color> Apply $[K1009] to target character.\\n<color=#FFFFFFFF>$[K4]: 2</color>",
+                    "Child": {
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>",
+                            "Desc": "Physical DMG will not apply any Elements, nor can it engage in Elemental Reactions."
+                        },
+                        "K103": {
+                            "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>Pyro DMG</color>",
+                            "Desc": "Applies {SPRITE_PRESET#2103}Pyro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Melt</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Vaporize</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Overloaded</color>: DMG +2 for this instance, the target is forcibly switched to the next character\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Burning</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Burning Flame</color>] that will deal 1 Pyro DMG at the end of the Round (Takes effect once, max 2 stacks)"
+                        },
+                        "K51": {
+                            "Name": "<color=#FFFFFFFF>Charged Attack</color>",
+                            "Desc": "Before your Action Phase, should the total number of your Elemental Dice be even, your Normal Attack will be considered a Charged Attack."
+                        },
+                        "K1009": {
+                            "Name": "<color=#FFFFFFFF>Blood Blossom</color>",
+                            "Desc": "<color=#FFFFFFFF>End Phase:</color> Deal 1 {SPRITE_PRESET#2103}<color=#FF9999FF>Pyro DMG</color> to the character to which this is attached.\\n<color=#FFFFFFFF><color=#FFFFFFFF>Usage(s)</color>:1</color>"
+                        },
+                        "K4": {
+                            "Name": "<color=#FFFFFFFF>Duration (Rounds)</color>",
+                            "Desc": "Each time you reach the end of a Round, <color=#FFFFFFFF>Duration (Rounds)</color> -1.\\nThis card will be discarded immediately once <color=#FFFFFFFF>Duration (Rounds)</color> runs out."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 2
+            }
+        },
+        "13073": {
+            "Name": "Spirit Soother",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], heals herself for 2 HP. If this character's HP is no more than 6, DMG dealt and Healing are increased by 1.",
+            "Child": {
+                "D__KEY__DAMAGE": 4,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO"
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 3,
+                "GCG_COST_ENERGY": 3
+            }
+        }
+    },
+    "Related": 213071
+}

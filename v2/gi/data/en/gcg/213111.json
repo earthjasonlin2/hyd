@@ -1,0 +1,56 @@
+{
+    "Type": "Action",
+    "Name": "A Subordinate's Skills",
+    "Title": "Thoma: A Subordinate's Skills",
+    "Desc": "\"It looks like I'm responsible for another smile.\"",
+    "Source": "Reward for inviting Thoma to a duel at The Cat's Tail and achieving all corresponding challenge objectives",
+    "Icon": "UI_Gcg_CardFace_Modify_Constellation_Thoma",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PYRO",
+            "count": 3
+        },
+        {
+            "costType": "GCG_COST_ENERGY",
+            "count": 2
+        }
+    ],
+    "Tag": [
+        "Talent",
+        "Combat Action"
+    ],
+    "Talent": {
+        "Name": "A Subordinate's Skills",
+        "Desc": "$[K1]: When your active character is <color=#FFFFFFFF>$[A1311]</color>, equip this card.\\nAfter $[A1311] equips this card, immediately use <color=#FFD780FF>$[S13113]</color> once.\\nWhen your $[A1311], who has this card equipped, creates a <color=#FFFFFFFF>$[C113112]</color>, its starting $[K3] +1.\\n(You must have $[A1311] in your deck to add this card to your deck.)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+            },
+            "A1311": "A Subordinate's Skills",
+            "S13113": "S13113",
+            "C113112": {
+                "Name": "Scorching Ooyoroi",
+                "Desc": "<color=#FFFFFFFF>After your character uses a Normal Attack:</color> Deal 1 $[K103] and create a <color=#FFFFFFFF>$[K1018]</color>.\\n<color=#FFFFFFFF>$[K3]: 2</color>",
+                "Child": {
+                    "K103": {
+                        "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>Pyro DMG</color>",
+                        "Desc": "Applies {SPRITE_PRESET#2103}Pyro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Melt</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Vaporize</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Overloaded</color>: DMG +2 for this instance, the target is forcibly switched to the next character\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Burning</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Burning Flame</color>] that will deal 1 Pyro DMG at the end of the Round (Takes effect once, max 2 stacks)"
+                    },
+                    "K1018": {
+                        "Name": "Blazing Barrier",
+                        "Desc": "Grants <color=#FFFFFFFF>1 {SPRITE_PRESET#4007}<color=#FFFFFFFF>Shield</color> point</color> to your active character. (Can stack. Max 3 points.)"
+                    },
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                        "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                    }
+                }
+            },
+            "K3": {
+                "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+            }
+        }
+    }
+}

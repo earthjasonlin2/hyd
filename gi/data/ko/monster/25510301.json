@@ -1,0 +1,80 @@
+{
+    "Name": "숲룡 무사·예초꾼",
+    "Desc": "나무의 고향에서 온 강력한 무사. 용맹함을 인정받아 용투구를 하사받았다.\\n갈고리줄을 이용해 공격 범위를 확장할 수 있는 무사. 갈고리줄은 「나무살이」 사람들의 일상 필수품이다. 그래도 가장 과격한 전사만이 톱날검과 갈고리줄을 결합해 다루기 어렵지만 살상력이 높은 거대한 무기로 만들 수 있다",
+    "Icon": "UI_MonsterIcon_Tribalwarrior_Chainsword_Hookwalker",
+    "Codex": "HUMAN",
+    "Title": "숲룡 무사·예초꾼",
+    "SpecialNames": [
+        "용투구를 하사받은 용맹한 자"
+    ],
+    "Reward": [
+        {
+            "Id": 202,
+            "Rank": 3,
+            "Icon": "UI_ItemIcon_202"
+        },
+        {
+            "Id": 112104,
+            "Rank": 1,
+            "Icon": "UI_ItemIcon_112104"
+        },
+        {
+            "Id": 112105,
+            "Rank": 2,
+            "Icon": "UI_ItemIcon_112105"
+        },
+        {
+            "Id": 112106,
+            "Rank": 3,
+            "Icon": "UI_ItemIcon_112106"
+        }
+    ],
+    "Child": {
+        "25510301": {
+            "MonsterName": "Tribalwarrior_Male_Standard_Chainsword_Hookwalker_01",
+            "Type": "MONSTER_ORDINARY",
+            "HpDrops": [
+                {
+                    "dropId": 22010013,
+                    "hpPercent": 66
+                },
+                {
+                    "dropId": 22010013,
+                    "hpPercent": 33
+                },
+                {}
+            ],
+            "KillDropId": 22010023,
+            "Prop": [
+                {
+                    "type": "FIGHT_PROP_BASE_HP",
+                    "growCurve": "GROW_CURVE_HP_2"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_ATTACK",
+                    "growCurve": "GROW_CURVE_ATTACK_2"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_DEFENSE",
+                    "growCurve": "GROW_CURVE_DEFENSE"
+                }
+            ],
+            "LocalLegend": false,
+            "SubHurt": {
+                "Fire": 0.1000000014901,
+                "Grass": 0.1000000014901,
+                "Water": 0.1000000014901,
+                "Elec": 0.1000000014901,
+                "Wind": 0.1000000014901,
+                "Ice": 0.1000000014901,
+                "Rock": 0.1000000014901,
+                "Physical": -0.2000000029802
+            },
+            "Base": {
+                "HP": 54.3359985351563,
+                "ATK": 45.2159996032715,
+                "DEF": 500
+            }
+        }
+    }
+}

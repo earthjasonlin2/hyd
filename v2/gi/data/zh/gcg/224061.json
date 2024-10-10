@@ -1,0 +1,43 @@
+{
+    "Type": "Action",
+    "Name": "侵雷重闪",
+    "Title": "深渊咏者·侵雷重闪",
+    "Desc": "「以狂雷将冥冥长夜所扭曲的深黑智慧，灌入不信者的心中，以无边的紫电，昭告侵蚀人智的伟大力量的存在。」",
+    "Source": "在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度深渊咏者·紫电中完成挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_InvokerElectric",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_ELECTRO",
+            "count": 1
+        },
+        {}
+    ],
+    "Tag": [
+        "天赋"
+    ],
+    "Talent": {
+        "Name": "侵雷重闪",
+        "Desc": "<color=#FFFFFFFF>入场时：</color>如果装备有此牌的<color=#FFFFFFFF>$[A2406]</color>已触发过<color=#FFFFFFFF>$[C124061]</color>，则使敌方出战角色失去1点$[K310]。\\n装备有此牌的$[A2406]被击倒或触发<color=#FFFFFFFF>$[C124061]</color>时：弃置此牌，使敌方出战角色失去1点$[K310]。\\n（牌组中包含$[A2406]，才能加入牌组）",
+        "Child": {
+            "A2406": "侵雷重闪",
+            "C124061": {
+                "Name": "雷之新生",
+                "Desc": "<color=#FFFFFFFF>所附属角色被击倒时：</color>移除此效果，使角色$[K54]，并治疗该角色到4点生命值。此效果触发后，角色造成的$[K104]+1。",
+                "Child": {
+                    "K54": {
+                        "Name": "<color=#FFFFFFFF>免于被击倒</color>",
+                        "Desc": "一些效果会使角色在生命值被降为0的时候<color=#FFFFFFFF>免于被击倒</color>，并治疗该角色到一定生命值。\\n此时，角色不视为被<color=#FFFFFFFF>击倒</color>过。（因此，角色所附属的装备和状态不会被弃置，充能也不会被清空。）"
+                    },
+                    "K104": {
+                        "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素伤害</color>",
+                        "Desc": "附着{SPRITE_PRESET#2104}雷元素，可发生元素反应：\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>超载</color>：本伤害+2，目标强制切换到下一个角色\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>超导</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>感电</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>原激化</color>：本伤害+1，生成使下2次草元素或雷元素伤害+1的[<color=#FFFFFFFF>激化领域</color>]"
+                    }
+                }
+            },
+            "K310": {
+                "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}充能</color>",
+                "Desc": "角色使用「元素爆发」时，需要消耗{SPRITE_PRESET#1110}充能。\\n角色使用「元素战技」或「普通攻击」后，会获得1点{SPRITE_PRESET#1110}充能。"
+            }
+        }
+    }
+}

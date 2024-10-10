@@ -1,0 +1,80 @@
+{
+    "Name": "ユムカ竜戦士·飛葉の丸鋸",
+    "Desc": "懸木の里から来た勇士。その武勇を認められ、竜冠を授かった。\\n強き戦士である彼らは、攻撃範囲を拡大するためにカギ縄を使う。カギ縄は「懸木の民」の人々にとって、日常生活に欠かせない道具だ。しかし最も狂気じみた戦士は、カギ縄にノコギリを組み合わせ、制御は難しいが非常に殺傷力の高い武器にカスタマイズする。",
+    "Icon": "UI_MonsterIcon_Tribalwarrior_Chainsword_Hookwalker",
+    "Codex": "HUMAN",
+    "Title": "ユムカ竜戦士·飛葉の丸鋸",
+    "SpecialNames": [
+        "竜冠を授かりし武勇"
+    ],
+    "Reward": [
+        {
+            "Id": 202,
+            "Rank": 3,
+            "Icon": "UI_ItemIcon_202"
+        },
+        {
+            "Id": 112104,
+            "Rank": 1,
+            "Icon": "UI_ItemIcon_112104"
+        },
+        {
+            "Id": 112105,
+            "Rank": 2,
+            "Icon": "UI_ItemIcon_112105"
+        },
+        {
+            "Id": 112106,
+            "Rank": 3,
+            "Icon": "UI_ItemIcon_112106"
+        }
+    ],
+    "Child": {
+        "25510301": {
+            "MonsterName": "Tribalwarrior_Male_Standard_Chainsword_Hookwalker_01",
+            "Type": "MONSTER_ORDINARY",
+            "HpDrops": [
+                {
+                    "dropId": 22010013,
+                    "hpPercent": 66
+                },
+                {
+                    "dropId": 22010013,
+                    "hpPercent": 33
+                },
+                {}
+            ],
+            "KillDropId": 22010023,
+            "Prop": [
+                {
+                    "type": "FIGHT_PROP_BASE_HP",
+                    "growCurve": "GROW_CURVE_HP_2"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_ATTACK",
+                    "growCurve": "GROW_CURVE_ATTACK_2"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_DEFENSE",
+                    "growCurve": "GROW_CURVE_DEFENSE"
+                }
+            ],
+            "LocalLegend": false,
+            "SubHurt": {
+                "Fire": 0.1000000014901,
+                "Grass": 0.1000000014901,
+                "Water": 0.1000000014901,
+                "Elec": 0.1000000014901,
+                "Wind": 0.1000000014901,
+                "Ice": 0.1000000014901,
+                "Rock": 0.1000000014901,
+                "Physical": -0.2000000029802
+            },
+            "Base": {
+                "HP": 54.3359985351563,
+                "ATK": 45.2159996032715,
+                "DEF": 500
+            }
+        }
+    }
+}

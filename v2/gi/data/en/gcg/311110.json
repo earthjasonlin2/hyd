@@ -1,0 +1,35 @@
+{
+    "Type": "Action",
+    "Name": "Flowing Purity",
+    "Title": "Flowing Purity",
+    "Desc": "\"...This heart of mine, which beats as though it were ensconced in a vessel of flesh and blood, has already been stained with the same sin on this journey. This heart of mine, so tortured by the pain of regret — where could it ever hope to find peace?\"",
+    "Source": "",
+    "Icon": "UI_Gcg_CardFace_Modify_Weapon_ChunShui",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PAIMON",
+            "count": 1
+        },
+        {}
+    ],
+    "Tag": [
+        "Weapon",
+        "Catalyst"
+    ],
+    "Talent": {
+        "Name": "Flowing Purity",
+        "Desc": "<color=#FFFFFFFF>When played and when the Round ends:</color> The character gains 1 <color=#FFFFFFFF>$[C122]</color> stack.\\n<color=#FFFFFFFF>Before you act:</color> If the attached character does not have <color=#FFFFFFFF>$[C122]</color> attached, then generate 1 random basic Elemental Die, and character will deal +1 DMG the next time they deal DMG. (Once per Round)\\n(<color=#FFFFFFFF>Only {SPRITE_PRESET#3201}Catalyst Characters</color> can equip this. A character can equip a maximum of 1 {SPRITE_PRESET#3003}Weapon)",
+        "Child": {
+            "C122": {
+                "Name": "Bond of Life",
+                "Desc": "<color=#FFFFFFFF>When the character to which this is attached is healed:</color> This effect will be consumed once for every $[K3] it has to negate 1 HP of healing received. (Cannot negate revives or healing caused by redistribution of HP)\\n<color=#FFFFFFFF>$[K3]: 1</color> (Can stack, no stack limit).",
+                "Child": {
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                        "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                    }
+                }
+            }
+        }
+    }
+}

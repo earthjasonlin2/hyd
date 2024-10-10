@@ -1,0 +1,901 @@
+{
+    "Id": 2022020,
+    "Name": "{RUBY_B#やくおうひでん}薬王秘伝{RUBY_E#}・{RUBY_B#ないたんし}内丹士{RUBY_E#}",
+    "Desc": "仙舟羅浮に潜む「薬王秘伝」のメンバー。\\n薬を得て心を鍛え、丹を結し己を鍛える。彼らは古い豊穣の秘密を復興し、仙舟人を次の進化に導くことを渇望している。",
+    "MonsterCampID": 2,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 111.6000000005588,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/Monster_2022020.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "MinionLv2",
+    "SpeedBase": 100,
+    "StanceBase": 60,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.10000000009313226,
+    "Child": [
+        {
+            "Id": 2022020,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Fire",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 202202001,
+                    "SkillName": "植丹",
+                    "SkillDesc": "指定した味方単体を「雷劫来たす」状態にする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 202202002,
+                    "SkillName": "役雷",
+                    "SkillDesc": "指定した味方単体に少量の雷属性ダメージを与える。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 202202003,
+                    "SkillName": "丹壊",
+                    "SkillDesc": "HPが0になる攻撃を受けた時、自身が付与した「雷劫来たす」状態にあるすべての味方に雷属性ダメージを与え、その「雷劫来たす」状態を解除する。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 15
+                }
+            ]
+        },
+        {
+            "Id": 202202001,
+            "AttackModifyRatio": 0.8333330010063946,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Fire",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 202202001,
+                    "SkillName": "植丹",
+                    "SkillDesc": "指定した味方単体を「雷劫来たす」状態にする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 202202002,
+                    "SkillName": "役雷",
+                    "SkillDesc": "指定した味方単体に少量の雷属性ダメージを与える。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 202202003,
+                    "SkillName": "丹壊",
+                    "SkillDesc": "HPが0になる攻撃を受けた時、自身が付与した「雷劫来たす」状態にあるすべての味方に雷属性ダメージを与え、その「雷劫来たす」状態を解除する。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 15
+                }
+            ]
+        },
+        {
+            "Id": 202202002,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Fire",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 202202001,
+                    "SkillName": "植丹",
+                    "SkillDesc": "指定した味方単体を「雷劫来たす」状態にする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 202202002,
+                    "SkillName": "役雷",
+                    "SkillDesc": "指定した味方単体に少量の雷属性ダメージを与える。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 202202003,
+                    "SkillName": "丹壊",
+                    "SkillDesc": "HPが0になる攻撃を受けた時、自身が付与した「雷劫来たす」状態にあるすべての味方に雷属性ダメージを与え、その「雷劫来たす」状態を解除する。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 15
+                }
+            ]
+        },
+        {
+            "Id": 202202003,
+            "AttackModifyRatio": 2.5000000004656613,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1.1666670006234199,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": 20,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Quantum"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Fire",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 202202001,
+                    "SkillName": "植丹",
+                    "SkillDesc": "指定した味方単体を「雷劫来たす」状態にする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 202202002,
+                    "SkillName": "役雷",
+                    "SkillDesc": "指定した味方単体に少量の雷属性ダメージを与える。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 202202003,
+                    "SkillName": "丹壊",
+                    "SkillDesc": "HPが0になる攻撃を受けた時、自身が付与した「雷劫来たす」状態にあるすべての味方に雷属性ダメージを与え、その「雷劫来たす」状態を解除する。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 15
+                }
+            ]
+        },
+        {
+            "Id": 202202004,
+            "AttackModifyRatio": 1.2500000002328306,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 0.6666670010890812,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Fire",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 202202001,
+                    "SkillName": "植丹",
+                    "SkillDesc": "指定した味方単体を「雷劫来たす」状態にする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 202202002,
+                    "SkillName": "役雷",
+                    "SkillDesc": "指定した味方単体に少量の雷属性ダメージを与える。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 202202003,
+                    "SkillName": "丹壊",
+                    "SkillDesc": "HPが0になる攻撃を受けた時、自身が付与した「雷劫来たす」状態にあるすべての味方に雷属性ダメージを与え、その「雷劫来たす」状態を解除する。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 15
+                }
+            ]
+        },
+        {
+            "Id": 202202005,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Fire",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 202202001,
+                    "SkillName": "植丹",
+                    "SkillDesc": "指定した味方単体を「雷劫来たす」状態にする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 202202002,
+                    "SkillName": "役雷",
+                    "SkillDesc": "指定した味方単体に少量の雷属性ダメージを与える。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 202202003,
+                    "SkillName": "丹壊",
+                    "SkillDesc": "HPが0になる攻撃を受けた時、自身が付与した「雷劫来たす」状態にあるすべての味方に雷属性ダメージを与え、その「雷劫来たす」状態を解除する。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 15
+                }
+            ]
+        },
+        {
+            "Id": 202202006,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Fire",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 202202001,
+                    "SkillName": "植丹",
+                    "SkillDesc": "指定した味方単体を「雷劫来たす」状態にする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 202202002,
+                    "SkillName": "役雷",
+                    "SkillDesc": "指定した味方単体に少量の雷属性ダメージを与える。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 202202003,
+                    "SkillName": "丹壊",
+                    "SkillDesc": "HPが0になる攻撃を受けた時、自身が付与した「雷劫来たす」状態にあるすべての味方に雷属性ダメージを与え、その「雷劫来たす」状態を解除する。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 15
+                }
+            ]
+        },
+        {
+            "Id": 202202007,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Fire",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 202202001,
+                    "SkillName": "植丹",
+                    "SkillDesc": "指定した味方単体を「雷劫来たす」状態にする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 202202002,
+                    "SkillName": "役雷",
+                    "SkillDesc": "指定した味方単体に少量の雷属性ダメージを与える。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 202202003,
+                    "SkillName": "丹壊",
+                    "SkillDesc": "HPが0になる攻撃を受けた時、自身が付与した「雷劫来たす」状態にあるすべての味方に雷属性ダメージを与え、その「雷劫来たす」状態を解除する。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 15
+                }
+            ]
+        },
+        {
+            "Id": 202202008,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1.6666670010890812,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Quantum",
+                "Fire"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 202202001,
+                    "SkillName": "植丹",
+                    "SkillDesc": "指定した味方単体を「雷劫来たす」状態にする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 202202002,
+                    "SkillName": "役雷",
+                    "SkillDesc": "指定した味方単体に少量の雷属性ダメージを与える。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 202202003,
+                    "SkillName": "丹壊",
+                    "SkillDesc": "HPが0になる攻撃を受けた時、自身が付与した「雷劫来たす」状態にあるすべての味方に雷属性ダメージを与え、その「雷劫来たす」状態を解除する。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 15
+                }
+            ]
+        },
+        {
+            "Id": 202202009,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Fire",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 202202001,
+                    "SkillName": "植丹",
+                    "SkillDesc": "指定した味方単体を「雷劫来たす」状態にする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 202202002,
+                    "SkillName": "役雷",
+                    "SkillDesc": "指定した味方単体に少量の雷属性ダメージを与える。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 202202003,
+                    "SkillName": "丹壊",
+                    "SkillDesc": "HPが0になる攻撃を受けた時、自身が付与した「雷劫来たす」状態にあるすべての味方に雷属性ダメージを与え、その「雷劫来たす」状態を解除する。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 15
+                }
+            ]
+        },
+        {
+            "Id": 202202010,
+            "AttackModifyRatio": 0.6666670010890812,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 0.8333330010063946,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Fire",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 202202001,
+                    "SkillName": "植丹",
+                    "SkillDesc": "指定した味方単体を「雷劫来たす」状態にする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 202202002,
+                    "SkillName": "役雷",
+                    "SkillDesc": "指定した味方単体に少量の雷属性ダメージを与える。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 202202003,
+                    "SkillName": "丹壊",
+                    "SkillDesc": "HPが0になる攻撃を受けた時、自身が付与した「雷劫来たす」状態にあるすべての味方に雷属性ダメージを与え、その「雷劫来たす」状態を解除する。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 15
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 2022020,
+            "AvatarExpReward": 36,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 113001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 181004
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 2022020,
+            "WorldLevel": 1,
+            "AvatarExpReward": 48,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 113001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 181004
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 2022020,
+            "WorldLevel": 2,
+            "AvatarExpReward": 60,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 113001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 113002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 181004
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 2022020,
+            "WorldLevel": 3,
+            "AvatarExpReward": 72,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 113001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 113002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 181004
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 2022020,
+            "WorldLevel": 4,
+            "AvatarExpReward": 84,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 113001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 113002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 113003
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 181004
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 2022020,
+            "WorldLevel": 5,
+            "AvatarExpReward": 96,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 113001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 113002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 113003
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 181004
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 2022020,
+            "WorldLevel": 6,
+            "AvatarExpReward": 108,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 113001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 113002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 113003
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 181004
+                }
+            ]
+        }
+    ]
+}

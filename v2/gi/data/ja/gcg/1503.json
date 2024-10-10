@@ -1,0 +1,84 @@
+{
+    "Type": "Character",
+    "Name": "ウェンティ",
+    "Title": "風色の詩人·ウェンティ",
+    "Desc": "「四季が移ろっても、四風は吹き止まない。」\\n「まあ、当然だけどこれは彼らのお陰じゃなくて、ほとんどこのボクのお陰だよ。」\\n「だって吟遊詩人がいなかったら、誰がそれを唄ってくれるって言うんだい？」",
+    "Source": "キャッツテールでウェンティを招待し、友好対戦に勝利することで獲得",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Venti",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "風元素",
+        "弓",
+        "モンド"
+    ],
+    "Talent": {
+        "15031": {
+            "Name": "神代の射術",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "15032": {
+            "Name": "高天の歌",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、<color=#FFFFFFFF>$[C115031]</color>を生成する。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO",
+                "D__KEY__DAMAGE": 2,
+                "C115031": {
+                    "Name": "風域",
+                    "Desc": "<color=#FFFFFFFF>味方が「キャラチェンジ」を行う時</color>、必要な元素サイコロの数-1。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                            "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 3
+            }
+        },
+        "15033": {
+            "Name": "風神の詩",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、<color=#FFFFFFFF>$[C115034]</color>を召喚する。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO",
+                "D__KEY__DAMAGE": 2,
+                "C115034": {
+                    "Name": "暴風の目",
+                    "Desc": "<color=#FFFFFFFF>エンドフェーズ：</color>$[K105]を2与え、相手が$[K7]へとチェンジする。\\n<color=#FFFFFFFF>$[K3]：2</color>\\n\\n<color=#FFFFFFFF>味方のキャラまたは召喚物が拡散反応を起こした後</color>、このカードの元素タイプは変わり、拡散された元素タイプのダメージを与えるようになる。（退場するまでの間、1回のみ変化可能）",
+                    "Child": {
+                        "K105": {
+                            "Name": "{SPRITE_PRESET#2105}<color=#80FFD7FF>風元素ダメージ</color>",
+                            "Desc": "付着した元素と以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2101}<color=#FFFFFFFF>拡散（氷）</color>：目標以外の相手チーム全員に氷元素ダメージを1与える\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2102}<color=#FFFFFFFF>拡散（水）</color>：目標以外の相手チーム全員に水元素ダメージを1与える\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2103}<color=#FFFFFFFF>拡散（炎）</color>：目標以外の相手チーム全員に炎元素ダメージを1与える\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2104}<color=#FFFFFFFF>拡散（雷）</color>：目標以外の相手チーム全員に雷元素ダメージを1与える"
+                        },
+                        "K7": {
+                            "Name": "<color=#FFFFFFFF>味方の出撃キャラと最も距離が近いキャラ</color>",
+                            "Desc": "味方の出撃キャラと「最も距離が近い」相手のフィールド上キャラとは、文字通り位置が一番近い相手キャラのことを指す。\\n「最も距離が近い」キャラが複数いる場合、一番左側にいるキャラが「最も距離が近い」キャラとして見なされる。"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                            "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 215031
+}

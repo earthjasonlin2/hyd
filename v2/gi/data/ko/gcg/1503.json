@@ -1,0 +1,84 @@
+{
+    "Type": "Character",
+    "Name": "벤티",
+    "Title": "바람의 시인·벤티",
+    "Desc": "「사계절이 지나도 서풍은 절대 그치지 않아」\\n「뭐, 당연하게도 이 노래의 주역은 그들이 아니라 나야」\\n「음유시인이 없다면 누가 이걸 노래하겠어?」",
+    "Source": "캣테일 술집에서 벤티 초대 및 친선 대전 난이도 승리 후 획득",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Venti",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "바람 원소",
+        "활",
+        "몬드"
+    ],
+    "Talent": {
+        "15031": {
+            "Name": "신성한 사격술",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "15032": {
+            "Name": "높은 하늘의 노래",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[C115031]</color>을 생성한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO",
+                "D__KEY__DAMAGE": 2,
+                "C115031": {
+                    "Name": "바람의 영역",
+                    "Desc": "<color=#FFFFFFFF>아군이 「캐릭터 교체」 행동 시:</color> 원소 주사위 소모 개수-1\\n<color=#FFFFFFFF>$[K3]: 2</color>",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 3
+            }
+        },
+        "15033": {
+            "Name": "바람 신의 시",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[C115034]</color>을 소환한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO",
+                "D__KEY__DAMAGE": 2,
+                "C115034": {
+                    "Name": "폭풍의 눈",
+                    "Desc": "<color=#FFFFFFFF>종료 단계:</color> $[K105]를 2pt 주고, 상대 캐릭터가 $[K7]로 교체된다.\\n<color=#FFFFFFFF>$[K3]: 2</color>\\n\\n<color=#FFFFFFFF>아군 캐릭터 또는 소환물이 확산 반응 발동 후:</color> 해당 카드의 원소 타입이 전환되고, 확산된 원소 타입 피해로 바뀐다. (필드를 떠나기 전에 1회만 발동)",
+                    "Child": {
+                        "K105": {
+                            "Name": "{SPRITE_PRESET#2105}<color=#80FFD7FF>바람 원소 피해</color>",
+                            "Desc": "이미 부착된 원소와 원소 반응이 발생한다.\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2101}<color=#FFFFFFFF>확산(얼음)</color>: 대상 이외의 모든 상대 캐릭터에게 얼음 원소 피해를 1pt 준다.\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2102}<color=#FFFFFFFF>확산(물)</color>: 대상 이외의 모든 상대 캐릭터에게 물 원소 피해를 1pt 준다.\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2103}<color=#FFFFFFFF>확산(불)</color>: 대상 이외의 모든 상대 캐릭터에게 불 원소 피해를 1pt 준다.\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2104}<color=#FFFFFFFF>확산(번개)</color>: 대상 이외의 모든 상대 캐릭터에게 번개 원소 피해를 1pt 준다."
+                        },
+                        "K7": {
+                            "Name": "<color=#FFFFFFFF>아군 출전 캐릭터와 가장 가까운 캐릭터</color>",
+                            "Desc": "아군 출전 캐릭터와 「가장 가까운」 적 캐릭터란 위치가 아군 출전 캐릭터와 가장 가까운 적 캐릭터를 가리킨다.\\n가장 가까운 캐릭터가 복수 존재할 경우, 가장 앞에 있는 캐릭터가 「가장 가까운」 것으로 간주된다."
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 215031
+}

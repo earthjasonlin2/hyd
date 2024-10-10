@@ -1,0 +1,61 @@
+{
+    "Type": "Action",
+    "Name": "신성의 추락",
+    "Title": "알베도·신성의 추락",
+    "Desc": "「대전 전략을 확인하는 과정 역시 정밀한 계산을 거쳐야만 해…」",
+    "Source": "캣테일 술집에서 알베도를 초대해 대전하고 상응하는 도전 목표 달성 후 획득",
+    "Icon": "UI_Gcg_CardFace_Modify_Constellation_Albedo",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_GEO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "특성",
+        "전투 행동"
+    ],
+    "Talent": {
+        "Name": "신성의 추락",
+        "Desc": "$[K1]: 아군 출전 캐릭터가 <color=#FFFFFFFF>$[A1604]</color>일 때 해당 카드를 장착할 수 있다.\\n$[A1604]가 해당 카드를 장착 후 즉시 <color=#FFD780FF>$[S16042]</color>을 1회 사용한다.\\n해당 카드를 장착한 $[A1604]가 필드에 있을 시, 아군 필드에 <color=#FFFFFFFF>$[C116041]</color>이 있을 경우 아군 캐릭터가 $[K52]으로 소모하는 $[K309]-1 및 주는 피해+1pt\\n(카드 덱에 $[A1604]가 있어야만 카드 덱에 추가 가능)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>전투 행동</color>",
+                "Desc": "아군이 전투 행동을 1회 진행하면 행동 순서가 상대에게 넘어간다.\\n<color=#FFFFFFFF>해당 규칙에 속하는 카드는 사용 시 빠른 행동이 아닌 전투 행동으로 간주한다</color>."
+            },
+            "A1604": "신성의 추락",
+            "S16042": "S16042",
+            "C116041": {
+                "Name": "태양꽃",
+                "Desc": "<color=#FFFFFFFF>종료 단계: </color>$[K106]를 1pt 준다.\\n<color=#FFFFFFFF>$[K3]: 3</color>\\n<color=#FFFFFFFF>해당 소환물이 필드에 있고 아군이 「캐릭터 교체」 행동 시: </color>이번 교체를 「$[K1]」이 아닌 「$[K2]」으로 간주한다. (턴당 1회)",
+                "Child": {
+                    "K106": {
+                        "Name": "{SPRITE_PRESET#2106}<color=#FFE699FF>바위 원소 피해</color>",
+                        "Desc": "이미 부착된 원소와 원소 반응이 발생한다.\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2101}<color=#FFFFFFFF>결정(얼음)</color>: 이번 피해+1pt, 아군 출전 캐릭터가 보호막을 1pt 획득한다. (중첩 가능, 최대 2pt)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2102}<color=#FFFFFFFF>결정(물)</color>: 이번 피해+1pt, 아군 출전 캐릭터가 보호막을 1pt 획득한다. (중첩 가능, 최대 2pt)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2103}<color=#FFFFFFFF>결정(불)</color>: 이번 피해+1pt, 아군 출전 캐릭터가 보호막을 1pt 획득한다. (중첩 가능, 최대 2pt)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2104}<color=#FFFFFFFF>결정(번개)</color>: 이번 피해+1pt, 아군 출전 캐릭터가 보호막을 1pt 획득한다. (중첩 가능, 최대 2pt)"
+                    },
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                        "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                    },
+                    "K1": {
+                        "Name": "<color=#FFFFFFFF>전투 행동</color>",
+                        "Desc": "아군이 전투 행동을 1회 진행하면 행동 순서가 상대에게 넘어간다.\\n<color=#FFFFFFFF>해당 규칙에 속하는 카드는 사용 시 빠른 행동이 아닌 전투 행동으로 간주한다</color>."
+                    },
+                    "K2": {
+                        "Name": "<color=#FFFFFFFF>빠른 행동</color>",
+                        "Desc": "빠른 행동을 1회 진행하면 아군은 계속해서 다른 행동을 진행할 수 있다.\\n전투 행동을 1회 진행해야만 행동 순서가 상대에게 넘어간다."
+                    }
+                }
+            },
+            "K52": {
+                "Name": "<color=#FFFFFFFF>낙하 공격</color>",
+                "Desc": "캐릭터가 「출전 캐릭터」로 교체된 후, 이번 턴 내의 다음 전투 행동이 「일반 공격」일 경우 「낙하 공격」으로 간주된다."
+            },
+            "K309": {
+                "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1109}무색 원소</color>",
+                "Desc": "어떤 타입의 원소 주사위든 사용할 수 있다."
+            }
+        }
+    }
+}

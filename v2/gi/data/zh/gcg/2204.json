@@ -1,0 +1,102 @@
+{
+    "Type": "Character",
+    "Name": "吞星之鲸",
+    "Title": "深秘异兽·吞星之鲸",
+    "Desc": "在最魔幻的故事里或是最疯癫的诳语中，宇宙深处真正的星辰或许也如提瓦特一般充满了生机，而宇宙本身就如同海洋。\\n或许宇宙渗入提瓦特的过程从未停止；也许更高的意志为它划定了边界是为了保护这个世界。",
+    "Source": "在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度吞星之鲸中获得胜利后获取",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_Ptahur",
+    "Hp": 5,
+    "Cost": 2,
+    "Tag": [
+        "水元素",
+        "其他武器",
+        "魔物"
+    ],
+    "Talent": {
+        "22041": {
+            "Name": "碎涛旋跃",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "22042": {
+            "Name": "迸落星雨",
+            "Desc": "造成$[D__KEY__DAMAGE_2]点$[D__KEY__ELEMENT]，此角色每有3点<color=#FFFFFFFF>$[S22044]</color>提供的额外最大生命，此伤害+1（最多+3）。然后$[K56]1张原本元素骰费用最高的手牌。",
+            "Child": {
+                "D__KEY__DAMAGE_2": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "S22044": "S22044",
+                "K56": {
+                    "Name": "<color=#FFFFFFFF>舍弃</color>",
+                    "Desc": "通过行动牌或角色技能的效果，将行动牌从手牌或牌库中弃置。"
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3
+            }
+        },
+        "22043": {
+            "Name": "横噬鲸吞",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，对敌方所有后台角色造成1点$[K5]。召唤<color=#FFFFFFFF>$[C122043]</color>。",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "K5": {
+                    "Name": "<color=#FFFFFFFF>穿透伤害</color>",
+                    "Desc": "穿透伤害无法受到伤害加成，但是也无法被护盾、伤害免疫等效果抵消。"
+                },
+                "C122043": {
+                    "Name": "黑色幻影",
+                    "Desc": "<color=#FFFFFFFF>入场时：</color>获得我方已吞噬卡牌中最高元素骰费用值的「攻击力」，获得该费用的已吞噬卡牌数量的$[K3]。\\n<color=#FFFFFFFF>结束阶段和我方宣布结束时：</color>造成此牌「攻击力」值的$[K104]。\\n<color=#FFFFFFFF>我方出战角色受到伤害时：</color>抵消1点伤害，然后此牌$[K3]-2。",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>可用次数</color>",
+                            "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                        },
+                        "K104": {
+                            "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素伤害</color>",
+                            "Desc": "附着{SPRITE_PRESET#2104}雷元素，可发生元素反应：\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>超载</color>：本伤害+2，目标强制切换到下一个角色\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>超导</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>感电</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>原激化</color>：本伤害+1，生成使下2次草元素或雷元素伤害+1的[<color=#FFFFFFFF>激化领域</color>]"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "22044": {
+            "Name": "无尽食欲",
+            "Desc": "【被动】战斗开始时，生成<color=#FFFFFFFF>$[C122041]</color>。",
+            "Child": {
+                "C122041": {
+                    "Name": "深噬之域",
+                    "Desc": "我方$[K56]或$[K57]的卡牌，会被吞噬。\\n<color=#FFFFFFFF>每吞噬3张牌：</color>$[A2204]在回合结束时获得1点额外最大生命；如果其中存在原本元素骰费用值相同的牌，则额外获得1点；如果3张均相同，再额外获得1点。",
+                    "Child": {
+                        "K56": {
+                            "Name": "<color=#FFFFFFFF>舍弃</color>",
+                            "Desc": "通过行动牌或角色技能的效果，将行动牌从手牌或牌库中弃置。"
+                        },
+                        "K57": {
+                            "Name": "<color=#FFFFFFFF>调和</color>",
+                            "Desc": "为了进行元素调和，而将行动牌从手牌中弃置。"
+                        },
+                        "A2204": "吞星之鲸"
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 222041
+}

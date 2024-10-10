@@ -1,0 +1,295 @@
+{
+    "Id": 3003033,
+    "Name": "「囚われの身の過去」（スペック）",
+    "Desc": "コードが影響を受けた後の正常な投影。参照する本体はスウィート・ドリーム劇団で囚人を演じる役者。本来は「調和セレモニー」で演技を披露するはずだったが、今では「秩序」に縛られ、「過去」を題材にした演目を上演している。往日は朽ちることのない鎖となり、籠の中に安寧の火を灯した。そのロウソクの光で司獄の権力者を引き寄せる。",
+    "MonsterCampID": null,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 837,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/Monster_3003030.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "Elite",
+    "SpeedBase": 100,
+    "StanceBase": 360,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.3000000002793968,
+    "Child": [
+        {
+            "Id": 3003033,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Thunder",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 300303301,
+                    "SkillName": "悪を鞭打ち",
+                    "SkillDesc": "指定した味方単体に物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 300303302,
+                    "SkillName": "心に刻む責任",
+                    "SkillDesc": "指定した味方単体および隣接する味方に少量の物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 300303303,
+                    "SkillName": "使者の鎖",
+                    "SkillDesc": "ターゲット1体をロックオンしてチャージ状態になり、攻撃力アップを一定層数獲得する。次の行動で「籠の中の福音」を発動する。チャージ中に他のキャラから攻撃を受けた場合、攻撃力アップの層数が減少し、攻撃した味方をロックオンする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 300303304,
+                    "SkillName": "籠の中の福音",
+                    "SkillDesc": "大量の物理属性ダメージを与える。このダメージはロックオンされているすべての味方キャラで分担する。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 300303305,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 300303306,
+                    "SkillName": "野良犬のように吠える",
+                    "SkillDesc": "「ソーダドッグ」を2体召喚する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 300303307,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "Physical",
+                    "SPHitBase": 15
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 3003033,
+            "AvatarExpReward": 150,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 114001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182010
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183006
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 3003033,
+            "WorldLevel": 1,
+            "AvatarExpReward": 200,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 114001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 114002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182010
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183006
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 3003033,
+            "WorldLevel": 2,
+            "AvatarExpReward": 250,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 114001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 114002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182010
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183006
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 3003033,
+            "WorldLevel": 3,
+            "AvatarExpReward": 300,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 114001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 114002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182010
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183006
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 3003033,
+            "WorldLevel": 4,
+            "AvatarExpReward": 350,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 114002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 114003
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182010
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183006
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 3003033,
+            "WorldLevel": 5,
+            "AvatarExpReward": 400,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 114002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 114003
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182010
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183006
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 3003033,
+            "WorldLevel": 6,
+            "AvatarExpReward": 400,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 114002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 114003
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182010
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183006
+                }
+            ]
+        }
+    ]
+}

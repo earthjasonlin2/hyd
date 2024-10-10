@@ -1,0 +1,100 @@
+{
+    "Type": "Character",
+    "Name": "심연 봉독자·자색 뇌전",
+    "Title": "심연 봉독자·자색 뇌전",
+    "Desc": "심연을 찬양하고 지혜를 침식하라",
+    "Source": "캣테일 술집의 왕자님을 통해 술집 도전 및 친선 대전 심연 봉독자·자색 뇌전에게 승리 후 획득",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_InvokerElectric",
+    "Hp": 6,
+    "Cost": 2,
+    "Tag": [
+        "번개 원소",
+        "기타 무기",
+        "마물"
+    ],
+    "Talent": {
+        "24061": {
+            "Name": "심연 낙뢰",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO",
+                "D__KEY__DAMAGE": 1
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "24062": {
+            "Name": "허계 천둥",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.\\n대상에 이미 번개 원소가 부착되었을 경우, 상대의 원소 에너지를 1pt 빼앗는다. (빼앗을 때 이 캐릭터의 원소 에너지가 가득 찬 경우, 원소 에너지가 가득 차지 않은 다음 캐릭터가 원소 에너지를 획득하는 것으로 변경된다.)",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO",
+                "D__KEY__DAMAGE": 3
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 3
+            }
+        },
+        "24063": {
+            "Name": "몰아치는 벼락",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.\\n대상의 원소 에너지가 1pt 이하일 시, 주는 피해+2pt",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO",
+                "D__KEY__DAMAGE": 3
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "24064": {
+            "Name": "다시 태어난 번개",
+            "Desc": "[패시브] 전투 시작 시, 시작부터 <color=#FFFFFFFF>$[C124061]</color>가 부착된다.",
+            "Child": {
+                "C124061": {
+                    "Name": "다시 태어난 번개",
+                    "Desc": "<color=#FFFFFFFF>부착 캐릭터가 처치될 시:</color> 해당 효과가 제거되며 캐릭터 $[K54] 및 해당 캐릭터의 HP를 4pt 치유한다. 해당 효과 발동 후, 캐릭터가 주는 $[K104]+1pt",
+                    "Child": {
+                        "K54": {
+                            "Name": "<color=#FFFFFFFF>처치 면역</color>",
+                            "Desc": "일부 효과는 캐릭터의 HP가 0이 될 때, 해당 캐릭터에게 <color=#FFFFFFFF>처치 면역</color> 및 일정 HP 회복 효과를 부여한다.\\n이때 캐릭터는 <color=#FFFFFFFF>처치</color>된 적 없는 것으로 간주한다. (따라서 캐릭터에 부착된 장비와 상태를 버리지 않고, 원소 에너지도 모두 사라지지 않는다)"
+                        },
+                        "K104": {
+                            "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>번개 원소 피해</color>",
+                            "Desc": "{SPRITE_PRESET#2104}번개 원소 부착 시 다음 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>과부하</color>: 이번 피해+2pt, 대상이 다음 캐릭터로 강제 교체된다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>초전도</color>: 이번 피해+1pt, 대상 이외의 모든 상대 캐릭터에게 관통 피해를 1pt 준다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>감전</color>: 이번 피해+1pt, 대상 이외의 모든 상대 캐릭터에게 관통 피해를 1pt 준다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>활성</color>: 이번 피해+1pt, 다음 2회의 풀 원소 또는 번개 원소 피해를 1pt 증가시키는 [<color=#FFFFFFFF>격화 영역</color>]을 생성한다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        },
+        "24065": {
+            "Name": "다시 태어난 번개",
+            "Desc": "전투 시작 시, 시작부터 <color=#FFFFFFFF>$[C124061]</color>가 부착된다.",
+            "Child": {
+                "C124061": {
+                    "Name": "다시 태어난 번개",
+                    "Desc": "<color=#FFFFFFFF>부착 캐릭터가 처치될 시:</color> 해당 효과가 제거되며 캐릭터 $[K54] 및 해당 캐릭터의 HP를 4pt 치유한다. 해당 효과 발동 후, 캐릭터가 주는 $[K104]+1pt",
+                    "Child": {
+                        "K54": {
+                            "Name": "<color=#FFFFFFFF>처치 면역</color>",
+                            "Desc": "일부 효과는 캐릭터의 HP가 0이 될 때, 해당 캐릭터에게 <color=#FFFFFFFF>처치 면역</color> 및 일정 HP 회복 효과를 부여한다.\\n이때 캐릭터는 <color=#FFFFFFFF>처치</color>된 적 없는 것으로 간주한다. (따라서 캐릭터에 부착된 장비와 상태를 버리지 않고, 원소 에너지도 모두 사라지지 않는다)"
+                        },
+                        "K104": {
+                            "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>번개 원소 피해</color>",
+                            "Desc": "{SPRITE_PRESET#2104}번개 원소 부착 시 다음 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>과부하</color>: 이번 피해+2pt, 대상이 다음 캐릭터로 강제 교체된다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>초전도</color>: 이번 피해+1pt, 대상 이외의 모든 상대 캐릭터에게 관통 피해를 1pt 준다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>감전</color>: 이번 피해+1pt, 대상 이외의 모든 상대 캐릭터에게 관통 피해를 1pt 준다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>활성</color>: 이번 피해+1pt, 다음 2회의 풀 원소 또는 번개 원소 피해를 1pt 증가시키는 [<color=#FFFFFFFF>격화 영역</color>]을 생성한다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 224061
+}

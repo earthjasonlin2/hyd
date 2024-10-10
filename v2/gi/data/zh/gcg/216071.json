@@ -1,0 +1,44 @@
+{
+    "Type": "Action",
+    "Name": "庄谐并举",
+    "Title": "云堇·庄谐并举",
+    "Desc": "「戮力同心！」",
+    "Source": "在猫尾酒馆中邀请云堇进行对局，完成相应挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Yunjin",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_GEO",
+            "count": 3
+        },
+        {
+            "costType": "GCG_COST_ENERGY",
+            "count": 2
+        }
+    ],
+    "Tag": [
+        "天赋",
+        "战斗行动"
+    ],
+    "Talent": {
+        "Name": "庄谐并举",
+        "Desc": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1607]</color>时，装备此牌。\\n$[A1607]装备此牌后，立刻使用一次<color=#FFD780FF>$[S16073]</color>。\\n装备有此牌的$[A1607]在场，且我方触发<color=#FFFFFFFF>$[C116073]</color>时：如果我方没有手牌，则使此次技能伤害+2。\\n（牌组中包含$[A1607]，才能加入牌组）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>战斗行动</color>",
+                "Desc": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+            },
+            "A1607": "庄谐并举",
+            "S16073": "S16073",
+            "C116073": {
+                "Name": "飞云旗阵",
+                "Desc": "<color=#FFFFFFFF>我方角色进行普通攻击时：</color>如果我方手牌数量不多于1，则此技能少花费1个元素骰。\\n<color=#FFFFFFFF>$[K3]：1</color>（可叠加，最多叠加到4次）",
+                "Child": {
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>可用次数</color>",
+                        "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                    }
+                }
+            }
+        }
+    }
+}

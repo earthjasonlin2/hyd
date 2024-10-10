@@ -1,0 +1,66 @@
+{
+    "Type": "Character",
+    "Name": "베넷",
+    "Title": "운명의 시금석·베넷",
+    "Desc": "반드시 지게 된다는 것을 눈치채는 순간에는, 어떻게 해야 이길 수 있는지도 알게 되는 법이다",
+    "Source": "캣테일 술집에서 베넷 초대 및 친선 대전 난이도 승리 후 획득",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Bennett",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "불 원소",
+        "한손검",
+        "몬드"
+    ],
+    "Talent": {
+        "13031": {
+            "Name": "행운의 검",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "13032": {
+            "Name": "열정 과부하",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO",
+                "D__KEY__DAMAGE": 3
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 3
+            }
+        },
+        "13033": {
+            "Name": "아름다운 여정",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[C113031]</color>을 생성한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO",
+                "D__KEY__DAMAGE": 2,
+                "C113031": {
+                    "Name": "격려의 영역",
+                    "Desc": "<color=#FFFFFFFF>아군 캐릭터가 스킬 사용 시:</color> 해당 캐릭터의 HP가 7pt 이상이면 피해 추가+2pt, 스킬이 적용된 후 해당 캐릭터의 HP가 6pt 이하이면 해당 캐릭터의 HP를 2pt 치유한다.\\n<color=#FFFFFFFF>$[K4]: 2</color>",
+                    "Child": {
+                        "K4": {
+                            "Name": "<color=#FFFFFFFF>지속 턴</color>",
+                            "Desc": "턴이 종료 단계에 진입할 때마다 <color=#FFFFFFFF>지속 턴</color>이 1회씩 감소한다.\\n<color=#FFFFFFFF>지속 턴</color>이 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 4,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 213031
+}

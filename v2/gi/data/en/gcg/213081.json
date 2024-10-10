@@ -1,0 +1,42 @@
+{
+    "Type": "Action",
+    "Name": "Right of Final Interpretation",
+    "Title": "Yanfei: Right of Final Interpretation",
+    "Desc": "\"When it comes to cards... Well, anything is permissible, so long as the rules don't forbid it.\"",
+    "Source": "Reward for inviting Yanfei to a duel at The Cat's Tail and achieving all corresponding challenge objectives",
+    "Icon": "UI_Gcg_CardFace_Modify_Constellation_Feiyan",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PYRO",
+            "count": 1
+        },
+        {
+            "costType": "GCG_COST_DICE_VOID",
+            "count": 2
+        }
+    ],
+    "Tag": [
+        "Talent",
+        "Combat Action"
+    ],
+    "Talent": {
+        "Name": "Right of Final Interpretation",
+        "Desc": "$[K1]: When <color=#FFFFFFFF>$[A1308]</color> is your active character, equip this card.\\nAfter $[A1308] equips this card, she will immediately use <color=#FFD780FF>$[S13081]</color> once.\\nWhen $[A1308] uses a $[K51] with this card equipped: Deal +1 DMG to enemies with 6 or less HP If $[K1010] is triggered, then draw 1 card after the skill finishes calculating.\\n(You must have $[A1308] in your deck to add this card to your deck.)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+            },
+            "A1308": "Right of Final Interpretation",
+            "S13081": "S13081",
+            "K51": {
+                "Name": "<color=#FFFFFFFF>Charged Attack</color>",
+                "Desc": "Before your Action Phase, should the total number of your Elemental Dice be even, your Normal Attack will be considered a Charged Attack."
+            },
+            "K1010": {
+                "Name": "<color=#FFFFFFFF>Scarlet Seal</color>",
+                "Desc": "<color=#FFFFFFFF>When the character uses a <color=#FFFFFFFF>Charged Attack</color>:</color> DMG dealt +2.\\n<color=#FFFFFFFF><color=#FFFFFFFF>Usage(s)</color>: 1</color> (Can stack. Max 2 stacks.)"
+            }
+        }
+    }
+}

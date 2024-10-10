@@ -1,0 +1,45 @@
+{
+    "Type": "Action",
+    "Name": "すだれの残香",
+    "Title": "行秋·すだれの残香",
+    "Desc": "彼の執筆はいつも人に深い印象を与えてくれる。",
+    "Source": "キャッツテールで行秋を招待して対戦し、対応する挑戦目標をクリアすることで獲得",
+    "Icon": "UI_Gcg_CardFace_Modify_Constellation_Xingqiu",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_HYDRO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "天賦",
+        "戦闘アクション"
+    ],
+    "Talent": {
+        "Name": "すだれの残香",
+        "Desc": "$[K1]：味方の出撃キャラが<color=#FFFFFFFF>$[A1202]</color>の時、このカードを装備できる。\\n$[A1202]がこのカードを装備した後、直ちに<color=#FFD780FF>$[S12022]</color>を1回発動する。\\nこのカードを装備した$[A1202]の生成した<color=#FFFFFFFF>$[C112021]</color>は、2以上のダメージを受けた時に相殺効果を発動できるようになり、かつ初期$[K3]+1。\\n（このカードはデッキに$[A1202]が含まれている場合のみ、デッキに追加できる）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>戦闘アクション</color>",
+                "Desc": "味方が戦闘アクションを1回行った後、相手のターンに移ります。\\n<color=#FFFFFFFF>このようなルールを持つ手札を出すのはクイックアクションではなく、戦闘アクションと見なされます。</color>"
+            },
+            "A1202": "すだれの残香",
+            "S12022": "S12022",
+            "C112021": {
+                "Name": "雨すだれの剣",
+                "Desc": "<color=#FFFFFFFF>味方の出撃キャラが3以上のダメージを受けた時</color>、ダメージを1相殺してくれる。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+                "Child": {
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                        "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                    }
+                }
+            },
+            "K3": {
+                "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+            }
+        }
+    }
+}

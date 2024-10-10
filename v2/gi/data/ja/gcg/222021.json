@@ -1,0 +1,49 @@
+{
+    "Type": "Action",
+    "Name": "鏡の檻",
+    "Title": "鏡中に隠される秘密",
+    "Desc": "「鏡よ、鏡。私の敵は…今、どこに？」",
+    "Source": "キャッツテールのリトルプリンスのところで酒場挑戦を行い、ミラーメイデンに挑戦して友好対戦で対応する挑戦目標をクリアすることで獲得",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Maidenwater",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_HYDRO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "天賦",
+        "戦闘アクション"
+    ],
+    "Talent": {
+        "Name": "鏡の檻",
+        "Desc": "$[K1]：味方の出撃キャラが<color=#FFFFFFFF>$[A2202]</color>の時、このカードを装備できる。\\n$[A2202]がこのカードを装備した後、直ちに<color=#FFD780FF>$[S22022]</color>を1回発動する。\\nこのカードを装備した$[A2202]の生成した<color=#FFFFFFFF>$[C122021]</color>の初期$[K4]+1、かつ付与されたキャラの受ける$[K102]+1。\\n（このカードはデッキに$[A2202]が含まれている場合のみ、デッキに追加できる）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>戦闘アクション</color>",
+                "Desc": "味方が戦闘アクションを1回行った後、相手のターンに移ります。\\n<color=#FFFFFFFF>このようなルールを持つ手札を出すのはクイックアクションではなく、戦闘アクションと見なされます。</color>"
+            },
+            "A2202": "鏡の檻",
+            "S22022": "S22022",
+            "C122021": {
+                "Name": "水光破鏡",
+                "Desc": "<color=#FFFFFFFF>付与されたキャラを他のキャラにチェンジする際に</color>必要な元素サイコロ+1。\\n<color=#FFFFFFFF>$[K4]：2</color>\\n（この状態は、同一サイドに1つだけ存在可能）",
+                "Child": {
+                    "K4": {
+                        "Name": "<color=#FFFFFFFF>継続ラウンド数</color>",
+                        "Desc": "各ラウンドのエンドフェーズで、<color=#FFFFFFFF>継続ラウンド数</color>が1マイナスされます。\\n<color=#FFFFFFFF>継続ラウンド数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                    }
+                }
+            },
+            "K4": {
+                "Name": "<color=#FFFFFFFF>継続ラウンド数</color>",
+                "Desc": "各ラウンドのエンドフェーズで、<color=#FFFFFFFF>継続ラウンド数</color>が1マイナスされます。\\n<color=#FFFFFFFF>継続ラウンド数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+            },
+            "K102": {
+                "Name": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素ダメージ</color>",
+                "Desc": "{SPRITE_PRESET#2102}水元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2103}<color=#FFFFFFFF>蒸発</color>：ダメージ+2\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}<color=#FFFFFFFF>感電</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2101}<color=#FFFFFFFF>凍結</color>：ダメージ+1、目標はこのラウンドで行動不能になる（物理ダメージまたは炎ダメージを受けると、即座に解除されるがダメージ+2となる）\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}<color=#FFFFFFFF>開花</color>：ダメージ+1、次の炎元素または雷元素ダメージを+2できる「<color=#FFFFFFFF>草原核</color>」を生成する"
+            }
+        }
+    }
+}

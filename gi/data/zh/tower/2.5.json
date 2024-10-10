@@ -1,0 +1,831 @@
+{
+    "Leyline": {
+        "41": {
+            "Icon": "UI_TowerBlessing_37",
+            "Name": "稻光之月",
+            "Desc": "敌人受到<color=#F39000FF>感电反应造成的伤害</color>后，雷元素抗性降低<color=#F39000FF>10%</color>，该效果持续10秒，至多叠加<color=#F39000FF>4</color>层，每层持续时间独立计算，每1.2秒至多对同一个敌人施加一次该效果。"
+        },
+        "42": {
+            "Icon": "UI_TowerBlessing_38",
+            "Name": "神鸣之月",
+            "Desc": "当前场上角色的普通攻击、重击、下落攻击、元素战技、元素爆发命中处于<color=#F39000FF>雷元素附着</color>影响下的敌人后，会在敌人的位置<color=#F39000FF>释放冲击波</color>，造成真实伤害。每2秒至多通过这种方式释放一次冲击波。"
+        }
+    },
+    "Floor": {
+        "9": {
+            "Open": "2022-03-01 04:00:00",
+            "Close": "2022-04-01 03:59:59",
+            "Buff": [
+                "挑战开始后，场地外围会产生等离子场。角色在等离子场中时，每5秒会受到一次落雷打击，遭受雷元素伤害。等离子场的范围会随着挑战进程推进而向场地中心扩张。",
+                "怪物血量提升100%。"
+            ],
+            "Room": {
+                "1": {
+                    "Level": 72,
+                    "Cond": [
+                        [
+                            2,
+                            60
+                        ],
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 21020101,
+                            "Hp": 82833.16364580768,
+                            "Name": "木盾丘丘暴徒",
+                            "Icon": "UI_MonsterIcon_Brute_None_01"
+                        },
+                        {
+                            "Id": 21030301,
+                            "Hp": 27611.054548602628,
+                            "Name": "风丘丘萨满",
+                            "Icon": "UI_MonsterIcon_Shaman_Wind_01"
+                        },
+                        {
+                            "Id": 21030101,
+                            "Hp": 27611.054548602628,
+                            "Name": "水丘丘萨满",
+                            "Icon": "UI_MonsterIcon_Shaman_Water_01"
+                        },
+                        {
+                            "Id": 21011001,
+                            "Hp": 22088.844026572744,
+                            "Name": "雷箭丘丘人",
+                            "Icon": "UI_MonsterIcon_Hili_Electric_Range"
+                        },
+                        {
+                            "Id": 21010901,
+                            "Hp": 22088.844026572744,
+                            "Name": "冰箭丘丘人",
+                            "Icon": "UI_MonsterIcon_Hili_Ice_Range"
+                        },
+                        {
+                            "Id": 20011101,
+                            "Hp": 55222.10909720505,
+                            "Name": "大型水史莱姆",
+                            "Icon": "UI_MonsterIcon_Slime_Water_03"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 22010301,
+                            "Hp": 55222.10909720505,
+                            "Name": "水深渊法师",
+                            "Icon": "UI_MonsterIcon_Abyss_Water_01"
+                        },
+                        {
+                            "Id": 21030601,
+                            "Hp": 27611.054548602628,
+                            "Name": "雷丘丘萨满",
+                            "Icon": "UI_MonsterIcon_Shaman_Electric_01"
+                        },
+                        {
+                            "Id": 21020701,
+                            "Hp": 82833.16364580768,
+                            "Name": "雷斧丘丘暴徒",
+                            "Icon": "UI_MonsterIcon_Brute_None_01"
+                        },
+                        {
+                            "Id": 21020201,
+                            "Hp": 82833.16364580768,
+                            "Name": "火斧丘丘暴徒",
+                            "Icon": "UI_MonsterIcon_Brute_None_01"
+                        }
+                    ]
+                },
+                "2": {
+                    "Level": 74,
+                    "Cond": [
+                        [
+                            2,
+                            60
+                        ],
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 23010101,
+                            "Hp": 116034.52487182627,
+                            "Name": "愚人众先遣队·冰铳重卫士",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Fat_SprayGun_Ice_01"
+                        },
+                        {
+                            "Id": 23010201,
+                            "Hp": 87025.89365386966,
+                            "Name": "愚人众先遣队·水铳重卫士",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Fat_SprayGun_Water_01"
+                        },
+                        {
+                            "Id": 23010301,
+                            "Hp": 116034.52487182627,
+                            "Name": "愚人众先遣队·雷锤前锋军",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Strong_GreatHammer_Electric_01"
+                        },
+                        {
+                            "Id": 23010401,
+                            "Hp": 87025.89365386966,
+                            "Name": "愚人众先遣队·岩使游击兵",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Standard_Staff_Rock_01"
+                        },
+                        {
+                            "Id": 23010501,
+                            "Hp": 87025.89365386966,
+                            "Name": "愚人众先遣队·风拳前锋军",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Strong_Gloves_Wind_01"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 25010701,
+                            "Hp": 58017.262435913035,
+                            "Name": "盗宝团·杂工",
+                            "Icon": "UI_MonsterIcon_Thoarder_Male_Rogue_Fat_01"
+                        },
+                        {
+                            "Id": 25030201,
+                            "Hp": 58017.262435913035,
+                            "Name": "盗宝团·掘墓者",
+                            "Icon": "UI_MonsterIcon_Thoarder_Male_Rogue_Fat_02"
+                        },
+                        {
+                            "Id": 25030301,
+                            "Hp": 58017.262435913035,
+                            "Name": "盗宝团·海上男儿",
+                            "Icon": "UI_MonsterIcon_Thoarder_Male_Sailor_01"
+                        },
+                        {
+                            "Id": 25060101,
+                            "Hp": 58017.262435913035,
+                            "Name": "盗宝团·拳术家",
+                            "Icon": "UI_MonsterIcon_Thoarder_MuscleMan_Boxer_01"
+                        },
+                        {
+                            "Id": 25070101,
+                            "Hp": 58017.262435913035,
+                            "Name": "盗宝团·粉碎者",
+                            "Icon": "UI_MonsterIcon_Thoarder_MuscleMan_Miner_01"
+                        },
+                        {
+                            "Id": 25010301,
+                            "Hp": 46413.81076335902,
+                            "Name": "盗宝团·火之药剂师",
+                            "Icon": "UI_MonsterIcon_Thoarder_Male_Chemist_Fire_01"
+                        },
+                        {
+                            "Id": 25010401,
+                            "Hp": 46413.81076335902,
+                            "Name": "盗宝团·水之药剂师",
+                            "Icon": "UI_MonsterIcon_Thoarder_Male_Chemist_Water_01"
+                        },
+                        {
+                            "Id": 25010501,
+                            "Hp": 46413.81076335902,
+                            "Name": "盗宝团·雷之药剂师",
+                            "Icon": "UI_MonsterIcon_Thoarder_Male_Chemist_Electric_01"
+                        },
+                        {
+                            "Id": 25010601,
+                            "Hp": 46413.81076335902,
+                            "Name": "盗宝团·冰之药剂师",
+                            "Icon": "UI_MonsterIcon_Thoarder_Male_Chemist_Ice_01"
+                        },
+                        {
+                            "Id": 25020201,
+                            "Hp": 34810.359090804996,
+                            "Name": "盗宝团·神射手",
+                            "Icon": "UI_MonsterIcon_Thoarder_Male_Hunter_01"
+                        }
+                    ]
+                },
+                "3": {
+                    "Level": 76,
+                    "Cond": [
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ],
+                        [
+                            2,
+                            420
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 21020401,
+                            "Hp": 274776.4713618347,
+                            "Name": "丘丘霜铠王",
+                            "Icon": "UI_MonsterIcon_Brute_Ice_01"
+                        },
+                        {
+                            "Id": 21020501,
+                            "Hp": 274776.4713618347,
+                            "Name": "丘丘岩盔王",
+                            "Icon": "UI_MonsterIcon_Brute_Rock_None"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 23020101,
+                            "Hp": 152653.59520101917,
+                            "Name": "愚人众·火之债务处理人",
+                            "Icon": "UI_MonsterIcon_Fatuus_Fire_01"
+                        },
+                        {
+                            "Id": 23030101,
+                            "Hp": 152653.59520101917,
+                            "Name": "愚人众·雷萤术士",
+                            "Icon": "UI_MonsterIcon_Fatuus_Summoner_01"
+                        }
+                    ]
+                }
+            }
+        },
+        "10": {
+            "Open": "2022-03-01 04:00:00",
+            "Close": "2022-04-01 03:59:59",
+            "Buff": [
+                "本层每一间的挑战中，都存在「头目」敌人与拥有护卫它的扈从，为它提供强化效果，每个扈从会使它的所有元素抗性与物理抗性提高10%；每12秒，扈从会为它恢复生命值，每个扈从能恢复5%生命值。当场地中不存在扈从时，「头目」敌人会失去上述的强化与恢复效果。",
+                "怪物血量提升100%。"
+            ],
+            "Room": {
+                "1": {
+                    "Level": 80,
+                    "Cond": [
+                        [
+                            2,
+                            60
+                        ],
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 22010401,
+                            "Hp": 74262.91016200923,
+                            "Name": "雷深渊法师",
+                            "Icon": "UI_MonsterIcon_Abyss_Electric_01"
+                        },
+                        {
+                            "Id": 21030201,
+                            "Hp": 37131.45508100475,
+                            "Name": "草丘丘萨满",
+                            "Icon": "UI_MonsterIcon_Shaman_Grass_01"
+                        },
+                        {
+                            "Id": 21030301,
+                            "Hp": 37131.45508100475,
+                            "Name": "风丘丘萨满",
+                            "Icon": "UI_MonsterIcon_Shaman_Wind_01"
+                        },
+                        {
+                            "Id": 21030101,
+                            "Hp": 37131.45508100475,
+                            "Name": "水丘丘萨满",
+                            "Icon": "UI_MonsterIcon_Shaman_Water_01"
+                        },
+                        {
+                            "Id": 21020201,
+                            "Hp": 111394.36524301399,
+                            "Name": "火斧丘丘暴徒",
+                            "Icon": "UI_MonsterIcon_Brute_None_01"
+                        },
+                        {
+                            "Id": 21010501,
+                            "Hp": 29705.164586171708,
+                            "Name": "火箭丘丘人",
+                            "Icon": "UI_MonsterIcon_Hili_Fire_Range"
+                        },
+                        {
+                            "Id": 21010901,
+                            "Hp": 29705.164586171708,
+                            "Name": "冰箭丘丘人",
+                            "Icon": "UI_MonsterIcon_Hili_Ice_Range"
+                        },
+                        {
+                            "Id": 21011001,
+                            "Hp": 29705.164586171708,
+                            "Name": "雷箭丘丘人",
+                            "Icon": "UI_MonsterIcon_Hili_Electric_Range"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 21020501,
+                            "Hp": 334183.09572904196,
+                            "Name": "丘丘岩盔王",
+                            "Icon": "UI_MonsterIcon_Brute_Rock_None"
+                        },
+                        {
+                            "Id": 21010501,
+                            "Hp": 29705.164586171708,
+                            "Name": "火箭丘丘人",
+                            "Icon": "UI_MonsterIcon_Hili_Fire_Range"
+                        },
+                        {
+                            "Id": 21010901,
+                            "Hp": 29705.164586171708,
+                            "Name": "冰箭丘丘人",
+                            "Icon": "UI_MonsterIcon_Hili_Ice_Range"
+                        }
+                    ]
+                },
+                "2": {
+                    "Level": 82,
+                    "Cond": [
+                        [
+                            2,
+                            60
+                        ],
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 23020101,
+                            "Hp": 193333.86023713273,
+                            "Name": "愚人众·火之债务处理人",
+                            "Icon": "UI_MonsterIcon_Fatuus_Fire_01"
+                        },
+                        {
+                            "Id": 23010101,
+                            "Hp": 154667.08818970635,
+                            "Name": "愚人众先遣队·冰铳重卫士",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Fat_SprayGun_Ice_01"
+                        },
+                        {
+                            "Id": 23010201,
+                            "Hp": 116000.3161422797,
+                            "Name": "愚人众先遣队·水铳重卫士",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Fat_SprayGun_Water_01"
+                        },
+                        {
+                            "Id": 23010501,
+                            "Hp": 116000.3161422797,
+                            "Name": "愚人众先遣队·风拳前锋军",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Strong_Gloves_Wind_01"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 23030101,
+                            "Hp": 193333.86023713273,
+                            "Name": "愚人众·雷萤术士",
+                            "Icon": "UI_MonsterIcon_Fatuus_Summoner_01"
+                        },
+                        {
+                            "Id": 23010601,
+                            "Hp": 116000.3161422797,
+                            "Name": "愚人众先遣队·火铳游击兵",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Standard_Rifle_Fire_01"
+                        },
+                        {
+                            "Id": 23010301,
+                            "Hp": 154667.08818970635,
+                            "Name": "愚人众先遣队·雷锤前锋军",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Strong_GreatHammer_Electric_01"
+                        },
+                        {
+                            "Id": 23010401,
+                            "Hp": 116000.3161422797,
+                            "Name": "愚人众先遣队·岩使游击兵",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Standard_Staff_Rock_01"
+                        }
+                    ]
+                },
+                "3": {
+                    "Level": 85,
+                    "Cond": [
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ],
+                        [
+                            2,
+                            420
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 22030101,
+                            "Hp": 326789.7485650778,
+                            "Name": "深渊咏者·紫电",
+                            "Icon": "UI_MonsterIcon_Invoker_Deacon_Electric_01"
+                        },
+                        {
+                            "Id": 21030301,
+                            "Hp": 40848.71857063483,
+                            "Name": "风丘丘萨满",
+                            "Icon": "UI_MonsterIcon_Shaman_Wind_01"
+                        },
+                        {
+                            "Id": 21030101,
+                            "Hp": 40848.71857063483,
+                            "Name": "水丘丘萨满",
+                            "Icon": "UI_MonsterIcon_Shaman_Water_01"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 22020101,
+                            "Hp": 326789.7485650778,
+                            "Name": "深渊使徒·激流",
+                            "Icon": "UI_MonsterIcon_Invoker_Herald_Water_01"
+                        },
+                        {
+                            "Id": 21030601,
+                            "Hp": 40848.71857063483,
+                            "Name": "雷丘丘萨满",
+                            "Icon": "UI_MonsterIcon_Shaman_Electric_01"
+                        }
+                    ]
+                }
+            }
+        },
+        "11": {
+            "Open": "2022-03-01 04:00:00",
+            "Close": "2022-04-01 03:59:59",
+            "Buff": [
+                "队伍中所有角色获得60%雷元素伤害加成。",
+                "队伍中所有角色获得30%治疗加成。",
+                "怪物血量提升100%。"
+            ],
+            "Room": {
+                "1": {
+                    "Level": 88,
+                    "Cond": [
+                        [
+                            2,
+                            60
+                        ],
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 22020101,
+                            "Hp": 347491.52522572875,
+                            "Name": "深渊使徒·激流",
+                            "Icon": "UI_MonsterIcon_Invoker_Herald_Water_01"
+                        },
+                        {
+                            "Id": 22010201,
+                            "Hp": 86872.88130643211,
+                            "Name": "冰深渊法师",
+                            "Icon": "UI_MonsterIcon_Abyss_Ice_01"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 26040101,
+                            "Hp": 347491.52522572875,
+                            "Name": "岩龙蜥",
+                            "Icon": "UI_MonsterIcon_Drake_Rock"
+                        },
+                        {
+                            "Id": 26010201,
+                            "Hp": 130309.32195964832,
+                            "Name": "炽热骗骗花",
+                            "Icon": "UI_MonsterIcon_Mimik_Fire"
+                        },
+                        {
+                            "Id": 26010301,
+                            "Hp": 130309.32195964832,
+                            "Name": "电气骗骗花",
+                            "Icon": "UI_MonsterIcon_Mimik_Electric"
+                        }
+                    ]
+                },
+                "2": {
+                    "Level": 90,
+                    "Cond": [
+                        [
+                            2,
+                            60
+                        ],
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 22010301,
+                            "Hp": 97416.3467096909,
+                            "Name": "水深渊法师",
+                            "Icon": "UI_MonsterIcon_Abyss_Water_01"
+                        },
+                        {
+                            "Id": 20060101,
+                            "Hp": 118720.9220706251,
+                            "Name": "水飘浮灵",
+                            "Icon": "UI_MonsterIcon_Sylph_Water_01"
+                        },
+                        {
+                            "Id": 20060401,
+                            "Hp": 118720.9220706251,
+                            "Name": "冰飘浮灵",
+                            "Icon": "UI_MonsterIcon_Sylph_Ice_01"
+                        },
+                        {
+                            "Id": 20010901,
+                            "Hp": 97416.3467096909,
+                            "Name": "大型冰史莱姆",
+                            "Icon": "UI_MonsterIcon_Slime_Ice_03"
+                        },
+                        {
+                            "Id": 20011101,
+                            "Hp": 97416.3467096909,
+                            "Name": "大型水史莱姆",
+                            "Icon": "UI_MonsterIcon_Slime_Water_03"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 22010101,
+                            "Hp": 97416.3467096909,
+                            "Name": "火深渊法师",
+                            "Icon": "UI_MonsterIcon_Abyss_Fire_01"
+                        },
+                        {
+                            "Id": 21030201,
+                            "Hp": 48708.173354845625,
+                            "Name": "草丘丘萨满",
+                            "Icon": "UI_MonsterIcon_Shaman_Grass_01"
+                        },
+                        {
+                            "Id": 20060601,
+                            "Hp": 118720.9220706251,
+                            "Name": "火飘浮灵",
+                            "Icon": "UI_MonsterIcon_Sylph_Fire_01"
+                        },
+                        {
+                            "Id": 20060501,
+                            "Hp": 118720.9220706251,
+                            "Name": "雷飘浮灵",
+                            "Icon": "UI_MonsterIcon_Sylph_Electric_01"
+                        },
+                        {
+                            "Id": 20010601,
+                            "Hp": 97416.3467096909,
+                            "Name": "大型雷史莱姆",
+                            "Icon": "UI_MonsterIcon_Slime_Electric_03"
+                        },
+                        {
+                            "Id": 20010701,
+                            "Hp": 97416.3467096909,
+                            "Name": "变异雷史莱姆",
+                            "Icon": "UI_MonsterIcon_Slime_Electric_03_Positive"
+                        },
+                        {
+                            "Id": 20011301,
+                            "Hp": 97416.3467096909,
+                            "Name": "大型火史莱姆",
+                            "Icon": "UI_MonsterIcon_Slime_Fire_03"
+                        }
+                    ]
+                },
+                "3": {
+                    "Level": 92,
+                    "Cond": [
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ],
+                        [
+                            2,
+                            420
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 22050201,
+                            "Hp": 558001.9517146421,
+                            "Name": "嗜雷·兽境猎犬",
+                            "Icon": "UI_MonsterIcon_Hound_Riftstalker_Electric"
+                        },
+                        {
+                            "Id": 22040201,
+                            "Hp": 191314.96382785987,
+                            "Name": "嗜雷·兽境幼兽",
+                            "Icon": "UI_MonsterIcon_Hound_Kanis_Electric"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 22030201,
+                            "Hp": 409134.41553264856,
+                            "Name": "深渊咏者·渊火",
+                            "Icon": "UI_MonsterIcon_Invoker_Deacon_Fire"
+                        },
+                        {
+                            "Id": 22030101,
+                            "Hp": 409134.41553264856,
+                            "Name": "深渊咏者·紫电",
+                            "Icon": "UI_MonsterIcon_Invoker_Deacon_Electric_01"
+                        }
+                    ]
+                }
+            }
+        },
+        "12": {
+            "Open": "2022-03-01 04:00:00",
+            "Close": "2022-04-01 03:59:59",
+            "Buff": [
+                "仅在此层，地脉的涌流平缓通顺。",
+                "怪物血量提升150%。"
+            ],
+            "Room": {
+                "1": {
+                    "Level": 95,
+                    "Cond": [
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ],
+                        [
+                            2,
+                            420
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 22050201,
+                            "Hp": 795001.5306867005,
+                            "Name": "嗜雷·兽境猎犬",
+                            "Icon": "UI_MonsterIcon_Hound_Riftstalker_Electric"
+                        },
+                        {
+                            "Id": 22040201,
+                            "Hp": 272571.96613570245,
+                            "Name": "嗜雷·兽境幼兽",
+                            "Icon": "UI_MonsterIcon_Hound_Kanis_Electric"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 26050601,
+                            "Hp": 908573.177927658,
+                            "Name": "深海龙蜥·原种",
+                            "Icon": "UI_MonsterIcon_Drake_Deepsea_Water"
+                        },
+                        {
+                            "Id": 26050901,
+                            "Hp": 454286.58896382945,
+                            "Name": "深海龙蜥幼体·原种",
+                            "Icon": "UI_MonsterIcon_Drake_Deepsea_Water"
+                        },
+                        {
+                            "Id": 26051001,
+                            "Hp": 454286.58896382945,
+                            "Name": "深海龙蜥幼体·啮冰",
+                            "Icon": "UI_MonsterIcon_Drake_Deepsea_Ice"
+                        }
+                    ]
+                },
+                "2": {
+                    "Level": 98,
+                    "Cond": [
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ],
+                        [
+                            2,
+                            420
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 24010301,
+                            "Hp": 689810.209665131,
+                            "Name": "遗迹重机",
+                            "Icon": "UI_MonsterIcon_Konungmathr"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 22060101,
+                            "Hp": 1545017.71975413,
+                            "Name": "黄金王兽",
+                            "Icon": "UI_MonsterIcon_Hound_Planelurker"
+                        }
+                    ]
+                },
+                "3": {
+                    "Level": 100,
+                    "Cond": [
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ],
+                        [
+                            2,
+                            420
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 24020201,
+                            "Hp": 415950.13594460685,
+                            "Name": "遗迹歼击者",
+                            "Icon": "UI_MonsterIcon_Apparatus_Enigma_BionicFlora"
+                        },
+                        {
+                            "Id": 24020401,
+                            "Hp": 582330.198109669,
+                            "Name": "遗迹侦察者",
+                            "Icon": "UI_MonsterIcon_Apparatus_Enigma_BionicNettler"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 26050701,
+                            "Hp": 1663800.5437784274,
+                            "Name": "深海龙蜥·啮冰",
+                            "Icon": "UI_MonsterIcon_Drake_Deepsea_Ice"
+                        },
+                        {
+                            "Id": 26050801,
+                            "Hp": 1663800.5437784274,
+                            "Name": "深海龙蜥·吞雷",
+                            "Icon": "UI_MonsterIcon_Drake_Deepsea_Electric"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

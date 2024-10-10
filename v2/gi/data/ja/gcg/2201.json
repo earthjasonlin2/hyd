@@ -1,0 +1,84 @@
+{
+    "Type": "Character",
+    "Name": "純水精霊·ローデシア",
+    "Title": "浄水の主·ローデシア",
+    "Desc": "「しかし、川や湖があって、空から雨が降る限り、水は消えない…」",
+    "Source": "キャッツテールのリトルプリンスのところで酒場挑戦を行い、純水精霊·ローデシアに挑戦して友好対戦に勝利することで獲得",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_Oceanid",
+    "Hp": 10,
+    "Cost": 3,
+    "Tag": [
+        "水元素",
+        "他の武器",
+        "魔物"
+    ],
+    "Talent": {
+        "22011": {
+            "Name": "荒波",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "D__KEY__DAMAGE": 1
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "22012": {
+            "Name": "純水幻造",
+            "Desc": "1種類の<color=#FFFFFFFF>$[C122010]</color>をランダムで召喚する。（異なる種類を優先的に生成する。召喚エリアには同時に最大2種類の$[C122010]が存在できる）",
+            "Child": {
+                "C122010": {
+                    "Name": "純水の幻形",
+                    "Desc": "「純水の幻形」は3種類あり、同時に最大2種類まで存在できる。\\n<color=#FFFFFFFF>リス</color>：エンドフェーズで$[K102]を2与える。使用可能回数2回。\\n<color=#FFFFFFFF>トビ</color>：エンドフェーズで$[K102]を1与える。使用可能回数3回。\\n<color=#FFFFFFFF>カエル</color>：出撃キャラの受けるダメージを1相殺してくれる。使用可能回数1回。使い切った後、エンドフェーズで$[K102]を2与える。",
+                    "Child": {
+                        "K102": {
+                            "Name": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素ダメージ</color>",
+                            "Desc": "{SPRITE_PRESET#2102}水元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2103}<color=#FFFFFFFF>蒸発</color>：ダメージ+2\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}<color=#FFFFFFFF>感電</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2101}<color=#FFFFFFFF>凍結</color>：ダメージ+1、目標はこのラウンドで行動不能になる（物理ダメージまたは炎ダメージを受けると、即座に解除されるがダメージ+2となる）\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}<color=#FFFFFFFF>開花</color>：ダメージ+1、次の炎元素または雷元素ダメージを+2できる「<color=#FFFFFFFF>草原核</color>」を生成する"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3
+            }
+        },
+        "22013": {
+            "Name": "あらゆる形へ",
+            "Desc": "2種類の<color=#FFFFFFFF>$[C122010]</color>をランダムで召喚する。（異なる種類を優先的に生成する。召喚エリアには同時に最大2種類の$[C122010]が存在できる）",
+            "Child": {
+                "C122010": {
+                    "Name": "純水の幻形",
+                    "Desc": "「純水の幻形」は3種類あり、同時に最大2種類まで存在できる。\\n<color=#FFFFFFFF>リス</color>：エンドフェーズで$[K102]を2与える。使用可能回数2回。\\n<color=#FFFFFFFF>トビ</color>：エンドフェーズで$[K102]を1与える。使用可能回数3回。\\n<color=#FFFFFFFF>カエル</color>：出撃キャラの受けるダメージを1相殺してくれる。使用可能回数1回。使い切った後、エンドフェーズで$[K102]を2与える。",
+                    "Child": {
+                        "K102": {
+                            "Name": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素ダメージ</color>",
+                            "Desc": "{SPRITE_PRESET#2102}水元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2103}<color=#FFFFFFFF>蒸発</color>：ダメージ+2\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}<color=#FFFFFFFF>感電</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2101}<color=#FFFFFFFF>凍結</color>：ダメージ+1、目標はこのラウンドで行動不能になる（物理ダメージまたは炎ダメージを受けると、即座に解除されるがダメージ+2となる）\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}<color=#FFFFFFFF>開花</color>：ダメージ+1、次の炎元素または雷元素ダメージを+2できる「<color=#FFFFFFFF>草原核</color>」を生成する"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 5
+            }
+        },
+        "22014": {
+            "Name": "潮汐と激流",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。味方の召喚物1つにつき、このダメージ+1。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "D__KEY__DAMAGE": 4
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3,
+                "GCG_COST_ENERGY": 3
+            }
+        }
+    },
+    "Related": 222011
+}

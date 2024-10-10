@@ -1,0 +1,135 @@
+{
+    "Type": "Character",
+    "Name": "特瓦林",
+    "Title": "东风之龙·特瓦林",
+    "Desc": "「如果你曾是我，看见过你在蓝蓝的天上滑翔的孤高模样，见识过你的美丽身姿就好了。」\\n「如此，你就会明白，这样的天空与大地，是值得为之奋战的。」",
+    "Source": "在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度特瓦林中获得胜利后获取",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_Dvalin",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "风元素",
+        "其他武器",
+        "魔物"
+    ],
+    "Talent": {
+        "25021": {
+            "Name": "裂爪横击",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "25022": {
+            "Name": "暴风轰击",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，目标角色附属<color=#FFFFFFFF>$[C125021]</color>。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO",
+                "C125021": {
+                    "Name": "坍毁",
+                    "Desc": "所附属角色受到的$[K100]或$[K105]+2。\\n<color=#FFFFFFFF>$[K3]：1</color>",
+                    "Child": {
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>",
+                            "Desc": "物理伤害不会附着元素，也不会发生元素反应。"
+                        },
+                        "K105": {
+                            "Name": "{SPRITE_PRESET#2105}<color=#80FFD7FF>风元素伤害</color>",
+                            "Desc": "和已附着的元素发生元素反应：\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2101}<color=#FFFFFFFF>扩散（冰）</color>：对目标以外的所有敌方角色造成1点冰元素伤害\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2102}<color=#FFFFFFFF>扩散（水）</color>：对目标以外的所有敌方角色造成1点水元素伤害\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2103}<color=#FFFFFFFF>扩散（火）</color>：对目标以外的所有敌方角色造成1点火元素伤害\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2104}<color=#FFFFFFFF>扩散（雷）</color>：对目标以外的所有敌方角色造成1点雷元素伤害"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>可用次数</color>",
+                            "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 3
+            }
+        },
+        "25023": {
+            "Name": "风龙涤流",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，然后分别$[K53]：<color=#FFFFFFFF>$[S25025]</color>和<color=#FFFFFFFF>$[S25026]</color>。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO",
+                "K53": {
+                    "Name": "<color=#FFFFFFFF>准备技能</color>",
+                    "Desc": "有些技能无法被直接使用，而是需要一定次数的行动轮来进行<color=#FFFFFFFF>准备</color>。\\n轮到一位牌手行动时，如果该牌手的「出战角色」正在<color=#FFFFFFFF>准备</color>技能，则跳过该牌手的行动；如果技能已经完成<color=#FFFFFFFF>准备</color>，角色将会在此时直接使用此技能。（此类需要<color=#FFFFFFFF>准备</color>的技能，无法触发「使用技能后」「角色引发元素反应后」等效果。）\\n只有「出战角色」才能<color=#FFFFFFFF>准备</color>技能；如果正在<color=#FFFFFFFF>准备</color>技能的「出战角色」被切换到后台，技能的<color=#FFFFFFFF>准备</color>就会被打断。"
+                },
+                "S25025": "S25025",
+                "S25026": "S25026"
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 5
+            }
+        },
+        "25024": {
+            "Name": "终天闭幕曲",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，所有敌方后台角色附属<color=#FFFFFFFF>$[C125021]</color>。",
+            "Child": {
+                "D__KEY__DAMAGE": 5,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO",
+                "C125021": {
+                    "Name": "坍毁",
+                    "Desc": "所附属角色受到的$[K100]或$[K105]+2。\\n<color=#FFFFFFFF>$[K3]：1</color>",
+                    "Child": {
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>",
+                            "Desc": "物理伤害不会附着元素，也不会发生元素反应。"
+                        },
+                        "K105": {
+                            "Name": "{SPRITE_PRESET#2105}<color=#80FFD7FF>风元素伤害</color>",
+                            "Desc": "和已附着的元素发生元素反应：\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2101}<color=#FFFFFFFF>扩散（冰）</color>：对目标以外的所有敌方角色造成1点冰元素伤害\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2102}<color=#FFFFFFFF>扩散（水）</color>：对目标以外的所有敌方角色造成1点水元素伤害\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2103}<color=#FFFFFFFF>扩散（火）</color>：对目标以外的所有敌方角色造成1点火元素伤害\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2104}<color=#FFFFFFFF>扩散（雷）</color>：对目标以外的所有敌方角色造成1点雷元素伤害"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>可用次数</color>",
+                            "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 4,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "25025": {
+            "Name": "长延涤流",
+            "Desc": "（需准备1个行动轮）\\n对下一个敌方后台角色造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，然后$[K53]：<color=#FFFFFFFF>$[S25026]</color>。（敌方没有后台角色时，改为对出战角色造成伤害）",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO",
+                "K53": {
+                    "Name": "<color=#FFFFFFFF>准备技能</color>",
+                    "Desc": "有些技能无法被直接使用，而是需要一定次数的行动轮来进行<color=#FFFFFFFF>准备</color>。\\n轮到一位牌手行动时，如果该牌手的「出战角色」正在<color=#FFFFFFFF>准备</color>技能，则跳过该牌手的行动；如果技能已经完成<color=#FFFFFFFF>准备</color>，角色将会在此时直接使用此技能。（此类需要<color=#FFFFFFFF>准备</color>的技能，无法触发「使用技能后」「角色引发元素反应后」等效果。）\\n只有「出战角色」才能<color=#FFFFFFFF>准备</color>技能；如果正在<color=#FFFFFFFF>准备</color>技能的「出战角色」被切换到后台，技能的<color=#FFFFFFFF>准备</color>就会被打断。"
+                },
+                "S25026": "S25026"
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {}
+        },
+        "25026": {
+            "Name": "终幕涤流",
+            "Desc": "（需准备1个行动轮）\\n对上一个敌方后台角色造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。（敌方没有后台角色时，改为对出战角色造成伤害）",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO"
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {}
+        }
+    },
+    "Related": 225021
+}

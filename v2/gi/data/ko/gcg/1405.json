@@ -1,0 +1,93 @@
+{
+    "Type": "Character",
+    "Name": "북두",
+    "Title": "무관의 용왕·북두",
+    "Desc": "「오늘을 기억해두라고, 남십자함대 우두머리의 돈을 딸 뻔했던 날이니까」",
+    "Source": "캣테일 술집에서 북두 초대 및 친선 대전 난이도 승리 후 획득",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Beidou",
+    "Hp": 10,
+    "Cost": 3,
+    "Tag": [
+        "번개 원소",
+        "양손검",
+        "리월"
+    ],
+    "Talent": {
+        "14051": {
+            "Name": "파도 정복",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "14052": {
+            "Name": "파도잡이",
+            "Desc": "본 캐릭터에게 <color=#FFFFFFFF>$[C114051]</color>을 부착하고 <color=#FFFFFFFF>$[S14054]</color>의 $[K53]를 한다.",
+            "Child": {
+                "C114051": {
+                    "Name": "파도잡이·파도의 포옹",
+                    "Desc": "스킬 준비 기간: $[K6]을 2pt 제공해 부착 캐릭터를 보호한다.",
+                    "Child": {
+                        "K6": {
+                            "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>보호막</color>",
+                            "Desc": "해당 보호막의 보호를 받는 캐릭터가 피격 시, 보호막을 소모해 피해를 상쇄한다."
+                        }
+                    }
+                },
+                "S14054": "S14054",
+                "K53": {
+                    "Name": "<color=#FFFFFFFF>스킬 준비</color>",
+                    "Desc": "일부 스킬은 바로 발동할 수 없고, 일정 횟수의 행동 순서 동안 <color=#FFFFFFFF>준비</color>를 해야 한다.\\n한 플레이어의 행동 순서가 됐을 때, 해당 플레이어의 「출전 캐릭터」가 현재 스킬을 <color=#FFFFFFFF>준비</color> 중이면 해당 플레이어의 행동을 건너뛴다. 스킬 <color=#FFFFFFFF>준비</color>를 끝냈을 경우, 캐릭터는 해당 스킬을 즉시 발동한다. (<color=#FFFFFFFF>준비</color>가 필요한 유형의 스킬은 「스킬 사용 후」 및 「캐릭터가 원소 반응 발동 후」 등의 효과를 발동할 수 없다)\\n오직 「출전 캐릭터」만 스킬을 <color=#FFFFFFFF>준비</color>할 수 있다. 만약 스킬을 <color=#FFFFFFFF>준비</color> 중인 「출전 캐릭터」가 교체되어 대기 상태가 되면, 스킬의 <color=#FFFFFFFF>준비</color>가 중단된다."
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 3
+            }
+        },
+        "14053": {
+            "Name": "작뢰",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[C114053]</color>를 생성한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO",
+                "D__KEY__DAMAGE": 2,
+                "C114053": {
+                    "Name": "뇌전 괴수의 방패",
+                    "Desc": "<color=#FFFFFFFF>아군 캐릭터가 일반 공격 후:</color> $[K104]를 1pt 준다.\\n<color=#FFFFFFFF>아군 캐릭터가 3pt 이상의 피해를 받을 시:</color> 그중 1pt의 피해를 상쇄한다.\\n$[K4]: 2",
+                    "Child": {
+                        "K104": {
+                            "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>번개 원소 피해</color>",
+                            "Desc": "{SPRITE_PRESET#2104}번개 원소 부착 시 다음 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>과부하</color>: 이번 피해+2pt, 대상이 다음 캐릭터로 강제 교체된다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>초전도</color>: 이번 피해+1pt, 대상 이외의 모든 상대 캐릭터에게 관통 피해를 1pt 준다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>감전</color>: 이번 피해+1pt, 대상 이외의 모든 상대 캐릭터에게 관통 피해를 1pt 준다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>활성</color>: 이번 피해+1pt, 다음 2회의 풀 원소 또는 번개 원소 피해를 1pt 증가시키는 [<color=#FFFFFFFF>격화 영역</color>]을 생성한다."
+                        },
+                        "K4": {
+                            "Name": "<color=#FFFFFFFF>지속 턴</color>",
+                            "Desc": "턴이 종료 단계에 진입할 때마다 <color=#FFFFFFFF>지속 턴</color>이 1회씩 감소한다.\\n<color=#FFFFFFFF>지속 턴</color>이 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 3,
+                "GCG_COST_ENERGY": 3
+            }
+        },
+        "14054": {
+            "Name": "조수",
+            "Desc": "(1차례 행동 준비 필요)\\n$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO",
+                "D__KEY__DAMAGE": 3
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {}
+        }
+    },
+    "Related": 214051
+}

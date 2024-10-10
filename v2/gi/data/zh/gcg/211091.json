@@ -1,0 +1,41 @@
+{
+    "Type": "Action",
+    "Name": "归芒携信",
+    "Title": "莱依拉·归芒携信",
+    "Desc": "「星星的加护。」",
+    "Source": "在猫尾酒馆中邀请莱依拉进行对局，完成相应挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Constellation_Layla",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_CRYO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "天赋",
+        "战斗行动"
+    ],
+    "Talent": {
+        "Name": "归芒携信",
+        "Desc": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1109]</color>时，装备此牌。\\n$[A1109]装备此牌后，立刻使用一次<color=#FFD780FF>$[S11092]</color>。\\n装备有此牌的$[A1109]在场时，每当<color=#FFFFFFFF>$[C111092]</color>造成伤害，就抓1张牌。\\n（牌组中包含$[A1109]，才能加入牌组）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>战斗行动</color>",
+                "Desc": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+            },
+            "A1109": "归芒携信",
+            "S11092": "S11092",
+            "C111092": {
+                "Name": "飞星",
+                "Desc": "<color=#FFFFFFFF>我方角色使用技能后：</color>累积1枚<color=#FFFFFFFF>「晚星」</color>。如果<color=#FFFFFFFF>「晚星」</color>已有至少4枚，则消耗4枚<color=#FFFFFFFF>「晚星」</color>，造成1点$[K101]。（生成此出战状态的技能，也会触发此效果）\\n<color=#FFFFFFFF>重复生成此出战状态时：</color>累积2枚<color=#FFFFFFFF>「晚星」</color>。",
+                "Child": {
+                    "K101": {
+                        "Name": "{SPRITE_PRESET#2101}<color=#99FFFFFF>冰元素伤害</color>",
+                        "Desc": "附着{SPRITE_PRESET#2101}冰元素，可发生元素反应：\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2103}<color=#FFFFFFFF>融化</color>：本伤害+2\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2104}<color=#FFFFFFFF>超导</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2102}<color=#FFFFFFFF>冻结</color>：本伤害+1，使目标本回合无法行动（受到物理或火元素伤害后提前解除，但是伤害+2）"
+                    }
+                }
+            }
+        }
+    }
+}

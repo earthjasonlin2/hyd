@@ -1,0 +1,53 @@
+{
+    "Type": "Action",
+    "Name": "Pounding Surprise",
+    "Title": "Klee: Pounding Surprise",
+    "Desc": "Let out a good laugh when you draw this card!",
+    "Source": "Reward for inviting Klee to a duel at The Cat's Tail and achieving all corresponding challenge objectives",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Klee",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PYRO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "Talent",
+        "Combat Action"
+    ],
+    "Talent": {
+        "Name": "Pounding Surprise",
+        "Desc": "$[K1]: When your active character is <color=#FFFFFFFF>$[A1306]</color>, equip this card.\\nAfter $[A1306] equips this card, immediately use <color=#FFD780FF>$[S13062]</color> once.\\nWhen your $[A1306], who has this card equipped, creates an <color=#FFFFFFFF>$[C113061]</color>, its $[K3] +1.\\n(You must have $[A1306] in your deck to add this card to your deck.)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+            },
+            "A1306": "Pounding Surprise",
+            "S13062": "S13062",
+            "C113061": {
+                "Name": "Explosive Spark",
+                "Desc": "<color=#FFFFFFFF>When the character to which this is attached uses a $[K51]: </color>Spend 1 less <color=#FF9999FF>$[K303]</color> and deal +1 DMG.\\n<color=#FFFFFFFF>$[K3]: 1</color>",
+                "Child": {
+                    "K51": {
+                        "Name": "<color=#FFFFFFFF>Charged Attack</color>",
+                        "Desc": "Before your Action Phase, should the total number of your Elemental Dice be even, your Normal Attack will be considered a Charged Attack."
+                    },
+                    "K303": {
+                        "Name": "{SPRITE_PRESET#1103}Pyro",
+                        "Desc": "Spend the <color=#FF9999FF>{SPRITE_PRESET#1103}Pyro</color> Dice you have rolled to pay for this cost.\\n({SPRITE_PRESET#1111}Omni Dice may also be used to pay for this.)"
+                    },
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                        "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                    }
+                }
+            },
+            "K3": {
+                "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+            }
+        }
+    }
+}

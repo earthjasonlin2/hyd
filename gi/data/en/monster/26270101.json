@@ -1,0 +1,115 @@
+{
+    "Name": "Fluid Avatar of Lava",
+    "Desc": "A strange monster that must continually absorb heat to stay in an active state.\\nOnce, a more ancient and deep fire burned across all of Natlan in myriad forms. At that time, the once-great primitive residents used these fires to transmit light, heat, and wisdom. They believed that life and the soul too took their initial shape from the sparks that flew when flint was struck.\\nIf it possesses an eternally burning core, then even a stubborn stone can bring about life. The embers within the body of the Avatar of Lava seem to be the cold, ash-like remnants of that ancient era.",
+    "Icon": "UI_MonsterIcon_Lava_Liquid",
+    "Codex": "BEAST",
+    "Title": "Fluid Avatar of Lava",
+    "SpecialNames": [
+        "Stoneheart Burning Bright"
+    ],
+    "Reward": [
+        {
+            "Id": 202,
+            "Rank": 3,
+            "Icon": "UI_ItemIcon_202"
+        },
+        {
+            "Id": 112110,
+            "Rank": 2,
+            "Icon": "UI_ItemIcon_112110"
+        },
+        {
+            "Id": 112111,
+            "Rank": 3,
+            "Icon": "UI_ItemIcon_112111"
+        },
+        {
+            "Id": 112112,
+            "Rank": 4,
+            "Icon": "UI_ItemIcon_112112"
+        },
+        {
+            "Id": 400022,
+            "Rank": 3,
+            "Icon": "UI_RelicIcon_10005_4"
+        },
+        {
+            "Id": 400032,
+            "Rank": 3,
+            "Icon": "UI_RelicIcon_10007_4"
+        },
+        {
+            "Id": 400042,
+            "Rank": 3,
+            "Icon": "UI_RelicIcon_10009_4"
+        },
+        {
+            "Id": 400062,
+            "Rank": 3,
+            "Icon": "UI_RelicIcon_10013_4"
+        },
+        {
+            "Id": 400023,
+            "Rank": 4,
+            "Icon": "UI_RelicIcon_10005_4"
+        },
+        {
+            "Id": 400033,
+            "Rank": 4,
+            "Icon": "UI_RelicIcon_10007_4"
+        },
+        {
+            "Id": 400043,
+            "Rank": 4,
+            "Icon": "UI_RelicIcon_10009_4"
+        }
+    ],
+    "Child": {
+        "26270101": {
+            "MonsterName": "Monster_Lava_Liquid_01",
+            "Type": "MONSTER_ORDINARY",
+            "HpDrops": [
+                {
+                    "dropId": 22010011,
+                    "hpPercent": 66
+                },
+                {
+                    "dropId": 22010011,
+                    "hpPercent": 33
+                },
+                {}
+            ],
+            "KillDropId": 22010011,
+            "Prop": [
+                {
+                    "type": "FIGHT_PROP_BASE_HP",
+                    "growCurve": "GROW_CURVE_HP_2"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_ATTACK",
+                    "growCurve": "GROW_CURVE_ATTACK_2"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_DEFENSE",
+                    "growCurve": "GROW_CURVE_DEFENSE"
+                }
+            ],
+            "LocalLegend": false,
+            "SubHurt": {
+                "Fire": 0.6999999880791,
+                "Grass": 0.1000000014901,
+                "Water": 0.1000000014901,
+                "Elec": 0.1000000014901,
+                "Wind": 0.1000000014901,
+                "Ice": 0.1000000014901,
+                "Rock": 0.1000000014901,
+                "Physical": 0.1000000014901
+            },
+            "Base": {
+                "HP": 103.2384033203125,
+                "ATK": 87.9199981689453,
+                "DEF": 500
+            }
+        }
+    }
+}

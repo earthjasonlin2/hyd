@@ -1,0 +1,45 @@
+{
+    "Type": "Action",
+    "Name": "绪风之拥",
+    "Title": "温迪·绪风之拥",
+    "Desc": "「小心脚下。」",
+    "Source": "在猫尾酒馆中邀请温迪进行对局，完成相应挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Venti",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_ANEMO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "天赋",
+        "战斗行动"
+    ],
+    "Talent": {
+        "Name": "绪风之拥",
+        "Desc": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1503]</color>时，装备此牌。\\n$[A1503]装备此牌后，立刻使用一次<color=#FFD780FF>$[S15032]</color>。\\n装备有此牌的$[A1503]生成的<color=#FFFFFFFF>$[C115031]</color>触发后，会使本回合中我方角色下次<color=#FFFFFFFF>「普通攻击」</color>少花费1个$[K309]。\\n（牌组中包含$[A1503]，才能加入牌组）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>战斗行动</color>",
+                "Desc": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+            },
+            "A1503": "绪风之拥",
+            "S15032": "S15032",
+            "C115031": {
+                "Name": "风域",
+                "Desc": "<color=#FFFFFFFF>我方执行「切换角色」行动时：</color>少花费1个元素骰。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+                "Child": {
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>可用次数</color>",
+                        "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                    }
+                }
+            },
+            "K309": {
+                "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1109}无色元素</color>",
+                "Desc": "可以用任意类型的元素骰子组合，来支付此类费用。"
+            }
+        }
+    }
+}

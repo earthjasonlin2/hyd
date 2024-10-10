@@ -1,0 +1,72 @@
+{
+    "Type": "Action",
+    "Name": "淵の災い·復水放流",
+    "Title": "タルタリヤ·復水放流",
+    "Desc": "無謀だが精確な攻撃だ。",
+    "Source": "キャッツテールでタルタリヤを招待して対戦し、対応する挑戦目標をクリアすることで獲得",
+    "Icon": "UI_Gcg_CardFace_Modify_Constellation_Tartaglia",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_HYDRO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "天賦",
+        "戦闘アクション"
+    ],
+    "Talent": {
+        "Name": "淵の災い·復水放流",
+        "Desc": "$[K1]：味方の出撃キャラが<color=#FFFFFFFF>$[A1204]</color>の時、このカードを装備できる。\\n$[A1204]がこのカードを装備した後、直ちに<color=#FFD780FF>$[S12042]</color>を1回発動する。\\nエンドフェーズ：このカードを装備した$[A1204]がフィールド上に存在する時、相手の出撃キャラに<color=#FFFFFFFF>$[C112043]</color>が付与されている場合、そのキャラに$[K5]を1与える。\\n（このカードはデッキに$[A1204]が含まれている場合のみ、デッキに追加できる）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>戦闘アクション</color>",
+                "Desc": "味方が戦闘アクションを1回行った後、相手のターンに移ります。\\n<color=#FFFFFFFF>このようなルールを持つ手札を出すのはクイックアクションではなく、戦闘アクションと見なされます。</color>"
+            },
+            "A1204": "淵の災い·復水放流",
+            "S12042": "S12042",
+            "C112043": {
+                "Name": "断流",
+                "Desc": "<color=#FFFFFFFF>付与されたキャラが倒された後</color>、そのチームの出撃キャラに「断流」を付与する。\\n（<color=#FFFFFFFF>「$[C112042]」</color>にある<color=#FFFFFFFF>$[A1204]</color>が付与されたキャラを攻撃する時、追加ダメージを与える。）",
+                "Child": {
+                    "C112042": {
+                        "Name": "近接モード",
+                        "Desc": "キャラの与える$[K100]が$[K102]へと変わる。\\n<color=#FFFFFFFF>キャラが$[K51]を行った後</color>、目標キャラに$[K1005]を付与する。\\n$[K1005]が付与されているキャラへの与えるダメージ+1。\\n<color=#FFFFFFFF>すでに$[K1005]が付与されているキャラに対してスキルを発動した後</color>、相手の次の待機キャラに$[K5]を1与える。（各ラウンドで最大2回まで）\\n\\n<color=#FFFFFFFF>$[K4]：2</color>",
+                        "Child": {
+                            "K100": {
+                                "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>",
+                                "Desc": "物理ダメージは元素付着させたり、元素反応を起こしたりはしません。"
+                            },
+                            "K102": {
+                                "Name": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素ダメージ</color>",
+                                "Desc": "{SPRITE_PRESET#2102}水元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2103}<color=#FFFFFFFF>蒸発</color>：ダメージ+2\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}<color=#FFFFFFFF>感電</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2101}<color=#FFFFFFFF>凍結</color>：ダメージ+1、目標はこのラウンドで行動不能になる（物理ダメージまたは炎ダメージを受けると、即座に解除されるがダメージ+2となる）\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}<color=#FFFFFFFF>開花</color>：ダメージ+1、次の炎元素または雷元素ダメージを+2できる「<color=#FFFFFFFF>草原核</color>」を生成する"
+                            },
+                            "K51": {
+                                "Name": "<color=#FFFFFFFF>重撃</color>",
+                                "Desc": "味方のアクションが始まる前、元素サイコロの数が偶数の時に行われる「通常攻撃」は、「重撃」と見なされる。"
+                            },
+                            "K1005": {
+                                "Name": "<color=#FFFFFFFF>断流</color>",
+                                "Desc": "<color=#FFFFFFFF>付与されたキャラが倒された後</color>、そのチームの出撃キャラに「断流」を付与する。\\n（<color=#FFFFFFFF>「近接モード」</color>にある<color=#FFFFFFFF>タルタリヤ</color>が付与されたキャラを攻撃する時、追加ダメージを与える。）"
+                            },
+                            "K5": {
+                                "Name": "<color=#FFFFFFFF>貫通ダメージ</color>",
+                                "Desc": "貫通ダメージはダメージアップ効果を受けられません。また、シールド、ダメージ無効化などの効果で相殺されることもありません。"
+                            },
+                            "K4": {
+                                "Name": "<color=#FFFFFFFF>継続ラウンド数</color>",
+                                "Desc": "各ラウンドのエンドフェーズで、<color=#FFFFFFFF>継続ラウンド数</color>が1マイナスされます。\\n<color=#FFFFFFFF>継続ラウンド数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                            }
+                        }
+                    },
+                    "A1204": "淵の災い·復水放流"
+                }
+            },
+            "K5": {
+                "Name": "<color=#FFFFFFFF>貫通ダメージ</color>",
+                "Desc": "貫通ダメージはダメージアップ効果を受けられません。また、シールド、ダメージ無効化などの効果で相殺されることもありません。"
+            }
+        }
+    }
+}

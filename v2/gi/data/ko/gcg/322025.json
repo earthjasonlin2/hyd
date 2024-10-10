@@ -1,0 +1,29 @@
+{
+    "Type": "Action",
+    "Name": "흰 장갑과 어부",
+    "Title": "흰 장갑과 어부",
+    "Desc": "「우리에게도 지켜야 할 도리라는 게 있어요」",
+    "Source": "",
+    "Icon": "UI_Gcg_CardFace_Assist_NPC_Baishoutao",
+    "Cost": [
+        {},
+        {}
+    ],
+    "Tag": [
+        "동료"
+    ],
+    "Talent": {
+        "Name": "흰 장갑과 어부",
+        "Desc": "<color=#FFFFFFFF>종료 단계: </color><color=#FFFFFFFF>$[K2002]</color>을 1장 생성하고, 해당 카드를 아군 카드 더미 맨 위의 카드 5장 중에 랜덤으로 넣는다. 만약 해당 카드의 남은 $[K3]가 1회인 경우, 카드 1장을 드로우한다.\\n<color=#FFFFFFFF>$[K3]: 2</color>",
+        "Child": {
+            "K2002": {
+                "Name": "「청소 작업」",
+                "Desc": "코스트: 0{SPRITE_PRESET#1108}\\n아군 출전 캐릭터가 다음번에 주는 피해+1pt (중첩 가능, 최대 중첩수: +2)"
+            },
+            "K3": {
+                "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+            }
+        }
+    }
+}

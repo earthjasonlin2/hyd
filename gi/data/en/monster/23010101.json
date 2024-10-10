@@ -1,0 +1,111 @@
+{
+    "Name": "Fatui Skirmisher - Cryogunner Legionnaire",
+    "Desc": "A soldier encased within a Fatui war machine.\\nArmed with equipment that can control the elements to a certain extent, their guns are capable of firing jets of frost.\\nThough this may confer elemental power beyond the ken of ordinary humans, that power may yet come at a price...",
+    "Icon": "UI_MonsterIcon_Skirmisher_Male_Fat_SprayGun_Ice_01",
+    "Codex": "FATUI",
+    "Title": "Fatui Skirmisher - Cryogunner Legionnaire",
+    "SpecialNames": [
+        "Decord",
+        "Russell",
+        "Artyom",
+        "Igor",
+        "Feodor",
+        "Vladimir",
+        "Nikolai",
+        "Maksim",
+        "Nikolayev",
+        "Iosef",
+        "Shevchenko",
+        "Konstantin",
+        "Sasha",
+        "Aleksandr",
+        "Grigor",
+        "Sergei",
+        "Mikhail",
+        "Pavlovich",
+        "Ismailovich",
+        "Andrei",
+        "Ivanov",
+        "Kirilyenko",
+        "Yevgeni",
+        "Danilovich",
+        "Vasilyev",
+        "Leo",
+        "Borya",
+        "Semyon",
+        "Pavlo",
+        "Pyotrov",
+        "Aleksey",
+        "Liev"
+    ],
+    "Reward": [
+        {
+            "Id": 202,
+            "Rank": 3,
+            "Icon": "UI_ItemIcon_202"
+        },
+        {
+            "Id": 112032,
+            "Rank": 1,
+            "Icon": "UI_ItemIcon_112032"
+        },
+        {
+            "Id": 112033,
+            "Rank": 2,
+            "Icon": "UI_ItemIcon_112033"
+        },
+        {
+            "Id": 112034,
+            "Rank": 3,
+            "Icon": "UI_ItemIcon_112034"
+        }
+    ],
+    "Child": {
+        "23010101": {
+            "MonsterName": "Skirmisher_Male_Fat_SprayGun_Ice_01",
+            "Type": "MONSTER_ORDINARY",
+            "HpDrops": [
+                {
+                    "dropId": 22010026,
+                    "hpPercent": 66
+                },
+                {
+                    "dropId": 22010026,
+                    "hpPercent": 33
+                },
+                {}
+            ],
+            "KillDropId": 22010026,
+            "Prop": [
+                {
+                    "type": "FIGHT_PROP_BASE_HP",
+                    "growCurve": "GROW_CURVE_HP"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_ATTACK",
+                    "growCurve": "GROW_CURVE_ATTACK"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_DEFENSE",
+                    "growCurve": "GROW_CURVE_DEFENSE"
+                }
+            ],
+            "LocalLegend": false,
+            "SubHurt": {
+                "Fire": 0.1000000014901,
+                "Grass": 0.1000000014901,
+                "Water": 0.1000000014901,
+                "Elec": 0.1000000014901,
+                "Wind": 0.1000000014901,
+                "Ice": 0.1000000014901,
+                "Rock": 0.1000000014901,
+                "Physical": -0.2000000029802
+            },
+            "Base": {
+                "HP": 54.3359985351563,
+                "ATK": 37.6800003051758,
+                "DEF": 500
+            }
+        }
+    }
+}

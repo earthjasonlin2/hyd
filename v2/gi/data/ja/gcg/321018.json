@@ -1,0 +1,34 @@
+{
+    "Type": "Action",
+    "Name": "メロピデ要塞",
+    "Title": "メロピデ要塞",
+    "Desc": "「真鍮と鉄の要塞はいつか崩壊する日が来るが、法と正義の強固な城塞は永遠に崩れることがない。」",
+    "Source": "",
+    "Icon": "UI_Gcg_CardFace_Assist_Location_BideBao",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PAIMON",
+            "count": 1
+        },
+        {}
+    ],
+    "Tag": [
+        "フィールド"
+    ],
+    "Talent": {
+        "Name": "メロピデ要塞",
+        "Desc": "<color=#FFFFFFFF>味方の出撃キャラがダメージ、または治療効果を受けた後</color>、このカードは<color=#FFFFFFFF>「禁令」</color>を1蓄積する。（最大4まで蓄積可能）\\n<color=#FFFFFFFF>アクションフェーズ開始時：</color><color=#FFFFFFFF>「禁令」</color>を4蓄積していた場合、「禁令」を4消費し、相手のフィールドに<color=#FFFFFFFF>$[C301018]</color>を生成する。（本ラウンドで使用するイベントカードを1枚無効化する）",
+        "Child": {
+            "C301018": {
+                "Name": "厳たる禁令",
+                "Desc": "本ラウンドにおいて、チームが使用するイベントカードが無効化される。\\n<color=#FFFFFFFF>$[K3]：1</color>",
+                "Child": {
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                        "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                    }
+                }
+            }
+        }
+    }
+}

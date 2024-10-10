@@ -1,0 +1,79 @@
+{
+    "Type": "Character",
+    "Name": "七七",
+    "Title": "冷たき黄泉帰り·七七",
+    "Desc": "諸行無常、生生流転。",
+    "Source": "キャッツテールで七七を招待し、友好対戦に勝利することで獲得",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Qiqi",
+    "Hp": 10,
+    "Cost": 3,
+    "Tag": [
+        "氷元素",
+        "片手剣",
+        "璃月"
+    ],
+    "Talent": {
+        "11081": {
+            "Name": "雲来古剣法",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "11082": {
+            "Name": "仙法·寒病鬼差",
+            "Desc": "<color=#FFFFFFFF>$[C111081]</color>を召喚する。",
+            "Child": {
+                "C111081": {
+                    "Name": "寒病鬼差",
+                    "Desc": "<color=#FFFFFFFF>エンドフェーズ：</color>$[K101]を1与える。\\n<color=#FFFFFFFF>$[K3]：3</color>\\n<color=#FFFFFFFF>この召喚物がフィールドに存在する時、$[A1108]が「通常攻撃」を発動した後</color>、HPを最も失っている味方キャラのHPを1回復する。さらに各ラウンドで1回のみ、味方の出撃キャラのHPを1回復する。",
+                    "Child": {
+                        "K101": {
+                            "Name": "{SPRITE_PRESET#2101}<color=#99FFFFFF>氷元素ダメージ</color>",
+                            "Desc": "{SPRITE_PRESET#2101}氷元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2103}<color=#FFFFFFFF>溶解</color>：ダメージ+2\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2104}<color=#FFFFFFFF>超電導</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2102}<color=#FFFFFFFF>凍結</color>：ダメージ+1、目標はこのラウンドで行動不能になる（物理ダメージまたは炎ダメージを受けると、即座に解除されるがダメージ+2となる）"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                            "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                        },
+                        "A1108": "七七"
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3
+            }
+        },
+        "11083": {
+            "Name": "仙法·救苦度厄",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、<color=#FFFFFFFF>$[C111082]</color>を生成する。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "D__KEY__DAMAGE": 3,
+                "C111082": {
+                    "Name": "度厄のお札",
+                    "Desc": "<color=#FFFFFFFF>味方のキャラがスキルを発動した後</color>、該当キャラのHPがMAXではない場合、該当キャラのHPを2回復する。\\n<color=#FFFFFFFF>$[K3]：3</color>",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                            "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3,
+                "GCG_COST_ENERGY": 3
+            }
+        }
+    },
+    "Related": 211081
+}

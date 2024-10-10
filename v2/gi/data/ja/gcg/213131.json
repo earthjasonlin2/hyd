@@ -1,0 +1,33 @@
+{
+    "Type": "Action",
+    "Name": "尖兵協同戦術",
+    "Title": "シュヴルーズ·尖兵協同戦術",
+    "Desc": "「特巡隊は、あらゆる危険をはらむ凶悪な事件やタチの悪い犯罪者の対処を専門としてる。ゆえに法を執行する際は…些か強腰の態度をとるんだ。」",
+    "Source": "キャッツテールでシュヴルーズを招待して対戦し、対応する挑戦目標をクリアすることで獲得",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Chevreuse",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PYRO",
+            "count": 2
+        },
+        {}
+    ],
+    "Tag": [
+        "天賦"
+    ],
+    "Talent": {
+        "Name": "尖兵協同戦術",
+        "Desc": "<color=#FFFFFFFF>チームに<color=#FF9999FF>{SPRITE_PRESET#2103}炎元素キャラ</color>と<color=#FFACFFFF>{SPRITE_PRESET#2104}雷元素キャラ</color>を含み、かつ他の元素のキャラを含まない場合のみ使用できる。</color>このカードを<color=#FFFFFFFF>$[A1313]</color>に装備する。\\nこのカードを装備した<color=#FFFFFFFF>$[A1313]</color>がフィールドにいる時、相手のキャラが過負荷反応によるダメージを受けた後、次の2回、味方による$[K103]または$[K104]+1。（拡散反応による$[K103]または$[K104]を含む）\\n（このカードはデッキに$[A1313]が含まれている場合のみ、デッキに追加できる）",
+        "Child": {
+            "A1313": "尖兵協同戦術",
+            "K103": {
+                "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>炎元素ダメージ</color>",
+                "Desc": "{SPRITE_PRESET#2103}炎元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>溶解</color>：ダメージ+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>蒸発</color>：ダメージ+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>過負荷</color>：ダメージ+2、目標を強制的に次のキャラにチェンジさせる\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>燃焼</color>：ダメージ+1、ラウンド終了時に炎元素ダメージを1与える「<color=#FFFFFFFF>燃焼烈焔</color>」を生成する（使用可能回数1回、最大2まで重ねられる）"
+            },
+            "K104": {
+                "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素ダメージ</color>",
+                "Desc": "{SPRITE_PRESET#2104}雷元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>過負荷</color>：ダメージ+2、目標を強制的に次のキャラにチェンジさせる\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>超電導</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>感電</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>原激化</color>：ダメージ+1、次の草元素または雷元素ダメージを2回まで+1できる「<color=#FFFFFFFF>激化領域</color>」を生成する"
+            }
+        }
+    }
+}

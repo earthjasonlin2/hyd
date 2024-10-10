@@ -1,0 +1,100 @@
+{
+    "Type": "Character",
+    "Name": "파루잔",
+    "Title": "수수께끼의 장치학자·파루잔",
+    "Desc": "풀리는 장치, 안 풀리는 운명",
+    "Source": "캣테일 술집에서 파루잔 초대 및 친선 대전 난이도 승리 후 획득",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Faruzan",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "바람 원소",
+        "활",
+        "수메르"
+    ],
+    "Talent": {
+        "15091": {
+            "Name": "회전 궁술",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "15092": {
+            "Name": "번뇌를 날리는 바람",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 본 캐릭터에게 <color=#FFFFFFFF>$[C115091]</color>을 부착한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO",
+                "D__KEY__DAMAGE": 3,
+                "C115091": {
+                    "Name": "질풍 시현",
+                    "Desc": "<color=#FFFFFFFF>부착 캐릭터가 $[K51] 시:</color> <color=#80FFD7FF>$[K309]</color> 소모 개수-1 및 주는 $[K100]가 $[K105]로 전환되고 대상 캐릭터에게 <color=#FFFFFFFF>$[K1024]</color>를 부착한다.\\n<color=#FFFFFFFF>$[K3]: 1</color>",
+                    "Child": {
+                        "K51": {
+                            "Name": "<color=#FFFFFFFF>강공격</color>",
+                            "Desc": "아군이 행동을 시작하기 전에 원소 주사위 총개수가 짝수인 경우, 발동한 「일반 공격」을 「강공격」으로 간주한다."
+                        },
+                        "K309": {
+                            "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1109}무색 원소</color>",
+                            "Desc": "어떤 타입의 원소 주사위든 사용할 수 있다."
+                        },
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>",
+                            "Desc": "물리 피해는 원소를 부착할 수 없고, 원소 반응이 발생하지 않는다."
+                        },
+                        "K105": {
+                            "Name": "{SPRITE_PRESET#2105}<color=#80FFD7FF>바람 원소 피해</color>",
+                            "Desc": "이미 부착된 원소와 원소 반응이 발생한다.\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2101}<color=#FFFFFFFF>확산(얼음)</color>: 대상 이외의 모든 상대 캐릭터에게 얼음 원소 피해를 1pt 준다.\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2102}<color=#FFFFFFFF>확산(물)</color>: 대상 이외의 모든 상대 캐릭터에게 물 원소 피해를 1pt 준다.\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2103}<color=#FFFFFFFF>확산(불)</color>: 대상 이외의 모든 상대 캐릭터에게 불 원소 피해를 1pt 준다.\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2104}<color=#FFFFFFFF>확산(번개)</color>: 대상 이외의 모든 상대 캐릭터에게 번개 원소 피해를 1pt 준다."
+                        },
+                        "K1024": {
+                            "Name": "<color=#FFFFFFFF>풍압의 붕괴</color>",
+                            "Desc": "<color=#FFFFFFFF>종료 단계: </color>부착 캐릭터를 「출전 캐릭터」로 교체한다.\\n<color=#FFFFFFFF><color=#FFFFFFFF>사용 가능 횟수</color>: 1</color>\\n(해당 상태는 한쪽 필드에 하나만 존재할 수 있다)"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 3
+            }
+        },
+        "15093": {
+            "Name": "바람의 비밀 통로",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[C115093]</color>를 소환한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO",
+                "D__KEY__DAMAGE": 1,
+                "C115093": {
+                    "Name": "빛나는 다방면체",
+                    "Desc": "<color=#FFFFFFFF>종료 단계:</color> $[K105]를 1pt 준다.\\n<color=#FFFFFFFF>$[K3]: 3</color>\\n<color=#FFFFFFFF>해당 소환물이 필드에 있을 시:</color> 적 캐릭터가 받는 $[K105]+1pt",
+                    "Child": {
+                        "K105": {
+                            "Name": "{SPRITE_PRESET#2105}<color=#80FFD7FF>바람 원소 피해</color>",
+                            "Desc": "이미 부착된 원소와 원소 반응이 발생한다.\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2101}<color=#FFFFFFFF>확산(얼음)</color>: 대상 이외의 모든 상대 캐릭터에게 얼음 원소 피해를 1pt 준다.\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2102}<color=#FFFFFFFF>확산(물)</color>: 대상 이외의 모든 상대 캐릭터에게 물 원소 피해를 1pt 준다.\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2103}<color=#FFFFFFFF>확산(불)</color>: 대상 이외의 모든 상대 캐릭터에게 불 원소 피해를 1pt 준다.\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2104}<color=#FFFFFFFF>확산(번개)</color>: 대상 이외의 모든 상대 캐릭터에게 번개 원소 피해를 1pt 준다."
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 215091
+}

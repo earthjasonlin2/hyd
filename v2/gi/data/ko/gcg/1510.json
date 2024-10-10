@@ -1,0 +1,96 @@
+{
+    "Type": "Character",
+    "Name": "한운",
+    "Title": "소식을 전하는 선학·한운",
+    "Desc": "구름 속 협객의 그림자",
+    "Source": "캣테일 술집에서 한운 초대 및 친선 대전 난이도 승리 후 획득",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Liuyun",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "바람 원소",
+        "법구",
+        "리월"
+    ],
+    "Talent": {
+        "15101": {
+            "Name": "청풍의 산화 공양가",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO",
+                "D__KEY__DAMAGE": 1
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "15102": {
+            "Name": "아침 학구름",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고, <color=#FFFFFFFF>$[C115101]</color>를 생성해 본 캐릭터에게 <color=#FFFFFFFF>$[C115104]</color>를 부착한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO",
+                "D__KEY__DAMAGE": 2,
+                "C115101": {
+                    "Name": "하늘다리",
+                    "Desc": "<color=#FFFFFFFF>아군이 「캐릭터 교체」 행동 시: </color>원소 주사위 소모 개수-1\\n<color=#FFFFFFFF>$[K3]: 1</color> (중첩 가능, 최대 중첩수: 2회)",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                },
+                "C115104": {
+                    "Name": "한운 충격파",
+                    "Desc": "<color=#FFFFFFFF>아군이 부착 캐릭터로 교체 후: </color>$[K105]를 1pt 준다.\\n<color=#FFFFFFFF>$[K3]: 1</color> (중첩 가능, 최대 중첩수: 2회)",
+                    "Child": {
+                        "K105": {
+                            "Name": "{SPRITE_PRESET#2105}<color=#80FFD7FF>바람 원소 피해</color>",
+                            "Desc": "이미 부착된 원소와 원소 반응이 발생한다.\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2101}<color=#FFFFFFFF>확산(얼음)</color>: 대상 이외의 모든 상대 캐릭터에게 얼음 원소 피해를 1pt 준다.\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2102}<color=#FFFFFFFF>확산(물)</color>: 대상 이외의 모든 상대 캐릭터에게 물 원소 피해를 1pt 준다.\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2103}<color=#FFFFFFFF>확산(불)</color>: 대상 이외의 모든 상대 캐릭터에게 불 원소 피해를 1pt 준다.\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2104}<color=#FFFFFFFF>확산(번개)</color>: 대상 이외의 모든 상대 캐릭터에게 번개 원소 피해를 1pt 준다."
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 3
+            }
+        },
+        "15103": {
+            "Name": "밤을 수놓는 대나무별",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고, 모든 아군 캐릭터의 HP를 1pt 치유하며, 핸드 카드 <color=#FFFFFFFF>$[C115102]</color>을 생성한다.\\n(<color=#FFFFFFFF>$[C115102]</color>을 장착한 캐릭터는 특수 스킬 사용 가능: <color=#FFFFFFFF>$[S1151021]</color>)",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO",
+                "D__KEY__DAMAGE": 1,
+                "C115102": {
+                    "Name": "대나무별",
+                    "Desc": "$[K58]: $[S1151021]\\n<color=#FFFFFFFF>$[K3]: 2</color>\\n(캐릭터는 「{SPRITE_PRESET#3008}특수 스킬」을 1개만 장착할 수 있다)",
+                    "Child": {
+                        "K58": {
+                            "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#3008}특수 스킬</color>",
+                            "Desc": "출전 캐릭터가 「{SPRITE_PRESET#3008}특수 스킬」 카드 장착 시, 상응하는 「{SPRITE_PRESET#3008}특수 스킬」을 사용할 수 있다.\\n「{SPRITE_PRESET#3008}특수 스킬」 사용은 「전투 행동」으로 간주한다. 캐릭터가 빙결, 석화, 기절 등의 원인으로 스킬 사용 불가 시, 「{SPRITE_PRESET#3008}특수 스킬」 역시 사용할 수 없다.\\n캐릭터가 「{SPRITE_PRESET#3008}특수 스킬」 사용 시, 스킬 사용으로 간주하지 않아, 「스킬 사용 후」 「캐릭터가 원소 반응 발동 후」 등의 효과를 발동할 수 없다. 캐릭터가 「{SPRITE_PRESET#3008}특수 스킬」로 주는 피해는 캐릭터가 주는 피해로 간주하지 않는다"
+                        },
+                        "S1151021": "S1151021",
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                },
+                "S1151021": "S1151021"
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 215101
+}

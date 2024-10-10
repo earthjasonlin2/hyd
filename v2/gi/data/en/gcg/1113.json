@@ -1,0 +1,88 @@
+{
+    "Type": "Character",
+    "Name": "Rosaria",
+    "Title": "\"Thorny Benevolence\" Rosaria",
+    "Desc": "\"Light creates shadow, but shadow will not be controlled by light.\"",
+    "Source": "Reward for inviting Rosaria to a duel at The Cat's Tail and claiming victory in a Friendly Fracas with her",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Rosaria",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "Cryo",
+        "Polearm",
+        "Mondstadt"
+    ],
+    "Talent": {
+        "11131": {
+            "Name": "Spear of the Church",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "11132": {
+            "Name": "Ravaging Confession",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], creates 2 stacks of <color=#FFFFFFFF>$[C111131]</color>.",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "C111131": {
+                    "Name": "Piercing Shadow",
+                    "Desc": "<color=#FFFFFFFF>After your character uses a Skill:</color> For each stack of this effect, there is a 10% chance of creating <color=#FFFFFFFF>$[C111133]</color>. If <color=#FFFFFFFF>$[C111133]</color> is created, the number of stacks of this effect is halved. (Rounded down)",
+                    "Child": {
+                        "C111133": {
+                            "Name": "Shadowshade",
+                            "Desc": "<color=#FFFFFFFF>When dealing Skill DMG:</color> Remove this status and double the DMG dealt for this instance.",
+                            "Child": {}
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3
+            }
+        },
+        "11133": {
+            "Name": "Rites of Termination",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], creates 2 stacks of <color=#FFFFFFFF>$[C111131]</color>, and summons <color=#FFFFFFFF>$[C111132]</color>.",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "C111131": {
+                    "Name": "Piercing Shadow",
+                    "Desc": "<color=#FFFFFFFF>After your character uses a Skill:</color> For each stack of this effect, there is a 10% chance of creating <color=#FFFFFFFF>$[C111133]</color>. If <color=#FFFFFFFF>$[C111133]</color> is created, the number of stacks of this effect is halved. (Rounded down)",
+                    "Child": {
+                        "C111133": {
+                            "Name": "Shadowshade",
+                            "Desc": "<color=#FFFFFFFF>When dealing Skill DMG:</color> Remove this status and double the DMG dealt for this instance.",
+                            "Child": {}
+                        }
+                    }
+                },
+                "C111132": {
+                    "Name": "Evercold Frostlance",
+                    "Desc": "<color=#FFFFFFFF>End Phase:</color> Deal 1 $[K101], create 1 stack of <color=#FFFFFFFF>$[C111131]</color>",
+                    "Child": {
+                        "K101": {
+                            "Name": "{SPRITE_PRESET#2101}<color=#99FFFFFF>Cryo DMG</color>",
+                            "Desc": "Applies {SPRITE_PRESET#2101}Cryo and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Melt</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Superconduct</color>: DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Frozen</color>: DMG +1 for this instance, the target is unable to perform any Actions this Round (Can be removed in advance after the target receives Physical or Pyro DMG, in which case they will take +2 DMG)"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 211131
+}

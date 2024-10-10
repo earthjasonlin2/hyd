@@ -1,0 +1,36 @@
+{
+    "Type": "Action",
+    "Name": "Flower of Paradise Lost",
+    "Title": "Withered Dreamscape: Flower of Paradise Lost",
+    "Desc": "\"But 'eternity' is ultimately a lie. Intoxication and love could only grind memories down to broken dreams.\"",
+    "Source": "",
+    "Icon": "UI_Gcg_CardFace_Modify_Artifact_ZijinghuaguanDa",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PAIMON",
+            "count": 2
+        },
+        {}
+    ],
+    "Tag": [
+        "Artifact"
+    ],
+    "Talent": {
+        "Name": "Flower of Paradise Lost",
+        "Desc": "<color=#FFFFFFFF>After an opponent takes DMG when the character to which this is attached is the active character:</color> If this DMG is $[K107] or triggers $[K217], Gain 2 <color=#FFFFFFFF>Crowning Crystals</color>. If your <color=#FFFFFFFF>Crowning Crystal</color> count is equal to or higher than the number of cards in your Hand, create 1 $[K411].\\n(Max 2 per Round)\\n(A character can equip a maximum of 1 {SPRITE_PRESET#3004}Artifact)",
+        "Child": {
+            "K107": {
+                "Name": "{SPRITE_PRESET#2107}<color=#7EC236FF>Dendro DMG</color>",
+                "Desc": "Applies {SPRITE_PRESET#2107}Dendro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Bloom</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Dendro Core</color>] that grants +2 DMG to the next instance of Pyro or Electro DMG\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Burning</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Burning Flame</color>] that will deal 1 Pyro DMG at the end of the Round (Takes effect once, max 2 stacks)\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Quicken</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Catalyzing Field</color>] that grants +1 DMG to the next 2 instances of Dendro or Electro DMG"
+            },
+            "K217": {
+                "Name": "<color=#7EC236FF>{SPRITE_PRESET#2107}Dendro-Related Reactions</color>",
+                "Desc": "{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Bloom</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Dendro Core</color>] that grants +2 DMG to the next instance of Pyro or Electro DMG\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Burning</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Burning Flame</color>] that will deal 1 Pyro DMG at the end of the Round (Takes effect once, max 2 stacks)\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Quicken</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Catalyzing Field</color>] that grants +1 DMG to the next 2 instances of Dendro or Electro DMG"
+            },
+            "K411": {
+                "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1111}Omni Element</color>",
+                "Desc": "The {SPRITE_PRESET#1111}Omni Element can be considered as any kind of element, and can be used to pay for costs of various kinds."
+            }
+        }
+    }
+}

@@ -1,0 +1,178 @@
+{
+    "Type": "Character",
+    "Name": "卡维",
+    "Title": "天穹之镜·卡维",
+    "Desc": "体悟、仁爱与识美之知。",
+    "Source": "在猫尾酒馆中邀请卡维进行对局，在友好对局难度中获得胜利后获取",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Kaveh",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "草元素",
+        "双手剑",
+        "须弥"
+    ],
+    "Talent": {
+        "17081": {
+            "Name": "旋规设矩",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "17082": {
+            "Name": "画则巧施",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，生成<color=#FFFFFFFF>$[C117082]</color>。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_DENDRO",
+                "C117082": {
+                    "Name": "迸发扫描",
+                    "Desc": "<color=#FFFFFFFF>双方选择行动前：</color>如果我方场上存在$[C116]或$[C112082]，则使其$[K3]-1，并$[K56]我方牌库顶的1张卡牌。然后，造成所$[K56]卡牌原本元素骰费用的$[K107]。\\n<color=#FFFFFFFF>$[K3]：1</color>（可叠加，最多叠加到3次）",
+                    "Child": {
+                        "C116": {
+                            "Name": "草原核",
+                            "Desc": "<color=#FFFFFFFF>我方对敌方出战角色造成$[K103]或$[K104]时，</color>伤害值+2。\\n<color=#FFFFFFFF>$[K3]：1</color>",
+                            "Child": {
+                                "K103": {
+                                    "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>火元素伤害</color>",
+                                    "Desc": "附着{SPRITE_PRESET#2103}火元素，可发生元素反应：\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>融化</color>：本伤害+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>蒸发</color>：本伤害+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>超载</color>：本伤害+2，目标强制切换到下一个角色\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>燃烧</color>：本伤害+1，生成回合结束时造成1点火元素伤害的[<color=#FFFFFFFF>燃烧烈焰</color>]（可用次数1，最多叠加到2）"
+                                },
+                                "K104": {
+                                    "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素伤害</color>",
+                                    "Desc": "附着{SPRITE_PRESET#2104}雷元素，可发生元素反应：\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>超载</color>：本伤害+2，目标强制切换到下一个角色\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>超导</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>感电</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>原激化</color>：本伤害+1，生成使下2次草元素或雷元素伤害+1的[<color=#FFFFFFFF>激化领域</color>]"
+                                },
+                                "K3": {
+                                    "Name": "<color=#FFFFFFFF>可用次数</color>",
+                                    "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                                }
+                            }
+                        },
+                        "C112082": {
+                            "Name": "丰穰之核",
+                            "Desc": "<color=#FFFFFFFF>结束阶段：</color>造成2点$[K107]。\\n<color=#FFFFFFFF>$[K3]：1</color>（可叠加，最多叠加到3次）\\n<color=#FFFFFFFF>我方宣布结束时：</color>如果此牌的$[K3]至少为2，则造成2点$[K107]。（需消耗$[K3]）",
+                            "Child": {
+                                "K107": {
+                                    "Name": "{SPRITE_PRESET#2107}<color=#7EC236FF>草元素伤害</color>",
+                                    "Desc": "附着{SPRITE_PRESET#2107}草元素，可发生元素反应：\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>绽放</color>：本伤害+1，生成使下次火元素或雷元素伤害+2的[<color=#FFFFFFFF>草原核</color>]\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>燃烧</color>：本伤害+1，生成回合结束时造成1点火元素伤害的[<color=#FFFFFFFF>燃烧烈焰</color>]（可用次数1，最多叠加到2）\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>原激化</color>：本伤害+1，生成使下2次草元素或雷元素伤害+1的[<color=#FFFFFFFF>激化领域</color>]"
+                                },
+                                "K3": {
+                                    "Name": "<color=#FFFFFFFF>可用次数</color>",
+                                    "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                                }
+                            }
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>可用次数</color>",
+                            "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                        },
+                        "K56": {
+                            "Name": "<color=#FFFFFFFF>舍弃</color>",
+                            "Desc": "通过行动牌或角色技能的效果，将行动牌从手牌或牌库中弃置。"
+                        },
+                        "K107": {
+                            "Name": "{SPRITE_PRESET#2107}<color=#7EC236FF>草元素伤害</color>",
+                            "Desc": "附着{SPRITE_PRESET#2107}草元素，可发生元素反应：\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>绽放</color>：本伤害+1，生成使下次火元素或雷元素伤害+2的[<color=#FFFFFFFF>草原核</color>]\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>燃烧</color>：本伤害+1，生成回合结束时造成1点火元素伤害的[<color=#FFFFFFFF>燃烧烈焰</color>]（可用次数1，最多叠加到2）\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>原激化</color>：本伤害+1，生成使下2次草元素或雷元素伤害+1的[<color=#FFFFFFFF>激化领域</color>]"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 3
+            }
+        },
+        "17083": {
+            "Name": "繁绘隅穹",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，本角色附属<color=#FFFFFFFF>$[C117081]</color>，生成2层<color=#FFFFFFFF>$[C117082]</color>。",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_DENDRO",
+                "C117081": {
+                    "Name": "梅赫拉克的助力",
+                    "Desc": "角色「普通攻击」造成的伤害+1，且造成的$[K100]变为$[K107]。\\n<color=#FFFFFFFF>角色普通攻击后：</color>生成$[K1033]。\\n<color=#FFFFFFFF>$[K4]：2</color>",
+                    "Child": {
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>",
+                            "Desc": "物理伤害不会附着元素，也不会发生元素反应。"
+                        },
+                        "K107": {
+                            "Name": "{SPRITE_PRESET#2107}<color=#7EC236FF>草元素伤害</color>",
+                            "Desc": "附着{SPRITE_PRESET#2107}草元素，可发生元素反应：\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>绽放</color>：本伤害+1，生成使下次火元素或雷元素伤害+2的[<color=#FFFFFFFF>草原核</color>]\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>燃烧</color>：本伤害+1，生成回合结束时造成1点火元素伤害的[<color=#FFFFFFFF>燃烧烈焰</color>]（可用次数1，最多叠加到2）\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>原激化</color>：本伤害+1，生成使下2次草元素或雷元素伤害+1的[<color=#FFFFFFFF>激化领域</color>]"
+                        },
+                        "K1033": {
+                            "Name": "<color=#FFFFFFFF>迸发扫描</color>",
+                            "Desc": "<color=#FFFFFFFF>双方选择行动前：</color>如果我方场上存在草原核或丰穰之核，则使其<color=#FFFFFFFF>可用次数</color>-1，并<color=#FFFFFFFF>舍弃</color>我方牌库顶的1张卡牌。然后，造成所<color=#FFFFFFFF>舍弃</color>卡牌的元素骰费用的{SPRITE_PRESET#2107}<color=#7EC236FF>草元素伤害</color>。\\n<color=#FFFFFFFF><color=#FFFFFFFF>可用次数</color>：1</color>（可叠加，最多叠加到3次）"
+                        },
+                        "K4": {
+                            "Name": "<color=#FFFFFFFF>持续回合</color>",
+                            "Desc": "每回合结束阶段，<color=#FFFFFFFF>持续回合</color>-1；\\n<color=#FFFFFFFF>持续回合</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                },
+                "C117082": {
+                    "Name": "迸发扫描",
+                    "Desc": "<color=#FFFFFFFF>双方选择行动前：</color>如果我方场上存在$[C116]或$[C112082]，则使其$[K3]-1，并$[K56]我方牌库顶的1张卡牌。然后，造成所$[K56]卡牌原本元素骰费用的$[K107]。\\n<color=#FFFFFFFF>$[K3]：1</color>（可叠加，最多叠加到3次）",
+                    "Child": {
+                        "C116": {
+                            "Name": "草原核",
+                            "Desc": "<color=#FFFFFFFF>我方对敌方出战角色造成$[K103]或$[K104]时，</color>伤害值+2。\\n<color=#FFFFFFFF>$[K3]：1</color>",
+                            "Child": {
+                                "K103": {
+                                    "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>火元素伤害</color>",
+                                    "Desc": "附着{SPRITE_PRESET#2103}火元素，可发生元素反应：\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>融化</color>：本伤害+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>蒸发</color>：本伤害+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>超载</color>：本伤害+2，目标强制切换到下一个角色\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>燃烧</color>：本伤害+1，生成回合结束时造成1点火元素伤害的[<color=#FFFFFFFF>燃烧烈焰</color>]（可用次数1，最多叠加到2）"
+                                },
+                                "K104": {
+                                    "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素伤害</color>",
+                                    "Desc": "附着{SPRITE_PRESET#2104}雷元素，可发生元素反应：\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>超载</color>：本伤害+2，目标强制切换到下一个角色\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>超导</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>感电</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>原激化</color>：本伤害+1，生成使下2次草元素或雷元素伤害+1的[<color=#FFFFFFFF>激化领域</color>]"
+                                },
+                                "K3": {
+                                    "Name": "<color=#FFFFFFFF>可用次数</color>",
+                                    "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                                }
+                            }
+                        },
+                        "C112082": {
+                            "Name": "丰穰之核",
+                            "Desc": "<color=#FFFFFFFF>结束阶段：</color>造成2点$[K107]。\\n<color=#FFFFFFFF>$[K3]：1</color>（可叠加，最多叠加到3次）\\n<color=#FFFFFFFF>我方宣布结束时：</color>如果此牌的$[K3]至少为2，则造成2点$[K107]。（需消耗$[K3]）",
+                            "Child": {
+                                "K107": {
+                                    "Name": "{SPRITE_PRESET#2107}<color=#7EC236FF>草元素伤害</color>",
+                                    "Desc": "附着{SPRITE_PRESET#2107}草元素，可发生元素反应：\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>绽放</color>：本伤害+1，生成使下次火元素或雷元素伤害+2的[<color=#FFFFFFFF>草原核</color>]\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>燃烧</color>：本伤害+1，生成回合结束时造成1点火元素伤害的[<color=#FFFFFFFF>燃烧烈焰</color>]（可用次数1，最多叠加到2）\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>原激化</color>：本伤害+1，生成使下2次草元素或雷元素伤害+1的[<color=#FFFFFFFF>激化领域</color>]"
+                                },
+                                "K3": {
+                                    "Name": "<color=#FFFFFFFF>可用次数</color>",
+                                    "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                                }
+                            }
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>可用次数</color>",
+                            "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                        },
+                        "K56": {
+                            "Name": "<color=#FFFFFFFF>舍弃</color>",
+                            "Desc": "通过行动牌或角色技能的效果，将行动牌从手牌或牌库中弃置。"
+                        },
+                        "K107": {
+                            "Name": "{SPRITE_PRESET#2107}<color=#7EC236FF>草元素伤害</color>",
+                            "Desc": "附着{SPRITE_PRESET#2107}草元素，可发生元素反应：\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>绽放</color>：本伤害+1，生成使下次火元素或雷元素伤害+2的[<color=#FFFFFFFF>草原核</color>]\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>燃烧</color>：本伤害+1，生成回合结束时造成1点火元素伤害的[<color=#FFFFFFFF>燃烧烈焰</color>]（可用次数1，最多叠加到2）\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>原激化</color>：本伤害+1，生成使下2次草元素或雷元素伤害+1的[<color=#FFFFFFFF>激化领域</color>]"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 217081
+}

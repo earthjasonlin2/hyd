@@ -1,0 +1,32 @@
+{
+    "Type": "Action",
+    "Name": "Taroumaru",
+    "Title": "Taroumaru",
+    "Desc": "The boss of Komore Teahouse, with whom all staff members are said to have signed a \"contract\"...\\nFew people know that back in the day, Taroumaru would accompany powerful ninja of the Shuumatsuban, striving in service of the Yashiro Commission...",
+    "Source": "",
+    "Icon": "UI_Gcg_CardFace_Assist_NPC_Taroumaru",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_VOID",
+            "count": 2
+        },
+        {}
+    ],
+    "Tag": [
+        "Companion"
+    ],
+    "Talent": {
+        "Name": "Taroumaru",
+        "Desc": "<color=#FFFFFFFF>When played:</color> Create 4 <color=#FFFFFFFF>$[K2001]</color> and distribute them evenly in your deck.\\nAfter <color=#FFFFFFFF>you have played 2 $[K2001] cards:</color> Discard this card and summon 1 <color=#FFFFFFFF>$[K1021]</color>.",
+        "Child": {
+            "K2001": {
+                "Name": "Taroumaru's Savings",
+                "Desc": "Cost: 0{SPRITE_PRESET#1108}\\nCreate 1 {SPRITE_PRESET#1111}Omni Die."
+            },
+            "K1021": {
+                "Name": "Taroumaru Enraged",
+                "Desc": "<color=#FFFFFFFF>End Phase</color>: Deal 2 {SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>.\\n<color=#FFFFFFFF><color=#FFFFFFFF>Usages</color>: 2</color>"
+            }
+        }
+    }
+}

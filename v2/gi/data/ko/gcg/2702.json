@@ -1,0 +1,176 @@
+{
+    "Type": "Character",
+    "Name": "아펩의 오아시스 파수꾼",
+    "Title": "종말을 맞은 지혜·아펩의 오아시스 파수꾼",
+    "Desc": "한때 아펩은 홀로 최후의 풍경에 빠졌다. 모든 인간, 신, 용, 들짐승, 새, 물고기와 모든 기억, 지혜, 말 그리고 증오는 색 없는 가루가 되었고 마지막 달빛은 밝은 불의 비가 되어 황야에 내렸다.\\n……\\n한때 아펩은 고향 잃은 왕의 행궁이 아닌 모래바다 아래를 자신의 무덤으로 여겼다. 그러나 「지혜」의 독은 곧 그를 무수히 많은 달이 지나간 세월의 증오와 분노에서 해방시킬 것이다. 그는 색 없는 최후의 경치에 염증을 느꼈고 마침내 젊은 신과 금색의 여행자를 통해 떠올렸기 때문이다, 비록 자신이 지배하던 푸른 땅은 도금된 황야가 되었고 자신의 자손은 생존을 위해 뒤틀려졌으나, 여전히 마음속 한구석에 오아시스의 경치를 품고 있었다는 것을 말이다",
+    "Source": "캣테일 술집의 왕자님을 통해 술집 도전 진행 및 친선 대전 난이도의 아펩의 오아시스 파수꾼에게 승리 후 획득",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_Apep",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "풀 원소",
+        "기타 무기",
+        "마물"
+    ],
+    "Talent": {
+        "27021": {
+            "Name": "고향 잃은 자의 공격",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "27022": {
+            "Name": "생명의 나선",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE_2]pt 주고 <color=#FFFFFFFF>$[C127021]</color>을 1장 드로우하며 <color=#FFFFFFFF>$[C127026]</color>을 1스택 생성한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_DENDRO",
+                "D__KEY__DAMAGE_2": 2,
+                "C127021": {
+                    "Name": "권속 소환",
+                    "Desc": "<color=#FFFFFFFF>이 카드를 사용 또는 $[K56] 시:</color> 독립된 $[C127022]를 1기 소환한다.",
+                    "Child": {
+                        "K56": {
+                            "Name": "<color=#FFFFFFFF>포기</color>",
+                            "Desc": "행동 카드 또는 캐릭터 스킬의 효과를 통해, 핸드 카드 또는 카드 더미에서 행동 카드를 버린다."
+                        },
+                        "C127022": {
+                            "Name": "증식 생명체",
+                            "Desc": "<color=#FFFFFFFF>종료 단계:</color> $[K107]를 1pt 준다.\\n<color=#FFFFFFFF>$[K3]: 1</color>",
+                            "Child": {
+                                "K107": {
+                                    "Name": "{SPRITE_PRESET#2107}<color=#7EC236FF>풀 원소 피해</color>",
+                                    "Desc": "{SPRITE_PRESET#2107}풀 원소 부착 시 다음 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>개화</color>: 이번 피해+1pt, 다음번 불 원소 또는 번개 원소 피해를 2pt 증가시키는 [<color=#FFFFFFFF>풀 원핵</color>]을 생성한다.\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>연소</color>: 이번 피해+1pt, 턴 종료 시 불 원소 피해를 1pt 주는 [<color=#FFFFFFFF>불타는 화염</color>]을 생성한다. (사용 가능 횟수: 1회, 최대 중첩수: 2)\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>활성</color>: 이번 피해+1pt, 다음 2회의 풀 원소 또는 번개 원소 피해를 1pt 증가시키는 [<color=#FFFFFFFF>격화 영역</color>]을 생성한다."
+                                },
+                                "K3": {
+                                    "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                                    "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                                }
+                            }
+                        }
+                    }
+                },
+                "C127026": {
+                    "Name": "오아시스의 양분",
+                    "Desc": "<color=#FFFFFFFF>아군이 $[C127021] 사용 시:</color> 원소 주사위 소모 개수-1\\n<color=#FFFFFFFF>$[K3]: 1</color> (최대 중첩수: 3회)",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 3
+            }
+        },
+        "27023": {
+            "Name": "종말의 추락",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE_2]pt 주고 <color=#FFFFFFFF>$[C127021]</color>을 1장 드로우하며 <color=#FFFFFFFF>$[C127026]</color>을 2스택 생성한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_DENDRO",
+                "D__KEY__DAMAGE_2": 2,
+                "C127021": {
+                    "Name": "권속 소환",
+                    "Desc": "<color=#FFFFFFFF>이 카드를 사용 또는 $[K56] 시:</color> 독립된 $[C127022]를 1기 소환한다.",
+                    "Child": {
+                        "K56": {
+                            "Name": "<color=#FFFFFFFF>포기</color>",
+                            "Desc": "행동 카드 또는 캐릭터 스킬의 효과를 통해, 핸드 카드 또는 카드 더미에서 행동 카드를 버린다."
+                        },
+                        "C127022": {
+                            "Name": "증식 생명체",
+                            "Desc": "<color=#FFFFFFFF>종료 단계:</color> $[K107]를 1pt 준다.\\n<color=#FFFFFFFF>$[K3]: 1</color>",
+                            "Child": {
+                                "K107": {
+                                    "Name": "{SPRITE_PRESET#2107}<color=#7EC236FF>풀 원소 피해</color>",
+                                    "Desc": "{SPRITE_PRESET#2107}풀 원소 부착 시 다음 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>개화</color>: 이번 피해+1pt, 다음번 불 원소 또는 번개 원소 피해를 2pt 증가시키는 [<color=#FFFFFFFF>풀 원핵</color>]을 생성한다.\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>연소</color>: 이번 피해+1pt, 턴 종료 시 불 원소 피해를 1pt 주는 [<color=#FFFFFFFF>불타는 화염</color>]을 생성한다. (사용 가능 횟수: 1회, 최대 중첩수: 2)\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>활성</color>: 이번 피해+1pt, 다음 2회의 풀 원소 또는 번개 원소 피해를 1pt 증가시키는 [<color=#FFFFFFFF>격화 영역</color>]을 생성한다."
+                                },
+                                "K3": {
+                                    "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                                    "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                                }
+                            }
+                        }
+                    }
+                },
+                "C127026": {
+                    "Name": "오아시스의 양분",
+                    "Desc": "<color=#FFFFFFFF>아군이 $[C127021] 사용 시:</color> 원소 주사위 소모 개수-1\\n<color=#FFFFFFFF>$[K3]: 1</color> (최대 중첩수: 3회)",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "27024": {
+            "Name": "증식의 부름",
+            "Desc": "[패시브] 전투 시작 시, <color=#FFFFFFFF>$[C127021]</color>을 5장 생성해 카드 더미에 랜덤으로 넣는다. 아군이 <color=#FFFFFFFF>$[C127022]</color>를 4기 소환 후, 이 캐릭터에 <color=#FFFFFFFF>$[C127027]</color>이 부착되며 <color=#FFFFFFFF>$[K6]</color>을 1pt 획득한다.",
+            "Child": {
+                "C127021": {
+                    "Name": "권속 소환",
+                    "Desc": "<color=#FFFFFFFF>이 카드를 사용 또는 $[K56] 시:</color> 독립된 $[C127022]를 1기 소환한다.",
+                    "Child": {
+                        "K56": {
+                            "Name": "<color=#FFFFFFFF>포기</color>",
+                            "Desc": "행동 카드 또는 캐릭터 스킬의 효과를 통해, 핸드 카드 또는 카드 더미에서 행동 카드를 버린다."
+                        },
+                        "C127022": {
+                            "Name": "증식 생명체",
+                            "Desc": "<color=#FFFFFFFF>종료 단계:</color> $[K107]를 1pt 준다.\\n<color=#FFFFFFFF>$[K3]: 1</color>",
+                            "Child": {
+                                "K107": {
+                                    "Name": "{SPRITE_PRESET#2107}<color=#7EC236FF>풀 원소 피해</color>",
+                                    "Desc": "{SPRITE_PRESET#2107}풀 원소 부착 시 다음 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>개화</color>: 이번 피해+1pt, 다음번 불 원소 또는 번개 원소 피해를 2pt 증가시키는 [<color=#FFFFFFFF>풀 원핵</color>]을 생성한다.\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>연소</color>: 이번 피해+1pt, 턴 종료 시 불 원소 피해를 1pt 주는 [<color=#FFFFFFFF>불타는 화염</color>]을 생성한다. (사용 가능 횟수: 1회, 최대 중첩수: 2)\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>활성</color>: 이번 피해+1pt, 다음 2회의 풀 원소 또는 번개 원소 피해를 1pt 증가시키는 [<color=#FFFFFFFF>격화 영역</color>]을 생성한다."
+                                },
+                                "K3": {
+                                    "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                                    "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                                }
+                            }
+                        }
+                    }
+                },
+                "C127027": {
+                    "Name": "다시 타오른 오아시스의 심장",
+                    "Desc": "부착 캐릭터가 주는 피해+3pt.\\n<color=#FFFFFFFF>부착 캐릭터가 스킬 사용 후:</color> 아군 필드의 <color=#FFFFFFFF>$[C127026]</color>을 제거한다. 1스택을 제거할 때마다 부착 캐릭터를 1pt 치유한다.",
+                    "Child": {
+                        "C127026": {
+                            "Name": "오아시스의 양분",
+                            "Desc": "<color=#FFFFFFFF>아군이 $[C127021] 사용 시:</color> 원소 주사위 소모 개수-1\\n<color=#FFFFFFFF>$[K3]: 1</color> (최대 중첩수: 3회)",
+                            "Child": {
+                                "K3": {
+                                    "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                                    "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                                }
+                            }
+                        }
+                    }
+                },
+                "K6": {
+                    "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>보호막</color>",
+                    "Desc": "해당 보호막의 보호를 받는 캐릭터가 피격 시, 보호막을 소모해 피해를 상쇄한다."
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 227021
+}

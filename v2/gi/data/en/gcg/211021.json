@@ -1,0 +1,45 @@
+{
+    "Type": "Action",
+    "Name": "Shaken, Not Purred",
+    "Title": "Diona: Shaken, Not Purred",
+    "Desc": "Shake and stir till its all evenly mixed... and there! Your refill's ready!",
+    "Source": "Reward for inviting Diona to a duel at The Cat's Tail and achieving all corresponding challenge objectives",
+    "Icon": "UI_Gcg_CardFace_Modify_Constellation_Diona",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_CRYO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "Talent",
+        "Combat Action"
+    ],
+    "Talent": {
+        "Name": "Shaken, Not Purred",
+        "Desc": "$[K1]: When your active character is <color=#FFFFFFFF>$[A1102]</color>, equip this card.\\nAfter $[A1102] equips this card, immediately use <color=#FFD780FF>$[S11022]</color> once.\\nWhen your $[A1102], who has this card equipped, creates a <color=#FFFFFFFF>$[C111021]</color>, its $[K6] points +1.\\n(You must have $[A1102] in your deck to add this card to your deck.)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+            },
+            "A1102": "Shaken, Not Purred",
+            "S11022": "S11022",
+            "C111021": {
+                "Name": "Cat-Claw Shield",
+                "Desc": "Grants <color=#FFFFFFFF>1 $[K6] point</color> for your active character.",
+                "Child": {
+                    "K6": {
+                        "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>Shield</color>",
+                        "Desc": "This Shield will be consumed to protect the character who equips it from DMG."
+                    }
+                }
+            },
+            "K6": {
+                "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>Shield</color>",
+                "Desc": "This Shield will be consumed to protect the character who equips it from DMG."
+            }
+        }
+    }
+}

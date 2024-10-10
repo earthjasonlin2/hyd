@@ -1,0 +1,262 @@
+{
+    "Id": 8025010,
+    "Name": "碎星王虫•斯喀拉卡巴兹（拟造）",
+    "Desc": "阮•梅培育的「繁育」令使复制体，以残缺的姿态短暂现世。原型为继承虫皇之颚的巨蠹，能以口器凝聚裂解天体的死光，将破碎的群星作为诞育子嗣的温床，曾是寰宇蝗灾中的诸界噩梦之一。",
+    "MonsterCampID": 8,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 2232,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/Monster_8025010.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "BigBoss",
+    "SpeedBase": 120,
+    "StanceBase": 540,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.3000000002793968,
+    "Child": [
+        {
+            "Id": 8025010,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Ice",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Fire",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.40000000037252903
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 802501001,
+                    "SkillName": "王虫炮",
+                    "SkillDesc": "对指定我方单体造成量子属性伤害",
+                    "DamageType": "Quantum",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 802501002,
+                    "SkillName": "辐裂蛰毒",
+                    "SkillDesc": "对指定我方单体造成量子属性伤害，并大概率使受到攻击的我方目标陷入纠缠状态，同时召唤1只【蚀蛰虫】。",
+                    "DamageType": "Quantum",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 802501003,
+                    "SkillName": "热解死光",
+                    "SkillDesc": "对指定我方单体及相邻目标造成量子属性伤害。",
+                    "DamageType": "Quantum",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 802501004,
+                    "SkillName": "",
+                    "SkillDesc": "",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 802501005,
+                    "SkillName": "孳孽虫甲",
+                    "SkillDesc": "进入【增殖】状态，持续直到下次行动。期间受到伤害大幅降低，并且每次受到攻击时召唤【蚀蛰虫】。【增殖】状态下被击破弱点，会对敌方全体造成等同自身韧性上限的削韧值，并使自身以外的敌方目标受到的伤害提高。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 802501006,
+                    "SkillName": "坍星之卵",
+                    "SkillDesc": "对我方全体造成大量量子属性伤害。",
+                    "DamageType": "Quantum",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 802501007,
+                    "SkillName": "孕灾虫甲",
+                    "SkillDesc": "蓄力并进入【增殖】状态，持续直到下次行动。下次行动时对我方全体施放【坍星之卵】。状态持续期间受到伤害大幅降低，并且每次受到攻击时召唤【蚀蛰虫】或【次蛰虫】。【增殖】状态下被击破弱点，会对敌方全体造成等同自身韧性上限的削韧值，并使自身以外的敌方目标受到的伤害提高。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 802501008,
+                    "SkillName": "",
+                    "SkillDesc": "",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 802501009,
+                    "SkillName": "",
+                    "SkillDesc": "",
+                    "DamageType": "Quantum",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 802501001,
+            "AttackModifyRatio": 0.9090910009108484,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 0.7500000006984919,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Ice",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Fire",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.40000000037252903
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 802501001,
+                    "SkillName": "王虫炮",
+                    "SkillDesc": "对指定我方单体造成量子属性伤害",
+                    "DamageType": "Quantum",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 802501002,
+                    "SkillName": "辐裂蛰毒",
+                    "SkillDesc": "对指定我方单体造成量子属性伤害，并大概率使受到攻击的我方目标陷入纠缠状态，同时召唤1只【蚀蛰虫】。",
+                    "DamageType": "Quantum",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 802501003,
+                    "SkillName": "热解死光",
+                    "SkillDesc": "对指定我方单体及相邻目标造成量子属性伤害。",
+                    "DamageType": "Quantum",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 802501004,
+                    "SkillName": "",
+                    "SkillDesc": "",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 802501005,
+                    "SkillName": "孳孽虫甲",
+                    "SkillDesc": "进入【增殖】状态，持续直到下次行动。期间受到伤害大幅降低，并且每次受到攻击时召唤【蚀蛰虫】。【增殖】状态下被击破弱点，会对敌方全体造成等同自身韧性上限的削韧值，并使自身以外的敌方目标受到的伤害提高。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 802501006,
+                    "SkillName": "坍星之卵",
+                    "SkillDesc": "对我方全体造成大量量子属性伤害。",
+                    "DamageType": "Quantum",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 802501007,
+                    "SkillName": "孕灾虫甲",
+                    "SkillDesc": "蓄力并进入【增殖】状态，持续直到下次行动。下次行动时对我方全体施放【坍星之卵】。状态持续期间受到伤害大幅降低，并且每次受到攻击时召唤【蚀蛰虫】或【次蛰虫】。【增殖】状态下被击破弱点，会对敌方全体造成等同自身韧性上限的削韧值，并使自身以外的敌方目标受到的伤害提高。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 802501008,
+                    "SkillName": "",
+                    "SkillDesc": "",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 802501009,
+                    "SkillName": "",
+                    "SkillDesc": "",
+                    "DamageType": "Quantum",
+                    "SPHitBase": ""
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 8025010,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 8025010,
+            "WorldLevel": 1,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 8025010,
+            "WorldLevel": 2,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 8025010,
+            "WorldLevel": 3,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 8025010,
+            "WorldLevel": 4,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 8025010,
+            "WorldLevel": 5,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 8025010,
+            "WorldLevel": 6,
+            "DisplayItemList": []
+        }
+    ]
+}

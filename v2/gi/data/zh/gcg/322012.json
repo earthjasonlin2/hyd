@@ -1,0 +1,32 @@
+{
+    "Type": "Action",
+    "Name": "刘苏",
+    "Title": "且听下回·刘苏",
+    "Desc": "「各位客官，接下来您们还想再听段什么？」",
+    "Source": "在大世界与牌手刘苏的冒险挑战中完成挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Assist_NPC_Liusu",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PAIMON",
+            "count": 1
+        },
+        {}
+    ],
+    "Tag": [
+        "伙伴"
+    ],
+    "Talent": {
+        "Name": "刘苏",
+        "Desc": "<color=#FFFFFFFF>我方切换到一个没有$[K310]的角色后：</color>使我方出战角色获得1点$[K310]。（每回合1次）\\n<color=#FFFFFFFF>$[K3]：2</color>",
+        "Child": {
+            "K310": {
+                "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}充能</color>",
+                "Desc": "角色使用「元素爆发」时，需要消耗{SPRITE_PRESET#1110}充能。\\n角色使用「元素战技」或「普通攻击」后，会获得1点{SPRITE_PRESET#1110}充能。"
+            },
+            "K3": {
+                "Name": "<color=#FFFFFFFF>可用次数</color>",
+                "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+            }
+        }
+    }
+}

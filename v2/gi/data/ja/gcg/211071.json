@@ -1,0 +1,45 @@
+{
+    "Type": "Action",
+    "Name": "忘玄",
+    "Title": "申鶴·忘玄",
+    "Desc": "煉気化神、念の氷像。",
+    "Source": "キャッツテールで申鶴を招待して対戦し、対応する挑戦目標をクリアすることで獲得",
+    "Icon": "UI_Gcg_CardFace_Modify_Constellation_Shenhe",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_CRYO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "天賦",
+        "戦闘アクション"
+    ],
+    "Talent": {
+        "Name": "忘玄",
+        "Desc": "$[K1]：味方の出撃キャラが<color=#FFFFFFFF>$[A1107]</color>の時、このカードを装備できる。\\n$[A1107]がこのカードを装備すると、直ちに<color=#FFD780FF>$[S11072]</color>を1回発動する。\\nこのカードを装備した$[A1107]の生成した<color=#FFFFFFFF>$[C111071]</color>が味方キャラの<color=#FFFFFFFF>「通常攻撃」</color>によって発動される時、使用可能回数は消費されない。（各ラウンドで1回のみ）\\n（このカードはデッキに$[A1107]が含まれている場合のみ、デッキに追加できる）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>戦闘アクション</color>",
+                "Desc": "味方が戦闘アクションを1回行った後、相手のターンに移ります。\\n<color=#FFFFFFFF>このようなルールを持つ手札を出すのはクイックアクションではなく、戦闘アクションと見なされます。</color>"
+            },
+            "A1107": "忘玄",
+            "S11072": "S11072",
+            "C111071": {
+                "Name": "氷翎",
+                "Desc": "味方キャラの与える$[K101]+1。（キャラが起こした<color=#99FFFFFF>{SPRITE_PRESET#2101}氷元素</color>拡散のダメージを含む）\\n<color=#FFFFFFFF>$[K3]：2</color>",
+                "Child": {
+                    "K101": {
+                        "Name": "{SPRITE_PRESET#2101}<color=#99FFFFFF>氷元素ダメージ</color>",
+                        "Desc": "{SPRITE_PRESET#2101}氷元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2103}<color=#FFFFFFFF>溶解</color>：ダメージ+2\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2104}<color=#FFFFFFFF>超電導</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2102}<color=#FFFFFFFF>凍結</color>：ダメージ+1、目標はこのラウンドで行動不能になる（物理ダメージまたは炎ダメージを受けると、即座に解除されるがダメージ+2となる）"
+                    },
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                        "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                    }
+                }
+            }
+        }
+    }
+}

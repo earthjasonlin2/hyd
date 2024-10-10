@@ -1,0 +1,159 @@
+{
+    "Id": 1004032,
+    "Name": "ブローニャ（幻像）",
+    "Desc": "ベロブルグ守護者の後継者、シルバーメインの最高司令官。\\nブローニャは多様な戦略で敵を攻撃し、味方の作戦能力を大アップする。ここに現れたのはあなたの記憶をもとにシミュレートされた幻である。",
+    "MonsterCampID": null,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 3952.5000000004657,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/Monster_1004030.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "LittleBoss",
+    "SpeedBase": 119,
+    "StanceBase": 540,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.20000000018626451,
+    "Child": [
+        {
+            "Id": 1004032,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Fire",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.6000000005587935
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.40000000037252903
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 100403201,
+                    "SkillName": "疾風の弾丸",
+                    "SkillDesc": "指定した味方単体に風属性ダメージを与える。",
+                    "DamageType": "Wind",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 100403202,
+                    "SkillName": "作戦再展開",
+                    "SkillDesc": "ブローニャ以外の指定した敵単体のすべてのデバフを解除し、即座に行動させる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100403203,
+                    "SkillName": "増援協力",
+                    "SkillDesc": "「シルバーメイン・砲兵」を召喚する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100403204,
+                    "SkillName": "制圧射撃",
+                    "SkillDesc": "指定した味方単体に風属性ダメージを与え、攻撃を受けた味方の行動順を遅らす。",
+                    "DamageType": "Wind",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 100403205,
+                    "SkillName": "行軍命令",
+                    "SkillDesc": "敵全体の速度をアップ。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100403206,
+                    "SkillName": "一気呵成",
+                    "SkillDesc": "ブローニャのターンが回ってきた時、自身の速度と攻撃力をわずかにアップする。この効果は累積できる。この効果はブローニャが撃破された時に解除される。",
+                    "DamageType": "Wind",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 100403207,
+                    "SkillName": "同じ敵に向かって",
+                    "SkillDesc": "ジェパードが戦闘不能状態になった時、即座に行動し、強化状態に入り、自身の速度をアップする。この状態の時、ブローニャはより多くの「シルバーメイン・砲兵」を召喚する。",
+                    "DamageType": "Wind",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 100403208,
+                    "SkillName": "コンビネーション",
+                    "SkillDesc": "ブローニャとジェパードは交互にメインアタック状態とサポート状態に入る。メインアタック状態の時は、自身の靭性保護を解除し通常通りに攻撃する。サポート状態に入ると、自身の速度をダウンさせ、靭性保護を獲得し「増援協力」または「作戦再展開」を発動する。",
+                    "DamageType": "Wind",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 100403209,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 1004032,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1004032,
+            "WorldLevel": 1,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1004032,
+            "WorldLevel": 2,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1004032,
+            "WorldLevel": 3,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1004032,
+            "WorldLevel": 4,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1004032,
+            "WorldLevel": 5,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1004032,
+            "WorldLevel": 6,
+            "DisplayItemList": []
+        }
+    ]
+}

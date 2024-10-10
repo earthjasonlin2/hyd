@@ -1,0 +1,32 @@
+{
+    "Type": "Action",
+    "Name": "Gandharva Ville",
+    "Title": "Gandharva Ville",
+    "Desc": "The place where travelers and Forest Rangers meet in joy — the village that listens to the heartbeat of the rainforest.",
+    "Source": "",
+    "Icon": "UI_Gcg_CardFace_Assist_Location_Gandharva",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PAIMON",
+            "count": 1
+        },
+        {}
+    ],
+    "Tag": [
+        "Location"
+    ],
+    "Talent": {
+        "Name": "Gandharva Ville",
+        "Desc": "<color=#FFFFFFFF>Before you choose your action, when the number of Elemental Dice you have is 0:</color> Create 1 $[K411] (once per Round).\\n<color=#FFFFFFFF>$[K3]: 3</color>",
+        "Child": {
+            "K411": {
+                "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1111}Omni Element</color>",
+                "Desc": "The {SPRITE_PRESET#1111}Omni Element can be considered as any kind of element, and can be used to pay for costs of various kinds."
+            },
+            "K3": {
+                "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+            }
+        }
+    }
+}

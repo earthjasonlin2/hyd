@@ -1,0 +1,79 @@
+{
+    "Type": "Character",
+    "Name": "치치",
+    "Title": "차가운 환혼의 밤·치치",
+    "Desc": "끝없는 순환, 끝없는 번성",
+    "Source": "캣테일 술집에서 치치 초대 및 친선 대전 난이도 승리 후 획득",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Qiqi",
+    "Hp": 10,
+    "Cost": 3,
+    "Tag": [
+        "얼음 원소",
+        "한손검",
+        "리월"
+    ],
+    "Talent": {
+        "11081": {
+            "Name": "운래의 고대 검법",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "11082": {
+            "Name": "선법·한병의 귀차",
+            "Desc": "<color=#FFFFFFFF>$[C111081]</color>를 소환한다.",
+            "Child": {
+                "C111081": {
+                    "Name": "한병의 귀차",
+                    "Desc": "<color=#FFFFFFFF>종료 단계:</color> $[K101]를 1pt 준다.\\n<color=#FFFFFFFF>$[K3]: 3</color>\\n<color=#FFFFFFFF>해당 소환물이 필드에 있을 때 $[A1108]가 「일반 공격」 사용 후:</color> 피해를 가장 많이 받은 아군 캐릭터의 HP를 1pt 치유한다. 턴당 1회. 다시 아군 출전 캐릭터의 HP를 1pt 치유한다.",
+                    "Child": {
+                        "K101": {
+                            "Name": "{SPRITE_PRESET#2101}<color=#99FFFFFF>얼음 원소 피해</color>",
+                            "Desc": "{SPRITE_PRESET#2101}얼음 원소 부착 시 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2103}<color=#FFFFFFFF>융해</color>: 이번 피해+2pt\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2104}<color=#FFFFFFFF>초전도</color>: 이번 피해+1pt, 대상 이외의 모든 상대 캐릭터에게 관통 피해를 1pt 준다.\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2102}<color=#FFFFFFFF>빙결</color>: 이번 피해+1pt, 이번 턴에 대상을 행동 불가로 만든다. (물리 피해 또는 불 원소 피해를 받으면 조기 해제되지만, 해당 피해로 받는 피해량이 2pt 추가된다)"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        },
+                        "A1108": "치치"
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3
+            }
+        },
+        "11083": {
+            "Name": "선법·구고도액",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[C111082]</color>을 생성한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "D__KEY__DAMAGE": 3,
+                "C111082": {
+                    "Name": "도액 부적",
+                    "Desc": "<color=#FFFFFFFF>아군 캐릭터가 스킬 사용 후:</color> 해당 캐릭터의 HP가 최대치가 아니면 해당 캐릭터의 HP를 2pt 치유한다.\\n<color=#FFFFFFFF>$[K3]: 3</color>",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3,
+                "GCG_COST_ENERGY": 3
+            }
+        }
+    },
+    "Related": 211081
+}

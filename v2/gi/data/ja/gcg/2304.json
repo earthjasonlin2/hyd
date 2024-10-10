@@ -1,0 +1,126 @@
+{
+    "Type": "Character",
+    "Name": "鉄甲熔炎帝王",
+    "Title": "鉄甲熔炎帝王",
+    "Desc": "原海アベラントの頂点に君臨する二大覇者のうちの一種。天敵に遭うことなく、狩りを続けて成長してきたカニ。半分は畏敬、半分は冗談めいた「帝王」の称号を持つ。",
+    "Source": "キャッツテールのリトルプリンスのところで酒場挑戦を行い、鉄甲熔炎帝王に挑戦して友好対戦に勝利することで獲得",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_HermitCrabPrimo",
+    "Hp": 6,
+    "Cost": 2,
+    "Tag": [
+        "炎元素",
+        "他の武器",
+        "魔物"
+    ],
+    "Talent": {
+        "23041": {
+            "Name": "ハサミハンマー",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "23042": {
+            "Name": "烈炎噴射",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。本キャラが<color=#FFFFFFFF>$[C123041]</color>を7層以上付与されている場合、このダメージ+1。\\nその後、本キャラに<color=#FFFFFFFF>$[C123041]</color>を2層付与する。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO",
+                "D__KEY__DAMAGE": 1,
+                "C123041": {
+                    "Name": "重甲ヤドカニの殻",
+                    "Desc": "1層につき$[K6]を1提供し、付与されたキャラを守る。",
+                    "Child": {
+                        "K6": {
+                            "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>シールド</color>",
+                            "Desc": "該当シールドに守られたキャラがダメージを受けた時、シールドを消費してダメージと相殺することができます。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 3
+            }
+        },
+        "23043": {
+            "Name": "戦陣爆撃",
+            "Desc": "本キャラは$[K53]に入る：<color=#FFFFFFFF>$[S23046]</color>。",
+            "Child": {
+                "K53": {
+                    "Name": "<color=#FFFFFFFF>スキル準備</color>",
+                    "Desc": "スキルの中には、直接発動のできないものもあります。発動するには、一定のターン数<color=#FFFFFFFF>準備</color>する必要があります。\\nプレイヤーがアクションするとき、もし該当プレイヤーの「出撃キャラ」がスキルを<color=#FFFFFFFF>準備</color>している場合、該当プレイヤーのアクションはスキップされます。もしスキルの<color=#FFFFFFFF>準備</color>が完了した場合、そのスキルは直ちに発動されます（このような<color=#FFFFFFFF>準備</color>を必要とするスキルは、「スキルを発動した後」、「キャラが元素反応を起こした後」に生じる効果を発動させることができません）。\\nスキルを<color=#FFFFFFFF>準備</color>できるのは「出撃キャラ」のみとなります。スキルを<color=#FFFFFFFF>準備</color>している「出撃キャラ」が待機キャラにチェンジすると、スキルの<color=#FFFFFFFF>準備</color>は中断されます。"
+                },
+                "S23046": "S23046"
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "23044": {
+            "Name": "帝王の鎧",
+            "Desc": "【固有】<color=#FFFFFFFF>戦闘開始時</color>、<color=#FFFFFFFF>$[C123041]</color>を5層付与する。\\n<color=#FFFFFFFF>味方が任意のアクションをした後</color>、味方のフィールドに$[C123041]以外の$[K6]状態、または$[K6]出撃状態が存在する場合、それらをすべて解除する。1個解除するたびに、キャラに<color=#FFFFFFFF>$[C123041]</color>を2層付与する。",
+            "Child": {
+                "C123041": {
+                    "Name": "重甲ヤドカニの殻",
+                    "Desc": "1層につき$[K6]を1提供し、付与されたキャラを守る。",
+                    "Child": {
+                        "K6": {
+                            "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>シールド</color>",
+                            "Desc": "該当シールドに守られたキャラがダメージを受けた時、シールドを消費してダメージと相殺することができます。"
+                        }
+                    }
+                },
+                "K6": {
+                    "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>シールド</color>",
+                    "Desc": "該当シールドに守られたキャラがダメージを受けた時、シールドを消費してダメージと相殺することができます。"
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        },
+        "23046": {
+            "Name": "熾烈轟破",
+            "Desc": "（1ターンの準備が必要）\\n$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。相手の待機キャラ全員に$[K5]を2与える。本キャラに付与されている<color=#FFFFFFFF>$[C123041]</color>が2層につき、このスキルの与える$[K103]+1。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO",
+                "D__KEY__DAMAGE": 1,
+                "K5": {
+                    "Name": "<color=#FFFFFFFF>貫通ダメージ</color>",
+                    "Desc": "貫通ダメージはダメージアップ効果を受けられません。また、シールド、ダメージ無効化などの効果で相殺されることもありません。"
+                },
+                "C123041": {
+                    "Name": "重甲ヤドカニの殻",
+                    "Desc": "1層につき$[K6]を1提供し、付与されたキャラを守る。",
+                    "Child": {
+                        "K6": {
+                            "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>シールド</color>",
+                            "Desc": "該当シールドに守られたキャラがダメージを受けた時、シールドを消費してダメージと相殺することができます。"
+                        }
+                    }
+                },
+                "K103": {
+                    "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>炎元素ダメージ</color>",
+                    "Desc": "{SPRITE_PRESET#2103}炎元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>溶解</color>：ダメージ+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>蒸発</color>：ダメージ+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>過負荷</color>：ダメージ+2、目標を強制的に次のキャラにチェンジさせる\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>燃焼</color>：ダメージ+1、ラウンド終了時に炎元素ダメージを1与える「<color=#FFFFFFFF>燃焼烈焔</color>」を生成する（使用可能回数1回、最大2まで重ねられる）"
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {}
+        },
+        "23047": {
+            "Name": "帝王の鎧",
+            "Desc": "",
+            "Child": {},
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 223041
+}

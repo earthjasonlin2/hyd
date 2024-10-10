@@ -1,0 +1,48 @@
+{
+    "Type": "Action",
+    "Name": "Chaotic Entropy",
+    "Title": "Sucrose: Chaotic Entropy",
+    "Desc": "The wild winds gather — and amidst the chaos, victory.",
+    "Source": "Reward for inviting Sucrose to a duel at The Cat's Tail and achieving all corresponding challenge objectives",
+    "Icon": "UI_Gcg_CardFace_Modify_Constellation_Sucrose",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_ANEMO",
+            "count": 3
+        },
+        {
+            "costType": "GCG_COST_ENERGY",
+            "count": 2
+        }
+    ],
+    "Tag": [
+        "Talent",
+        "Combat Action"
+    ],
+    "Talent": {
+        "Name": "Chaotic Entropy",
+        "Desc": "$[K1]: When your active character is <color=#FFFFFFFF>$[A1501]</color>, equip this card.\\nAfter $[A1501] equips this card, immediately use <color=#FFD780FF>$[S15013]</color> once.\\nAfter the <color=#FFFFFFFF>$[C115011]</color> created by your $[A1501], who had this card equipped, has converted to another Elemental Type: Deal +1 DMG of this Elemental Type.\\n(You must have $[A1501] in your deck to add this card to your deck.)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+            },
+            "A1501": "Chaotic Entropy",
+            "S15013": "S15013",
+            "C115011": {
+                "Name": "Large Wind Spirit",
+                "Desc": "<color=#FFFFFFFF>End Phase:</color> Deal 2 $[K105].\\n<color=#FFFFFFFF>$[K3]: 3</color>\\n\\n<color=#FFFFFFFF>After your character or Summon triggers a Swirl reaction:</color> Convert the Elemental Type of this card and change its DMG dealt to the element Swirled. (Can only be converted once before leaving the field)",
+                "Child": {
+                    "K105": {
+                        "Name": "{SPRITE_PRESET#2105}<color=#80FFD7FF>Anemo DMG</color>",
+                        "Desc": "Reacts with Elements if they are already applied:\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Cryo Swirl</color>: Deals 1 Cryo DMG to all opposing characters except the target\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Hydro Swirl</color>: Deals 1 Hydro DMG to all opposing characters except the target\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Pyro Swirl</color>: Deals 1 Pyro DMG to all opposing characters except the target\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Electro Swirl</color>: Deals 1 Electro DMG to all opposing characters except the target"
+                    },
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                        "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                    }
+                }
+            }
+        }
+    }
+}

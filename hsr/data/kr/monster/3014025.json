@@ -1,0 +1,162 @@
+{
+    "Id": 3014025,
+    "Name": "기억의 영역 밈 「무엇이 죽음으로 향하는가」",
+    "Desc": "특정 인지가 있는 실체로, 기억의 영역 속 잠재의식 조각이 쌓여서 만들어졌다.\\n신비하고 위험한 기억의 영역 밈이며, 꿈에서 존재해선 안 되는 「죽음」으로 여겨진다. 그것의 사악한 그림자는 열두 순간에서 배회하며, 그것이 다다른 곳은 예측 불가한 재앙이 반드시 발생한다. 날카로운 칼날로 흉보를 퍼뜨리고, 죽음의 그림자로 좋은꿈을 뒤덮는다",
+    "MonsterCampID": 11,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 2046,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/Monster_3014020.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "LittleBoss",
+    "SpeedBase": 144,
+    "StanceBase": 720,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.3000000002793968,
+    "Child": [
+        {
+            "Id": 3014025,
+            "AttackModifyRatio": 0.5555560009088367,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 5.454545000800863,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": 56,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Wind",
+                "Thunder",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 301402501,
+                    "SkillName": "장례의 입맞춤",
+                    "SkillDesc": "지정된 단일 아군에게 물리 속성 피해를 가한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 301402502,
+                    "SkillName": "죽음의 검은 비",
+                    "SkillDesc": "모든 아군에게 물리 속성 피해를 가한다",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 301402503,
+                    "SkillName": "마음을 담은 애도문",
+                    "SkillDesc": "자신이 가하는 피해를 증가시킨다. 지속 시간: 1턴. 약점 격파 상태에 빠지면 해제된다. 발동할 때마다 피해 증가를 1스택 획득하며, 이후 소환되는 [영면의 묘비]의 HP가 1칸 증가한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 301402504,
+                    "SkillName": "빛의 소멸",
+                    "SkillDesc": "[일몰] 상태에 진입한다. 아군이 일반 공격, 전투 스킬, 필살기를 발동할 때마다 1스택 중첩되며, [일몰]이 3스택까지 중첩되면 직전에 행동한 아군에게 즉시 [소실된 황혼의 색채]를 발동한다. [소실된 황혼의 색채]를 1회 발동하거나 약점이 격파되면 해당 효과는 해제된다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 301402505,
+                    "SkillName": "소실된 황혼의 색채",
+                    "SkillDesc": "직전에 일반 공격, 전투 스킬, 필살기를 발동한 아군 1명에게 즉시 치명적인 공격을 발동하여 [꿈의 죽음] 상태에 빠뜨린다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 301402506,
+                    "SkillName": "어두운 밤 속으로",
+                    "SkillDesc": "[드리워지는 밤의 장막] 상태에 진입하고 [약점 무효] 효과를 획득하며, 모든 아군의 에너지를 회복한다. 상태가 지속되는 동안 가장 먼저 행동한 아군 1명을 고정한다. 다음번 행동 시 [물이 물에 사라지듯]을 사용한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 301402507,
+                    "SkillName": "물이 물에 사라지듯",
+                    "SkillDesc": "고정된 모든 아군에게 치명적인 공격을 즉시 발동하여 [꿈의 죽음] 상태에 빠트린다. 고정된 목표가 없을 경우 랜덤 아군 1명에게 치명적인 공격을 발동하고 [꿈의 죽음] 상태에 빠트린다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 301402508,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 301402509,
+                    "SkillName": "슬픈 참사랑이 추모할 수 없는 곳",
+                    "SkillDesc": "아군이 [꿈의 죽음] 상태에 빠질 때마다 대응하는 [영면의 묘비] 1개를 소환한다. 모든 아군이 [꿈의 죽음] 상태에 빠지거나 전투 불능 상태일 경우 전투에 실패한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 301402510,
+                    "SkillName": "물이 물에 사라지듯",
+                    "SkillDesc": "고정된 모든 아군에게 치명적인 공격을 즉시 발동하여 [꿈의 죽음] 상태에 빠트린다. 고정된 목표가 없을 경우 랜덤 아군 2명에게 치명적인 공격을 발동하고 [꿈의 죽음] 상태에 빠트린다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 3014025,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 3014025,
+            "WorldLevel": 1,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 3014025,
+            "WorldLevel": 2,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 3014025,
+            "WorldLevel": 3,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 3014025,
+            "WorldLevel": 4,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 3014025,
+            "WorldLevel": 5,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 3014025,
+            "WorldLevel": 6,
+            "DisplayItemList": []
+        }
+    ]
+}

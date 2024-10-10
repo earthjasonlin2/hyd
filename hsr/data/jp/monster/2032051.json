@@ -1,0 +1,121 @@
+{
+    "Id": 2032051,
+    "Name": "天地を裂く爪",
+    "Desc": "心獣の爪。天空を切り、大地を裂く。",
+    "MonsterCampID": null,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 372,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/BossIconTemporary.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "MinionLv2",
+    "SpeedBase": 118,
+    "StanceBase": 240,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.3000000002793968,
+    "Child": [
+        {
+            "Id": 2032051,
+            "AttackModifyRatio": 0.8333330010063946,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Wind"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 203205101,
+                    "SkillName": "裂爪",
+                    "SkillDesc": "指定した味方単体および隣接する味方に少量の風属性ダメージを与える。",
+                    "DamageType": "Wind",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 203205102,
+                    "SkillName": "天穹裂断",
+                    "SkillDesc": "共鳴状態の時に発動する。指定した味方単体および隣接する味方に大量の風属性ダメージを与える。",
+                    "DamageType": "Wind",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 203205103,
+                    "SkillName": "守備",
+                    "SkillDesc": "「守備」状態に入る。弱点が撃破されていない時、受けるダメージがダウンする。弱点が撃破された時、行動順の遅延量がアップする。弱点撃破状態の時、受けるダメージがアップする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 2032051,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2032051,
+            "WorldLevel": 1,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2032051,
+            "WorldLevel": 2,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2032051,
+            "WorldLevel": 3,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2032051,
+            "WorldLevel": 4,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2032051,
+            "WorldLevel": 5,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2032051,
+            "WorldLevel": 6,
+            "DisplayItemList": []
+        }
+    ]
+}

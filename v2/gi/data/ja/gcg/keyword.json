@@ -1,0 +1,370 @@
+{
+    "1": {
+        "Name": "<color=#FFFFFFFF>戦闘アクション</color>",
+        "Desc": "味方が戦闘アクションを1回行った後、相手のターンに移ります。\\n<color=#FFFFFFFF>このようなルールを持つ手札を出すのはクイックアクションではなく、戦闘アクションと見なされます。</color>"
+    },
+    "2": {
+        "Name": "<color=#FFFFFFFF>クイックアクション</color>",
+        "Desc": "クイックアクションを1回行った後、あなたは他のアクションを続けて行うことができます。\\nただし、戦闘アクションを1回行うと、相手のターンに移ります。"
+    },
+    "3": {
+        "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+        "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+    },
+    "4": {
+        "Name": "<color=#FFFFFFFF>継続ラウンド数</color>",
+        "Desc": "各ラウンドのエンドフェーズで、<color=#FFFFFFFF>継続ラウンド数</color>が1マイナスされます。\\n<color=#FFFFFFFF>継続ラウンド数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+    },
+    "5": {
+        "Name": "<color=#FFFFFFFF>貫通ダメージ</color>",
+        "Desc": "貫通ダメージはダメージアップ効果を受けられません。また、シールド、ダメージ無効化などの効果で相殺されることもありません。"
+    },
+    "6": {
+        "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>シールド</color>",
+        "Desc": "該当シールドに守られたキャラがダメージを受けた時、シールドを消費してダメージと相殺することができます。"
+    },
+    "7": {
+        "Name": "<color=#FFFFFFFF>味方の出撃キャラと最も距離が近いキャラ</color>",
+        "Desc": "味方の出撃キャラと「最も距離が近い」相手のフィールド上キャラとは、文字通り位置が一番近い相手キャラのことを指す。\\n「最も距離が近い」キャラが複数いる場合、一番左側にいるキャラが「最も距離が近い」キャラとして見なされる。"
+    },
+    "51": {
+        "Name": "<color=#FFFFFFFF>重撃</color>",
+        "Desc": "味方のアクションが始まる前、元素サイコロの数が偶数の時に行われる「通常攻撃」は、「重撃」と見なされる。"
+    },
+    "52": {
+        "Name": "<color=#FFFFFFFF>落下攻撃</color>",
+        "Desc": "キャラを「出撃キャラ」にチェンジした後、本ラウンドにおける次の戦闘アクションが「通常攻撃」の場合、「落下攻撃」として見なされる。"
+    },
+    "53": {
+        "Name": "<color=#FFFFFFFF>スキル準備</color>",
+        "Desc": "スキルの中には、直接発動のできないものもあります。発動するには、一定のターン数<color=#FFFFFFFF>準備</color>する必要があります。\\nプレイヤーがアクションするとき、もし該当プレイヤーの「出撃キャラ」がスキルを<color=#FFFFFFFF>準備</color>している場合、該当プレイヤーのアクションはスキップされます。もしスキルの<color=#FFFFFFFF>準備</color>が完了した場合、そのスキルは直ちに発動されます（このような<color=#FFFFFFFF>準備</color>を必要とするスキルは、「スキルを発動した後」、「キャラが元素反応を起こした後」に生じる効果を発動させることができません）。\\nスキルを<color=#FFFFFFFF>準備</color>できるのは「出撃キャラ」のみとなります。スキルを<color=#FFFFFFFF>準備</color>している「出撃キャラ」が待機キャラにチェンジすると、スキルの<color=#FFFFFFFF>準備</color>は中断されます。"
+    },
+    "54": {
+        "Name": "<color=#FFFFFFFF>戦闘不能にならない</color>",
+        "Desc": "一部の効果によってキャラのHPが0になる時も、<color=#FFFFFFFF>戦闘不能にならず</color>、該当キャラのHPを一定値まで回復する。\\nこの時、キャラは<color=#FFFFFFFF>戦闘不能</color>にカウントされない。（そのため、キャラに装備または付与されたものは破棄されず、チャージもクリアされない。）"
+    },
+    "55": {
+        "Name": "<color=#FFFFFFFF>スタン</color>",
+        "Desc": "<color=#FFFFFFFF>キャラはスキルを発動できなくなる。</color>（ラウンド終了まで続く）"
+    },
+    "56": {
+        "Name": "<color=#FFFFFFFF>破棄</color>",
+        "Desc": "アクションカードまたはキャラのスキル効果によって、手札または山札からアクションカードを破棄する。"
+    },
+    "57": {
+        "Name": "<color=#FFFFFFFF>調和</color>",
+        "Desc": "元素調和を行うために、アクションカードを手札から破棄する。"
+    },
+    "58": {
+        "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#3008}特技</color>",
+        "Desc": "出撃キャラが「{SPRITE_PRESET#3008}特技」カードを装備している場合、対応する「{SPRITE_PRESET#3008}特技」を使用できる。\\n「{SPRITE_PRESET#3008}特技」の使用は「戦闘アクション」と見なされる。キャラが凍結、石化、スタンなどの原因でスキルを発動できない時、「{SPRITE_PRESET#3008}特技」も発動できなくなる。\\nキャラが「{SPRITE_PRESET#3008}特技」を発動した場合、スキル発動として見なされることなく、対応する効果（「スキルを発動した後」「キャラが元素反応を起こした後」などによって発動される効果）も発動されない。また、キャラが「{SPRITE_PRESET#3008}特技」で与えたダメージは、キャラ自身のダメージとして見なされない。"
+    },
+    "59": {
+        "Name": "<color=#FFFFFFFF>選択</color>",
+        "Desc": "所定の複数枚のカードのうちから1枚を選択して発動させる。"
+    },
+    "100": {
+        "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>",
+        "Desc": "物理ダメージは元素付着させたり、元素反応を起こしたりはしません。"
+    },
+    "101": {
+        "Name": "{SPRITE_PRESET#2101}<color=#99FFFFFF>氷元素ダメージ</color>",
+        "Desc": "{SPRITE_PRESET#2101}氷元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2103}<color=#FFFFFFFF>溶解</color>：ダメージ+2\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2104}<color=#FFFFFFFF>超電導</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2102}<color=#FFFFFFFF>凍結</color>：ダメージ+1、目標はこのラウンドで行動不能になる（物理ダメージまたは炎ダメージを受けると、即座に解除されるがダメージ+2となる）"
+    },
+    "151": {
+        "Name": "",
+        "Desc": ""
+    },
+    "102": {
+        "Name": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素ダメージ</color>",
+        "Desc": "{SPRITE_PRESET#2102}水元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2103}<color=#FFFFFFFF>蒸発</color>：ダメージ+2\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}<color=#FFFFFFFF>感電</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2101}<color=#FFFFFFFF>凍結</color>：ダメージ+1、目標はこのラウンドで行動不能になる（物理ダメージまたは炎ダメージを受けると、即座に解除されるがダメージ+2となる）\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}<color=#FFFFFFFF>開花</color>：ダメージ+1、次の炎元素または雷元素ダメージを+2できる「<color=#FFFFFFFF>草原核</color>」を生成する"
+    },
+    "152": {
+        "Name": "",
+        "Desc": ""
+    },
+    "103": {
+        "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>炎元素ダメージ</color>",
+        "Desc": "{SPRITE_PRESET#2103}炎元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>溶解</color>：ダメージ+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>蒸発</color>：ダメージ+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>過負荷</color>：ダメージ+2、目標を強制的に次のキャラにチェンジさせる\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>燃焼</color>：ダメージ+1、ラウンド終了時に炎元素ダメージを1与える「<color=#FFFFFFFF>燃焼烈焔</color>」を生成する（使用可能回数1回、最大2まで重ねられる）"
+    },
+    "104": {
+        "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素ダメージ</color>",
+        "Desc": "{SPRITE_PRESET#2104}雷元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>過負荷</color>：ダメージ+2、目標を強制的に次のキャラにチェンジさせる\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>超電導</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>感電</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>原激化</color>：ダメージ+1、次の草元素または雷元素ダメージを2回まで+1できる「<color=#FFFFFFFF>激化領域</color>」を生成する"
+    },
+    "105": {
+        "Name": "{SPRITE_PRESET#2105}<color=#80FFD7FF>風元素ダメージ</color>",
+        "Desc": "付着した元素と以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2101}<color=#FFFFFFFF>拡散（氷）</color>：目標以外の相手チーム全員に氷元素ダメージを1与える\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2102}<color=#FFFFFFFF>拡散（水）</color>：目標以外の相手チーム全員に水元素ダメージを1与える\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2103}<color=#FFFFFFFF>拡散（炎）</color>：目標以外の相手チーム全員に炎元素ダメージを1与える\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2104}<color=#FFFFFFFF>拡散（雷）</color>：目標以外の相手チーム全員に雷元素ダメージを1与える"
+    },
+    "106": {
+        "Name": "{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素ダメージ</color>",
+        "Desc": "付着した元素と以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2101}<color=#FFFFFFFF>結晶（氷）</color>：ダメージ+1、味方の出撃キャラはシールドを1獲得する（最大2まで重ねられる）\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2102}<color=#FFFFFFFF>結晶（水）</color>：ダメージ+1、味方の出撃キャラはシールドを1獲得する（最大2まで重ねられる）\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2103}<color=#FFFFFFFF>結晶（炎）</color>：ダメージ+1、味方の出撃キャラはシールドを1獲得する（最大2まで重ねられる）\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2104}<color=#FFFFFFFF>結晶（雷）</color>：ダメージ+1、味方の出撃キャラはシールドを1獲得する（最大2まで重ねられる）"
+    },
+    "107": {
+        "Name": "{SPRITE_PRESET#2107}<color=#7EC236FF>草元素ダメージ</color>",
+        "Desc": "{SPRITE_PRESET#2107}草元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>開花</color>：ダメージ+1、次の炎元素または雷元素ダメージを2アップできる「<color=#FFFFFFFF>草原核</color>」を生成する\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>燃焼</color>：ダメージ+1、ラウンド終了時に炎元素ダメージを1与える「<color=#FFFFFFFF>燃焼烈焔</color>」を生成する（使用可能回数1回、最大2回まで重ね掛け可能）\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>原激化</color>：ダメージ+1、次の草元素または雷元素ダメージを2回まで+1できる「<color=#FFFFFFFF>激化領域</color>」を生成する"
+    },
+    "111": {
+        "Name": "{SPRITE_PRESET#2101}",
+        "Desc": ""
+    },
+    "112": {
+        "Name": "{SPRITE_PRESET#2102}",
+        "Desc": ""
+    },
+    "113": {
+        "Name": "{SPRITE_PRESET#2103}",
+        "Desc": ""
+    },
+    "114": {
+        "Name": "{SPRITE_PRESET#2104}",
+        "Desc": ""
+    },
+    "115": {
+        "Name": "{SPRITE_PRESET#2105}",
+        "Desc": ""
+    },
+    "116": {
+        "Name": "{SPRITE_PRESET#2106}",
+        "Desc": ""
+    },
+    "117": {
+        "Name": "{SPRITE_PRESET#2107}",
+        "Desc": ""
+    },
+    "201": {
+        "Name": "<color=#99FFFFFF>{SPRITE_PRESET#2101}氷元素付着</color>",
+        "Desc": "ダメージによる方法以外で{SPRITE_PRESET#2101}氷元素が付着した場合、引き起こした元素反応にダメージ効果が乗りません。\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2103}<color=#FFFFFFFF>溶解</color>：効果なし\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2104}<color=#FFFFFFFF>超電導</color>：効果なし\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2102}<color=#FFFFFFFF>凍結</color>：目標はこのラウンドで行動不能になる（物理ダメージまたは炎ダメージを受けると、即座に解除されるがダメージ+2となる）"
+    },
+    "202": {
+        "Name": "<color=#80C0FFFF>{SPRITE_PRESET#2102}水元素付着</color>",
+        "Desc": "ダメージによる方法以外で{SPRITE_PRESET#2102}水元素が付着した場合、引き起こした元素反応にダメージ効果は乗りません。\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2103}<color=#FFFFFFFF>蒸発</color>：効果なし\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}<color=#FFFFFFFF>感電</color>：効果なし\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2101}<color=#FFFFFFFF>凍結</color>：目標はこのラウンドで行動不能になる（物理ダメージまたは炎ダメージを受けると、即座に解除されるがダメージ+2となる）\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}<color=#FFFFFFFF>開花</color>：次の炎元素または雷元素ダメージを2アップできる「<color=#FFFFFFFF>草原核</color>」を生成する"
+    },
+    "252": {
+        "Name": "",
+        "Desc": ""
+    },
+    "203": {
+        "Name": "<color=#FF9999FF>{SPRITE_PRESET#2103}炎元素付着</color>",
+        "Desc": "ダメージによる方法以外で{SPRITE_PRESET#2103}炎元素が付着した場合、引き起こした元素反応にダメージ効果が乗りません。\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>溶解</color>：効果なし\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>蒸発</color>：効果なし\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>過負荷</color>：目標を強制的に次のキャラにチェンジさせる\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>燃焼</color>：ラウンド終了時に炎元素ダメージを1与える「<color=#FFFFFFFF>燃焼烈焔</color>」を生成する（使用可能回数1回、最大2まで重ねられる）"
+    },
+    "204": {
+        "Name": "<color=#FFACFFFF>{SPRITE_PRESET#2104}雷元素付着</color>",
+        "Desc": "ダメージによる方法以外で{SPRITE_PRESET#2104}雷元素が付着した場合、引き起こした元素反応にダメージ効果は乗りません。\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>過負荷</color>：目標を強制的に次のキャラにチェンジさせる\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>超電導</color>：効果なし\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>感電</color>：効果なし\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>原激化</color>：次の草元素または雷元素ダメージを2回まで+1できる「<color=#FFFFFFFF>激化領域</color>」を生成する"
+    },
+    "207": {
+        "Name": "<color=#7EC236FF>{SPRITE_PRESET#2107}草元素付着</color>",
+        "Desc": "ダメージによる方法以外で{SPRITE_PRESET#2107}草元素が付着した場合、引き起こした元素反応にダメージ効果は乗りません。\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>開花</color>：次の炎元素または雷元素ダメージを+2できる「<color=#FFFFFFFF>草原核</color>」を生成する\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>燃焼</color>：ラウンド終了時に炎元素ダメージを1与える「<color=#FFFFFFFF>燃焼烈焔</color>」を生成する（使用可能回数1回、最大2回まで重ね掛け可能）\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>原激化</color>：次の草元素または雷元素ダメージを2回まで+1できる「<color=#FFFFFFFF>激化領域</color>」を生成する"
+    },
+    "212": {
+        "Name": "<color=#80C0FFFF>{SPRITE_PRESET#2102}水元素関連反応</color>",
+        "Desc": "{SPRITE_PRESET#2102}{SPRITE_PRESET#2103}<color=#FFFFFFFF>蒸発</color>：ダメージ+2\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}<color=#FFFFFFFF>感電</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2101}<color=#FFFFFFFF>凍結</color>：ダメージ+1、目標はこのラウンドで行動不能になる（物理ダメージまたは炎ダメージを受けると、即座に解除されるがダメージ+2となる）\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}<color=#FFFFFFFF>開花</color>：次の炎元素または雷元素ダメージを2アップできる「<color=#FFFFFFFF>草原核</color>」を生成する\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2102}<color=#FFFFFFFF>結晶（水）</color>：ダメージ+1、味方の出撃キャラはシールドを1獲得する（最大2まで重ね掛け可能）\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2102}<color=#FFFFFFFF>拡散（水）</color>：目標以外の相手チーム全員に水元素ダメージを1与える"
+    },
+    "213": {
+        "Name": "<color=#FF9999FF>{SPRITE_PRESET#2103}炎元素関連反応</color>",
+        "Desc": "{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>溶解</color>：ダメージ+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>蒸発</color>：ダメージ+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>過負荷</color>：ダメージ+2、目標を強制的に次のキャラにチェンジさせる\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>燃焼</color>：ダメージ+1、ラウンド終了時に炎元素ダメージを1与える「<color=#FFFFFFFF>燃焼烈焔</color>」を生成する（使用可能回数1回、最大2まで重ねられる）\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2103}<color=#FFFFFFFF>結晶（炎）</color>：ダメージ+1、味方の出撃キャラはシールドを1獲得する（最大2まで重ねられる）\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2103}<color=#FFFFFFFF>拡散（炎）</color>：目標以外の相手チーム全員に炎元素ダメージを1与える"
+    },
+    "217": {
+        "Name": "<color=#7EC236FF>{SPRITE_PRESET#2107}草元素関連反応</color>",
+        "Desc": "{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>開花</color>：ダメージ+1、次の炎元素または雷元素ダメージを+2できる「<color=#FFFFFFFF>草原核</color>」を生成する\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>燃焼</color>：ダメージ+1、ラウンド終了時に炎元素ダメージを1与える「<color=#FFFFFFFF>燃焼烈焔</color>」を生成する（使用可能回数1回、最大2回まで重ね掛け可能）\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>原激化</color>：ダメージ+1、次の草元素または雷元素ダメージを2回まで+1できる「<color=#FFFFFFFF>激化領域</color>」を生成する"
+    },
+    "301": {
+        "Name": "{SPRITE_PRESET#1101}氷元素",
+        "Desc": "<color=#99FFFFFF>{SPRITE_PRESET#1101}氷元素</color>の元素サイコロを消費してコストを支払い可能。\\n（{SPRITE_PRESET#1111}万能元素で代わりに支払うことも可能。）"
+    },
+    "302": {
+        "Name": "{SPRITE_PRESET#1102}水元素",
+        "Desc": "<color=#80C0FFFF>{SPRITE_PRESET#1102}水元素</color>の元素サイコロを消費してコストを支払い可能。\\n（{SPRITE_PRESET#1111}万能元素で代わりに支払うことも可能。）"
+    },
+    "303": {
+        "Name": "{SPRITE_PRESET#1103}炎元素",
+        "Desc": "<color=#FF9999FF>{SPRITE_PRESET#1103}炎元素</color>の元素サイコロを消費してコストを支払い可能。\\n（{SPRITE_PRESET#1111}万能元素で代わりに支払うことも可能。）"
+    },
+    "304": {
+        "Name": "{SPRITE_PRESET#1104}雷元素",
+        "Desc": "<color=#FFACFFFF>{SPRITE_PRESET#1104}雷元素</color>の元素サイコロを消費してコストを支払い可能。\\n（{SPRITE_PRESET#1111}万能元素で代わりに支払うことも可能。）"
+    },
+    "305": {
+        "Name": "{SPRITE_PRESET#1105}風元素",
+        "Desc": "<color=#80FFD7FF>{SPRITE_PRESET#1105}風元素</color>の元素サイコロを消費してコストを支払い可能。\\n（{SPRITE_PRESET#1111}万能元素で代わりに支払うことも可能。）"
+    },
+    "306": {
+        "Name": "{SPRITE_PRESET#1106}岩元素",
+        "Desc": "<color=#FFE699FF>{SPRITE_PRESET#1106}岩元素</color>の元素サイコロを消費してコストを支払い可能。\\n（{SPRITE_PRESET#1111}万能元素で代わりに支払うことも可能。）"
+    },
+    "307": {
+        "Name": "{SPRITE_PRESET#1107}草元素",
+        "Desc": "<color=#7EC236FF>{SPRITE_PRESET#1107}草元素</color>の元素サイコロを消費してコストを支払い可能。\\n（{SPRITE_PRESET#1111}万能元素で代わりに支払うことも可能。）"
+    },
+    "308": {
+        "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1108}同一元素</color>",
+        "Desc": "指定数の同じタイプの元素サイコロを消費して、コストを支払う必要があります。\\n（{SPRITE_PRESET#1111}万能元素は任意タイプの元素と同じものとして見なされます。）"
+    },
+    "309": {
+        "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1109}無色元素</color>",
+        "Desc": "任意タイプの元素サイコロと組み合わせてコストを支払うことができます。"
+    },
+    "310": {
+        "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}チャージ</color>",
+        "Desc": "キャラが「元素爆発」を発動するには、{SPRITE_PRESET#1110}チャージを消費する必要があります。\\nキャラが「元素スキル」や「通常攻撃」を発動した後、{SPRITE_PRESET#1110}チャージを1獲得できます。"
+    },
+    "311": {
+        "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1112}秘伝勅令</color>",
+        "Desc": "1回の対戦で、各プレイヤーは「{SPRITE_PRESET#3007}秘伝」カードを1枚しか使用できません。\\n「{SPRITE_PRESET#1112}秘伝勅令」が存在する場合のみ、「{SPRITE_PRESET#3007}秘伝」カードを使用できます。「{SPRITE_PRESET#3007}秘伝」カードを使用すると、その対戦の「{SPRITE_PRESET#1112}秘伝勅令」の使用チャンスが消費されます。"
+    },
+    "411": {
+        "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1111}万能元素</color>",
+        "Desc": "{SPRITE_PRESET#1111}万能元素は任意タイプの元素と見なされ、コストの支払いに使えます。"
+    },
+    "501": {
+        "Name": "元素爆発",
+        "Desc": "キャラの{SPRITE_PRESET#1110}チャージが満タンになると、すべての{SPRITE_PRESET#1110}チャージを消費し、高威力の「元素爆発」を発動できます。"
+    },
+    "502": {
+        "Name": "固有スキル",
+        "Desc": "該当スキルは常に有効であり、発動させる必要はありません。"
+    },
+    "1001": {
+        "Name": "<color=#FFFFFFFF>ランダム召喚物「ヒルチャール」</color>",
+        "Desc": "出現可能な「ヒルチャール」召喚物は合計4種類あります。\\n<color=#FFFFFFFF>ヒルチャール·氷矢</color>：エンドフェーズで{SPRITE_PRESET#2101}<color=#99FFFFFF>氷元素ダメージ</color>を1与える。使用可能回数2回。\\n<color=#FFFFFFFF>ヒルチャールシャーマン·水</color>：エンドフェーズで{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素ダメージ</color>を1与える。使用回数2回。\\n<color=#FFFFFFFF>ヒルチャール·突進</color>：エンドフェーズで{SPRITE_PRESET#2103}<color=#FF9999FF>炎元素ダメージ</color>を1与える。使用回数2回。\\n<color=#FFFFFFFF>ヒルチャール·雷矢</color>：エンドフェーズで{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素ダメージ</color>を1与える。使用回数2回。"
+    },
+    "1002": {
+        "Name": "<color=#FFFFFFFF>雷元素付与</color>",
+        "Desc": "付与されたキャラの与える{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>が{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素ダメージ</color>へと変わる。\\n<color=#FFFFFFFF>継続ラウンド数</color>：2"
+    },
+    "1003": {
+        "Name": "<color=#FFFFFFFF>鳴煌護持</color>",
+        "Desc": "付与されたキャラの<color=#FFFFFFFF>元素スキル</color>および<color=#FFFFFFFF>元素爆発</color>の与えるダメージ+1。\\n<color=#FFFFFFFF>使用可能回数：2</color>"
+    },
+    "1004": {
+        "Name": "<color=#FFFFFFFF>ファデュイの伏兵</color>",
+        "Desc": "「ファデュイの伏兵」は自身のいるチームのキャラがスキルを発動した後に効果を発動し、自身のいるチームの出撃キャラにダメージを与える。（各ラウンドで1回のみ）\\n出現可能な「ファデュイの伏兵」は合計4種類。\\n<color=#FFFFFFFF>氷蛍術師</color>：発動すると{SPRITE_PRESET#2101}<color=#99FFFFFF>氷元素ダメージ</color>を1与える。使用可能回数2回。\\n<color=#FFFFFFFF>ミラーメイデン</color>：発動すると{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素ダメージ</color>を1与える。使用可能回数2回。\\n<color=#FFFFFFFF>遊撃兵·炎銃</color>：発動すると{SPRITE_PRESET#2103}<color=#FF9999FF>炎元素ダメージ</color>を1与える。使用可能回数2回。\\n<color=#FFFFFFFF>前鋒軍·雷ハンマー</color>：発動すると{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素ダメージ</color>を1与える。使用可能回数2回。"
+    },
+    "1005": {
+        "Name": "<color=#FFFFFFFF>断流</color>",
+        "Desc": "<color=#FFFFFFFF>付与されたキャラが倒された後</color>、そのチームの出撃キャラに「断流」を付与する。\\n（<color=#FFFFFFFF>「近接モード」</color>にある<color=#FFFFFFFF>タルタリヤ</color>が付与されたキャラを攻撃する時、追加ダメージを与える。）"
+    },
+    "1006": {
+        "Name": "<color=#FFFFFFFF>淵炎の加護</color>",
+        "Desc": "付与されたキャラは<color=#FFFFFFFF>{SPRITE_PRESET#4007}<color=#FFFFFFFF>シールド</color>を2</color>獲得する。\\n<color=#FFFFFFFF>該当{SPRITE_PRESET#4007}シールドが尽きた後</color>、相手のキャラ全員に<color=#FFFFFFFF>貫通ダメージ</color>を1与える。"
+    },
+    "1007": {
+        "Name": "<color=#FFFFFFFF>乱神の怪力</color>",
+        "Desc": "<color=#FFFFFFFF>付与されたキャラが<color=#FFFFFFFF>重撃</color>を行う時</color>、与えるダメージ+1。<color=#FFFFFFFF>使用可能回数</color>が2以上の場合、必要な<color=#FFFFFFFF>{SPRITE_PRESET#1109}無色元素</color>-1。\\n<color=#FFFFFFFF><color=#FFFFFFFF>使用可能回数</color>：1</color>（最大3まで重ねられる）"
+    },
+    "1008": {
+        "Name": "<color=#FFFFFFFF>蔵蘊の花矢</color>",
+        "Desc": "<color=#FFFFFFFF>エンドフェーズ：</color>{SPRITE_PRESET#2107}<color=#7EC236FF>草元素ダメージ</color>を1与える。\\n<color=#FFFFFFFF>使用可能回数：1</color>（最大2まで重ねられる）"
+    },
+    "1009": {
+        "Name": "<color=#FFFFFFFF>血梅香</color>",
+        "Desc": "<color=#FFFFFFFF>エンドフェーズ：</color>付与されたキャラに{SPRITE_PRESET#2103}<color=#FF9999FF>炎元素ダメージ</color>を1与える。\\n<color=#FFFFFFFF><color=#FFFFFFFF>使用可能回数</color>：1</color>"
+    },
+    "1010": {
+        "Name": "<color=#FFFFFFFF>丹火の印</color>",
+        "Desc": "<color=#FFFFFFFF>キャラが<color=#FFFFFFFF>重撃</color>を行う時</color>、与えるダメージ+2。\\n<color=#FFFFFFFF><color=#FFFFFFFF>使用可能回数</color>：1</color>（最大2まで重ねられる）"
+    },
+    "1011": {
+        "Name": "<color=#FFFFFFFF>豊穣の核</color>",
+        "Desc": "<color=#FFFFFFFF>エンドフェーズ：</color>{SPRITE_PRESET#2107}<color=#7EC236FF>草元素ダメージ</color>を2与える。\\n<color=#FFFFFFFF><color=#FFFFFFFF>使用可能回数</color>：1</color>（最大3まで重ねられる）\\n<color=#FFFFFFFF>味方がラウンド終了宣言をする時</color>、このカードの<color=#FFFFFFFF>使用可能回数</color>が2以上の場合、{SPRITE_PRESET#2107}<color=#7EC236FF>草元素ダメージ</color>を2与える。（<color=#FFFFFFFF>使用可能回数</color>の消費が必要）"
+    },
+    "1012": {
+        "Name": "<color=#FFFFFFFF>対応元素の力を吸収する</color>",
+        "Desc": "若陀龍王は、{SPRITE_PRESET#2101}<color=#99FFFFFF>氷</color>/{SPRITE_PRESET#2102}<color=#80C0FFFF>水</color>/{SPRITE_PRESET#2103}<color=#FF9999FF>炎</color>/{SPRITE_PRESET#2104}<color=#FFACFFFF>雷</color>元素の力を吸収することができる。（同時に1つの元素のみ吸収可能）\\n<color=#FFFFFFFF>若陀龍王が上記元素の力を吸収した時</color>、吸収した元素のタイプに応じて、スキル{SPRITE_PRESET#2101}<color=#99FFFFFF>氷棘の強襲</color>/{SPRITE_PRESET#2102}<color=#80C0FFFF>激流の掃討</color>/{SPRITE_PRESET#2103}<color=#FF9999FF>熾焔の掃討</color>/{SPRITE_PRESET#2104}<color=#FFACFFFF>雷霆の強襲</color>を獲得する。"
+    },
+    "1013": {
+        "Name": "<color=#FFFFFFFF>「焚尽の灼炎魔女」</color>",
+        "Desc": "「淑女」は「焚尽の灼炎魔女」状態に永久的に切り替わることができる。\\n切り替わった後、「淑女」の元素タイプは{SPRITE_PRESET#2101}<color=#99FFFFFF>氷元素</color>から{SPRITE_PRESET#2103}<color=#FF9999FF>炎元素</color>へと変わる。\\n切り替わった後、本キャラは「焚尽の灼炎魔女」のスキルを発動できるが、「淑女」の元のスキルは発動できなくなる。"
+    },
+    "1014": {
+        "Name": "<color=#FFFFFFFF>「無力化状態」</color>",
+        "Desc": "「エネルギー特徴：ウーシア」、または「エネルギー特徴：プネウマ」を持つ「クロックワーク·マシナリー」は、逆の性質を持つ攻撃を受けると、プネウムシア対消滅が起こり、「無力化状態」にチェンジする。\\n「クロックワーク·マシナリー」が「無力化状態」にある場合、元のスキルは使用できなくなり、「無力化状態」のスキルのみ使用可能になる。「無力化状態」のスキルは元素ダメージを与えられず、物理ダメージのみ与える。"
+    },
+    "1015": {
+        "Name": "プネウムシア対消滅",
+        "Desc": "「ウーシア」を持つキャラが「{SPRITE_PRESET#3505}アルケー：プネウマ」を帯びたダメージを受けた後、または「プネウマ」を持つキャラが「{SPRITE_PRESET#3504}アルケー：ウーシア」を帯びたダメージを受けた後、プネウムシア対消滅が発生する。\\nカードによって、プネウムシア対消滅が発生した際に異なる効果が発動することがある。"
+    },
+    "1016": {
+        "Name": "極寒",
+        "Desc": "<color=#FFFFFFFF>エンドフェーズ：</color>付与されたキャラに{SPRITE_PRESET#2101}<color=#99FFFFFF>氷元素ダメージ</color>を1与える。\\n<color=#FFFFFFFF><color=#FFFFFFFF>使用可能回数</color>：1</color>（付与されたキャラが<color=#FFFFFFFF>灼熱</color>を付与された時、この効果を解除する。）"
+    },
+    "1017": {
+        "Name": "灼熱",
+        "Desc": "<color=#FFFFFFFF>エンドフェーズ：</color>付与されたキャラに{SPRITE_PRESET#2103}<color=#FF9999FF>炎元素ダメージ</color>を1与える。\\n<color=#FFFFFFFF><color=#FFFFFFFF>使用可能回数</color>：1</color>（付与されたキャラが<color=#FFFFFFFF>極寒</color>を付与された時、この効果を解除する。）"
+    },
+    "1018": {
+        "Name": "烈炎侍立シールド",
+        "Desc": "味方の出撃キャラは<color=#FFFFFFFF>{SPRITE_PRESET#4007}<color=#FFFFFFFF>シールド</color>を1</color>獲得する。（最大3まで重ねられる）"
+    },
+    "1019": {
+        "Name": "グルバブル",
+        "Desc": "キャラはスキルを発動できなくなる。（ラウンド終了まで続く）"
+    },
+    "1020": {
+        "Name": "<color=#FFFFFFFF>衡平な裁量</color>",
+        "Desc": "<color=#D3BC8E>通常攻撃</color>\\n（1ターンの準備が必要）\\n{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素ダメージ</color>を2与える。本キャラのHPが6以上の場合、このダメージ+1、かつ自身に貫通ダメージを1与える。"
+    },
+    "1021": {
+        "Name": "怒った太郎丸",
+        "Desc": "<color=#FFFFFFFF>エンドフェーズ：</color>{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>を2与える。\\n<color=#FFFFFFFF><color=#FFFFFFFF>使用可能回数</color>：2</color>"
+    },
+    "1022": {
+        "Name": "<color=#FFFFFFFF>暗流の呪い</color>",
+        "Desc": "<color=#FFFFFFFF>チームのキャラが元素スキル、または元素爆発を発動する時</color>、必要な元素サイコロの数+1。\\n<color=#FFFFFFFF><color=#FFFFFFFF>使用可能回数</color>：2</color>"
+    },
+    "1023": {
+        "Name": "<color=#FFFFFFFF>重甲ヤドカニの殻</color>",
+        "Desc": "1層につき{SPRITE_PRESET#4007}<color=#FFFFFFFF>シールド</color>を1提供し、付与されたキャラを守る。"
+    },
+    "1024": {
+        "Name": "<color=#FFFFFFFF>風圧崩潰</color>",
+        "Desc": "<color=#FFFFFFFF>エンドフェーズ：</color>付与されたキャラを「出撃キャラ」にチェンジする。\\n<color=#FFFFFFFF><color=#FFFFFFFF>使用可能回数</color>：1</color>\\n（この状態は同一チーム内で重複不可）"
+    },
+    "1025": {
+        "Name": "<color=#FFFFFFFF>悠遠なる雷暴</color>",
+        "Desc": "<color=#FFFFFFFF>エンドフェーズ：</color>付与されたキャラに<color=#FFFFFFFF>貫通ダメージ</color>を2与える。\\n<color=#FFFFFFFF><color=#FFFFFFFF>使用可能回数</color>：1</color>"
+    },
+    "1027": {
+        "Name": "<color=#FFFFFFFF>星々を秘めた体</color>",
+        "Desc": "1につき、呑星の鯨の最大HP+1。"
+    },
+    "1028": {
+        "Name": "<color=#FFFFFFFF>砂と夢</color>",
+        "Desc": "<color=#FFFFFFFF>キャラに「{SPRITE_PRESET#3006}天賦」を使用する時、またはキャラがスキルを発動する時</color>、必要な元素サイコロの数-3。\\n<color=#FFFFFFFF>使用可能回数：1</color>"
+    },
+    "1029": {
+        "Name": "<color=#FFFFFFFF>テンション</color>",
+        "Desc": "味方の与えるダメージ+1。（キャラが引き起こした拡散ダメージを含む）\\n<color=#FFFFFFFF>使用可能回数：1</color>（上限なしで重ねられる）"
+    },
+    "1030": {
+        "Name": "<color=#FFFFFFFF>万民のまなざし</color>",
+        "Desc": "<color=#FFFFFFFF>キャラが通常攻撃を行う時</color>、キャラの与える{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>が{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素ダメージ</color>へと変わる。キャラが「{SPRITE_PRESET#3504}ウーシア」状態の場合、味方の待機キャラ全員のHPを1回復する。キャラが「{SPRITE_PRESET#3505}プネウマ」状態の場合、このダメージ+2、ただしHPを最も失っていない味方のキャラに貫通ダメージを1与える。\\n<color=#FFFFFFFF>使用可能回数：1</color>"
+    },
+    "1031": {
+        "Name": "<color=#FFFFFFFF>サロンメンバー</color>",
+        "Desc": "<color=#FFFFFFFF>エンドフェーズ：</color>{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素ダメージ</color>を1与える。味方にHPが6以上のキャラが存在する場合、HPを最も失っていない味方キャラ1人に<color=#FFFFFFFF>貫通ダメージ</color>を1与え、さらに{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素ダメージ</color>を1与える。\\n<color=#FFFFFFFF><color=#FFFFFFFF>使用可能回数</color>：2</color>（最大4つまで重ねられる）"
+    },
+    "1032": {
+        "Name": "<color=#FFFFFFFF>衆の水の歌い手</color>",
+        "Desc": "<color=#FFFFFFFF>エンドフェーズ：</color>味方のチーム全員のHPを1回復する。味方にHPが5以下のキャラが存在する場合、さらに、HPを最も失っているキャラのHPを1回復する。\\n<color=#FFFFFFFF><color=#FFFFFFFF>使用可能回数</color>：2</color>（最大4つまで重ねられる）"
+    },
+    "1033": {
+        "Name": "<color=#FFFFFFFF>炸裂スキャン</color>",
+        "Desc": "<color=#FFFFFFFF>双方がアクションをする前に</color>、味方のフィールドに草原核または豊穣の核が存在した場合、その<color=#FFFFFFFF>使用可能回数</color>-1。そして、味方山札の一番上のカードを1枚<color=#FFFFFFFF>破棄</color>する。その後、<color=#FFFFFFFF>破棄</color>したカードの元素サイコロのコスト分の{SPRITE_PRESET#2107}<color=#7EC236FF>草元素ダメージ</color>を与える。\\n<color=#FFFFFFFF><color=#FFFFFFFF>使用可能回数</color>：1</color>（最大3つまで重ねられる）"
+    },
+    "2001": {
+        "Name": "太郎丸の貯金",
+        "Desc": "コスト：0{SPRITE_PRESET#1108}\\n{SPRITE_PRESET#1111}万能元素を1個生成する。"
+    },
+    "2002": {
+        "Name": "「清掃作業」",
+        "Desc": "コスト：0{SPRITE_PRESET#1108}\\n味方の出撃キャラが次に与えるダメージ+1。（最大+2まで重ねられる）"
+    },
+    "2003": {
+        "Name": "海底の宝物",
+        "Desc": "コスト：0{SPRITE_PRESET#1108}\\nランダムで基本元素サイコロを1個生成し、味方の出撃キャラのHPを1回復する。（各キャラは各ラウンドでこの効果による治療を1回のみ受けられる）"
+    },
+    "2004": {
+        "Name": "禁忌の知識",
+        "Desc": "コスト：0{SPRITE_PRESET#1108}\\nこのカードは元素調和に使用できない。「禁忌の知識」は各ラウンドで1枚のみ使用可能。\\n味方の出撃キャラに貫通ダメージを1与え、手札を1枚引く。"
+    }
+}

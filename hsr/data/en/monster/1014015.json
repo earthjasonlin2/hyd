@@ -1,0 +1,204 @@
+{
+    "Id": 1014015,
+    "Name": "Svarog",
+    "Desc": "An ancient relic from the Old World, that was originally used as an automated control unit by the Geomarrow Development Group. Unlike the vast majority of machines that lack intellect and can only act on command, Svarog is capable of much more complex thinking.\\nIn battle, Svarog summons mechanical arms to grab and control his enemies, delivering devastating attacks.",
+    "MonsterCampID": null,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 697.5000000004657,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/Monster_1014010.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "LittleBoss",
+    "SpeedBase": 144,
+    "StanceBase": 360,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.3000000002793968,
+    "Child": [
+        {
+            "Id": 1014015,
+            "AttackModifyRatio": 0.6666670010890812,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 20,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Thunder",
+                "Wind",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 101401501,
+                    "SkillName": "Banishing Punch",
+                    "SkillDesc": "Deals Physical DMG to a single target.",
+                    "DamageType": "Physical",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 101401502,
+                    "SkillName": "Burning Beam",
+                    "SkillDesc": "Deals Physical DMG to a single target and delays their action.",
+                    "DamageType": "Physical",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 101401503,
+                    "SkillName": "Oppressive Embrace",
+                    "SkillDesc": "Restrains a single target, preventing them from taking action or being targeted. The Restraint is dispelled if the Auxiliary Robot Arm Unit suffers Weakness Break.",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 101401504,
+                    "SkillName": "Oversaturated Bombardment",
+                    "SkillDesc": "Deals massive Physical DMG to all targets, with a high chance to reduce their DEF. This debuff can stack.",
+                    "DamageType": "Physical",
+                    "SPHitBase": 2
+                },
+                {
+                    "Id": 101401505,
+                    "SkillName": "Controlled Blasting",
+                    "SkillDesc": "The Auxiliary Robot Arm Unit explodes, dealing massive Physical DMG to a single target.",
+                    "DamageType": "Physical",
+                    "SPHitBase": 25
+                },
+                {
+                    "Id": 101401506,
+                    "SkillName": "Overload Warning",
+                    "SkillDesc": "Auxiliary Robot Arm Unit enters Overload Countdown, causing the next action to cast Controlled Blasting.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401507,
+                    "SkillName": "Boost Deployment",
+                    "SkillDesc": "Summons Auxiliary Robot Arm Unit.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401508,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401509,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401510,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401511,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401512,
+                    "SkillName": "Power Amplification",
+                    "SkillDesc": "Slightly increases the DMG dealt by all friendly units. This DMG boosting effect is stackable.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401513,
+                    "SkillName": "Emergency Support",
+                    "SkillDesc": "Summons Automaton Beetle and Automaton Hound at random.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401514,
+                    "SkillName": "Tactical Support",
+                    "SkillDesc": "Summons Automaton Direwolf.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401515,
+                    "SkillName": "Boost Deployment",
+                    "SkillDesc": "Summons 2 Auxiliary Robot Arm Units.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101401516,
+                    "SkillName": "Boost Deployment",
+                    "SkillDesc": "Summons 2 Auxiliary Robot Arm Units with 1 in the Overload state.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 1014015,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1014015,
+            "WorldLevel": 1,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1014015,
+            "WorldLevel": 2,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1014015,
+            "WorldLevel": 3,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1014015,
+            "WorldLevel": 4,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1014015,
+            "WorldLevel": 5,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1014015,
+            "WorldLevel": 6,
+            "DisplayItemList": []
+        }
+    ]
+}

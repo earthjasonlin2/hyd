@@ -1,0 +1,39 @@
+{
+    "Type": "Action",
+    "Name": "終焉を嘆く詩",
+    "Title": "別れの歌·終焉を嘆く詩",
+    "Desc": "「…しかしどんな風も」\\n「あなたの眼差しをもたらしてはくれない…」",
+    "Source": "",
+    "Icon": "UI_Gcg_CardFace_Modify_Weapon_Widsith",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PAIMON",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "武器",
+        "弓"
+    ],
+    "Talent": {
+        "Name": "終焉を嘆く詩",
+        "Desc": "<color=#FFFFFFFF>キャラの与えるダメージ+1</color>。\\n<color=#FFFFFFFF>キャラが「元素爆発」を発動した後</color>、<color=#FFFFFFFF>「$[C301102]」</color>を生成する。（味方キャラの与えるダメージ+1、$[K4]：2）\\n（<color=#FFFFFFFF>「{SPRITE_PRESET#3202}弓」キャラ</color>のみ装備可能。キャラが装備できる「{SPRITE_PRESET#3003}武器」は1つのみ）",
+        "Child": {
+            "C301102": {
+                "Name": "千年の大楽章·別れの歌",
+                "Desc": "味方キャラの与えるダメージ+1。\\n<color=#FFFFFFFF>$[K4]：2</color>",
+                "Child": {
+                    "K4": {
+                        "Name": "<color=#FFFFFFFF>継続ラウンド数</color>",
+                        "Desc": "各ラウンドのエンドフェーズで、<color=#FFFFFFFF>継続ラウンド数</color>が1マイナスされます。\\n<color=#FFFFFFFF>継続ラウンド数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                    }
+                }
+            },
+            "K4": {
+                "Name": "<color=#FFFFFFFF>継続ラウンド数</color>",
+                "Desc": "各ラウンドのエンドフェーズで、<color=#FFFFFFFF>継続ラウンド数</color>が1マイナスされます。\\n<color=#FFFFFFFF>継続ラウンド数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+            }
+        }
+    }
+}

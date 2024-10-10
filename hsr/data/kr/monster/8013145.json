@@ -1,0 +1,736 @@
+{
+    "Id": 8013145,
+    "Name": "반물질 엔진",
+    "Desc": "힘의 궁극적인 구현, 그 뒤에 축적되는 힘의 형태는 알려지지 않은 채로 남아 있다.\\n반물질 엔진은 다른 적들에게 에너지를 제공하고 그 능력을 강화해준다",
+    "MonsterCampID": null,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 1674,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/BossIconTemporary.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "Elite",
+    "SpeedBase": 90,
+    "StanceBase": 420,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.20000000018626451,
+    "Child": [
+        {
+            "Id": 8013145,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Fire",
+                "Ice",
+                "Wind"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.6000000005587935
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.6000000005587935
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 801314501,
+                    "SkillName": "청허의 분열",
+                    "SkillDesc": "단일 적 [재해의 오른손]에게 [증폭] 상태를 부여하고, 해당 강화 레벨이 1 증가한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314502,
+                    "SkillName": "침습하는 재난",
+                    "SkillDesc": "단일 적 [여명의 왼손]에게 [증폭] 상태를 부여하고, 해당 강화 레벨이 1 증가한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314503,
+                    "SkillName": "엔진 부스트",
+                    "SkillDesc": "자신을 제외한 모든 적에게 [증폭] 상태를 부여하고, 해당 강화 레벨이 1 증가한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314504,
+                    "SkillName": "역순 인멸",
+                    "SkillDesc": "단일 아군에게 양자 속성과 허수 속성 피해를 가한다",
+                    "DamageType": "",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 801314505,
+                    "SkillName": "재해의 전조",
+                    "SkillDesc": "차지 상태에 진입한다. 다음번 행동 시 모든 아군에게 [다가온 심판의 날]을 발동한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314506,
+                    "SkillName": "다가온 심판의 날",
+                    "SkillDesc": "모든 아군에게 양자 속성과 허수 속성 피해를 가한다. 공격 후 모든 아군을 랜덤으로 [양자 인챈트] 또는 [허수 인챈트] 상태에 빠트린다",
+                    "DamageType": "",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 801314507,
+                    "SkillName": "종말의 저주",
+                    "SkillDesc": "모든 아군을 랜덤으로 [양자 인챈트] 또는 [허수 인챈트] 상태에 빠트린다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314508,
+                    "SkillName": "집단 감염",
+                    "SkillDesc": "모든 아군에게 양자 속성과 허수 속성 피해를 가한다",
+                    "DamageType": "",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 801314509,
+                    "SkillName": "충돌 인멸",
+                    "SkillDesc": "자신이 스킬을 발동해 단일 아군을 동시에 [양자 인챈트]와 [허수 인챈트] 상태에 빠트릴 시, 해당 목표의 [양자 인챈트]와 [허수 인챈트] 상태를 해제하고, 해당 목표에게 소량의 양자 속성 피해와 허수 속성 피해를 가하며, 동시에 높은 확률로 해당 목표를 [<u>감금</u>] 상태에 빠트린다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314510,
+                    "SkillName": "거짓된 죽음",
+                    "SkillDesc": "치명적인 공격을 받으면 [거짓된 죽음] 상태에 빠진다",
+                    "DamageType": "",
+                    "SPHitBase": 15
+                }
+            ]
+        },
+        {
+            "Id": 801314501,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Fire",
+                "Ice",
+                "Wind"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.6000000005587935
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.6000000005587935
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 801314501,
+                    "SkillName": "청허의 분열",
+                    "SkillDesc": "단일 적 [재해의 오른손]에게 [증폭] 상태를 부여하고, 해당 강화 레벨이 1 증가한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314502,
+                    "SkillName": "침습하는 재난",
+                    "SkillDesc": "단일 적 [여명의 왼손]에게 [증폭] 상태를 부여하고, 해당 강화 레벨이 1 증가한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314503,
+                    "SkillName": "엔진 부스트",
+                    "SkillDesc": "자신을 제외한 모든 적에게 [증폭] 상태를 부여하고, 해당 강화 레벨이 1 증가한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314504,
+                    "SkillName": "역순 인멸",
+                    "SkillDesc": "단일 아군에게 양자 속성과 허수 속성 피해를 가한다",
+                    "DamageType": "",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 801314505,
+                    "SkillName": "재해의 전조",
+                    "SkillDesc": "차지 상태에 진입한다. 다음번 행동 시 모든 아군에게 [다가온 심판의 날]을 발동한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314506,
+                    "SkillName": "다가온 심판의 날",
+                    "SkillDesc": "모든 아군에게 양자 속성과 허수 속성 피해를 가한다. 공격 후 모든 아군을 랜덤으로 [양자 인챈트] 또는 [허수 인챈트] 상태에 빠트린다",
+                    "DamageType": "",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 801314507,
+                    "SkillName": "종말의 저주",
+                    "SkillDesc": "모든 아군을 랜덤으로 [양자 인챈트] 또는 [허수 인챈트] 상태에 빠트린다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314508,
+                    "SkillName": "집단 감염",
+                    "SkillDesc": "모든 아군에게 양자 속성과 허수 속성 피해를 가한다",
+                    "DamageType": "",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 801314509,
+                    "SkillName": "충돌 인멸",
+                    "SkillDesc": "자신이 스킬을 발동해 단일 아군을 동시에 [양자 인챈트]와 [허수 인챈트] 상태에 빠트릴 시, 해당 목표의 [양자 인챈트]와 [허수 인챈트] 상태를 해제하고, 해당 목표에게 소량의 양자 속성 피해와 허수 속성 피해를 가하며, 동시에 높은 확률로 해당 목표를 [<u>감금</u>] 상태에 빠트린다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314510,
+                    "SkillName": "거짓된 죽음",
+                    "SkillDesc": "치명적인 공격을 받으면 [거짓된 죽음] 상태에 빠진다",
+                    "DamageType": "",
+                    "SPHitBase": 15
+                }
+            ]
+        },
+        {
+            "Id": 801314502,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Fire",
+                "Ice",
+                "Wind"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.6000000005587935
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.6000000005587935
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 801314501,
+                    "SkillName": "청허의 분열",
+                    "SkillDesc": "단일 적 [재해의 오른손]에게 [증폭] 상태를 부여하고, 해당 강화 레벨이 1 증가한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314502,
+                    "SkillName": "침습하는 재난",
+                    "SkillDesc": "단일 적 [여명의 왼손]에게 [증폭] 상태를 부여하고, 해당 강화 레벨이 1 증가한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314503,
+                    "SkillName": "엔진 부스트",
+                    "SkillDesc": "자신을 제외한 모든 적에게 [증폭] 상태를 부여하고, 해당 강화 레벨이 1 증가한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314504,
+                    "SkillName": "역순 인멸",
+                    "SkillDesc": "단일 아군에게 양자 속성과 허수 속성 피해를 가한다",
+                    "DamageType": "",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 801314505,
+                    "SkillName": "재해의 전조",
+                    "SkillDesc": "차지 상태에 진입한다. 다음번 행동 시 모든 아군에게 [다가온 심판의 날]을 발동한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314506,
+                    "SkillName": "다가온 심판의 날",
+                    "SkillDesc": "모든 아군에게 양자 속성과 허수 속성 피해를 가한다. 공격 후 모든 아군을 랜덤으로 [양자 인챈트] 또는 [허수 인챈트] 상태에 빠트린다",
+                    "DamageType": "",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 801314507,
+                    "SkillName": "종말의 저주",
+                    "SkillDesc": "모든 아군을 랜덤으로 [양자 인챈트] 또는 [허수 인챈트] 상태에 빠트린다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314508,
+                    "SkillName": "집단 감염",
+                    "SkillDesc": "모든 아군에게 양자 속성과 허수 속성 피해를 가한다",
+                    "DamageType": "",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 801314509,
+                    "SkillName": "충돌 인멸",
+                    "SkillDesc": "자신이 스킬을 발동해 단일 아군을 동시에 [양자 인챈트]와 [허수 인챈트] 상태에 빠트릴 시, 해당 목표의 [양자 인챈트]와 [허수 인챈트] 상태를 해제하고, 해당 목표에게 소량의 양자 속성 피해와 허수 속성 피해를 가하며, 동시에 높은 확률로 해당 목표를 [<u>감금</u>] 상태에 빠트린다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314510,
+                    "SkillName": "거짓된 죽음",
+                    "SkillDesc": "치명적인 공격을 받으면 [거짓된 죽음] 상태에 빠진다",
+                    "DamageType": "",
+                    "SPHitBase": 15
+                }
+            ]
+        },
+        {
+            "Id": 801314503,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Fire",
+                "Ice",
+                "Wind"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.6000000005587935
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.6000000005587935
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 801314501,
+                    "SkillName": "청허의 분열",
+                    "SkillDesc": "단일 적 [재해의 오른손]에게 [증폭] 상태를 부여하고, 해당 강화 레벨이 1 증가한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314502,
+                    "SkillName": "침습하는 재난",
+                    "SkillDesc": "단일 적 [여명의 왼손]에게 [증폭] 상태를 부여하고, 해당 강화 레벨이 1 증가한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314503,
+                    "SkillName": "엔진 부스트",
+                    "SkillDesc": "자신을 제외한 모든 적에게 [증폭] 상태를 부여하고, 해당 강화 레벨이 1 증가한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314504,
+                    "SkillName": "역순 인멸",
+                    "SkillDesc": "단일 아군에게 양자 속성과 허수 속성 피해를 가한다",
+                    "DamageType": "",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 801314505,
+                    "SkillName": "재해의 전조",
+                    "SkillDesc": "차지 상태에 진입한다. 다음번 행동 시 모든 아군에게 [다가온 심판의 날]을 발동한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314506,
+                    "SkillName": "다가온 심판의 날",
+                    "SkillDesc": "모든 아군에게 양자 속성과 허수 속성 피해를 가한다. 공격 후 모든 아군을 랜덤으로 [양자 인챈트] 또는 [허수 인챈트] 상태에 빠트린다",
+                    "DamageType": "",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 801314507,
+                    "SkillName": "종말의 저주",
+                    "SkillDesc": "모든 아군을 랜덤으로 [양자 인챈트] 또는 [허수 인챈트] 상태에 빠트린다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314508,
+                    "SkillName": "집단 감염",
+                    "SkillDesc": "모든 아군에게 양자 속성과 허수 속성 피해를 가한다",
+                    "DamageType": "",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 801314509,
+                    "SkillName": "충돌 인멸",
+                    "SkillDesc": "자신이 스킬을 발동해 단일 아군을 동시에 [양자 인챈트]와 [허수 인챈트] 상태에 빠트릴 시, 해당 목표의 [양자 인챈트]와 [허수 인챈트] 상태를 해제하고, 해당 목표에게 소량의 양자 속성 피해와 허수 속성 피해를 가하며, 동시에 높은 확률로 해당 목표를 [<u>감금</u>] 상태에 빠트린다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314510,
+                    "SkillName": "거짓된 죽음",
+                    "SkillDesc": "치명적인 공격을 받으면 [거짓된 죽음] 상태에 빠진다",
+                    "DamageType": "",
+                    "SPHitBase": 15
+                }
+            ]
+        },
+        {
+            "Id": 801314504,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Fire",
+                "Ice",
+                "Wind"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.6000000005587935
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.6000000005587935
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 801314501,
+                    "SkillName": "청허의 분열",
+                    "SkillDesc": "단일 적 [재해의 오른손]에게 [증폭] 상태를 부여하고, 해당 강화 레벨이 1 증가한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314502,
+                    "SkillName": "침습하는 재난",
+                    "SkillDesc": "단일 적 [여명의 왼손]에게 [증폭] 상태를 부여하고, 해당 강화 레벨이 1 증가한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314503,
+                    "SkillName": "엔진 부스트",
+                    "SkillDesc": "자신을 제외한 모든 적에게 [증폭] 상태를 부여하고, 해당 강화 레벨이 1 증가한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314504,
+                    "SkillName": "역순 인멸",
+                    "SkillDesc": "단일 아군에게 양자 속성과 허수 속성 피해를 가한다",
+                    "DamageType": "",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 801314505,
+                    "SkillName": "재해의 전조",
+                    "SkillDesc": "차지 상태에 진입한다. 다음번 행동 시 모든 아군에게 [다가온 심판의 날]을 발동한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314506,
+                    "SkillName": "다가온 심판의 날",
+                    "SkillDesc": "모든 아군에게 양자 속성과 허수 속성 피해를 가한다. 공격 후 모든 아군을 랜덤으로 [양자 인챈트] 또는 [허수 인챈트] 상태에 빠트린다",
+                    "DamageType": "",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 801314507,
+                    "SkillName": "종말의 저주",
+                    "SkillDesc": "모든 아군을 랜덤으로 [양자 인챈트] 또는 [허수 인챈트] 상태에 빠트린다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314508,
+                    "SkillName": "집단 감염",
+                    "SkillDesc": "모든 아군에게 양자 속성과 허수 속성 피해를 가한다",
+                    "DamageType": "",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 801314509,
+                    "SkillName": "충돌 인멸",
+                    "SkillDesc": "자신이 스킬을 발동해 단일 아군을 동시에 [양자 인챈트]와 [허수 인챈트] 상태에 빠트릴 시, 해당 목표의 [양자 인챈트]와 [허수 인챈트] 상태를 해제하고, 해당 목표에게 소량의 양자 속성 피해와 허수 속성 피해를 가하며, 동시에 높은 확률로 해당 목표를 [<u>감금</u>] 상태에 빠트린다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 801314510,
+                    "SkillName": "거짓된 죽음",
+                    "SkillDesc": "치명적인 공격을 받으면 [거짓된 죽음] 상태에 빠진다",
+                    "DamageType": "",
+                    "SPHitBase": 15
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 8013145,
+            "AvatarExpReward": 150,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111011
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183002
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 8013145,
+            "WorldLevel": 1,
+            "AvatarExpReward": 200,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111011
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111012
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183002
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 8013145,
+            "WorldLevel": 2,
+            "AvatarExpReward": 250,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111011
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111012
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183002
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 8013145,
+            "WorldLevel": 3,
+            "AvatarExpReward": 300,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111011
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111012
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183002
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 8013145,
+            "WorldLevel": 4,
+            "AvatarExpReward": 350,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111012
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111013
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183002
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 8013145,
+            "WorldLevel": 5,
+            "AvatarExpReward": 400,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111012
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111013
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183002
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 8013145,
+            "WorldLevel": 6,
+            "AvatarExpReward": 400,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111012
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111013
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183002
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,178 @@
+{
+    "Type": "Character",
+    "Name": "카베",
+    "Title": "천공의 거울·카베",
+    "Desc": "이해와 자애 그리고 미학에 대한 깨달음",
+    "Source": "캣테일 술집에서 카베 초대 및 친선 대전 난이도 승리 후 획득",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Kaveh",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "풀 원소",
+        "양손검",
+        "수메르"
+    ],
+    "Talent": {
+        "17081": {
+            "Name": "회전 측량",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "17082": {
+            "Name": "기예 발휘",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[C117082]</color>을 생성한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_DENDRO",
+                "D__KEY__DAMAGE": 2,
+                "C117082": {
+                    "Name": "폭발 스캔",
+                    "Desc": "<color=#FFFFFFFF>양측이 행동을 선택하기 전:</color> 아군 필드에 $[C116] 또는 $[C112082]이 존재하는 경우, 이 카드의 $[K3]-1 및 아군 카드 더미 맨 위의 카드 1장을 $[K56]한다. 그 후, $[K56]한 카드의 기본 원소 주사위 코스트만큼 $[K107]를 준다.\\n<color=#FFFFFFFF>$[K3]: 1</color>(중첩 가능, 최대 중첩수: 3회)",
+                    "Child": {
+                        "C116": {
+                            "Name": "풀 원핵",
+                            "Desc": "<color=#FFFFFFFF>아군이 상대 출전 캐릭터에게 $[K103] 또는 $[K104]를 줄 시,</color> 피해+2pt\\n<color=#FFFFFFFF>$[K3]: 1</color>",
+                            "Child": {
+                                "K103": {
+                                    "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>불 원소 피해</color>",
+                                    "Desc": "{SPRITE_PRESET#2103}불 원소 부착 시 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>융해</color>: 이번 피해+2pt\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>증발</color>: 이번 피해+2pt\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>과부하</color>: 이번 피해+2pt, 대상이 다음 캐릭터로 강제 교체된다.\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>연소</color>: 이번 피해+1pt, 턴 종료 시 불 원소 피해를 1pt 주는 [<color=#FFFFFFFF>불타는 화염</color>]을 생성한다. (사용 가능 횟수: 1, 최대 중첩수: 2)"
+                                },
+                                "K104": {
+                                    "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>번개 원소 피해</color>",
+                                    "Desc": "{SPRITE_PRESET#2104}번개 원소 부착 시 다음 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>과부하</color>: 이번 피해+2pt, 대상이 다음 캐릭터로 강제 교체된다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>초전도</color>: 이번 피해+1pt, 대상 이외의 모든 상대 캐릭터에게 관통 피해를 1pt 준다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>감전</color>: 이번 피해+1pt, 대상 이외의 모든 상대 캐릭터에게 관통 피해를 1pt 준다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>활성</color>: 이번 피해+1pt, 다음 2회의 풀 원소 또는 번개 원소 피해를 1pt 증가시키는 [<color=#FFFFFFFF>격화 영역</color>]을 생성한다."
+                                },
+                                "K3": {
+                                    "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                                    "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                                }
+                            }
+                        },
+                        "C112082": {
+                            "Name": "풍요의 핵",
+                            "Desc": "<color=#FFFFFFFF>종료 단계:</color> $[K107]를 2pt 준다.\\n<color=#FFFFFFFF>$[K3]: 1</color>(중첩 가능, 최대 중첩수: 3회)\\n<color=#FFFFFFFF>아군 종료 선언 시:</color> 해당 카드의 $[K3]가 2회 이상일 경우, $[K107]를 2pt 준다. ($[K3] 소모 필요)",
+                            "Child": {
+                                "K107": {
+                                    "Name": "{SPRITE_PRESET#2107}<color=#7EC236FF>풀 원소 피해</color>",
+                                    "Desc": "{SPRITE_PRESET#2107}풀 원소 부착 시 다음 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>개화</color>: 이번 피해+1pt, 다음번 불 원소 또는 번개 원소 피해를 2pt 증가시키는 [<color=#FFFFFFFF>풀 원핵</color>]을 생성한다.\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>연소</color>: 이번 피해+1pt, 턴 종료 시 불 원소 피해를 1pt 주는 [<color=#FFFFFFFF>불타는 화염</color>]을 생성한다. (사용 가능 횟수: 1회, 최대 중첩수: 2)\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>활성</color>: 이번 피해+1pt, 다음 2회의 풀 원소 또는 번개 원소 피해를 1pt 증가시키는 [<color=#FFFFFFFF>격화 영역</color>]을 생성한다."
+                                },
+                                "K3": {
+                                    "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                                    "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                                }
+                            }
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        },
+                        "K56": {
+                            "Name": "<color=#FFFFFFFF>포기</color>",
+                            "Desc": "행동 카드 또는 캐릭터 스킬의 효과를 통해, 핸드 카드 또는 카드 더미에서 행동 카드를 버린다."
+                        },
+                        "K107": {
+                            "Name": "{SPRITE_PRESET#2107}<color=#7EC236FF>풀 원소 피해</color>",
+                            "Desc": "{SPRITE_PRESET#2107}풀 원소 부착 시 다음 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>개화</color>: 이번 피해+1pt, 다음번 불 원소 또는 번개 원소 피해를 2pt 증가시키는 [<color=#FFFFFFFF>풀 원핵</color>]을 생성한다.\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>연소</color>: 이번 피해+1pt, 턴 종료 시 불 원소 피해를 1pt 주는 [<color=#FFFFFFFF>불타는 화염</color>]을 생성한다. (사용 가능 횟수: 1회, 최대 중첩수: 2)\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>활성</color>: 이번 피해+1pt, 다음 2회의 풀 원소 또는 번개 원소 피해를 1pt 증가시키는 [<color=#FFFFFFFF>격화 영역</color>]을 생성한다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 3
+            }
+        },
+        "17083": {
+            "Name": "하늘 채색",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 본 캐릭터에게 <color=#FFFFFFFF>$[C117081]</color>을 부착하며 <color=#FFFFFFFF>$[C117082]</color>을 2스택 생성한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_DENDRO",
+                "D__KEY__DAMAGE": 3,
+                "C117081": {
+                    "Name": "메흐락의 지원",
+                    "Desc": "캐릭터가 「일반 공격」으로 주는 피해+1pt. 또한 주는 $[K100]가 $[K107]로 전환된다.\\n<color=#FFFFFFFF>캐릭터가 일반 공격 후: </color>$[K1033]을 생성한다.\\n<color=#FFFFFFFF>$[K4]: 2</color>",
+                    "Child": {
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>",
+                            "Desc": "물리 피해는 원소를 부착할 수 없고, 원소 반응이 발생하지 않는다."
+                        },
+                        "K107": {
+                            "Name": "{SPRITE_PRESET#2107}<color=#7EC236FF>풀 원소 피해</color>",
+                            "Desc": "{SPRITE_PRESET#2107}풀 원소 부착 시 다음 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>개화</color>: 이번 피해+1pt, 다음번 불 원소 또는 번개 원소 피해를 2pt 증가시키는 [<color=#FFFFFFFF>풀 원핵</color>]을 생성한다.\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>연소</color>: 이번 피해+1pt, 턴 종료 시 불 원소 피해를 1pt 주는 [<color=#FFFFFFFF>불타는 화염</color>]을 생성한다. (사용 가능 횟수: 1회, 최대 중첩수: 2)\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>활성</color>: 이번 피해+1pt, 다음 2회의 풀 원소 또는 번개 원소 피해를 1pt 증가시키는 [<color=#FFFFFFFF>격화 영역</color>]을 생성한다."
+                        },
+                        "K1033": {
+                            "Name": "<color=#FFFFFFFF>폭발 스캔</color>",
+                            "Desc": "<color=#FFFFFFFF>양측이 행동을 선택하기 전:</color> 아군 필드에 풀 원핵 또는 풍요의 핵이 존재하는 경우 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 감소하고 아군 카드 더미 맨 위에서 카드를 1장 <color=#FFFFFFFF>포기</color>한다. 그 후 <color=#FFFFFFFF>포기</color>한 카드의 원소 주사위 코스트의 {SPRITE_PRESET#2107}<color=#7EC236FF>풀 원소 피해</color>를 준다.\\n<color=#FFFFFFFF><color=#FFFFFFFF>사용 가능 횟수</color>: 1</color>(최대 중첩수: 3회)"
+                        },
+                        "K4": {
+                            "Name": "<color=#FFFFFFFF>지속 턴</color>",
+                            "Desc": "턴이 종료 단계에 진입할 때마다 <color=#FFFFFFFF>지속 턴</color>이 1회씩 감소한다.\\n<color=#FFFFFFFF>지속 턴</color>이 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                },
+                "C117082": {
+                    "Name": "폭발 스캔",
+                    "Desc": "<color=#FFFFFFFF>양측이 행동을 선택하기 전:</color> 아군 필드에 $[C116] 또는 $[C112082]이 존재하는 경우, 이 카드의 $[K3]-1 및 아군 카드 더미 맨 위의 카드 1장을 $[K56]한다. 그 후, $[K56]한 카드의 기본 원소 주사위 코스트만큼 $[K107]를 준다.\\n<color=#FFFFFFFF>$[K3]: 1</color>(중첩 가능, 최대 중첩수: 3회)",
+                    "Child": {
+                        "C116": {
+                            "Name": "풀 원핵",
+                            "Desc": "<color=#FFFFFFFF>아군이 상대 출전 캐릭터에게 $[K103] 또는 $[K104]를 줄 시,</color> 피해+2pt\\n<color=#FFFFFFFF>$[K3]: 1</color>",
+                            "Child": {
+                                "K103": {
+                                    "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>불 원소 피해</color>",
+                                    "Desc": "{SPRITE_PRESET#2103}불 원소 부착 시 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>융해</color>: 이번 피해+2pt\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>증발</color>: 이번 피해+2pt\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>과부하</color>: 이번 피해+2pt, 대상이 다음 캐릭터로 강제 교체된다.\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>연소</color>: 이번 피해+1pt, 턴 종료 시 불 원소 피해를 1pt 주는 [<color=#FFFFFFFF>불타는 화염</color>]을 생성한다. (사용 가능 횟수: 1, 최대 중첩수: 2)"
+                                },
+                                "K104": {
+                                    "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>번개 원소 피해</color>",
+                                    "Desc": "{SPRITE_PRESET#2104}번개 원소 부착 시 다음 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>과부하</color>: 이번 피해+2pt, 대상이 다음 캐릭터로 강제 교체된다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>초전도</color>: 이번 피해+1pt, 대상 이외의 모든 상대 캐릭터에게 관통 피해를 1pt 준다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>감전</color>: 이번 피해+1pt, 대상 이외의 모든 상대 캐릭터에게 관통 피해를 1pt 준다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>활성</color>: 이번 피해+1pt, 다음 2회의 풀 원소 또는 번개 원소 피해를 1pt 증가시키는 [<color=#FFFFFFFF>격화 영역</color>]을 생성한다."
+                                },
+                                "K3": {
+                                    "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                                    "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                                }
+                            }
+                        },
+                        "C112082": {
+                            "Name": "풍요의 핵",
+                            "Desc": "<color=#FFFFFFFF>종료 단계:</color> $[K107]를 2pt 준다.\\n<color=#FFFFFFFF>$[K3]: 1</color>(중첩 가능, 최대 중첩수: 3회)\\n<color=#FFFFFFFF>아군 종료 선언 시:</color> 해당 카드의 $[K3]가 2회 이상일 경우, $[K107]를 2pt 준다. ($[K3] 소모 필요)",
+                            "Child": {
+                                "K107": {
+                                    "Name": "{SPRITE_PRESET#2107}<color=#7EC236FF>풀 원소 피해</color>",
+                                    "Desc": "{SPRITE_PRESET#2107}풀 원소 부착 시 다음 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>개화</color>: 이번 피해+1pt, 다음번 불 원소 또는 번개 원소 피해를 2pt 증가시키는 [<color=#FFFFFFFF>풀 원핵</color>]을 생성한다.\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>연소</color>: 이번 피해+1pt, 턴 종료 시 불 원소 피해를 1pt 주는 [<color=#FFFFFFFF>불타는 화염</color>]을 생성한다. (사용 가능 횟수: 1회, 최대 중첩수: 2)\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>활성</color>: 이번 피해+1pt, 다음 2회의 풀 원소 또는 번개 원소 피해를 1pt 증가시키는 [<color=#FFFFFFFF>격화 영역</color>]을 생성한다."
+                                },
+                                "K3": {
+                                    "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                                    "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                                }
+                            }
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        },
+                        "K56": {
+                            "Name": "<color=#FFFFFFFF>포기</color>",
+                            "Desc": "행동 카드 또는 캐릭터 스킬의 효과를 통해, 핸드 카드 또는 카드 더미에서 행동 카드를 버린다."
+                        },
+                        "K107": {
+                            "Name": "{SPRITE_PRESET#2107}<color=#7EC236FF>풀 원소 피해</color>",
+                            "Desc": "{SPRITE_PRESET#2107}풀 원소 부착 시 다음 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>개화</color>: 이번 피해+1pt, 다음번 불 원소 또는 번개 원소 피해를 2pt 증가시키는 [<color=#FFFFFFFF>풀 원핵</color>]을 생성한다.\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>연소</color>: 이번 피해+1pt, 턴 종료 시 불 원소 피해를 1pt 주는 [<color=#FFFFFFFF>불타는 화염</color>]을 생성한다. (사용 가능 횟수: 1회, 최대 중첩수: 2)\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>활성</color>: 이번 피해+1pt, 다음 2회의 풀 원소 또는 번개 원소 피해를 1pt 증가시키는 [<color=#FFFFFFFF>격화 영역</color>]을 생성한다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 217081
+}

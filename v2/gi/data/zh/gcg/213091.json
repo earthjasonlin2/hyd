@@ -1,0 +1,31 @@
+{
+    "Type": "Action",
+    "Name": "崇诚之真",
+    "Title": "迪希雅·崇诚之真",
+    "Desc": "「不用留情，开打吧！」",
+    "Source": "在猫尾酒馆中邀请迪希雅进行对局，完成相应挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Dehya",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PYRO",
+            "count": 4
+        },
+        {}
+    ],
+    "Tag": [
+        "天赋",
+        "战斗行动"
+    ],
+    "Talent": {
+        "Name": "崇诚之真",
+        "Desc": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1309]</color>时，装备此牌。\\n$[A1309]装备此牌后，立刻使用一次<color=#FFD780FF>$[S13092]</color>。\\n结束阶段：如果装备有此牌的$[A1309]生命值不多于6，则治疗该角色2点。\\n（牌组中包含$[A1309]，才能加入牌组）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>战斗行动</color>",
+                "Desc": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+            },
+            "A1309": "崇诚之真",
+            "S13092": "S13092"
+        }
+    }
+}
