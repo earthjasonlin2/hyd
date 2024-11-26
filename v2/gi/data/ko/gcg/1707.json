@@ -1,0 +1,92 @@
+{
+    "Type": "Character",
+    "Name": "키라라",
+    "Title": "지붕을 누비는 고양이·키라라",
+    "Desc": "어디든 달려가는 갈래 꼬리 배달부",
+    "Source": "캣테일 술집에서 키라라 초대 및 친선 대전 난이도 승리 후 획득",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Momoka",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "풀 원소",
+        "한손검",
+        "이나즈마"
+    ],
+    "Talent": {
+        "17071": {
+            "Name": "종이상자 절단술",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "17072": {
+            "Name": "냥냥 골목 누비기",
+            "Desc": "<color=#FFFFFFFF>$[C117071]</color>과 <color=#FFFFFFFF>$[C117072]</color>을 생성한다.",
+            "Child": {
+                "C117071": {
+                    "Name": "냥냥 특급 배송",
+                    "Desc": "<color=#FFFFFFFF>키라라가 출전 캐릭터일 때 아군이 캐릭터 교체 후: </color>$[K107]를 1pt 주고 카드를 1장 드로우한다.\\n<color=#FFFFFFFF>$[K3]: 1</color>(중첩 가능, 최대 중첩수: 2회)",
+                    "Child": {
+                        "K107": {
+                            "Name": "{SPRITE_PRESET#2107}<color=#7EC236FF>풀 원소 피해</color>",
+                            "Desc": "{SPRITE_PRESET#2107}풀 원소 부착 시 다음 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>개화</color>: 이번 피해+1pt, 다음번 불 원소 또는 번개 원소 피해를 2pt 증가시키는 [<color=#FFFFFFFF>풀 원핵</color>]을 생성한다.\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>연소</color>: 이번 피해+1pt, 턴 종료 시 불 원소 피해를 1pt 주는 [<color=#FFFFFFFF>불타는 화염</color>]을 생성한다. (사용 가능 횟수: 1회, 최대 중첩수: 2)\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>활성</color>: 이번 피해+1pt, 다음 2회의 풀 원소 또는 번개 원소 피해를 1pt 증가시키는 [<color=#FFFFFFFF>격화 영역</color>]을 생성한다."
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                },
+                "C117072": {
+                    "Name": "안전 배송 보호막",
+                    "Desc": "아군 출전 캐릭터에게 <color=#FFFFFFFF>$[K6]을 2pt</color> 제공한다.",
+                    "Child": {
+                        "K6": {
+                            "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>보호막</color>",
+                            "Desc": "해당 보호막의 보호를 받는 캐릭터가 피격 시, 보호막을 소모해 피해를 상쇄한다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 3
+            }
+        },
+        "17073": {
+            "Name": "비법·깜짝 배달",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 적 필드에 <color=#FFFFFFFF>$[C117073]</color>를 생성한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_DENDRO",
+                "D__KEY__DAMAGE": 4,
+                "C117073": {
+                    "Name": "카다멈 열매",
+                    "Desc": "<color=#FFFFFFFF>소속 진영이 행동 카드 2장 사용 후: </color>소속 진영의 출전 캐릭터에게 $[K107]를 1pt 준다.\\n<color=#FFFFFFFF>$[K3]: 2</color>",
+                    "Child": {
+                        "K107": {
+                            "Name": "{SPRITE_PRESET#2107}<color=#7EC236FF>풀 원소 피해</color>",
+                            "Desc": "{SPRITE_PRESET#2107}풀 원소 부착 시 다음 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>개화</color>: 이번 피해+1pt, 다음번 불 원소 또는 번개 원소 피해를 2pt 증가시키는 [<color=#FFFFFFFF>풀 원핵</color>]을 생성한다.\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>연소</color>: 이번 피해+1pt, 턴 종료 시 불 원소 피해를 1pt 주는 [<color=#FFFFFFFF>불타는 화염</color>]을 생성한다. (사용 가능 횟수: 1회, 최대 중첩수: 2)\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>활성</color>: 이번 피해+1pt, 다음 2회의 풀 원소 또는 번개 원소 피해를 1pt 증가시키는 [<color=#FFFFFFFF>격화 영역</color>]을 생성한다."
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 217071
+}

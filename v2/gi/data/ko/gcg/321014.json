@@ -1,0 +1,32 @@
+{
+    "Type": "Action",
+    "Name": "간다르바 성곽",
+    "Title": "간다르바 성곽",
+    "Desc": "여행가와 숲의 순찰자가 만나는 곳으로 우림의 심장 소리를 들을 수 있는 마을이다",
+    "Source": "",
+    "Icon": "UI_Gcg_CardFace_Assist_Location_Gandharva",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PAIMON",
+            "count": 1
+        },
+        {}
+    ],
+    "Tag": [
+        "필드"
+    ],
+    "Talent": {
+        "Name": "간다르바 성곽",
+        "Desc": "<color=#FFFFFFFF>아군이 행동하기 전에 원소 주사위가 0개일 시:</color> $[K411]를 1개 생성한다. (턴당 1회)\\n<color=#FFFFFFFF>$[K3]：3</color>",
+        "Child": {
+            "K411": {
+                "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1111}만능 원소</color>",
+                "Desc": "{SPRITE_PRESET#1111}만능 원소는 임의의 원소로 여겨지며 어떤 원소 타입에서든 사용할 수 있다."
+            },
+            "K3": {
+                "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+            }
+        }
+    }
+}

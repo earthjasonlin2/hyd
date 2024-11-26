@@ -1,0 +1,74 @@
+{
+    "Type": "Action",
+    "Name": "心識蘊蔵の種",
+    "Title": "ナヒーダ·心識蘊蔵の種",
+    "Desc": "「知識を、あなたにも。」",
+    "Source": "キャッツテールでナヒーダを招待して対戦し、対応する挑戦目標をクリアすることで獲得",
+    "Icon": "UI_Gcg_CardFace_Modify_Constellation_Tighnari",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_DENDRO",
+            "count": 3
+        },
+        {
+            "costType": "GCG_COST_ENERGY",
+            "count": 2
+        }
+    ],
+    "Tag": [
+        "天賦",
+        "戦闘アクション"
+    ],
+    "Talent": {
+        "Name": "心識蘊蔵の種",
+        "Desc": "$[K1]：味方の出撃キャラが<color=#FFFFFFFF>$[A1703]</color>の時、このカードを装備できる。\\n$[A1703]がこのカードを装備した後、直ちに<color=#FFD780FF>$[S17034]</color>を1回発動する。\\nこのカードを装備した$[A1703]がフィールドにいる時、味方チームに存在する元素タイプに応じて効果を提供する。\\n{SPRITE_PRESET#2103}<color=#FF9999FF>炎元素</color>：<color=#FFFFFFFF>$[C117032]</color>がフィールドに存在する時、元素反応を受けて<color=#FFFFFFFF>$[C117031]</color>の効果を発動した相手のキャラが受ける<color=#FFFFFFFF>$[C117031]</color>の$[K5]が$[K107]へと変わる。\\n{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素</color>：<color=#FFFFFFFF>$[C117032]</color>展開時、フィールド上の相手の<color=#FFFFFFFF>$[C117031]</color>の$[K3]+1。\\n{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素</color>：このカードを装備した$[A1703]が生成した<color=#FFFFFFFF>$[C117032]</color>の初期$[K4]+1。\\n（このカードはデッキに$[A1703]が含まれている場合のみ、デッキに追加できる）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>戦闘アクション</color>",
+                "Desc": "味方が戦闘アクションを1回行った後、相手のターンに移ります。\\n<color=#FFFFFFFF>このようなルールを持つ手札を出すのはクイックアクションではなく、戦闘アクションと見なされます。</color>"
+            },
+            "A1703": "心識蘊蔵の種",
+            "S17034": "S17034",
+            "C117032": {
+                "Name": "摩耶の宮殿",
+                "Desc": "<color=#FFFFFFFF>味方が元素反応を起こした時</color>、ダメージがさらに+1。\\n<color=#FFFFFFFF>$[K4]：2</color>",
+                "Child": {
+                    "K4": {
+                        "Name": "<color=#FFFFFFFF>継続ラウンド数</color>",
+                        "Desc": "各ラウンドのエンドフェーズで、<color=#FFFFFFFF>継続ラウンド数</color>が1マイナスされます。\\n<color=#FFFFFFFF>継続ラウンド数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                    }
+                }
+            },
+            "C117031": {
+                "Name": "蘊種印",
+                "Desc": "<color=#FFFFFFFF>「蘊種印」を持つキャラが元素反応によるダメージを受けると</color>、同一チームの「蘊種印」を持つキャラに$[K5]を1与える。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+                "Child": {
+                    "K5": {
+                        "Name": "<color=#FFFFFFFF>貫通ダメージ</color>",
+                        "Desc": "貫通ダメージはダメージアップ効果を受けられません。また、シールド、ダメージ無効化などの効果で相殺されることもありません。"
+                    },
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                        "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                    }
+                }
+            },
+            "K5": {
+                "Name": "<color=#FFFFFFFF>貫通ダメージ</color>",
+                "Desc": "貫通ダメージはダメージアップ効果を受けられません。また、シールド、ダメージ無効化などの効果で相殺されることもありません。"
+            },
+            "K107": {
+                "Name": "{SPRITE_PRESET#2107}<color=#7EC236FF>草元素ダメージ</color>",
+                "Desc": "{SPRITE_PRESET#2107}草元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>開花</color>：ダメージ+1、次の炎元素または雷元素ダメージを2アップできる「<color=#FFFFFFFF>草原核</color>」を生成する\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>燃焼</color>：ダメージ+1、ラウンド終了時に炎元素ダメージを1与える「<color=#FFFFFFFF>燃焼烈焔</color>」を生成する（使用可能回数1回、最大2回まで重ね掛け可能）\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>原激化</color>：ダメージ+1、次の草元素または雷元素ダメージを2回まで+1できる「<color=#FFFFFFFF>激化領域</color>」を生成する"
+            },
+            "K3": {
+                "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+            },
+            "K4": {
+                "Name": "<color=#FFFFFFFF>継続ラウンド数</color>",
+                "Desc": "各ラウンドのエンドフェーズで、<color=#FFFFFFFF>継続ラウンド数</color>が1マイナスされます。\\n<color=#FFFFFFFF>継続ラウンド数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+            }
+        }
+    }
+}

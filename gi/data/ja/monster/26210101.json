@@ -1,0 +1,74 @@
+{
+    "Name": "コホラ仔竜",
+    "Desc": "幼いコホラ竜。水域や液体燃素の中を自由に泳ぐ能力を持っている。\\nしかし皮膚やヒレはまだ柔らかく、成体のコホラ竜のように高温の環境に長時間留まることはできない。だが、いつかは自由に泳ぎ回れるようになるだろう。",
+    "Icon": "UI_MonsterIcon_Natsaurus_Mosasaurus_Small",
+    "Codex": "BEAST",
+    "Title": "コホラ仔竜",
+    "SpecialNames": [
+        "ナタを遊楽する竜"
+    ],
+    "Reward": [
+        {
+            "Id": 202,
+            "Rank": 3,
+            "Icon": "UI_ItemIcon_202"
+        },
+        {
+            "Id": 112101,
+            "Rank": 1,
+            "Icon": "UI_ItemIcon_112101"
+        },
+        {
+            "Id": 112102,
+            "Rank": 2,
+            "Icon": "UI_ItemIcon_112102"
+        },
+        {
+            "Id": 112103,
+            "Rank": 3,
+            "Icon": "UI_ItemIcon_112103"
+        }
+    ],
+    "Child": {
+        "26210101": {
+            "MonsterName": "Monster_Natsaurus_Mosasaurus_Small_01",
+            "Type": "MONSTER_ORDINARY",
+            "HpDrops": [
+                {},
+                {},
+                {}
+            ],
+            "KillDropId": 22010012,
+            "Prop": [
+                {
+                    "type": "FIGHT_PROP_BASE_HP",
+                    "growCurve": "GROW_CURVE_HP_2"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_ATTACK",
+                    "growCurve": "GROW_CURVE_ATTACK_2"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_DEFENSE",
+                    "growCurve": "GROW_CURVE_DEFENSE"
+                }
+            ],
+            "LocalLegend": false,
+            "SubHurt": {
+                "Fire": 0.1000000014901,
+                "Grass": 0.1000000014901,
+                "Water": 0.3000000119209,
+                "Elec": 0.1000000014901,
+                "Wind": 0.1000000014901,
+                "Ice": 0.1000000014901,
+                "Rock": 0.1000000014901,
+                "Physical": 0.1000000014901
+            },
+            "Base": {
+                "HP": 13.5839996337891,
+                "ATK": 20.0960006713867,
+                "DEF": 500
+            }
+        }
+    }
+}

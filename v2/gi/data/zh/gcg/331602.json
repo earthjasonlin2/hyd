@@ -1,0 +1,32 @@
+{
+    "Type": "Action",
+    "Name": "元素共鸣：坚定之岩",
+    "Title": "元素共鸣：坚定之岩",
+    "Desc": "山骞不崩，磐石为镇。",
+    "Source": "",
+    "Icon": "UI_Gcg_CardFace_Event_ResonanceA_Rock",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_GEO",
+            "count": 1
+        },
+        {}
+    ],
+    "Tag": [
+        "元素共鸣"
+    ],
+    "Talent": {
+        "Name": "元素共鸣：坚定之岩",
+        "Desc": "<color=#FFFFFFFF>本回合中，我方角色下一次造成$[K106]后：</color>如果我方存在提供「$[K6]」的出战状态，则为一个此类出战状态补充3点「$[K6]」。\\n（牌组包含至少2个{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素</color>角色，才能加入牌组）",
+        "Child": {
+            "K106": {
+                "Name": "{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素伤害</color>",
+                "Desc": "和已附着的元素发生元素反应：\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2101}<color=#FFFFFFFF>结晶（冰）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2102}<color=#FFFFFFFF>结晶（水）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2103}<color=#FFFFFFFF>结晶（火）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2104}<color=#FFFFFFFF>结晶（雷）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。"
+            },
+            "K6": {
+                "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>护盾</color>",
+                "Desc": "此护盾所保护的角色受到伤害时，将会消耗护盾来抵消伤害。"
+            }
+        }
+    }
+}

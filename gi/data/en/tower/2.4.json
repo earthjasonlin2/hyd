@@ -1,0 +1,844 @@
+{
+    "Leyline": {
+        "38": {
+            "Icon": "UI_TowerBlessing_34",
+            "Name": "Blade-Flourish Moon",
+            "Desc": "When the active character's Normal, Charged, or Plunging Attacks hit opponents multiple times within 2s, that character's Normal, Charged, and Plunging Attack DMG is increased by 5% for 8s. Max 15 stacks. This effect can be triggered once every 0.1s and will be cleared if the character goes down or leaves the field."
+        },
+        "39": {
+            "Icon": "UI_TowerBlessing_35",
+            "Name": "Blooming Moon",
+            "Desc": "When the active character hits opponents with attacks that are considered Normal Attack DMG, there is a 50% chance of unleashing a shockwave at the hit opponent's position, dealing AoE True DMG. One shockwave can be released in this way every 0.3s."
+        },
+        "40": {
+            "Icon": "UI_TowerBlessing_36",
+            "Name": "Awakening Moon",
+            "Desc": "When the active character's Normal, Charged, or Plunging Attacks hit opponents multiple times within 2s, the character gains a stack of Emergence for 8s. This effect can be triggered once every 0.1s. Emergence will be cleared when the character goes down or leaves the field. When the character gains 15 Emergence stacks, the stacks will be cleared and a shockwave will be unleashed that deals True DMG to nearby opponents. After a shockwave is unleashed in this way, all party members will deal 25% increased DMG for 10s."
+        }
+    },
+    "Floor": {
+        "9": {
+            "Open": "2022-01-16 04:00:00",
+            "Close": "2022-03-01 03:59:59",
+            "Buff": [
+                "A Plasma Field will be generated at the edge of the challenge area once the challenge begins. While within the field, characters will be hit by a lightning strike once every 5s and take Electro DMG. The area covered by the field will gradually expand as the challenge proceeds.",
+                "Opponents' HP increased by 100%."
+            ],
+            "Room": {
+                "1": {
+                    "Level": 72,
+                    "Cond": [
+                        [
+                            2,
+                            60
+                        ],
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 21020101,
+                            "Hp": 82833.16364580768,
+                            "Name": "Wooden Shieldwall Mitachurl",
+                            "Icon": "UI_MonsterIcon_Brute_None_01"
+                        },
+                        {
+                            "Id": 21030301,
+                            "Hp": 27611.054548602628,
+                            "Name": "Anemo Samachurl",
+                            "Icon": "UI_MonsterIcon_Shaman_Wind_01"
+                        },
+                        {
+                            "Id": 21030101,
+                            "Hp": 27611.054548602628,
+                            "Name": "Hydro Samachurl",
+                            "Icon": "UI_MonsterIcon_Shaman_Water_01"
+                        },
+                        {
+                            "Id": 21011001,
+                            "Hp": 22088.844026572744,
+                            "Name": "Electro Hilichurl Shooter",
+                            "Icon": "UI_MonsterIcon_Hili_Electric_Range"
+                        },
+                        {
+                            "Id": 21010901,
+                            "Hp": 22088.844026572744,
+                            "Name": "Cryo Hilichurl Shooter",
+                            "Icon": "UI_MonsterIcon_Hili_Ice_Range"
+                        },
+                        {
+                            "Id": 20011101,
+                            "Hp": 55222.10909720505,
+                            "Name": "Large Hydro Slime",
+                            "Icon": "UI_MonsterIcon_Slime_Water_03"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 22010301,
+                            "Hp": 55222.10909720505,
+                            "Name": "Hydro Abyss Mage",
+                            "Icon": "UI_MonsterIcon_Abyss_Water_01"
+                        },
+                        {
+                            "Id": 21030601,
+                            "Hp": 27611.054548602628,
+                            "Name": "Electro Samachurl",
+                            "Icon": "UI_MonsterIcon_Shaman_Electric_01"
+                        },
+                        {
+                            "Id": 21020701,
+                            "Hp": 82833.16364580768,
+                            "Name": "Crackling Axe Mitachurl",
+                            "Icon": "UI_MonsterIcon_Brute_None_01"
+                        },
+                        {
+                            "Id": 21020201,
+                            "Hp": 82833.16364580768,
+                            "Name": "Blazing Axe Mitachurl",
+                            "Icon": "UI_MonsterIcon_Brute_None_01"
+                        }
+                    ]
+                },
+                "2": {
+                    "Level": 74,
+                    "Cond": [
+                        [
+                            2,
+                            60
+                        ],
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 23010101,
+                            "Hp": 116034.52487182627,
+                            "Name": "Fatui Skirmisher - Cryogunner Legionnaire",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Fat_SprayGun_Ice_01"
+                        },
+                        {
+                            "Id": 23010201,
+                            "Hp": 87025.89365386966,
+                            "Name": "Fatui Skirmisher - Hydrogunner Legionnaire",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Fat_SprayGun_Water_01"
+                        },
+                        {
+                            "Id": 23010301,
+                            "Hp": 116034.52487182627,
+                            "Name": "Fatui Skirmisher - Electrohammer Vanguard",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Strong_GreatHammer_Electric_01"
+                        },
+                        {
+                            "Id": 23010401,
+                            "Hp": 87025.89365386966,
+                            "Name": "Fatui Skirmisher - Geochanter Bracer",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Standard_Staff_Rock_01"
+                        },
+                        {
+                            "Id": 23010501,
+                            "Hp": 87025.89365386966,
+                            "Name": "Fatui Skirmisher - Anemoboxer Vanguard",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Strong_Gloves_Wind_01"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 25010701,
+                            "Hp": 58017.262435913035,
+                            "Name": "Treasure Hoarders: Handyman",
+                            "Icon": "UI_MonsterIcon_Thoarder_Male_Rogue_Fat_01"
+                        },
+                        {
+                            "Id": 25030201,
+                            "Hp": 58017.262435913035,
+                            "Name": "Treasure Hoarders: Gravedigger",
+                            "Icon": "UI_MonsterIcon_Thoarder_Male_Rogue_Fat_02"
+                        },
+                        {
+                            "Id": 25030301,
+                            "Hp": 58017.262435913035,
+                            "Name": "Treasure Hoarders: Seaman",
+                            "Icon": "UI_MonsterIcon_Thoarder_Male_Sailor_01"
+                        },
+                        {
+                            "Id": 25060101,
+                            "Hp": 58017.262435913035,
+                            "Name": "Treasure Hoarders: Pugilist",
+                            "Icon": "UI_MonsterIcon_Thoarder_MuscleMan_Boxer_01"
+                        },
+                        {
+                            "Id": 25070101,
+                            "Hp": 58017.262435913035,
+                            "Name": "Treasure Hoarders: Crusher",
+                            "Icon": "UI_MonsterIcon_Thoarder_MuscleMan_Miner_01"
+                        },
+                        {
+                            "Id": 25010301,
+                            "Hp": 46413.81076335902,
+                            "Name": "Treasure Hoarders: Pyro Potioneer",
+                            "Icon": "UI_MonsterIcon_Thoarder_Male_Chemist_Fire_01"
+                        },
+                        {
+                            "Id": 25010401,
+                            "Hp": 46413.81076335902,
+                            "Name": "Treasure Hoarders: Hydro Potioneer",
+                            "Icon": "UI_MonsterIcon_Thoarder_Male_Chemist_Water_01"
+                        },
+                        {
+                            "Id": 25010501,
+                            "Hp": 46413.81076335902,
+                            "Name": "Treasure Hoarders: Electro Potioneer",
+                            "Icon": "UI_MonsterIcon_Thoarder_Male_Chemist_Electric_01"
+                        },
+                        {
+                            "Id": 25010601,
+                            "Hp": 46413.81076335902,
+                            "Name": "Treasure Hoarders: Cryo Potioneer",
+                            "Icon": "UI_MonsterIcon_Thoarder_Male_Chemist_Ice_01"
+                        },
+                        {
+                            "Id": 25020201,
+                            "Hp": 34810.359090804996,
+                            "Name": "Treasure Hoarders: Marksman",
+                            "Icon": "UI_MonsterIcon_Thoarder_Male_Hunter_01"
+                        }
+                    ]
+                },
+                "3": {
+                    "Level": 76,
+                    "Cond": [
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ],
+                        [
+                            2,
+                            420
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 21020401,
+                            "Hp": 274776.4713618347,
+                            "Name": "Frostarm Lawachurl",
+                            "Icon": "UI_MonsterIcon_Brute_Ice_01"
+                        },
+                        {
+                            "Id": 21020501,
+                            "Hp": 274776.4713618347,
+                            "Name": "Stonehide Lawachurl",
+                            "Icon": "UI_MonsterIcon_Brute_Rock_None"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 23020101,
+                            "Hp": 152653.59520101917,
+                            "Name": "Fatui Pyro Agent",
+                            "Icon": "UI_MonsterIcon_Fatuus_Fire_01"
+                        },
+                        {
+                            "Id": 23030101,
+                            "Hp": 152653.59520101917,
+                            "Name": "Fatui Electro Cicin Mage",
+                            "Icon": "UI_MonsterIcon_Fatuus_Summoner_01"
+                        }
+                    ]
+                }
+            }
+        },
+        "10": {
+            "Open": "2022-01-16 04:00:00",
+            "Close": "2022-03-01 03:59:59",
+            "Buff": [
+                "There will be a Leader amongst the opponents present in each challenge on this floor. Its Attendants will also be present to provide it with enhancements and protection. Each Attendant will increase the Leader's Element RES and Physical RES by 10%. The Attendants will restore the Leader's HP every 12s, with each Attendant restoring 5% HP. When there are no Attendants, the Leader will not have any of the above enhancement and restoration effects.",
+                "Opponents' HP increased by 100%."
+            ],
+            "Room": {
+                "1": {
+                    "Level": 80,
+                    "Cond": [
+                        [
+                            2,
+                            60
+                        ],
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 22010401,
+                            "Hp": 74262.91016200923,
+                            "Name": "Electro Abyss Mage",
+                            "Icon": "UI_MonsterIcon_Abyss_Electric_01"
+                        },
+                        {
+                            "Id": 21030201,
+                            "Hp": 37131.45508100475,
+                            "Name": "Dendro Samachurl",
+                            "Icon": "UI_MonsterIcon_Shaman_Grass_01"
+                        },
+                        {
+                            "Id": 21030301,
+                            "Hp": 37131.45508100475,
+                            "Name": "Anemo Samachurl",
+                            "Icon": "UI_MonsterIcon_Shaman_Wind_01"
+                        },
+                        {
+                            "Id": 21030101,
+                            "Hp": 37131.45508100475,
+                            "Name": "Hydro Samachurl",
+                            "Icon": "UI_MonsterIcon_Shaman_Water_01"
+                        },
+                        {
+                            "Id": 21020201,
+                            "Hp": 111394.36524301399,
+                            "Name": "Blazing Axe Mitachurl",
+                            "Icon": "UI_MonsterIcon_Brute_None_01"
+                        },
+                        {
+                            "Id": 21010501,
+                            "Hp": 29705.164586171708,
+                            "Name": "Pyro Hilichurl Shooter",
+                            "Icon": "UI_MonsterIcon_Hili_Fire_Range"
+                        },
+                        {
+                            "Id": 21010901,
+                            "Hp": 29705.164586171708,
+                            "Name": "Cryo Hilichurl Shooter",
+                            "Icon": "UI_MonsterIcon_Hili_Ice_Range"
+                        },
+                        {
+                            "Id": 21011001,
+                            "Hp": 29705.164586171708,
+                            "Name": "Electro Hilichurl Shooter",
+                            "Icon": "UI_MonsterIcon_Hili_Electric_Range"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 21020501,
+                            "Hp": 334183.09572904196,
+                            "Name": "Stonehide Lawachurl",
+                            "Icon": "UI_MonsterIcon_Brute_Rock_None"
+                        },
+                        {
+                            "Id": 21010501,
+                            "Hp": 29705.164586171708,
+                            "Name": "Pyro Hilichurl Shooter",
+                            "Icon": "UI_MonsterIcon_Hili_Fire_Range"
+                        },
+                        {
+                            "Id": 21010901,
+                            "Hp": 29705.164586171708,
+                            "Name": "Cryo Hilichurl Shooter",
+                            "Icon": "UI_MonsterIcon_Hili_Ice_Range"
+                        }
+                    ]
+                },
+                "2": {
+                    "Level": 82,
+                    "Cond": [
+                        [
+                            2,
+                            60
+                        ],
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 23020101,
+                            "Hp": 193333.86023713273,
+                            "Name": "Fatui Pyro Agent",
+                            "Icon": "UI_MonsterIcon_Fatuus_Fire_01"
+                        },
+                        {
+                            "Id": 23010101,
+                            "Hp": 154667.08818970635,
+                            "Name": "Fatui Skirmisher - Cryogunner Legionnaire",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Fat_SprayGun_Ice_01"
+                        },
+                        {
+                            "Id": 23010201,
+                            "Hp": 116000.3161422797,
+                            "Name": "Fatui Skirmisher - Hydrogunner Legionnaire",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Fat_SprayGun_Water_01"
+                        },
+                        {
+                            "Id": 23010501,
+                            "Hp": 116000.3161422797,
+                            "Name": "Fatui Skirmisher - Anemoboxer Vanguard",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Strong_Gloves_Wind_01"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 23030101,
+                            "Hp": 193333.86023713273,
+                            "Name": "Fatui Electro Cicin Mage",
+                            "Icon": "UI_MonsterIcon_Fatuus_Summoner_01"
+                        },
+                        {
+                            "Id": 23010601,
+                            "Hp": 116000.3161422797,
+                            "Name": "Fatui Skirmisher - Pyroslinger Bracer",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Standard_Rifle_Fire_01"
+                        },
+                        {
+                            "Id": 23010301,
+                            "Hp": 154667.08818970635,
+                            "Name": "Fatui Skirmisher - Electrohammer Vanguard",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Strong_GreatHammer_Electric_01"
+                        },
+                        {
+                            "Id": 23010401,
+                            "Hp": 116000.3161422797,
+                            "Name": "Fatui Skirmisher - Geochanter Bracer",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Standard_Staff_Rock_01"
+                        }
+                    ]
+                },
+                "3": {
+                    "Level": 85,
+                    "Cond": [
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ],
+                        [
+                            2,
+                            420
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 22030101,
+                            "Hp": 326789.7485650778,
+                            "Name": "Abyss Lector: Violet Lightning",
+                            "Icon": "UI_MonsterIcon_Invoker_Deacon_Electric_01"
+                        },
+                        {
+                            "Id": 21030301,
+                            "Hp": 40848.71857063483,
+                            "Name": "Anemo Samachurl",
+                            "Icon": "UI_MonsterIcon_Shaman_Wind_01"
+                        },
+                        {
+                            "Id": 21030101,
+                            "Hp": 40848.71857063483,
+                            "Name": "Hydro Samachurl",
+                            "Icon": "UI_MonsterIcon_Shaman_Water_01"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 22020101,
+                            "Hp": 326789.7485650778,
+                            "Name": "Abyss Herald: Wicked Torrents",
+                            "Icon": "UI_MonsterIcon_Invoker_Herald_Water_01"
+                        },
+                        {
+                            "Id": 21030601,
+                            "Hp": 40848.71857063483,
+                            "Name": "Electro Samachurl",
+                            "Icon": "UI_MonsterIcon_Shaman_Electric_01"
+                        }
+                    ]
+                }
+            }
+        },
+        "11": {
+            "Open": "2022-01-16 04:00:00",
+            "Close": "2022-03-01 03:59:59",
+            "Buff": [
+                "All party members' Normal Attack DMG increased by 50%.",
+                "Opponents' HP increased by 100%."
+            ],
+            "Room": {
+                "1": {
+                    "Level": 88,
+                    "Cond": [
+                        [
+                            233727003,
+                            3024,
+                            20
+                        ],
+                        [
+                            233727003,
+                            3024,
+                            40
+                        ],
+                        [
+                            233727003,
+                            3024,
+                            60
+                        ]
+                    ],
+                    "Type": "TOWER_COND_LEFT_HP_GREATER_THAN",
+                    "First": [
+                        {
+                            "Id": 24020101,
+                            "Hp": 204581.3820862547,
+                            "Name": "Ruin Cruiser",
+                            "Icon": "UI_MonsterIcon_Apparatus_Enigma_BionicDrone"
+                        },
+                        {
+                            "Id": 24020201,
+                            "Hp": 204581.3820862547,
+                            "Name": "Ruin Destroyer",
+                            "Icon": "UI_MonsterIcon_Apparatus_Enigma_BionicFlora"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 22010401,
+                            "Hp": 86872.88130643211,
+                            "Name": "Electro Abyss Mage",
+                            "Icon": "UI_MonsterIcon_Abyss_Electric_01"
+                        },
+                        {
+                            "Id": 21020801,
+                            "Hp": 390927.96587894496,
+                            "Name": "Thunderhelm Lawachurl",
+                            "Icon": "UI_MonsterIcon_Brute_Electric_01"
+                        },
+                        {
+                            "Id": 21011601,
+                            "Hp": 43436.44065321621,
+                            "Name": "Electro Hilichurl Grenadier",
+                            "Icon": "UI_MonsterIcon_Hili_Electric_Range"
+                        },
+                        {
+                            "Id": 21010601,
+                            "Hp": 43436.44065321621,
+                            "Name": "Hilichurl Grenadier",
+                            "Icon": "UI_MonsterIcon_Hili_Fire_Range"
+                        },
+                        {
+                            "Id": 21010501,
+                            "Hp": 34749.153132470055,
+                            "Name": "Pyro Hilichurl Shooter",
+                            "Icon": "UI_MonsterIcon_Hili_Fire_Range"
+                        }
+                    ]
+                },
+                "2": {
+                    "Level": 90,
+                    "Cond": [
+                        [
+                            2,
+                            60
+                        ],
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 20011301,
+                            "Hp": 97416.3467096909,
+                            "Name": "Large Pyro Slime",
+                            "Icon": "UI_MonsterIcon_Slime_Fire_03"
+                        },
+                        {
+                            "Id": 20010601,
+                            "Hp": 97416.3467096909,
+                            "Name": "Large Electro Slime",
+                            "Icon": "UI_MonsterIcon_Slime_Electric_03"
+                        },
+                        {
+                            "Id": 20060601,
+                            "Hp": 118720.9220706251,
+                            "Name": "Pyro Specter",
+                            "Icon": "UI_MonsterIcon_Sylph_Fire_01"
+                        },
+                        {
+                            "Id": 20060501,
+                            "Hp": 118720.9220706251,
+                            "Name": "Electro Specter",
+                            "Icon": "UI_MonsterIcon_Sylph_Electric_01"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 20050201,
+                            "Hp": 77933.07873558943,
+                            "Name": "Hydro Mimic Boar",
+                            "Icon": "UI_MonsterIcon_Oceanid_Underling"
+                        },
+                        {
+                            "Id": 20050301,
+                            "Hp": 38966.539367794714,
+                            "Name": "Hydro Mimic Crane",
+                            "Icon": "UI_MonsterIcon_Oceanid_Underling"
+                        },
+                        {
+                            "Id": 20050401,
+                            "Hp": 77933.07873558943,
+                            "Name": "Hydro Mimic Crab",
+                            "Icon": "UI_MonsterIcon_Oceanid_Underling"
+                        },
+                        {
+                            "Id": 20050501,
+                            "Hp": 146124.52006453654,
+                            "Name": "Hydro Mimic Finch",
+                            "Icon": "UI_MonsterIcon_Oceanid_Underling"
+                        },
+                        {
+                            "Id": 20050601,
+                            "Hp": 77933.07873558943,
+                            "Name": "Hydro Mimic Mallard",
+                            "Icon": "UI_MonsterIcon_Oceanid_Underling"
+                        },
+                        {
+                            "Id": 20050701,
+                            "Hp": 68191.44132894711,
+                            "Name": "Hydro Mimic Squirrel",
+                            "Icon": "UI_MonsterIcon_Oceanid_Underling"
+                        },
+                        {
+                            "Id": 20050801,
+                            "Hp": 146124.52006453654,
+                            "Name": "Hydro Mimic Frog",
+                            "Icon": "UI_MonsterIcon_Oceanid_Underling"
+                        },
+                        {
+                            "Id": 20050901,
+                            "Hp": 38966.539367794714,
+                            "Name": "Hydro Mimic Raptor",
+                            "Icon": "UI_MonsterIcon_Oceanid_Underling"
+                        }
+                    ]
+                },
+                "3": {
+                    "Level": 92,
+                    "Cond": [
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ],
+                        [
+                            2,
+                            420
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 23050101,
+                            "Hp": 478287.3871839793,
+                            "Name": "Mirror Maiden",
+                            "Icon": "UI_MonsterIcon_Fatuus_Maiden_Water"
+                        },
+                        {
+                            "Id": 25100101,
+                            "Hp": 382629.92765571916,
+                            "Name": "Kairagi: Dancing Thunder",
+                            "Icon": "UI_MonsterIcon_Samurai_Kairagi_01"
+                        },
+                        {
+                            "Id": 25100201,
+                            "Hp": 382629.92765571916,
+                            "Name": "Kairagi: Fiery Might",
+                            "Icon": "UI_MonsterIcon_Samurai_Kairagi_02"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 20070101,
+                            "Hp": 1116003.903429285,
+                            "Name": "Thunder Manifestation",
+                            "Icon": "UI_MonsterIcon_Raijin"
+                        }
+                    ]
+                }
+            }
+        },
+        "12": {
+            "Open": "2022-01-16 04:00:00",
+            "Close": "2022-03-01 03:59:59",
+            "Buff": [
+                "Certain opponents in this challenge possess the Honed Spirit effect, which grants them 10% Physical and All Elemental RES. When opponents with Honed Spirit take hits from attacks that are considered Normal Attack DMG, they will lose 3% Physical and All Elemental RES. A maximum of 30% of each may be lost this way. The RES lost this way will be reset every 20s.",
+                "Opponents' HP increased by 150%."
+            ],
+            "Room": {
+                "1": {
+                    "Level": 95,
+                    "Cond": [
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ],
+                        [
+                            2,
+                            420
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 24021101,
+                            "Hp": 1817146.355855316,
+                            "Name": "Perpetual Mechanical Array",
+                            "Icon": "UI_MonsterIcon_Apparatus_Perpetual"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 22030201,
+                            "Hp": 554976.759179011,
+                            "Name": "Abyss Lector: Fathomless Flames",
+                            "Icon": "UI_MonsterIcon_Invoker_Deacon_Fire"
+                        },
+                        {
+                            "Id": 21030201,
+                            "Hp": 69372.09489737656,
+                            "Name": "Dendro Samachurl",
+                            "Icon": "UI_MonsterIcon_Shaman_Grass_01"
+                        },
+                        {
+                            "Id": 22010101,
+                            "Hp": 138744.18979475263,
+                            "Name": "Pyro Abyss Mage",
+                            "Icon": "UI_MonsterIcon_Abyss_Fire_01"
+                        },
+                        {
+                            "Id": 22040101,
+                            "Hp": 272571.96613570245,
+                            "Name": "Rockfond Rifthound Whelp",
+                            "Icon": "UI_MonsterIcon_Hound_Kanis_Rock"
+                        }
+                    ]
+                },
+                "2": {
+                    "Level": 98,
+                    "Cond": [
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ],
+                        [
+                            2,
+                            420
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 26050101,
+                            "Hp": 2299367.365550436,
+                            "Name": "Primo Geovishap",
+                            "Icon": "UI_MonsterIcon_Drake_Primo_Rock"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 22020101,
+                            "Hp": 613164.6308134496,
+                            "Name": "Abyss Herald: Wicked Torrents",
+                            "Icon": "UI_MonsterIcon_Invoker_Herald_Water_01"
+                        }
+                    ]
+                },
+                "3": {
+                    "Level": 100,
+                    "Cond": [
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ],
+                        [
+                            2,
+                            420
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 24010101,
+                            "Hp": 643389.626951739,
+                            "Name": "Ruin Guard",
+                            "Icon": "UI_MonsterIcon_Defender_Noner_01"
+                        },
+                        {
+                            "Id": 24010301,
+                            "Hp": 827215.2346522363,
+                            "Name": "Ruin Grader",
+                            "Icon": "UI_MonsterIcon_Konungmathr"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 25090101,
+                            "Hp": 1838256.0770049694,
+                            "Name": "Maguu Kenki",
+                            "Icon": "UI_MonsterIcon_Samurai_Ningyo"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

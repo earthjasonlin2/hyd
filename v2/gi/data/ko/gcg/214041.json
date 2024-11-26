@@ -1,0 +1,45 @@
+{
+    "Type": "Action",
+    "Name": "낙하하는 깃털의 심판",
+    "Title": "사이노·낙하하는 깃털의 심판",
+    "Desc": "「이것이 내 결투의 혼이다」",
+    "Source": "캣테일 술집에서 사이노를 초대해 대전하고 상응하는 도전 목표 달성 후 획득",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Cyno",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_ELECTRO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "특성",
+        "전투 행동"
+    ],
+    "Talent": {
+        "Name": "낙하하는 깃털의 심판",
+        "Desc": "$[K1]: 아군 출전 캐릭터가 <color=#FFFFFFFF>$[A1404]</color>일 때 해당 카드를 장착할 수 있다.\\n$[A1404]가 해당 카드를 장착하면 즉시 <color=#FFD780FF>$[S14042]</color>를 1회 사용한다.\\n해당 카드를 장착한 $[A1404]의 <color=#FFFFFFFF>$[C114041]</color> 「빙의」가 Lv.2 이상일 경우 <color=#FFFFFFFF>$[S14042]</color>를 발동해 주는 피해+1pt(턴당 최대 2회)\\n(카드 덱에 $[A1404]가 있어야만 카드 덱에 추가 가능)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>전투 행동</color>",
+                "Desc": "아군이 전투 행동을 1회 진행하면 행동 순서가 상대에게 넘어간다.\\n<color=#FFFFFFFF>해당 규칙에 속하는 카드는 사용 시 빠른 행동이 아닌 전투 행동으로 간주한다</color>."
+            },
+            "A1404": "낙하하는 깃털의 심판",
+            "S14042": "S14042",
+            "C114041": {
+                "Name": "길을 여는 사자",
+                "Desc": "<color=#FFFFFFFF>종료 단계:</color> 「빙의」 1레벨 증가. 만약 「빙의」가 Lv.8 이상일 경우, 「빙의」 6레벨 감소\\n<color=#FFFFFFFF>「빙의」 레벨에 따른 효과:</color>\\nLv.2 이상: $[K100]가 $[K104]로 전환된다.\\nLv.4 이상: 주는 피해+2pt",
+                "Child": {
+                    "K100": {
+                        "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>",
+                        "Desc": "물리 피해는 원소를 부착할 수 없고, 원소 반응이 발생하지 않는다."
+                    },
+                    "K104": {
+                        "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>번개 원소 피해</color>",
+                        "Desc": "{SPRITE_PRESET#2104}번개 원소 부착 시 다음 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>과부하</color>: 이번 피해+2pt, 대상이 다음 캐릭터로 강제 교체된다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>초전도</color>: 이번 피해+1pt, 대상 이외의 모든 상대 캐릭터에게 관통 피해를 1pt 준다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>감전</color>: 이번 피해+1pt, 대상 이외의 모든 상대 캐릭터에게 관통 피해를 1pt 준다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>활성</color>: 이번 피해+1pt, 다음 2회의 풀 원소 또는 번개 원소 피해를 1pt 증가시키는 [<color=#FFFFFFFF>격화 영역</color>]을 생성한다."
+                    }
+                }
+            }
+        }
+    }
+}

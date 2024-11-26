@@ -1,0 +1,80 @@
+{
+    "Type": "Character",
+    "Name": "각청",
+    "Title": "질뢰쾌우·각청",
+    "Desc": "그녀는 누구도 생각지 못한 덱을 구축해서, 상상할 수조차 없는 승리를 수없이 거뒀다",
+    "Source": "캣테일 술집에서 각청 초대 및 친선 대전 난이도 승리 후 획득",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Keqing",
+    "Hp": 10,
+    "Cost": 3,
+    "Tag": [
+        "번개 원소",
+        "한손검",
+        "리월"
+    ],
+    "Talent": {
+        "14031": {
+            "Name": "운래 검법",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "14032": {
+            "Name": "성신 회귀",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 핸드 카드에 <color=#FFFFFFFF>$[C114031]</color>을 생성한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO",
+                "D__KEY__DAMAGE": 3,
+                "C114031": {
+                    "Name": "뇌설",
+                    "Desc": "$[K1]: $[A1403]을 필드로 교체하고 $[S14032]를 즉시 발동한다. 이번 $[S14032]는 $[A1403]에게 <color=#FFFFFFFF>$[K1002]</color> 효과를 주지만 뇌설을 재생성하지 않는다.\\n($[A1403]이 $[S14032]를 사용 시, 만약 핸드에 이 카드가 있으면 뇌설을 재생성하지 않고 이 카드를 $[K56]하고 $[A1403]에게 <color=#FFFFFFFF>$[K1002]</color> 효과를 준다)",
+                    "Child": {
+                        "K1": {
+                            "Name": "<color=#FFFFFFFF>전투 행동</color>",
+                            "Desc": "아군이 전투 행동을 1회 진행하면 행동 순서가 상대에게 넘어간다.\\n<color=#FFFFFFFF>해당 규칙에 속하는 카드는 사용 시 빠른 행동이 아닌 전투 행동으로 간주한다</color>."
+                        },
+                        "A1403": "각청",
+                        "S14032": "S14032",
+                        "K1002": {
+                            "Name": "<color=#FFFFFFFF>번개 원소 부여</color>",
+                            "Desc": "부착 캐릭터가 입힌 {SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>가 {SPRITE_PRESET#2104}<color=#FFACFFFF>번개 원소 피해</color>로 전환된다.\\n<color=#FFFFFFFF>지속 턴</color>: 2"
+                        },
+                        "K56": {
+                            "Name": "<color=#FFFFFFFF>포기</color>",
+                            "Desc": "행동 카드 또는 캐릭터 스킬의 효과를 통해, 핸드 카드 또는 카드 더미에서 행동 카드를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 3
+            }
+        },
+        "14033": {
+            "Name": "천가 순유",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 상대의 모든 대기 캐릭터에게 <color=#FFFFFFFF>$[K5]를 3pt</color> 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO",
+                "D__KEY__DAMAGE": 4,
+                "K5": {
+                    "Name": "<color=#FFFFFFFF>관통 피해</color>",
+                    "Desc": "관통 피해는 피해 보너스를 획득할 수 없으나, 주는 피해가 보호막 또는 피해 면역과 같은 효과에 의해 상쇄되지 않는다."
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 4,
+                "GCG_COST_ENERGY": 3
+            }
+        }
+    },
+    "Related": 214031
+}

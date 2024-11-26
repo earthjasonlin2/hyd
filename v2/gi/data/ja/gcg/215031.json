@@ -1,0 +1,45 @@
+{
+    "Type": "Action",
+    "Name": "余風の抱擁",
+    "Title": "ウェンティ·余風の抱擁",
+    "Desc": "「足下に気をつけて。」",
+    "Source": "キャッツテールでウェンティを招待して対戦し、対応する挑戦目標をクリアすることで獲得",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Venti",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_ANEMO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "天賦",
+        "戦闘アクション"
+    ],
+    "Talent": {
+        "Name": "余風の抱擁",
+        "Desc": "$[K1]：味方の出撃キャラが<color=#FFFFFFFF>$[A1503]</color>の時、このカードを装備できる。\\n$[A1503]がこのカードを装備した後、直ちに<color=#FFD780FF>$[S15032]</color>を1回発動する。\\nこのカードを装備した$[A1503]の生成した<color=#FFFFFFFF>$[C115031]</color>が発動すると、本ラウンドで味方キャラの次の<color=#FFFFFFFF>「通常攻撃」</color>に必要な$[K309]-1。\\n（このカードはデッキに$[A1503]が含まれている場合のみ、デッキに追加できる）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>戦闘アクション</color>",
+                "Desc": "味方が戦闘アクションを1回行った後、相手のターンに移ります。\\n<color=#FFFFFFFF>このようなルールを持つ手札を出すのはクイックアクションではなく、戦闘アクションと見なされます。</color>"
+            },
+            "A1503": "余風の抱擁",
+            "S15032": "S15032",
+            "C115031": {
+                "Name": "風域",
+                "Desc": "<color=#FFFFFFFF>味方が「キャラチェンジ」を行う時</color>、必要な元素サイコロの数-1。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+                "Child": {
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                        "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                    }
+                }
+            },
+            "K309": {
+                "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1109}無色元素</color>",
+                "Desc": "任意タイプの元素サイコロと組み合わせてコストを支払うことができます。"
+            }
+        }
+    }
+}

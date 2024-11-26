@@ -1,0 +1,119 @@
+{
+    "Type": "Character",
+    "Name": "千年珍珠骏麟",
+    "Title": "千年珍珠骏麟",
+    "Desc": "矗立在原海异种顶端的两位霸主之一，因身姿修长优美，被诗人与作者视为孤傲而高洁的生灵，获称「骏麟」。",
+    "Source": "在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度千年珍珠骏麟中获得胜利后获取",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_SeaHorsePrimo",
+    "Hp": 8,
+    "Cost": 2,
+    "Tag": [
+        "雷元素",
+        "其他武器",
+        "魔物"
+    ],
+    "Talent": {
+        "24031": {
+            "Name": "旋尾扇击",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "24032": {
+            "Name": "霰舞鱼群",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。\\n如果本角色已附属<color=#FFFFFFFF>$[C124032]</color>，则使其$[K3]+1。（每回合1次）",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO",
+                "C124032": {
+                    "Name": "原海明珠",
+                    "Desc": "<color=#FFFFFFFF>所附属角色受到伤害时：</color>抵消1点伤害；每回合1次，抵消来自召唤物的伤害时不消耗$[K3]。\\n<color=#FFFFFFFF>$[K3]：2</color>\\n\\n<color=#FFFFFFFF>我方宣布结束时：</color>如果所附属角色为「出战角色」，则抓1张牌。",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>可用次数</color>",
+                            "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                },
+                "K3": {
+                    "Name": "<color=#FFFFFFFF>可用次数</color>",
+                    "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 3
+            }
+        },
+        "24033": {
+            "Name": "原海古雷",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，本角色附属<color=#FFFFFFFF>$[C124032]</color>，召唤<color=#FFFFFFFF>$[C124031]</color>。",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO",
+                "C124032": {
+                    "Name": "原海明珠",
+                    "Desc": "<color=#FFFFFFFF>所附属角色受到伤害时：</color>抵消1点伤害；每回合1次，抵消来自召唤物的伤害时不消耗$[K3]。\\n<color=#FFFFFFFF>$[K3]：2</color>\\n\\n<color=#FFFFFFFF>我方宣布结束时：</color>如果所附属角色为「出战角色」，则抓1张牌。",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>可用次数</color>",
+                            "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                },
+                "C124031": {
+                    "Name": "共鸣珊瑚珠",
+                    "Desc": "<color=#FFFFFFFF>结束阶段：</color>造成1点$[K104]。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+                    "Child": {
+                        "K104": {
+                            "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素伤害</color>",
+                            "Desc": "附着{SPRITE_PRESET#2104}雷元素，可发生元素反应：\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>超载</color>：本伤害+2，目标强制切换到下一个角色\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>超导</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>感电</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>原激化</color>：本伤害+1，生成使下2次草元素或雷元素伤害+1的[<color=#FFFFFFFF>激化领域</color>]"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>可用次数</color>",
+                            "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "24034": {
+            "Name": "明珠甲胄",
+            "Desc": "【被动】战斗开始时，本角色附属<color=#FFFFFFFF>$[C124032]</color>。",
+            "Child": {
+                "C124032": {
+                    "Name": "原海明珠",
+                    "Desc": "<color=#FFFFFFFF>所附属角色受到伤害时：</color>抵消1点伤害；每回合1次，抵消来自召唤物的伤害时不消耗$[K3]。\\n<color=#FFFFFFFF>$[K3]：2</color>\\n\\n<color=#FFFFFFFF>我方宣布结束时：</color>如果所附属角色为「出战角色」，则抓1张牌。",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>可用次数</color>",
+                            "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        },
+        "24037": {
+            "Name": "霰舞鱼群",
+            "Desc": "",
+            "Child": {},
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 224031
+}

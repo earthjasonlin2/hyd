@@ -1,0 +1,65 @@
+{
+    "Type": "Action",
+    "Name": "Keen Sight",
+    "Title": "Tighnari: Keen Sight",
+    "Desc": "Mistakes are part of learning... However, these mistakes should be corrected upon being discovered.",
+    "Source": "Reward for inviting Tighnari to a duel at The Cat's Tail and achieving all corresponding challenge objectives",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Tighnari",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_DENDRO",
+            "count": 4
+        },
+        {}
+    ],
+    "Tag": [
+        "Talent",
+        "Combat Action"
+    ],
+    "Talent": {
+        "Name": "Keen Sight",
+        "Desc": "$[K1]: When your active character is <color=#FFFFFFFF>$[A1702]</color>, equip this card.\\nAfter $[A1702] equips this card, immediately use <color=#FFD780FF>$[S17022]</color> once.\\nWhen your $[A1702], who has this card equipped, is affected by <color=#FFFFFFFF>$[C117021]</color>, the character's $[K51] costs 1 less $[K309].\\n(You must have $[A1702] in your deck to add this card to your deck.)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+            },
+            "A1702": "Keen Sight",
+            "S17022": "S17022",
+            "C117021": {
+                "Name": "Vijnana Suffusion",
+                "Desc": "<color=#FFFFFFFF>When the character to which this is attached uses a $[K51]: </color>Their $[K100] dealt will be converted to $[K107] and after the Skill DMG is finalized, summon 1 $[K1008].\\n<color=#FFFFFFFF>$[K3]: 2</color>",
+                "Child": {
+                    "K51": {
+                        "Name": "<color=#FFFFFFFF>Charged Attack</color>",
+                        "Desc": "Before your Action Phase, should the total number of your Elemental Dice be even, your Normal Attack will be considered a Charged Attack."
+                    },
+                    "K100": {
+                        "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>",
+                        "Desc": "Physical DMG will not apply any Elements, nor can it engage in Elemental Reactions."
+                    },
+                    "K107": {
+                        "Name": "{SPRITE_PRESET#2107}<color=#7EC236FF>Dendro DMG</color>",
+                        "Desc": "Applies {SPRITE_PRESET#2107}Dendro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Bloom</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Dendro Core</color>] that grants +2 DMG to the next instance of Pyro or Electro DMG\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Burning</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Burning Flame</color>] that will deal 1 Pyro DMG at the end of the Round (Takes effect once, max 2 stacks)\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Quicken</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Catalyzing Field</color>] that grants +1 DMG to the next 2 instances of Dendro or Electro DMG"
+                    },
+                    "K1008": {
+                        "Name": "<color=#FFFFFFFF>Clusterbloom Arrow</color>",
+                        "Desc": "<color=#FFFFFFFF>End Phase:</color> Deal 1 {SPRITE_PRESET#2107}<color=#7EC236FF>Dendro DMG</color>.\\n<color=#FFFFFFFF>Usage(s): 1</color> (Can stack. Max 2 stacks.)"
+                    },
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                        "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                    }
+                }
+            },
+            "K51": {
+                "Name": "<color=#FFFFFFFF>Charged Attack</color>",
+                "Desc": "Before your Action Phase, should the total number of your Elemental Dice be even, your Normal Attack will be considered a Charged Attack."
+            },
+            "K309": {
+                "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1109}Unaligned Element</color>",
+                "Desc": "You may use Elemental Dice of any element to pay this type of cost."
+            }
+        }
+    }
+}

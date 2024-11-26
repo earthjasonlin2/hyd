@@ -1,0 +1,104 @@
+{
+    "Type": "Character",
+    "Name": "Fatui Cryo Cicin Mage",
+    "Title": "\"Cicin of the Hollow Mist\" Cryo Cicin Mage",
+    "Desc": "And so long as the Mist Grass yet lingers, the Cryo Cicins will not abandon her.",
+    "Source": "Reward for accepting the Tavern Challenge at The Cat's Tail and claiming victory in a Friendly Fracas with Cryo Cicin Mage",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_FatuusMageice",
+    "Hp": 10,
+    "Cost": 3,
+    "Tag": [
+        "Cryo",
+        "Other Weapons",
+        "Fatui"
+    ],
+    "Talent": {
+        "21011": {
+            "Name": "Cicin Icicle",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "21012": {
+            "Name": "Misty Summons",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], summons <color=#FFFFFFFF>$[C121011]</color>.",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "C121011": {
+                    "Name": "Cryo Cicins",
+                    "Desc": "<color=#FFFFFFFF>End Phase:</color> Deal 1 $[K101]\\n<color=#FFFFFFFF>$[K3]: 2</color> (Can stack, max 3 stacks)\\n\\n<color=#FFFFFFFF>After $[A2101] performs a Normal Attack:</color> This card gains 1 $[K3].\\n<color=#FFFFFFFF>After $[A2101] takes Elemental Reaction DMG:</color>This card loses 1 $[K3].",
+                    "Child": {
+                        "K101": {
+                            "Name": "{SPRITE_PRESET#2101}<color=#99FFFFFF>Cryo DMG</color>",
+                            "Desc": "Applies {SPRITE_PRESET#2101}Cryo and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Melt</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Superconduct</color>: DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Frozen</color>: DMG +1 for this instance, the target is unable to perform any Actions this Round (Can be removed in advance after the target receives Physical or Pyro DMG, in which case they will take +2 DMG)"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        },
+                        "A2101": "Fatui Cryo Cicin Mage"
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3
+            }
+        },
+        "21013": {
+            "Name": "Blizzard, Branch, Blossom",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], grants this character $[K201], creates 1 <color=#FFFFFFFF>$[C121012]</color>.",
+            "Child": {
+                "D__KEY__DAMAGE": 5,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "K201": {
+                    "Name": "<color=#99FFFFFF>{SPRITE_PRESET#2101}Cryo Application</color>",
+                    "Desc": "When {SPRITE_PRESET#2101}Cryo is applied without dealing any DMG, the Elemental Reaction triggered will ignore DMG-dealing effects:\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Melt</color>: No effect\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Superconduct</color>: No effect\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Frozen</color>: The target is unable to perform any Actions this Round (Can be removed in advance after the target receives Physical or Pyro DMG, in which case they will take +2 DMG)"
+                },
+                "C121012": {
+                    "Name": "Flowing Cicin Ward",
+                    "Desc": "Provides <color=#FFFFFFFF>1 $[K6] point</color> for your active character.\\n<color=#FFFFFFFF>When created:</color> If you have <color=#FFFFFFFF>$[C121011]</color> on the field, additionally increase $[K6] by the amount of $[K3] it has. (Adds a maximum of 3 additional $[K6])",
+                    "Child": {
+                        "K6": {
+                            "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>Shield</color>",
+                            "Desc": "This Shield will be consumed to protect the character who equips it from DMG."
+                        },
+                        "C121011": {
+                            "Name": "Cryo Cicins",
+                            "Desc": "<color=#FFFFFFFF>End Phase:</color> Deal 1 $[K101]\\n<color=#FFFFFFFF>$[K3]: 2</color> (Can stack, max 3 stacks)\\n\\n<color=#FFFFFFFF>After $[A2101] performs a Normal Attack:</color> This card gains 1 $[K3].\\n<color=#FFFFFFFF>After $[A2101] takes Elemental Reaction DMG:</color>This card loses 1 $[K3].",
+                            "Child": {
+                                "K101": {
+                                    "Name": "{SPRITE_PRESET#2101}<color=#99FFFFFF>Cryo DMG</color>",
+                                    "Desc": "Applies {SPRITE_PRESET#2101}Cryo and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Melt</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Superconduct</color>: DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Frozen</color>: DMG +1 for this instance, the target is unable to perform any Actions this Round (Can be removed in advance after the target receives Physical or Pyro DMG, in which case they will take +2 DMG)"
+                                },
+                                "K3": {
+                                    "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                                    "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                                },
+                                "A2101": "Fatui Cryo Cicin Mage"
+                            }
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3,
+                "GCG_COST_ENERGY": 3
+            }
+        }
+    },
+    "Related": 221011
+}

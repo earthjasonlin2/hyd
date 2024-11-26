@@ -1,0 +1,117 @@
+{
+    "Id": 2032041,
+    "Name": "星雲を喰らう頭",
+    "Desc": "心獣の頭。星の輝きを飲み、星雲の塵を喰らう。",
+    "MonsterCampID": null,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 325.50000000046566,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/BossIconTemporary.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "MinionLv2",
+    "SpeedBase": 86,
+    "StanceBase": 360,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.3000000002793968,
+    "Child": [
+        {
+            "Id": 2032041,
+            "AttackModifyRatio": 0.8333330010063946,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Wind",
+                "Quantum"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 203204101,
+                    "SkillName": "星雲喰らい",
+                    "SkillDesc": "味方全体に少量の風属性ダメージを与える。",
+                    "DamageType": "Wind",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 203204102,
+                    "SkillName": "太虚吐納",
+                    "SkillDesc": "共鳴状態の時に発動する。味方全体に風属性ダメージを与え、高確率で攻撃を受けた味方を<u>怒噪</u>状態にする。",
+                    "DamageType": "Wind",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 203204103,
+                    "SkillName": "守備",
+                    "SkillDesc": "「守備」状態に入る。弱点が撃破されていない時、受けるダメージがダウンする。弱点が撃破された時、行動順の遅延量がアップする。弱点撃破状態の時、受けるダメージがアップする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 2032041,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2032041,
+            "WorldLevel": 1,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2032041,
+            "WorldLevel": 2,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2032041,
+            "WorldLevel": 3,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2032041,
+            "WorldLevel": 4,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2032041,
+            "WorldLevel": 5,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2032041,
+            "WorldLevel": 6,
+            "DisplayItemList": []
+        }
+    ]
+}

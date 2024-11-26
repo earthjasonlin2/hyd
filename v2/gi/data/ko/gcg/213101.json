@@ -1,0 +1,45 @@
+{
+    "Type": "Action",
+    "Name": "갈채 속 마무리",
+    "Title": "리니·갈채 속 마무리",
+    "Desc": "「박수 부탁해!」",
+    "Source": "캣테일 술집에서 리니를 초대해 대전하고 상응하는 도전 목표 달성 후 획득",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Liney",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PYRO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "특성",
+        "전투 행동"
+    ],
+    "Talent": {
+        "Name": "갈채 속 마무리",
+        "Desc": "$[K1]: 아군 출전 캐릭터가 <color=#FFFFFFFF>$[A1310]</color>일 때 해당 카드를 장착할 수 있다.\\n$[A1310]가 해당 카드를 장착하면 즉시 <color=#FFD780FF>$[S13102]</color>을 1회 사용한다.\\n해당 카드를 장착한 $[A1310]가 필드에 있을 시, $[A1310] 자신과 <color=#FFFFFFFF>$[C113101]</color>가 {SPRITE_PRESET#2103}<color=#FF9999FF>불 원소가 부착</color>된 캐릭터에게 주는 피해+2pt(턴당 1회)\\n(카드 덱에 $[A1310]가 있어야만 카드 덱에 추가 가능)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>전투 행동</color>",
+                "Desc": "아군이 전투 행동을 1회 진행하면 행동 순서가 상대에게 넘어간다.\\n<color=#FFFFFFFF>해당 규칙에 속하는 카드는 사용 시 빠른 행동이 아닌 전투 행동으로 간주한다</color>."
+            },
+            "A1310": "갈채 속 마무리",
+            "S13102": "S13102",
+            "C113101": {
+                "Name": "웃는 고양이 모자",
+                "Desc": "<color=#FFFFFFFF>종료 단계:</color> $[K103]를 1pt 준다.\\n<color=#FFFFFFFF>$[K3]: 1</color>(중첩 가능, 최대 중첩수: 2회)",
+                "Child": {
+                    "K103": {
+                        "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>불 원소 피해</color>",
+                        "Desc": "{SPRITE_PRESET#2103}불 원소 부착 시 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>융해</color>: 이번 피해+2pt\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>증발</color>: 이번 피해+2pt\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>과부하</color>: 이번 피해+2pt, 대상이 다음 캐릭터로 강제 교체된다.\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>연소</color>: 이번 피해+1pt, 턴 종료 시 불 원소 피해를 1pt 주는 [<color=#FFFFFFFF>불타는 화염</color>]을 생성한다. (사용 가능 횟수: 1, 최대 중첩수: 2)"
+                    },
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                        "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                    }
+                }
+            }
+        }
+    }
+}

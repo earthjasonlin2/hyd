@@ -1,0 +1,32 @@
+{
+    "Type": "Action",
+    "Name": "Paimon",
+    "Title": "Paimon, the Best Guide",
+    "Desc": "\"That's right! Your fortune is Paimon's fortune! And vice versa, Paimon's fortune is also your fortune.\"",
+    "Source": "Reward for meeting the Player Manual's requirements",
+    "Icon": "UI_Gcg_CardFace_Assist_NPC_Paimon",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PAIMON",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "Companion"
+    ],
+    "Talent": {
+        "Name": "Paimon",
+        "Desc": "<color=#FFFFFFFF>When Action Phase begins:</color> Create $[K411] ×2.\\n<color=#FFFFFFFF>$[K3]: 2</color>",
+        "Child": {
+            "K411": {
+                "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1111}Omni Element</color>",
+                "Desc": "The {SPRITE_PRESET#1111}Omni Element can be considered as any kind of element, and can be used to pay for costs of various kinds."
+            },
+            "K3": {
+                "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+            }
+        }
+    }
+}

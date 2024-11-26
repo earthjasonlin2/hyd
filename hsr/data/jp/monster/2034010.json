@@ -1,0 +1,248 @@
+{
+    "Id": 2034010,
+    "Name": "{RUBY_B#ほりじん}歩離人{RUBY_E#}の{RUBY_B#せんしゅ}戦首{RUBY_E#}・{RUBY_B#フーレイ}呼雷{RUBY_E#}",
+    "Desc": "十の悪行を尽くし、幽獄の底に封じられた歩離人の首領。\\n<unbreak>700</unbreak>年にわたる監禁で苦しみと憎しみを深め、脱獄した後、狼群の主として仙舟「羅浮」に挑戦を仕掛けた。しかし、この狂気的な行動の裏には何か別の目的があるようだ……",
+    "MonsterCampID": 2,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 2557.5000000004657,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/Monster_2034010.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "LittleBoss",
+    "SpeedBase": 200,
+    "StanceBase": 720,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.20000000018626451,
+    "Child": [
+        {
+            "Id": 2034010,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Fire",
+                "Wind"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 203401001,
+                    "SkillName": "折れた剣を牙とする",
+                    "SkillDesc": "指定した味方単体に雷属性ダメージを与える。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 203401002,
+                    "SkillName": "鉄を斬って爪とする",
+                    "SkillDesc": "指定した味方単体及び隣接する味方に雷属性ダメージを与える。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 203401003,
+                    "SkillName": "地割れ、草残らず",
+                    "SkillDesc": "自身以外のすべてのユニットの行動を遅延させ、少量の雷属性ダメージを与える。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 203401004,
+                    "SkillName": "雷風鳴り、枯草滅ぼす",
+                    "SkillDesc": "味方全体に雷属性ダメージを与える。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 203401005,
+                    "SkillName": "貪狼は駆け、血色が降臨する",
+                    "SkillDesc": "指定した味方単体に大量の雷属性ダメージを与え、高確率で「<u>まとわりつく恐怖</u>」を付与する。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 203401006,
+                    "SkillName": "戦首の月狂い",
+                    "SkillDesc": "敵が攻撃を行った後、<u>「月狂い」状態に入ることができる敵</u>に「<u>嗜血</u>」を1層付与する。「<u>嗜血</u>」が一定層数に達する時、「<u>月狂い</u>」状態に入る。\\nアクションバーに「月狂い」のカウントダウンが出現し、カウントダウンのターンが回ってきた時、すべての敵の「<u>月狂い</u>」状態が解除される。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 203401007,
+                    "SkillName": "月に吼える狼",
+                    "SkillDesc": "呼雷が「<u>月狂い</u>」状態に入った後、敵が攻撃を行うたびに、呼雷は「憤激」を1層獲得する。攻撃を行ったのが呼雷の場合、追加で「憤激」を1層獲得する。味方が攻撃を行うたびに、「憤激」が1層減少する。「憤激」には初期層数がある。「憤激」が一定層数に達すると、呼雷は「憤激」の層数をすべて消費して「貪狼は駆け、血色が降臨する」を発動する。味方キャラの攻撃によって「憤激」が0層になると、呼雷の靭性を削り、「憤激」を指定の層数にリセットする。",
+                    "DamageType": "",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 203401008,
+                    "SkillName": "我の咆哮に耳を傾け、狼群に追従せよ",
+                    "SkillDesc": "アクションバーに「狼群招集」が出現する。「狼群招集」が行動する時、「狼兵・玄爪」または「狼兵・蝕月」が召喚される。敵が「<u>月狂い</u>」に入る時、「狼群招集」の行動順が遅れる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 203401001,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Fire",
+                "Wind"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 203401001,
+                    "SkillName": "折れた剣を牙とする",
+                    "SkillDesc": "指定した味方単体に雷属性ダメージを与える。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 203401002,
+                    "SkillName": "鉄を斬って爪とする",
+                    "SkillDesc": "指定した味方単体及び隣接する味方に雷属性ダメージを与える。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 203401003,
+                    "SkillName": "地割れ、草残らず",
+                    "SkillDesc": "自身以外のすべてのユニットの行動を遅延させ、少量の雷属性ダメージを与える。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 203401004,
+                    "SkillName": "雷風鳴り、枯草滅ぼす",
+                    "SkillDesc": "味方全体に雷属性ダメージを与える。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 203401005,
+                    "SkillName": "貪狼は駆け、血色が降臨する",
+                    "SkillDesc": "指定した味方単体に大量の雷属性ダメージを与え、高確率で「<u>まとわりつく恐怖</u>」を付与する。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 203401006,
+                    "SkillName": "戦首の月狂い",
+                    "SkillDesc": "敵が攻撃を行った後、<u>「月狂い」状態に入ることができる敵</u>に「<u>嗜血</u>」を1層付与する。「<u>嗜血</u>」が一定層数に達する時、「<u>月狂い</u>」状態に入る。\\nアクションバーに「月狂い」のカウントダウンが出現し、カウントダウンのターンが回ってきた時、すべての敵の「<u>月狂い</u>」状態が解除される。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 203401007,
+                    "SkillName": "月に吼える狼",
+                    "SkillDesc": "呼雷が「<u>月狂い</u>」状態に入った後、敵が攻撃を行うたびに、呼雷は「憤激」を1層獲得する。攻撃を行ったのが呼雷の場合、追加で「憤激」を1層獲得する。味方が攻撃を行うたびに、「憤激」が1層減少する。「憤激」には初期層数がある。「憤激」が一定層数に達すると、呼雷は「憤激」の層数をすべて消費して「貪狼は駆け、血色が降臨する」を発動する。味方キャラの攻撃によって「憤激」が0層になると、呼雷の靭性を削り、「憤激」を指定の層数にリセットする。",
+                    "DamageType": "",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 203401008,
+                    "SkillName": "我の咆哮に耳を傾け、狼群に追従せよ",
+                    "SkillDesc": "アクションバーに「狼群招集」が出現する。「狼群招集」が行動する時、「狼兵・玄爪」または「狼兵・蝕月」が召喚される。敵が「<u>月狂い</u>」に入る時、「狼群招集」の行動順が遅れる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 2034010,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2034010,
+            "WorldLevel": 1,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2034010,
+            "WorldLevel": 2,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2034010,
+            "WorldLevel": 3,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2034010,
+            "WorldLevel": 4,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2034010,
+            "WorldLevel": 5,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2034010,
+            "WorldLevel": 6,
+            "DisplayItemList": []
+        }
+    ]
+}

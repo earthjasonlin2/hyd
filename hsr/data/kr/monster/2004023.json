@@ -1,0 +1,162 @@
+{
+    "Id": 2004023,
+    "Name": "운기군 효위•연경(환상)",
+    "Desc": "경원 장군의 호위무사이다. 어린 나이임에도 불구하고 천재라 불릴 정도로 뛰어난 검술을 지니고 있다. 이곳에 나타난 건 당신의 기억을 바탕으로 시뮬레이션한 환영이다",
+    "MonsterCampID": null,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 6510,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/Monster_2004020.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "LittleBoss",
+    "SpeedBase": 119,
+    "StanceBase": 660,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.3000000002793968,
+    "Child": [
+        {
+            "Id": 2004023,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Thunder",
+                "Wind",
+                "Quantum",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Fire",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.6000000005587935
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 200402301,
+                    "SkillName": "쾌재풍",
+                    "SkillDesc": "지정된 단일 아군에게 얼음 속성 피해를 가하며, 모든 [비검(환상)]에 공격을 명령하여 추가 피해를 가한다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200402302,
+                    "SkillName": "돌아온 제비",
+                    "SkillDesc": "[비검(환상)] 4개를 소환하고 [검진] 효과를 획득해 자신의 속도를 증가시킨다. [비검(환상)]은 약점이 격파된 후에만 처치될 수 있으며, 처치 시 남은 랜덤 비검에게 자신의 약점을 이전시킨다. 모든 [비검(환상)]의 약점이 격파되면 [검진]이 해제된다",
+                    "DamageType": "",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200402303,
+                    "SkillName": "삼척수",
+                    "SkillDesc": "지정된 단일 아군에게 얼음 속성 피해를 가하며 피격된 목표는 높은 확률로 빙결 상태에 빠진다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 200402304,
+                    "SkillName": "파진가(破陣歌)",
+                    "SkillDesc": "지정된 단일 아군 및 인접한 목표에게 얼음 속성 피해를 가한다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200402305,
+                    "SkillName": "검기 임박",
+                    "SkillDesc": "차지 상태에 진입한다. 다음번 행동은 모든 아군에게 [은하 폭포]를 발동한다",
+                    "DamageType": "",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200402306,
+                    "SkillName": "은하 폭포",
+                    "SkillDesc": "모든 아군에게 대량의 얼음 속성 피해를 가한다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200402307,
+                    "SkillName": "검기 응집",
+                    "SkillDesc": "단일 아군을 고정하고 2턴 후 [흐르는 구름, 범람하는 은하]를 발동한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 200402308,
+                    "SkillName": "흐르는 구름, 범람하는 은하",
+                    "SkillDesc": "지정된 단일 아군에게 연속으로 대량의 얼음 속성 피해를 가한다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 200402309,
+                    "SkillName": "검화무영",
+                    "SkillDesc": "연경과 [비검(환상)]의 모든 공격은 피격된 아군을 [서리 가시] 상태에 빠뜨리고 받는 얼음 속성 피해를 증가시킨다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 200402310,
+                    "SkillName": "돌아온 제비",
+                    "SkillDesc": "[비검(환상)] 4개를 소환하고 [검진] 효과를 획득해 자신의 속도를 증가시킨다. [비검(환상)]은 초기에 약점이 비공개이며, 올바른 속성의 공격을 받으면 해당 효과가 해제된다. [비검(환상)]은 약점이 격파된 후에만 처치될 수 있으며, 남은 랜덤 비검에게 자신의 약점을 이전시킨다. 모든 [비검(환상)]의 약점이 격파되면 [검진]이 해제된다",
+                    "DamageType": "",
+                    "SPHitBase": 10
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 2004023,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2004023,
+            "WorldLevel": 1,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2004023,
+            "WorldLevel": 2,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2004023,
+            "WorldLevel": 3,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2004023,
+            "WorldLevel": 4,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2004023,
+            "WorldLevel": 5,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2004023,
+            "WorldLevel": 6,
+            "DisplayItemList": []
+        }
+    ]
+}

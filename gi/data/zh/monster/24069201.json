@@ -1,0 +1,62 @@
+{
+    "Name": "建造特化型机关",
+    "Desc": "在建筑施工、考古发掘上同样有不可估量价值的大型发条机关，其名来自修建克莱门汀线时卡雷斯雇佣的工程师。\\n这名工程师在卡雷斯的资助下为打通白淞隧道建造了颇具传奇性的「黄金乐船」巨型工程机械，并在竣工后据此设计了这类结构相似，但尺寸缩小的发条机关。",
+    "Icon": "UI_MonsterIcon_MachinaIustitia_Excavator",
+    "Codex": "AUTOMATRON",
+    "Title": "建造特化型",
+    "SpecialNames": [
+        "艾蒂安-路易式机关"
+    ],
+    "Reward": [],
+    "Child": {
+        "24069201": {
+            "MonsterName": "MachinaIustitia_Excavator_Codex",
+            "Type": "MONSTER_ORDINARY",
+            "HpDrops": [
+                {
+                    "dropId": 22010010,
+                    "hpPercent": 75
+                },
+                {
+                    "dropId": 22010010,
+                    "hpPercent": 50
+                },
+                {
+                    "dropId": 22010010,
+                    "hpPercent": 25
+                }
+            ],
+            "KillDropId": 22010030,
+            "Prop": [
+                {
+                    "type": "FIGHT_PROP_BASE_HP",
+                    "growCurve": "GROW_CURVE_HP_2"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_ATTACK",
+                    "growCurve": "GROW_CURVE_ATTACK_2"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_DEFENSE",
+                    "growCurve": "GROW_CURVE_DEFENSE"
+                }
+            ],
+            "LocalLegend": false,
+            "SubHurt": {
+                "Fire": 0.1000000014901,
+                "Grass": 0.1000000014901,
+                "Water": 0.1000000014901,
+                "Elec": 0.1000000014901,
+                "Wind": 0.1000000014901,
+                "Ice": 0.1000000014901,
+                "Rock": 0.1000000014901,
+                "Physical": 0.1000000014901
+            },
+            "Base": {
+                "HP": 95.0879974365234,
+                "ATK": 37.6800003051758,
+                "DEF": 500
+            }
+        }
+    }
+}

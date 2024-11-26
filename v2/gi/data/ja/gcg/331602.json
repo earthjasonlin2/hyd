@@ -1,0 +1,32 @@
+{
+    "Type": "Action",
+    "Name": "元素共鳴：不動の岩",
+    "Title": "元素共鳴：不動の岩",
+    "Desc": "盤岩鎮めて、山岳崩れず。",
+    "Source": "",
+    "Icon": "UI_Gcg_CardFace_Event_ResonanceA_Rock",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_GEO",
+            "count": 1
+        },
+        {}
+    ],
+    "Tag": [
+        "元素共鳴"
+    ],
+    "Talent": {
+        "Name": "元素共鳴：不動の岩",
+        "Desc": "<color=#FFFFFFFF>本ラウンドにおいて、味方が次に$[K106]を与えた後</color>、味方の場に「$[K6]」を提供する出撃状態が存在する場合、このタイプの出撃状態に「$[K6]」を3補充する。\\n（デッキに{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素</color>のキャラが2体以上含まれている場合のみ、デッキに追加できる）",
+        "Child": {
+            "K106": {
+                "Name": "{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素ダメージ</color>",
+                "Desc": "付着した元素と以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2101}<color=#FFFFFFFF>結晶（氷）</color>：ダメージ+1、味方の出撃キャラはシールドを1獲得する（最大2まで重ねられる）\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2102}<color=#FFFFFFFF>結晶（水）</color>：ダメージ+1、味方の出撃キャラはシールドを1獲得する（最大2まで重ねられる）\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2103}<color=#FFFFFFFF>結晶（炎）</color>：ダメージ+1、味方の出撃キャラはシールドを1獲得する（最大2まで重ねられる）\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2104}<color=#FFFFFFFF>結晶（雷）</color>：ダメージ+1、味方の出撃キャラはシールドを1獲得する（最大2まで重ねられる）"
+            },
+            "K6": {
+                "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>シールド</color>",
+                "Desc": "該当シールドに守られたキャラがダメージを受けた時、シールドを消費してダメージと相殺することができます。"
+            }
+        }
+    }
+}

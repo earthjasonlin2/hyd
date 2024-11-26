@@ -1,0 +1,40 @@
+{
+    "Type": "Action",
+    "Name": "Absorbing Prism",
+    "Title": "Electro Hypostasis: Absorbing Prism",
+    "Desc": "\"Here's our chance!\"\\n\"Hey, it's on our side!\"",
+    "Source": "Reward for accepting the Tavern Challenge against the Electro Hypostasis at The Cat's Tail and achieving all corresponding challenge objectives in a Friendly Fracas",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Effigyelectric",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_ELECTRO",
+            "count": 2
+        },
+        {}
+    ],
+    "Tag": [
+        "Talent",
+        "Combat Action"
+    ],
+    "Talent": {
+        "Name": "Absorbing Prism",
+        "Desc": "<color=#FFFFFFFF>$[K1]:</color> When your active character is <color=#FFFFFFFF>$[A2401]</color>, heal that character for 3 HP and attach the <color=#FFFFFFFF>$[C124014]</color> to them.\\n(You must have $[A2401] in your deck to add this card to your deck.)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+            },
+            "A2401": "Absorbing Prism",
+            "C124014": {
+                "Name": "Electro Crystal Core",
+                "Desc": "<color=#FFFFFFFF>When the character to which this is attached would be defeated:</color> Remove this effect, ensure the character $[K54|s1], and heal them to 1 HP.",
+                "Child": {
+                    "K54": {
+                        "Name": "<color=#FFFFFFFF>Immunity to Defeat</color>|s1:<color=#FFFFFFFF>will not be defeated</color>",
+                        "Desc": "Certain effects will grant characters an <color=#FFFFFFFF>immunity to being defeated</color> when their HP hits 0, and will heal them for a certain amount thereafter.\\nWhen this occurs, characters will not be regarded as having experienced a <color=#FFFFFFFF>defeat.</color> (Hence, their attached equipment and statuses will not be removed, and their Energy will remain uncleared.)"
+                    }
+                }
+            }
+        }
+    }
+}

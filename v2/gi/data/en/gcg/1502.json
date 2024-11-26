@@ -1,0 +1,68 @@
+{
+    "Type": "Character",
+    "Name": "Jean",
+    "Title": "\"Dandelion Knight\" Jean",
+    "Desc": "Never believes that she has done well enough — not until final victory is hers, anyway.",
+    "Source": "Reward for inviting Jean to a duel at The Cat's Tail and claiming victory in a Friendly Fracas with her",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Qin",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "Anemo",
+        "Sword",
+        "Mondstadt"
+    ],
+    "Talent": {
+        "15021": {
+            "Name": "Favonius Bladework",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "15022": {
+            "Name": "Gale Blade",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], the target is forcibly switched to the next character.",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO"
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 3
+            }
+        },
+        "15023": {
+            "Name": "Dandelion Breeze",
+            "Desc": "Heals all your characters for 2 HP, summons 1 <color=#FFFFFFFF>$[C115021]</color>.",
+            "Child": {
+                "C115021": {
+                    "Name": "Dandelion Field",
+                    "Desc": "<color=#FFFFFFFF>End Phase:</color> Deal 1 $[K105], heal your active character for 1 HP.\\n<color=#FFFFFFFF>$[K3]: 2</color>",
+                    "Child": {
+                        "K105": {
+                            "Name": "{SPRITE_PRESET#2105}<color=#80FFD7FF>Anemo DMG</color>",
+                            "Desc": "Reacts with Elements if they are already applied:\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Cryo Swirl</color>: Deals 1 Cryo DMG to all opposing characters except the target\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Hydro Swirl</color>: Deals 1 Hydro DMG to all opposing characters except the target\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Pyro Swirl</color>: Deals 1 Pyro DMG to all opposing characters except the target\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Electro Swirl</color>: Deals 1 Electro DMG to all opposing characters except the target"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 4,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 215021
+}

@@ -1,0 +1,159 @@
+{
+    "Id": 1004013,
+    "Name": "쿠쿠리아(환상)",
+    "Desc": "벨로보그의 수호자. 영원히 굳건한 도시 벨로보그의 권위적인 통치자.\\n쿠쿠리아는 역대 수호자의 기적과 권능을 물려받아 전투에서 눈과 얼음의 힘을 호령하며 적을 빙결한다. 이곳에 나타난 건 당신의 기억을 바탕으로 시뮬레이션한 환영이다",
+    "MonsterCampID": null,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 4464,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/Monster_1004010.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "LittleBoss",
+    "SpeedBase": 120,
+    "StanceBase": 660,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.3000000002793968,
+    "Child": [
+        {
+            "Id": 1004013,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Thunder",
+                "Quantum"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.6000000005587935
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.6000000005587935
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 100401301,
+                    "SkillName": "뼈에 사무치는 추위",
+                    "SkillDesc": "지정된 단일 아군에게 얼음 속성 피해를 가한다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 100401302,
+                    "SkillName": "기나긴 빙하기의 전조",
+                    "SkillDesc": "[얼음 서슬(환상)]을 소환한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401303,
+                    "SkillName": "끝없는 겨울의 징벌",
+                    "SkillDesc": "모든 아군에게 대량의 얼음 속성 피해를 가한다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 100401304,
+                    "SkillName": "영원히 고립된 서리",
+                    "SkillDesc": "지정된 단일 아군에게 얼음 속성 피해를 가하며 피격된 아군은 높은 확률로 빙결 상태에 빠진다. 해당 스킬은 [얼음 서슬(환상)]이 고정한 목표에게 추가로 발동된다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 100401305,
+                    "SkillName": "설국 성도의 격노",
+                    "SkillDesc": "차지 상태에 진입한다. 다음번 행동 시 모든 아군에게 [끝없는 겨울의 징벌]을 발동한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401306,
+                    "SkillName": "진동하는 쇄빙",
+                    "SkillDesc": "빙결 상태인 아군 및 인접한 목표에게 얼음 속성 피해를 가하고 주목표의 빙결 상태를 해제한다. 인접한 목표가 빙결 상태인 경우 주목표에게 해당 스킬을 다시 발동한다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 100401307,
+                    "SkillName": "더욱 차갑게 더욱 격렬하게",
+                    "SkillDesc": "빙결 상태에 빠진 단일 아군 1명당 자신 및 소환물이 가하는 피해가 증가한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401308,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401309,
+                    "SkillName": "설국의 방패",
+                    "SkillDesc": "2단계, 게파드를 전투에 투입한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 1004013,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1004013,
+            "WorldLevel": 1,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1004013,
+            "WorldLevel": 2,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1004013,
+            "WorldLevel": 3,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1004013,
+            "WorldLevel": 4,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1004013,
+            "WorldLevel": 5,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1004013,
+            "WorldLevel": 6,
+            "DisplayItemList": []
+        }
+    ]
+}

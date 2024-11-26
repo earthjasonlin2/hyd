@@ -1,0 +1,564 @@
+{
+    "Id": 1004014,
+    "Name": "Annihilator of Desolation Mistral",
+    "Desc": "The Annihilator of Desolation Mistral possesses the divine authority passed down through the generations of Guardians, giving her command over ice and snow to freeze her enemies in battle.",
+    "MonsterCampID": null,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 5812.500000000466,
+    "InitialDelayRatio": 0.20000000018626451,
+    "ImagePath": "SpriteOutput/MonsterFigure/Monster_1004010.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "LittleBoss",
+    "SpeedBase": 130,
+    "StanceBase": 300,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.3000000002793968,
+    "Child": [
+        {
+            "Id": 100401401,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Thunder",
+                "Wind",
+                "Quantum"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.6000000005587935
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.6000000005587935
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 100401401,
+                    "SkillName": "Chill of Bone-Piercing Coagulation",
+                    "SkillDesc": "Deals Ice DMG to a single target.",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 100401402,
+                    "SkillName": "Omen of Everlasting Freeze",
+                    "SkillDesc": "Summons Ice Edges.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401403,
+                    "SkillName": "Punishment of Endless Winter",
+                    "SkillDesc": "Deals massive Ice DMG to all targets.",
+                    "DamageType": "Ice",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 100401404,
+                    "SkillName": "Hoarfrost of Eternal Isolation",
+                    "SkillDesc": "Deals Ice DMG to a single target, with a high chance to Freeze the target.",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 100401405,
+                    "SkillName": "Wrath of Winterland Saints",
+                    "SkillDesc": "Enters the Charging state. The next action casts \"Punishment of Endless Winter\" on all targets.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401406,
+                    "SkillName": "Reverberating Ice",
+                    "SkillDesc": "Deals Ice DMG to Frozen targets and units adjacent to the target. This also removes the primary target's Frozen state. If the adjacent units are frozen, then this ability is used again on the primary target.",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 100401407,
+                    "SkillName": "Intensifying Cold",
+                    "SkillDesc": "For every target that gets Frozen, increases the DMG dealt by this unit and the summons.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401409,
+                    "SkillName": "Shield of the Winterlands",
+                    "SkillDesc": "Gepard joins the battle.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401410,
+                    "SkillName": "Unstoppable Momentum",
+                    "SkillDesc": "Damage received by Annihilator of Desolation Mistral is greatly reduced. However, after being Weakness Broken, its action is additionally delayed and it receives more DMG, as well as recovering allies' Skill Points and activating all allies' Ultimates.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401411,
+                    "SkillName": "Desolation Mistral",
+                    "SkillDesc": "The Annihilator of Desolation Mistral will <u>transfer</u> their own Weakness-Type to \"Ice Edge.\" When \"Ice Edge\" is defeated, Annihilator of Desolation Mistral will take additional Toughness Reduction.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401412,
+                    "SkillName": "Nowhere to Escape",
+                    "SkillDesc": "When Annihilator of Desolation Mistral uses Chill of Bone-Piercing Coagulation or Hoarfrost of Eternal Isolation, these abilities will be <u>unleashed additional times</u> against targets locked on by Ice Edge.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401413,
+                    "SkillName": "Tenacious Resolve",
+                    "SkillDesc": "Reduces DMG received by all friendly units, but every Weakness-Type they have increases DMG received.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401414,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 100401402,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Thunder",
+                "Wind",
+                "Quantum"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.6000000005587935
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.6000000005587935
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 100401401,
+                    "SkillName": "Chill of Bone-Piercing Coagulation",
+                    "SkillDesc": "Deals Ice DMG to a single target.",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 100401402,
+                    "SkillName": "Omen of Everlasting Freeze",
+                    "SkillDesc": "Summons Ice Edges.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401403,
+                    "SkillName": "Punishment of Endless Winter",
+                    "SkillDesc": "Deals massive Ice DMG to all targets.",
+                    "DamageType": "Ice",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 100401404,
+                    "SkillName": "Hoarfrost of Eternal Isolation",
+                    "SkillDesc": "Deals Ice DMG to a single target, with a high chance to Freeze the target.",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 100401405,
+                    "SkillName": "Wrath of Winterland Saints",
+                    "SkillDesc": "Enters the Charging state. The next action casts \"Punishment of Endless Winter\" on all targets.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401406,
+                    "SkillName": "Reverberating Ice",
+                    "SkillDesc": "Deals Ice DMG to Frozen targets and units adjacent to the target. This also removes the primary target's Frozen state. If the adjacent units are frozen, then this ability is used again on the primary target.",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 100401407,
+                    "SkillName": "Intensifying Cold",
+                    "SkillDesc": "For every target that gets Frozen, increases the DMG dealt by this unit and the summons.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401409,
+                    "SkillName": "Shield of the Winterlands",
+                    "SkillDesc": "Gepard joins the battle.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401410,
+                    "SkillName": "Unstoppable Momentum",
+                    "SkillDesc": "Damage received by Annihilator of Desolation Mistral is greatly reduced. However, after being Weakness Broken, its action is additionally delayed and it receives more DMG, as well as recovering allies' Skill Points and activating all allies' Ultimates.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401411,
+                    "SkillName": "Desolation Mistral",
+                    "SkillDesc": "The Annihilator of Desolation Mistral will <u>transfer</u> their own Weakness-Type to \"Ice Edge.\" When \"Ice Edge\" is defeated, Annihilator of Desolation Mistral will take additional Toughness Reduction.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401412,
+                    "SkillName": "Nowhere to Escape",
+                    "SkillDesc": "When Annihilator of Desolation Mistral uses Chill of Bone-Piercing Coagulation or Hoarfrost of Eternal Isolation, these abilities will be <u>unleashed additional times</u> against targets locked on by Ice Edge.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401413,
+                    "SkillName": "Tenacious Resolve",
+                    "SkillDesc": "Reduces DMG received by all friendly units, but every Weakness-Type they have increases DMG received.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401414,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 100401403,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Thunder",
+                "Wind",
+                "Quantum"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.6000000005587935
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.6000000005587935
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 100401401,
+                    "SkillName": "Chill of Bone-Piercing Coagulation",
+                    "SkillDesc": "Deals Ice DMG to a single target.",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 100401402,
+                    "SkillName": "Omen of Everlasting Freeze",
+                    "SkillDesc": "Summons Ice Edges.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401403,
+                    "SkillName": "Punishment of Endless Winter",
+                    "SkillDesc": "Deals massive Ice DMG to all targets.",
+                    "DamageType": "Ice",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 100401404,
+                    "SkillName": "Hoarfrost of Eternal Isolation",
+                    "SkillDesc": "Deals Ice DMG to a single target, with a high chance to Freeze the target.",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 100401405,
+                    "SkillName": "Wrath of Winterland Saints",
+                    "SkillDesc": "Enters the Charging state. The next action casts \"Punishment of Endless Winter\" on all targets.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401406,
+                    "SkillName": "Reverberating Ice",
+                    "SkillDesc": "Deals Ice DMG to Frozen targets and units adjacent to the target. This also removes the primary target's Frozen state. If the adjacent units are frozen, then this ability is used again on the primary target.",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 100401407,
+                    "SkillName": "Intensifying Cold",
+                    "SkillDesc": "For every target that gets Frozen, increases the DMG dealt by this unit and the summons.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401409,
+                    "SkillName": "Shield of the Winterlands",
+                    "SkillDesc": "Gepard joins the battle.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401410,
+                    "SkillName": "Unstoppable Momentum",
+                    "SkillDesc": "Damage received by Annihilator of Desolation Mistral is greatly reduced. However, after being Weakness Broken, its action is additionally delayed and it receives more DMG, as well as recovering allies' Skill Points and activating all allies' Ultimates.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401411,
+                    "SkillName": "Desolation Mistral",
+                    "SkillDesc": "The Annihilator of Desolation Mistral will <u>transfer</u> their own Weakness-Type to \"Ice Edge.\" When \"Ice Edge\" is defeated, Annihilator of Desolation Mistral will take additional Toughness Reduction.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401412,
+                    "SkillName": "Nowhere to Escape",
+                    "SkillDesc": "When Annihilator of Desolation Mistral uses Chill of Bone-Piercing Coagulation or Hoarfrost of Eternal Isolation, these abilities will be <u>unleashed additional times</u> against targets locked on by Ice Edge.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401413,
+                    "SkillName": "Tenacious Resolve",
+                    "SkillDesc": "Reduces DMG received by all friendly units, but every Weakness-Type they have increases DMG received.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401414,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 100401404,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Thunder",
+                "Wind",
+                "Quantum"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.6000000005587935
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.6000000005587935
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 100401401,
+                    "SkillName": "Chill of Bone-Piercing Coagulation",
+                    "SkillDesc": "Deals Ice DMG to a single target.",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 100401402,
+                    "SkillName": "Omen of Everlasting Freeze",
+                    "SkillDesc": "Summons Ice Edges.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401403,
+                    "SkillName": "Punishment of Endless Winter",
+                    "SkillDesc": "Deals massive Ice DMG to all targets.",
+                    "DamageType": "Ice",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 100401404,
+                    "SkillName": "Hoarfrost of Eternal Isolation",
+                    "SkillDesc": "Deals Ice DMG to a single target, with a high chance to Freeze the target.",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 100401405,
+                    "SkillName": "Wrath of Winterland Saints",
+                    "SkillDesc": "Enters the Charging state. The next action casts \"Punishment of Endless Winter\" on all targets.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401406,
+                    "SkillName": "Reverberating Ice",
+                    "SkillDesc": "Deals Ice DMG to Frozen targets and units adjacent to the target. This also removes the primary target's Frozen state. If the adjacent units are frozen, then this ability is used again on the primary target.",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 100401407,
+                    "SkillName": "Intensifying Cold",
+                    "SkillDesc": "For every target that gets Frozen, increases the DMG dealt by this unit and the summons.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401409,
+                    "SkillName": "Shield of the Winterlands",
+                    "SkillDesc": "Gepard joins the battle.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401410,
+                    "SkillName": "Unstoppable Momentum",
+                    "SkillDesc": "Damage received by Annihilator of Desolation Mistral is greatly reduced. However, after being Weakness Broken, its action is additionally delayed and it receives more DMG, as well as recovering allies' Skill Points and activating all allies' Ultimates.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401411,
+                    "SkillName": "Desolation Mistral",
+                    "SkillDesc": "The Annihilator of Desolation Mistral will <u>transfer</u> their own Weakness-Type to \"Ice Edge.\" When \"Ice Edge\" is defeated, Annihilator of Desolation Mistral will take additional Toughness Reduction.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401412,
+                    "SkillName": "Nowhere to Escape",
+                    "SkillDesc": "When Annihilator of Desolation Mistral uses Chill of Bone-Piercing Coagulation or Hoarfrost of Eternal Isolation, these abilities will be <u>unleashed additional times</u> against targets locked on by Ice Edge.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401413,
+                    "SkillName": "Tenacious Resolve",
+                    "SkillDesc": "Reduces DMG received by all friendly units, but every Weakness-Type they have increases DMG received.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401414,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 1004014,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1004014,
+            "WorldLevel": 1,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1004014,
+            "WorldLevel": 2,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1004014,
+            "WorldLevel": 3,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1004014,
+            "WorldLevel": 4,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1004014,
+            "WorldLevel": 5,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1004014,
+            "WorldLevel": 6,
+            "DisplayItemList": []
+        }
+    ]
+}

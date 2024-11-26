@@ -1,0 +1,538 @@
+{
+    "Id": 8003012,
+    "Name": "외우주의 얼음",
+    "Desc": "이 세계에 속하지 않는 괴이한 생명. 스텔라론으로 인해 생긴 열계에서 성장해 세계의 기반 구조에서 에너지를 흡수했다. 갑옷 겉면에는 어두운 별하늘이 비춘다.\\n전투에서 외우주의 얼음은 적을 쉽게 빙결시킨다",
+    "MonsterCampID": null,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 744,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/Monster_8003010.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "Elite",
+    "SpeedBase": 100,
+    "StanceBase": 300,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.20000000018626451,
+    "Child": [
+        {
+            "Id": 800301201,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 800301201,
+                    "SkillName": "탄식의 추위",
+                    "SkillDesc": "지정된 단일 아군에게 소량의 얼음 속성 피해를 가한다. 자신이 [빙점] 상태일 경우, 빙결 상태의 단일 아군에게 공격 발동 후 추가로 얼음 속성 피해를 가한다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 800301202,
+                    "SkillName": "서리 승화",
+                    "SkillDesc": "[빙점] 상태에 진입한다. 이후의 공격은 [영원한 겨울의 비]를 발동할 수 있으며, 자신은 [응축된 결정] 효과를 1스택 획득한다",
+                    "DamageType": "Ice",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 800301203,
+                    "SkillName": "영원한 겨울의 비",
+                    "SkillDesc": "[빙점] 상태를 보유할 때만 해당 스킬을 발동할 수 있다. 모든 아군에게 얼음 속성 피해를 가하며, 피격된 아군은 일정 확률로 빙결 상태에 빠지고 행동 게이지가 감소한다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 800301204,
+                    "SkillName": "탄식의 추위",
+                    "SkillDesc": "지정된 단일 아군에게 얼음 속성 피해를 가한다. 자신이 [빙점] 상태일 경우, 일정 확률로 피격된 아군이 빙결 상태에 빠진다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 800301205,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "Ice",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 800301206,
+                    "SkillName": "쇄빙 한파",
+                    "SkillDesc": "빙결 상태에 빠진 아군에게 얼음 속성 피해를 가하는 동시에 대상의 빙결 상태를 해제하며, 인접한 목표에게 얼음 속성 피해를 가한다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 15
+                }
+            ]
+        },
+        {
+            "Id": 800301202,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 800301201,
+                    "SkillName": "탄식의 추위",
+                    "SkillDesc": "지정된 단일 아군에게 소량의 얼음 속성 피해를 가한다. 자신이 [빙점] 상태일 경우, 빙결 상태의 단일 아군에게 공격 발동 후 추가로 얼음 속성 피해를 가한다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 800301202,
+                    "SkillName": "서리 승화",
+                    "SkillDesc": "[빙점] 상태에 진입한다. 이후의 공격은 [영원한 겨울의 비]를 발동할 수 있으며, 자신은 [응축된 결정] 효과를 1스택 획득한다",
+                    "DamageType": "Ice",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 800301203,
+                    "SkillName": "영원한 겨울의 비",
+                    "SkillDesc": "[빙점] 상태를 보유할 때만 해당 스킬을 발동할 수 있다. 모든 아군에게 얼음 속성 피해를 가하며, 피격된 아군은 일정 확률로 빙결 상태에 빠지고 행동 게이지가 감소한다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 800301204,
+                    "SkillName": "탄식의 추위",
+                    "SkillDesc": "지정된 단일 아군에게 얼음 속성 피해를 가한다. 자신이 [빙점] 상태일 경우, 일정 확률로 피격된 아군이 빙결 상태에 빠진다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 800301205,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "Ice",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 800301206,
+                    "SkillName": "쇄빙 한파",
+                    "SkillDesc": "빙결 상태에 빠진 아군에게 얼음 속성 피해를 가하는 동시에 대상의 빙결 상태를 해제하며, 인접한 목표에게 얼음 속성 피해를 가한다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 15
+                }
+            ]
+        },
+        {
+            "Id": 800301203,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 800301201,
+                    "SkillName": "탄식의 추위",
+                    "SkillDesc": "지정된 단일 아군에게 소량의 얼음 속성 피해를 가한다. 자신이 [빙점] 상태일 경우, 빙결 상태의 단일 아군에게 공격 발동 후 추가로 얼음 속성 피해를 가한다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 800301202,
+                    "SkillName": "서리 승화",
+                    "SkillDesc": "[빙점] 상태에 진입한다. 이후의 공격은 [영원한 겨울의 비]를 발동할 수 있으며, 자신은 [응축된 결정] 효과를 1스택 획득한다",
+                    "DamageType": "Ice",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 800301203,
+                    "SkillName": "영원한 겨울의 비",
+                    "SkillDesc": "[빙점] 상태를 보유할 때만 해당 스킬을 발동할 수 있다. 모든 아군에게 얼음 속성 피해를 가하며, 피격된 아군은 일정 확률로 빙결 상태에 빠지고 행동 게이지가 감소한다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 800301204,
+                    "SkillName": "탄식의 추위",
+                    "SkillDesc": "지정된 단일 아군에게 얼음 속성 피해를 가한다. 자신이 [빙점] 상태일 경우, 일정 확률로 피격된 아군이 빙결 상태에 빠진다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 800301205,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "Ice",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 800301206,
+                    "SkillName": "쇄빙 한파",
+                    "SkillDesc": "빙결 상태에 빠진 아군에게 얼음 속성 피해를 가하는 동시에 대상의 빙결 상태를 해제하며, 인접한 목표에게 얼음 속성 피해를 가한다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 15
+                }
+            ]
+        },
+        {
+            "Id": 800301204,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 800301201,
+                    "SkillName": "탄식의 추위",
+                    "SkillDesc": "지정된 단일 아군에게 소량의 얼음 속성 피해를 가한다. 자신이 [빙점] 상태일 경우, 빙결 상태의 단일 아군에게 공격 발동 후 추가로 얼음 속성 피해를 가한다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 800301202,
+                    "SkillName": "서리 승화",
+                    "SkillDesc": "[빙점] 상태에 진입한다. 이후의 공격은 [영원한 겨울의 비]를 발동할 수 있으며, 자신은 [응축된 결정] 효과를 1스택 획득한다",
+                    "DamageType": "Ice",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 800301203,
+                    "SkillName": "영원한 겨울의 비",
+                    "SkillDesc": "[빙점] 상태를 보유할 때만 해당 스킬을 발동할 수 있다. 모든 아군에게 얼음 속성 피해를 가하며, 피격된 아군은 일정 확률로 빙결 상태에 빠지고 행동 게이지가 감소한다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 800301204,
+                    "SkillName": "탄식의 추위",
+                    "SkillDesc": "지정된 단일 아군에게 얼음 속성 피해를 가한다. 자신이 [빙점] 상태일 경우, 일정 확률로 피격된 아군이 빙결 상태에 빠진다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 800301205,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "Ice",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 800301206,
+                    "SkillName": "쇄빙 한파",
+                    "SkillDesc": "빙결 상태에 빠진 아군에게 얼음 속성 피해를 가하는 동시에 대상의 빙결 상태를 해제하며, 인접한 목표에게 얼음 속성 피해를 가한다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 15
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 8003012,
+            "AvatarExpReward": 150,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182007
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183004
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 8003012,
+            "WorldLevel": 1,
+            "AvatarExpReward": 200,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182007
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183004
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 8003012,
+            "WorldLevel": 2,
+            "AvatarExpReward": 250,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182007
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183004
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 8003012,
+            "WorldLevel": 3,
+            "AvatarExpReward": 300,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182007
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183004
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 8003012,
+            "WorldLevel": 4,
+            "AvatarExpReward": 350,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111003
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182007
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183004
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 8003012,
+            "WorldLevel": 5,
+            "AvatarExpReward": 400,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111003
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182007
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183004
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 8003012,
+            "WorldLevel": 6,
+            "AvatarExpReward": 400,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 111003
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182007
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183004
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,74 @@
+{
+    "Name": "어린 숲룡",
+    "Desc": "어린 숲룡. 볼주머니에 숨겨둔 화염류탄 열매 끈끈이로 멀리 있는 물체를 감쌀 수 있다.\\n물체를 감싸는 힘이 강하지 않고, 공중에서 균형을 잘 잡지도 못한다. 심지어 꼬리 위에 앉아 있다가 넘어질 때도 있다. 하지만 언젠가 어린 숲룡도 숲속을 자유롭게 넘나들 수 있는 모습으로 성장할 것이다",
+    "Icon": "UI_MonsterIcon_Natsaurus_Hookwalker_Small",
+    "Codex": "BEAST",
+    "Title": "어린 숲룡",
+    "SpecialNames": [
+        "나타를 떠도는 용"
+    ],
+    "Reward": [
+        {
+            "Id": 202,
+            "Rank": 3,
+            "Icon": "UI_ItemIcon_202"
+        },
+        {
+            "Id": 112101,
+            "Rank": 1,
+            "Icon": "UI_ItemIcon_112101"
+        },
+        {
+            "Id": 112102,
+            "Rank": 2,
+            "Icon": "UI_ItemIcon_112102"
+        },
+        {
+            "Id": 112103,
+            "Rank": 3,
+            "Icon": "UI_ItemIcon_112103"
+        }
+    ],
+    "Child": {
+        "26220101": {
+            "MonsterName": "Monster_Natsaurus_Hookwalker_Small_01",
+            "Type": "MONSTER_ORDINARY",
+            "HpDrops": [
+                {},
+                {},
+                {}
+            ],
+            "KillDropId": 22010013,
+            "Prop": [
+                {
+                    "type": "FIGHT_PROP_BASE_HP",
+                    "growCurve": "GROW_CURVE_HP_2"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_ATTACK",
+                    "growCurve": "GROW_CURVE_ATTACK_2"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_DEFENSE",
+                    "growCurve": "GROW_CURVE_DEFENSE"
+                }
+            ],
+            "LocalLegend": false,
+            "SubHurt": {
+                "Fire": 0.1000000014901,
+                "Grass": 0.3000000119209,
+                "Water": 0.1000000014901,
+                "Elec": 0.1000000014901,
+                "Wind": 0.1000000014901,
+                "Ice": 0.1000000014901,
+                "Rock": 0.1000000014901,
+                "Physical": 0.1000000014901
+            },
+            "Base": {
+                "HP": 13.5839996337891,
+                "ATK": 20.0960006713867,
+                "DEF": 500
+            }
+        }
+    }
+}

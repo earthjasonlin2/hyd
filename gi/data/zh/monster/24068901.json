@@ -1,0 +1,62 @@
+{
+    "Name": "压制特化型机关",
+    "Desc": "基于「谢尔比乌斯式」，进行了调整的发条机关。很遗憾，并不具备攻击以外的能力。\\n基于湮灭能量的发条机关通常会利用特殊晶体构成的中继器从枫丹的环境中提炼荒性与芒性产生能量，但在枫丹以外的区域也能通过预先准备的能量块进行短程短时的行动。这两者的区别体现在机关上晶体部件的形状。",
+    "Icon": "UI_MonsterIcon_MachinaIustitia_Ruggiero_02",
+    "Codex": "AUTOMATRON",
+    "Title": "压制特化型",
+    "SpecialNames": [
+        "布莱切利式机关"
+    ],
+    "Reward": [],
+    "Child": {
+        "24068901": {
+            "MonsterName": "MachinaIustitia_Ruggiero_Codex",
+            "Type": "MONSTER_ORDINARY",
+            "HpDrops": [
+                {
+                    "dropId": 22010010,
+                    "hpPercent": 75
+                },
+                {
+                    "dropId": 22010010,
+                    "hpPercent": 50
+                },
+                {
+                    "dropId": 22010010,
+                    "hpPercent": 25
+                }
+            ],
+            "KillDropId": 22010030,
+            "Prop": [
+                {
+                    "type": "FIGHT_PROP_BASE_HP",
+                    "growCurve": "GROW_CURVE_HP_2"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_ATTACK",
+                    "growCurve": "GROW_CURVE_ATTACK_2"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_DEFENSE",
+                    "growCurve": "GROW_CURVE_DEFENSE"
+                }
+            ],
+            "LocalLegend": false,
+            "SubHurt": {
+                "Fire": 0.1000000014901,
+                "Grass": 0.1000000014901,
+                "Water": 0.1000000014901,
+                "Elec": 0.1000000014901,
+                "Wind": 0.1000000014901,
+                "Ice": 0.1000000014901,
+                "Rock": 0.1000000014901,
+                "Physical": 0.1000000014901
+            },
+            "Base": {
+                "HP": 54.3359985351563,
+                "ATK": 75.3600006103516,
+                "DEF": 500
+            }
+        }
+    }
+}

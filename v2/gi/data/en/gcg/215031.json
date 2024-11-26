@@ -1,0 +1,45 @@
+{
+    "Type": "Action",
+    "Name": "Embrace of Winds",
+    "Title": "Venti: Embrace of Winds",
+    "Desc": "\"Watch your step.\"",
+    "Source": "Reward for inviting Venti to a duel at The Cat's Tail and achieving all corresponding challenge objectives",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Venti",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_ANEMO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "Talent",
+        "Combat Action"
+    ],
+    "Talent": {
+        "Name": "Embrace of Winds",
+        "Desc": "$[K1]: When your active character is <color=#FFFFFFFF>$[A1503]</color>, equip this card.\\nAfter $[A1503] equips this card, immediately use <color=#FFD780FF>$[S15032]</color> once.\\nAfter a <color=#FFFFFFFF>$[C115031]</color> created by your $[A1503], who has this card equipped, is triggered, the next <color=#FFFFFFFF>Normal Attack</color> performed by your character in this Round will cost 1 less $[K309].\\n(You must have $[A1503] in your deck to add this card to your deck.)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+            },
+            "A1503": "Embrace of Winds",
+            "S15032": "S15032",
+            "C115031": {
+                "Name": "Stormzone",
+                "Desc": "<color=#FFFFFFFF>When you perform \"Switch Character\":</color> Spend 1 less Elemental Die.\\n<color=#FFFFFFFF>$[K3]: 2</color>",
+                "Child": {
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                        "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                    }
+                }
+            },
+            "K309": {
+                "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1109}Unaligned Element</color>",
+                "Desc": "You may use Elemental Dice of any element to pay this type of cost."
+            }
+        }
+    }
+}

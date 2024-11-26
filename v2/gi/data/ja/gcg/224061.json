@@ -1,0 +1,43 @@
+{
+    "Type": "Action",
+    "Name": "襲雷閃光",
+    "Title": "アビスの詠唱者・襲雷閃光",
+    "Desc": "「激しい雷とともに、長きに渡り歪んだアビスの英知を異教徒に注ぐ。果てのない紫電をもって、人智をも浸食する偉大な力の存在を知らしめる。」",
+    "Source": "キャッツテールのリトルプリンスのところで酒場挑戦を行い、アビスの詠唱者・紫電に挑戦して友好対戦で対応する挑戦目標をクリアすることで獲得",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_InvokerElectric",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_ELECTRO",
+            "count": 1
+        },
+        {}
+    ],
+    "Tag": [
+        "天賦"
+    ],
+    "Talent": {
+        "Name": "襲雷閃光",
+        "Desc": "<color=#FFFFFFFF>登場時</color>、このカードを装備した<color=#FFFFFFFF>$[A2406]</color>がすでに<color=#FFFFFFFF>$[C124061]</color>を発動している場合、相手の出撃キャラが$[K310]を1失う。\\nこのカードを装備した$[A2406]が戦闘不能になる、または<color=#FFFFFFFF>$[C124061]</color>を発動した時、このカードを破棄し、相手の出撃キャラが$[K310]を1失う。\\n（このカードはデッキに$[A2406]が含まれている場合のみ、デッキに追加できる）",
+        "Child": {
+            "A2406": "襲雷閃光",
+            "C124061": {
+                "Name": "雷の新生",
+                "Desc": "<color=#FFFFFFFF>付与されたキャラが倒された時</color>、この効果を解除してキャラが$[K54]。また該当キャラのHPを4まで回復する。この効果が発動された後、キャラの与える$[K104]+1。",
+                "Child": {
+                    "K54": {
+                        "Name": "<color=#FFFFFFFF>戦闘不能にならない</color>",
+                        "Desc": "一部の効果によってキャラのHPが0になる時も、<color=#FFFFFFFF>戦闘不能にならず</color>、該当キャラのHPを一定値まで回復する。\\nこの時、キャラは<color=#FFFFFFFF>戦闘不能</color>にカウントされない。（そのため、キャラに装備または付与されたものは破棄されず、チャージもクリアされない。）"
+                    },
+                    "K104": {
+                        "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素ダメージ</color>",
+                        "Desc": "{SPRITE_PRESET#2104}雷元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>過負荷</color>：ダメージ+2、目標を強制的に次のキャラにチェンジさせる\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>超電導</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>感電</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>原激化</color>：ダメージ+1、次の草元素または雷元素ダメージを2回まで+1できる「<color=#FFFFFFFF>激化領域</color>」を生成する"
+                    }
+                }
+            },
+            "K310": {
+                "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}チャージ</color>",
+                "Desc": "キャラが「元素爆発」を発動するには、{SPRITE_PRESET#1110}チャージを消費する必要があります。\\nキャラが「元素スキル」や「通常攻撃」を発動した後、{SPRITE_PRESET#1110}チャージを1獲得できます。"
+            }
+        }
+    }
+}

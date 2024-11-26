@@ -1,0 +1,56 @@
+{
+    "Name": "氷蛍",
+    "Desc": "氷元素をわずかに導く小さな生き物。\\n他の蛍類と共に「飛蛍」と呼ばれる。力は小さいが、独特な移動方式で掠食者の攻撃を回避する。",
+    "Icon": "UI_MonsterIcon_Cicin_Ice_01",
+    "Codex": "BEAST",
+    "Title": "氷蛍",
+    "SpecialNames": [
+        "キンキン"
+    ],
+    "Reward": [],
+    "Child": {
+        "26060301": {
+            "MonsterName": "Cicin_Ice_01",
+            "Type": "MONSTER_ORDINARY",
+            "HpDrops": [
+                {
+                    "dropId": 22010016,
+                    "hpPercent": 60
+                },
+                {},
+                {}
+            ],
+            "KillDropId": 22010016,
+            "Prop": [
+                {
+                    "type": "FIGHT_PROP_BASE_HP",
+                    "growCurve": "GROW_CURVE_HP"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_ATTACK",
+                    "growCurve": "GROW_CURVE_ATTACK"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_DEFENSE",
+                    "growCurve": "GROW_CURVE_DEFENSE"
+                }
+            ],
+            "LocalLegend": false,
+            "SubHurt": {
+                "Fire": 0.1000000014901,
+                "Grass": 0.1000000014901,
+                "Water": 0.1000000014901,
+                "Elec": 0.1000000014901,
+                "Wind": 0.1000000014901,
+                "Ice": 0.5,
+                "Rock": 0.1000000014901,
+                "Physical": -0.5
+            },
+            "Base": {
+                "HP": 6.7919998168945,
+                "ATK": 10.0480003356934,
+                "DEF": 500
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+{
+    "Type": "Action",
+    "Name": "落羽の裁決",
+    "Title": "セノ·落羽の裁決",
+    "Desc": "「これこそが俺の、決闘の魂だ。」",
+    "Source": "キャッツテールでセノを招待して対戦し、対応する挑戦目標をクリアすることで獲得",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Cyno",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_ELECTRO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "天賦",
+        "戦闘アクション"
+    ],
+    "Talent": {
+        "Name": "落羽の裁決",
+        "Desc": "$[K1]：味方の出撃キャラが<color=#FFFFFFFF>$[A1404]</color>の時、このカードを装備できる。\\n$[A1404]がこのカードを装備した後、直ちに<color=#FFD780FF>$[S14042]</color>を1回発動する。\\nこのカードを装備した$[A1404]は、<color=#FFFFFFFF>$[C114041]</color>の「憑依」レベルが2以上の時に<color=#FFFFFFFF>$[S14042]</color>を使うと、与えるダメージ+1。（各ラウンド最大2回まで）\\n（このカードはデッキに$[A1404]が含まれている場合のみ、デッキに追加できる）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>戦闘アクション</color>",
+                "Desc": "味方が戦闘アクションを1回行った後、相手のターンに移ります。\\n<color=#FFFFFFFF>このようなルールを持つ手札を出すのはクイックアクションではなく、戦闘アクションと見なされます。</color>"
+            },
+            "A1404": "落羽の裁決",
+            "S14042": "S14042",
+            "C114041": {
+                "Name": "啓途誓使",
+                "Desc": "<color=#FFFFFFFF>エンドフェーズ</color>：「憑依」を1レベル重ねる。「憑依」のレベルが8以上の場合、レベル-6。\\n<color=#FFFFFFFF>「憑依」のレベルによって以下の効果を得る。</color>\\nレベル2以上：$[K100]が$[K104]へと変わる。\\nレベル4以上：与えるダメージ+2。",
+                "Child": {
+                    "K100": {
+                        "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>",
+                        "Desc": "物理ダメージは元素付着させたり、元素反応を起こしたりはしません。"
+                    },
+                    "K104": {
+                        "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素ダメージ</color>",
+                        "Desc": "{SPRITE_PRESET#2104}雷元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>過負荷</color>：ダメージ+2、目標を強制的に次のキャラにチェンジさせる\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>超電導</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>感電</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>原激化</color>：ダメージ+1、次の草元素または雷元素ダメージを2回まで+1できる「<color=#FFFFFFFF>激化領域</color>」を生成する"
+                    }
+                }
+            }
+        }
+    }
+}

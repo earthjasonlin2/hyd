@@ -1,0 +1,66 @@
+{
+    "Type": "Character",
+    "Name": "ベネット",
+    "Title": "運命の試金石·ベネット",
+    "Desc": "自分が絶対に負けると分かった時は、どう勝つのかも分かっているはずだ。",
+    "Source": "キャッツテールでベネットを招待し、友好対戦に勝利することで獲得",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Bennett",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "炎元素",
+        "片手剣",
+        "モンド"
+    ],
+    "Talent": {
+        "13031": {
+            "Name": "好運の剣",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "13032": {
+            "Name": "溢れる情熱",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO",
+                "D__KEY__DAMAGE": 3
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 3
+            }
+        },
+        "13033": {
+            "Name": "素晴らしい旅",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、<color=#FFFFFFFF>$[C113031]</color>を生成する。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO",
+                "D__KEY__DAMAGE": 2,
+                "C113031": {
+                    "Name": "鼓舞エリア",
+                    "Desc": "<color=#FFFFFFFF>味方のキャラがスキルを発動する際</color>、そのキャラのHPが7以上の場合、該当ダメージがさらに+2。スキル処理完了後、そのキャラのHPが6以下の場合、そのキャラのHPを2回復する。\\n<color=#FFFFFFFF>$[K4]：2</color>",
+                    "Child": {
+                        "K4": {
+                            "Name": "<color=#FFFFFFFF>継続ラウンド数</color>",
+                            "Desc": "各ラウンドのエンドフェーズで、<color=#FFFFFFFF>継続ラウンド数</color>が1マイナスされます。\\n<color=#FFFFFFFF>継続ラウンド数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 4,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 213031
+}

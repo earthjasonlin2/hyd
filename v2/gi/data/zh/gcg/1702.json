@@ -1,0 +1,86 @@
+{
+    "Type": "Character",
+    "Name": "提纳里",
+    "Title": "浅蔚轻行·提纳里",
+    "Desc": "从某种角度来说，经验并不等同于智慧。",
+    "Source": "在猫尾酒馆中邀请提纳里进行对局，在友好对局难度中获得胜利后获取",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Tighnari",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "草元素",
+        "弓",
+        "须弥"
+    ],
+    "Talent": {
+        "17021": {
+            "Name": "藏蕴破障",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "17022": {
+            "Name": "识果种雷",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，本角色附属<color=#FFFFFFFF>$[C117021]</color>。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_DENDRO",
+                "C117021": {
+                    "Name": "通塞识",
+                    "Desc": "<color=#FFFFFFFF>所附属角色进行$[K51]时：</color>造成的$[K100]变为$[K107]，并且会在技能结算后召唤$[K1008]。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+                    "Child": {
+                        "K51": {
+                            "Name": "<color=#FFFFFFFF>重击</color>",
+                            "Desc": "我方行动开始前，如果元素骰总数为偶数，则进行的「普通攻击」将被视为「重击」。"
+                        },
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>",
+                            "Desc": "物理伤害不会附着元素，也不会发生元素反应。"
+                        },
+                        "K107": {
+                            "Name": "{SPRITE_PRESET#2107}<color=#7EC236FF>草元素伤害</color>",
+                            "Desc": "附着{SPRITE_PRESET#2107}草元素，可发生元素反应：\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>绽放</color>：本伤害+1，生成使下次火元素或雷元素伤害+2的[<color=#FFFFFFFF>草原核</color>]\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>燃烧</color>：本伤害+1，生成回合结束时造成1点火元素伤害的[<color=#FFFFFFFF>燃烧烈焰</color>]（可用次数1，最多叠加到2）\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>原激化</color>：本伤害+1，生成使下2次草元素或雷元素伤害+1的[<color=#FFFFFFFF>激化领域</color>]"
+                        },
+                        "K1008": {
+                            "Name": "<color=#FFFFFFFF>藏蕴花矢</color>",
+                            "Desc": "<color=#FFFFFFFF>结束阶段：</color>造成1点{SPRITE_PRESET#2107}<color=#7EC236FF>草元素伤害</color>。\\n<color=#FFFFFFFF>可用次数：1</color>（可叠加，最多叠加到2次）"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>可用次数</color>",
+                            "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 3
+            }
+        },
+        "17023": {
+            "Name": "造生缠藤箭",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，对所有敌方后台角色造成1点<color=#FFFFFFFF>$[K5]</color>。",
+            "Child": {
+                "D__KEY__DAMAGE": 4,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_DENDRO",
+                "K5": {
+                    "Name": "<color=#FFFFFFFF>穿透伤害</color>",
+                    "Desc": "穿透伤害无法受到伤害加成，但是也无法被护盾、伤害免疫等效果抵消。"
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 217021
+}

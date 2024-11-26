@@ -1,0 +1,49 @@
+{
+    "Type": "Action",
+    "Name": "Rending Vortex",
+    "Title": "Dvalin: Rending Vortex",
+    "Desc": "But never forget that dust can be wiped away, and the power of doubt and poison can be shattered.",
+    "Source": "Reward for accepting the Tavern Challenge against Dvalin at The Cat's Tail and achieving all corresponding challenge objectives in a Friendly Fracas",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Dvalin",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_ANEMO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "Talent",
+        "Combat Action"
+    ],
+    "Talent": {
+        "Name": "Rending Vortex",
+        "Desc": "$[K1]: When your active character is <color=#FFFFFFFF>$[A2502]</color>, equip this card.\\nAfter $[A2502] equips this card, immediately use <color=#FFD780FF>$[S25022]</color> once.\\nWhen your $[A2502], who has this card equipped, is on the field, when <color=#FFFFFFFF>$[C125021]</color> attached to an opposing character is removed: Apply <color=#FFFFFFFF>$[C125021]</color> to the next opposing standby character. (Once per Round)\\n(You must have $[A2502]in your deck to add this card to your deck.)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+            },
+            "A2502": "Rending Vortex",
+            "S25022": "S25022",
+            "C125021": {
+                "Name": "Total Collapse",
+                "Desc": "$[K100] or $[K105] taken by the affected character increased by 2.\\n<color=#FFFFFFFF>$[K3]: 1</color>",
+                "Child": {
+                    "K100": {
+                        "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>",
+                        "Desc": "Physical DMG will not apply any Elements, nor can it engage in Elemental Reactions."
+                    },
+                    "K105": {
+                        "Name": "{SPRITE_PRESET#2105}<color=#80FFD7FF>Anemo DMG</color>",
+                        "Desc": "Reacts with Elements if they are already applied:\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Cryo Swirl</color>: Deals 1 Cryo DMG to all opposing characters except the target\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Hydro Swirl</color>: Deals 1 Hydro DMG to all opposing characters except the target\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Pyro Swirl</color>: Deals 1 Pyro DMG to all opposing characters except the target\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Electro Swirl</color>: Deals 1 Electro DMG to all opposing characters except the target"
+                    },
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                        "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                    }
+                }
+            }
+        }
+    }
+}

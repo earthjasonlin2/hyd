@@ -1,0 +1,36 @@
+{
+    "Type": "Action",
+    "Name": "중앙 실험실 유적",
+    "Title": "폰타인 과학원·중앙 실험실 유적",
+    "Desc": "…과도한 지혜와 열정 아래 모든 이의 예상을 뛰어넘는 방식으로 연구 결과를 끌어냈으나,\\n이상이 파괴된 후, 침묵은 그것의 가장 중요한 임무가 되었다…",
+    "Source": "",
+    "Icon": "UI_Gcg_CardFace_Assist_Location_FontaineSci",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PAIMON",
+            "count": 1
+        },
+        {}
+    ],
+    "Tag": [
+        "필드"
+    ],
+    "Talent": {
+        "Name": "중앙 실험실 유적",
+        "Desc": "<color=#FFFFFFFF>아군이 카드를 1장 $[K56] 또는 $[K57]한 후: </color>이 카드에 <color=#FFFFFFFF>「실험 진도」</color>를 1pt 누적한다. <color=#FFFFFFFF>「실험 진도」</color>가 3pt, 6pt, 9pt에 도달할 때마다 $[K411]를 1개 획득한다. 그 후 <color=#FFFFFFFF>「실험 진도」</color>가 9pt 이상일 경우 이 카드를 버린다.",
+        "Child": {
+            "K56": {
+                "Name": "<color=#FFFFFFFF>포기</color>",
+                "Desc": "행동 카드 또는 캐릭터 스킬의 효과를 통해, 핸드 카드 또는 카드 더미에서 행동 카드를 버린다."
+            },
+            "K57": {
+                "Name": "<color=#FFFFFFFF>조정</color>",
+                "Desc": "원소 조정을 진행하기 위해 핸드 카드에서 행동 카드를 버린다."
+            },
+            "K411": {
+                "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1111}만능 원소</color>",
+                "Desc": "{SPRITE_PRESET#1111}만능 원소는 임의의 원소로 여겨지며 어떤 원소 타입에서든 사용할 수 있다."
+            }
+        }
+    }
+}

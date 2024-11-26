@@ -1,0 +1,159 @@
+{
+    "Id": 2004011,
+    "Name": "「星核ハンター」カフカ（スペック）",
+    "Desc": "コードが影響を受けた後の正常な投影。「星核ハンター」の一員を参考にしている。掴みどころのない笑みを浮かべる美しい殺し屋で、様々な武器の扱いとマインドコントロールに長けている。星穹列車をここまで誘導したのも、ある計画を実現するためである……",
+    "MonsterCampID": null,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 837,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/Monster_2004010.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "LittleBoss",
+    "SpeedBase": 119,
+    "StanceBase": 450,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.20000000018626451,
+    "Child": [
+        {
+            "Id": 2004011,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Wind",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Fire",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 200401101,
+                    "SkillName": "止まない夜の喧騒",
+                    "SkillDesc": "指定した味方単体に少量の雷属性ダメージを与え、高確率で攻撃を受けた味方を感電状態にする。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200401102,
+                    "SkillName": "月明かりが撫でる連綿",
+                    "SkillDesc": "指定した味方単体および隣接する味方に雷属性ダメージを与える、メインターゲットが感電状態の場合、サブターゲットを感電状態にする。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200401103,
+                    "SkillName": "沈黙は厳かに嘲笑う",
+                    "SkillDesc": "味方全体に少量の雷属性ダメージを与える。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 200401104,
+                    "SkillName": "言霊",
+                    "SkillDesc": "高確率で指定した味方単体を「支配」状態にし、行動順を早め、他の味方1名をランダムに攻撃させる。",
+                    "DamageType": "",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 200401105,
+                    "SkillName": "死者は歯ぎしりしながら囁く",
+                    "SkillDesc": "指定した味方単体に雷属性ダメージを与え、高確率で攻撃を受けた味方を感電状態にする。同時に感電状態の全味方に雷属性ダメージを与える。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200401106,
+                    "SkillName": "心理暗示",
+                    "SkillDesc": "複数の味方を「心理暗示」状態にし、アクションバーに「公開」を追加する。次に「公開」が行動する時、「心理暗示」にかかった味方は「支配」状態になる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 200401107,
+                    "SkillName": "戦慄",
+                    "SkillDesc": "攻撃を受けたターゲットが感電状態の場合、感電ダメージを1回与える、このダメージは感電状態によるものとみなす。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 200401108,
+                    "SkillName": "残酷",
+                    "SkillDesc": "カフカ以外の敵、または「支配」状態の味方が感電状態の味方をメインターゲットとして攻撃を行う時、さらに雷属性攻撃を1回行う。",
+                    "DamageType": "Thunder",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200401109,
+                    "SkillName": "弔意",
+                    "SkillDesc": "味方が感電状態を触発した時、カフカ自身の与ダメージが小アップする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 2004011,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2004011,
+            "WorldLevel": 1,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2004011,
+            "WorldLevel": 2,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2004011,
+            "WorldLevel": 3,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2004011,
+            "WorldLevel": 4,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2004011,
+            "WorldLevel": 5,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2004011,
+            "WorldLevel": 6,
+            "DisplayItemList": []
+        }
+    ]
+}

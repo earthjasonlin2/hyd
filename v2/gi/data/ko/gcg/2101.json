@@ -1,0 +1,104 @@
+{
+    "Type": "Character",
+    "Name": "우인단·얼음 치친 술사",
+    "Title": "안개 소환·얼음 치친 술사",
+    "Desc": "적어도 안개풀이 소진되기 전까진, 얼음 치친은 그녀의 곁을 떠나지 않을 것이다",
+    "Source": "캣테일 술집의 왕자님을 통해 술집 도전 진행 및 친선 대전 난이도의 우인단·얼음 치친 술사에게 승리 후 획득",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_FatuusMageice",
+    "Hp": 10,
+    "Cost": 3,
+    "Tag": [
+        "얼음 원소",
+        "기타 무기",
+        "우인단"
+    ],
+    "Talent": {
+        "21011": {
+            "Name": "얼음 치친의 고드름",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "D__KEY__DAMAGE": 1
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "21012": {
+            "Name": "안개의 부름",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[C121011]</color>을 소환한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "D__KEY__DAMAGE": 1,
+                "C121011": {
+                    "Name": "얼음 치친",
+                    "Desc": "<color=#FFFFFFFF>종료 단계:</color> $[K101]를 1pt 가한다.\\n<color=#FFFFFFFF>$[K3]: 2</color> (중첩 가능, 최대 중첩수: 3회)\\n\\n<color=#FFFFFFFF>$[A2101]가 「일반 공격」 후:</color> 해당 카드의 $[K3]+1\\n<color=#FFFFFFFF>$[A2101]가 원소 반응 피해를 받은 후:</color> 해당 카드의 $[K3]-1",
+                    "Child": {
+                        "K101": {
+                            "Name": "{SPRITE_PRESET#2101}<color=#99FFFFFF>얼음 원소 피해</color>",
+                            "Desc": "{SPRITE_PRESET#2101}얼음 원소 부착 시 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2103}<color=#FFFFFFFF>융해</color>: 이번 피해+2pt\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2104}<color=#FFFFFFFF>초전도</color>: 이번 피해+1pt, 대상 이외의 모든 상대 캐릭터에게 관통 피해를 1pt 준다.\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2102}<color=#FFFFFFFF>빙결</color>: 이번 피해+1pt, 이번 턴에 대상을 행동 불가로 만든다. (물리 피해 또는 불 원소 피해를 받으면 조기 해제되지만, 해당 피해로 받는 피해량이 2pt 추가된다)"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        },
+                        "A2101": "우인단·얼음 치친 술사"
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3
+            }
+        },
+        "21013": {
+            "Name": "얼음 가지와 눈꽃",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 본 캐릭터에게 $[K201]을 부여하며 <color=#FFFFFFFF>$[C121012]</color>을 생성한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "D__KEY__DAMAGE": 5,
+                "K201": {
+                    "Name": "<color=#99FFFFFF>{SPRITE_PRESET#2101}얼음 원소 부착</color>",
+                    "Desc": "피해를 입히지 않고 {SPRITE_PRESET#2101}얼음 원소를 부착하여 발생한 원소 반응은 피해 효과를 무시한다.\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2103}<color=#FFFFFFFF>융해</color>: 효과 없음.\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2104}<color=#FFFFFFFF>초전도</color>: 효과 없음.\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2102}<color=#FFFFFFFF>빙결</color>: 이번 턴에 대상을 행동 불가로 만든다. (물리 피해 또는 불 원소 피해를 받으면 조기 해제, 해당 피해로 받는 피해량이 2pt 추가된다)"
+                },
+                "C121012": {
+                    "Name": "얼음 치친 방어막",
+                    "Desc": "아군 출전 캐릭터에게 <color=#FFFFFFFF>$[K6]을 1pt</color> 제공한다.\\n<color=#FFFFFFFF>생성 시:</color> 아군 필드에 <color=#FFFFFFFF>$[C121011]</color>이 있을 경우, $[K3]만큼 $[K6]을 추가로 제공한다. ($[K6] 최대 3pt 추가 제공)",
+                    "Child": {
+                        "K6": {
+                            "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>보호막</color>",
+                            "Desc": "해당 보호막의 보호를 받는 캐릭터가 피격 시, 보호막을 소모해 피해를 상쇄한다."
+                        },
+                        "C121011": {
+                            "Name": "얼음 치친",
+                            "Desc": "<color=#FFFFFFFF>종료 단계:</color> $[K101]를 1pt 가한다.\\n<color=#FFFFFFFF>$[K3]: 2</color> (중첩 가능, 최대 중첩수: 3회)\\n\\n<color=#FFFFFFFF>$[A2101]가 「일반 공격」 후:</color> 해당 카드의 $[K3]+1\\n<color=#FFFFFFFF>$[A2101]가 원소 반응 피해를 받은 후:</color> 해당 카드의 $[K3]-1",
+                            "Child": {
+                                "K101": {
+                                    "Name": "{SPRITE_PRESET#2101}<color=#99FFFFFF>얼음 원소 피해</color>",
+                                    "Desc": "{SPRITE_PRESET#2101}얼음 원소 부착 시 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2103}<color=#FFFFFFFF>융해</color>: 이번 피해+2pt\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2104}<color=#FFFFFFFF>초전도</color>: 이번 피해+1pt, 대상 이외의 모든 상대 캐릭터에게 관통 피해를 1pt 준다.\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2102}<color=#FFFFFFFF>빙결</color>: 이번 피해+1pt, 이번 턴에 대상을 행동 불가로 만든다. (물리 피해 또는 불 원소 피해를 받으면 조기 해제되지만, 해당 피해로 받는 피해량이 2pt 추가된다)"
+                                },
+                                "K3": {
+                                    "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                                    "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                                },
+                                "A2101": "우인단·얼음 치친 술사"
+                            }
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3,
+                "GCG_COST_ENERGY": 3
+            }
+        }
+    },
+    "Related": 221011
+}

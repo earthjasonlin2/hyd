@@ -1,0 +1,151 @@
+{
+    "Type": "Character",
+    "Name": "夏沃蕾",
+    "Title": "明律决罚·夏沃蕾",
+    "Desc": "知刑执法，公义责罪。",
+    "Source": "在猫尾酒馆中邀请夏沃蕾进行对局，在友好对局难度中获得胜利后获取",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Chevreuse",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "火元素",
+        "长柄武器",
+        "枫丹",
+        "始基力：荒性"
+    ],
+    "Talent": {
+        "13131": {
+            "Name": "线列枪刺·改",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "13132": {
+            "Name": "近迫式急促拦射",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。\\n<color=#FFFFFFFF>此技能结算后：</color>如果我方手牌中含有<color=#FFFFFFFF>$[C113131]</color>，则$[K56]1张并治疗我方受伤最多的角色1点。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO",
+                "C113131": {
+                    "Name": "超量装药弹头",
+                    "Desc": "$[K1]：对敌方「出战角色」造成1点$[K103]。\\n<color=#FFFFFFFF>此牌被$[K56]时：</color>对敌方「出战角色」造成1点$[K103]。",
+                    "Child": {
+                        "K1": {
+                            "Name": "<color=#FFFFFFFF>战斗行动</color>",
+                            "Desc": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+                        },
+                        "K103": {
+                            "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>火元素伤害</color>",
+                            "Desc": "附着{SPRITE_PRESET#2103}火元素，可发生元素反应：\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>融化</color>：本伤害+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>蒸发</color>：本伤害+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>超载</color>：本伤害+2，目标强制切换到下一个角色\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>燃烧</color>：本伤害+1，生成回合结束时造成1点火元素伤害的[<color=#FFFFFFFF>燃烧烈焰</color>]（可用次数1，最多叠加到2）"
+                        },
+                        "K56": {
+                            "Name": "<color=#FFFFFFFF>舍弃</color>",
+                            "Desc": "通过行动牌或角色技能的效果，将行动牌从手牌或牌库中弃置。"
+                        }
+                    }
+                },
+                "K56": {
+                    "Name": "<color=#FFFFFFFF>舍弃</color>",
+                    "Desc": "通过行动牌或角色技能的效果，将行动牌从手牌或牌库中弃置。"
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 3
+            }
+        },
+        "13133": {
+            "Name": "圆阵掷弹爆轰术",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，在敌方场上生成<color=#FFFFFFFF>$[C113132]</color>。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO",
+                "C113132": {
+                    "Name": "二重毁伤弹",
+                    "Desc": "<color=#FFFFFFFF>所在阵营切换角色后：</color>对切换到的角色造成1点$[K103]。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+                    "Child": {
+                        "K103": {
+                            "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>火元素伤害</color>",
+                            "Desc": "附着{SPRITE_PRESET#2103}火元素，可发生元素反应：\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>融化</color>：本伤害+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>蒸发</color>：本伤害+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>超载</color>：本伤害+2，目标强制切换到下一个角色\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>燃烧</color>：本伤害+1，生成回合结束时造成1点火元素伤害的[<color=#FFFFFFFF>燃烧烈焰</color>]（可用次数1，最多叠加到2）"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>可用次数</color>",
+                            "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "13134": {
+            "Name": "纵阵武力统筹",
+            "Desc": "【被动】<color=#FFFFFFFF>敌方角色受到超载反应伤害后：</color>生成手牌<color=#FFFFFFFF>$[C113131]</color>（每回合1次）",
+            "Child": {
+                "C113131": {
+                    "Name": "超量装药弹头",
+                    "Desc": "$[K1]：对敌方「出战角色」造成1点$[K103]。\\n<color=#FFFFFFFF>此牌被$[K56]时：</color>对敌方「出战角色」造成1点$[K103]。",
+                    "Child": {
+                        "K1": {
+                            "Name": "<color=#FFFFFFFF>战斗行动</color>",
+                            "Desc": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+                        },
+                        "K103": {
+                            "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>火元素伤害</color>",
+                            "Desc": "附着{SPRITE_PRESET#2103}火元素，可发生元素反应：\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>融化</color>：本伤害+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>蒸发</color>：本伤害+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>超载</color>：本伤害+2，目标强制切换到下一个角色\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>燃烧</color>：本伤害+1，生成回合结束时造成1点火元素伤害的[<color=#FFFFFFFF>燃烧烈焰</color>]（可用次数1，最多叠加到2）"
+                        },
+                        "K56": {
+                            "Name": "<color=#FFFFFFFF>舍弃</color>",
+                            "Desc": "通过行动牌或角色技能的效果，将行动牌从手牌或牌库中弃置。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        },
+        "13135": {
+            "Name": "近迫式急促拦射",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。\\n<color=#FFFFFFFF>此技能结算后：</color>如果我方手牌中含有<color=#FFFFFFFF>$[C113131]</color>，则$[K56]1张并治疗我方受伤最多的角色1点。",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO",
+                "C113131": {
+                    "Name": "超量装药弹头",
+                    "Desc": "$[K1]：对敌方「出战角色」造成1点$[K103]。\\n<color=#FFFFFFFF>此牌被$[K56]时：</color>对敌方「出战角色」造成1点$[K103]。",
+                    "Child": {
+                        "K1": {
+                            "Name": "<color=#FFFFFFFF>战斗行动</color>",
+                            "Desc": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+                        },
+                        "K103": {
+                            "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>火元素伤害</color>",
+                            "Desc": "附着{SPRITE_PRESET#2103}火元素，可发生元素反应：\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>融化</color>：本伤害+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>蒸发</color>：本伤害+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>超载</color>：本伤害+2，目标强制切换到下一个角色\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>燃烧</color>：本伤害+1，生成回合结束时造成1点火元素伤害的[<color=#FFFFFFFF>燃烧烈焰</color>]（可用次数1，最多叠加到2）"
+                        },
+                        "K56": {
+                            "Name": "<color=#FFFFFFFF>舍弃</color>",
+                            "Desc": "通过行动牌或角色技能的效果，将行动牌从手牌或牌库中弃置。"
+                        }
+                    }
+                },
+                "K56": {
+                    "Name": "<color=#FFFFFFFF>舍弃</color>",
+                    "Desc": "通过行动牌或角色技能的效果，将行动牌从手牌或牌库中弃置。"
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {}
+        }
+    },
+    "Related": 213131
+}

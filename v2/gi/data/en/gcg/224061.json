@@ -1,0 +1,43 @@
+{
+    "Type": "Action",
+    "Name": "Chain Lightning Cascade",
+    "Title": "Abyss Lector: Chain Lightning Cascade",
+    "Desc": "\"Their violent lightning strikes the hearts of unbelievers with dark wisdom, warped by the shadowy depths of an eternal night, its violet glow proclaiming the existence of a great power that corrodes human intellect.\"",
+    "Source": "Reward for accepting the Tavern Challenge against the Abyss Lector: Violet Lightning at The Cat's Tail and achieving all corresponding challenge objectives in a Friendly Fracas",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_InvokerElectric",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_ELECTRO",
+            "count": 1
+        },
+        {}
+    ],
+    "Tag": [
+        "Talent"
+    ],
+    "Talent": {
+        "Name": "Chain Lightning Cascade",
+        "Desc": "<color=#FFFFFFFF>When played:</color> If <color=#FFFFFFFF>$[A2406]</color>, who has this card equipped, has already triggered <color=#FFFFFFFF>$[C124061]</color>, cause the opponent's active character to lose 1 $[K310].\\nWhen $[A2406], who has this card equipped, triggers <color=#FFFFFFFF>$[C124061]</color> or is defeated: Discard this card, and cause the opponent's active character to lose 1 $[K310].\\n(You must have $[A2406] in your deck to add this card to your deck.)",
+        "Child": {
+            "A2406": "Chain Lightning Cascade",
+            "C124061": {
+                "Name": "Electric Rebirth",
+                "Desc": "<color=#FFFFFFFF>When the character to which this is attached would be defeated:</color> Remove this effect, ensure the character gains $[K54], and heals them to 4 HP. After this effect is triggered, this character deals +1 $[K104].",
+                "Child": {
+                    "K54": {
+                        "Name": "<color=#FFFFFFFF>Immunity to Defeat</color>|s1:<color=#FFFFFFFF>will not be defeated</color>",
+                        "Desc": "Certain effects will grant characters an <color=#FFFFFFFF>immunity to being defeated</color> when their HP hits 0, and will heal them for a certain amount thereafter.\\nWhen this occurs, characters will not be regarded as having experienced a <color=#FFFFFFFF>defeat.</color> (Hence, their attached equipment and statuses will not be removed, and their Energy will remain uncleared.)"
+                    },
+                    "K104": {
+                        "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>Electro DMG</color>",
+                        "Desc": "Applies {SPRITE_PRESET#2104}Electro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Overloaded</color>: DMG +2 for this instance, the target is forcibly switched to the next character\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Superconduct</color>: DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Electro-Charged</color>: DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Quicken</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Catalyzing Field</color>] that grants +1 DMG to the next 2 instances of Dendro or Electro DMG"
+                    }
+                }
+            },
+            "K310": {
+                "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}Energy</color>",
+                "Desc": "Characters must consume {SPRITE_PRESET#1110}Energy to use their Elemental Bursts.\\nWhen characters use an Elemental Skill or a Normal Attack, they will gain 1 {SPRITE_PRESET#1110}Energy."
+            }
+        }
+    }
+}

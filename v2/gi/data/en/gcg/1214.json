@@ -1,0 +1,106 @@
+{
+    "Type": "Character",
+    "Name": "Mualani",
+    "Title": "\"Splish-Splash Wavechaser\" Mualani",
+    "Desc": "Swellrider of Perennial Springs",
+    "Source": "Reward for inviting Mualani to a duel at The Cat's Tail and claiming victory in a Friendly Fracas with her",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Mualani",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "Hydro",
+        "Catalyst",
+        "Natlan"
+    ],
+    "Talent": {
+        "12141": {
+            "Name": "Cooling Treatment",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "12142": {
+            "Name": "Surfshark Wavebreaker",
+            "Desc": "Attach <color=#FFFFFFFF>$[C112142]</color> to self, enter <color=#FFFFFFFF>$[C112141]</color>, and then gain 2 <color=#FFFFFFFF>\"Nightsoul points.\"</color> (This skill cannot be used after the character enters <color=#FFFFFFFF>$[C112141]</color>)",
+            "Child": {
+                "C112142": {
+                    "Name": "Bitey Shark",
+                    "Desc": "<color=#FFFFFFFF>After both sides switch characters, and $[A1214] is the active character:</color> Spend 1 <color=#FFFFFFFF>Nightsoul point</color> to apply <color=#FFFFFFFF>$[C112143]</color> to the opposing active character.\\n$[K58]: $[S3130063]\\nWhen the character to which this is attached has 0 <color=#FFFFFFFF>Nightsoul points</color>, discard this card. When this card is discarded, the attached character's <color=#FFFFFFFF>$[C112141]</color> ends.",
+                    "Child": {
+                        "A1214": "Mualani",
+                        "C112143": {
+                            "Name": "Bite Target",
+                            "Desc": "<color=#FFFFFFFF>When receiving damage dealt by $[A1214] or <color=#FFFFFFFF>$[C112144]</color>:</color> Remove this effect. For each stack, increase the damage by 2.\\n(Stacks are accumulative, with no limit.)",
+                            "Child": {
+                                "A1214": "Mualani",
+                                "C112144": {
+                                    "Name": "Shark Missile",
+                                    "Desc": "<color=#FFFFFFFF>End Phase:</color> Deal 2 $[K102].\\n<color=#FFFFFFFF>$[K3]: 2</color> (Can stack, no stack limit)",
+                                    "Child": {
+                                        "K102": {
+                                            "Name": "{SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro DMG</color>",
+                                            "Desc": "Applies {SPRITE_PRESET#2102}Hydro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Vaporize</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Electro-Charged</color>：DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Frozen</color>: DMG +1 for this instance, the target is unable to perform any Actions this Round (Can be removed in advance after the target receives +2 Physical or Pyro DMG)\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Bloom</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Dendro Core</color>] that grants +2 DMG to the next instance of Pyro or Electro DMG"
+                                        },
+                                        "K3": {
+                                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "K58": {
+                            "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#3008}Technique</color>",
+                            "Desc": "When the active character is equipped with a {SPRITE_PRESET#3008}Technique card, they can use the corresponding {SPRITE_PRESET#3008}Technique.\\nUsing a {SPRITE_PRESET#3008} Technique counts as a Combat Action. If the character is unable to use Skills due to conditions like Frozen, Petrification, or Stun, they are also unable to use the {SPRITE_PRESET#3008}Technique.\\nUsing a {SPRITE_PRESET#3008}Technique is not considered as using a Skill. Therefore, it cannot trigger effects such as \"After using a skill\" or \"After the character triggers an Elemental Reaction.\" Damage dealt by using a {SPRITE_PRESET#3008}Technique is not considered Damage dealt by the character."
+                        },
+                        "S3130063": "S3130063",
+                        "C112141": {
+                            "Name": "Nightsoul's Blessing",
+                            "Desc": "The character to which this is attached accumulates <color=#FFFFFFFF>\"Nightsoul points.\" </color>(Max 2 points)",
+                            "Child": {}
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 2
+            }
+        },
+        "12143": {
+            "Name": "Boomsharka-laka",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], summons <color=#FFFFFFFF>$[C112144]</color>.",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "C112144": {
+                    "Name": "Shark Missile",
+                    "Desc": "<color=#FFFFFFFF>End Phase:</color> Deal 2 $[K102].\\n<color=#FFFFFFFF>$[K3]: 2</color> (Can stack, no stack limit)",
+                    "Child": {
+                        "K102": {
+                            "Name": "{SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro DMG</color>",
+                            "Desc": "Applies {SPRITE_PRESET#2102}Hydro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Vaporize</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Electro-Charged</color>：DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Frozen</color>: DMG +1 for this instance, the target is unable to perform any Actions this Round (Can be removed in advance after the target receives +2 Physical or Pyro DMG)\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Bloom</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Dendro Core</color>] that grants +2 DMG to the next instance of Pyro or Electro DMG"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 212141
+}

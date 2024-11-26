@@ -1,0 +1,60 @@
+{
+    "Type": "Action",
+    "Name": "ストラクタレーション",
+    "Title": "アルハイゼン·ストラクタレーション",
+    "Desc": "「理論の演繹。」",
+    "Source": "キャッツテールでアルハイゼンを招待して対戦し、対応する挑戦目標をクリアすることで獲得",
+    "Icon": "UI_Gcg_CardFace_Modify_Constellation_Alhatham",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_DENDRO",
+            "count": 3
+        },
+        {
+            "costType": "GCG_COST_ENERGY",
+            "count": 2
+        }
+    ],
+    "Tag": [
+        "天賦",
+        "戦闘アクション"
+    ],
+    "Talent": {
+        "Name": "ストラクタレーション",
+        "Desc": "$[K1]：味方の出撃キャラが<color=#FFFFFFFF>$[A1706]</color>の時、このカードを装備できる。\\n$[A1706]がこのカードを装備した後、直ちに<color=#FFD780FF>$[S17063]</color>を1回発動する。\\nこのカードを装備した$[A1706]が<color=#FFFFFFFF>$[S17063]</color>を発動する時、消費した<color=#FFFFFFFF>$[C117061]</color>の$[K4]が1以上の場合、常に$[K4]が3の<color=#FFFFFFFF>$[C117061]</color>が付与されるようになり、さらに手札を1枚引く。\\n（このカードはデッキに$[A1706]が含まれている場合のみ、デッキに追加できる）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>戦闘アクション</color>",
+                "Desc": "味方が戦闘アクションを1回行った後、相手のターンに移ります。\\n<color=#FFFFFFFF>このようなルールを持つ手札を出すのはクイックアクションではなく、戦闘アクションと見なされます。</color>"
+            },
+            "A1706": "ストラクタレーション",
+            "S17063": "S17063",
+            "C117061": {
+                "Name": "琢光鏡",
+                "Desc": "キャラの$[K100]が$[K107]へと変わる。\\n<color=#FFFFFFFF>キャラが通常攻撃を発動した後</color>、$[K107]を1与える。このスキルが$[K51]の場合、該当状態の$[K4]+1。\\n<color=#FFFFFFFF>$[K4]：2</color>（最大3まで重ねられる）",
+                "Child": {
+                    "K100": {
+                        "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>",
+                        "Desc": "物理ダメージは元素付着させたり、元素反応を起こしたりはしません。"
+                    },
+                    "K107": {
+                        "Name": "{SPRITE_PRESET#2107}<color=#7EC236FF>草元素ダメージ</color>",
+                        "Desc": "{SPRITE_PRESET#2107}草元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>開花</color>：ダメージ+1、次の炎元素または雷元素ダメージを2アップできる「<color=#FFFFFFFF>草原核</color>」を生成する\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>燃焼</color>：ダメージ+1、ラウンド終了時に炎元素ダメージを1与える「<color=#FFFFFFFF>燃焼烈焔</color>」を生成する（使用可能回数1回、最大2回まで重ね掛け可能）\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>原激化</color>：ダメージ+1、次の草元素または雷元素ダメージを2回まで+1できる「<color=#FFFFFFFF>激化領域</color>」を生成する"
+                    },
+                    "K51": {
+                        "Name": "<color=#FFFFFFFF>重撃</color>",
+                        "Desc": "味方のアクションが始まる前、元素サイコロの数が偶数の時に行われる「通常攻撃」は、「重撃」と見なされる。"
+                    },
+                    "K4": {
+                        "Name": "<color=#FFFFFFFF>継続ラウンド数</color>",
+                        "Desc": "各ラウンドのエンドフェーズで、<color=#FFFFFFFF>継続ラウンド数</color>が1マイナスされます。\\n<color=#FFFFFFFF>継続ラウンド数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                    }
+                }
+            },
+            "K4": {
+                "Name": "<color=#FFFFFFFF>継続ラウンド数</color>",
+                "Desc": "各ラウンドのエンドフェーズで、<color=#FFFFFFFF>継続ラウンド数</color>が1マイナスされます。\\n<color=#FFFFFFFF>継続ラウンド数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+            }
+        }
+    }
+}

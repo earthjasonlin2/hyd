@@ -1,0 +1,86 @@
+{
+    "Type": "Character",
+    "Name": "리넷",
+    "Title": "그림자 속 우아한 걸음·리넷",
+    "Desc": "물에 비친 달빛",
+    "Source": "캣테일 술집에서 리넷 초대 및 친선 대전 난이도 승리 후 획득",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Linette",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "바람 원소",
+        "한손검",
+        "폰타인",
+        "우인단",
+        "아르케의 힘: 우시아"
+    ],
+    "Talent": {
+        "15081": {
+            "Name": "신속한 예식 검술",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "15082": {
+            "Name": "그림자 은신술",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다. 이번 턴에 처음으로 이 스킬을 사용하고 자신의 HP가 8pt 이하이면 자신의 HP를 2pt 치유하고 <color=#FFFFFFFF>$[C115081]</color>를 부착한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO",
+                "D__KEY__DAMAGE": 3,
+                "C115081": {
+                    "Name": "기습의 여파",
+                    "Desc": "<color=#FFFFFFFF>종료 단계: </color>캐릭터의 HP가 6pt 이상이면 $[K5]를 2pt 받는다.\\n<color=#FFFFFFFF>$[K4]: 1</color>",
+                    "Child": {
+                        "K5": {
+                            "Name": "<color=#FFFFFFFF>관통 피해</color>",
+                            "Desc": "관통 피해는 피해 보너스를 획득할 수 없으나, 주는 피해가 보호막 또는 피해 면역과 같은 효과에 의해 상쇄되지 않는다."
+                        },
+                        "K4": {
+                            "Name": "<color=#FFFFFFFF>지속 턴</color>",
+                            "Desc": "턴이 종료 단계에 진입할 때마다 <color=#FFFFFFFF>지속 턴</color>이 1회씩 감소한다.\\n<color=#FFFFFFFF>지속 턴</color>이 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 3
+            }
+        },
+        "15083": {
+            "Name": "마술·놀라운 변화",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[C115082]</color>를 소환한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO",
+                "D__KEY__DAMAGE": 2,
+                "C115082": {
+                    "Name": "깜짝 고양이 모자",
+                    "Desc": "<color=#FFFFFFFF>종료 단계:</color> $[K105]를 1pt 준다.\\n<color=#FFFFFFFF>$[K3]: 2</color>\\n\\n<color=#FFFFFFFF>아군 출전 캐릭터가 피해를 받을 시:</color> 피해를 1pt 상쇄한다. (턴당 1회)\\n<color=#FFFFFFFF>아군 캐릭터가 {SPRITE_PRESET#2101}<color=#99FFFFFF>얼음</color>/{SPRITE_PRESET#2102}<color=#80C0FFFF>물</color>/{SPRITE_PRESET#2103}<color=#FF9999FF>불</color>/{SPRITE_PRESET#2104}<color=#FFACFFFF>번개</color> 피해를 받을 시:</color> 해당 카드의 원소 타입을 받은 피해 원소 타입으로 전환한다. (필드를 떠나기 전에 1회만 발동)",
+                    "Child": {
+                        "K105": {
+                            "Name": "{SPRITE_PRESET#2105}<color=#80FFD7FF>바람 원소 피해</color>",
+                            "Desc": "이미 부착된 원소와 원소 반응이 발생한다.\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2101}<color=#FFFFFFFF>확산(얼음)</color>: 대상 이외의 모든 상대 캐릭터에게 얼음 원소 피해를 1pt 준다.\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2102}<color=#FFFFFFFF>확산(물)</color>: 대상 이외의 모든 상대 캐릭터에게 물 원소 피해를 1pt 준다.\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2103}<color=#FFFFFFFF>확산(불)</color>: 대상 이외의 모든 상대 캐릭터에게 불 원소 피해를 1pt 준다.\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2104}<color=#FFFFFFFF>확산(번개)</color>: 대상 이외의 모든 상대 캐릭터에게 번개 원소 피해를 1pt 준다."
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 215081
+}

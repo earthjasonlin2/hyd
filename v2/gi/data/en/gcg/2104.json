@@ -1,0 +1,102 @@
+{
+    "Type": "Character",
+    "Name": "Frost Operative",
+    "Title": "Filtered in Liquidation: Frost Operative",
+    "Desc": "Selected while still children, they can only become an \"Operative\" after many long years of training and teaching, after countless rounds have winnowed the field.",
+    "Source": "Reward for accepting the Tavern Challenge at The Cat's Tail and claiming victory in a Friendly Fracas with the Frost Operative",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_EscadronIce",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "Cryo",
+        "Other Weapons",
+        "Fatui"
+    ],
+    "Talent": {
+        "21041": {
+            "Name": "Swift Point",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "21042": {
+            "Name": "Frosty Interjection",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO"
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3
+            }
+        },
+        "21043": {
+            "Name": "Thorny Onslaught",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. Attaches <color=#FFFFFFFF>$[C121042]</color> to this character.",
+            "Child": {
+                "D__KEY__DAMAGE": 4,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "C121042": {
+                    "Name": "Onslaught Stance",
+                    "Desc": "<color=#FFFFFFFF>End Phase:</color> Deals 1 $[K5] to all opposing characters affected by <color=#FFFFFFFF>$[C122]</color>.\\n<color=#FFFFFFFF>$[K4]: 2</color>",
+                    "Child": {
+                        "K5": {
+                            "Name": "<color=#FFFFFFFF>Piercing DMG</color>",
+                            "Desc": "Piercing DMG cannot be increased by any bonuses, but cannot be defended against using Shields or DMG Immunity either."
+                        },
+                        "C122": {
+                            "Name": "Bond of Life",
+                            "Desc": "<color=#FFFFFFFF>When the character to which this is attached is healed:</color> This effect will be consumed once for every $[K3] it has to negate 1 HP of healing received. (Cannot negate revives or healing caused by redistribution of HP)\\n<color=#FFFFFFFF>$[K3]: 1</color> (Can stack, no stack limit).",
+                            "Child": {
+                                "K3": {
+                                    "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                                    "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                                }
+                            }
+                        },
+                        "K4": {
+                            "Name": "<color=#FFFFFFFF>Duration (Rounds)</color>",
+                            "Desc": "Each time you reach the end of a Round, <color=#FFFFFFFF>Duration (Rounds)</color> -1.\\nThis card will be discarded immediately once <color=#FFFFFFFF>Duration (Rounds)</color> runs out."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "21044": {
+            "Name": "Blood-Bonded Shadow",
+            "Desc": "(Passive) <color=#FFFFFFFF>After this character uses a Skill:</color> Attach <color=#FFFFFFFF>$[C122]</color> to the opponent's active character with $[K3] equal to (this Skill's finalized DMG total -2). (Max 5 stacks)",
+            "Child": {
+                "C122": {
+                    "Name": "Bond of Life",
+                    "Desc": "<color=#FFFFFFFF>When the character to which this is attached is healed:</color> This effect will be consumed once for every $[K3] it has to negate 1 HP of healing received. (Cannot negate revives or healing caused by redistribution of HP)\\n<color=#FFFFFFFF>$[K3]: 1</color> (Can stack, no stack limit).",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        }
+                    }
+                },
+                "K3": {
+                    "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                    "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 221041
+}

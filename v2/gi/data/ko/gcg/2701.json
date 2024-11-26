@@ -1,0 +1,74 @@
+{
+    "Type": "Character",
+    "Name": "공포의 취령 버섯",
+    "Title": "버섯의 왕·공포의 취령 버섯",
+    "Desc": "가만히 귀를 기울이면 고요한 숲 저 너머에서 영토를 시찰하는 버섯 왕의 발소리가 들려온다…",
+    "Source": "캣테일 술집의 왕자님을 통해 술집 도전 진행 및 친선 대전 난이도의 공포의 취령 버섯에게 승리 후 획득",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_Fungusgrass",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "풀 원소",
+        "기타 무기",
+        "마물"
+    ],
+    "Talent": {
+        "27011": {
+            "Name": "균왕의 춤",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "27012": {
+            "Name": "불안정한 포자 구름",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_DENDRO",
+                "D__KEY__DAMAGE": 3
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 3
+            }
+        },
+        "27013": {
+            "Name": "깃털 펼치기",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 모든 <color=#FFFFFFFF>$[C127011]</color> 스택을 소모하며 스택당 이번 피해가 1pt씩 증가한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_DENDRO",
+                "D__KEY__DAMAGE": 4,
+                "C127011": {
+                    "Name": "활력 자극",
+                    "Desc": "<color=#FFFFFFFF>본 캐릭터가 원소 피해를 주거나 원소 피해를 받은 후:</color> <color=#FFFFFFFF>「활력 자극」</color>이 1스택 누적된다. (최대 누적수: 3스택)\\n<color=#FFFFFFFF>종료 단계:</color> 만약 <color=#FFFFFFFF>「활력 자극」</color> 스택 수가 최대치에 도달했다면 스택이 전부 사라지며 캐릭터는 모든 원소 에너지를 잃는다.",
+                    "Child": {}
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "27014": {
+            "Name": "활력 자극",
+            "Desc": "[패시브] 전투 시작 시, 시작부터 <color=#FFFFFFFF>$[C127011]</color>이 부착된다.",
+            "Child": {
+                "C127011": {
+                    "Name": "활력 자극",
+                    "Desc": "<color=#FFFFFFFF>본 캐릭터가 원소 피해를 주거나 원소 피해를 받은 후:</color> <color=#FFFFFFFF>「활력 자극」</color>이 1스택 누적된다. (최대 누적수: 3스택)\\n<color=#FFFFFFFF>종료 단계:</color> 만약 <color=#FFFFFFFF>「활력 자극」</color> 스택 수가 최대치에 도달했다면 스택이 전부 사라지며 캐릭터는 모든 원소 에너지를 잃는다.",
+                    "Child": {}
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 227011
+}

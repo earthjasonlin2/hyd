@@ -1,0 +1,45 @@
+{
+    "Type": "Action",
+    "Name": "好奇を以て要義と為す",
+    "Title": "シャルロット·好奇を以て要義と為す",
+    "Desc": "「特ダネよ！」",
+    "Source": "キャッツテールでシャルロットを招待して対戦し、対応する挑戦目標をクリアすることで獲得",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Charlotte",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_CRYO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "天賦",
+        "戦闘アクション"
+    ],
+    "Talent": {
+        "Name": "好奇を以て要義と為す",
+        "Desc": "$[K1]：味方の出撃キャラが<color=#FFFFFFFF>$[A1110]</color>の時、このカードを装備できる。\\n$[A1110]がこのカードを装備した後、直ちに<color=#FFD780FF>$[S11102]</color>を1回発動する。\\nこのカードを装備した$[A1110]がフィールドに存在し、かつ味方キャラが通常攻撃を発動した後、相手のフィールドに<color=#FFFFFFFF>$[C111101]</color>を付与されているキャラが存在する場合、味方の出撃キャラのHPを2回復する。（各ラウンドで1回のみ）\\n（このカードはデッキに$[A1110]が含まれている場合のみ、デッキに追加できる）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>戦闘アクション</color>",
+                "Desc": "味方が戦闘アクションを1回行った後、相手のターンに移ります。\\n<color=#FFFFFFFF>このようなルールを持つ手札を出すのはクイックアクションではなく、戦闘アクションと見なされます。</color>"
+            },
+            "A1110": "好奇を以て要義と為す",
+            "S11102": "S11102",
+            "C111101": {
+                "Name": "スナップシルエット",
+                "Desc": "<color=#FFFFFFFF>エンドフェーズ：</color>付与されたキャラに$[K101]を1与える。$[K3]が残り1かつ付与されたキャラが{SPRITE_PRESET#2101}<color=#99FFFFFF>氷元素付着</color>状態にある場合、このダメージ+1。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+                "Child": {
+                    "K101": {
+                        "Name": "{SPRITE_PRESET#2101}<color=#99FFFFFF>氷元素ダメージ</color>",
+                        "Desc": "{SPRITE_PRESET#2101}氷元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2103}<color=#FFFFFFFF>溶解</color>：ダメージ+2\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2104}<color=#FFFFFFFF>超電導</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2102}<color=#FFFFFFFF>凍結</color>：ダメージ+1、目標はこのラウンドで行動不能になる（物理ダメージまたは炎ダメージを受けると、即座に解除されるがダメージ+2となる）"
+                    },
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                        "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                    }
+                }
+            }
+        }
+    }
+}

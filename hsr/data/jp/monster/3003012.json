@@ -1,0 +1,384 @@
+{
+    "Id": 3003012,
+    "Name": "ナイトメア劇団・エクセスウェルダン（バグ）",
+    "Desc": "コードが影響を受けた後、バグってしまった投影。夢境での感情の干渉により、暴走してしまったピノコニーのサービスロボットを参照にしている。\\n本来は料理ロボットだった。暴走した後も食材を炙るために炎を吐き続け、客人さえも黒焦げにしようと企んでいる。",
+    "MonsterCampID": null,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 2511,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/Monster_3003010.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "Elite",
+    "SpeedBase": 120,
+    "StanceBase": 720,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.20000000018626451,
+    "Child": [
+        {
+            "Id": 3003012,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Thunder",
+                "Wind"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 300301201,
+                    "SkillName": "全力鍋振り",
+                    "SkillDesc": "味方単体に炎属性ダメージを与える。",
+                    "DamageType": "Fire",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 300301202,
+                    "SkillName": "旋風鍋振り",
+                    "SkillDesc": "味方単体および隣接する味方に少量の炎属性ダメージを与える。",
+                    "DamageType": "Fire",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 300301203,
+                    "SkillName": "コンロ爆発",
+                    "SkillDesc": "チャージ状態に入り、速度がアップする。「コンロ加熱」が一定数累積するまで、行動するたびに「爆裂炒め」を発動する。",
+                    "DamageType": "Fire",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 300301204,
+                    "SkillName": "爆裂炒め",
+                    "SkillDesc": "味方全体に大量の炎属性ダメージを与える。",
+                    "DamageType": "Fire",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 300301205,
+                    "SkillName": "厨房事故",
+                    "SkillDesc": "チャージ状態に入った後、「コンロ加熱」が一定層数に達した時、敵全体に大量の炎属性ダメージを与え、自身の防御力をダウンさせ、「コンロ加熱」の層数を全部リセットする。",
+                    "DamageType": "Fire",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 300301206,
+                    "SkillName": "ファイヤーグルメ",
+                    "SkillDesc": "チャージ状態でないとき、「かまど加温」を一定数まで累積するとただちに行動し、「かまど爆発」を発動する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 300301207,
+                    "SkillName": "猛火コンロ",
+                    "SkillDesc": "自身が攻撃を行う時、高確率で味方に減速状態を付与する。自身が攻撃を受ける、または持続ダメージを受ける時、「コンロ加熱」を1層獲得する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 300301201,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 0.8333330010063946,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": -19.99999999976717,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Thunder",
+                "Wind"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 300301201,
+                    "SkillName": "全力鍋振り",
+                    "SkillDesc": "味方単体に炎属性ダメージを与える。",
+                    "DamageType": "Fire",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 300301202,
+                    "SkillName": "旋風鍋振り",
+                    "SkillDesc": "味方単体および隣接する味方に少量の炎属性ダメージを与える。",
+                    "DamageType": "Fire",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 300301203,
+                    "SkillName": "コンロ爆発",
+                    "SkillDesc": "チャージ状態に入り、速度がアップする。「コンロ加熱」が一定数累積するまで、行動するたびに「爆裂炒め」を発動する。",
+                    "DamageType": "Fire",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 300301204,
+                    "SkillName": "爆裂炒め",
+                    "SkillDesc": "味方全体に大量の炎属性ダメージを与える。",
+                    "DamageType": "Fire",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 300301205,
+                    "SkillName": "厨房事故",
+                    "SkillDesc": "チャージ状態に入った後、「コンロ加熱」が一定層数に達した時、敵全体に大量の炎属性ダメージを与え、自身の防御力をダウンさせ、「コンロ加熱」の層数を全部リセットする。",
+                    "DamageType": "Fire",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 300301206,
+                    "SkillName": "ファイヤーグルメ",
+                    "SkillDesc": "チャージ状態でないとき、「かまど加温」を一定数まで累積するとただちに行動し、「かまど爆発」を発動する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 300301207,
+                    "SkillName": "猛火コンロ",
+                    "SkillDesc": "自身が攻撃を行う時、高確率で味方に減速状態を付与する。自身が攻撃を受ける、または持続ダメージを受ける時、「コンロ加熱」を1層獲得する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 3003012,
+            "AvatarExpReward": 150,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 114001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182010
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183006
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 3003012,
+            "WorldLevel": 1,
+            "AvatarExpReward": 200,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 114001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 114002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182010
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183006
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 3003012,
+            "WorldLevel": 2,
+            "AvatarExpReward": 250,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 114001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 114002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182010
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183006
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 3003012,
+            "WorldLevel": 3,
+            "AvatarExpReward": 300,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 114001
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 114002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182010
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183006
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 3003012,
+            "WorldLevel": 4,
+            "AvatarExpReward": 350,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 114002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 114003
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182010
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183006
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 3003012,
+            "WorldLevel": 5,
+            "AvatarExpReward": 400,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 114002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 114003
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182010
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183006
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 3003012,
+            "WorldLevel": 6,
+            "AvatarExpReward": 400,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 114002
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 114003
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182010
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183006
+                }
+            ]
+        }
+    ]
+}

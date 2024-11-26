@@ -1,0 +1,94 @@
+{
+    "Type": "Character",
+    "Name": "Clorinde",
+    "Title": "\"Candlebearer, Shadowhunter\" Clorinde",
+    "Desc": "Vanquisher of Phantoms, Vigil of the Long Night",
+    "Source": "Reward for inviting Clorinde to a duel at The Cat's Tail and claiming victory in a Friendly Fracas with her",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Clorinde",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "Electro",
+        "Sword",
+        "Fontaine",
+        "Arkhe: Ousia"
+    ],
+    "Talent": {
+        "14121": {
+            "Name": "Oath of Hunting Shadows",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 1,
+                "GCG_COST_DICE_VOID": 1
+            }
+        },
+        "14122": {
+            "Name": "Hunter's Vigil",
+            "Desc": "Attach <color=#FFFFFFFF>$[C114121]</color> to self, then remove all of your <color=#FFFFFFFF>$[C122]</color>. Based on the number of stacks removed, deal $[D__KEY__ELEMENT] and heal yourself. (DMG and healing are capped at 4 points)",
+            "Child": {
+                "C114121": {
+                    "Name": "Night Vigil",
+                    "Desc": "When a character receives healing apart from <color=#FFFFFFFF>$[S14122]</color>, it is replaced by an equivalent amount of <color=#FFFFFFFF>$[C122]</color>.\\n<color=#FFFFFFFF>After the character to which this is attached uses a Normal Attack: </color>The $[K100] dealt is converted to $[K104], and said character gains 2 stacks of <color=#FFFFFFFF>$[C122]</color>.\\n<color=#FFFFFFFF>$[K4]: 1</color>",
+                    "Child": {
+                        "S14122": "S14122",
+                        "C122": {
+                            "Name": "Bond of Life",
+                            "Desc": "<color=#FFFFFFFF>When the character to which this is attached is healed:</color> This effect will be consumed once for every $[K3] it has to negate 1 HP of healing received. (Cannot negate revives or healing caused by redistribution of HP)\\n<color=#FFFFFFFF>$[K3]: 1</color> (Can stack, no stack limit).",
+                            "Child": {
+                                "K3": {
+                                    "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                                    "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                                }
+                            }
+                        },
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>",
+                            "Desc": "Physical DMG will not apply any Elements, nor can it engage in Elemental Reactions."
+                        },
+                        "K104": {
+                            "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>Electro DMG</color>",
+                            "Desc": "Applies {SPRITE_PRESET#2104}Electro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Overloaded</color>: DMG +2 for this instance, the target is forcibly switched to the next character\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Superconduct</color>: DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Electro-Charged</color>: DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Quicken</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Catalyzing Field</color>] that grants +1 DMG to the next 2 instances of Dendro or Electro DMG"
+                        },
+                        "K4": {
+                            "Name": "<color=#FFFFFFFF>Duration (Rounds)</color>",
+                            "Desc": "Each time you reach the end of a Round, <color=#FFFFFFFF>Duration (Rounds)</color> -1.\\nThis card will be discarded immediately once <color=#FFFFFFFF>Duration (Rounds)</color> runs out."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 2
+            }
+        },
+        "14123": {
+            "Name": "Last Lightfall",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], and attaches 4 stacks of <color=#FFFFFFFF>$[C122]</color> to self.",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO",
+                "C122": {
+                    "Name": "Bond of Life",
+                    "Desc": "<color=#FFFFFFFF>When the character to which this is attached is healed:</color> This effect will be consumed once for every $[K3] it has to negate 1 HP of healing received. (Cannot negate revives or healing caused by redistribution of HP)\\n<color=#FFFFFFFF>$[K3]: 1</color> (Can stack, no stack limit).",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 214121
+}

@@ -1,0 +1,35 @@
+{
+    "Type": "Action",
+    "Name": "破夜的明焰",
+    "Title": "克洛琳德·破夜的明焰",
+    "Desc": "「洞见恶孽，逐灭鬼影！」",
+    "Source": "在猫尾酒馆中邀请克洛琳德进行对局，完成相应挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Clorinde",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_ELECTRO",
+            "count": 2
+        },
+        {}
+    ],
+    "Tag": [
+        "天赋",
+        "战斗行动"
+    ],
+    "Talent": {
+        "Name": "破夜的明焰",
+        "Desc": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1412]</color>时，装备此牌。\\n$[A1412]装备此牌后，立刻使用一次<color=#FFD780FF>$[S14122]</color>。\\n我方触发$[K214]后:本回合$[A1412]下次造成的伤害+1。(可叠加，最多叠加到+3)\\n（牌组中包含$[A1412]，才能加入牌组）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>战斗行动</color>",
+                "Desc": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+            },
+            "A1412": "破夜的明焰",
+            "S14122": "S14122",
+            "K214": {
+                "Name": "<color=#FFACFFFF>{SPRITE_PRESET#2104}雷元素相关反应</color>",
+                "Desc": "{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>超载</color>：本伤害+2，目标强制切换到下一个角色\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>超导</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>感电</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>原激化</color>：本伤害+1，生成使下2次草元素或雷元素伤害+1的[<color=#FFFFFFFF>激化领域</color>]\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2104}<color=#FFFFFFFF>结晶（雷）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2104}<color=#FFFFFFFF>扩散（雷）</color>：对目标以外的所有敌方角色造成1点雷元素伤害"
+            }
+        }
+    }
+}

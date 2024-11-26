@@ -1,0 +1,35 @@
+{
+    "Type": "Action",
+    "Name": "无光鲸噬",
+    "Title": "吞星之鲸·无光鲸噬",
+    "Desc": "梦中无月的漆黑海面上，尽是闪着磷光的浮游生物——或许正如某种巨兽的食粮。",
+    "Source": "在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度吞星之鲸中完成挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Ptahur",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_HYDRO",
+            "count": 4
+        },
+        {}
+    ],
+    "Tag": [
+        "天赋",
+        "战斗行动"
+    ],
+    "Talent": {
+        "Name": "无光鲸噬",
+        "Desc": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A2204]</color>时，装备此牌。\\n$[A2204]装备此牌后，立刻使用一次<color=#FFD780FF>$[S22042]</color>。\\n装备有此牌的$[A2204]使用<color=#FFFFFFFF>$[S22042]</color>$[K56]1张手牌后：治疗此角色该手牌元素骰费用的点数。（每回合1次）\\n（牌组中包含$[A2204]，才能加入牌组）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>战斗行动</color>",
+                "Desc": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+            },
+            "A2204": "无光鲸噬",
+            "S22042": "S22042",
+            "K56": {
+                "Name": "<color=#FFFFFFFF>舍弃</color>",
+                "Desc": "通过行动牌或角色技能的效果，将行动牌从手牌或牌库中弃置。"
+            }
+        }
+    }
+}

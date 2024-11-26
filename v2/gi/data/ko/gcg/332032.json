@@ -1,0 +1,30 @@
+{
+    "Type": "Action",
+    "Name": "마술쇼 카운트다운: 3",
+    "Title": "마술쇼 카운트다운",
+    "Desc": "「마술 볼래? 자, 따라 해 봐. 하나, 둘, 셋!」",
+    "Source": "",
+    "Icon": "UI_Gcg_CardFace_Event_Event_MagicCount3",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PAIMON",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [],
+    "Talent": {
+        "Name": "마술쇼 카운트다운: 3",
+        "Desc": "아군의 모든 원소 주사위를 $[K411]로 전환하고 카드를 4장 드로우한다.\\n<color=#FFFFFFFF>이 카드가 핸드 카드 또는 카드 더미에서 $[K56]된 후: </color>원소 주사위 코스트가 이 카드보다 1개 적은 「마술쇼 카운트다운」 1장을 카드 더미 맨 위에 배치한다.",
+        "Child": {
+            "K411": {
+                "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1111}만능 원소</color>",
+                "Desc": "{SPRITE_PRESET#1111}만능 원소는 임의의 원소로 여겨지며 어떤 원소 타입에서든 사용할 수 있다."
+            },
+            "K56": {
+                "Name": "<color=#FFFFFFFF>포기</color>",
+                "Desc": "행동 카드 또는 캐릭터 스킬의 효과를 통해, 핸드 카드 또는 카드 더미에서 행동 카드를 버린다."
+            }
+        }
+    }
+}

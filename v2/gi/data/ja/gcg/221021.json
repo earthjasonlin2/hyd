@@ -1,0 +1,33 @@
+{
+    "Type": "Action",
+    "Name": "苦痛返上",
+    "Title": "「淑女」·苦痛返上",
+    "Desc": "「痛みを…あんたにも。」",
+    "Source": "キャッツテールのリトルプリンスのところで酒場挑戦を行い、「淑女」に挑戦して友好対戦で対応する挑戦目標をクリアすることで獲得",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_LaSignora",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PAIMON",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "天賦"
+    ],
+    "Talent": {
+        "Name": "苦痛返上",
+        "Desc": "味方の出撃キャラが<color=#FFFFFFFF>$[A2102]</color>の場合のみ使用可能。登場時、$[A2102]の現在の元素タイプの元素サイコロを3個生成する。\\nキャラが3以上のダメージを受けた時、ダメージを1相殺してくれる。その後、$[A2102]の状態を基に、相手の出撃キャラに<color=#FFFFFFFF>$[K1016]</color>、または<color=#FFFFFFFF>$[K1017]</color>を付与する。（各ラウンドで1回のみ）\\n（このカードはデッキに$[A2102]が含まれている場合のみ、デッキに追加できる）",
+        "Child": {
+            "A2102": "苦痛返上",
+            "K1016": {
+                "Name": "極寒",
+                "Desc": "<color=#FFFFFFFF>エンドフェーズ：</color>付与されたキャラに{SPRITE_PRESET#2101}<color=#99FFFFFF>氷元素ダメージ</color>を1与える。\\n<color=#FFFFFFFF><color=#FFFFFFFF>使用可能回数</color>：1</color>（付与されたキャラが<color=#FFFFFFFF>灼熱</color>を付与された時、この効果を解除する。）"
+            },
+            "K1017": {
+                "Name": "灼熱",
+                "Desc": "<color=#FFFFFFFF>エンドフェーズ：</color>付与されたキャラに{SPRITE_PRESET#2103}<color=#FF9999FF>炎元素ダメージ</color>を1与える。\\n<color=#FFFFFFFF><color=#FFFFFFFF>使用可能回数</color>：1</color>（付与されたキャラが<color=#FFFFFFFF>極寒</color>を付与された時、この効果を解除する。）"
+            }
+        }
+    }
+}

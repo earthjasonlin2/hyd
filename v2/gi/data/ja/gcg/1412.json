@@ -1,0 +1,51 @@
+{
+    "Type": "Character",
+    "Name": "クロリンデ",
+    "Title": "",
+    "Desc": "",
+    "Source": "キャッツテールでクロリンデを招待し、友好対戦に勝利することで獲得",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Clorinde",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "雷元素",
+        "片手剣",
+        "フォンテーヌ",
+        "アルケー：ウーシア"
+    ],
+    "Talent": {
+        "14121": {
+            "Name": "影追いの誓い",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 1
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 1,
+                "GCG_COST_DICE_VOID": 1
+            }
+        },
+        "14122": {
+            "Name": "夜狩の巡回",
+            "Desc": "",
+            "Child": {},
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 2
+            }
+        },
+        "14123": {
+            "Name": "消えゆく残光",
+            "Desc": "",
+            "Child": {},
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 214121
+}

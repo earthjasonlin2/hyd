@@ -1,0 +1,78 @@
+{
+    "Type": "Character",
+    "Name": "エウルア",
+    "Title": "波沫のワルツ·エウルア",
+    "Desc": "これはあくまでもゲームよ。勝っても負けても、これのせいで君が新たな罪を背負うことにはならないわ。",
+    "Source": "キャッツテールでエウルアを招待し、友好対戦に勝利することで獲得",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Eula",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "氷元素",
+        "両手剣",
+        "モンド"
+    ],
+    "Talent": {
+        "11061": {
+            "Name": "西風剣術·旧貴族",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "11062": {
+            "Name": "氷潮の渦",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。本キャラに<color=#FFFFFFFF>$[C111061]</color>が付与されていない場合、<color=#FFFFFFFF>$[C111061]</color>を付与する。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "D__KEY__DAMAGE": 2,
+                "C111061": {
+                    "Name": "冷酷な心",
+                    "Desc": "<color=#FFFFFFFF>付与されたキャラが$[S11062]を発動した時</color>、この状態を解除して今回のダメージ+3。",
+                    "Child": {
+                        "S11062": "S11062"
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3
+            }
+        },
+        "11063": {
+            "Name": "氷浪の光剣",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、<color=#FFFFFFFF>$[C111062]</color>を召喚する。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "D__KEY__DAMAGE": 2,
+                "C111062": {
+                    "Name": "光臨の剣",
+                    "Desc": "<color=#FFFFFFFF>$[A1106]が「通常攻撃」または「元素スキル」を発動すると</color>、このカードに<color=#FFFFFFFF>「エネルギー量」</color>を2層重ねる。ただし、$[A1106]はチャージを獲得できない。\\n<color=#FFFFFFFF>エンドフェーズ：</color>このカードを破棄し、$[K100]を3与える。<color=#FFFFFFFF>「エネルギー量」</color>1層につき、このダメージ+1。\\n（このカードの「$[K3]」に影響を与える効果は代わりに<color=#FFFFFFFF>「エネルギー量」</color>に影響を与えるようになる。）",
+                    "Child": {
+                        "A1106": "エウルア",
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>",
+                            "Desc": "物理ダメージは元素付着させたり、元素反応を起こしたりはしません。"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                            "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 211061
+}

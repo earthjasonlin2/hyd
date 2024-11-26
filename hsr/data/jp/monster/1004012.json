@@ -1,0 +1,145 @@
+{
+    "Id": 1004012,
+    "Name": "カカリア（スペック）",
+    "Desc": "コードが影響を受けた後の正常な投影。ベロブルグの守護者、永屹の城・ベロブルグの最高統治者を参考にしている。\\nカカリア（スペック）は歴代の守護者より神の権能を引き継がれ、戦闘中に氷雪を召喚し敵を凍結することができる。",
+    "MonsterCampID": null,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 744,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/Monster_1004010.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "LittleBoss",
+    "SpeedBase": 144,
+    "StanceBase": 360,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.3000000002793968,
+    "Child": [
+        {
+            "Id": 1004012,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Thunder",
+                "Quantum"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.6000000005587935
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 100401201,
+                    "SkillName": "骨を刺す寒冷",
+                    "SkillDesc": "指定した味方単体に氷属性ダメージを与える。",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 100401202,
+                    "SkillName": "長い氷期の兆し",
+                    "SkillDesc": "「氷刃」を召喚する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401203,
+                    "SkillName": "無尽なる冬の絶罰",
+                    "SkillDesc": "味方全体に大量の氷属性ダメージを与える。",
+                    "DamageType": "Ice",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 100401204,
+                    "SkillName": "永遠に囚われし霜",
+                    "SkillDesc": "指定した味方単体に氷属性ダメージを与え、高確率で攻撃を受けた味方を凍結状態にする。",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 100401205,
+                    "SkillName": "雪国の聖者の怒り",
+                    "SkillDesc": "チャージ状態に入り、次の行動の時に味方全体に「無尽なる冬の絶罰」を発動。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401206,
+                    "SkillName": "砕氷振動",
+                    "SkillDesc": "凍結状態の味方および隣接するターゲットに氷属性ダメージを与え、メインターゲットの凍結状態を解除する。隣接する味方が凍結状態の場合、メインターゲットにこのスキルをもう一度発動する。",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 100401207,
+                    "SkillName": "より寒くより強く",
+                    "SkillDesc": "凍結状態の味方単体1人につき、自身及び召喚物の与ダメージがアップする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 1004012,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1004012,
+            "WorldLevel": 1,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1004012,
+            "WorldLevel": 2,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1004012,
+            "WorldLevel": 3,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1004012,
+            "WorldLevel": 4,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1004012,
+            "WorldLevel": 5,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1004012,
+            "WorldLevel": 6,
+            "DisplayItemList": []
+        }
+    ]
+}

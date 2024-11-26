@@ -1,0 +1,80 @@
+{
+    "Type": "Character",
+    "Name": "刻晴",
+    "Title": "霆霓快雨·刻晴",
+    "Desc": "她能构筑出许多从未设想过的牌组，拿下许多难以想象的胜利。",
+    "Source": "在猫尾酒馆中邀请刻晴进行对局，在友好对局难度中获得胜利后获取",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Keqing",
+    "Hp": 10,
+    "Cost": 3,
+    "Tag": [
+        "雷元素",
+        "单手剑",
+        "璃月"
+    ],
+    "Talent": {
+        "14031": {
+            "Name": "云来剑法",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "14032": {
+            "Name": "星斗归位",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，生成手牌<color=#FFFFFFFF>$[C114031]</color>。",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO",
+                "C114031": {
+                    "Name": "雷楔",
+                    "Desc": "$[K1]：将$[A1403]切换到场上，立刻使用$[S14032]。本次$[S14032]会为$[A1403]附属<color=#FFFFFFFF>$[K1002]</color>，但是不会再生成雷楔。\\n（$[A1403]使用$[S14032]时，如果此牌在手中：不会再生成雷楔，而是改为$[K56]此牌，并为$[A1403]附属<color=#FFFFFFFF>$[K1002]</color>）",
+                    "Child": {
+                        "K1": {
+                            "Name": "<color=#FFFFFFFF>战斗行动</color>",
+                            "Desc": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+                        },
+                        "A1403": "刻晴",
+                        "S14032": "S14032",
+                        "K1002": {
+                            "Name": "<color=#FFFFFFFF>雷元素附魔</color>",
+                            "Desc": "所附属角色造成的{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>变为{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素伤害</color>。\\n<color=#FFFFFFFF>持续回合</color>：2"
+                        },
+                        "K56": {
+                            "Name": "<color=#FFFFFFFF>舍弃</color>",
+                            "Desc": "通过行动牌或角色技能的效果，将行动牌从手牌或牌库中弃置。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 3
+            }
+        },
+        "14033": {
+            "Name": "天街巡游",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，对所有敌方后台角色造成<color=#FFFFFFFF>3点$[K5]</color>。",
+            "Child": {
+                "D__KEY__DAMAGE": 4,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO",
+                "K5": {
+                    "Name": "<color=#FFFFFFFF>穿透伤害</color>",
+                    "Desc": "穿透伤害无法受到伤害加成，但是也无法被护盾、伤害免疫等效果抵消。"
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 4,
+                "GCG_COST_ENERGY": 3
+            }
+        }
+    },
+    "Related": 214031
+}

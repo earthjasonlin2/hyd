@@ -1,0 +1,936 @@
+{
+    "Id": 3025013,
+    "Name": "Cacophonic Conductor",
+    "Desc": "Dominicus, the wisher of the Harmonious Choir, is one of the many embodiments of Xipe the Harmony. Due to the interferences from the Order, his appearance is different from before. Materialized as the Hive Mind's response to wishes, the hymns he conducts can reshape the world and create new laws per the wishes, and all who made this wish will become the source of his power.",
+    "MonsterCampID": null,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 16275,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/Monster_3025010.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "BigBoss",
+    "SpeedBase": 150,
+    "StanceBase": 240,
+    "StanceCount": 10,
+    "StatusResistanceBase": 0.3000000002793968,
+    "Child": [
+        {
+            "Id": 3025013,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Thunder",
+                "Quantum",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.40000000037252903
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 302501301,
+                    "SkillName": "Grazioso",
+                    "SkillDesc": "Deals minor Imaginary DMG to one designated target.",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 302501302,
+                    "SkillName": "Maestoso",
+                    "SkillDesc": "Deals Imaginary DMG to all targets.",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 302501303,
+                    "SkillName": "Vaneggiando",
+                    "SkillDesc": "Makes one designated target have a high chance of entering \"<u>Alien Dream</u>.\"",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501304,
+                    "SkillName": "Variation",
+                    "SkillDesc": "Enters the Charging state. Uses \"Dancing in Dreams\" in the next turn.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501305,
+                    "SkillName": "Melisma",
+                    "SkillDesc": "Enters the Charging state. Uses \"Singing in Rain\" in the next turn, while also restoring all \"Echoes of Faded Dreams\"' Toughness.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501306,
+                    "SkillName": "Dancing in Dreams",
+                    "SkillDesc": "Makes all Echoes of Faded Dreams that can take action deal Imaginary DMG to one designated target. If there are no Echoes of Faded Dreams that can take action, then this ability fails to launch and reduces a massive amount of Toughness.",
+                    "DamageType": "",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 302501307,
+                    "SkillName": "Dancing in Dreams",
+                    "SkillDesc": "Makes all Echoes of Faded Dreams that can take action deal Imaginary DMG to one designated target. If there are no Echoes of Faded Dreams that can take action, then this ability fails to launch and reduces a massive amount of Toughness.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501308,
+                    "SkillName": "Singing in Rain",
+                    "SkillDesc": "Deals Imaginary DMG to all targets, and makes all Echoes of Faded Dreams that can take action deal Imaginary DMG to all targets. If there are no Echoes of Faded Dreams that can take action, then this ability fails to launch and reduces a massive amount of Toughness.",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 302501309,
+                    "SkillName": "Phonation Unbound",
+                    "SkillDesc": "Enters the \"One With the Light\" state, gains a Shield, and increases the DMG dealt.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501310,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501311,
+                    "SkillName": "Im Anfang war das Wort",
+                    "SkillDesc": "Enters the Charge state. After 7 turns, uses \"Im Anfang war die Tat.\"",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501312,
+                    "SkillName": "Im Anfang war die Tat",
+                    "SkillDesc": "Deals massive Imaginary DMG to all targets. This DMG application ignores the targets' DEF.",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 302501313,
+                    "SkillName": "Resonant Projection",
+                    "SkillDesc": "While in the \"Im Anfang war die Kraft\" state, after every action taken by opposing targets, \"Cacophonic Conductor\" immediately takes action, and becomes immune to action delay effects caused by opposing targets. At the same time, the \"Im Anfang war die Tat\" tally will not be interrupted when this unit becomes Weakness Broken.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501314,
+                    "SkillName": "Grand Dream's Awakening",
+                    "SkillDesc": "Cacophonic Conductor summons 4 Echoes of Faded Dreams. The DMG taken by the Echoes of Faded Dreams is completely redistributed to Cacophonic Conductor. At the same time, any currently Weakness Broken Echoes of Faded Dreams recover Toughness after turn taken by this unit. After each stack of this unit Toughness is depleted, applies \"<u>Walk in the Light</u>\" to the ally team.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501315,
+                    "SkillName": "Grief and Joy Shared",
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501316,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501317,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501318,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501319,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501320,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 302501301,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Thunder",
+                "Quantum",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.40000000037252903
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 302501301,
+                    "SkillName": "Grazioso",
+                    "SkillDesc": "Deals minor Imaginary DMG to one designated target.",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 302501302,
+                    "SkillName": "Maestoso",
+                    "SkillDesc": "Deals Imaginary DMG to all targets.",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 302501303,
+                    "SkillName": "Vaneggiando",
+                    "SkillDesc": "Makes one designated target have a high chance of entering \"<u>Alien Dream</u>.\"",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501304,
+                    "SkillName": "Variation",
+                    "SkillDesc": "Enters the Charging state. Uses \"Dancing in Dreams\" in the next turn.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501305,
+                    "SkillName": "Melisma",
+                    "SkillDesc": "Enters the Charging state. Uses \"Singing in Rain\" in the next turn, while also restoring all \"Echoes of Faded Dreams\"' Toughness.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501306,
+                    "SkillName": "Dancing in Dreams",
+                    "SkillDesc": "Makes all Echoes of Faded Dreams that can take action deal Imaginary DMG to one designated target. If there are no Echoes of Faded Dreams that can take action, then this ability fails to launch and reduces a massive amount of Toughness.",
+                    "DamageType": "",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 302501307,
+                    "SkillName": "Dancing in Dreams",
+                    "SkillDesc": "Makes all Echoes of Faded Dreams that can take action deal Imaginary DMG to one designated target. If there are no Echoes of Faded Dreams that can take action, then this ability fails to launch and reduces a massive amount of Toughness.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501308,
+                    "SkillName": "Singing in Rain",
+                    "SkillDesc": "Deals Imaginary DMG to all targets, and makes all Echoes of Faded Dreams that can take action deal Imaginary DMG to all targets. If there are no Echoes of Faded Dreams that can take action, then this ability fails to launch and reduces a massive amount of Toughness.",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 302501309,
+                    "SkillName": "Phonation Unbound",
+                    "SkillDesc": "Enters the \"One With the Light\" state, gains a Shield, and increases the DMG dealt.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501310,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501311,
+                    "SkillName": "Im Anfang war das Wort",
+                    "SkillDesc": "Enters the Charge state. After 7 turns, uses \"Im Anfang war die Tat.\"",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501312,
+                    "SkillName": "Im Anfang war die Tat",
+                    "SkillDesc": "Deals massive Imaginary DMG to all targets. This DMG application ignores the targets' DEF.",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 302501313,
+                    "SkillName": "Resonant Projection",
+                    "SkillDesc": "While in the \"Im Anfang war die Kraft\" state, after every action taken by opposing targets, \"Cacophonic Conductor\" immediately takes action, and becomes immune to action delay effects caused by opposing targets. At the same time, the \"Im Anfang war die Tat\" tally will not be interrupted when this unit becomes Weakness Broken.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501314,
+                    "SkillName": "Grand Dream's Awakening",
+                    "SkillDesc": "Cacophonic Conductor summons 4 Echoes of Faded Dreams. The DMG taken by the Echoes of Faded Dreams is completely redistributed to Cacophonic Conductor. At the same time, any currently Weakness Broken Echoes of Faded Dreams recover Toughness after turn taken by this unit. After each stack of this unit Toughness is depleted, applies \"<u>Walk in the Light</u>\" to the ally team.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501315,
+                    "SkillName": "Grief and Joy Shared",
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501316,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501317,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501318,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501319,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501320,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 302501302,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Thunder",
+                "Quantum",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.40000000037252903
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 302501301,
+                    "SkillName": "Grazioso",
+                    "SkillDesc": "Deals minor Imaginary DMG to one designated target.",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 302501302,
+                    "SkillName": "Maestoso",
+                    "SkillDesc": "Deals Imaginary DMG to all targets.",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 302501303,
+                    "SkillName": "Vaneggiando",
+                    "SkillDesc": "Makes one designated target have a high chance of entering \"<u>Alien Dream</u>.\"",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501304,
+                    "SkillName": "Variation",
+                    "SkillDesc": "Enters the Charging state. Uses \"Dancing in Dreams\" in the next turn.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501305,
+                    "SkillName": "Melisma",
+                    "SkillDesc": "Enters the Charging state. Uses \"Singing in Rain\" in the next turn, while also restoring all \"Echoes of Faded Dreams\"' Toughness.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501306,
+                    "SkillName": "Dancing in Dreams",
+                    "SkillDesc": "Makes all Echoes of Faded Dreams that can take action deal Imaginary DMG to one designated target. If there are no Echoes of Faded Dreams that can take action, then this ability fails to launch and reduces a massive amount of Toughness.",
+                    "DamageType": "",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 302501307,
+                    "SkillName": "Dancing in Dreams",
+                    "SkillDesc": "Makes all Echoes of Faded Dreams that can take action deal Imaginary DMG to one designated target. If there are no Echoes of Faded Dreams that can take action, then this ability fails to launch and reduces a massive amount of Toughness.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501308,
+                    "SkillName": "Singing in Rain",
+                    "SkillDesc": "Deals Imaginary DMG to all targets, and makes all Echoes of Faded Dreams that can take action deal Imaginary DMG to all targets. If there are no Echoes of Faded Dreams that can take action, then this ability fails to launch and reduces a massive amount of Toughness.",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 302501309,
+                    "SkillName": "Phonation Unbound",
+                    "SkillDesc": "Enters the \"One With the Light\" state, gains a Shield, and increases the DMG dealt.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501310,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501311,
+                    "SkillName": "Im Anfang war das Wort",
+                    "SkillDesc": "Enters the Charge state. After 7 turns, uses \"Im Anfang war die Tat.\"",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501312,
+                    "SkillName": "Im Anfang war die Tat",
+                    "SkillDesc": "Deals massive Imaginary DMG to all targets. This DMG application ignores the targets' DEF.",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 302501313,
+                    "SkillName": "Resonant Projection",
+                    "SkillDesc": "While in the \"Im Anfang war die Kraft\" state, after every action taken by opposing targets, \"Cacophonic Conductor\" immediately takes action, and becomes immune to action delay effects caused by opposing targets. At the same time, the \"Im Anfang war die Tat\" tally will not be interrupted when this unit becomes Weakness Broken.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501314,
+                    "SkillName": "Grand Dream's Awakening",
+                    "SkillDesc": "Cacophonic Conductor summons 4 Echoes of Faded Dreams. The DMG taken by the Echoes of Faded Dreams is completely redistributed to Cacophonic Conductor. At the same time, any currently Weakness Broken Echoes of Faded Dreams recover Toughness after turn taken by this unit. After each stack of this unit Toughness is depleted, applies \"<u>Walk in the Light</u>\" to the ally team.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501315,
+                    "SkillName": "Grief and Joy Shared",
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501316,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501317,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501318,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501319,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501320,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 302501303,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Thunder",
+                "Quantum",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.40000000037252903
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 302501301,
+                    "SkillName": "Grazioso",
+                    "SkillDesc": "Deals minor Imaginary DMG to one designated target.",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 302501302,
+                    "SkillName": "Maestoso",
+                    "SkillDesc": "Deals Imaginary DMG to all targets.",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 302501303,
+                    "SkillName": "Vaneggiando",
+                    "SkillDesc": "Makes one designated target have a high chance of entering \"<u>Alien Dream</u>.\"",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501304,
+                    "SkillName": "Variation",
+                    "SkillDesc": "Enters the Charging state. Uses \"Dancing in Dreams\" in the next turn.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501305,
+                    "SkillName": "Melisma",
+                    "SkillDesc": "Enters the Charging state. Uses \"Singing in Rain\" in the next turn, while also restoring all \"Echoes of Faded Dreams\"' Toughness.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501306,
+                    "SkillName": "Dancing in Dreams",
+                    "SkillDesc": "Makes all Echoes of Faded Dreams that can take action deal Imaginary DMG to one designated target. If there are no Echoes of Faded Dreams that can take action, then this ability fails to launch and reduces a massive amount of Toughness.",
+                    "DamageType": "",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 302501307,
+                    "SkillName": "Dancing in Dreams",
+                    "SkillDesc": "Makes all Echoes of Faded Dreams that can take action deal Imaginary DMG to one designated target. If there are no Echoes of Faded Dreams that can take action, then this ability fails to launch and reduces a massive amount of Toughness.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501308,
+                    "SkillName": "Singing in Rain",
+                    "SkillDesc": "Deals Imaginary DMG to all targets, and makes all Echoes of Faded Dreams that can take action deal Imaginary DMG to all targets. If there are no Echoes of Faded Dreams that can take action, then this ability fails to launch and reduces a massive amount of Toughness.",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 302501309,
+                    "SkillName": "Phonation Unbound",
+                    "SkillDesc": "Enters the \"One With the Light\" state, gains a Shield, and increases the DMG dealt.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501310,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501311,
+                    "SkillName": "Im Anfang war das Wort",
+                    "SkillDesc": "Enters the Charge state. After 7 turns, uses \"Im Anfang war die Tat.\"",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501312,
+                    "SkillName": "Im Anfang war die Tat",
+                    "SkillDesc": "Deals massive Imaginary DMG to all targets. This DMG application ignores the targets' DEF.",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 302501313,
+                    "SkillName": "Resonant Projection",
+                    "SkillDesc": "While in the \"Im Anfang war die Kraft\" state, after every action taken by opposing targets, \"Cacophonic Conductor\" immediately takes action, and becomes immune to action delay effects caused by opposing targets. At the same time, the \"Im Anfang war die Tat\" tally will not be interrupted when this unit becomes Weakness Broken.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501314,
+                    "SkillName": "Grand Dream's Awakening",
+                    "SkillDesc": "Cacophonic Conductor summons 4 Echoes of Faded Dreams. The DMG taken by the Echoes of Faded Dreams is completely redistributed to Cacophonic Conductor. At the same time, any currently Weakness Broken Echoes of Faded Dreams recover Toughness after turn taken by this unit. After each stack of this unit Toughness is depleted, applies \"<u>Walk in the Light</u>\" to the ally team.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501315,
+                    "SkillName": "Grief and Joy Shared",
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501316,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501317,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501318,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501319,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501320,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 302501304,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Thunder",
+                "Quantum",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.40000000037252903
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 302501301,
+                    "SkillName": "Grazioso",
+                    "SkillDesc": "Deals minor Imaginary DMG to one designated target.",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 302501302,
+                    "SkillName": "Maestoso",
+                    "SkillDesc": "Deals Imaginary DMG to all targets.",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 302501303,
+                    "SkillName": "Vaneggiando",
+                    "SkillDesc": "Makes one designated target have a high chance of entering \"<u>Alien Dream</u>.\"",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501304,
+                    "SkillName": "Variation",
+                    "SkillDesc": "Enters the Charging state. Uses \"Dancing in Dreams\" in the next turn.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501305,
+                    "SkillName": "Melisma",
+                    "SkillDesc": "Enters the Charging state. Uses \"Singing in Rain\" in the next turn, while also restoring all \"Echoes of Faded Dreams\"' Toughness.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501306,
+                    "SkillName": "Dancing in Dreams",
+                    "SkillDesc": "Makes all Echoes of Faded Dreams that can take action deal Imaginary DMG to one designated target. If there are no Echoes of Faded Dreams that can take action, then this ability fails to launch and reduces a massive amount of Toughness.",
+                    "DamageType": "",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 302501307,
+                    "SkillName": "Dancing in Dreams",
+                    "SkillDesc": "Makes all Echoes of Faded Dreams that can take action deal Imaginary DMG to one designated target. If there are no Echoes of Faded Dreams that can take action, then this ability fails to launch and reduces a massive amount of Toughness.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501308,
+                    "SkillName": "Singing in Rain",
+                    "SkillDesc": "Deals Imaginary DMG to all targets, and makes all Echoes of Faded Dreams that can take action deal Imaginary DMG to all targets. If there are no Echoes of Faded Dreams that can take action, then this ability fails to launch and reduces a massive amount of Toughness.",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 302501309,
+                    "SkillName": "Phonation Unbound",
+                    "SkillDesc": "Enters the \"One With the Light\" state, gains a Shield, and increases the DMG dealt.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501310,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501311,
+                    "SkillName": "Im Anfang war das Wort",
+                    "SkillDesc": "Enters the Charge state. After 7 turns, uses \"Im Anfang war die Tat.\"",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501312,
+                    "SkillName": "Im Anfang war die Tat",
+                    "SkillDesc": "Deals massive Imaginary DMG to all targets. This DMG application ignores the targets' DEF.",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 302501313,
+                    "SkillName": "Resonant Projection",
+                    "SkillDesc": "While in the \"Im Anfang war die Kraft\" state, after every action taken by opposing targets, \"Cacophonic Conductor\" immediately takes action, and becomes immune to action delay effects caused by opposing targets. At the same time, the \"Im Anfang war die Tat\" tally will not be interrupted when this unit becomes Weakness Broken.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501314,
+                    "SkillName": "Grand Dream's Awakening",
+                    "SkillDesc": "Cacophonic Conductor summons 4 Echoes of Faded Dreams. The DMG taken by the Echoes of Faded Dreams is completely redistributed to Cacophonic Conductor. At the same time, any currently Weakness Broken Echoes of Faded Dreams recover Toughness after turn taken by this unit. After each stack of this unit Toughness is depleted, applies \"<u>Walk in the Light</u>\" to the ally team.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501315,
+                    "SkillName": "Grief and Joy Shared",
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501316,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501317,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501318,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501319,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302501320,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 3025013,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 3025013,
+            "WorldLevel": 1,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 3025013,
+            "WorldLevel": 2,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 3025013,
+            "WorldLevel": 3,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 3025013,
+            "WorldLevel": 4,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 3025013,
+            "WorldLevel": 5,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 3025013,
+            "WorldLevel": 6,
+            "DisplayItemList": []
+        }
+    ]
+}

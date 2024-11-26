@@ -1,0 +1,159 @@
+{
+    "Id": 2005010,
+    "Name": "暴走した飛霄",
+    "Desc": "危機を救うため「紅月」を呑み込み、制御できない怒りに陥った天撃将軍。\\n戦場で殺し合った過去から生まれた心の魔に意識を奪われ、疲れを知らない闘神の化身となった。彼女の友人として、また彼女の目に映る敵として、あなたたちが出せる「解毒剤」はただ1つ…戦い続けることのみだ。",
+    "MonsterCampID": null,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 1488,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/Monster_2035010.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "BigBoss",
+    "SpeedBase": 130,
+    "StanceBase": 480,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.3000000002793968,
+    "Child": [
+        {
+            "Id": 2005010,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Fire",
+                "Quantum"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 200501001,
+                    "SkillName": "銃剣・刃",
+                    "SkillDesc": "指定した味方単体に風属性ダメージを与える。",
+                    "DamageType": "Wind",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200501002,
+                    "SkillName": "巨斧・爪",
+                    "SkillDesc": "指定した味方単体に風属性ダメージを与え、高確率で攻撃を受けた味方を<u>虚弱</u>状態にする。",
+                    "DamageType": "Wind",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200501003,
+                    "SkillName": "束縛の天梯",
+                    "SkillDesc": "自身を強化し、追加ターンを獲得する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 200501004,
+                    "SkillName": "風雷の鎧",
+                    "SkillDesc": "蝕月心獣のすべての部位と共鳴し、その弱点撃破状態を解除する。次の行動まで攻撃されず、次の行動で味方全体に「乾坤呑噬」を発動する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 200501005,
+                    "SkillName": "乾坤呑噬",
+                    "SkillDesc": "味方全体に大量の風属性ダメージを与え、残りの弱点撃破されていない部位の数に応じて強化する。弱点撃破されていない部位1つにつき、このスキルの与ダメージがアップし、対応する部位の強化効果を得る。",
+                    "DamageType": "Wind",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 200501006,
+                    "SkillName": "辻風",
+                    "SkillDesc": "味方全体に風属性ダメージを与える。",
+                    "DamageType": "Wind",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 200501007,
+                    "SkillName": "心獣合撃",
+                    "SkillDesc": "「『飛霄』の影」は追加ターンの行動で蝕月心獣の部位と共鳴する。共鳴すると、心獣の部位が一定量の靭性値を回復し、攻撃を受ける時に削られる靭性値がアップする。次の行動が強化行動になり、「星雲を喰らう頭」との共鳴は高確率で味方全体を<u>怒噪</u>状態にし、「天地を裂く爪」との共鳴は自身の与ダメージを大幅にアップし、「塵を払う尾」との共鳴は高確率で味方全体を<u>虚弱</u>状態にする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 200501008,
+                    "SkillName": "守備",
+                    "SkillDesc": "「守備」状態に入る。弱点が撃破されていない時、受けるダメージがダウンする。弱点が撃破された時、行動順の遅延量がアップする。弱点撃破状態の時、受けるダメージがアップする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 200501009,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 2005010,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2005010,
+            "WorldLevel": 1,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2005010,
+            "WorldLevel": 2,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2005010,
+            "WorldLevel": 3,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2005010,
+            "WorldLevel": 4,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2005010,
+            "WorldLevel": 5,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2005010,
+            "WorldLevel": 6,
+            "DisplayItemList": []
+        }
+    ]
+}

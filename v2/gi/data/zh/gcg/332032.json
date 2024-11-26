@@ -1,0 +1,30 @@
+{
+    "Type": "Action",
+    "Name": "幻戏倒计时：3",
+    "Title": "幻戏倒计时",
+    "Desc": "「想看魔术吗？来吧，跟着我一起念——三、二、一！」",
+    "Source": "",
+    "Icon": "UI_Gcg_CardFace_Event_Event_MagicCount3",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PAIMON",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [],
+    "Talent": {
+        "Name": "幻戏倒计时：3",
+        "Desc": "将我方所有元素骰转换为$[K411]，抓4张牌。\\n<color=#FFFFFFFF>此牌在手牌或牌库中被$[K56]后：</color>将1张元素骰费用比此牌少1个的「幻戏倒计时」放置到你的牌库顶。",
+        "Child": {
+            "K411": {
+                "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1111}万能元素</color>",
+                "Desc": "{SPRITE_PRESET#1111}万能元素可以视为任何类型的元素，来支付各种费用。"
+            },
+            "K56": {
+                "Name": "<color=#FFFFFFFF>舍弃</color>",
+                "Desc": "通过行动牌或角色技能的效果，将行动牌从手牌或牌库中弃置。"
+            }
+        }
+    }
+}

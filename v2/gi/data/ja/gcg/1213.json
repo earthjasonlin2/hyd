@@ -1,0 +1,208 @@
+{
+    "Type": "Character",
+    "Name": "シグウィン",
+    "Title": "龍の愛娘・シグウィン",
+    "Desc": "「神聖なる純潔の魂に、想いが届きますように。」",
+    "Source": "キャッツテールでシグウィンを招待し、友好対戦に勝利することで獲得",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Sigewinne",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "水元素",
+        "弓",
+        "フォンテーヌ",
+        "アルケー：ウーシア"
+    ],
+    "Talent": {
+        "12131": {
+            "Name": "ターゲットセラピー",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "12132": {
+            "Name": "ぴょんぴょんハイドロセラピー",
+            "Desc": "<color=#FFFFFFFF>$[C112131]</color>を1枚生成し、味方の山札の上から3枚目の位置に配置し、本キャラに<color=#FFFFFFFF>$[C122]</color>を3層付与する。（<color=#FFFFFFFF>$[C112131]</color>の効果が発動すると、<color=#FFFFFFFF>$[C112132]</color>が生成され、相手の山札に配置される。<color=#FFFFFFFF>$[C112132]</color>の効果が発動すると、<color=#FFFFFFFF>$[C112133]</color>が生成され、味方の山札に配置される）",
+            "Child": {
+                "C112131": {
+                    "Name": "ヒーリングバブル・大",
+                    "Desc": "<color=#FFFFFFFF>このカードを引いた時</color>、味方の出撃キャラのHPを3回復する。また、<color=#FFFFFFFF>$[C112132]</color>を1枚生成し、相手の山札の上から2枚目の位置に配置する。",
+                    "Child": {
+                        "C112132": {
+                            "Name": "ヒーリングバブル・中",
+                            "Desc": "<color=#FFFFFFFF>このカードを引いた時</color>、チームの出撃キャラに$[K102]を2与える。また、<color=#FFFFFFFF>$[C112133]</color>を1枚生成し、相手の山札の一番上に配置する。",
+                            "Child": {
+                                "K102": {
+                                    "Name": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素ダメージ</color>",
+                                    "Desc": "{SPRITE_PRESET#2102}水元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2103}<color=#FFFFFFFF>蒸発</color>：ダメージ+2\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}<color=#FFFFFFFF>感電</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2101}<color=#FFFFFFFF>凍結</color>：ダメージ+1、目標はこのラウンドで行動不能になる（物理ダメージまたは炎ダメージを受けると、即座に解除されるがダメージ+2となる）\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}<color=#FFFFFFFF>開花</color>：ダメージ+1、次の炎元素または雷元素ダメージを+2できる「<color=#FFFFFFFF>草原核</color>」を生成する"
+                                },
+                                "C112133": {
+                                    "Name": "ヒーリングバブル・小",
+                                    "Desc": "<color=#FFFFFFFF>このカードを引いた時</color>、味方のチーム全員のHPを1回復し、<color=#FFFFFFFF>$[C112101]</color>を生成する。",
+                                    "Child": {
+                                        "C112101": {
+                                            "Name": "源水の雫",
+                                            "Desc": "<color=#FFFFFFFF>$[A1210]が通常攻撃を発動した後</color>、$[A1210]のHPを2回復する。$[A1210]が味方の「出撃キャラ」の場合、$[K53]に入る：<color=#FFFFFFFF>$[K1020]</color>。\\n<color=#FFFFFFFF>$[K3]：1</color>（最大3まで重ねられる）",
+                                            "Child": {
+                                                "A1210": "シグウィン",
+                                                "K53": {
+                                                    "Name": "<color=#FFFFFFFF>スキル準備</color>",
+                                                    "Desc": "スキルの中には、直接発動のできないものもあります。発動するには、一定のターン数<color=#FFFFFFFF>準備</color>する必要があります。\\nプレイヤーがアクションするとき、もし該当プレイヤーの「出撃キャラ」がスキルを<color=#FFFFFFFF>準備</color>している場合、該当プレイヤーのアクションはスキップされます。もしスキルの<color=#FFFFFFFF>準備</color>が完了した場合、そのスキルは直ちに発動されます（このような<color=#FFFFFFFF>準備</color>を必要とするスキルは、「スキルを発動した後」、「キャラが元素反応を起こした後」に生じる効果を発動させることができません）。\\nスキルを<color=#FFFFFFFF>準備</color>できるのは「出撃キャラ」のみとなります。スキルを<color=#FFFFFFFF>準備</color>している「出撃キャラ」が待機キャラにチェンジすると、スキルの<color=#FFFFFFFF>準備</color>は中断されます。"
+                                                },
+                                                "K1020": {
+                                                    "Name": "<color=#FFFFFFFF>衡平な裁量</color>",
+                                                    "Desc": "<color=#D3BC8E>通常攻撃</color>\\n（1ターンの準備が必要）\\n{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素ダメージ</color>を2与える。本キャラのHPが6以上の場合、このダメージ+1、かつ自身に貫通ダメージを1与える。"
+                                                },
+                                                "K3": {
+                                                    "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                                                    "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "C122": {
+                    "Name": "命の契約",
+                    "Desc": "<color=#FFFFFFFF>付与されたキャラが治療を受ける時</color>、この効果の層数1につき、1を消費して受けた治療効果を1相殺する。（復活による治療効果またはHP配分による治療効果は相殺できない）<color=#FFFFFFFF>$[K3]：1</color>（制限なく重ねられる）。",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                            "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3
+            }
+        },
+        "12133": {
+            "Name": "過飽和まごころお注射",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、$[K53]に入る：<color=#FFFFFFFF>$[S12135]</color>。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "D__KEY__DAMAGE": 2,
+                "K53": {
+                    "Name": "<color=#FFFFFFFF>スキル準備</color>",
+                    "Desc": "スキルの中には、直接発動のできないものもあります。発動するには、一定のターン数<color=#FFFFFFFF>準備</color>する必要があります。\\nプレイヤーがアクションするとき、もし該当プレイヤーの「出撃キャラ」がスキルを<color=#FFFFFFFF>準備</color>している場合、該当プレイヤーのアクションはスキップされます。もしスキルの<color=#FFFFFFFF>準備</color>が完了した場合、そのスキルは直ちに発動されます（このような<color=#FFFFFFFF>準備</color>を必要とするスキルは、「スキルを発動した後」、「キャラが元素反応を起こした後」に生じる効果を発動させることができません）。\\nスキルを<color=#FFFFFFFF>準備</color>できるのは「出撃キャラ」のみとなります。スキルを<color=#FFFFFFFF>準備</color>している「出撃キャラ」が待機キャラにチェンジすると、スキルの<color=#FFFFFFFF>準備</color>は中断されます。"
+                },
+                "S12135": "S12135"
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "12134": {
+            "Name": "丁寧な診療",
+            "Desc": "【固有】味方キャラが治療を受け、付与された<color=#FFFFFFFF>$[C122]</color>が完全にクリアされた後、該当キャラのHP上限+1。（1キャラにつき最大3回まで有効）\\n<color=#FFFFFFFF>味方が本キャラにチェンジする時</color>、味方のフィールドに<color=#FFFFFFFF>$[C112101]</color>が存在する場合、その$[K3]-1、本キャラが$[K310]を1獲得する。",
+            "Child": {
+                "C122": {
+                    "Name": "命の契約",
+                    "Desc": "<color=#FFFFFFFF>付与されたキャラが治療を受ける時</color>、この効果の層数1につき、1を消費して受けた治療効果を1相殺する。（復活による治療効果またはHP配分による治療効果は相殺できない）<color=#FFFFFFFF>$[K3]：1</color>（制限なく重ねられる）。",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                            "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                        }
+                    }
+                },
+                "C112101": {
+                    "Name": "源水の雫",
+                    "Desc": "<color=#FFFFFFFF>$[A1210]が通常攻撃を発動した後</color>、$[A1210]のHPを2回復する。$[A1210]が味方の「出撃キャラ」の場合、$[K53]に入る：<color=#FFFFFFFF>$[K1020]</color>。\\n<color=#FFFFFFFF>$[K3]：1</color>（最大3まで重ねられる）",
+                    "Child": {
+                        "A1210": "シグウィン",
+                        "K53": {
+                            "Name": "<color=#FFFFFFFF>スキル準備</color>",
+                            "Desc": "スキルの中には、直接発動のできないものもあります。発動するには、一定のターン数<color=#FFFFFFFF>準備</color>する必要があります。\\nプレイヤーがアクションするとき、もし該当プレイヤーの「出撃キャラ」がスキルを<color=#FFFFFFFF>準備</color>している場合、該当プレイヤーのアクションはスキップされます。もしスキルの<color=#FFFFFFFF>準備</color>が完了した場合、そのスキルは直ちに発動されます（このような<color=#FFFFFFFF>準備</color>を必要とするスキルは、「スキルを発動した後」、「キャラが元素反応を起こした後」に生じる効果を発動させることができません）。\\nスキルを<color=#FFFFFFFF>準備</color>できるのは「出撃キャラ」のみとなります。スキルを<color=#FFFFFFFF>準備</color>している「出撃キャラ」が待機キャラにチェンジすると、スキルの<color=#FFFFFFFF>準備</color>は中断されます。"
+                        },
+                        "K1020": {
+                            "Name": "<color=#FFFFFFFF>衡平な裁量</color>",
+                            "Desc": "<color=#D3BC8E>通常攻撃</color>\\n（1ターンの準備が必要）\\n{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素ダメージ</color>を2与える。本キャラのHPが6以上の場合、このダメージ+1、かつ自身に貫通ダメージを1与える。"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                            "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                        }
+                    }
+                },
+                "K3": {
+                    "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                    "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                },
+                "K310": {
+                    "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}チャージ</color>",
+                    "Desc": "キャラが「元素爆発」を発動するには、{SPRITE_PRESET#1110}チャージを消費する必要があります。\\nキャラが「元素スキル」や「通常攻撃」を発動した後、{SPRITE_PRESET#1110}チャージを1獲得できます。"
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        },
+        "12135": {
+            "Name": "思いやりたっぷりの薬剤衝撃波",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {}
+        },
+        "12136": {
+            "Name": "丁寧な診療",
+            "Desc": "",
+            "Child": {},
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        },
+        "12137": {
+            "Name": "丁寧な診療",
+            "Desc": "【固有】<color=#FFFFFFFF>味方が本キャラにチェンジする時に</color>、味方のフィールドに<color=#FFFFFFFF>$[C112101]</color>が存在する場合、その$[K3]が-1、本キャラが$[K310]を1獲得する。",
+            "Child": {
+                "C112101": {
+                    "Name": "源水の雫",
+                    "Desc": "<color=#FFFFFFFF>$[A1210]が通常攻撃を発動した後</color>、$[A1210]のHPを2回復する。$[A1210]が味方の「出撃キャラ」の場合、$[K53]に入る：<color=#FFFFFFFF>$[K1020]</color>。\\n<color=#FFFFFFFF>$[K3]：1</color>（最大3まで重ねられる）",
+                    "Child": {
+                        "A1210": "シグウィン",
+                        "K53": {
+                            "Name": "<color=#FFFFFFFF>スキル準備</color>",
+                            "Desc": "スキルの中には、直接発動のできないものもあります。発動するには、一定のターン数<color=#FFFFFFFF>準備</color>する必要があります。\\nプレイヤーがアクションするとき、もし該当プレイヤーの「出撃キャラ」がスキルを<color=#FFFFFFFF>準備</color>している場合、該当プレイヤーのアクションはスキップされます。もしスキルの<color=#FFFFFFFF>準備</color>が完了した場合、そのスキルは直ちに発動されます（このような<color=#FFFFFFFF>準備</color>を必要とするスキルは、「スキルを発動した後」、「キャラが元素反応を起こした後」に生じる効果を発動させることができません）。\\nスキルを<color=#FFFFFFFF>準備</color>できるのは「出撃キャラ」のみとなります。スキルを<color=#FFFFFFFF>準備</color>している「出撃キャラ」が待機キャラにチェンジすると、スキルの<color=#FFFFFFFF>準備</color>は中断されます。"
+                        },
+                        "K1020": {
+                            "Name": "<color=#FFFFFFFF>衡平な裁量</color>",
+                            "Desc": "<color=#D3BC8E>通常攻撃</color>\\n（1ターンの準備が必要）\\n{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素ダメージ</color>を2与える。本キャラのHPが6以上の場合、このダメージ+1、かつ自身に貫通ダメージを1与える。"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                            "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                        }
+                    }
+                },
+                "K3": {
+                    "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                    "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                },
+                "K310": {
+                    "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}チャージ</color>",
+                    "Desc": "キャラが「元素爆発」を発動するには、{SPRITE_PRESET#1110}チャージを消費する必要があります。\\nキャラが「元素スキル」や「通常攻撃」を発動した後、{SPRITE_PRESET#1110}チャージを1獲得できます。"
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 212131
+}

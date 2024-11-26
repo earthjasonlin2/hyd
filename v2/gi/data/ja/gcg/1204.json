@@ -1,0 +1,202 @@
+{
+    "Type": "Character",
+    "Name": "タルタリヤ",
+    "Title": "「公子」·タルタリヤ",
+    "Desc": "対局もまた戦場だよ。能ある者だけが先手を取れるんだ。",
+    "Source": "キャッツテールでタルタリヤを招待し、友好対戦に勝利することで獲得",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Tartaglia",
+    "Hp": 10,
+    "Cost": 3,
+    "Tag": [
+        "水元素",
+        "弓",
+        "ファデュイ"
+    ],
+    "Talent": {
+        "12041": {
+            "Name": "断雨",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "12042": {
+            "Name": "魔王の武装·荒波",
+            "Desc": "<color=#FFFFFFFF>$[C112042]</color>に切り替え、$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与えると同時に、目標キャラに<color=#FFFFFFFF>$[C112043]</color>を付与する。",
+            "Child": {
+                "C112042": {
+                    "Name": "近接モード",
+                    "Desc": "キャラの与える$[K100]が$[K102]へと変わる。\\n<color=#FFFFFFFF>キャラが$[K51]を行った後</color>、目標キャラに$[K1005]を付与する。\\n$[K1005]が付与されているキャラへの与えるダメージ+1。\\n<color=#FFFFFFFF>すでに$[K1005]が付与されているキャラに対してスキルを発動した後</color>、相手の次の待機キャラに$[K5]を1与える。（各ラウンドで最大2回まで）\\n\\n<color=#FFFFFFFF>$[K4]：2</color>",
+                    "Child": {
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>",
+                            "Desc": "物理ダメージは元素付着させたり、元素反応を起こしたりはしません。"
+                        },
+                        "K102": {
+                            "Name": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素ダメージ</color>",
+                            "Desc": "{SPRITE_PRESET#2102}水元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2103}<color=#FFFFFFFF>蒸発</color>：ダメージ+2\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}<color=#FFFFFFFF>感電</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2101}<color=#FFFFFFFF>凍結</color>：ダメージ+1、目標はこのラウンドで行動不能になる（物理ダメージまたは炎ダメージを受けると、即座に解除されるがダメージ+2となる）\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}<color=#FFFFFFFF>開花</color>：ダメージ+1、次の炎元素または雷元素ダメージを+2できる「<color=#FFFFFFFF>草原核</color>」を生成する"
+                        },
+                        "K51": {
+                            "Name": "<color=#FFFFFFFF>重撃</color>",
+                            "Desc": "味方のアクションが始まる前、元素サイコロの数が偶数の時に行われる「通常攻撃」は、「重撃」と見なされる。"
+                        },
+                        "K1005": {
+                            "Name": "<color=#FFFFFFFF>断流</color>",
+                            "Desc": "<color=#FFFFFFFF>付与されたキャラが倒された後</color>、そのチームの出撃キャラに「断流」を付与する。\\n（<color=#FFFFFFFF>「近接モード」</color>にある<color=#FFFFFFFF>タルタリヤ</color>が付与されたキャラを攻撃する時、追加ダメージを与える。）"
+                        },
+                        "K5": {
+                            "Name": "<color=#FFFFFFFF>貫通ダメージ</color>",
+                            "Desc": "貫通ダメージはダメージアップ効果を受けられません。また、シールド、ダメージ無効化などの効果で相殺されることもありません。"
+                        },
+                        "K4": {
+                            "Name": "<color=#FFFFFFFF>継続ラウンド数</color>",
+                            "Desc": "各ラウンドのエンドフェーズで、<color=#FFFFFFFF>継続ラウンド数</color>が1マイナスされます。\\n<color=#FFFFFFFF>継続ラウンド数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                        }
+                    }
+                },
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "D__KEY__DAMAGE": 2,
+                "C112043": {
+                    "Name": "断流",
+                    "Desc": "<color=#FFFFFFFF>付与されたキャラが倒された後</color>、そのチームの出撃キャラに「断流」を付与する。\\n（<color=#FFFFFFFF>「$[C112042]」</color>にある<color=#FFFFFFFF>$[A1204]</color>が付与されたキャラを攻撃する時、追加ダメージを与える。）",
+                    "Child": {
+                        "A1204": "タルタリヤ"
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3
+            }
+        },
+        "12043": {
+            "Name": "極悪技·尽滅閃",
+            "Desc": "<color=#FFFFFFFF>$[A1204]</color>の戦闘モードによって、異なる攻撃を発動する。\\n<color=#FFFFFFFF>遠隔モード·魔弾一閃：</color>$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE_5]与え、$[K310]が2返還され、目標キャラに<color=#FFFFFFFF>$[C112043]</color>を付与する。\\n<color=#FFFFFFFF>近接モード·尽滅の水光：</color>$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+            "Child": {
+                "A1204": "タルタリヤ",
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "D__KEY__DAMAGE_5": 5,
+                "K310": {
+                    "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}チャージ</color>",
+                    "Desc": "キャラが「元素爆発」を発動するには、{SPRITE_PRESET#1110}チャージを消費する必要があります。\\nキャラが「元素スキル」や「通常攻撃」を発動した後、{SPRITE_PRESET#1110}チャージを1獲得できます。"
+                },
+                "C112043": {
+                    "Name": "断流",
+                    "Desc": "<color=#FFFFFFFF>付与されたキャラが倒された後</color>、そのチームの出撃キャラに「断流」を付与する。\\n（<color=#FFFFFFFF>「$[C112042]」</color>にある<color=#FFFFFFFF>$[A1204]</color>が付与されたキャラを攻撃する時、追加ダメージを与える。）",
+                    "Child": {
+                        "C112042": {
+                            "Name": "近接モード",
+                            "Desc": "キャラの与える$[K100]が$[K102]へと変わる。\\n<color=#FFFFFFFF>キャラが$[K51]を行った後</color>、目標キャラに$[K1005]を付与する。\\n$[K1005]が付与されているキャラへの与えるダメージ+1。\\n<color=#FFFFFFFF>すでに$[K1005]が付与されているキャラに対してスキルを発動した後</color>、相手の次の待機キャラに$[K5]を1与える。（各ラウンドで最大2回まで）\\n\\n<color=#FFFFFFFF>$[K4]：2</color>",
+                            "Child": {
+                                "K100": {
+                                    "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>",
+                                    "Desc": "物理ダメージは元素付着させたり、元素反応を起こしたりはしません。"
+                                },
+                                "K102": {
+                                    "Name": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素ダメージ</color>",
+                                    "Desc": "{SPRITE_PRESET#2102}水元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2103}<color=#FFFFFFFF>蒸発</color>：ダメージ+2\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}<color=#FFFFFFFF>感電</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2101}<color=#FFFFFFFF>凍結</color>：ダメージ+1、目標はこのラウンドで行動不能になる（物理ダメージまたは炎ダメージを受けると、即座に解除されるがダメージ+2となる）\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}<color=#FFFFFFFF>開花</color>：ダメージ+1、次の炎元素または雷元素ダメージを+2できる「<color=#FFFFFFFF>草原核</color>」を生成する"
+                                },
+                                "K51": {
+                                    "Name": "<color=#FFFFFFFF>重撃</color>",
+                                    "Desc": "味方のアクションが始まる前、元素サイコロの数が偶数の時に行われる「通常攻撃」は、「重撃」と見なされる。"
+                                },
+                                "K1005": {
+                                    "Name": "<color=#FFFFFFFF>断流</color>",
+                                    "Desc": "<color=#FFFFFFFF>付与されたキャラが倒された後</color>、そのチームの出撃キャラに「断流」を付与する。\\n（<color=#FFFFFFFF>「近接モード」</color>にある<color=#FFFFFFFF>タルタリヤ</color>が付与されたキャラを攻撃する時、追加ダメージを与える。）"
+                                },
+                                "K5": {
+                                    "Name": "<color=#FFFFFFFF>貫通ダメージ</color>",
+                                    "Desc": "貫通ダメージはダメージアップ効果を受けられません。また、シールド、ダメージ無効化などの効果で相殺されることもありません。"
+                                },
+                                "K4": {
+                                    "Name": "<color=#FFFFFFFF>継続ラウンド数</color>",
+                                    "Desc": "各ラウンドのエンドフェーズで、<color=#FFFFFFFF>継続ラウンド数</color>が1マイナスされます。\\n<color=#FFFFFFFF>継続ラウンド数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                                }
+                            }
+                        },
+                        "A1204": "タルタリヤ"
+                    }
+                },
+                "D__KEY__DAMAGE": 7
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3,
+                "GCG_COST_ENERGY": 3
+            }
+        },
+        "12044": {
+            "Name": "押波",
+            "Desc": "【固有】戦闘開始時、<color=#FFFFFFFF>$[C112041]</color>が付与される。\\nキャラに付与された<color=#FFFFFFFF>$[C112042]</color>の効果が終了時、再び<color=#FFFFFFFF>$[C112041]</color>を付与する。",
+            "Child": {
+                "C112041": {
+                    "Name": "遠隔モード",
+                    "Desc": "<color=#FFFFFFFF>付与されたキャラが$[K51]を行った後</color>、目標キャラに$[K1005]を付与する。",
+                    "Child": {
+                        "K51": {
+                            "Name": "<color=#FFFFFFFF>重撃</color>",
+                            "Desc": "味方のアクションが始まる前、元素サイコロの数が偶数の時に行われる「通常攻撃」は、「重撃」と見なされる。"
+                        },
+                        "K1005": {
+                            "Name": "<color=#FFFFFFFF>断流</color>",
+                            "Desc": "<color=#FFFFFFFF>付与されたキャラが倒された後</color>、そのチームの出撃キャラに「断流」を付与する。\\n（<color=#FFFFFFFF>「近接モード」</color>にある<color=#FFFFFFFF>タルタリヤ</color>が付与されたキャラを攻撃する時、追加ダメージを与える。）"
+                        }
+                    }
+                },
+                "C112042": {
+                    "Name": "近接モード",
+                    "Desc": "キャラの与える$[K100]が$[K102]へと変わる。\\n<color=#FFFFFFFF>キャラが$[K51]を行った後</color>、目標キャラに$[K1005]を付与する。\\n$[K1005]が付与されているキャラへの与えるダメージ+1。\\n<color=#FFFFFFFF>すでに$[K1005]が付与されているキャラに対してスキルを発動した後</color>、相手の次の待機キャラに$[K5]を1与える。（各ラウンドで最大2回まで）\\n\\n<color=#FFFFFFFF>$[K4]：2</color>",
+                    "Child": {
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>",
+                            "Desc": "物理ダメージは元素付着させたり、元素反応を起こしたりはしません。"
+                        },
+                        "K102": {
+                            "Name": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素ダメージ</color>",
+                            "Desc": "{SPRITE_PRESET#2102}水元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2103}<color=#FFFFFFFF>蒸発</color>：ダメージ+2\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}<color=#FFFFFFFF>感電</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2101}<color=#FFFFFFFF>凍結</color>：ダメージ+1、目標はこのラウンドで行動不能になる（物理ダメージまたは炎ダメージを受けると、即座に解除されるがダメージ+2となる）\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}<color=#FFFFFFFF>開花</color>：ダメージ+1、次の炎元素または雷元素ダメージを+2できる「<color=#FFFFFFFF>草原核</color>」を生成する"
+                        },
+                        "K51": {
+                            "Name": "<color=#FFFFFFFF>重撃</color>",
+                            "Desc": "味方のアクションが始まる前、元素サイコロの数が偶数の時に行われる「通常攻撃」は、「重撃」と見なされる。"
+                        },
+                        "K1005": {
+                            "Name": "<color=#FFFFFFFF>断流</color>",
+                            "Desc": "<color=#FFFFFFFF>付与されたキャラが倒された後</color>、そのチームの出撃キャラに「断流」を付与する。\\n（<color=#FFFFFFFF>「近接モード」</color>にある<color=#FFFFFFFF>タルタリヤ</color>が付与されたキャラを攻撃する時、追加ダメージを与える。）"
+                        },
+                        "K5": {
+                            "Name": "<color=#FFFFFFFF>貫通ダメージ</color>",
+                            "Desc": "貫通ダメージはダメージアップ効果を受けられません。また、シールド、ダメージ無効化などの効果で相殺されることもありません。"
+                        },
+                        "K4": {
+                            "Name": "<color=#FFFFFFFF>継続ラウンド数</color>",
+                            "Desc": "各ラウンドのエンドフェーズで、<color=#FFFFFFFF>継続ラウンド数</color>が1マイナスされます。\\n<color=#FFFFFFFF>継続ラウンド数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        },
+        "12045": {
+            "Name": "遠隔モード",
+            "Desc": "",
+            "Child": {},
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        },
+        "12046": {
+            "Name": "押波",
+            "Desc": "",
+            "Child": {},
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 212041
+}

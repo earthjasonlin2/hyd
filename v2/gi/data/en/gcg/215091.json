@@ -1,0 +1,52 @@
+{
+    "Type": "Action",
+    "Name": "The Wondrous Path of Truth",
+    "Title": "Faruzan: The Wondrous Path of Truth",
+    "Desc": "\"Truth repeats its course.\"",
+    "Source": "Reward for inviting Faruzan to a duel at The Cat's Tail and achieving all corresponding challenge objectives",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Faruzan",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_ANEMO",
+            "count": 3
+        },
+        {
+            "costType": "GCG_COST_ENERGY",
+            "count": 2
+        }
+    ],
+    "Tag": [
+        "Talent",
+        "Combat Action"
+    ],
+    "Talent": {
+        "Name": "The Wondrous Path of Truth",
+        "Desc": "$[K1]: When your active character is <color=#FFFFFFFF>$[A1509]</color>, equip this card.\\nAfter $[A1509] equips this card, immediately use <color=#FFD780FF>$[S15093]</color>.\\nWhen the <color=#FFFFFFFF>$[C115093]</color> created by $[A1509] who has this card equipped enters play and when the Action Phase begins: Create 1 <color=#80FFD7FF>$[K305]</color> Die.\\n(You must have $[A1509] in your deck to add this card to your deck.)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+            },
+            "A1509": "The Wondrous Path of Truth",
+            "S15093": "S15093",
+            "C115093": {
+                "Name": "Dazzling Polyhedron",
+                "Desc": "<color=#FFFFFFFF>End Phase:</color> Deal 1 $[K105].\\n<color=#FFFFFFFF>$[K3]: 3</color>\\n<color=#FFFFFFFF>When this Summon is on the field:</color> Opposing character(s) take +1 $[K105].",
+                "Child": {
+                    "K105": {
+                        "Name": "{SPRITE_PRESET#2105}<color=#80FFD7FF>Anemo DMG</color>",
+                        "Desc": "Reacts with Elements if they are already applied:\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Cryo Swirl</color>: Deals 1 Cryo DMG to all opposing characters except the target\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Hydro Swirl</color>: Deals 1 Hydro DMG to all opposing characters except the target\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Pyro Swirl</color>: Deals 1 Pyro DMG to all opposing characters except the target\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Electro Swirl</color>: Deals 1 Electro DMG to all opposing characters except the target"
+                    },
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                        "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                    }
+                }
+            },
+            "K305": {
+                "Name": "{SPRITE_PRESET#1105}Anemo",
+                "Desc": "Spend the <color=#80FFD7FF>{SPRITE_PRESET#1105}Anemo</color> Dice you have rolled to pay for this cost.\\n({SPRITE_PRESET#1111}Omni Dice may also be used to pay for this.)"
+            }
+        }
+    }
+}

@@ -1,0 +1,85 @@
+{
+    "Type": "Character",
+    "Name": "早柚",
+    "Title": "忍里之貉·早柚",
+    "Desc": "一梦作伴，万野无踪。",
+    "Source": "在猫尾酒馆中邀请早柚进行对局，在友好对局难度中获得胜利后获取",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Sayu",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "风元素",
+        "双手剑",
+        "稻妻"
+    ],
+    "Talent": {
+        "15071": {
+            "Name": "忍刀·终末番",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "15072": {
+            "Name": "呜呼流·风隐急进",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，本角色$[K53]：<color=#FFFFFFFF>$[S15074]</color>。\\n如果当前技能引发了扩散，则<color=#FFFFFFFF>$[S15074]</color>将改为造成被扩散元素的伤害。",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO",
+                "K53": {
+                    "Name": "<color=#FFFFFFFF>准备技能</color>",
+                    "Desc": "有些技能无法被直接使用，而是需要一定次数的行动轮来进行<color=#FFFFFFFF>准备</color>。\\n轮到一位牌手行动时，如果该牌手的「出战角色」正在<color=#FFFFFFFF>准备</color>技能，则跳过该牌手的行动；如果技能已经完成<color=#FFFFFFFF>准备</color>，角色将会在此时直接使用此技能。（此类需要<color=#FFFFFFFF>准备</color>的技能，无法触发「使用技能后」「角色引发元素反应后」等效果。）\\n只有「出战角色」才能<color=#FFFFFFFF>准备</color>技能；如果正在<color=#FFFFFFFF>准备</color>技能的「出战角色」被切换到后台，技能的<color=#FFFFFFFF>准备</color>就会被打断。"
+                },
+                "S15074": "S15074"
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 3
+            }
+        },
+        "15073": {
+            "Name": "呜呼流·影貉缭乱",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，召唤<color=#FFFFFFFF>$[C115072]</color>。",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO",
+                "C115072": {
+                    "Name": "不倒貉貉",
+                    "Desc": "<color=#FFFFFFFF>结束阶段：</color>造成1点$[K105]，治疗我方受伤最多的角色2点。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+                    "Child": {
+                        "K105": {
+                            "Name": "{SPRITE_PRESET#2105}<color=#80FFD7FF>风元素伤害</color>",
+                            "Desc": "和已附着的元素发生元素反应：\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2101}<color=#FFFFFFFF>扩散（冰）</color>：对目标以外的所有敌方角色造成1点冰元素伤害\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2102}<color=#FFFFFFFF>扩散（水）</color>：对目标以外的所有敌方角色造成1点水元素伤害\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2103}<color=#FFFFFFFF>扩散（火）</color>：对目标以外的所有敌方角色造成1点火元素伤害\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2104}<color=#FFFFFFFF>扩散（雷）</color>：对目标以外的所有敌方角色造成1点雷元素伤害"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>可用次数</color>",
+                            "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "15074": {
+            "Name": "风风轮舞踢",
+            "Desc": "（需准备1个行动轮）\\n造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]（或被扩散元素的伤害）。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO"
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {}
+        }
+    },
+    "Related": 215071
+}

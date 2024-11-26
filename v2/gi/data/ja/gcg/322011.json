@@ -1,0 +1,32 @@
+{
+    "Type": "Action",
+    "Name": "田饒舌",
+    "Title": "前回の続き·田饒舌",
+    "Desc": "「この道理を私からお話ししましょう。生粋の講談をお聴かせしますよ！」",
+    "Source": "世界探索でプレイヤー「田饒舌」との冒険挑戦において対応する挑戦目標をクリアすることで獲得",
+    "Icon": "UI_Gcg_CardFace_Assist_NPC_Tiantiezui",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_VOID",
+            "count": 2
+        },
+        {}
+    ],
+    "Tag": [
+        "仲間"
+    ],
+    "Talent": {
+        "Name": "田饒舌",
+        "Desc": "<color=#FFFFFFFF>エンドフェーズ：</color>味方のうち、チャージがMaxになっていないキャラ1体が$[K310]を1獲得する。（出撃キャラ優先）\\n<color=#FFFFFFFF>$[K3]：2</color>",
+        "Child": {
+            "K310": {
+                "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}チャージ</color>",
+                "Desc": "キャラが「元素爆発」を発動するには、{SPRITE_PRESET#1110}チャージを消費する必要があります。\\nキャラが「元素スキル」や「通常攻撃」を発動した後、{SPRITE_PRESET#1110}チャージを1獲得できます。"
+            },
+            "K3": {
+                "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+            }
+        }
+    }
+}

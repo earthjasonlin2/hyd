@@ -1,0 +1,130 @@
+{
+    "Type": "Character",
+    "Name": "「女士」",
+    "Title": "第八执行官·「女士」",
+    "Desc": "瞳仁中倒映着破晓的赤红，她最后展开烈焰之翼向黎明飞去。\\n「但那并不是曙光，亲爱的罗莎琳。那是焚尽一切的火海。」\\n但这也没什么所谓。因为她心中明白，自己早已被烈火吞没。",
+    "Source": "在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度「女士」中获得胜利后获取",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_LaSignora",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "冰元素",
+        "其他武器",
+        "愚人众"
+    ],
+    "Talent": {
+        "21021": {
+            "Name": "霜锋霰舞",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "21022": {
+            "Name": "凛冽之刺",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，目标角色附属<color=#FFFFFFFF>$[C121022]</color>。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "C121022": {
+                    "Name": "严寒",
+                    "Desc": "<color=#FFFFFFFF>结束阶段：</color>对附属角色造成1点$[K101]。\\n<color=#FFFFFFFF>$[K3]：1</color>\\n\\n所附属角色被附属<color=#FFFFFFFF>$[C163011]</color>时，移除此效果。",
+                    "Child": {
+                        "K101": {
+                            "Name": "{SPRITE_PRESET#2101}<color=#99FFFFFF>冰元素伤害</color>",
+                            "Desc": "附着{SPRITE_PRESET#2101}冰元素，可发生元素反应：\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2103}<color=#FFFFFFFF>融化</color>：本伤害+2\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2104}<color=#FFFFFFFF>超导</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2102}<color=#FFFFFFFF>冻结</color>：本伤害+1，使目标本回合无法行动（受到物理或火元素伤害后提前解除，但是伤害+2）"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>可用次数</color>",
+                            "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                        },
+                        "C163011": {
+                            "Name": "炽热",
+                            "Desc": "<color=#FFFFFFFF>结束阶段：</color>对所附属角色造成1点$[K103]。\\n<color=#FFFFFFFF>$[K3]：1</color>\\n\\n所附属角色被附属<color=#FFFFFFFF>$[C121022]</color>时，移除此效果。",
+                            "Child": {
+                                "K103": {
+                                    "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>火元素伤害</color>",
+                                    "Desc": "附着{SPRITE_PRESET#2103}火元素，可发生元素反应：\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>融化</color>：本伤害+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>蒸发</color>：本伤害+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>超载</color>：本伤害+2，目标强制切换到下一个角色\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>燃烧</color>：本伤害+1，生成回合结束时造成1点火元素伤害的[<color=#FFFFFFFF>燃烧烈焰</color>]（可用次数1，最多叠加到2）"
+                                },
+                                "K3": {
+                                    "Name": "<color=#FFFFFFFF>可用次数</color>",
+                                    "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3
+            }
+        },
+        "21023": {
+            "Name": "红莲冰茧",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，治疗本角色2点。移除<color=#FFFFFFFF>$[C121021]</color>，本角色永久转换为$[K1013]形态。",
+            "Child": {
+                "D__KEY__DAMAGE": 4,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "C121021": {
+                    "Name": "冰封的炽炎魔女",
+                    "Desc": "<color=#FFFFFFFF>行动阶段开始时：</color>如果所附属角色生命值不多于4，则移除此效果。\\n<color=#FFFFFFFF>所附属角色被击倒时：</color>移除此效果，使角色$[K54]，并治疗该角色到1点生命值。\\n\\n<color=#FFFFFFFF>此效果被移除时：</color>所附属角色转换为$[K1013]形态。",
+                    "Child": {
+                        "K54": {
+                            "Name": "<color=#FFFFFFFF>免于被击倒</color>",
+                            "Desc": "一些效果会使角色在生命值被降为0的时候<color=#FFFFFFFF>免于被击倒</color>，并治疗该角色到一定生命值。\\n此时，角色不视为被<color=#FFFFFFFF>击倒</color>过。（因此，角色所附属的装备和状态不会被弃置，充能也不会被清空。）"
+                        },
+                        "K1013": {
+                            "Name": "<color=#FFFFFFFF>「焚尽的炽炎魔女」</color>",
+                            "Desc": "「女士」可以永久地转换为「焚尽的炽炎魔女」形态。\\n转换后，「女士」的元素类型会从{SPRITE_PRESET#2101}<color=#99FFFFFF>冰元素</color>转换为{SPRITE_PRESET#2103}<color=#FF9999FF>火元素</color>。\\n转换后，此角色可以使用「焚尽的炽炎魔女」的技能，但是不再能使用「女士」原本的技能。"
+                        }
+                    }
+                },
+                "K1013": {
+                    "Name": "<color=#FFFFFFFF>「焚尽的炽炎魔女」</color>",
+                    "Desc": "「女士」可以永久地转换为「焚尽的炽炎魔女」形态。\\n转换后，「女士」的元素类型会从{SPRITE_PRESET#2101}<color=#99FFFFFF>冰元素</color>转换为{SPRITE_PRESET#2103}<color=#FF9999FF>火元素</color>。\\n转换后，此角色可以使用「焚尽的炽炎魔女」的技能，但是不再能使用「女士」原本的技能。"
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "21024": {
+            "Name": "邪眼之威",
+            "Desc": "【被动】战斗开始时，初始附属<color=#FFFFFFFF>$[C121021]</color>。",
+            "Child": {
+                "C121021": {
+                    "Name": "冰封的炽炎魔女",
+                    "Desc": "<color=#FFFFFFFF>行动阶段开始时：</color>如果所附属角色生命值不多于4，则移除此效果。\\n<color=#FFFFFFFF>所附属角色被击倒时：</color>移除此效果，使角色$[K54]，并治疗该角色到1点生命值。\\n\\n<color=#FFFFFFFF>此效果被移除时：</color>所附属角色转换为$[K1013]形态。",
+                    "Child": {
+                        "K54": {
+                            "Name": "<color=#FFFFFFFF>免于被击倒</color>",
+                            "Desc": "一些效果会使角色在生命值被降为0的时候<color=#FFFFFFFF>免于被击倒</color>，并治疗该角色到一定生命值。\\n此时，角色不视为被<color=#FFFFFFFF>击倒</color>过。（因此，角色所附属的装备和状态不会被弃置，充能也不会被清空。）"
+                        },
+                        "K1013": {
+                            "Name": "<color=#FFFFFFFF>「焚尽的炽炎魔女」</color>",
+                            "Desc": "「女士」可以永久地转换为「焚尽的炽炎魔女」形态。\\n转换后，「女士」的元素类型会从{SPRITE_PRESET#2101}<color=#99FFFFFF>冰元素</color>转换为{SPRITE_PRESET#2103}<color=#FF9999FF>火元素</color>。\\n转换后，此角色可以使用「焚尽的炽炎魔女」的技能，但是不再能使用「女士」原本的技能。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        },
+        "21025": {
+            "Name": "炽炎醒燃",
+            "Desc": "",
+            "Child": {},
+            "Cost": {}
+        }
+    },
+    "Related": 221021
+}

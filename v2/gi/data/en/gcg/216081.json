@@ -1,0 +1,41 @@
+{
+    "Type": "Action",
+    "Name": "Undisclosed Distribution Channels",
+    "Title": "Navia: Undisclosed Distribution Channels",
+    "Desc": "\"Where'd that come from!?\"",
+    "Source": "Reward for inviting Navia to a duel at The Cat's Tail and achieving all corresponding challenge objectives",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Navia",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_GEO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "Talent",
+        "Combat Action"
+    ],
+    "Talent": {
+        "Name": "Undisclosed Distribution Channels",
+        "Desc": "$[K1]: When your active character is <color=#FFFFFFFF>$[A1608]</color>, equip this card.\\nAfter $[A1608] equips this card, immediately use <color=#FFD780FF>$[S16082]</color> once.\\nAfter your $[A1608], who has this card equipped, uses a Skill: Draw 2 <color=#FFFFFFFF>$[C116081]</color> cards. (Once per Round)\\n(You must have $[A1608] in your deck to add this card to your deck.)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+            },
+            "A1608": "Undisclosed Distribution Channels",
+            "S16082": "S16082",
+            "C116081": {
+                "Name": "Crystal Shrapnel",
+                "Desc": "Deal 1 $[K100] to the opponent's active character and draw 1 card.",
+                "Child": {
+                    "K100": {
+                        "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>",
+                        "Desc": "Physical DMG will not apply any Elements, nor can it engage in Elemental Reactions."
+                    }
+                }
+            }
+        }
+    }
+}

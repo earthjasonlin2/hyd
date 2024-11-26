@@ -1,0 +1,41 @@
+{
+    "Type": "Action",
+    "Name": "Sin of Pride",
+    "Title": "Kujou Sara: Sin of Pride",
+    "Desc": "\"With this unity between my mind, arrow, and bow, any enemy will be struck down!\"",
+    "Source": "Reward for inviting Kujou Sara to a duel at The Cat's Tail and achieving all corresponding challenge objectives",
+    "Icon": "UI_Gcg_CardFace_Modify_Constellation_Sara",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_ELECTRO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "Talent",
+        "Combat Action"
+    ],
+    "Talent": {
+        "Name": "Sin of Pride",
+        "Desc": "$[K1]: When your active character is <color=#FFFFFFFF>$[A1406]</color>, equip this card.\\nAfter $[A1406] equips this card, immediately use <color=#FFD780FF>$[S14062]</color> once.\\nWhen $[A1406] is active and has this card equipped, all allied {SPRITE_PRESET#2104}<color=#FFACFFFF>Electro</color> characters with <color=#FFFFFFFF>$[C114063]</color> will deal +1 additional <color=#FFFFFFFF>Elemental Skill</color> and <color=#FFFFFFFF>Elemental Burst</color> DMG.\\n(You must have $[A1406] in your deck to add this card to your deck.)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+            },
+            "A1406": "Sin of Pride",
+            "S14062": "S14062",
+            "C114063": {
+                "Name": "Crowfeather Cover",
+                "Desc": "The character with this attached deals +1 <color=#FFFFFFFF>Elemental Skill</color> and <color=#FFFFFFFF>Elemental Burst</color> DMG.\\n<color=#FFFFFFFF>$[K3]: 2</color>",
+                "Child": {
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                        "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                    }
+                }
+            }
+        }
+    }
+}

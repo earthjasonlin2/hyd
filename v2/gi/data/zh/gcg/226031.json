@@ -1,0 +1,45 @@
+{
+    "Type": "Action",
+    "Name": "异兽侵蚀",
+    "Title": "黄金王兽·异兽侵蚀",
+    "Desc": "「王兽并没有名字，因为本身不过是「黄金」无心的造物；正因如此，才会更执着于侵入不属于它的世界，以自己的力量争取名号吧。」",
+    "Source": "在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度黄金王兽中完成挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Planelurker",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_GEO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "天赋",
+        "战斗行动"
+    ],
+    "Talent": {
+        "Name": "异兽侵蚀",
+        "Desc": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A2603]</color>时，装备此牌。\\n$[A2603]装备此牌后，立刻使用一次<color=#FFD780FF>$[S26032]</color>。\\n装备有此牌的$[A2603]在场时，对方的<color=#FFFFFFFF>$[C126031]</color>最多可叠加到5次，并且所附属角色不在后台时也会生效。\\n（牌组中包含$[A2603]，才能加入牌组）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>战斗行动</color>",
+                "Desc": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+            },
+            "A2603": "异兽侵蚀",
+            "S26032": "S26032",
+            "C126031": {
+                "Name": "黄金侵蚀",
+                "Desc": "<color=#FFFFFFFF>结束阶段：</color>如果所附属角色位于后台，则此效果每有1次$[K3]，就对所附属角色造成1点$[K5]。\\n<color=#FFFFFFFF>$[K3]：1</color>（可叠加，最多叠加到3次）",
+                "Child": {
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>可用次数</color>",
+                        "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                    },
+                    "K5": {
+                        "Name": "<color=#FFFFFFFF>穿透伤害</color>",
+                        "Desc": "穿透伤害无法受到伤害加成，但是也无法被护盾、伤害免疫等效果抵消。"
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,96 @@
+{
+    "Type": "Character",
+    "Name": "閑雲",
+    "Title": "仙鶴の告げる佳音·閑雲",
+    "Desc": "雲上より来たる侠客",
+    "Source": "キャッツテールで閑雲を招待し、友好対戦に勝利することで獲得",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Liuyun",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "風元素",
+        "法器",
+        "璃月"
+    ],
+    "Talent": {
+        "15101": {
+            "Name": "清風散花の詞",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO",
+                "D__KEY__DAMAGE": 1
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "15102": {
+            "Name": "朝翔の鶴雲",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、<color=#FFFFFFFF>$[C115101]</color>を生成し、本キャラに<color=#FFFFFFFF>$[C115104]</color>を付与する。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO",
+                "D__KEY__DAMAGE": 2,
+                "C115101": {
+                    "Name": "天梯昇り",
+                    "Desc": "<color=#FFFFFFFF>味方がキャラチェンジを行う時</color>、必要な元素サイコロの数-1。\\n<color=#FFFFFFFF>$[K3]：1</color>（最大2まで重ねられる）",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                            "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                        }
+                    }
+                },
+                "C115104": {
+                    "Name": "閑雲衝撃波",
+                    "Desc": "<color=#FFFFFFFF>付与されたキャラにキャラチェンジした後</color>、$[K105]を1与える。\\n<color=#FFFFFFFF>$[K3]：1</color>（最大2まで重ねられる）",
+                    "Child": {
+                        "K105": {
+                            "Name": "{SPRITE_PRESET#2105}<color=#80FFD7FF>風元素ダメージ</color>",
+                            "Desc": "付着した元素と以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2101}<color=#FFFFFFFF>拡散（氷）</color>：目標以外の相手チーム全員に氷元素ダメージを1与える\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2102}<color=#FFFFFFFF>拡散（水）</color>：目標以外の相手チーム全員に水元素ダメージを1与える\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2103}<color=#FFFFFFFF>拡散（炎）</color>：目標以外の相手チーム全員に炎元素ダメージを1与える\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2104}<color=#FFFFFFFF>拡散（雷）</color>：目標以外の相手チーム全員に雷元素ダメージを1与える"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                            "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 3
+            }
+        },
+        "15103": {
+            "Name": "夕集の竹星",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、味方のチーム全員のHPを1回復し、手札<color=#FFFFFFFF>$[C115102]</color>を生成する。\\n（<color=#FFFFFFFF>$[C115102]</color>を装備したキャラは特技<color=#FFFFFFFF>$[S1151021]</color>を使用できる。）",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO",
+                "D__KEY__DAMAGE": 1,
+                "C115102": {
+                    "Name": "竹星",
+                    "Desc": "$[K58]：$[S1151021]\\n<color=#FFFFFFFF>$[K3]：2</color>\\n（キャラが装備できる「{SPRITE_PRESET#3008}特技」は1つのみ）",
+                    "Child": {
+                        "K58": {
+                            "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#3008}特技</color>",
+                            "Desc": "出撃キャラが「{SPRITE_PRESET#3008}特技」カードを装備している場合、対応する「{SPRITE_PRESET#3008}特技」を使用できる。\\n「{SPRITE_PRESET#3008}特技」の使用は「戦闘アクション」と見なされる。キャラが凍結、石化、スタンなどの原因でスキルを発動できない時、「{SPRITE_PRESET#3008}特技」も発動できなくなる。\\nキャラが「{SPRITE_PRESET#3008}特技」を発動した場合、スキル発動として見なされることなく、対応する効果（「スキルを発動した後」「キャラが元素反応を起こした後」などによって発動される効果）も発動されない。また、キャラが「{SPRITE_PRESET#3008}特技」で与えたダメージは、キャラ自身のダメージとして見なされない。"
+                        },
+                        "S1151021": "S1151021",
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                            "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                        }
+                    }
+                },
+                "S1151021": "S1151021"
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 215101
+}

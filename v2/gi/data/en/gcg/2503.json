@@ -1,0 +1,89 @@
+{
+    "Type": "Character",
+    "Name": "Consecrated Flying Serpent",
+    "Title": "Remnant Squall: Consecrated Flying Serpent",
+    "Desc": "A flying serpent that became twisted and warped by eating some great being. Now, it commands the fearsome winds.",
+    "Source": "Reward for accepting the Tavern Challenge at The Cat's Tail and claiming victory in a Friendly Fracas with the Consecrated Flying Serpent",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_ChrysopeleaSacred",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "Anemo",
+        "Other Weapons",
+        "Monster",
+        "Consecrated Beast"
+    ],
+    "Talent": {
+        "25031": {
+            "Name": "Whirling Tail",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "25032": {
+            "Name": "Swirling Squall",
+            "Desc": "Deal $[D__KEY__DAMAGE] $[D__KEY__ELEMENT] and draw 1 card.",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO"
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 3
+            }
+        },
+        "25033": {
+            "Name": "Scattershot Vortex",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. $[K56] all <color=#FFFFFFFF>$[C124051]</color> cards in your Hand. Double the DMG dealt once for every 2 cards you $[K56].",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO",
+                "K56": {
+                    "Name": "<color=#FFFFFFFF>Discard</color>",
+                    "Desc": "Use Action Cards or Character Skill effects to Discard Action Cards from Hand or Deck."
+                },
+                "C124051": {
+                    "Name": "Bonecruncher's Energy Block",
+                    "Desc": "Randomly $[K56] 1 card from your Hand with the highest original Cost and create 1 Elemental Die of your active character's Element. (Only 1 such card can be played per Round)",
+                    "Child": {
+                        "K56": {
+                            "Name": "<color=#FFFFFFFF>Discard</color>",
+                            "Desc": "Use Action Cards or Character Skill effects to Discard Action Cards from Hand or Deck."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "25034": {
+            "Name": "Immortal Remnants: Anemo",
+            "Desc": "(Passive) When battle begins, create 6 <color=#FFFFFFFF>$[C124051]</color> and place them evenly into your deck.",
+            "Child": {
+                "C124051": {
+                    "Name": "Bonecruncher's Energy Block",
+                    "Desc": "Randomly $[K56] 1 card from your Hand with the highest original Cost and create 1 Elemental Die of your active character's Element. (Only 1 such card can be played per Round)",
+                    "Child": {
+                        "K56": {
+                            "Name": "<color=#FFFFFFFF>Discard</color>",
+                            "Desc": "Use Action Cards or Character Skill effects to Discard Action Cards from Hand or Deck."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 225031
+}

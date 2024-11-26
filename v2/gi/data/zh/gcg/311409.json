@@ -1,0 +1,29 @@
+{
+    "Type": "Action",
+    "Name": "勘探钻机",
+    "Title": "石匠号子·勘探钻机",
+    "Desc": "「这种长柄钻的穿刺、削切能力无可比拟。\\n既然它能够如同热刀刺入黄油般深深没入岩石，\\n那对付不若岩石坚硬的东西的话更是不在话下。」",
+    "Source": "",
+    "Icon": "UI_Gcg_CardFace_Modify_Weapon_KanTanQiang",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PAIMON",
+            "count": 2
+        },
+        {}
+    ],
+    "Tag": [
+        "武器",
+        "长柄武器"
+    ],
+    "Talent": {
+        "Name": "勘探钻机",
+        "Desc": "<color=#FFFFFFFF>所附属角色受到伤害时：</color>如可能，$[K56]原本元素骰费用最高的1张手牌，以抵消1点伤害，然后累积1点<color=#FFFFFFFF>「团结」</color>。（每回合1次）\\n<color=#FFFFFFFF>角色造成伤害时：</color>如果此牌已有<color=#FFFFFFFF>「团结」</color>，则消耗所有<color=#FFFFFFFF>「团结」</color>，使此伤害+1，并且每消耗1点<color=#FFFFFFFF>「团结」</color>就抓1张牌。\\n（<color=#FFFFFFFF>「{SPRITE_PRESET#3204}长柄武器」角色</color>才能装备。角色最多装备1件「{SPRITE_PRESET#3003}武器」）",
+        "Child": {
+            "K56": {
+                "Name": "<color=#FFFFFFFF>舍弃</color>",
+                "Desc": "通过行动牌或角色技能的效果，将行动牌从手牌或牌库中弃置。"
+            }
+        }
+    }
+}

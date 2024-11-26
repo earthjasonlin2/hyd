@@ -1,0 +1,34 @@
+{
+    "Type": "Action",
+    "Name": "起死回骸",
+    "Title": "七七·起死回骸",
+    "Desc": "「要…活下去…」",
+    "Source": "在猫尾酒馆中邀请七七进行对局，完成相应挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Constellation_Qiqi",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_CRYO",
+            "count": 4
+        },
+        {
+            "costType": "GCG_COST_ENERGY",
+            "count": 3
+        }
+    ],
+    "Tag": [
+        "天赋",
+        "战斗行动"
+    ],
+    "Talent": {
+        "Name": "起死回骸",
+        "Desc": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1108]</color>时，装备此牌。\\n$[A1108]装备此牌后，立刻使用一次<color=#FFD780FF>$[S11083]</color>。\\n装备有此牌的$[A1108]使用<color=#FFFFFFFF>$[S11083]</color>时：复苏我方所有倒下的角色，并治疗其2点。（整场牌局限制2次）\\n（牌组中包含$[A1108]，才能加入牌组）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>战斗行动</color>",
+                "Desc": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+            },
+            "A1108": "起死回骸",
+            "S11083": "S11083"
+        }
+    }
+}

@@ -1,0 +1,113 @@
+{
+    "Type": "Character",
+    "Name": "エルマイト旅団・フローラルリングダンサー",
+    "Title": "旋舞の記憶・フローラルリングダンサー",
+    "Desc": "「砂の民には音楽と舞踏の伝統がある。最初は神への礼賛。それから王の歓心を買うための演武と戦闘の技術となった。」",
+    "Source": "キャッツテールのリトルプリンスのところで酒場挑戦を行い、エルマイト旅団・フローラルリングダンサーに挑戦して友好対戦に勝利することで獲得",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_EremiteGrass",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "草元素",
+        "他の武器",
+        "エルマイト旅団"
+    ],
+    "Talent": {
+        "27031": {
+            "Name": "薙ぎ払うフローラルリング",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "27032": {
+            "Name": "螺旋の舞",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE_3]与え、<color=#FFFFFFFF>$[C127033]</color>を1層生成する。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_DENDRO",
+                "D__KEY__DAMAGE_3": 3,
+                "C127033": {
+                    "Name": "霊蛇の祝福",
+                    "Desc": "<color=#FFFFFFFF>味方が$[C127032]の$[K58]を発動する時</color>、この$[K58]の与えるダメージ+1、かつ$[C127032]の$[K3]を消費しない。\\n<color=#FFFFFFFF>$[K3]：1</color>（制限なく重ねられる）",
+                    "Child": {
+                        "C127032": {
+                            "Name": "悪霊・草の霊蛇",
+                            "Desc": "$[K58]：$[S1270321]\\n<color=#FFFFFFFF>$[K3]：2</color>\\n（キャラが装備できる「{SPRITE_PRESET#3008}特技」は1つのみ）",
+                            "Child": {
+                                "K58": {
+                                    "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#3008}特技</color>",
+                                    "Desc": "出撃キャラが「{SPRITE_PRESET#3008}特技」カードを装備している場合、対応する「{SPRITE_PRESET#3008}特技」を使用できる。\\n「{SPRITE_PRESET#3008}特技」の使用は「戦闘アクション」と見なされる。キャラが凍結、石化、スタンなどの原因でスキルを発動できない時、「{SPRITE_PRESET#3008}特技」も発動できなくなる。\\nキャラが「{SPRITE_PRESET#3008}特技」を発動した場合、スキル発動として見なされることなく、対応する効果（「スキルを発動した後」「キャラが元素反応を起こした後」などによって発動される効果）も発動されない。また、キャラが「{SPRITE_PRESET#3008}特技」で与えたダメージは、キャラ自身のダメージとして見なされない。"
+                                },
+                                "S1270321": "S1270321",
+                                "K3": {
+                                    "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                                    "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                                }
+                            }
+                        },
+                        "K58": {
+                            "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#3008}特技</color>",
+                            "Desc": "出撃キャラが「{SPRITE_PRESET#3008}特技」カードを装備している場合、対応する「{SPRITE_PRESET#3008}特技」を使用できる。\\n「{SPRITE_PRESET#3008}特技」の使用は「戦闘アクション」と見なされる。キャラが凍結、石化、スタンなどの原因でスキルを発動できない時、「{SPRITE_PRESET#3008}特技」も発動できなくなる。\\nキャラが「{SPRITE_PRESET#3008}特技」を発動した場合、スキル発動として見なされることなく、対応する効果（「スキルを発動した後」「キャラが元素反応を起こした後」などによって発動される効果）も発動されない。また、キャラが「{SPRITE_PRESET#3008}特技」で与えたダメージは、キャラ自身のダメージとして見なされない。"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                            "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 3
+            }
+        },
+        "27033": {
+            "Name": "悪霊蘇生・草の霊蛇",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。各対戦ごとに1回のみ、<color=#FFFFFFFF>$[C127032]</color>を1枚手札に加える。\\n（<color=#FFFFFFFF>$[C127032]</color>を装備したキャラは特技<color=#FFFFFFFF>$[S1270321]</color>を使用できる）",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_DENDRO",
+                "D__KEY__DAMAGE": 4,
+                "C127032": {
+                    "Name": "悪霊・草の霊蛇",
+                    "Desc": "$[K58]：$[S1270321]\\n<color=#FFFFFFFF>$[K3]：2</color>\\n（キャラが装備できる「{SPRITE_PRESET#3008}特技」は1つのみ）",
+                    "Child": {
+                        "K58": {
+                            "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#3008}特技</color>",
+                            "Desc": "出撃キャラが「{SPRITE_PRESET#3008}特技」カードを装備している場合、対応する「{SPRITE_PRESET#3008}特技」を使用できる。\\n「{SPRITE_PRESET#3008}特技」の使用は「戦闘アクション」と見なされる。キャラが凍結、石化、スタンなどの原因でスキルを発動できない時、「{SPRITE_PRESET#3008}特技」も発動できなくなる。\\nキャラが「{SPRITE_PRESET#3008}特技」を発動した場合、スキル発動として見なされることなく、対応する効果（「スキルを発動した後」「キャラが元素反応を起こした後」などによって発動される効果）も発動されない。また、キャラが「{SPRITE_PRESET#3008}特技」で与えたダメージは、キャラ自身のダメージとして見なされない。"
+                        },
+                        "S1270321": "S1270321",
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                            "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                        }
+                    }
+                },
+                "S1270321": "S1270321"
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "27034": {
+            "Name": "悪霊の力",
+            "Desc": "【固有】<color=#FFFFFFFF>本キャラがダメージを受けた後</color>、本キャラのHPが7以下の場合、$[K310]を1獲得する。（各ラウンドで1回のみ）",
+            "Child": {
+                "K310": {
+                    "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}チャージ</color>",
+                    "Desc": "キャラが「元素爆発」を発動するには、{SPRITE_PRESET#1110}チャージを消費する必要があります。\\nキャラが「元素スキル」や「通常攻撃」を発動した後、{SPRITE_PRESET#1110}チャージを1獲得できます。"
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 227031
+}

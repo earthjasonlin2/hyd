@@ -1,0 +1,35 @@
+{
+    "Type": "Action",
+    "Name": "純水流華",
+    "Title": "純水流華",
+    "Desc": "「…この心——人間のように鼓動する心臓は、すでに旅の途中で同じ重罪に染まっています。苦痛と後悔に苛まれる心は、どこで安らぎを求めるべきなのでしょうか。」",
+    "Source": "",
+    "Icon": "UI_Gcg_CardFace_Modify_Weapon_ChunShui",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PAIMON",
+            "count": 1
+        },
+        {}
+    ],
+    "Tag": [
+        "武器",
+        "法器"
+    ],
+    "Talent": {
+        "Name": "純水流華",
+        "Desc": "<color=#FFFFFFFF>登場時およびラウンド終了時</color>、キャラに<color=#FFFFFFFF>$[C122]</color>を1層付与する。\\n<color=#FFFFFFFF>双方がアクションをする前に</color>、装備キャラに<color=#FFFFFFFF>$[C122]</color>が付与されていない場合、ランダムな基本元素サイコロを1個生成し、キャラの次の与えるダメージ+1。（各ラウンドで1回のみ）\\n（<color=#FFFFFFFF>「{SPRITE_PRESET#3201}法器」キャラ</color>のみ装備可能。キャラが装備できる「{SPRITE_PRESET#3003}武器」は1つのみ）",
+        "Child": {
+            "C122": {
+                "Name": "命の契約",
+                "Desc": "<color=#FFFFFFFF>付与されたキャラが治療を受ける時</color>、この効果の層数1につき、1を消費して受けた治療効果を1相殺する。（復活による治療効果またはHP配分による治療効果は相殺できない）<color=#FFFFFFFF>$[K3]：1</color>（制限なく重ねられる）。",
+                "Child": {
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                        "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                    }
+                }
+            }
+        }
+    }
+}

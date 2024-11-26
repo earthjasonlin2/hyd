@@ -1,0 +1,119 @@
+{
+    "Type": "Character",
+    "Name": "丽莎",
+    "Title": "蔷薇魔女·丽莎",
+    "Desc": "追寻魔导的奥秘，静待真相的机缘。",
+    "Source": "在猫尾酒馆中邀请丽莎进行对局，在友好对局难度中获得胜利后获取",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Lisa",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "雷元素",
+        "法器",
+        "蒙德"
+    ],
+    "Talent": {
+        "14091": {
+            "Name": "指尖雷暴",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，并使敌方出战角色附属<color=#FFFFFFFF>$[C114091]</color>。",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO",
+                "C114091": {
+                    "Name": "引雷",
+                    "Desc": "此状态初始具有2层「引雷」；重复附属时，叠加1层「引雷」。「引雷」最多可以叠加到4层。\\n<color=#FFFFFFFF>结束阶段：</color>叠加1层「引雷」。\\n\\n<color=#FFFFFFFF>所附属角色受到$[S14092]或$[C114092]的伤害时：</color>移除此状态，每层「引雷」使此伤害+1。",
+                    "Child": {
+                        "S14092": "S14092",
+                        "C114092": {
+                            "Name": "蔷薇雷光",
+                            "Desc": "<color=#FFFFFFFF>结束阶段：</color>造成2点$[K104]。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+                            "Child": {
+                                "K104": {
+                                    "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素伤害</color>",
+                                    "Desc": "附着{SPRITE_PRESET#2104}雷元素，可发生元素反应：\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>超载</color>：本伤害+2，目标强制切换到下一个角色\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>超导</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>感电</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>原激化</color>：本伤害+1，生成使下2次草元素或雷元素伤害+1的[<color=#FFFFFFFF>激化领域</color>]"
+                                },
+                                "K3": {
+                                    "Name": "<color=#FFFFFFFF>可用次数</color>",
+                                    "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "14092": {
+            "Name": "苍雷",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]；如果敌方出战角色未附属<color=#FFFFFFFF>$[C114091]</color>，则使其附属<color=#FFFFFFFF>$[C114091]</color>。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO",
+                "C114091": {
+                    "Name": "引雷",
+                    "Desc": "此状态初始具有2层「引雷」；重复附属时，叠加1层「引雷」。「引雷」最多可以叠加到4层。\\n<color=#FFFFFFFF>结束阶段：</color>叠加1层「引雷」。\\n\\n<color=#FFFFFFFF>所附属角色受到$[S14092]或$[C114092]的伤害时：</color>移除此状态，每层「引雷」使此伤害+1。",
+                    "Child": {
+                        "S14092": "S14092",
+                        "C114092": {
+                            "Name": "蔷薇雷光",
+                            "Desc": "<color=#FFFFFFFF>结束阶段：</color>造成2点$[K104]。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+                            "Child": {
+                                "K104": {
+                                    "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素伤害</color>",
+                                    "Desc": "附着{SPRITE_PRESET#2104}雷元素，可发生元素反应：\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>超载</color>：本伤害+2，目标强制切换到下一个角色\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>超导</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>感电</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>原激化</color>：本伤害+1，生成使下2次草元素或雷元素伤害+1的[<color=#FFFFFFFF>激化领域</color>]"
+                                },
+                                "K3": {
+                                    "Name": "<color=#FFFFFFFF>可用次数</color>",
+                                    "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 3
+            }
+        },
+        "14093": {
+            "Name": "蔷薇的雷光",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，召唤<color=#FFFFFFFF>$[C114092]</color>，使敌方出战角色附属<color=#FFFFFFFF>$[C114091]</color>。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO",
+                "C114092": {
+                    "Name": "蔷薇雷光",
+                    "Desc": "<color=#FFFFFFFF>结束阶段：</color>造成2点$[K104]。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+                    "Child": {
+                        "K104": {
+                            "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素伤害</color>",
+                            "Desc": "附着{SPRITE_PRESET#2104}雷元素，可发生元素反应：\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>超载</color>：本伤害+2，目标强制切换到下一个角色\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>超导</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>感电</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>原激化</color>：本伤害+1，生成使下2次草元素或雷元素伤害+1的[<color=#FFFFFFFF>激化领域</color>]"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>可用次数</color>",
+                            "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                },
+                "C114091": {
+                    "Name": "引雷",
+                    "Desc": "此状态初始具有2层「引雷」；重复附属时，叠加1层「引雷」。「引雷」最多可以叠加到4层。\\n<color=#FFFFFFFF>结束阶段：</color>叠加1层「引雷」。\\n\\n<color=#FFFFFFFF>所附属角色受到$[S14092]或$[C114092]的伤害时：</color>移除此状态，每层「引雷」使此伤害+1。",
+                    "Child": {
+                        "S14092": "S14092"
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 214091
+}

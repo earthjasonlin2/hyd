@@ -1,0 +1,66 @@
+{
+    "Type": "Character",
+    "Name": "愚人众·藏镜仕女",
+    "Title": "冬国仕女·水镜使者",
+    "Desc": "一切隐秘，都将深藏于潋光的水镜之中吧…",
+    "Source": "在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度愚人众·藏镜仕女中获得胜利后获取",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_Maidenwater",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "水元素",
+        "其他武器",
+        "愚人众"
+    ],
+    "Talent": {
+        "22021": {
+            "Name": "水弹",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "22022": {
+            "Name": "潋波绽破",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，目标角色附属<color=#FFFFFFFF>$[C122021]</color>。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "C122021": {
+                    "Name": "水光破镜",
+                    "Desc": "<color=#FFFFFFFF>所附属角色切换到其他角色时：</color>需要多花费1个元素骰。\\n<color=#FFFFFFFF>$[K4]：2</color>\\n（同一方场上最多存在一个此状态）",
+                    "Child": {
+                        "K4": {
+                            "Name": "<color=#FFFFFFFF>持续回合</color>",
+                            "Desc": "每回合结束阶段，<color=#FFFFFFFF>持续回合</color>-1；\\n<color=#FFFFFFFF>持续回合</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3
+            }
+        },
+        "22023": {
+            "Name": "粼镜折光",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+            "Child": {
+                "D__KEY__DAMAGE": 5,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO"
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 222021
+}

@@ -1,0 +1,43 @@
+{
+    "Type": "Action",
+    "Name": "Embers Rekindled",
+    "Title": "Abyss Lector: Embers Rekindled",
+    "Desc": "The path toward sowing grace is not assured to be one free of obstructions.",
+    "Source": "Reward for accepting the Tavern Challenge against the Abyss Lector: Fathomless Flames at The Cat's Tail and achieving all corresponding challenge objectives in a Friendly Fracas",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_DeaconFire",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PYRO",
+            "count": 2
+        },
+        {}
+    ],
+    "Tag": [
+        "Talent"
+    ],
+    "Talent": {
+        "Name": "Embers Rekindled",
+        "Desc": "<color=#FFFFFFFF>When played:</color> If <color=#FFFFFFFF>$[A2302]</color>, who equips this card, has already triggered <color=#FFFFFFFF>$[C123022]</color>, immediately discard this card and apply $[K1006] to the character.\\nWhen $[A2302], who has this card equipped, triggers <color=#FFFFFFFF>$[C123022]</color>: discard this card and apply $[K1006] to the character.\\n(You must have $[A2302] in your deck to add this card to your deck.)",
+        "Child": {
+            "A2302": "Embers Rekindled",
+            "C123022": {
+                "Name": "Fiery Rebirth",
+                "Desc": "<color=#FFFFFFFF>When the character to which this is attached would be defeated:</color> Remove this effect, ensure the character $[K54|s1], and heal them to 4 HP. After this effect is triggered, this character deals +1 $[K103].",
+                "Child": {
+                    "K54": {
+                        "Name": "<color=#FFFFFFFF>Immunity to Defeat</color>|s1:<color=#FFFFFFFF>will not be defeated</color>",
+                        "Desc": "Certain effects will grant characters an <color=#FFFFFFFF>immunity to being defeated</color> when their HP hits 0, and will heal them for a certain amount thereafter.\\nWhen this occurs, characters will not be regarded as having experienced a <color=#FFFFFFFF>defeat.</color> (Hence, their attached equipment and statuses will not be removed, and their Energy will remain uncleared.)"
+                    },
+                    "K103": {
+                        "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>Pyro DMG</color>",
+                        "Desc": "Applies {SPRITE_PRESET#2103}Pyro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Melt</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Vaporize</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Overloaded</color>: DMG +2 for this instance, the target is forcibly switched to the next character\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Burning</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Burning Flame</color>] that will deal 1 Pyro DMG at the end of the Round (Takes effect once, max 2 stacks)"
+                    }
+                }
+            },
+            "K1006": {
+                "Name": "<color=#FFFFFFFF>Aegis of Abyssal Flame</color>",
+                "Desc": "Provide <color=#FFFFFFFF>2 {SPRITE_PRESET#4007}<color=#FFFFFFFF>Shield</color> points</color> to the character to which this card is attached.\\n<color=#FFFFFFFF>After said {SPRITE_PRESET#4007}Shield points are depleted:</color> Deal 1 <color=#FFFFFFFF>Piercing DMG</color> to all opposing characters."
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "Type": "Action",
+    "Name": "荒泷第一",
+    "Title": "荒泷一斗·荒泷第一",
+    "Desc": "无论如何，先在气势方面占据上风总没错。",
+    "Source": "在猫尾酒馆中邀请荒泷一斗进行对局，完成相应挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Itto",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_GEO",
+            "count": 1
+        },
+        {
+            "costType": "GCG_COST_DICE_VOID",
+            "count": 2
+        }
+    ],
+    "Tag": [
+        "天赋",
+        "战斗行动"
+    ],
+    "Talent": {
+        "Name": "荒泷第一",
+        "Desc": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1605]</color>时，装备此牌。\\n$[A1605]装备此牌后，立刻使用一次<color=#FFD780FF>$[S16051]</color>。\\n装备有此牌的$[A1605]每回合第2次及以后使用<color=#FFFFFFFF>$[S16051]</color>时：如果触发$[K1007]，伤害额外+1。\\n（牌组中包含$[A1605]，才能加入牌组）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>战斗行动</color>",
+                "Desc": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+            },
+            "A1605": "荒泷第一",
+            "S16051": "S16051",
+            "K1007": {
+                "Name": "<color=#FFFFFFFF>乱神之怪力</color>",
+                "Desc": "<color=#FFFFFFFF>所附属角色进行<color=#FFFFFFFF>重击</color>时：</color>造成的伤害+1。如果<color=#FFFFFFFF>可用次数</color>至少为2，则少花费1个<color=#FFFFFFFF>{SPRITE_PRESET#1109}无色元素</color>。\\n<color=#FFFFFFFF><color=#FFFFFFFF>可用次数</color>：1</color>（可叠加，最多叠加到3次）"
+            }
+        }
+    }
+}

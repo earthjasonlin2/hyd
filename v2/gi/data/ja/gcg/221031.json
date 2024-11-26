@@ -1,0 +1,39 @@
+{
+    "Type": "Action",
+    "Name": "厳霜のプリズム",
+    "Title": "無相の氷·厳霜のプリズム",
+    "Desc": "高度に安定した形態と機械のような行動パターンを持っているにも関わらず、弱点を慎重に守る必要がある…",
+    "Source": "キャッツテールのリトルプリンスのところで酒場挑戦を行い、無相の氷に挑戦して友好対戦で対応する挑戦目標をクリアすることで獲得",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_EffigyIce",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_CRYO",
+            "count": 1
+        },
+        {}
+    ],
+    "Tag": [
+        "天賦"
+    ],
+    "Talent": {
+        "Name": "厳霜のプリズム",
+        "Desc": "味方の出撃キャラが<color=#FFFFFFFF>$[A2103]</color>の場合のみ使用可能。<color=#FFFFFFFF>$[C121034]</color>を付与する。\\nこのカードを装備した$[A2103]が<color=#FFFFFFFF>$[C121034]</color>を発動した後、相手の出撃キャラに<color=#FFFFFFFF>$[K1016]</color>を付与する。\\n（このカードはデッキに$[A2103]が含まれている場合のみ、デッキに追加できる）",
+        "Child": {
+            "A2103": "厳霜のプリズム",
+            "C121034": {
+                "Name": "氷晶核心",
+                "Desc": "<color=#FFFFFFFF>付与されたキャラが倒された時</color>、この効果を解除してキャラが$[K54]。また該当キャラのHPを1まで回復する。",
+                "Child": {
+                    "K54": {
+                        "Name": "<color=#FFFFFFFF>戦闘不能にならない</color>",
+                        "Desc": "一部の効果によってキャラのHPが0になる時も、<color=#FFFFFFFF>戦闘不能にならず</color>、該当キャラのHPを一定値まで回復する。\\nこの時、キャラは<color=#FFFFFFFF>戦闘不能</color>にカウントされない。（そのため、キャラに装備または付与されたものは破棄されず、チャージもクリアされない。）"
+                    }
+                }
+            },
+            "K1016": {
+                "Name": "極寒",
+                "Desc": "<color=#FFFFFFFF>エンドフェーズ：</color>付与されたキャラに{SPRITE_PRESET#2101}<color=#99FFFFFF>氷元素ダメージ</color>を1与える。\\n<color=#FFFFFFFF><color=#FFFFFFFF>使用可能回数</color>：1</color>（付与されたキャラが<color=#FFFFFFFF>灼熱</color>を付与された時、この効果を解除する。）"
+            }
+        }
+    }
+}

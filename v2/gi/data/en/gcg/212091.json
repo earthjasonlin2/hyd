@@ -1,0 +1,35 @@
+{
+    "Type": "Action",
+    "Name": "Turn Control",
+    "Title": "Yelan: Turn Control",
+    "Desc": "\"Things are about to get dicey.\"",
+    "Source": "Reward for inviting Yelan to a duel at The Cat's Tail and achieving all corresponding challenge objectives",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Yelan",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_HYDRO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "Talent",
+        "Combat Action"
+    ],
+    "Talent": {
+        "Name": "Turn Control",
+        "Desc": "$[K1]: When your active character is <color=#FFFFFFFF>$[A1209]</color>, equip this card.\\nAfter $[A1209] equips this card, immediately use <color=#FFD780FF>$[S12092]</color> once.\\nRoll Phase: If $[A1209], who has this card equipped, is on the field, 1 Elemental Dice will be rolled as $[K411] for each Elemental Type in your party. (Max 3)\\n(You must have $[A1209] in your deck to add this card to your deck.)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+            },
+            "A1209": "Turn Control",
+            "S12092": "S12092",
+            "K411": {
+                "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1111}Omni Element</color>",
+                "Desc": "The {SPRITE_PRESET#1111}Omni Element can be considered as any kind of element, and can be used to pay for costs of various kinds."
+            }
+        }
+    }
+}

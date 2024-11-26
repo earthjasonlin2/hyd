@@ -1,0 +1,173 @@
+{
+    "Id": 3024023,
+    "Name": "Stellaron Hunter: Sam (Complete)",
+    "Desc": "A complete projection produced by compromised codes. The referent entity is one of the Stellaron Hunters, a mysterious warrior donning formidable armor. The mech suit wields the power to unleash fiery onslaughts, engulfing the battlefield in flames.",
+    "MonsterCampID": null,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 1488,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/Monster_3024020.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "LittleBoss",
+    "SpeedBase": 120,
+    "StanceBase": 720,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.3000000002793968,
+    "Child": [
+        {
+            "Id": 3024023,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Thunder",
+                "Quantum",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Fire",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 302402301,
+                    "SkillName": "BHF: Fiery Advance",
+                    "SkillDesc": "Deals minor Fire DMG to a single target.",
+                    "DamageType": "Fire",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 302402302,
+                    "SkillName": "BHF: Fiery Advance",
+                    "SkillDesc": "Deals minor Fire DMG to a single target and locks on to the target. In the next action, uses DHGDR: Fire and Cinders on the locked on target.",
+                    "DamageType": "Fire",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 302402303,
+                    "SkillName": "BHF: Heavenly Fire",
+                    "SkillDesc": "Deals minor Fire DMG to a single target and any adjacent targets.",
+                    "DamageType": "Fire",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 302402304,
+                    "SkillName": "BBHF: Scorched Earth",
+                    "SkillDesc": "Deals minor Fire DMG to all targets.",
+                    "DamageType": "Fire",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 302402305,
+                    "SkillName": "DHGDR: Secondary Combustion",
+                    "SkillDesc": "Consumes HP to enter the Secondary Combustion state and dispels the Weakness Protected effect. Becomes significantly more powerful in this state, but all attacks consume HP.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302402306,
+                    "SkillName": "DHGDR: Supernova Overload",
+                    "SkillDesc": "Deals Fire DMG to all targets, with a high chance to Burn them.",
+                    "DamageType": "Fire",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 302402307,
+                    "SkillName": "SGE: Molten Core",
+                    "SkillDesc": "After entering Secondary Combustion, Combusts both the area and targets' Skill Points. When consuming Combusted Skill Points, targets lose HP and additionally deal a set amount of Fire DMG equal to a certain percentage of the original DMG. When they receive healing from sources other than oneself, the amount of HP restored is massively reduced.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302402308,
+                    "SkillName": "SGE: Molten Engine",
+                    "SkillDesc": "While in Secondary Combustion, Sam possesses Molten Energy. When Sam is attacked and the attack consumes Skill Points, a corresponding amount of Molten Energy is reduced. When Molten Energy is depleted or when the Weakness is Broken, dispel Secondary Combustion. When Secondary Combustion is dispelled, Sam receives increased DMG and recovers all Skill Points for the targets.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302402309,
+                    "SkillName": "DHGDR: Fire and Cinders",
+                    "SkillDesc": "Deals Fire DMG to a single target. When using the ability, the more Molten Energy stacks there are, the higher the damage dealt.",
+                    "DamageType": "Fire",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302402310,
+                    "SkillName": "SEG: Thermocumulative Upgrade",
+                    "SkillDesc": "Whenever Sam loses HP due to the Secondary Combustion effect while attacking, increase the DMG they deal.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 302402311,
+                    "SkillName": "SEG: Thermobaric Field",
+                    "SkillDesc": "When a target uses Combusted Skill Points or receives Burn DMG, inflict <u>Immolation</u> on the target. When Sam dispels the Secondary Combustion, the <u>Immolation</u> effect is removed.",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 3024023,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 3024023,
+            "WorldLevel": 1,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 3024023,
+            "WorldLevel": 2,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 3024023,
+            "WorldLevel": 3,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 3024023,
+            "WorldLevel": 4,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 3024023,
+            "WorldLevel": 5,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 3024023,
+            "WorldLevel": 6,
+            "DisplayItemList": []
+        }
+    ]
+}

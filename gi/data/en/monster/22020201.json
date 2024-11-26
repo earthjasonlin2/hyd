@@ -1,0 +1,68 @@
+{
+    "Name": "Abyss Herald: Frost Fall",
+    "Desc": "A monster from the Abyss Order that wields frigid, icy blades in battle.\\nJust as there are saints who will spread and glorify the profound gospel, there are envoys who must correct any twisted strains and remove any dissonance.\\nPeople often say that steel feels like ice as it pierces the body, but this dark frost is said to freeze even the soul.",
+    "Icon": "UI_MonsterIcon_Invoker_Herald_Ice",
+    "Codex": "ABYSS",
+    "Title": "Emissary of Frigid Blades",
+    "SpecialNames": [
+        "Wynfled",
+        "Geilamir",
+        "Giselhardt",
+        "Heimwart",
+        "Haidrich",
+        "Ariowaldus",
+        "Ingemar",
+        "Kunnwulf",
+        "Graobert",
+        "Francobert"
+    ],
+    "Reward": [],
+    "Child": {
+        "22020201": {
+            "MonsterName": "Invoker_Herald_Ice_01",
+            "Type": "MONSTER_ORDINARY",
+            "HpDrops": [
+                {
+                    "dropId": 22010036,
+                    "hpPercent": 66
+                },
+                {
+                    "dropId": 22010036,
+                    "hpPercent": 33
+                },
+                {}
+            ],
+            "KillDropId": 22010026,
+            "Prop": [
+                {
+                    "type": "FIGHT_PROP_BASE_HP",
+                    "growCurve": "GROW_CURVE_HP"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_ATTACK",
+                    "growCurve": "GROW_CURVE_ATTACK_2"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_DEFENSE",
+                    "growCurve": "GROW_CURVE_DEFENSE"
+                }
+            ],
+            "LocalLegend": false,
+            "SubHurt": {
+                "Fire": 0.1000000014901,
+                "Grass": 0.1000000014901,
+                "Water": 0.1000000014901,
+                "Elec": 0.1000000014901,
+                "Wind": 0.1000000014901,
+                "Ice": 0.1000000014901,
+                "Rock": 0.1000000014901,
+                "Physical": 0.1000000014901
+            },
+            "Base": {
+                "HP": 108.6719970703125,
+                "ATK": 56.5200004577637,
+                "DEF": 500
+            }
+        }
+    }
+}

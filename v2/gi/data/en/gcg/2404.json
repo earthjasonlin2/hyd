@@ -1,0 +1,113 @@
+{
+    "Type": "Character",
+    "Name": "Fatui Electro Cicin Mage",
+    "Title": "Thunder in the Mist: Electro Cicin Mage",
+    "Desc": "...Just as the scent of Mist Grass intoxicates the Electro Cicins, so too does the sadistic mage hanker after the pleasure of toying with her foe...",
+    "Source": "Reward for accepting the Tavern Challenge at The Cat's Tail and claiming victory in a Friendly Fracas with Electro Cicin Mage",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_FatuusSummoner",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "Electro",
+        "Other Weapons",
+        "Fatui"
+    ],
+    "Talent": {
+        "24041": {
+            "Name": "Hurtling Bolts",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "24042": {
+            "Name": "Misty Call",
+            "Desc": "Summons 1 <color=#FFFFFFFF>$[C124041]</color>.",
+            "Child": {
+                "C124041": {
+                    "Name": "Electro Cicin",
+                    "Desc": "<color=#FFFFFFFF>End Phase:</color> Deal 1 $[K104].\\n<color=#FFFFFFFF>$[K3]: 3</color>\\n\\n<color=#FFFFFFFF>After your opponent plays a total of 3 Action Cards:</color> This card gains 1 $[K3]. (Max 3 stacks)\\n<color=#FFFFFFFF>After $[A2404] takes Elemental Reaction DMG:</color> This card loses 1 $[K3].",
+                    "Child": {
+                        "K104": {
+                            "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>Electro DMG</color>",
+                            "Desc": "Applies {SPRITE_PRESET#2104}Electro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Overloaded</color>: DMG +2 for this instance, the target is forcibly switched to the next character\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Superconduct</color>: DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Electro-Charged</color>: DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Quicken</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Catalyzing Field</color>] that grants +1 DMG to the next 2 instances of Dendro or Electro DMG"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        },
+                        "A2404": "Fatui Electro Cicin Mage"
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 3
+            }
+        },
+        "24043": {
+            "Name": "Thundering Shield",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], applies $[K204] to this character, creates 1 <color=#FFFFFFFF>$[C124042]</color> and prepares <color=#FFFFFFFF>$[S24044]</color>.",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO",
+                "K204": {
+                    "Name": "<color=#FFACFFFF>{SPRITE_PRESET#2104}Electro Application</color>",
+                    "Desc": "When {SPRITE_PRESET#2104}Electro is applied without dealing any DMG, the Elemental Reactions triggered will ignore DMG-dealing effects:\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Overloaded</color>: The target is forcibly switched to the next character\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Superconduct</color>: No effect\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Electro-Charged</color>: No effect\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Quicken</color>: Creates a [<color=#FFFFFFFF>Catalyzing Field</color>] that grants +1 DMG to the next 2 instances of Dendro or Electro DMG"
+                },
+                "C124042": {
+                    "Name": "Electro Cicin Ward",
+                    "Desc": "Provides <color=#FFFFFFFF>1 $[K6] point</color> for your active character.\\n<color=#FFFFFFFF>When created:</color> If you have <color=#FFFFFFFF>$[C124041]</color> on the field, additionally increase $[K6] by the amount of $[K3] it has. (Adds a maximum of 3 additional $[K6])",
+                    "Child": {
+                        "K6": {
+                            "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>Shield</color>",
+                            "Desc": "This Shield will be consumed to protect the character who equips it from DMG."
+                        },
+                        "C124041": {
+                            "Name": "Electro Cicin",
+                            "Desc": "<color=#FFFFFFFF>End Phase:</color> Deal 1 $[K104].\\n<color=#FFFFFFFF>$[K3]: 3</color>\\n\\n<color=#FFFFFFFF>After your opponent plays a total of 3 Action Cards:</color> This card gains 1 $[K3]. (Max 3 stacks)\\n<color=#FFFFFFFF>After $[A2404] takes Elemental Reaction DMG:</color> This card loses 1 $[K3].",
+                            "Child": {
+                                "K104": {
+                                    "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>Electro DMG</color>",
+                                    "Desc": "Applies {SPRITE_PRESET#2104}Electro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Overloaded</color>: DMG +2 for this instance, the target is forcibly switched to the next character\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Superconduct</color>: DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Electro-Charged</color>: DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Quicken</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Catalyzing Field</color>] that grants +1 DMG to the next 2 instances of Dendro or Electro DMG"
+                                },
+                                "K3": {
+                                    "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                                    "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                                },
+                                "A2404": "Fatui Electro Cicin Mage"
+                            }
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        }
+                    }
+                },
+                "S24044": "S24044"
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "24044": {
+            "Name": "Surging Thunder",
+            "Desc": "(Prepare for 1 turn)\\nDeals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO"
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {}
+        }
+    },
+    "Related": 224041
+}

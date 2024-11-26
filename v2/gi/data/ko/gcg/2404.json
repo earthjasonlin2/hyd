@@ -1,0 +1,113 @@
+{
+    "Type": "Character",
+    "Name": "우인단·번개 치친 술사",
+    "Title": "안개 속 섬광·번개 치친 술사",
+    "Desc": "…안개풀의 향이 번개 치친을 홀리는 것처럼, 기학적인 술사도 상대를 괴롭히는 쾌감에 집착한다…",
+    "Source": "캣테일 술집의 왕자님을 통해 술집 도전 진행 및 친선 대전 난이도의 우인단·번개 치친 술사에게 승리 후 획득",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_FatuusSummoner",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "번개 원소",
+        "기타 무기",
+        "우인단"
+    ],
+    "Talent": {
+        "24041": {
+            "Name": "번쩍이는 낙뢰",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO",
+                "D__KEY__DAMAGE": 1
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "24042": {
+            "Name": "안개의 소환",
+            "Desc": "<color=#FFFFFFFF>$[C124041]</color>을 소환한다.",
+            "Child": {
+                "C124041": {
+                    "Name": "번개 치친",
+                    "Desc": "<color=#FFFFFFFF>종료 단계:</color> $[K104]를 1pt 준다.\\n<color=#FFFFFFFF>$[K3]: 3</color>\\n\\n<color=#FFFFFFFF>적이 행동 카드를 누적 3장 사용 후: </color>이 카드의 $[K3]+1 (최대 중첩수: 3회)\\n<color=#FFFFFFFF>$[A2404]가 원소 반응 피해를 받은 후: </color>이 카드의 $[K3]-1",
+                    "Child": {
+                        "K104": {
+                            "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>번개 원소 피해</color>",
+                            "Desc": "{SPRITE_PRESET#2104}번개 원소 부착 시 다음 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>과부하</color>: 이번 피해+2pt, 대상이 다음 캐릭터로 강제 교체된다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>초전도</color>: 이번 피해+1pt, 대상 이외의 모든 상대 캐릭터에게 관통 피해를 1pt 준다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>감전</color>: 이번 피해+1pt, 대상 이외의 모든 상대 캐릭터에게 관통 피해를 1pt 준다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>활성</color>: 이번 피해+1pt, 다음 2회의 풀 원소 또는 번개 원소 피해를 1pt 증가시키는 [<color=#FFFFFFFF>격화 영역</color>]을 생성한다."
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        },
+                        "A2404": "우인단·번개 치친 술사"
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 3
+            }
+        },
+        "24043": {
+            "Name": "천둥의 가호",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 본 캐릭터에게 $[K204] 효과를 준다. <color=#FFFFFFFF>$[C124042]</color>을 생성하고 <color=#FFFFFFFF>$[S24044]</color>의 스킬 준비를 한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO",
+                "D__KEY__DAMAGE": 1,
+                "K204": {
+                    "Name": "<color=#FFACFFFF>{SPRITE_PRESET#2104}번개 원소 부착</color>",
+                    "Desc": "피해를 입히지 않고 {SPRITE_PRESET#2104}번개 원소를 부착하여 발생한 원소 반응은 피해 효과를 무시한다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>과부하</color>: 대상이 다음 캐릭터로 강제 교체된다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>초전도</color>: 효과 없음.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>감전</color>: 효과 없음.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>활성</color>: 다음 2회의 풀 원소 또는 번개 원소 피해를 1pt 증가시키는 [<color=#FFFFFFFF>격화 영역</color>]을 생성한다."
+                },
+                "C124042": {
+                    "Name": "번개 치친 방어막",
+                    "Desc": "아군 출전 캐릭터에게 <color=#FFFFFFFF>$[K6]을 1pt</color> 제공한다.\\n<color=#FFFFFFFF>생성 시:</color> 아군 필드에 <color=#FFFFFFFF>$[C124041]</color>이 있을 경우, 번개 치친의 $[K3]만큼 $[K6]을 추가로 제공한다. ($[K6] 최대 3pt 추가 제공)",
+                    "Child": {
+                        "K6": {
+                            "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>보호막</color>",
+                            "Desc": "해당 보호막의 보호를 받는 캐릭터가 피격 시, 보호막을 소모해 피해를 상쇄한다."
+                        },
+                        "C124041": {
+                            "Name": "번개 치친",
+                            "Desc": "<color=#FFFFFFFF>종료 단계:</color> $[K104]를 1pt 준다.\\n<color=#FFFFFFFF>$[K3]: 3</color>\\n\\n<color=#FFFFFFFF>적이 행동 카드를 누적 3장 사용 후: </color>이 카드의 $[K3]+1 (최대 중첩수: 3회)\\n<color=#FFFFFFFF>$[A2404]가 원소 반응 피해를 받은 후: </color>이 카드의 $[K3]-1",
+                            "Child": {
+                                "K104": {
+                                    "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>번개 원소 피해</color>",
+                                    "Desc": "{SPRITE_PRESET#2104}번개 원소 부착 시 다음 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>과부하</color>: 이번 피해+2pt, 대상이 다음 캐릭터로 강제 교체된다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>초전도</color>: 이번 피해+1pt, 대상 이외의 모든 상대 캐릭터에게 관통 피해를 1pt 준다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>감전</color>: 이번 피해+1pt, 대상 이외의 모든 상대 캐릭터에게 관통 피해를 1pt 준다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>활성</color>: 이번 피해+1pt, 다음 2회의 풀 원소 또는 번개 원소 피해를 1pt 증가시키는 [<color=#FFFFFFFF>격화 영역</color>]을 생성한다."
+                                },
+                                "K3": {
+                                    "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                                    "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                                },
+                                "A2404": "우인단·번개 치친 술사"
+                            }
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                },
+                "S24044": "S24044"
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "24044": {
+            "Name": "번개 분출",
+            "Desc": "(1차례 행동 준비 필요)\\n$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {}
+        }
+    },
+    "Related": 224041
+}

@@ -1,0 +1,102 @@
+{
+    "Type": "Character",
+    "Name": "ファデュイ·氷霜の従者",
+    "Title": "淘汰の実·氷霜の従者",
+    "Desc": "子供の頃に選ばれた者が、長年の教育と訓練でふるいにかけられ、残った者が「従者」となる。",
+    "Source": "キャッツテールのリトルプリンスのところで酒場挑戦を行い、ファデュイ·氷霜の従者に挑戦して友好対戦に勝利することで獲得",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_EscadronIce",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "氷元素",
+        "他の武器",
+        "ファデュイ"
+    ],
+    "Talent": {
+        "21041": {
+            "Name": "高速剣撃",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "21042": {
+            "Name": "霜刃の迎撃",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "D__KEY__DAMAGE": 3
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3
+            }
+        },
+        "21043": {
+            "Name": "鋭気の刺撃",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、本キャラに<color=#FFFFFFFF>$[C121042]</color>を付与する。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "D__KEY__DAMAGE": 4,
+                "C121042": {
+                    "Name": "鋭気の強襲",
+                    "Desc": "<color=#FFFFFFFF>エンドフェーズ</color>：<color=#FFFFFFFF>$[C122]</color>が付与されているすべての相手キャラに$[K5]を1与える。\\n<color=#FFFFFFFF>$[K4]：2</color>",
+                    "Child": {
+                        "C122": {
+                            "Name": "命の契約",
+                            "Desc": "<color=#FFFFFFFF>付与されたキャラが治療を受ける時</color>、この効果の層数1につき、1を消費して受けた治療効果を1相殺する。（復活による治療効果またはHP配分による治療効果は相殺できない）<color=#FFFFFFFF>$[K3]：1</color>（制限なく重ねられる）。",
+                            "Child": {
+                                "K3": {
+                                    "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                                    "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                                }
+                            }
+                        },
+                        "K5": {
+                            "Name": "<color=#FFFFFFFF>貫通ダメージ</color>",
+                            "Desc": "貫通ダメージはダメージアップ効果を受けられません。また、シールド、ダメージ無効化などの効果で相殺されることもありません。"
+                        },
+                        "K4": {
+                            "Name": "<color=#FFFFFFFF>継続ラウンド数</color>",
+                            "Desc": "各ラウンドのエンドフェーズで、<color=#FFFFFFFF>継続ラウンド数</color>が1マイナスされます。\\n<color=#FFFFFFFF>継続ラウンド数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "21044": {
+            "Name": "血の盟約の影",
+            "Desc": "【固有】<color=#FFFFFFFF>本キャラがスキルを発動した後</color>、相手の出撃キャラに$[K3]が（本スキルの最終ダメージ-2）の<color=#FFFFFFFF>$[C122]</color>を付与する。（最大5層まで）",
+            "Child": {
+                "K3": {
+                    "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                    "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                },
+                "C122": {
+                    "Name": "命の契約",
+                    "Desc": "<color=#FFFFFFFF>付与されたキャラが治療を受ける時</color>、この効果の層数1につき、1を消費して受けた治療効果を1相殺する。（復活による治療効果またはHP配分による治療効果は相殺できない）<color=#FFFFFFFF>$[K3]：1</color>（制限なく重ねられる）。",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                            "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 221041
+}

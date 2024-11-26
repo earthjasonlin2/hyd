@@ -1,0 +1,80 @@
+{
+    "Name": "匿叶龙武士·旋锯飞叶",
+    "Desc": "来自悬木之里，勇武受到认可，得以获授龙冠的强大武士。\\n能够借助钩绳延展攻击范围的武者。钩绳是「悬木人」部族成员日常生活中不可缺少的组成部分。不过即使如此，只有最疯狂的战士才会将钩绳和锯刃相结合，变成难以操纵但杀伤力巨大的武器。",
+    "Icon": "UI_MonsterIcon_Tribalwarrior_Chainsword_Hookwalker",
+    "Codex": "HUMAN",
+    "Title": "匿叶龙武士·旋锯飞叶",
+    "SpecialNames": [
+        "授获龙冠的勇武"
+    ],
+    "Reward": [
+        {
+            "Id": 202,
+            "Rank": 3,
+            "Icon": "UI_ItemIcon_202"
+        },
+        {
+            "Id": 112104,
+            "Rank": 1,
+            "Icon": "UI_ItemIcon_112104"
+        },
+        {
+            "Id": 112105,
+            "Rank": 2,
+            "Icon": "UI_ItemIcon_112105"
+        },
+        {
+            "Id": 112106,
+            "Rank": 3,
+            "Icon": "UI_ItemIcon_112106"
+        }
+    ],
+    "Child": {
+        "25510301": {
+            "MonsterName": "Tribalwarrior_Male_Standard_Chainsword_Hookwalker_01",
+            "Type": "MONSTER_ORDINARY",
+            "HpDrops": [
+                {
+                    "dropId": 22010013,
+                    "hpPercent": 66
+                },
+                {
+                    "dropId": 22010013,
+                    "hpPercent": 33
+                },
+                {}
+            ],
+            "KillDropId": 22010023,
+            "Prop": [
+                {
+                    "type": "FIGHT_PROP_BASE_HP",
+                    "growCurve": "GROW_CURVE_HP_2"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_ATTACK",
+                    "growCurve": "GROW_CURVE_ATTACK_2"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_DEFENSE",
+                    "growCurve": "GROW_CURVE_DEFENSE"
+                }
+            ],
+            "LocalLegend": false,
+            "SubHurt": {
+                "Fire": 0.1000000014901,
+                "Grass": 0.1000000014901,
+                "Water": 0.1000000014901,
+                "Elec": 0.1000000014901,
+                "Wind": 0.1000000014901,
+                "Ice": 0.1000000014901,
+                "Rock": 0.1000000014901,
+                "Physical": -0.2000000029802
+            },
+            "Base": {
+                "HP": 54.3359985351563,
+                "ATK": 45.2159996032715,
+                "DEF": 500
+            }
+        }
+    }
+}

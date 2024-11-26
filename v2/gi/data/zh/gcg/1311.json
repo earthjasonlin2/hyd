@@ -1,0 +1,94 @@
+{
+    "Type": "Character",
+    "Name": "托马",
+    "Title": "渡来介者·托马",
+    "Desc": "渡来介者，赤袖丹心。",
+    "Source": "在猫尾酒馆中邀请托马进行对局，在友好对局难度中获得胜利后获取",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Tohma",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "火元素",
+        "长柄武器",
+        "稻妻"
+    ],
+    "Talent": {
+        "13111": {
+            "Name": "迅破枪势",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "13112": {
+            "Name": "烈烧佑命之侍护",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，生成<color=#FFFFFFFF>$[C113111]</color>。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO",
+                "C113111": {
+                    "Name": "烈烧佑命护盾",
+                    "Desc": "为我方出战角色提供<color=#FFFFFFFF>1点$[K6]</color>。（可叠加，最多叠加到3点）",
+                    "Child": {
+                        "K6": {
+                            "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>护盾</color>",
+                            "Desc": "此护盾所保护的角色受到伤害时，将会消耗护盾来抵消伤害。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 3
+            }
+        },
+        "13113": {
+            "Name": "真红炽火之大铠",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，生成<color=#FFFFFFFF>$[C113111]</color>和<color=#FFFFFFFF>$[C113112]</color>。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO",
+                "C113111": {
+                    "Name": "烈烧佑命护盾",
+                    "Desc": "为我方出战角色提供<color=#FFFFFFFF>1点$[K6]</color>。（可叠加，最多叠加到3点）",
+                    "Child": {
+                        "K6": {
+                            "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>护盾</color>",
+                            "Desc": "此护盾所保护的角色受到伤害时，将会消耗护盾来抵消伤害。"
+                        }
+                    }
+                },
+                "C113112": {
+                    "Name": "炽火大铠",
+                    "Desc": "<color=#FFFFFFFF>我方角色普通攻击后：</color>造成1点$[K103]，生成<color=#FFFFFFFF>$[K1018]</color>。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+                    "Child": {
+                        "K103": {
+                            "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>火元素伤害</color>",
+                            "Desc": "附着{SPRITE_PRESET#2103}火元素，可发生元素反应：\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>融化</color>：本伤害+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>蒸发</color>：本伤害+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>超载</color>：本伤害+2，目标强制切换到下一个角色\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>燃烧</color>：本伤害+1，生成回合结束时造成1点火元素伤害的[<color=#FFFFFFFF>燃烧烈焰</color>]（可用次数1，最多叠加到2）"
+                        },
+                        "K1018": {
+                            "Name": "烈烧佑命护盾",
+                            "Desc": "为我方出战角色提供<color=#FFFFFFFF>1点{SPRITE_PRESET#4007}<color=#FFFFFFFF>护盾</color></color>。（可叠加，最多叠加到3点）"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>可用次数</color>",
+                            "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 213111
+}

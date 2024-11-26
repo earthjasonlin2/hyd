@@ -1,0 +1,36 @@
+{
+    "Type": "Action",
+    "Name": "中央実験室跡地",
+    "Title": "フォンテーヌ科学院·中央実験室跡地",
+    "Desc": "…過剰な才知と情熱の相互作用の下、誰も予想しなかった方法でその研究目的を実現した。だが今となっては、喝采する者は誰もいない。\\n理想が潰えた今、沈黙を保つことが最も重要な責務となった…",
+    "Source": "",
+    "Icon": "UI_Gcg_CardFace_Assist_Location_FontaineSci",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PAIMON",
+            "count": 1
+        },
+        {}
+    ],
+    "Tag": [
+        "フィールド"
+    ],
+    "Talent": {
+        "Name": "中央実験室跡地",
+        "Desc": "<color=#FFFFFFFF>味方が手札を1枚$[K56]または$[K57]した後</color>、このカードは<color=#FFFFFFFF>「実験進捗」</color>を1蓄積する。<color=#FFFFFFFF>「実験進捗」</color>が3、6、9に達するたびに、$[K411]を1個獲得する。<color=#FFFFFFFF>「実験進捗」</color>が9以上になると、このカードは破棄される。",
+        "Child": {
+            "K56": {
+                "Name": "<color=#FFFFFFFF>破棄</color>",
+                "Desc": "アクションカードまたはキャラのスキル効果によって、手札または山札からアクションカードを破棄する。"
+            },
+            "K57": {
+                "Name": "<color=#FFFFFFFF>調和</color>",
+                "Desc": "元素調和を行うために、アクションカードを手札から破棄する。"
+            },
+            "K411": {
+                "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1111}万能元素</color>",
+                "Desc": "{SPRITE_PRESET#1111}万能元素は任意タイプの元素と見なされ、コストの支払いに使えます。"
+            }
+        }
+    }
+}

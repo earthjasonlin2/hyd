@@ -1,0 +1,35 @@
+{
+    "Type": "Action",
+    "Name": "猜先有方",
+    "Title": "夜兰·猜先有方",
+    "Desc": "「点数如何呢？」",
+    "Source": "在猫尾酒馆中邀请夜兰进行对局，完成相应挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Yelan",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_HYDRO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "天赋",
+        "战斗行动"
+    ],
+    "Talent": {
+        "Name": "猜先有方",
+        "Desc": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1209]</color>时，装备此牌。\\n$[A1209]装备此牌后，立刻使用一次<color=#FFD780FF>$[S12092]</color>。\\n投掷阶段：装备有此牌的$[A1209]在场，则我方队伍中每有1种元素类型，就使1个元素骰总是投出$[K411]。（最多3个）\\n（牌组中包含$[A1209]，才能加入牌组）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>战斗行动</color>",
+                "Desc": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+            },
+            "A1209": "猜先有方",
+            "S12092": "S12092",
+            "K411": {
+                "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1111}万能元素</color>",
+                "Desc": "{SPRITE_PRESET#1111}万能元素可以视为任何类型的元素，来支付各种费用。"
+            }
+        }
+    }
+}

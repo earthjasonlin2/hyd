@@ -1,0 +1,26 @@
+{
+    "Type": "Action",
+    "Name": "Heavy Strike",
+    "Title": "The Shatterstone Method",
+    "Desc": "For those that aren't so strong...\\nIt's best to regard the \"The Shatterstone Method\" as just a \"metaphor.\"",
+    "Source": "",
+    "Icon": "UI_Gcg_CardFace_Event_Event_Zhonggongji",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PAIMON",
+            "count": 1
+        },
+        {}
+    ],
+    "Tag": [],
+    "Talent": {
+        "Name": "Heavy Strike",
+        "Desc": "During this round, your current active character's next <color=#FFFFFFFF>Normal Attack</color> deals +1 DMG.\\n<color=#FFFFFFFF>When this Normal Attack is a $[K51]:</color> Deal +1 additional DMG.",
+        "Child": {
+            "K51": {
+                "Name": "<color=#FFFFFFFF>Charged Attack</color>",
+                "Desc": "Before your Action Phase, should the total number of your Elemental Dice be even, your Normal Attack will be considered a Charged Attack."
+            }
+        }
+    }
+}

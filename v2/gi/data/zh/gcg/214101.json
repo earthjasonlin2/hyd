@@ -1,0 +1,52 @@
+{
+    "Type": "Action",
+    "Name": "酌盈剂虚",
+    "Title": "多莉·酌盈剂虚",
+    "Desc": "「先把商品涨价百分之三十，然后再打八折卖出！」",
+    "Source": "在猫尾酒馆中邀请多莉进行对局，完成相应挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Constellation_Dori",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_ELECTRO",
+            "count": 3
+        },
+        {
+            "costType": "GCG_COST_ENERGY",
+            "count": 2
+        }
+    ],
+    "Tag": [
+        "天赋",
+        "战斗行动"
+    ],
+    "Talent": {
+        "Name": "酌盈剂虚",
+        "Desc": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1410]</color>时，装备此牌。\\n$[A1410]装备此牌后，立刻使用一次<color=#FFD780FF>$[S14103]</color>。\\n装备有此牌的$[A1410]所召唤的<color=#FFFFFFFF>$[C114102]</color>，对生命值不多于6的角色造成的治疗+1，使没有$[K310]的角色获得$[K310]时获得量+1。\\n（牌组中包含$[A1410]，才能加入牌组）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>战斗行动</color>",
+                "Desc": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+            },
+            "A1410": "酌盈剂虚",
+            "S14103": "S14103",
+            "C114102": {
+                "Name": "灯中幽精",
+                "Desc": "<color=#FFFFFFFF>结束阶段：</color>治疗我方出战角色2点，并使其获得1点$[K310]。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+                "Child": {
+                    "K310": {
+                        "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}充能</color>",
+                        "Desc": "角色使用「元素爆发」时，需要消耗{SPRITE_PRESET#1110}充能。\\n角色使用「元素战技」或「普通攻击」后，会获得1点{SPRITE_PRESET#1110}充能。"
+                    },
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>可用次数</color>",
+                        "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                    }
+                }
+            },
+            "K310": {
+                "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}充能</color>",
+                "Desc": "角色使用「元素爆发」时，需要消耗{SPRITE_PRESET#1110}充能。\\n角色使用「元素战技」或「普通攻击」后，会获得1点{SPRITE_PRESET#1110}充能。"
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+{
+    "Type": "Action",
+    "Name": "星天の花雨",
+    "Title": "ニィロウ·星天の花雨",
+    "Desc": "七日に渡る煌びやかな流れのように、絵画を思わせる夢幻の景色のように。",
+    "Source": "キャッツテールでニィロウを招待して対戦し、対応する挑戦目標をクリアすることで獲得",
+    "Icon": "UI_Gcg_CardFace_Modify_Constellation_Nilou",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_HYDRO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "天賦",
+        "戦闘アクション"
+    ],
+    "Talent": {
+        "Name": "星天の花雨",
+        "Desc": "$[K1]：味方の出撃キャラが<color=#FFFFFFFF>$[A1208]</color>の時、このカードを装備できる。\\n$[A1208]がこのカードを装備した後、直ちに<color=#FFD780FF>$[S12082]</color>を1回発動する。\\nこのカードを装備した$[A1208]がフィールドに存在する時、味方の<color=#FFFFFFFF>$[C112082]</color>の与えるダメージ+1。\\n（このカードはデッキに$[A1208]が含まれている場合のみ、デッキに追加できる）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>戦闘アクション</color>",
+                "Desc": "味方が戦闘アクションを1回行った後、相手のターンに移ります。\\n<color=#FFFFFFFF>このようなルールを持つ手札を出すのはクイックアクションではなく、戦闘アクションと見なされます。</color>"
+            },
+            "A1208": "星天の花雨",
+            "S12082": "S12082",
+            "C112082": {
+                "Name": "豊穣の核",
+                "Desc": "<color=#FFFFFFFF>エンドフェーズ：</color>$[K107]を2与える。\\n<color=#FFFFFFFF>$[K3]：1</color>（最大3まで重ねられる）\\n<color=#FFFFFFFF>味方がラウンド終了宣言をする時</color>、このカードの$[K3]が2以上の場合、$[K107]を2与える。（$[K3]の消費が必要）",
+                "Child": {
+                    "K107": {
+                        "Name": "{SPRITE_PRESET#2107}<color=#7EC236FF>草元素ダメージ</color>",
+                        "Desc": "{SPRITE_PRESET#2107}草元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>開花</color>：ダメージ+1、次の炎元素または雷元素ダメージを2アップできる「<color=#FFFFFFFF>草原核</color>」を生成する\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>燃焼</color>：ダメージ+1、ラウンド終了時に炎元素ダメージを1与える「<color=#FFFFFFFF>燃焼烈焔</color>」を生成する（使用可能回数1回、最大2回まで重ね掛け可能）\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>原激化</color>：ダメージ+1、次の草元素または雷元素ダメージを2回まで+1できる「<color=#FFFFFFFF>激化領域</color>」を生成する"
+                    },
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                        "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "Type": "Action",
+    "Name": "破天の槍",
+    "Title": "金璋君臨·破天の槍",
+    "Desc": "民間の言い伝えによれば、深海には巨大な影があり、行き来する船を飲み込んだという…\\n物語の最後には、岩王帝君の槍が虹を貫き、海を荒らしていた渦潮を深海の中央に刺し止めた。",
+    "Source": "",
+    "Icon": "UI_Gcg_CardFace_Modify_Weapon_Kunwu",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PAIMON",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "武器",
+        "長柄武器"
+    ],
+    "Talent": {
+        "Name": "破天の槍",
+        "Desc": "<color=#FFFFFFFF>キャラの与えるダメージ+1</color>。\\nキャラが$[K6]キャラ状態、または$[K6]出撃状態にある時、与えるダメージがさらに+1。\\n<color=#FFFFFFFF>キャラが「元素スキル」を発動した後</color>、味方側に「$[K6]」を提供できる出撃状態が存在する場合、その出撃状態（1つのみ）に対して「$[K6]」+1。（各ラウンドで1回のみ）\\n（<color=#FFFFFFFF>「{SPRITE_PRESET#3204}長柄武器」キャラ</color>のみ装備可能。キャラが装備できる「{SPRITE_PRESET#3003}武器」は1つのみ）",
+        "Child": {
+            "K6": {
+                "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>シールド</color>",
+                "Desc": "該当シールドに守られたキャラがダメージを受けた時、シールドを消費してダメージと相殺することができます。"
+            }
+        }
+    }
+}

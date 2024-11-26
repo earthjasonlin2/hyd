@@ -1,0 +1,36 @@
+{
+    "Type": "Action",
+    "Name": "明珠固化",
+    "Title": "千年珍珠骏麟·明珠固化",
+    "Desc": "异海珍珠，原海古雷…幻兽形姿的海马孤王并没有华丽或破败的王庭，有的只是让原海异种们惶恐退避的威能…",
+    "Source": "在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度千年珍珠骏麟中完成挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_SeaHorsePrimo",
+    "Cost": [
+        {},
+        {}
+    ],
+    "Tag": [
+        "天赋"
+    ],
+    "Talent": {
+        "Name": "明珠固化",
+        "Desc": "我方出战角色为<color=#FFFFFFFF>$[A2403]</color>时，才能打出：入场时，使$[A2403]附属$[K3]为1的<color=#FFFFFFFF>$[C124032]</color>；如果已附属$[C124032]，则使其$[K3]+1。\\n装备有此牌的$[A2403]所附属的<color=#FFFFFFFF>$[C124032]</color>抵消召唤物伤害时，改为每回合2次不消耗$[K3]。\\n（牌组中包含$[A2403]，才能加入牌组）",
+        "Child": {
+            "A2403": "明珠固化",
+            "K3": {
+                "Name": "<color=#FFFFFFFF>可用次数</color>",
+                "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+            },
+            "C124032": {
+                "Name": "原海明珠",
+                "Desc": "<color=#FFFFFFFF>所附属角色受到伤害时：</color>抵消1点伤害；每回合1次，抵消来自召唤物的伤害时不消耗$[K3]。\\n<color=#FFFFFFFF>$[K3]：2</color>\\n\\n<color=#FFFFFFFF>我方宣布结束时：</color>如果所附属角色为「出战角色」，则抓1张牌。",
+                "Child": {
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>可用次数</color>",
+                        "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                    }
+                }
+            }
+        }
+    }
+}

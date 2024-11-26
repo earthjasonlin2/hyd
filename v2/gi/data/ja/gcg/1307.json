@@ -1,0 +1,80 @@
+{
+    "Type": "Character",
+    "Name": "胡桃",
+    "Title": "雪晴梅香·胡桃",
+    "Desc": "「全員あの世行き。」",
+    "Source": "キャッツテールで胡桃を招待し、友好対戦に勝利することで獲得",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Hutao",
+    "Hp": 10,
+    "Cost": 3,
+    "Tag": [
+        "炎元素",
+        "長柄武器",
+        "璃月"
+    ],
+    "Talent": {
+        "13071": {
+            "Name": "往生秘伝槍法",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "13072": {
+            "Name": "蝶導来世",
+            "Desc": "本キャラに<color=#FFFFFFFF>$[C113071]</color>を付与する。",
+            "Child": {
+                "C113071": {
+                    "Name": "冥蝶の舞",
+                    "Desc": "付与されたキャラの与える$[K100]が$[K103]へと変わり、与える$[K103]+1。\\n<color=#FFFFFFFF>付与されたキャラが$[K51]を行う時</color>、目標キャラに$[K1009]を付与する。\\n<color=#FFFFFFFF>$[K4]：2</color>",
+                    "Child": {
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>",
+                            "Desc": "物理ダメージは元素付着させたり、元素反応を起こしたりはしません。"
+                        },
+                        "K103": {
+                            "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>炎元素ダメージ</color>",
+                            "Desc": "{SPRITE_PRESET#2103}炎元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>溶解</color>：ダメージ+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>蒸発</color>：ダメージ+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>過負荷</color>：ダメージ+2、目標を強制的に次のキャラにチェンジさせる\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>燃焼</color>：ダメージ+1、ラウンド終了時に炎元素ダメージを1与える「<color=#FFFFFFFF>燃焼烈焔</color>」を生成する（使用可能回数1回、最大2まで重ねられる）"
+                        },
+                        "K51": {
+                            "Name": "<color=#FFFFFFFF>重撃</color>",
+                            "Desc": "味方のアクションが始まる前、元素サイコロの数が偶数の時に行われる「通常攻撃」は、「重撃」と見なされる。"
+                        },
+                        "K1009": {
+                            "Name": "<color=#FFFFFFFF>血梅香</color>",
+                            "Desc": "<color=#FFFFFFFF>エンドフェーズ：</color>付与されたキャラに{SPRITE_PRESET#2103}<color=#FF9999FF>炎元素ダメージ</color>を1与える。\\n<color=#FFFFFFFF><color=#FFFFFFFF>使用可能回数</color>：1</color>"
+                        },
+                        "K4": {
+                            "Name": "<color=#FFFFFFFF>継続ラウンド数</color>",
+                            "Desc": "各ラウンドのエンドフェーズで、<color=#FFFFFFFF>継続ラウンド数</color>が1マイナスされます。\\n<color=#FFFFFFFF>継続ラウンド数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 2
+            }
+        },
+        "13073": {
+            "Name": "安神秘法",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、自身のHPを2回復する。本キャラのHPが6以下の場合、与えるダメージと回復量がそれぞれ+1。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO",
+                "D__KEY__DAMAGE": 4
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 3,
+                "GCG_COST_ENERGY": 3
+            }
+        }
+    },
+    "Related": 213071
+}

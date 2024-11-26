@@ -1,0 +1,42 @@
+{
+    "Type": "Action",
+    "Name": "優雅な氷剣",
+    "Title": "氷霜の従者·優雅な氷剣",
+    "Desc": "「もてなしが足りず、申し訳ない。」",
+    "Source": "キャッツテールのリトルプリンスのところで酒場挑戦を行い、ファデュイ·氷霜の従者に挑戦して友好対戦で対応する挑戦目標をクリアすることで獲得",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_EscadronIce",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_CRYO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "天賦",
+        "戦闘アクション"
+    ],
+    "Talent": {
+        "Name": "優雅な氷剣",
+        "Desc": "$[K1]：味方の出撃キャラが<color=#FFFFFFFF>$[A2104]</color>の時、このカードを装備できる。\\n$[A2104]がこのカードを装備した後、直ちに<color=#FFD780FF>$[S21042]</color>を1回発動する。\\nこのカードを装備した<color=#FFFFFFFF>$[A2104]</color>が<color=#FFFFFFFF>$[S21044]</color>を発動した後、相手の出撃キャラの<color=#FFFFFFFF>$[C122]</color>の層数を倍にする。\\n（このカードはデッキに$[A2104]が含まれている場合のみ、デッキに追加できる）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>戦闘アクション</color>",
+                "Desc": "味方が戦闘アクションを1回行った後、相手のターンに移ります。\\n<color=#FFFFFFFF>このようなルールを持つ手札を出すのはクイックアクションではなく、戦闘アクションと見なされます。</color>"
+            },
+            "A2104": "優雅な氷剣",
+            "S21042": "S21042",
+            "S21044": "S21044",
+            "C122": {
+                "Name": "命の契約",
+                "Desc": "<color=#FFFFFFFF>付与されたキャラが治療を受ける時</color>、この効果の層数1につき、1を消費して受けた治療効果を1相殺する。（復活による治療効果またはHP配分による治療効果は相殺できない）<color=#FFFFFFFF>$[K3]：1</color>（制限なく重ねられる）。",
+                "Child": {
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                        "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                    }
+                }
+            }
+        }
+    }
+}

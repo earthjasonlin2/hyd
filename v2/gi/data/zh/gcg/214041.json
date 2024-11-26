@@ -1,0 +1,45 @@
+{
+    "Type": "Action",
+    "Name": "落羽的裁择",
+    "Title": "赛诺·落羽的裁择",
+    "Desc": "「这便是我的决斗之魂。」",
+    "Source": "在猫尾酒馆中邀请赛诺进行对局，完成相应挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Cyno",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_ELECTRO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "天赋",
+        "战斗行动"
+    ],
+    "Talent": {
+        "Name": "落羽的裁择",
+        "Desc": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1404]</color>时，装备此牌。\\n$[A1404]装备此牌后，立刻使用一次<color=#FFD780FF>$[S14042]</color>。\\n装备有此牌的$[A1404]在<color=#FFFFFFFF>$[C114041]</color>的「凭依」级数至少为2时，使用<color=#FFFFFFFF>$[S14042]</color>造成的伤害+1。（每回合至多2次）\\n（牌组中包含$[A1404]，才能加入牌组）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>战斗行动</color>",
+                "Desc": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+            },
+            "A1404": "落羽的裁择",
+            "S14042": "S14042",
+            "C114041": {
+                "Name": "启途誓使",
+                "Desc": "<color=#FFFFFFFF>结束阶段：</color>累积1级「凭依」。如果「凭依」级数至少为8，则「凭依」级数-6。\\n<color=#FFFFFFFF>根据「凭依」级数，提供效果：</color>\\n大于等于2级：$[K100]转化为$[K104]；\\n大于等于4级：造成的伤害+2。",
+                "Child": {
+                    "K100": {
+                        "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>",
+                        "Desc": "物理伤害不会附着元素，也不会发生元素反应。"
+                    },
+                    "K104": {
+                        "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素伤害</color>",
+                        "Desc": "附着{SPRITE_PRESET#2104}雷元素，可发生元素反应：\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>超载</color>：本伤害+2，目标强制切换到下一个角色\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>超导</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>感电</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>原激化</color>：本伤害+1，生成使下2次草元素或雷元素伤害+1的[<color=#FFFFFFFF>激化领域</color>]"
+                    }
+                }
+            }
+        }
+    }
+}

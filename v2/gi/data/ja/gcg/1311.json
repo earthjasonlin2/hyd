@@ -1,0 +1,94 @@
+{
+    "Type": "Character",
+    "Name": "トーマ",
+    "Title": "渡来介者·トーマ",
+    "Desc": "渡来介者、赤袖丹心。",
+    "Source": "キャッツテールでトーマを招待し、友好対戦に勝利することで獲得",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Tohma",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "炎元素",
+        "長柄武器",
+        "稲妻"
+    ],
+    "Talent": {
+        "13111": {
+            "Name": "瞬破槍勢",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "13112": {
+            "Name": "烈炎侍立",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、<color=#FFFFFFFF>$[C113111]</color>を生成する。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO",
+                "D__KEY__DAMAGE": 2,
+                "C113111": {
+                    "Name": "烈炎侍立シールド",
+                    "Desc": "味方の出撃キャラは<color=#FFFFFFFF>$[K6]を1</color>獲得する。（最大3まで重ねられる）",
+                    "Child": {
+                        "K6": {
+                            "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>シールド</color>",
+                            "Desc": "該当シールドに守られたキャラがダメージを受けた時、シールドを消費してダメージと相殺することができます。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 3
+            }
+        },
+        "13113": {
+            "Name": "真紅熾炎の大鎧",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、<color=#FFFFFFFF>$[C113111]</color>と<color=#FFFFFFFF>$[C113112]</color>を生成する。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO",
+                "D__KEY__DAMAGE": 2,
+                "C113111": {
+                    "Name": "烈炎侍立シールド",
+                    "Desc": "味方の出撃キャラは<color=#FFFFFFFF>$[K6]を1</color>獲得する。（最大3まで重ねられる）",
+                    "Child": {
+                        "K6": {
+                            "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>シールド</color>",
+                            "Desc": "該当シールドに守られたキャラがダメージを受けた時、シールドを消費してダメージと相殺することができます。"
+                        }
+                    }
+                },
+                "C113112": {
+                    "Name": "熾炎の大鎧",
+                    "Desc": "<color=#FFFFFFFF>味方のキャラが通常攻撃を発動した後</color>、$[K103]を1与え、<color=#FFFFFFFF>$[K1018]</color>を生成する。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+                    "Child": {
+                        "K103": {
+                            "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>炎元素ダメージ</color>",
+                            "Desc": "{SPRITE_PRESET#2103}炎元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>溶解</color>：ダメージ+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>蒸発</color>：ダメージ+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>過負荷</color>：ダメージ+2、目標を強制的に次のキャラにチェンジさせる\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>燃焼</color>：ダメージ+1、ラウンド終了時に炎元素ダメージを1与える「<color=#FFFFFFFF>燃焼烈焔</color>」を生成する（使用可能回数1回、最大2まで重ねられる）"
+                        },
+                        "K1018": {
+                            "Name": "烈炎侍立シールド",
+                            "Desc": "味方の出撃キャラは<color=#FFFFFFFF>{SPRITE_PRESET#4007}<color=#FFFFFFFF>シールド</color>を1</color>獲得する。（最大3まで重ねられる）"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                            "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 213111
+}

@@ -1,0 +1,119 @@
+{
+    "Type": "Character",
+    "Name": "느비예트",
+    "Title": "훈시의 파도 소리·느비예트",
+    "Desc": "모든 높은 자를 내려다보는 자",
+    "Source": "캣테일 술집에서 느비예트 초대 및 친선 대전 난이도 승리 후 획득",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Neuvillette",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "물 원소",
+        "법구",
+        "폰타인",
+        "아르케의 힘: 프뉴마"
+    ],
+    "Talent": {
+        "12101": {
+            "Name": "공평한 물처럼",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "D__KEY__DAMAGE": 1
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "12102": {
+            "Name": "눈물이여, 반드시 갚으리라",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[C112101]</color>을 생성한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "D__KEY__DAMAGE": 2,
+                "C112101": {
+                    "Name": "원천의 방울",
+                    "Desc": "<color=#FFFFFFFF>$[A1210]가 일반 공격 후:</color> $[A1210]의 HP를 2pt 치유하고, 만약 $[A1210]가 아군의 「출전 캐릭터」인 경우 <color=#FFFFFFFF>$[K1020]</color>의 $[K53]를 한다.\\n<color=#FFFFFFFF>$[K3]: 1</color>(중첩 가능, 최대 중첩수: 3회)",
+                    "Child": {
+                        "A1210": "느비예트",
+                        "K1020": {
+                            "Name": "<color=#FFFFFFFF>공정한 판결</color>",
+                            "Desc": "<color=#D3BC8E>일반 공격</color>\\n(1차례 행동 준비 필요)\\n{SPRITE_PRESET#2102}<color=#80C0FFFF>물 원소 피해</color>를 2pt 준다. 만약 본 캐릭터의 HP가 6pt 이상일 경우, 1pt의 피해를 더 주고, 자신에게 관통 피해를 1pt 준다."
+                        },
+                        "K53": {
+                            "Name": "<color=#FFFFFFFF>스킬 준비</color>",
+                            "Desc": "일부 스킬은 바로 발동할 수 없고, 일정 횟수의 행동 순서 동안 <color=#FFFFFFFF>준비</color>를 해야 한다.\\n한 플레이어의 행동 순서가 됐을 때, 해당 플레이어의 「출전 캐릭터」가 현재 스킬을 <color=#FFFFFFFF>준비</color> 중이면 해당 플레이어의 행동을 건너뛴다. 스킬 <color=#FFFFFFFF>준비</color>를 끝냈을 경우, 캐릭터는 해당 스킬을 즉시 발동한다. (<color=#FFFFFFFF>준비</color>가 필요한 유형의 스킬은 「스킬 사용 후」 및 「캐릭터가 원소 반응 발동 후」 등의 효과를 발동할 수 없다)\\n오직 「출전 캐릭터」만 스킬을 <color=#FFFFFFFF>준비</color>할 수 있다. 만약 스킬을 <color=#FFFFFFFF>준비</color> 중인 「출전 캐릭터」가 교체되어 대기 상태가 되면, 스킬의 <color=#FFFFFFFF>준비</color>가 중단된다."
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3
+            }
+        },
+        "12103": {
+            "Name": "밀물이여, 내가 돌아왔노라",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 모든 적 대기 캐릭터에게 <color=#FFFFFFFF>$[K5]</color>를 1pt 주며 사용 가능 횟수가 2인 <color=#FFFFFFFF>$[C112101]</color>을 생성한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "D__KEY__DAMAGE": 2,
+                "K5": {
+                    "Name": "<color=#FFFFFFFF>관통 피해</color>",
+                    "Desc": "관통 피해는 피해 보너스를 획득할 수 없으나, 주는 피해가 보호막 또는 피해 면역과 같은 효과에 의해 상쇄되지 않는다."
+                },
+                "C112101": {
+                    "Name": "원천의 방울",
+                    "Desc": "<color=#FFFFFFFF>$[A1210]가 일반 공격 후:</color> $[A1210]의 HP를 2pt 치유하고, 만약 $[A1210]가 아군의 「출전 캐릭터」인 경우 <color=#FFFFFFFF>$[K1020]</color>의 $[K53]를 한다.\\n<color=#FFFFFFFF>$[K3]: 1</color>(중첩 가능, 최대 중첩수: 3회)",
+                    "Child": {
+                        "A1210": "느비예트",
+                        "K1020": {
+                            "Name": "<color=#FFFFFFFF>공정한 판결</color>",
+                            "Desc": "<color=#D3BC8E>일반 공격</color>\\n(1차례 행동 준비 필요)\\n{SPRITE_PRESET#2102}<color=#80C0FFFF>물 원소 피해</color>를 2pt 준다. 만약 본 캐릭터의 HP가 6pt 이상일 경우, 1pt의 피해를 더 주고, 자신에게 관통 피해를 1pt 준다."
+                        },
+                        "K53": {
+                            "Name": "<color=#FFFFFFFF>스킬 준비</color>",
+                            "Desc": "일부 스킬은 바로 발동할 수 없고, 일정 횟수의 행동 순서 동안 <color=#FFFFFFFF>준비</color>를 해야 한다.\\n한 플레이어의 행동 순서가 됐을 때, 해당 플레이어의 「출전 캐릭터」가 현재 스킬을 <color=#FFFFFFFF>준비</color> 중이면 해당 플레이어의 행동을 건너뛴다. 스킬 <color=#FFFFFFFF>준비</color>를 끝냈을 경우, 캐릭터는 해당 스킬을 즉시 발동한다. (<color=#FFFFFFFF>준비</color>가 필요한 유형의 스킬은 「스킬 사용 후」 및 「캐릭터가 원소 반응 발동 후」 등의 효과를 발동할 수 없다)\\n오직 「출전 캐릭터」만 스킬을 <color=#FFFFFFFF>준비</color>할 수 있다. 만약 스킬을 <color=#FFFFFFFF>준비</color> 중인 「출전 캐릭터」가 교체되어 대기 상태가 되면, 스킬의 <color=#FFFFFFFF>준비</color>가 중단된다."
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "12104": {
+            "Name": "공정한 판결",
+            "Desc": "(1차례 행동 준비 필요)\\n$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다. 만약 본 캐릭터의 HP가 6pt 이상일 경우, 1pt의 피해를 더 주고, 자신에게 $[K5]를 1pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "D__KEY__DAMAGE": 2,
+                "K5": {
+                    "Name": "<color=#FFFFFFFF>관통 피해</color>",
+                    "Desc": "관통 피해는 피해 보너스를 획득할 수 없으나, 주는 피해가 보호막 또는 피해 면역과 같은 효과에 의해 상쇄되지 않는다."
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {}
+        },
+        "12105": {
+            "Name": "원천의 방울",
+            "Desc": "",
+            "Child": {},
+            "Cost": {}
+        }
+    },
+    "Related": 212101
+}

@@ -1,0 +1,32 @@
+{
+    "Type": "Action",
+    "Name": "타로마루",
+    "Title": "타로마루",
+    "Desc": "코모레 찻집의 사장. 전해지기로 가게의 모든 점원은 그와 「계약」을 맺었다고 한다….\\n물론 그 타로마루가 「종말번대」 시절 늘 강력한 닌자 곁에서 야시로 봉행을 위해 충성을 다했다는 걸 아는 이는 별로 없다…",
+    "Source": "",
+    "Icon": "UI_Gcg_CardFace_Assist_NPC_Taroumaru",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_VOID",
+            "count": 2
+        },
+        {}
+    ],
+    "Tag": [
+        "동료"
+    ],
+    "Talent": {
+        "Name": "타로마루",
+        "Desc": "<color=#FFFFFFFF>필드 입장 시: </color><color=#FFFFFFFF>$[K2001]</color>을 4장 생성하고, 아군 카드 더미에 균일하게 넣는다.\\n<color=#FFFFFFFF>아군이 $[K2001]을 2장 사용 후:</color> 해당 카드를 버리고 <color=#FFFFFFFF>$[K1021]</color>를 소환한다.",
+        "Child": {
+            "K2001": {
+                "Name": "타로마루의 저금",
+                "Desc": "코스트: 0{SPRITE_PRESET#1108}\\n{SPRITE_PRESET#1111}만능 원소를 1개 생성한다."
+            },
+            "K1021": {
+                "Name": "분노한 타로마루",
+                "Desc": "<color=#FFFFFFFF>종료 단계: </color>{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>를 2pt 준다.\\n<color=#FFFFFFFF><color=#FFFFFFFF>사용 가능 횟수</color>: 2</color>"
+            }
+        }
+    }
+}

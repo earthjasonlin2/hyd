@@ -1,0 +1,38 @@
+{
+    "Type": "Action",
+    "Name": "百川奔流",
+    "Title": "止まぬ奔流",
+    "Desc": "奔流は、亡き神への敬愛の現れ。",
+    "Source": "キャッツテールのリトルプリンスのところで酒場挑戦を行い、純水精霊·ローデシアに挑戦して友好対戦で対応する挑戦目標をクリアすることで獲得",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Chunshui",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_HYDRO",
+            "count": 4
+        },
+        {
+            "costType": "GCG_COST_ENERGY",
+            "count": 3
+        }
+    ],
+    "Tag": [
+        "天賦",
+        "戦闘アクション"
+    ],
+    "Talent": {
+        "Name": "百川奔流",
+        "Desc": "$[K1]：味方の出撃キャラが<color=#FFFFFFFF>$[A2201]</color>の時、このカードを装備できる。\\n$[A2201]がこのカードを装備した後、直ちに<color=#FFD780FF>$[S22014]</color>を1回発動する。\\nこのカードを装備した$[A2201]が<color=#FFFFFFFF>$[S22014]</color>を発動する時、味方のすべての召喚物の$[K3]+1。\\n（このカードはデッキに$[A2201]が含まれている場合のみ、デッキに追加できる）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>戦闘アクション</color>",
+                "Desc": "味方が戦闘アクションを1回行った後、相手のターンに移ります。\\n<color=#FFFFFFFF>このようなルールを持つ手札を出すのはクイックアクションではなく、戦闘アクションと見なされます。</color>"
+            },
+            "A2201": "百川奔流",
+            "S22014": "S22014",
+            "K3": {
+                "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+            }
+        }
+    }
+}

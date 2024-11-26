@@ -1,0 +1,45 @@
+{
+    "Type": "Action",
+    "Name": "Strategic Reserve",
+    "Title": "Ningguang: Strategic Reserve",
+    "Desc": "Abundance is synonymous with confidence.",
+    "Source": "Reward for inviting Ningguang to a duel at The Cat's Tail and achieving all corresponding challenge objectives",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Ningguang",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_GEO",
+            "count": 4
+        },
+        {}
+    ],
+    "Tag": [
+        "Talent",
+        "Combat Action"
+    ],
+    "Talent": {
+        "Name": "Strategic Reserve",
+        "Desc": "$[K1]: When your active character is <color=#FFFFFFFF>$[A1601]</color>, equip this card.\\nAfter $[A1601] equips this card, immediately use <color=#FFD780FF>$[S16012]</color> once.\\nWhen your $[A1601], who has this card equipped, is on the field, <color=#FFFFFFFF>$[C116011]</color> will cause you to deal +1 <color=#FFE699FF>$[K106]</color>.\\n(You must have $[A1601] in your deck to add this card to your deck.)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+            },
+            "A1601": "Strategic Reserve",
+            "S16012": "S16012",
+            "C116011": {
+                "Name": "Jade Screen",
+                "Desc": "<color=#FFFFFFFF>When your active character receives at least 2 DMG: </color>Decrease DMG taken by 1.\\n<color=#FFFFFFFF>$[K3]: 2</color>",
+                "Child": {
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                        "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                    }
+                }
+            },
+            "K106": {
+                "Name": "{SPRITE_PRESET#2106}<color=#FFE699FF>Geo DMG</color>",
+                "Desc": "Reacts with Elements if they are already applied:\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Cryo Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Hydro Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Pyro Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Electro Crystallize</color>: DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)"
+            }
+        }
+    }
+}

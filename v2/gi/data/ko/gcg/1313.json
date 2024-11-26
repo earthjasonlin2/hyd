@@ -1,0 +1,151 @@
+{
+    "Type": "Character",
+    "Name": "슈브르즈",
+    "Title": "엄정한 법의 집행자·슈브르즈",
+    "Desc": "정의로운 법집행",
+    "Source": "캣테일 술집에서 슈브르즈 초대 및 친선 대전 난이도 승리 후 획득",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Chevreuse",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "불 원소",
+        "장병기",
+        "폰타인",
+        "아르케의 힘: 우시아"
+    ],
+    "Talent": {
+        "13131": {
+            "Name": "전열 창술·개량",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "13132": {
+            "Name": "신속 차단 사격술",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.\\n<color=#FFFFFFFF>해당 스킬 결산 후:</color> 아군 핸드 카드에 <color=#FFFFFFFF>$[C113131]</color>가 있을 경우, 1장을 $[K56]하고 피해를 가장 많이 받은 아군 캐릭터의 HP를 1pt 치유한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO",
+                "D__KEY__DAMAGE": 2,
+                "C113131": {
+                    "Name": "초강력 탄두",
+                    "Desc": "$[K1]: 상대의 「출전 캐릭터」에게 $[K103]를 1pt 준다.\\n<color=#FFFFFFFF>해당 카드가 $[K56]될 시:</color> 상대의 「출전 캐릭터」에게 $[K103]를 1pt 준다.",
+                    "Child": {
+                        "K1": {
+                            "Name": "<color=#FFFFFFFF>전투 행동</color>",
+                            "Desc": "아군이 전투 행동을 1회 진행하면 행동 순서가 상대에게 넘어간다.\\n<color=#FFFFFFFF>해당 규칙에 속하는 카드는 사용 시 빠른 행동이 아닌 전투 행동으로 간주한다</color>."
+                        },
+                        "K103": {
+                            "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>불 원소 피해</color>",
+                            "Desc": "{SPRITE_PRESET#2103}불 원소 부착 시 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>융해</color>: 이번 피해+2pt\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>증발</color>: 이번 피해+2pt\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>과부하</color>: 이번 피해+2pt, 대상이 다음 캐릭터로 강제 교체된다.\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>연소</color>: 이번 피해+1pt, 턴 종료 시 불 원소 피해를 1pt 주는 [<color=#FFFFFFFF>불타는 화염</color>]을 생성한다. (사용 가능 횟수: 1, 최대 중첩수: 2)"
+                        },
+                        "K56": {
+                            "Name": "<color=#FFFFFFFF>포기</color>",
+                            "Desc": "행동 카드 또는 캐릭터 스킬의 효과를 통해, 핸드 카드 또는 카드 더미에서 행동 카드를 버린다."
+                        }
+                    }
+                },
+                "K56": {
+                    "Name": "<color=#FFFFFFFF>포기</color>",
+                    "Desc": "행동 카드 또는 캐릭터 스킬의 효과를 통해, 핸드 카드 또는 카드 더미에서 행동 카드를 버린다."
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 3
+            }
+        },
+        "13133": {
+            "Name": "원형 유탄 사격술",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 상대의 필드에 <color=#FFFFFFFF>$[C113132]</color>을 생성한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO",
+                "D__KEY__DAMAGE": 2,
+                "C113132": {
+                    "Name": "이중 파열탄",
+                    "Desc": "<color=#FFFFFFFF>소속 진영 캐릭터 교체 후:</color> 교체 후 출전한 캐릭터에게 $[K103]를 1pt 준다.\\n<color=#FFFFFFFF>$[K3]: 2</color>",
+                    "Child": {
+                        "K103": {
+                            "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>불 원소 피해</color>",
+                            "Desc": "{SPRITE_PRESET#2103}불 원소 부착 시 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>융해</color>: 이번 피해+2pt\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>증발</color>: 이번 피해+2pt\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>과부하</color>: 이번 피해+2pt, 대상이 다음 캐릭터로 강제 교체된다.\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>연소</color>: 이번 피해+1pt, 턴 종료 시 불 원소 피해를 1pt 주는 [<color=#FFFFFFFF>불타는 화염</color>]을 생성한다. (사용 가능 횟수: 1, 최대 중첩수: 2)"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "13134": {
+            "Name": "종대 통솔자",
+            "Desc": "[패시브] <color=#FFFFFFFF>상대 캐릭터가 과부하 반응 피해를 받은 후:</color> 핸드 카드에 <color=#FFFFFFFF>$[C113131]</color>를 생성한다. (턴당 1회)",
+            "Child": {
+                "C113131": {
+                    "Name": "초강력 탄두",
+                    "Desc": "$[K1]: 상대의 「출전 캐릭터」에게 $[K103]를 1pt 준다.\\n<color=#FFFFFFFF>해당 카드가 $[K56]될 시:</color> 상대의 「출전 캐릭터」에게 $[K103]를 1pt 준다.",
+                    "Child": {
+                        "K1": {
+                            "Name": "<color=#FFFFFFFF>전투 행동</color>",
+                            "Desc": "아군이 전투 행동을 1회 진행하면 행동 순서가 상대에게 넘어간다.\\n<color=#FFFFFFFF>해당 규칙에 속하는 카드는 사용 시 빠른 행동이 아닌 전투 행동으로 간주한다</color>."
+                        },
+                        "K103": {
+                            "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>불 원소 피해</color>",
+                            "Desc": "{SPRITE_PRESET#2103}불 원소 부착 시 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>융해</color>: 이번 피해+2pt\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>증발</color>: 이번 피해+2pt\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>과부하</color>: 이번 피해+2pt, 대상이 다음 캐릭터로 강제 교체된다.\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>연소</color>: 이번 피해+1pt, 턴 종료 시 불 원소 피해를 1pt 주는 [<color=#FFFFFFFF>불타는 화염</color>]을 생성한다. (사용 가능 횟수: 1, 최대 중첩수: 2)"
+                        },
+                        "K56": {
+                            "Name": "<color=#FFFFFFFF>포기</color>",
+                            "Desc": "행동 카드 또는 캐릭터 스킬의 효과를 통해, 핸드 카드 또는 카드 더미에서 행동 카드를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        },
+        "13135": {
+            "Name": "신속 차단 사격술",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.\\n<color=#FFFFFFFF>해당 스킬 결산 후:</color> 아군 핸드 카드에 <color=#FFFFFFFF>$[C113131]</color>가 있을 경우, 1장을 $[K56]하고 피해를 가장 많이 받은 아군 캐릭터의 HP를 1pt 치유한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO",
+                "D__KEY__DAMAGE": 3,
+                "C113131": {
+                    "Name": "초강력 탄두",
+                    "Desc": "$[K1]: 상대의 「출전 캐릭터」에게 $[K103]를 1pt 준다.\\n<color=#FFFFFFFF>해당 카드가 $[K56]될 시:</color> 상대의 「출전 캐릭터」에게 $[K103]를 1pt 준다.",
+                    "Child": {
+                        "K1": {
+                            "Name": "<color=#FFFFFFFF>전투 행동</color>",
+                            "Desc": "아군이 전투 행동을 1회 진행하면 행동 순서가 상대에게 넘어간다.\\n<color=#FFFFFFFF>해당 규칙에 속하는 카드는 사용 시 빠른 행동이 아닌 전투 행동으로 간주한다</color>."
+                        },
+                        "K103": {
+                            "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>불 원소 피해</color>",
+                            "Desc": "{SPRITE_PRESET#2103}불 원소 부착 시 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>융해</color>: 이번 피해+2pt\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>증발</color>: 이번 피해+2pt\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>과부하</color>: 이번 피해+2pt, 대상이 다음 캐릭터로 강제 교체된다.\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>연소</color>: 이번 피해+1pt, 턴 종료 시 불 원소 피해를 1pt 주는 [<color=#FFFFFFFF>불타는 화염</color>]을 생성한다. (사용 가능 횟수: 1, 최대 중첩수: 2)"
+                        },
+                        "K56": {
+                            "Name": "<color=#FFFFFFFF>포기</color>",
+                            "Desc": "행동 카드 또는 캐릭터 스킬의 효과를 통해, 핸드 카드 또는 카드 더미에서 행동 카드를 버린다."
+                        }
+                    }
+                },
+                "K56": {
+                    "Name": "<color=#FFFFFFFF>포기</color>",
+                    "Desc": "행동 카드 또는 캐릭터 스킬의 효과를 통해, 핸드 카드 또는 카드 더미에서 행동 카드를 버린다."
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {}
+        }
+    },
+    "Related": 213131
+}

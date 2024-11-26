@@ -1,0 +1,35 @@
+{
+    "Type": "Action",
+    "Name": "Sanguine Rouge",
+    "Title": "Hu Tao: Sanguine Rouge",
+    "Desc": "Director Hu needs a bit more firepower to settle certain unique affairs.",
+    "Source": "Reward for inviting Hu Tao to a duel at The Cat's Tail and achieving all corresponding challenge objectives",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Hutao",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PYRO",
+            "count": 2
+        },
+        {}
+    ],
+    "Tag": [
+        "Talent",
+        "Combat Action"
+    ],
+    "Talent": {
+        "Name": "Sanguine Rouge",
+        "Desc": "$[K1]: When your active character is <color=#FFFFFFFF>$[A1307]</color>, equip this card.\\nAfter $[A1307] equips this card, immediately use <color=#FFD780FF>$[S13072]</color> once.\\nWhen your $[A1307], who has this card equipped, has no more than 6 HP: Deal +1 $[K103].\\n(You must have $[A1307] in your deck to add this card to your deck.)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+            },
+            "A1307": "Sanguine Rouge",
+            "S13072": "S13072",
+            "K103": {
+                "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>Pyro DMG</color>",
+                "Desc": "Applies {SPRITE_PRESET#2103}Pyro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Melt</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Vaporize</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Overloaded</color>: DMG +2 for this instance, the target is forcibly switched to the next character\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Burning</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Burning Flame</color>] that will deal 1 Pyro DMG at the end of the Round (Takes effect once, max 2 stacks)"
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "Type": "Action",
+    "Name": "机巧神通",
+    "Title": "剑豪人形",
+    "Desc": "毫厘不差的斩击，或已斩出千万次。",
+    "Source": "在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度魔偶剑鬼中完成挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Ningyo",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_ANEMO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "天赋",
+        "战斗行动"
+    ],
+    "Talent": {
+        "Name": "机巧神通",
+        "Desc": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A2501]</color>时，装备此牌。\\n$[A2501]装备此牌后，立刻使用一次<color=#FFD780FF>$[S25012]</color>。\\n装备有此牌的$[A2501]使用<color=#FFFFFFFF>$[S25012]</color>后，我方切换到后一个角色；使用<color=#FFFFFFFF>$[S25013]</color>后，我方切换到前一个角色。\\n（牌组中包含$[A2501]，才能加入牌组）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>战斗行动</color>",
+                "Desc": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+            },
+            "A2501": "机巧神通",
+            "S25012": "S25012",
+            "S25013": "S25013"
+        }
+    }
+}

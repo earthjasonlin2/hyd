@@ -1,0 +1,49 @@
+{
+    "Type": "Action",
+    "Name": "梦迹一风",
+    "Title": "流浪者·梦迹一风",
+    "Desc": "「怒风腾天！」",
+    "Source": "在猫尾酒馆中邀请流浪者进行对局，完成相应挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Wanderer",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_ANEMO",
+            "count": 4
+        },
+        {}
+    ],
+    "Tag": [
+        "天赋",
+        "战斗行动"
+    ],
+    "Talent": {
+        "Name": "梦迹一风",
+        "Desc": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1506]</color>时，装备此牌。\\n$[A1506]装备此牌后，立刻使用一次<color=#FFD780FF>$[S15062]</color>。\\n装备有此牌的$[A1506]在<color=#FFFFFFFF>$[C115061]</color>状态下进行$[K51]后：下次从该角色执行「切换角色」行动时少花费1个元素骰，并且造成1点$[K105]。\\n（牌组中包含$[A1506]，才能加入牌组）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>战斗行动</color>",
+                "Desc": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+            },
+            "A1506": "梦迹一风",
+            "S15062": "S15062",
+            "C115061": {
+                "Name": "优风倾姿",
+                "Desc": "<color=#FFFFFFFF>所附属角色进行「普通攻击」时：</color>造成的伤害+2；如果敌方存在后台角色，则此技能改为对下一个敌方后台角色造成伤害。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+                "Child": {
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>可用次数</color>",
+                        "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                    }
+                }
+            },
+            "K51": {
+                "Name": "<color=#FFFFFFFF>重击</color>",
+                "Desc": "我方行动开始前，如果元素骰总数为偶数，则进行的「普通攻击」将被视为「重击」。"
+            },
+            "K105": {
+                "Name": "{SPRITE_PRESET#2105}<color=#80FFD7FF>风元素伤害</color>",
+                "Desc": "和已附着的元素发生元素反应：\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2101}<color=#FFFFFFFF>扩散（冰）</color>：对目标以外的所有敌方角色造成1点冰元素伤害\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2102}<color=#FFFFFFFF>扩散（水）</color>：对目标以外的所有敌方角色造成1点水元素伤害\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2103}<color=#FFFFFFFF>扩散（火）</color>：对目标以外的所有敌方角色造成1点火元素伤害\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2104}<color=#FFFFFFFF>扩散（雷）</color>：对目标以外的所有敌方角色造成1点雷元素伤害"
+            }
+        }
+    }
+}

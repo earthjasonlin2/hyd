@@ -1,0 +1,45 @@
+{
+    "Type": "Action",
+    "Name": "猫爪冰摇",
+    "Title": "迪奥娜·猫爪冰摇",
+    "Desc": "摇晃摇晃，混合均匀。您要的续杯！",
+    "Source": "在猫尾酒馆中邀请迪奥娜进行对局，完成相应挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Constellation_Diona",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_CRYO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "天赋",
+        "战斗行动"
+    ],
+    "Talent": {
+        "Name": "猫爪冰摇",
+        "Desc": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1102]</color>时，装备此牌。\\n$[A1102]装备此牌后，立刻使用一次<color=#FFD780FF>$[S11022]</color>。\\n装备有此牌的$[A1102]生成的<color=#FFFFFFFF>$[C111021]</color>，所提供的$[K6]值+1。\\n（牌组中包含$[A1102]，才能加入牌组）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>战斗行动</color>",
+                "Desc": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+            },
+            "A1102": "猫爪冰摇",
+            "S11022": "S11022",
+            "C111021": {
+                "Name": "猫爪护盾",
+                "Desc": "为我方出战角色提供<color=#FFFFFFFF>1点$[K6]</color>。",
+                "Child": {
+                    "K6": {
+                        "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>护盾</color>",
+                        "Desc": "此护盾所保护的角色受到伤害时，将会消耗护盾来抵消伤害。"
+                    }
+                }
+            },
+            "K6": {
+                "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>护盾</color>",
+                "Desc": "此护盾所保护的角色受到伤害时，将会消耗护盾来抵消伤害。"
+            }
+        }
+    }
+}

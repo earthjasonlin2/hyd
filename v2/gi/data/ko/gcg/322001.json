@@ -1,0 +1,32 @@
+{
+    "Type": "Action",
+    "Name": "페이몬",
+    "Title": "최고의 가이드·페이몬",
+    "Desc": "「그래! 너의 행복은 페이몬의 행복이잖아! 그러니까 반대로 말하면, 페이몬의 행복은 너의 행복이지」",
+    "Source": "플레이어 핸드북의 보상 조건 달성 후 수령",
+    "Icon": "UI_Gcg_CardFace_Assist_NPC_Paimon",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PAIMON",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "동료"
+    ],
+    "Talent": {
+        "Name": "페이몬",
+        "Desc": "<color=#FFFFFFFF>행동 단계 시작 시:</color> $[K411]를 2개 생성한다.\\n<color=#FFFFFFFF>$[K3]: 2</color>",
+        "Child": {
+            "K411": {
+                "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1111}만능 원소</color>",
+                "Desc": "{SPRITE_PRESET#1111}만능 원소는 임의의 원소로 여겨지며 어떤 원소 타입에서든 사용할 수 있다."
+            },
+            "K3": {
+                "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+            }
+        }
+    }
+}

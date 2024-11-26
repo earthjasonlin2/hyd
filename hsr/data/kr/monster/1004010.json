@@ -1,0 +1,954 @@
+{
+    "Id": 1004010,
+    "Name": "쿠쿠리아",
+    "Desc": "벨로보그의 수호자. 영원히 굳건한 도시 벨로보그의 권위적인 통치자.\\n쿠쿠리아는 역대 수호자의 기적과 권능을 물려받아 전투에서 눈과 얼음의 힘을 호령하며 적을 빙결한다",
+    "MonsterCampID": 1,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 1627.5000000004657,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/Monster_1004010.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "LittleBoss",
+    "SpeedBase": 120,
+    "StanceBase": 360,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.3000000002793968,
+    "Child": [
+        {
+            "Id": 1004010,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Thunder",
+                "Quantum"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.6000000005587935
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 100401001,
+                    "SkillName": "뼈에 사무치는 추위",
+                    "SkillDesc": "지정된 단일 아군에게 얼음 속성 피해를 가한다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 100401002,
+                    "SkillName": "기나긴 빙하기의 전조",
+                    "SkillDesc": "[얼음 서슬]을 소환한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401003,
+                    "SkillName": "끝없는 겨울의 징벌",
+                    "SkillDesc": "모든 아군에게 대량의 얼음 속성 피해를 준다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 100401004,
+                    "SkillName": "영원히 고립된 서리",
+                    "SkillDesc": "지정된 단일 아군에게 소량의 얼음 속성 피해를 가하며, 피격된 아군은 높은 확률로 빙결 상태에 빠진다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 100401005,
+                    "SkillName": "설국 성도의 격노",
+                    "SkillDesc": "차지 상태에 진입한다. 다음번 행동 시 모든 아군에게 [끝없는 겨울의 징벌]을 발동한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401006,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 100401001,
+            "AttackModifyRatio": 0.8333330010063946,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 0.7714290011208504,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Thunder",
+                "Quantum"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.6000000005587935
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 100401001,
+                    "SkillName": "뼈에 사무치는 추위",
+                    "SkillDesc": "지정된 단일 아군에게 얼음 속성 피해를 가한다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 100401002,
+                    "SkillName": "기나긴 빙하기의 전조",
+                    "SkillDesc": "[얼음 서슬]을 소환한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401003,
+                    "SkillName": "끝없는 겨울의 징벌",
+                    "SkillDesc": "모든 아군에게 대량의 얼음 속성 피해를 준다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 100401004,
+                    "SkillName": "영원히 고립된 서리",
+                    "SkillDesc": "지정된 단일 아군에게 소량의 얼음 속성 피해를 가하며, 피격된 아군은 높은 확률로 빙결 상태에 빠진다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 100401005,
+                    "SkillName": "설국 성도의 격노",
+                    "SkillDesc": "차지 상태에 진입한다. 다음번 행동 시 모든 아군에게 [끝없는 겨울의 징벌]을 발동한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401006,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 100401002,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 5,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Thunder",
+                "Quantum"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.6000000005587935
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 100401001,
+                    "SkillName": "뼈에 사무치는 추위",
+                    "SkillDesc": "지정된 단일 아군에게 얼음 속성 피해를 가한다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 100401002,
+                    "SkillName": "기나긴 빙하기의 전조",
+                    "SkillDesc": "[얼음 서슬]을 소환한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401003,
+                    "SkillName": "끝없는 겨울의 징벌",
+                    "SkillDesc": "모든 아군에게 대량의 얼음 속성 피해를 준다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 100401004,
+                    "SkillName": "영원히 고립된 서리",
+                    "SkillDesc": "지정된 단일 아군에게 소량의 얼음 속성 피해를 가하며, 피격된 아군은 높은 확률로 빙결 상태에 빠진다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 100401005,
+                    "SkillName": "설국 성도의 격노",
+                    "SkillDesc": "차지 상태에 진입한다. 다음번 행동 시 모든 아군에게 [끝없는 겨울의 징벌]을 발동한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401006,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 100401004,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1.1428570009302348,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Thunder",
+                "Quantum"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.6000000005587935
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 100401001,
+                    "SkillName": "뼈에 사무치는 추위",
+                    "SkillDesc": "지정된 단일 아군에게 얼음 속성 피해를 가한다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 100401002,
+                    "SkillName": "기나긴 빙하기의 전조",
+                    "SkillDesc": "[얼음 서슬]을 소환한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401003,
+                    "SkillName": "끝없는 겨울의 징벌",
+                    "SkillDesc": "모든 아군에게 대량의 얼음 속성 피해를 준다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 100401004,
+                    "SkillName": "영원히 고립된 서리",
+                    "SkillDesc": "지정된 단일 아군에게 소량의 얼음 속성 피해를 가하며, 피격된 아군은 높은 확률로 빙결 상태에 빠진다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 100401005,
+                    "SkillName": "설국 성도의 격노",
+                    "SkillDesc": "차지 상태에 진입한다. 다음번 행동 시 모든 아군에게 [끝없는 겨울의 징벌]을 발동한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401006,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 100401005,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1.1428570009302348,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Thunder",
+                "Quantum"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.6000000005587935
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 100401001,
+                    "SkillName": "뼈에 사무치는 추위",
+                    "SkillDesc": "지정된 단일 아군에게 얼음 속성 피해를 가한다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 100401002,
+                    "SkillName": "기나긴 빙하기의 전조",
+                    "SkillDesc": "[얼음 서슬]을 소환한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401003,
+                    "SkillName": "끝없는 겨울의 징벌",
+                    "SkillDesc": "모든 아군에게 대량의 얼음 속성 피해를 준다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 100401004,
+                    "SkillName": "영원히 고립된 서리",
+                    "SkillDesc": "지정된 단일 아군에게 소량의 얼음 속성 피해를 가하며, 피격된 아군은 높은 확률로 빙결 상태에 빠진다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 100401005,
+                    "SkillName": "설국 성도의 격노",
+                    "SkillDesc": "차지 상태에 진입한다. 다음번 행동 시 모든 아군에게 [끝없는 겨울의 징벌]을 발동한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401006,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 100401006,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 5.114286000607535,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": 10,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Thunder",
+                "Quantum"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.6000000005587935
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 100401001,
+                    "SkillName": "뼈에 사무치는 추위",
+                    "SkillDesc": "지정된 단일 아군에게 얼음 속성 피해를 가한다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 100401002,
+                    "SkillName": "기나긴 빙하기의 전조",
+                    "SkillDesc": "[얼음 서슬]을 소환한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401003,
+                    "SkillName": "끝없는 겨울의 징벌",
+                    "SkillDesc": "모든 아군에게 대량의 얼음 속성 피해를 준다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 100401004,
+                    "SkillName": "영원히 고립된 서리",
+                    "SkillDesc": "지정된 단일 아군에게 소량의 얼음 속성 피해를 가하며, 피격된 아군은 높은 확률로 빙결 상태에 빠진다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 100401005,
+                    "SkillName": "설국 성도의 격노",
+                    "SkillDesc": "차지 상태에 진입한다. 다음번 행동 시 모든 아군에게 [끝없는 겨울의 징벌]을 발동한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401006,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 100401007,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 4.571429000934586,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": 120,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Thunder",
+                "Quantum"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 100401001,
+                    "SkillName": "뼈에 사무치는 추위",
+                    "SkillDesc": "지정된 단일 아군에게 얼음 속성 피해를 가한다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 100401002,
+                    "SkillName": "기나긴 빙하기의 전조",
+                    "SkillDesc": "[얼음 서슬]을 소환한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401003,
+                    "SkillName": "끝없는 겨울의 징벌",
+                    "SkillDesc": "모든 아군에게 대량의 얼음 속성 피해를 준다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 100401004,
+                    "SkillName": "영원히 고립된 서리",
+                    "SkillDesc": "지정된 단일 아군에게 소량의 얼음 속성 피해를 가하며, 피격된 아군은 높은 확률로 빙결 상태에 빠진다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 100401005,
+                    "SkillName": "설국 성도의 격노",
+                    "SkillDesc": "차지 상태에 진입한다. 다음번 행동 시 모든 아군에게 [끝없는 겨울의 징벌]을 발동한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401006,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 100401008,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1.2857140004634857,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Thunder",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.6000000005587935
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 100401001,
+                    "SkillName": "뼈에 사무치는 추위",
+                    "SkillDesc": "지정된 단일 아군에게 얼음 속성 피해를 가한다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 100401002,
+                    "SkillName": "기나긴 빙하기의 전조",
+                    "SkillDesc": "[얼음 서슬]을 소환한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401003,
+                    "SkillName": "끝없는 겨울의 징벌",
+                    "SkillDesc": "모든 아군에게 대량의 얼음 속성 피해를 준다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 100401004,
+                    "SkillName": "영원히 고립된 서리",
+                    "SkillDesc": "지정된 단일 아군에게 소량의 얼음 속성 피해를 가하며, 피격된 아군은 높은 확률로 빙결 상태에 빠진다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 100401005,
+                    "SkillName": "설국 성도의 격노",
+                    "SkillDesc": "차지 상태에 진입한다. 다음번 행동 시 모든 아군에게 [끝없는 겨울의 징벌]을 발동한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401006,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 100401010,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1.5428570013027638,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Thunder",
+                "Quantum"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.6000000005587935
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 100401001,
+                    "SkillName": "뼈에 사무치는 추위",
+                    "SkillDesc": "지정된 단일 아군에게 얼음 속성 피해를 가한다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 100401002,
+                    "SkillName": "기나긴 빙하기의 전조",
+                    "SkillDesc": "[얼음 서슬]을 소환한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401003,
+                    "SkillName": "끝없는 겨울의 징벌",
+                    "SkillDesc": "모든 아군에게 대량의 얼음 속성 피해를 준다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 100401004,
+                    "SkillName": "영원히 고립된 서리",
+                    "SkillDesc": "지정된 단일 아군에게 소량의 얼음 속성 피해를 가하며, 피격된 아군은 높은 확률로 빙결 상태에 빠진다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 100401005,
+                    "SkillName": "설국 성도의 격노",
+                    "SkillDesc": "차지 상태에 진입한다. 다음번 행동 시 모든 아군에게 [끝없는 겨울의 징벌]을 발동한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401006,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 100401003,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 2.142857000930235,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Thunder",
+                "Quantum"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.6000000005587935
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 100401001,
+                    "SkillName": "뼈에 사무치는 추위",
+                    "SkillDesc": "지정된 단일 아군에게 얼음 속성 피해를 가한다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 100401002,
+                    "SkillName": "기나긴 빙하기의 전조",
+                    "SkillDesc": "[얼음 서슬]을 소환한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401003,
+                    "SkillName": "끝없는 겨울의 징벌",
+                    "SkillDesc": "모든 아군에게 대량의 얼음 속성 피해를 준다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 100401004,
+                    "SkillName": "영원히 고립된 서리",
+                    "SkillDesc": "지정된 단일 아군에게 소량의 얼음 속성 피해를 가하며, 피격된 아군은 높은 확률로 빙결 상태에 빠진다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 100401005,
+                    "SkillName": "설국 성도의 격노",
+                    "SkillDesc": "차지 상태에 진입한다. 다음번 행동 시 모든 아군에게 [끝없는 겨울의 징벌]을 발동한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401006,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 100401011,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Thunder",
+                "Wind",
+                "Quantum"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.6000000005587935
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 100401001,
+                    "SkillName": "뼈에 사무치는 추위",
+                    "SkillDesc": "지정된 단일 아군에게 얼음 속성 피해를 가한다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 100401002,
+                    "SkillName": "기나긴 빙하기의 전조",
+                    "SkillDesc": "[얼음 서슬]을 소환한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401003,
+                    "SkillName": "끝없는 겨울의 징벌",
+                    "SkillDesc": "모든 아군에게 대량의 얼음 속성 피해를 준다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 100401004,
+                    "SkillName": "영원히 고립된 서리",
+                    "SkillDesc": "지정된 단일 아군에게 소량의 얼음 속성 피해를 가하며, 피격된 아군은 높은 확률로 빙결 상태에 빠진다",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 100401005,
+                    "SkillName": "설국 성도의 격노",
+                    "SkillDesc": "차지 상태에 진입한다. 다음번 행동 시 모든 아군에게 [끝없는 겨울의 징벌]을 발동한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100401006,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 1004010,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1004010,
+            "WorldLevel": 1,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1004010,
+            "WorldLevel": 2,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1004010,
+            "WorldLevel": 3,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1004010,
+            "WorldLevel": 4,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1004010,
+            "WorldLevel": 5,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1004010,
+            "WorldLevel": 6,
+            "DisplayItemList": []
+        }
+    ]
+}

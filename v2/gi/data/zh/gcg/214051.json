@@ -1,0 +1,36 @@
+{
+    "Type": "Action",
+    "Name": "霹雳连霄",
+    "Title": "北斗·霹雳连霄",
+    "Desc": "电光石火，霹雳连霄。",
+    "Source": "在猫尾酒馆中邀请北斗进行对局，完成相应挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Beidou",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_ELECTRO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "天赋",
+        "战斗行动"
+    ],
+    "Talent": {
+        "Name": "霹雳连霄",
+        "Desc": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1405]</color>时，装备此牌。\\n$[A1405]装备此牌后，立刻使用一次<color=#FFD780FF>$[S14052]</color>。\\n装备有此牌的$[A1405]使用<color=#FFFFFFFF>$[S14054]</color>后：使$[A1405]本回合内「普通攻击」少花费1个$[K309]。（最多触发2次）\\n（牌组中包含$[A1405]，才能加入牌组）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>战斗行动</color>",
+                "Desc": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+            },
+            "A1405": "霹雳连霄",
+            "S14052": "S14052",
+            "S14054": "S14054",
+            "K309": {
+                "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1109}无色元素</color>",
+                "Desc": "可以用任意类型的元素骰子组合，来支付此类费用。"
+            }
+        }
+    }
+}

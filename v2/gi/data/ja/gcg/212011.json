@@ -1,0 +1,45 @@
+{
+    "Type": "Action",
+    "Name": "輝く季節",
+    "Title": "バーバラ·輝く季節",
+    "Desc": "私の歌声と祝福をあなたにあげる！",
+    "Source": "キャッツテールでバーバラを招待して対戦し、対応する挑戦目標をクリアすることで獲得",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Barbara",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_HYDRO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "天賦",
+        "戦闘アクション"
+    ],
+    "Talent": {
+        "Name": "輝く季節",
+        "Desc": "$[K1]：味方の出撃キャラが<color=#FFFFFFFF>$[A1201]</color>の時、このカードを装備できる。\\n$[A1201]がこのカードを装備した後、直ちに<color=#FFD780FF>$[S12012]</color>を1回発動する。\\nこのカードを装備した$[A1201]がフィールドに存在する時、<color=#FFFFFFFF>$[C112011]</color>は味方が「キャラチェンジ」を行う時に必要な元素サイコロの数を-1できる。（各ラウンドで1回のみ）\\n（このカードはデッキに$[A1201]が含まれている場合のみ、デッキに追加できる）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>戦闘アクション</color>",
+                "Desc": "味方が戦闘アクションを1回行った後、相手のターンに移ります。\\n<color=#FFFFFFFF>このようなルールを持つ手札を出すのはクイックアクションではなく、戦闘アクションと見なされます。</color>"
+            },
+            "A1201": "輝く季節",
+            "S12012": "S12012",
+            "C112011": {
+                "Name": "歌声の輪",
+                "Desc": "<color=#FFFFFFFF>エンドフェーズ：</color>味方のチーム全員のHPを1回復し、味方の出撃キャラに$[K202]を与える。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+                "Child": {
+                    "K202": {
+                        "Name": "<color=#80C0FFFF>{SPRITE_PRESET#2102}水元素付着</color>",
+                        "Desc": "ダメージによる方法以外で{SPRITE_PRESET#2102}水元素が付着した場合、引き起こした元素反応にダメージ効果は乗りません。\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2103}<color=#FFFFFFFF>蒸発</color>：効果なし\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}<color=#FFFFFFFF>感電</color>：効果なし\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2101}<color=#FFFFFFFF>凍結</color>：目標はこのラウンドで行動不能になる（物理ダメージまたは炎ダメージを受けると、即座に解除されるがダメージ+2となる）\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}<color=#FFFFFFFF>開花</color>：次の炎元素または雷元素ダメージを2アップできる「<color=#FFFFFFFF>草原核</color>」を生成する"
+                    },
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                        "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                    }
+                }
+            }
+        }
+    }
+}

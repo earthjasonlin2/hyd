@@ -1,0 +1,126 @@
+{
+    "Type": "Character",
+    "Name": "Emperor of Fire and Iron",
+    "Title": "Emperor of Fire and Iron",
+    "Desc": "One of the two sovereigns who once stood at the apex of the aberrant species of the Fontemer. An Armored Crab that has avoided predation, and has constantly partaken in hunting and eating. Its imperial title is made half in awe, and half in jest.",
+    "Source": "Reward for accepting the Tavern Challenge at The Cat's Tail and claiming victory in a Friendly Fracas with the Emperor of Fire and Iron",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_HermitCrabPrimo",
+    "Hp": 6,
+    "Cost": 2,
+    "Tag": [
+        "Pyro",
+        "Other Weapons",
+        "Monster"
+    ],
+    "Talent": {
+        "23041": {
+            "Name": "Shatterclamp Strike",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "23042": {
+            "Name": "Buster Blaze",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. If this character has at least 7 <color=#FFFFFFFF>$[C123041]</color> stacks, this DMG +1.\\nAfter that, this character gains 2 <color=#FFFFFFFF>$[C123041]</color> stacks.",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO",
+                "C123041": {
+                    "Name": "Armored Crab Carapace",
+                    "Desc": "Each stack provides 1 $[K6] to protect the equipped character.",
+                    "Child": {
+                        "K6": {
+                            "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>Shield</color>",
+                            "Desc": "This Shield will be consumed to protect the character who equips it from DMG."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 3
+            }
+        },
+        "23043": {
+            "Name": "Battle-Line Detonation",
+            "Desc": "This character's $[K53]: <color=#FFFFFFFF>$[S23046]</color>.",
+            "Child": {
+                "K53": {
+                    "Name": "<color=#FFFFFFFF>Prepare Skill</color>|s1:<color=#FFFFFFFF>prepares</color>",
+                    "Desc": "Some Skills cannot be used directly. Instead, they need to be <color=#FFFFFFFF>prepared</color> over a certain number of turns.\\nWhen it is a certain player's turn, and this player's active character is currently <color=#FFFFFFFF>preparing</color> a Skill, this player's turn will be skipped. If the Skill has finished being <color=#FFFFFFFF>prepared</color>, the character will directly use that Skill at this time. (Skills that require <color=#FFFFFFFF>preparing</color> cannot activate effects triggered by \"using a Skill\" or \"triggering an Elemental Reaction\" or other such effects.)\\nOnly active characters can <color=#FFFFFFFF>prepare</color> Skills, and if an active character who is <color=#FFFFFFFF>preparing</color> a Skill gets switched off-field, their <color=#FFFFFFFF>preparation</color> will be interrupted."
+                },
+                "S23046": "S23046"
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "23044": {
+            "Name": "Imperial Panoply",
+            "Desc": "(Passive) <color=#FFFFFFFF>When combat begins:</color> Gain 5 initial <color=#FFFFFFFF>$[C123041]</color> stacks.\\n<color=#FFFFFFFF>After your side performs any action:</color> If your side has any $[K6] Status or $[K6] Combat Status other than $[C123041], these other effects will be canceled. For each effect canceled, this character gains 2 <color=#FFFFFFFF>$[C123041]</color> stacks.",
+            "Child": {
+                "C123041": {
+                    "Name": "Armored Crab Carapace",
+                    "Desc": "Each stack provides 1 $[K6] to protect the equipped character.",
+                    "Child": {
+                        "K6": {
+                            "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>Shield</color>",
+                            "Desc": "This Shield will be consumed to protect the character who equips it from DMG."
+                        }
+                    }
+                },
+                "K6": {
+                    "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>Shield</color>",
+                    "Desc": "This Shield will be consumed to protect the character who equips it from DMG."
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        },
+        "23046": {
+            "Name": "Searing Blast",
+            "Desc": "(Prepare for 1 turn)\\nDeals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], deals 2 $[K5] to all opposing standby characters. This skill deals +1 $[K103] for every 2 <color=#FFFFFFFF>$[C123041]</color> stacks this character has.",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO",
+                "K5": {
+                    "Name": "<color=#FFFFFFFF>Piercing DMG</color>",
+                    "Desc": "Piercing DMG cannot be increased by any bonuses, but cannot be defended against using Shields or DMG Immunity either."
+                },
+                "K103": {
+                    "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>Pyro DMG</color>",
+                    "Desc": "Applies {SPRITE_PRESET#2103}Pyro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Melt</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Vaporize</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Overloaded</color>: DMG +2 for this instance, the target is forcibly switched to the next character\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Burning</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Burning Flame</color>] that will deal 1 Pyro DMG at the end of the Round (Takes effect once, max 2 stacks)"
+                },
+                "C123041": {
+                    "Name": "Armored Crab Carapace",
+                    "Desc": "Each stack provides 1 $[K6] to protect the equipped character.",
+                    "Child": {
+                        "K6": {
+                            "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>Shield</color>",
+                            "Desc": "This Shield will be consumed to protect the character who equips it from DMG."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {}
+        },
+        "23047": {
+            "Name": "Imperial Panoply",
+            "Desc": "",
+            "Child": {},
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 223041
+}

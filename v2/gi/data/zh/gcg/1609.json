@@ -1,0 +1,59 @@
+{
+    "Type": "Character",
+    "Name": "千织",
+    "Title": "鸣雷的裁锦师·千织",
+    "Desc": "千红曙染，裁锦缀织。",
+    "Source": "在猫尾酒馆中邀请千织进行对局，在友好对局难度中获得胜利后获取",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Chiori",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "岩元素",
+        "单手剑",
+        "稻妻"
+    ],
+    "Talent": {
+        "16091": {
+            "Name": "心织刀流",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "16092": {
+            "Name": "羽袖一触",
+            "Desc": "从3个<color=#FFFFFFFF>$[C116097]</color>中挑选1个召唤。",
+            "Child": {
+                "C116097": {
+                    "Name": "千织的自动制御人形",
+                    "Desc": "千织拥有多种自动制御人形，不但能自动发起攻击，还会提供多种增益效果。",
+                    "Child": {}
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 3
+            }
+        },
+        "16093": {
+            "Name": "二刀之形·比翼",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+            "Child": {
+                "D__KEY__DAMAGE": 5,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_GEO"
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 216091
+}

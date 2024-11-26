@@ -1,0 +1,87 @@
+{
+    "Type": "Character",
+    "Name": "라이덴 쇼군",
+    "Title": "일심정토·라이덴 쇼군",
+    "Desc": "뇌명 적멸, 부세의 포영",
+    "Source": "캣테일 술집에서 라이덴 쇼군 초대 및 친선 대전 난이도 승리 후 획득",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Shougun",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "번개 원소",
+        "장병기",
+        "이나즈마"
+    ],
+    "Talent": {
+        "14071": {
+            "Name": "원류",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "14072": {
+            "Name": "초월·악요개안",
+            "Desc": "<color=#FFFFFFFF>$[C114071]</color>을 소환한다.",
+            "Child": {
+                "C114071": {
+                    "Name": "뇌벌 악요의 눈",
+                    "Desc": "<color=#FFFFFFFF>종료 단계: </color>$[K104]를 1pt 준다.\\n<color=#FFFFFFFF>$[K3]: 3</color>\\n<color=#FFFFFFFF>해당 소환물이 필드에 있을 시:</color> 아군 캐릭터가 「원소폭발」로 주는 피해+1pt",
+                    "Child": {
+                        "K104": {
+                            "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>번개 원소 피해</color>",
+                            "Desc": "{SPRITE_PRESET#2104}번개 원소 부착 시 다음 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>과부하</color>: 이번 피해+2pt, 대상이 다음 캐릭터로 강제 교체된다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>초전도</color>: 이번 피해+1pt, 대상 이외의 모든 상대 캐릭터에게 관통 피해를 1pt 준다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>감전</color>: 이번 피해+1pt, 대상 이외의 모든 상대 캐릭터에게 관통 피해를 1pt 준다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>활성</color>: 이번 피해+1pt, 다음 2회의 풀 원소 또는 번개 원소 피해를 1pt 증가시키는 [<color=#FFFFFFFF>격화 영역</color>]을 생성한다."
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 3
+            }
+        },
+        "14073": {
+            "Name": "오의·몽상진설",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 다른 아군 캐릭터가 $[K310]를 2pt 획득한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO",
+                "D__KEY__DAMAGE": 3,
+                "K310": {
+                    "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}원소 에너지</color>",
+                    "Desc": "캐릭터가 「원소폭발」을 사용하려면 {SPRITE_PRESET#1110}원소 에너지를 소모해야 한다.\\n캐릭터가 「원소전투 스킬」 또는 「일반 공격」을 사용하면 {SPRITE_PRESET#1110}원소 에너지를 1pt 획득한다."
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 4,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "14074": {
+            "Name": "염원이 깃든 백안지륜",
+            "Desc": "[패시브] 전투 시작 시, 시작부터 <color=#FFFFFFFF>$[C114072]</color>이 부착된다.",
+            "Child": {
+                "C114072": {
+                    "Name": "염원이 깃든 백안지륜",
+                    "Desc": "<color=#FFFFFFFF>다른 아군 캐릭터가 「원소폭발」 사용 후:</color> <color=#FFFFFFFF>「원력」</color>이 1pt 누적된다. (최대 누적수: 3pt)\\n<color=#FFFFFFFF>부착 캐릭터가 $[S14073] 사용 시:</color> 모든 <color=#FFFFFFFF>「원력」</color>을 소모한다. <color=#FFFFFFFF>「원력」</color> 1pt당 주는 피해가 1pt 증가한다.",
+                    "Child": {
+                        "S14073": "S14073"
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 214071
+}

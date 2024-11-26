@@ -1,0 +1,38 @@
+{
+    "Type": "Action",
+    "Name": "Arataki Ichiban",
+    "Title": "Arataki Itto: Arataki Ichiban",
+    "Desc": "Whatever you do, remember to ride the momentum.",
+    "Source": "Reward for inviting Arataki Itto to a duel at The Cat's Tail and achieving all corresponding challenge objectives",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Itto",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_GEO",
+            "count": 1
+        },
+        {
+            "costType": "GCG_COST_DICE_VOID",
+            "count": 2
+        }
+    ],
+    "Tag": [
+        "Talent",
+        "Combat Action"
+    ],
+    "Talent": {
+        "Name": "Arataki Ichiban",
+        "Desc": "$[K1]: When your active character is <color=#FFFFFFFF>$[A1605]</color>, equip this card.\\nAfter $[A1605] equips this card, immediately use <color=#FFD780FF>$[S16051]</color> once.\\nAfter your $[A1605], who has this card equipped, uses <color=#FFFFFFFF>$[S16051]</color> for the second time or more in one Round: If $[K1007] is triggered, deal +1 additional DMG.\\n(You must have $[A1605] in your deck to add this card to your deck.)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+            },
+            "A1605": "Arataki Ichiban",
+            "S16051": "S16051",
+            "K1007": {
+                "Name": "<color=#FFFFFFFF>Superlative Superstrength</color>",
+                "Desc": "<color=#FFFFFFFF>When the character to which this is attached uses a <color=#FFFFFFFF>Charged Attack</color>: </color>Deal +1 DMG. If the <color=#FFFFFFFF>Usages</color> are no less than 2, then costs 1 less <color=#FFFFFFFF>{SPRITE_PRESET#1109}Unaligned Element</color>.\\n<color=#FFFFFFFF><color=#FFFFFFFF>Usage(s)</color>: 1</color> (Can stack. Max 3 stacks.)"
+            }
+        }
+    }
+}

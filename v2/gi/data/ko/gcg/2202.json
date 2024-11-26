@@ -1,0 +1,66 @@
+{
+    "Type": "Character",
+    "Name": "우인단·거울의 여인",
+    "Title": "겨울 나라의 여인·물거울의 사자",
+    "Desc": "비밀은 모두 물결치는 거울 속에 숨겨져 있겠지…",
+    "Source": "캣테일 술집의 왕자님을 통해 술집 도전 진행 및 친선 대전 난이도의 우인단·거울의 여인에게 승리 후 획득",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_Maidenwater",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "물 원소",
+        "기타 무기",
+        "우인단"
+    ],
+    "Talent": {
+        "22021": {
+            "Name": "물폭탄",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "D__KEY__DAMAGE": 1
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "22022": {
+            "Name": "물결 폭파",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 대상 캐릭터에게 <color=#FFFFFFFF>$[C122021]</color>이 부착된다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "D__KEY__DAMAGE": 2,
+                "C122021": {
+                    "Name": "깨진 물빛 거울",
+                    "Desc": "<color=#FFFFFFFF>부착 캐릭터를 다른 캐릭터로 교체 시:</color> 원소 주사위 소모 개수+1\\n<color=#FFFFFFFF>$[K4]: 2</color>\\n(해당 상태는 한쪽 필드에 하나만 존재할 수 있다)",
+                    "Child": {
+                        "K4": {
+                            "Name": "<color=#FFFFFFFF>지속 턴</color>",
+                            "Desc": "턴이 종료 단계에 진입할 때마다 <color=#FFFFFFFF>지속 턴</color>이 1회씩 감소한다.\\n<color=#FFFFFFFF>지속 턴</color>이 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3
+            }
+        },
+        "22023": {
+            "Name": "굴절된 거울의 빛",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "D__KEY__DAMAGE": 5
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 222021
+}

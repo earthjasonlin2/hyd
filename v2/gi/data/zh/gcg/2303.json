@@ -1,0 +1,119 @@
+{
+    "Type": "Character",
+    "Name": "镀金旅团·炽沙叙事人",
+    "Title": "诗与秘史·炽沙叙事人",
+    "Desc": "如今仍然能记起许多故事的人，是不会背叛流淌在体内的沙漠血脉的。",
+    "Source": "在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度镀金旅团·炽沙叙事人中获得胜利后获取",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_Muscleman",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "火元素",
+        "其他武器",
+        "镀金旅团"
+    ],
+    "Talent": {
+        "23031": {
+            "Name": "烧蚀之光",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "23032": {
+            "Name": "炎晶迸击",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，生成1层<color=#FFFFFFFF>$[C123032]</color>。",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO",
+                "C123032": {
+                    "Name": "魔蝎祝福",
+                    "Desc": "<color=#FFFFFFFF>我方使用$[C123031]的$[K58]时：</color>移除此效果，每有1层<color=#FFFFFFFF>「魔蝎祝福」</color>，就使此$[K58]造成的伤害+1。\\n（<color=#FFFFFFFF>「魔蝎祝福」</color>的层数可叠加，没有上限）",
+                    "Child": {
+                        "C123031": {
+                            "Name": "厄灵·炎之魔蝎",
+                            "Desc": "<color=#FFFFFFFF>所附属角色受到伤害时：</color>如可能，失去1点充能，以抵消1点伤害，然后生成<color=#FFFFFFFF>$[C123032]</color>。（每回合至多2次）\\n$[K58]：$[S1230311]\\n<color=#FFFFFFFF>$[K3]：1</color>\\n（角色最多装备1个「{SPRITE_PRESET#3008}特技」）",
+                            "Child": {
+                                "K58": {
+                                    "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#3008}特技</color>",
+                                    "Desc": "出战角色装备有「{SPRITE_PRESET#3008}特技」卡牌时，就可以使用对应的「{SPRITE_PRESET#3008}特技」。\\n使用「{SPRITE_PRESET#3008}特技」是一种「战斗行动」。角色因冻结、石化、眩晕等原因无法使用技能时，也会同时无法使用「{SPRITE_PRESET#3008}特技」。\\n角色使用「{SPRITE_PRESET#3008}特技」时不视为使用技能，无法触发「使用技能后」「角色引发元素反应后」等效果；角色使用「{SPRITE_PRESET#3008}特技」造成的伤害不被视为角色造成的伤害。"
+                                },
+                                "S1230311": "S1230311",
+                                "K3": {
+                                    "Name": "<color=#FFFFFFFF>可用次数</color>",
+                                    "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                                }
+                            }
+                        },
+                        "K58": {
+                            "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#3008}特技</color>",
+                            "Desc": "出战角色装备有「{SPRITE_PRESET#3008}特技」卡牌时，就可以使用对应的「{SPRITE_PRESET#3008}特技」。\\n使用「{SPRITE_PRESET#3008}特技」是一种「战斗行动」。角色因冻结、石化、眩晕等原因无法使用技能时，也会同时无法使用「{SPRITE_PRESET#3008}特技」。\\n角色使用「{SPRITE_PRESET#3008}特技」时不视为使用技能，无法触发「使用技能后」「角色引发元素反应后」等效果；角色使用「{SPRITE_PRESET#3008}特技」造成的伤害不被视为角色造成的伤害。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 3
+            }
+        },
+        "23033": {
+            "Name": "厄灵苏醒·炎之魔蝎",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。整场牌局限制1次，将1张<color=#FFFFFFFF>$[C123031]</color>加入我方手牌。\\n（装备有<color=#FFFFFFFF>$[C123031]</color>的角色可以使用特技：<color=#FFFFFFFF>$[S1230311]</color>）",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO",
+                "C123031": {
+                    "Name": "厄灵·炎之魔蝎",
+                    "Desc": "<color=#FFFFFFFF>所附属角色受到伤害时：</color>如可能，失去1点充能，以抵消1点伤害，然后生成<color=#FFFFFFFF>$[C123032]</color>。（每回合至多2次）\\n$[K58]：$[S1230311]\\n<color=#FFFFFFFF>$[K3]：1</color>\\n（角色最多装备1个「{SPRITE_PRESET#3008}特技」）",
+                    "Child": {
+                        "C123032": {
+                            "Name": "魔蝎祝福",
+                            "Desc": "<color=#FFFFFFFF>我方使用$[C123031]的$[K58]时：</color>移除此效果，每有1层<color=#FFFFFFFF>「魔蝎祝福」</color>，就使此$[K58]造成的伤害+1。\\n（<color=#FFFFFFFF>「魔蝎祝福」</color>的层数可叠加，没有上限）",
+                            "Child": {
+                                "K58": {
+                                    "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#3008}特技</color>",
+                                    "Desc": "出战角色装备有「{SPRITE_PRESET#3008}特技」卡牌时，就可以使用对应的「{SPRITE_PRESET#3008}特技」。\\n使用「{SPRITE_PRESET#3008}特技」是一种「战斗行动」。角色因冻结、石化、眩晕等原因无法使用技能时，也会同时无法使用「{SPRITE_PRESET#3008}特技」。\\n角色使用「{SPRITE_PRESET#3008}特技」时不视为使用技能，无法触发「使用技能后」「角色引发元素反应后」等效果；角色使用「{SPRITE_PRESET#3008}特技」造成的伤害不被视为角色造成的伤害。"
+                                }
+                            }
+                        },
+                        "K58": {
+                            "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#3008}特技</color>",
+                            "Desc": "出战角色装备有「{SPRITE_PRESET#3008}特技」卡牌时，就可以使用对应的「{SPRITE_PRESET#3008}特技」。\\n使用「{SPRITE_PRESET#3008}特技」是一种「战斗行动」。角色因冻结、石化、眩晕等原因无法使用技能时，也会同时无法使用「{SPRITE_PRESET#3008}特技」。\\n角色使用「{SPRITE_PRESET#3008}特技」时不视为使用技能，无法触发「使用技能后」「角色引发元素反应后」等效果；角色使用「{SPRITE_PRESET#3008}特技」造成的伤害不被视为角色造成的伤害。"
+                        },
+                        "S1230311": "S1230311",
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>可用次数</color>",
+                            "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                },
+                "S1230311": "S1230311"
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "23034": {
+            "Name": "厄灵之能",
+            "Desc": "【被动】<color=#FFFFFFFF>此角色受到伤害后：</color>如果此角色生命值不多于7，则获得1点$[K310]。（每回合1次）",
+            "Child": {
+                "K310": {
+                    "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}充能</color>",
+                    "Desc": "角色使用「元素爆发」时，需要消耗{SPRITE_PRESET#1110}充能。\\n角色使用「元素战技」或「普通攻击」后，会获得1点{SPRITE_PRESET#1110}充能。"
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 223031
+}

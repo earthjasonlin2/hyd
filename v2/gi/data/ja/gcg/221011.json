@@ -1,0 +1,54 @@
+{
+    "Type": "Action",
+    "Name": "氷蛍寒光",
+    "Title": "氷蛍術師·氷蛍寒光",
+    "Desc": "霧虚ろ草をもっと、氷蛍たちをもっと。\\n…霧虚ろ草が尽きるとどうなるかって？\\nもしかすると、彼女は考えたことがないのかも。",
+    "Source": "キャッツテールのリトルプリンスのところで酒場挑戦を行い、ファデュイ·氷蛍術師に挑戦して友好対戦で対応する挑戦目標をクリアすることで獲得",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_MageIce",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_CRYO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "天賦",
+        "戦闘アクション"
+    ],
+    "Talent": {
+        "Name": "氷蛍寒光",
+        "Desc": "$[K1]：味方の出撃キャラが<color=#FFFFFFFF>$[A2101]</color>の時、このカードを装備できる。\\n$[A2101]がこのカードを装備した後、直ちに<color=#FFD780FF>$[S21012]</color>を1回発動する。\\nこのカードを装備した$[A2101]がスキルを発動した後、<color=#FFFFFFFF>$[C121011]</color>の$[K3]が上限を超えるまで重ねられた場合、$[K101]を2与える。\\n（このカードはデッキに$[A2101]が含まれている場合のみ、デッキに追加できる）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>戦闘アクション</color>",
+                "Desc": "味方が戦闘アクションを1回行った後、相手のターンに移ります。\\n<color=#FFFFFFFF>このようなルールを持つ手札を出すのはクイックアクションではなく、戦闘アクションと見なされます。</color>"
+            },
+            "A2101": "氷蛍寒光",
+            "S21012": "S21012",
+            "C121011": {
+                "Name": "氷蛍",
+                "Desc": "<color=#FFFFFFFF>エンドフェーズ：</color>$[K101]を1与える。\\n<color=#FFFFFFFF>$[K3]：2</color>（最大3まで重ねられる）\\n\\n<color=#FFFFFFFF>$[A2101]が「通常攻撃」を発動した後</color>、このカードの$[K3]+1。\\n<color=#FFFFFFFF>$[A2101]が元素反応によるダメージを受けた後</color>、このカードの$[K3]-1。",
+                "Child": {
+                    "K101": {
+                        "Name": "{SPRITE_PRESET#2101}<color=#99FFFFFF>氷元素ダメージ</color>",
+                        "Desc": "{SPRITE_PRESET#2101}氷元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2103}<color=#FFFFFFFF>溶解</color>：ダメージ+2\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2104}<color=#FFFFFFFF>超電導</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2102}<color=#FFFFFFFF>凍結</color>：ダメージ+1、目標はこのラウンドで行動不能になる（物理ダメージまたは炎ダメージを受けると、即座に解除されるがダメージ+2となる）"
+                    },
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                        "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                    },
+                    "A2101": "氷蛍寒光"
+                }
+            },
+            "K3": {
+                "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+            },
+            "K101": {
+                "Name": "{SPRITE_PRESET#2101}<color=#99FFFFFF>氷元素ダメージ</color>",
+                "Desc": "{SPRITE_PRESET#2101}氷元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2103}<color=#FFFFFFFF>溶解</color>：ダメージ+2\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2104}<color=#FFFFFFFF>超電導</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2102}<color=#FFFFFFFF>凍結</color>：ダメージ+1、目標はこのラウンドで行動不能になる（物理ダメージまたは炎ダメージを受けると、即座に解除されるがダメージ+2となる）"
+            }
+        }
+    }
+}

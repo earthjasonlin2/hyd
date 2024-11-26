@@ -1,0 +1,57 @@
+{
+    "Type": "Action",
+    "Name": "降魔·護法夜叉",
+    "Title": "魈·降魔",
+    "Desc": "諸悪よ、散れ。",
+    "Source": "キャッツテールで魈を招待して対戦し、対応する挑戦目標をクリアすることで獲得",
+    "Icon": "UI_Gcg_CardFace_Modify_Constellation_Xiao",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_ANEMO",
+            "count": 3
+        },
+        {
+            "costType": "GCG_COST_ENERGY",
+            "count": 2
+        }
+    ],
+    "Tag": [
+        "天賦",
+        "戦闘アクション"
+    ],
+    "Talent": {
+        "Name": "降魔·護法夜叉",
+        "Desc": "$[K1]：味方の出撃キャラが<color=#FFFFFFFF>$[A1504]</color>の時、このカードを装備できる。\\n$[A1504]がこのカードを装備した後、直ちに<color=#FFD780FF>$[S15043]</color>を1回発動する。\\nこのカードを装備した$[A1504]が<color=#FFFFFFFF>$[C115041]</color>を付与されている間、<color=#FFFFFFFF>$[S15042]</color>を発動する時に必要な{SPRITE_PRESET#1105}<color=#80FFD7FF>風元素</color>-1。（<color=#FFFFFFFF>$[C115041]</color>が1回付与されるたびに、2回発動可能）\\n（このカードはデッキに$[A1504]が含まれている場合のみ、デッキに追加できる）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>戦闘アクション</color>",
+                "Desc": "味方が戦闘アクションを1回行った後、相手のターンに移ります。\\n<color=#FFFFFFFF>このようなルールを持つ手札を出すのはクイックアクションではなく、戦闘アクションと見なされます。</color>"
+            },
+            "A1504": "降魔·護法夜叉",
+            "S15043": "S15043",
+            "C115041": {
+                "Name": "夜叉の儺面",
+                "Desc": "付与されたキャラの$[K100]が$[K105]へと変わり、与える$[K105]+1。\\n<color=#FFFFFFFF>付与されたキャラが$[K52]を行う時</color>、ダメージがさらに+2。\\n<color=#FFFFFFFF>付与されたキャラが出撃キャラ、かつ味方が「キャラチェンジ」を行う時</color>、必要な元素サイコロの数-1。（各ラウンドで1回のみ）\\n<color=#FFFFFFFF>$[K4]：2</color>",
+                "Child": {
+                    "K100": {
+                        "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>",
+                        "Desc": "物理ダメージは元素付着させたり、元素反応を起こしたりはしません。"
+                    },
+                    "K105": {
+                        "Name": "{SPRITE_PRESET#2105}<color=#80FFD7FF>風元素ダメージ</color>",
+                        "Desc": "付着した元素と以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2101}<color=#FFFFFFFF>拡散（氷）</color>：目標以外の相手チーム全員に氷元素ダメージを1与える\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2102}<color=#FFFFFFFF>拡散（水）</color>：目標以外の相手チーム全員に水元素ダメージを1与える\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2103}<color=#FFFFFFFF>拡散（炎）</color>：目標以外の相手チーム全員に炎元素ダメージを1与える\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2104}<color=#FFFFFFFF>拡散（雷）</color>：目標以外の相手チーム全員に雷元素ダメージを1与える"
+                    },
+                    "K52": {
+                        "Name": "<color=#FFFFFFFF>落下攻撃</color>",
+                        "Desc": "キャラを「出撃キャラ」にチェンジした後、本ラウンドにおける次の戦闘アクションが「通常攻撃」の場合、「落下攻撃」として見なされる。"
+                    },
+                    "K4": {
+                        "Name": "<color=#FFFFFFFF>継続ラウンド数</color>",
+                        "Desc": "各ラウンドのエンドフェーズで、<color=#FFFFFFFF>継続ラウンド数</color>が1マイナスされます。\\n<color=#FFFFFFFF>継続ラウンド数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                    }
+                }
+            },
+            "S15042": "S15042"
+        }
+    }
+}

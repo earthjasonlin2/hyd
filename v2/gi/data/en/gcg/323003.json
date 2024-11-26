@@ -1,0 +1,32 @@
+{
+    "Type": "Action",
+    "Name": "Red Feather Fan",
+    "Title": "Ineffable Breeze: Red Feather Fan",
+    "Desc": "Legend has it that this fan is capable of unleashing various effects in the hands of a tengu warrior.\\nBut in the hands of an ordinary person, it only possesses the power to \"make one's body lighter.\"\\nEven so, this degree of power is more than useful for the average individual.",
+    "Source": "",
+    "Icon": "UI_Gcg_CardFace_Assist_Prop_Hongye",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PAIMON",
+            "count": 2
+        },
+        {}
+    ],
+    "Tag": [
+        "Item"
+    ],
+    "Talent": {
+        "Name": "Red Feather Fan",
+        "Desc": "<color=#FFFFFFFF>After you switch characters:</color> The next Switch Character action you perform this Round will be considered a $[K2] instead of a $[K1]. It will also cost 1 less Elemental Die. (Once per Round)",
+        "Child": {
+            "K2": {
+                "Name": "<color=#FFFFFFFF>Fast Action</color>",
+                "Desc": "You can continue with other actions after conducting 1 Fast Action.\\nOnly after conducting 1 Combat Action will the turn pass over to your opponent."
+            },
+            "K1": {
+                "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+            }
+        }
+    }
+}

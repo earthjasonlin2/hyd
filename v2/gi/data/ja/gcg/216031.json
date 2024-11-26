@@ -1,0 +1,35 @@
+{
+    "Type": "Action",
+    "Name": "贅沢な食饌",
+    "Title": "鍾離·贅沢な食饌",
+    "Desc": "百川千仞、万古不易。",
+    "Source": "キャッツテールで鍾離を招待して対戦し、対応する挑戦目標をクリアすることで獲得",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Zhongli",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_GEO",
+            "count": 5
+        },
+        {}
+    ],
+    "Tag": [
+        "天賦",
+        "戦闘アクション"
+    ],
+    "Talent": {
+        "Name": "贅沢な食饌",
+        "Desc": "$[K1]：味方の出撃キャラが<color=#FFFFFFFF>$[A1603]</color>の時、このカードを装備できる。\\n$[A1603]がこのカードを装備した後、直ちに<color=#FFD780FF>$[S16033]</color>を1回発動する。\\nこのカードを装備した$[A1603]のHPが7以上の時、$[A1603]の与えるダメージと味方の召喚物の与える$[K106]+1。\\n（このカードはデッキに$[A1603]が含まれている場合のみ、デッキに追加できる）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>戦闘アクション</color>",
+                "Desc": "味方が戦闘アクションを1回行った後、相手のターンに移ります。\\n<color=#FFFFFFFF>このようなルールを持つ手札を出すのはクイックアクションではなく、戦闘アクションと見なされます。</color>"
+            },
+            "A1603": "贅沢な食饌",
+            "S16033": "S16033",
+            "K106": {
+                "Name": "{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素ダメージ</color>",
+                "Desc": "付着した元素と以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2101}<color=#FFFFFFFF>結晶（氷）</color>：ダメージ+1、味方の出撃キャラはシールドを1獲得する（最大2まで重ねられる）\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2102}<color=#FFFFFFFF>結晶（水）</color>：ダメージ+1、味方の出撃キャラはシールドを1獲得する（最大2まで重ねられる）\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2103}<color=#FFFFFFFF>結晶（炎）</color>：ダメージ+1、味方の出撃キャラはシールドを1獲得する（最大2まで重ねられる）\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2104}<color=#FFFFFFFF>結晶（雷）</color>：ダメージ+1、味方の出撃キャラはシールドを1獲得する（最大2まで重ねられる）"
+            }
+        }
+    }
+}

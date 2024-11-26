@@ -1,0 +1,62 @@
+{
+    "Name": "돌격 특화 타입 장치",
+    "Desc": "「정찰 기록 타입」처럼, 최초로 설계 및 제작된 신식 태엽 장치 기계 중 하나. (수백 년이 지난 지금, 더 이상 이걸 「신식」이라 부르는 사람은 없다. 당시 전통적인 태엽 동력 기계 장치와 구분하기 위해 사용하던 명칭이었다)\\n발명자의 친구를 기념하기 위해 만들어진 이름이며, 최초의 설계 목적은 사람을 돕는 것이었다. 하지만 이후 사용자들은 보편적으로 이것으로 사람을 대신 공격하는 게 더 도움이 된다고 여겼다",
+    "Icon": "UI_MonsterIcon_MachinaIustitia_Ruggiero_01",
+    "Codex": "AUTOMATRON",
+    "Title": "돌격 특화 타입",
+    "SpecialNames": [
+        "슈르비우스 타입 장치"
+    ],
+    "Reward": [],
+    "Child": {
+        "24068801": {
+            "MonsterName": "MachinaIustitia_Ruggiero_Codex",
+            "Type": "MONSTER_ORDINARY",
+            "HpDrops": [
+                {
+                    "dropId": 22010010,
+                    "hpPercent": 75
+                },
+                {
+                    "dropId": 22010010,
+                    "hpPercent": 50
+                },
+                {
+                    "dropId": 22010010,
+                    "hpPercent": 25
+                }
+            ],
+            "KillDropId": 22010030,
+            "Prop": [
+                {
+                    "type": "FIGHT_PROP_BASE_HP",
+                    "growCurve": "GROW_CURVE_HP_2"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_ATTACK",
+                    "growCurve": "GROW_CURVE_ATTACK_2"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_DEFENSE",
+                    "growCurve": "GROW_CURVE_DEFENSE"
+                }
+            ],
+            "LocalLegend": false,
+            "SubHurt": {
+                "Fire": 0.1000000014901,
+                "Grass": 0.1000000014901,
+                "Water": 0.1000000014901,
+                "Elec": 0.1000000014901,
+                "Wind": 0.1000000014901,
+                "Ice": 0.1000000014901,
+                "Rock": 0.1000000014901,
+                "Physical": 0.1000000014901
+            },
+            "Base": {
+                "HP": 65.2032012939453,
+                "ATK": 62.7999992370605,
+                "DEF": 500
+            }
+        }
+    }
+}

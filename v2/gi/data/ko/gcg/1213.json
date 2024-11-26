@@ -1,0 +1,208 @@
+{
+    "Type": "Character",
+    "Name": "시그윈",
+    "Title": "용의 딸의 화려한 변신·시그윈",
+    "Desc": "「순수한 영혼이여, 제 소원을 들어주소서」",
+    "Source": "캣테일 술집에서 시그윈 초대 및 친선 대전 난이도 승리 후 획득",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Sigewinne",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "물 원소",
+        "활",
+        "폰타인",
+        "아르케의 힘: 우시아"
+    ],
+    "Talent": {
+        "12131": {
+            "Name": "표적 치료",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "12132": {
+            "Name": "통통 물요법",
+            "Desc": "<color=#FFFFFFFF>$[C112131]</color>를 1장 생성해 해당 카드를 아군 카드 더미 맨 위의 세 번째 카드 자리에 넣고, 본 캐릭터에게 <color=#FFFFFFFF>$[C122]</color>을 3스택 부착한다. (<color=#FFFFFFFF>$[C112131]</color>의 효과 발동 후, <color=#FFFFFFFF>$[C112132]</color>을 생성해 상대의 카드 더미에 넣는다. <color=#FFFFFFFF>$[C112132]</color>의 효과 발동 후, <color=#FFFFFFFF>$[C112133]</color>를 생성해 아군 카드 더미에 넣는다)",
+            "Child": {
+                "C112131": {
+                    "Name": "치료 방울·대",
+                    "Desc": "<color=#FFFFFFFF>해당 카드 드로우 시:</color> 아군 출전 캐릭터의 HP를 3pt 치유하고, <color=#FFFFFFFF>$[C112132]</color>을 1장 생성해서 상대 카드 더미 맨 위의 두 번째 카드 자리에 놓는다.",
+                    "Child": {
+                        "C112132": {
+                            "Name": "치료 방울·중",
+                            "Desc": "<color=#FFFFFFFF>해당 카드 드로우 시:</color> 소속 진영의 출전 캐릭터에게 $[K102]를 2pt 주고, <color=#FFFFFFFF>$[C112133]</color>를 1장 생성해서 상대 카드 더미 맨 위에 놓는다.",
+                            "Child": {
+                                "K102": {
+                                    "Name": "{SPRITE_PRESET#2102}<color=#80C0FFFF>물 원소 피해</color>",
+                                    "Desc": "{SPRITE_PRESET#2102}물 원소 부착 시 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2103}<color=#FFFFFFFF>증발</color>: 이번 피해+2pt\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}<color=#FFFFFFFF>감전</color>: 이번 피해+1pt, 대상 이외의 모든 상대 캐릭터에게 관통 피해를 1pt 준다.\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2101}<color=#FFFFFFFF>빙결</color>: 이번 피해+1pt, 이번 턴에 대상을 행동 불가로 만든다. (물리 피해 또는 불 원소 피해를 받으면 조기 해제되지만, 해당 피해로 받는 피해량이 2pt 추가된다)\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}<color=#FFFFFFFF>개화</color>: 이번 피해+1pt, 다음번 불 원소 또는 번개 원소 피해를 2pt 증가시키는 [<color=#FFFFFFFF>풀 원핵</color>]을 생성한다."
+                                },
+                                "C112133": {
+                                    "Name": "치료 방울·소",
+                                    "Desc": "<color=#FFFFFFFF>해당 카드 드로우 시:</color> 모든 아군 캐릭터의 HP를 1pt 치유하고 <color=#FFFFFFFF>$[C112101]</color>을 생성한다.",
+                                    "Child": {
+                                        "C112101": {
+                                            "Name": "원천의 방울",
+                                            "Desc": "<color=#FFFFFFFF>$[A1210]가 일반 공격 후:</color> $[A1210]의 HP를 2pt 치유하고, 만약 $[A1210]가 아군의 「출전 캐릭터」인 경우 <color=#FFFFFFFF>$[K1020]</color>의 $[K53]를 한다.\\n<color=#FFFFFFFF>$[K3]: 1</color>(중첩 가능, 최대 중첩수: 3회)",
+                                            "Child": {
+                                                "A1210": "시그윈",
+                                                "K1020": {
+                                                    "Name": "<color=#FFFFFFFF>공정한 판결</color>",
+                                                    "Desc": "<color=#D3BC8E>일반 공격</color>\\n(1차례 행동 준비 필요)\\n{SPRITE_PRESET#2102}<color=#80C0FFFF>물 원소 피해</color>를 2pt 준다. 만약 본 캐릭터의 HP가 6pt 이상일 경우, 1pt의 피해를 더 주고, 자신에게 관통 피해를 1pt 준다."
+                                                },
+                                                "K53": {
+                                                    "Name": "<color=#FFFFFFFF>스킬 준비</color>",
+                                                    "Desc": "일부 스킬은 바로 발동할 수 없고, 일정 횟수의 행동 순서 동안 <color=#FFFFFFFF>준비</color>를 해야 한다.\\n한 플레이어의 행동 순서가 됐을 때, 해당 플레이어의 「출전 캐릭터」가 현재 스킬을 <color=#FFFFFFFF>준비</color> 중이면 해당 플레이어의 행동을 건너뛴다. 스킬 <color=#FFFFFFFF>준비</color>를 끝냈을 경우, 캐릭터는 해당 스킬을 즉시 발동한다. (<color=#FFFFFFFF>준비</color>가 필요한 유형의 스킬은 「스킬 사용 후」 및 「캐릭터가 원소 반응 발동 후」 등의 효과를 발동할 수 없다)\\n오직 「출전 캐릭터」만 스킬을 <color=#FFFFFFFF>준비</color>할 수 있다. 만약 스킬을 <color=#FFFFFFFF>준비</color> 중인 「출전 캐릭터」가 교체되어 대기 상태가 되면, 스킬의 <color=#FFFFFFFF>준비</color>가 중단된다."
+                                                },
+                                                "K3": {
+                                                    "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                                                    "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "C122": {
+                    "Name": "생명의 계약",
+                    "Desc": "<color=#FFFFFFFF>부착 캐릭터가 치유를 받을 시:</color> 해당 효과의 $[K3] 1회당 1회 소모해 받는 치유 효과를 1pt 상쇄한다.(부활 또는 HP 분배로 받은 치유는 상쇄할 수 없음)\\n<color=#FFFFFFFF>$[K3]: 1</color> (중첩 가능, 상한 없음)",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3
+            }
+        },
+        "12133": {
+            "Name": "정성 듬뿍 주사",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[S12135]</color>의 $[K53]를 한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "D__KEY__DAMAGE": 2,
+                "S12135": "S12135",
+                "K53": {
+                    "Name": "<color=#FFFFFFFF>스킬 준비</color>",
+                    "Desc": "일부 스킬은 바로 발동할 수 없고, 일정 횟수의 행동 순서 동안 <color=#FFFFFFFF>준비</color>를 해야 한다.\\n한 플레이어의 행동 순서가 됐을 때, 해당 플레이어의 「출전 캐릭터」가 현재 스킬을 <color=#FFFFFFFF>준비</color> 중이면 해당 플레이어의 행동을 건너뛴다. 스킬 <color=#FFFFFFFF>준비</color>를 끝냈을 경우, 캐릭터는 해당 스킬을 즉시 발동한다. (<color=#FFFFFFFF>준비</color>가 필요한 유형의 스킬은 「스킬 사용 후」 및 「캐릭터가 원소 반응 발동 후」 등의 효과를 발동할 수 없다)\\n오직 「출전 캐릭터」만 스킬을 <color=#FFFFFFFF>준비</color>할 수 있다. 만약 스킬을 <color=#FFFFFFFF>준비</color> 중인 「출전 캐릭터」가 교체되어 대기 상태가 되면, 스킬의 <color=#FFFFFFFF>준비</color>가 중단된다."
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "12134": {
+            "Name": "세심한 진료",
+            "Desc": "[패시브] 아군 캐릭터가 치유를 받아 부착된 <color=#FFFFFFFF>$[C122]</color>이 완전히 제거된 후, 해당 캐릭터가 추가로 HP 최대치를 1pt 획득한다. (캐릭터마다 최대 3회 발동)\\n<color=#FFFFFFFF>아군이 본 캐릭터로 교체 시: </color>아군 필드에 <color=#FFFFFFFF>$[C112101]</color>이 있을 경우 $[K3]-1, 본 캐릭터가 $[K310]를 1pt 획득한다.",
+            "Child": {
+                "C122": {
+                    "Name": "생명의 계약",
+                    "Desc": "<color=#FFFFFFFF>부착 캐릭터가 치유를 받을 시:</color> 해당 효과의 $[K3] 1회당 1회 소모해 받는 치유 효과를 1pt 상쇄한다.(부활 또는 HP 분배로 받은 치유는 상쇄할 수 없음)\\n<color=#FFFFFFFF>$[K3]: 1</color> (중첩 가능, 상한 없음)",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                },
+                "C112101": {
+                    "Name": "원천의 방울",
+                    "Desc": "<color=#FFFFFFFF>$[A1210]가 일반 공격 후:</color> $[A1210]의 HP를 2pt 치유하고, 만약 $[A1210]가 아군의 「출전 캐릭터」인 경우 <color=#FFFFFFFF>$[K1020]</color>의 $[K53]를 한다.\\n<color=#FFFFFFFF>$[K3]: 1</color>(중첩 가능, 최대 중첩수: 3회)",
+                    "Child": {
+                        "A1210": "시그윈",
+                        "K1020": {
+                            "Name": "<color=#FFFFFFFF>공정한 판결</color>",
+                            "Desc": "<color=#D3BC8E>일반 공격</color>\\n(1차례 행동 준비 필요)\\n{SPRITE_PRESET#2102}<color=#80C0FFFF>물 원소 피해</color>를 2pt 준다. 만약 본 캐릭터의 HP가 6pt 이상일 경우, 1pt의 피해를 더 주고, 자신에게 관통 피해를 1pt 준다."
+                        },
+                        "K53": {
+                            "Name": "<color=#FFFFFFFF>스킬 준비</color>",
+                            "Desc": "일부 스킬은 바로 발동할 수 없고, 일정 횟수의 행동 순서 동안 <color=#FFFFFFFF>준비</color>를 해야 한다.\\n한 플레이어의 행동 순서가 됐을 때, 해당 플레이어의 「출전 캐릭터」가 현재 스킬을 <color=#FFFFFFFF>준비</color> 중이면 해당 플레이어의 행동을 건너뛴다. 스킬 <color=#FFFFFFFF>준비</color>를 끝냈을 경우, 캐릭터는 해당 스킬을 즉시 발동한다. (<color=#FFFFFFFF>준비</color>가 필요한 유형의 스킬은 「스킬 사용 후」 및 「캐릭터가 원소 반응 발동 후」 등의 효과를 발동할 수 없다)\\n오직 「출전 캐릭터」만 스킬을 <color=#FFFFFFFF>준비</color>할 수 있다. 만약 스킬을 <color=#FFFFFFFF>준비</color> 중인 「출전 캐릭터」가 교체되어 대기 상태가 되면, 스킬의 <color=#FFFFFFFF>준비</color>가 중단된다."
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                },
+                "K3": {
+                    "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                    "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                },
+                "K310": {
+                    "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}원소 에너지</color>",
+                    "Desc": "캐릭터가 「원소폭발」을 사용하려면 {SPRITE_PRESET#1110}원소 에너지를 소모해야 한다.\\n캐릭터가 「원소전투 스킬」 또는 「일반 공격」을 사용하면 {SPRITE_PRESET#1110}원소 에너지를 1pt 획득한다."
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        },
+        "12135": {
+            "Name": "정성과 약 뿌리기",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {}
+        },
+        "12136": {
+            "Name": "세심한 진료",
+            "Desc": "",
+            "Child": {},
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        },
+        "12137": {
+            "Name": "세심한 진료",
+            "Desc": "[패시브] <color=#FFFFFFFF>아군이 본 캐릭터로 교체 시:</color> 아군 필드에 <color=#FFFFFFFF>$[C112101]</color>이 있을 경우 $[K3]-1, 본 캐릭터가 $[K310]를 1pt 획득한다.",
+            "Child": {
+                "C112101": {
+                    "Name": "원천의 방울",
+                    "Desc": "<color=#FFFFFFFF>$[A1210]가 일반 공격 후:</color> $[A1210]의 HP를 2pt 치유하고, 만약 $[A1210]가 아군의 「출전 캐릭터」인 경우 <color=#FFFFFFFF>$[K1020]</color>의 $[K53]를 한다.\\n<color=#FFFFFFFF>$[K3]: 1</color>(중첩 가능, 최대 중첩수: 3회)",
+                    "Child": {
+                        "A1210": "시그윈",
+                        "K1020": {
+                            "Name": "<color=#FFFFFFFF>공정한 판결</color>",
+                            "Desc": "<color=#D3BC8E>일반 공격</color>\\n(1차례 행동 준비 필요)\\n{SPRITE_PRESET#2102}<color=#80C0FFFF>물 원소 피해</color>를 2pt 준다. 만약 본 캐릭터의 HP가 6pt 이상일 경우, 1pt의 피해를 더 주고, 자신에게 관통 피해를 1pt 준다."
+                        },
+                        "K53": {
+                            "Name": "<color=#FFFFFFFF>스킬 준비</color>",
+                            "Desc": "일부 스킬은 바로 발동할 수 없고, 일정 횟수의 행동 순서 동안 <color=#FFFFFFFF>준비</color>를 해야 한다.\\n한 플레이어의 행동 순서가 됐을 때, 해당 플레이어의 「출전 캐릭터」가 현재 스킬을 <color=#FFFFFFFF>준비</color> 중이면 해당 플레이어의 행동을 건너뛴다. 스킬 <color=#FFFFFFFF>준비</color>를 끝냈을 경우, 캐릭터는 해당 스킬을 즉시 발동한다. (<color=#FFFFFFFF>준비</color>가 필요한 유형의 스킬은 「스킬 사용 후」 및 「캐릭터가 원소 반응 발동 후」 등의 효과를 발동할 수 없다)\\n오직 「출전 캐릭터」만 스킬을 <color=#FFFFFFFF>준비</color>할 수 있다. 만약 스킬을 <color=#FFFFFFFF>준비</color> 중인 「출전 캐릭터」가 교체되어 대기 상태가 되면, 스킬의 <color=#FFFFFFFF>준비</color>가 중단된다."
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                },
+                "K3": {
+                    "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                    "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                },
+                "K310": {
+                    "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}원소 에너지</color>",
+                    "Desc": "캐릭터가 「원소폭발」을 사용하려면 {SPRITE_PRESET#1110}원소 에너지를 소모해야 한다.\\n캐릭터가 「원소전투 스킬」 또는 「일반 공격」을 사용하면 {SPRITE_PRESET#1110}원소 에너지를 1pt 획득한다."
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 212131
+}

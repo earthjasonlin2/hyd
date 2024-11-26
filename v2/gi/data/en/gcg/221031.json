@@ -1,0 +1,39 @@
+{
+    "Type": "Action",
+    "Name": "Sternfrost Prism",
+    "Title": "Cryo Hypostasis: Sternfrost Prism",
+    "Desc": "Despite its highly stable form and almost machine-like movements, it must still meticulously defend its weak spot...",
+    "Source": "Reward for accepting the Tavern Challenge against the Cryo Hypostasis at The Cat's Tail and achieving all corresponding challenge objectives in a Friendly Fracas",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_EffigyIce",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_CRYO",
+            "count": 1
+        },
+        {}
+    ],
+    "Tag": [
+        "Talent"
+    ],
+    "Talent": {
+        "Name": "Sternfrost Prism",
+        "Desc": "Can only be played if your active character is <color=#FFFFFFFF>$[A2103]</color>: Attach <color=#FFFFFFFF>$[C121034]</color> to them.\\nAfter $[A2103], who has this card equipped, triggers <color=#FFFFFFFF>$[C121034]</color>: Attach <color=#FFFFFFFF>$[K1016]</color> to the opposing active character.\\n(Your deck must contain $[A2103] to add this card to your deck)",
+        "Child": {
+            "A2103": "Sternfrost Prism",
+            "C121034": {
+                "Name": "Cryo Crystal Core",
+                "Desc": "<color=#FFFFFFFF>When the character to which this is attached would be defeated:</color> Remove this effect, ensure the character $[K54|s1], and heal them to 1 HP.",
+                "Child": {
+                    "K54": {
+                        "Name": "<color=#FFFFFFFF>Immunity to Defeat</color>|s1:<color=#FFFFFFFF>will not be defeated</color>",
+                        "Desc": "Certain effects will grant characters an <color=#FFFFFFFF>immunity to being defeated</color> when their HP hits 0, and will heal them for a certain amount thereafter.\\nWhen this occurs, characters will not be regarded as having experienced a <color=#FFFFFFFF>defeat.</color> (Hence, their attached equipment and statuses will not be removed, and their Energy will remain uncleared.)"
+                    }
+                }
+            },
+            "K1016": {
+                "Name": "Sheer Cold",
+                "Desc": "<color=#FFFFFFFF>End Phase:</color> Deal 1 {SPRITE_PRESET#2101}<color=#99FFFFFF>Cryo DMG</color> to the character to which this is attached.\\n<color=#FFFFFFFF><color=#FFFFFFFF>Usage(s)</color>:1</color> (When the character with this attached has <color=#FFFFFFFF>Blazing Heat</color> attached to them, remove this effect.)"
+            }
+        }
+    }
+}

@@ -1,0 +1,119 @@
+{
+    "Type": "Character",
+    "Name": "도금 여단·모래의 이야기꾼",
+    "Title": "시와 비사·모래의 이야기꾼",
+    "Desc": "오늘날에도 여전히 이야기를 기억하는 자는 몸속에 흐르는 사막의 피를 배신하지 않을 것이다",
+    "Source": "캣테일 술집의 왕자님을 통해 술집 도전 진행 및 친선 대전 난이도의 도금 여단·모래의 이야기꾼에게 승리 후 획득",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_Muscleman",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "불 원소",
+        "기타 무기",
+        "도금 여단"
+    ],
+    "Talent": {
+        "23031": {
+            "Name": "용해의 빛",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO",
+                "D__KEY__DAMAGE": 1
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "23032": {
+            "Name": "화염 결정 쇄도",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[C123032]</color>을 1스택 생성한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO",
+                "D__KEY__DAMAGE": 3,
+                "C123032": {
+                    "Name": "마의 전갈 축복",
+                    "Desc": "<color=#FFFFFFFF>아군이 $[K58] $[C123031] 사용 시:</color> 해당 효과가 제거되고, <color=#FFFFFFFF>「마의 전갈 축복」</color> 1스택당 해당 $[K58]이 주는 피해+1pt\\n(<color=#FFFFFFFF>「마의 전갈 축복」</color>의 스택은 무제한 중첩 가능)",
+                    "Child": {
+                        "K58": {
+                            "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#3008}특수 스킬</color>",
+                            "Desc": "출전 캐릭터가 「{SPRITE_PRESET#3008}특수 스킬」 카드 장착 시, 상응하는 「{SPRITE_PRESET#3008}특수 스킬」을 사용할 수 있다.\\n「{SPRITE_PRESET#3008}특수 스킬」 사용은 「전투 행동」으로 간주한다. 캐릭터가 빙결, 석화, 기절 등의 원인으로 스킬 사용 불가 시, 「{SPRITE_PRESET#3008}특수 스킬」 역시 사용할 수 없다.\\n캐릭터가 「{SPRITE_PRESET#3008}특수 스킬」 사용 시, 스킬 사용으로 간주하지 않아, 「스킬 사용 후」 「캐릭터가 원소 반응 발동 후」 등의 효과를 발동할 수 없다. 캐릭터가 「{SPRITE_PRESET#3008}특수 스킬」로 주는 피해는 캐릭터가 주는 피해로 간주하지 않는다"
+                        },
+                        "C123031": {
+                            "Name": "악령·마의 화염 전갈",
+                            "Desc": "<color=#FFFFFFFF>부착 캐릭터가 피해를 받을 시: </color>가능할 경우, 원소 에너지를 1pt 소모해 피해를 1pt 상쇄하고 <color=#FFFFFFFF>$[C123032]</color>을 생성한다. (턴당 최대 2회)\\n$[K58]：$[S1230311]\\n<color=#FFFFFFFF>$[K3]: 1</color>\\n(캐릭터는 「{SPRITE_PRESET#3008}특수 스킬」을 1개만 장착할 수 있다)",
+                            "Child": {
+                                "K58": {
+                                    "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#3008}특수 스킬</color>",
+                                    "Desc": "출전 캐릭터가 「{SPRITE_PRESET#3008}특수 스킬」 카드 장착 시, 상응하는 「{SPRITE_PRESET#3008}특수 스킬」을 사용할 수 있다.\\n「{SPRITE_PRESET#3008}특수 스킬」 사용은 「전투 행동」으로 간주한다. 캐릭터가 빙결, 석화, 기절 등의 원인으로 스킬 사용 불가 시, 「{SPRITE_PRESET#3008}특수 스킬」 역시 사용할 수 없다.\\n캐릭터가 「{SPRITE_PRESET#3008}특수 스킬」 사용 시, 스킬 사용으로 간주하지 않아, 「스킬 사용 후」 「캐릭터가 원소 반응 발동 후」 등의 효과를 발동할 수 없다. 캐릭터가 「{SPRITE_PRESET#3008}특수 스킬」로 주는 피해는 캐릭터가 주는 피해로 간주하지 않는다"
+                                },
+                                "S1230311": "S1230311",
+                                "K3": {
+                                    "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                                    "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 3
+            }
+        },
+        "23033": {
+            "Name": "악령 소생·마의 화염 전갈",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다. 대전당 1회 제한: <color=#FFFFFFFF>$[C123031]</color> 1장을 아군 핸드 카드로 가져온다.\\n(<color=#FFFFFFFF>$[C123031]</color>을 장착한 캐릭터는 특수 스킬 사용 가능: <color=#FFFFFFFF>$[S1230311]</color>)",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO",
+                "D__KEY__DAMAGE": 3,
+                "C123031": {
+                    "Name": "악령·마의 화염 전갈",
+                    "Desc": "<color=#FFFFFFFF>부착 캐릭터가 피해를 받을 시: </color>가능할 경우, 원소 에너지를 1pt 소모해 피해를 1pt 상쇄하고 <color=#FFFFFFFF>$[C123032]</color>을 생성한다. (턴당 최대 2회)\\n$[K58]：$[S1230311]\\n<color=#FFFFFFFF>$[K3]: 1</color>\\n(캐릭터는 「{SPRITE_PRESET#3008}특수 스킬」을 1개만 장착할 수 있다)",
+                    "Child": {
+                        "C123032": {
+                            "Name": "마의 전갈 축복",
+                            "Desc": "<color=#FFFFFFFF>아군이 $[K58] $[C123031] 사용 시:</color> 해당 효과가 제거되고, <color=#FFFFFFFF>「마의 전갈 축복」</color> 1스택당 해당 $[K58]이 주는 피해+1pt\\n(<color=#FFFFFFFF>「마의 전갈 축복」</color>의 스택은 무제한 중첩 가능)",
+                            "Child": {
+                                "K58": {
+                                    "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#3008}특수 스킬</color>",
+                                    "Desc": "출전 캐릭터가 「{SPRITE_PRESET#3008}특수 스킬」 카드 장착 시, 상응하는 「{SPRITE_PRESET#3008}특수 스킬」을 사용할 수 있다.\\n「{SPRITE_PRESET#3008}특수 스킬」 사용은 「전투 행동」으로 간주한다. 캐릭터가 빙결, 석화, 기절 등의 원인으로 스킬 사용 불가 시, 「{SPRITE_PRESET#3008}특수 스킬」 역시 사용할 수 없다.\\n캐릭터가 「{SPRITE_PRESET#3008}특수 스킬」 사용 시, 스킬 사용으로 간주하지 않아, 「스킬 사용 후」 「캐릭터가 원소 반응 발동 후」 등의 효과를 발동할 수 없다. 캐릭터가 「{SPRITE_PRESET#3008}특수 스킬」로 주는 피해는 캐릭터가 주는 피해로 간주하지 않는다"
+                                }
+                            }
+                        },
+                        "K58": {
+                            "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#3008}특수 스킬</color>",
+                            "Desc": "출전 캐릭터가 「{SPRITE_PRESET#3008}특수 스킬」 카드 장착 시, 상응하는 「{SPRITE_PRESET#3008}특수 스킬」을 사용할 수 있다.\\n「{SPRITE_PRESET#3008}특수 스킬」 사용은 「전투 행동」으로 간주한다. 캐릭터가 빙결, 석화, 기절 등의 원인으로 스킬 사용 불가 시, 「{SPRITE_PRESET#3008}특수 스킬」 역시 사용할 수 없다.\\n캐릭터가 「{SPRITE_PRESET#3008}특수 스킬」 사용 시, 스킬 사용으로 간주하지 않아, 「스킬 사용 후」 「캐릭터가 원소 반응 발동 후」 등의 효과를 발동할 수 없다. 캐릭터가 「{SPRITE_PRESET#3008}특수 스킬」로 주는 피해는 캐릭터가 주는 피해로 간주하지 않는다"
+                        },
+                        "S1230311": "S1230311",
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                },
+                "S1230311": "S1230311"
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "23034": {
+            "Name": "악령의 힘",
+            "Desc": "[패시브] <color=#FFFFFFFF>이 캐릭터가 피해를 받은 후: </color>이 캐릭터의 HP가 7pt 이하이면 $[K310]를 1pt 획득한다. (턴당 1회)",
+            "Child": {
+                "K310": {
+                    "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}원소 에너지</color>",
+                    "Desc": "캐릭터가 「원소폭발」을 사용하려면 {SPRITE_PRESET#1110}원소 에너지를 소모해야 한다.\\n캐릭터가 「원소전투 스킬」 또는 「일반 공격」을 사용하면 {SPRITE_PRESET#1110}원소 에너지를 1pt 획득한다."
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 223031
+}

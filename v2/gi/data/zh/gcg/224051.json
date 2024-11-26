@@ -1,0 +1,35 @@
+{
+    "Type": "Action",
+    "Name": "亡雷凝蓄",
+    "Title": "圣骸毒蝎·亡雷凝蓄",
+    "Desc": "生物有其进化之法则，而圣骸兽的法则则是拥有足够的运气，能在同族之前发现在遥远过去就已亡殁的强大生灵遗骸。",
+    "Source": "在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度圣骸毒蝎中完成挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_ScorpionSacred",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_ELECTRO",
+            "count": 1
+        },
+        {}
+    ],
+    "Tag": [
+        "天赋"
+    ],
+    "Talent": {
+        "Name": "亡雷凝蓄",
+        "Desc": "<color=#FFFFFFFF>入场时：</color>生成1张<color=#FFFFFFFF>$[C124051]</color>，置入我方手牌。\\n装备有此牌的<color=#FFFFFFFF>$[A2405]</color>在场，我方打出<color=#FFFFFFFF>$[C124051]</color>后：抓1张牌，然后生成1张<color=#FFFFFFFF>$[C124051]</color>，随机置入我方牌库中。\\n（牌组中包含$[A2405]，才能加入牌组）",
+        "Child": {
+            "C124051": {
+                "Name": "噬骸能量块",
+                "Desc": "随机$[K56]1张原本元素骰费用最高的手牌，生成1个我方出战角色类型的元素骰。（每回合最多打出1张）",
+                "Child": {
+                    "K56": {
+                        "Name": "<color=#FFFFFFFF>舍弃</color>",
+                        "Desc": "通过行动牌或角色技能的效果，将行动牌从手牌或牌库中弃置。"
+                    }
+                }
+            },
+            "A2405": "亡雷凝蓄"
+        }
+    }
+}

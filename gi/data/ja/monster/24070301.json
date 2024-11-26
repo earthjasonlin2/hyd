@@ -1,0 +1,62 @@
+{
+    "Name": "氷風組曲",
+    "Desc": "フォンテーヌ科学院が開発したオートマタの踊り子。\\nボシュエの最初の構想では、奇械ダンサーは機械的な複製の時代を超えた芸術品だった。だがボシュエが退任を余儀なくされた後、同プロジェクトを引き継いだマイヤルデがオートマタと踊り子に対して独自の見解を持っていたため、世代を経るうちに奇械ダンサーは各機能の完成度が高まると同時に、ボシュエの設計の初心から徐々に逸脱していった。",
+    "Icon": "UI_MonsterIcon_MachinaIustitia_Nutcracker",
+    "Codex": "AUTOMATRON",
+    "Title": "「コペリウスの劫罰」",
+    "SpecialNames": [
+        "氷風組曲·陽"
+    ],
+    "Reward": [],
+    "Child": {
+        "24070301": {
+            "MonsterName": "Monster_MachinaIustitia_Nutcracker",
+            "Type": "MONSTER_BOSS",
+            "HpDrops": [
+                {
+                    "dropId": 22010030,
+                    "hpPercent": 75
+                },
+                {
+                    "dropId": 22010030,
+                    "hpPercent": 50
+                },
+                {
+                    "dropId": 22010030,
+                    "hpPercent": 25
+                }
+            ],
+            "KillDropId": 22010050,
+            "Prop": [
+                {
+                    "type": "FIGHT_PROP_BASE_HP",
+                    "growCurve": "GROW_CURVE_HP_2"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_ATTACK",
+                    "growCurve": "GROW_CURVE_ATTACK_2"
+                },
+                {
+                    "type": "FIGHT_PROP_BASE_DEFENSE",
+                    "growCurve": "GROW_CURVE_DEFENSE"
+                }
+            ],
+            "LocalLegend": false,
+            "SubHurt": {
+                "Fire": 0.1000000014901,
+                "Grass": 0.1000000014901,
+                "Water": 0.1000000014901,
+                "Elec": 0.1000000014901,
+                "Wind": 0.6999999880791,
+                "Ice": 0.6999999880791,
+                "Rock": 0.1000000014901,
+                "Physical": 0.1000000014901
+            },
+            "Base": {
+                "HP": 203.7599945068359,
+                "ATK": 62.7999992370605,
+                "DEF": 500
+            }
+        }
+    }
+}

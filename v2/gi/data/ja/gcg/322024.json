@@ -1,0 +1,32 @@
+{
+    "Type": "Action",
+    "Name": "太郎丸",
+    "Title": "太郎丸",
+    "Desc": "「木漏茶屋」の店主。店員全員が太郎丸と「契約」を結んでいると言われる…\\n昔「終末番」にいた頃、太郎丸は手練れの忍者と肩を並べ、社奉行のために尽力してきた。だがそのことは、ごく僅かな人しか知らない…",
+    "Source": "",
+    "Icon": "UI_Gcg_CardFace_Assist_NPC_Taroumaru",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_VOID",
+            "count": 2
+        },
+        {}
+    ],
+    "Tag": [
+        "仲間"
+    ],
+    "Talent": {
+        "Name": "太郎丸",
+        "Desc": "<color=#FFFFFFFF>登場時</color>、<color=#FFFFFFFF>$[K2001]</color>を4枚生成し、均等に味方の山札に配置する。\\n<color=#FFFFFFFF>味方が$[K2001]を2枚使用した後</color>、このカードを破棄し、<color=#FFFFFFFF>$[K1021]</color>を召喚する。",
+        "Child": {
+            "K2001": {
+                "Name": "太郎丸の貯金",
+                "Desc": "コスト：0{SPRITE_PRESET#1108}\\n{SPRITE_PRESET#1111}万能元素を1個生成する。"
+            },
+            "K1021": {
+                "Name": "怒った太郎丸",
+                "Desc": "<color=#FFFFFFFF>エンドフェーズ：</color>{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>を2与える。\\n<color=#FFFFFFFF><color=#FFFFFFFF>使用可能回数</color>：2</color>"
+            }
+        }
+    }
+}

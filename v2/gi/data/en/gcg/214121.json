@@ -1,0 +1,36 @@
+{
+    "Type": "Action",
+    "Name": "Dark-Shattering Flame",
+    "Title": "Dark-Shattering Flame",
+    "Desc": "\"Where evil lurks, shoot on sight!\"",
+    "Source": "Reward for inviting Clorinde to a duel at The Cat's Tail and achieving all corresponding challenge objectives",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Clorinde",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_ELECTRO",
+            "count": 2
+        },
+        {}
+    ],
+    "Tag": [
+        "Talent",
+        "Combat Action"
+    ],
+    "Talent": {
+        "Name": "Dark-Shattering Flame",
+        "Desc": "$[K1]: When your active character is <color=#FFFFFFFF>$[A1412]</color>, equip this card.\\nAfter $[A1412] equips this card, immediately use <color=#FFD780FF>$[S14122]</color> once.\\nAfter you trigger $[K214], +1 to the next instance of DMG $[A1214] deals this Round. (Up to 3 stacks, +3 DMG total)\\n(You must have $[A1412] in your deck to add this card to your deck.)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+            },
+            "A1412": "Dark-Shattering Flame",
+            "S14122": "S14122",
+            "K214": {
+                "Name": "<color=#FFACFFFF>{SPRITE_PRESET#2104}Electro-Related Reactions</color>",
+                "Desc": "{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Overloaded</color>: DMG +2 for this instance, the target is forcibly switched to the next character\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Superconduct</color>: DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Electro-Charged</color>: DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Quicken</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Catalyzing Field</color>] that grants +1 DMG to the next 2 instances of Dendro or Electro DMG\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Electro Crystallize</color>：DMG +1 for this instance, your active character gains 1 Shield point (Can stack, max 2 points)\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Electro Swirl</color>：Deal 1 Electro DMG to all opposing characters except the target"
+            },
+            "A1214": "Dark-Shattering Flame"
+        }
+    }
+}

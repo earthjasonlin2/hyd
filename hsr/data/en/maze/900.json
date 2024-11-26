@@ -1,0 +1,883 @@
+[
+    {
+        "Id": 21,
+        "Name": "Memory of Xianzhou (I)",
+        "GroupName": "The Voyage of Navis Astriger",
+        "Desc": "DMG dealt to enemy targets are <color=#f29e38ff>shared between all enemies</color>. When allies use <color=#f29e38ff>AoE or Blast ATK abilities</color>, increases DMG dealt by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.",
+        "Param": [
+            0.5000000004656613
+        ],
+        "Challenge": [
+            {
+                "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+                "Param": 6
+            },
+            {
+                "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+                "Param": 12
+            },
+            {
+                "Name": "Have no downed characters"
+            }
+        ],
+        "Countdown": 20,
+        "DamageType1": [
+            "Physical",
+            "Thunder"
+        ],
+        "DamageType2": [
+            "Fire",
+            "Wind",
+            "Imaginary"
+        ],
+        "MazeGroupID1": 8,
+        "MazeGroupID2": 9,
+        "NpcMonsterIDList1": [
+            8002010
+        ],
+        "NpcMonsterIDList2": [
+            2002010
+        ],
+        "EventIDList1": [
+            {
+                "StageID": 30002011,
+                "StageType": "Challenge",
+                "StageName": 1729957931,
+                "HardLevelGroup": 1,
+                "Level": 50,
+                "EliteGroup": 93,
+                "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+                "StageAbilityConfig": [],
+                "SubLevelGraphs": [],
+                "StageConfigData": [
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_Wave",
+                        "MOJJBFBKBNC": "3"
+                    },
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_IsEliteBattle",
+                        "MOJJBFBKBNC": "1"
+                    },
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_CreateBattleEvent",
+                        "MOJJBFBKBNC": "30036"
+                    }
+                ],
+                "MonsterList": [
+                    {
+                        "$type": "StageMonsterWave",
+                        "Monster0": 8001010,
+                        "Monster1": 8001050,
+                        "Monster2": 8001010,
+                        "Monster3": 8001050,
+                        "Monster4": 8001050
+                    },
+                    {
+                        "$type": "StageMonsterWave",
+                        "Monster0": 2012010,
+                        "Monster1": 2012010,
+                        "Monster2": 2012010,
+                        "Monster3": 2012010
+                    },
+                    {
+                        "$type": "StageMonsterWave",
+                        "Monster0": 8002010,
+                        "Monster1": 8002010,
+                        "Monster2": 8002010
+                    }
+                ],
+                "LevelLoseCondition": [],
+                "LevelWinCondition": [],
+                "Release": true,
+                "ForbidExitBattle": true,
+                "MonsterWarningRatio": 1.1000000238419,
+                "TrialAvatarList": []
+            }
+        ],
+        "EventIDList2": [
+            {
+                "StageID": 30002012,
+                "StageType": "Challenge",
+                "StageName": 1729742309,
+                "HardLevelGroup": 1,
+                "Level": 50,
+                "EliteGroup": 93,
+                "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+                "StageAbilityConfig": [],
+                "SubLevelGraphs": [],
+                "StageConfigData": [
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_Wave",
+                        "MOJJBFBKBNC": "3"
+                    },
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_IsEliteBattle",
+                        "MOJJBFBKBNC": "1"
+                    },
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_CreateBattleEvent",
+                        "MOJJBFBKBNC": "30036"
+                    }
+                ],
+                "MonsterList": [
+                    {
+                        "$type": "StageMonsterWave",
+                        "Monster0": 8001020,
+                        "Monster1": 8001020,
+                        "Monster2": 8001040,
+                        "Monster3": 8001020,
+                        "Monster4": 8001040
+                    },
+                    {
+                        "$type": "StageMonsterWave",
+                        "Monster0": 2022050,
+                        "Monster1": 2022050
+                    },
+                    {
+                        "$type": "StageMonsterWave",
+                        "Monster0": 2002010,
+                        "Monster1": 2002010,
+                        "Monster2": 2002010,
+                        "Monster3": 2002010
+                    }
+                ],
+                "LevelLoseCondition": [],
+                "LevelWinCondition": [],
+                "Release": true,
+                "ForbidExitBattle": true,
+                "MonsterWarningRatio": 1.1000000238419,
+                "TrialAvatarList": []
+            }
+        ],
+        "BeginTime": "",
+        "EndTime": ""
+    },
+    {
+        "Id": 22,
+        "Name": "Memory of Xianzhou (II)",
+        "GroupName": "The Voyage of Navis Astriger",
+        "Desc": "All enemies receive increased <color=#f29e38ff>DoT</color> by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>.\\nAt the start of every Cycle, there is a high chance of inflicting <color=#f29e38ff>Bleed</color>, <color=#f29e38ff>Shock</color>, <color=#f29e38ff>Burn</color>, and <color=#f29e38ff>Wind Shear</color> on all enemies. Status inflicted in this way will last for <color=#f29e38ff><unbreak>#3[i]</unbreak></color> turn(s).",
+        "Param": [
+            0.5000000004656613,
+            1,
+            2,
+            0.20000000018626451
+        ],
+        "Challenge": [
+            {
+                "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+                "Param": 6
+            },
+            {
+                "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+                "Param": 12
+            },
+            {
+                "Name": "Have no downed characters"
+            }
+        ],
+        "Countdown": 20,
+        "DamageType1": [
+            "Thunder",
+            "Wind",
+            "Quantum"
+        ],
+        "DamageType2": [
+            "Thunder",
+            "Wind",
+            "Imaginary"
+        ],
+        "MazeGroupID1": 8,
+        "MazeGroupID2": 9,
+        "NpcMonsterIDList1": [
+            2013010
+        ],
+        "NpcMonsterIDList2": [
+            2004020
+        ],
+        "EventIDList1": [
+            {
+                "StageID": 30002021,
+                "StageType": "Challenge",
+                "StageName": 183864545,
+                "HardLevelGroup": 1,
+                "Level": 60,
+                "EliteGroup": 85,
+                "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+                "StageAbilityConfig": [],
+                "SubLevelGraphs": [],
+                "StageConfigData": [
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_Wave",
+                        "MOJJBFBKBNC": "2"
+                    },
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_IsEliteBattle",
+                        "MOJJBFBKBNC": "1"
+                    },
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_CreateBattleEvent",
+                        "MOJJBFBKBNC": "30032"
+                    }
+                ],
+                "MonsterList": [
+                    {
+                        "$type": "StageMonsterWave",
+                        "Monster0": 2012010,
+                        "Monster1": 2022060,
+                        "Monster2": 2012010,
+                        "Monster3": 2022060
+                    },
+                    {
+                        "$type": "StageMonsterWave",
+                        "Monster0": 2013010,
+                        "Monster1": 2013010
+                    }
+                ],
+                "LevelLoseCondition": [],
+                "LevelWinCondition": [],
+                "Release": true,
+                "ForbidExitBattle": true,
+                "MonsterWarningRatio": 1.1000000238419,
+                "TrialAvatarList": []
+            }
+        ],
+        "EventIDList2": [
+            {
+                "StageID": 30002022,
+                "StageType": "Challenge",
+                "StageName": -716816044,
+                "HardLevelGroup": 1,
+                "Level": 60,
+                "EliteGroup": 85,
+                "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+                "StageAbilityConfig": [],
+                "SubLevelGraphs": [],
+                "StageConfigData": [
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_Wave",
+                        "MOJJBFBKBNC": "2"
+                    },
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_IsEliteBattle",
+                        "MOJJBFBKBNC": "1"
+                    },
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_CreateBattleEvent",
+                        "MOJJBFBKBNC": "30032"
+                    }
+                ],
+                "MonsterList": [
+                    {
+                        "$type": "StageMonsterWave",
+                        "Monster0": 2002010,
+                        "Monster1": 2002010,
+                        "Monster2": 2002010
+                    },
+                    {
+                        "$type": "StageMonsterWave",
+                        "Monster0": 2004020
+                    }
+                ],
+                "LevelLoseCondition": [],
+                "LevelWinCondition": [],
+                "Release": true,
+                "ForbidExitBattle": true,
+                "MonsterWarningRatio": 1.1000000238419,
+                "TrialAvatarList": []
+            }
+        ],
+        "BeginTime": "",
+        "EndTime": ""
+    },
+    {
+        "Id": 23,
+        "Name": "Memory of Xianzhou (III)",
+        "GroupName": "The Voyage of Navis Astriger",
+        "Desc": "After an ally uses <color=#f29e38ff>Basic ATK</color>, increases DMG dealt by them and adjacent allies by <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> and reduces their DMG received by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> for <color=#f29e38ff><unbreak>#2[i]</unbreak></color> turn(s).",
+        "Param": [
+            0.5000000004656613,
+            1,
+            0.5000000004656613
+        ],
+        "Challenge": [
+            {
+                "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+                "Param": 6
+            },
+            {
+                "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+                "Param": 12
+            },
+            {
+                "Name": "Have no downed characters"
+            }
+        ],
+        "Countdown": 20,
+        "DamageType1": [
+            "Physical",
+            "Thunder",
+            "Quantum"
+        ],
+        "DamageType2": [
+            "Wind"
+        ],
+        "MazeGroupID1": 8,
+        "MazeGroupID2": 9,
+        "NpcMonsterIDList1": [
+            2013010
+        ],
+        "NpcMonsterIDList2": [
+            8013010
+        ],
+        "EventIDList1": [
+            {
+                "StageID": 30002031,
+                "StageType": "Challenge",
+                "StageName": 183864545,
+                "HardLevelGroup": 1,
+                "Level": 70,
+                "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+                "StageAbilityConfig": [],
+                "SubLevelGraphs": [],
+                "StageConfigData": [
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_Wave",
+                        "MOJJBFBKBNC": "2"
+                    },
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_IsEliteBattle",
+                        "MOJJBFBKBNC": "1"
+                    },
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_CreateBattleEvent",
+                        "MOJJBFBKBNC": "30033"
+                    }
+                ],
+                "MonsterList": [
+                    {
+                        "$type": "StageMonsterWave",
+                        "Monster0": 202202003,
+                        "Monster1": 202202003,
+                        "Monster2": 202202003
+                    },
+                    {
+                        "$type": "StageMonsterWave",
+                        "Monster0": 201301002
+                    }
+                ],
+                "LevelLoseCondition": [],
+                "LevelWinCondition": [],
+                "Release": true,
+                "ForbidExitBattle": true,
+                "MonsterWarningRatio": 1.1000000238419,
+                "TrialAvatarList": []
+            }
+        ],
+        "EventIDList2": [
+            {
+                "StageID": 30002032,
+                "StageType": "Challenge",
+                "StageName": 184080167,
+                "HardLevelGroup": 1,
+                "Level": 70,
+                "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+                "StageAbilityConfig": [],
+                "SubLevelGraphs": [],
+                "StageConfigData": [
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_Wave",
+                        "MOJJBFBKBNC": "2"
+                    },
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_IsEliteBattle",
+                        "MOJJBFBKBNC": "1"
+                    },
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_CreateBattleEvent",
+                        "MOJJBFBKBNC": "30033"
+                    }
+                ],
+                "MonsterList": [
+                    {
+                        "$type": "StageMonsterWave",
+                        "Monster0": 8012030,
+                        "Monster1": 8012020,
+                        "Monster2": 8012030,
+                        "Monster3": 8012010
+                    },
+                    {
+                        "$type": "StageMonsterWave",
+                        "Monster0": 8013010,
+                        "Monster1": 202302001
+                    }
+                ],
+                "LevelLoseCondition": [],
+                "LevelWinCondition": [],
+                "Release": true,
+                "ForbidExitBattle": true,
+                "MonsterWarningRatio": 1.1000000238419,
+                "TrialAvatarList": []
+            }
+        ],
+        "BeginTime": "",
+        "EndTime": ""
+    },
+    {
+        "Id": 24,
+        "Name": "Memory of Xianzhou (IV)",
+        "GroupName": "The Voyage of Navis Astriger",
+        "Desc": "After an ally uses their <color=#f29e38ff>Ultimate</color> or launches a <color=#f29e38ff>follow-up attack</color>, additionally deals a <color=#f29e38ff>set amount of DMG</color> to the attacked enemy target.",
+        "Param": [
+            1.2000000001862645
+        ],
+        "Challenge": [
+            {
+                "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+                "Param": 6
+            },
+            {
+                "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+                "Param": 12
+            },
+            {
+                "Name": "Have no downed characters"
+            }
+        ],
+        "Countdown": 20,
+        "DamageType1": [
+            "Quantum"
+        ],
+        "DamageType2": [
+            "Fire",
+            "Ice",
+            "Quantum"
+        ],
+        "MazeGroupID1": 8,
+        "MazeGroupID2": 9,
+        "NpcMonsterIDList1": [
+            8003010
+        ],
+        "NpcMonsterIDList2": [
+            2024010
+        ],
+        "EventIDList1": [
+            {
+                "StageID": 30002041,
+                "StageType": "Challenge",
+                "StageName": 184076966,
+                "HardLevelGroup": 1,
+                "Level": 80,
+                "EliteGroup": 83,
+                "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+                "StageAbilityConfig": [],
+                "SubLevelGraphs": [],
+                "StageConfigData": [
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_Wave",
+                        "MOJJBFBKBNC": "3"
+                    },
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_IsEliteBattle",
+                        "MOJJBFBKBNC": "1"
+                    },
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_CreateBattleEvent",
+                        "MOJJBFBKBNC": "30034"
+                    }
+                ],
+                "MonsterList": [
+                    {
+                        "$type": "StageMonsterWave",
+                        "Monster0": 800101006,
+                        "Monster1": 800105001,
+                        "Monster2": 800105001,
+                        "Monster3": 800101006,
+                        "Monster4": 800105001
+                    },
+                    {
+                        "$type": "StageMonsterWave",
+                        "Monster0": 800104001,
+                        "Monster1": 800102008,
+                        "Monster2": 800102008,
+                        "Monster3": 800104001,
+                        "Monster4": 800104001
+                    },
+                    {
+                        "$type": "StageMonsterWave",
+                        "Monster0": 8003010,
+                        "Monster1": 8003020
+                    }
+                ],
+                "LevelLoseCondition": [],
+                "LevelWinCondition": [],
+                "Release": true,
+                "ForbidExitBattle": true,
+                "MonsterWarningRatio": 1.1000000238419,
+                "TrialAvatarList": []
+            }
+        ],
+        "EventIDList2": [
+            {
+                "StageID": 30002042,
+                "StageType": "Challenge",
+                "StageName": 2012065133,
+                "HardLevelGroup": 1,
+                "Level": 80,
+                "EliteGroup": 81,
+                "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+                "StageAbilityConfig": [],
+                "SubLevelGraphs": [],
+                "StageConfigData": [
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_Wave",
+                        "MOJJBFBKBNC": "2"
+                    },
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_IsEliteBattle",
+                        "MOJJBFBKBNC": "1"
+                    },
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_CreateBattleEvent",
+                        "MOJJBFBKBNC": "30034"
+                    }
+                ],
+                "MonsterList": [
+                    {
+                        "$type": "StageMonsterWave",
+                        "Monster0": 2022070,
+                        "Monster1": 2022090,
+                        "Monster2": 2022090,
+                        "Monster3": 2022070
+                    },
+                    {
+                        "$type": "StageMonsterWave",
+                        "Monster0": 2024010
+                    }
+                ],
+                "LevelLoseCondition": [],
+                "LevelWinCondition": [],
+                "Release": true,
+                "ForbidExitBattle": true,
+                "MonsterWarningRatio": 1.1000000238419,
+                "TrialAvatarList": []
+            }
+        ],
+        "BeginTime": "",
+        "EndTime": ""
+    },
+    {
+        "Id": 25,
+        "Name": "Memory of Xianzhou (V)",
+        "GroupName": "The Voyage of Navis Astriger",
+        "Desc": "At the start of every Cycle, summon 2 <color=#f29e38ff>Mara-Struck Soldiers</color> or <color=#f29e38ff>Abundance Sprite: Golden Hounds</color>.\\nAfter an enemy target is defeated, deals a <color=#f29e38ff>set amount of DMG</color> to all enemies.",
+        "Param": [
+            0.5000000004656613,
+            0.6000000005587935
+        ],
+        "Challenge": [
+            {
+                "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+                "Param": 6
+            },
+            {
+                "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+                "Param": 12
+            },
+            {
+                "Name": "Have no downed characters"
+            }
+        ],
+        "Countdown": 20,
+        "DamageType1": [
+            "Ice",
+            "Wind",
+            "Imaginary"
+        ],
+        "DamageType2": [
+            "Fire",
+            "Ice",
+            "Wind"
+        ],
+        "MazeGroupID1": 8,
+        "MazeGroupID2": 9,
+        "NpcMonsterIDList1": [
+            2023010
+        ],
+        "NpcMonsterIDList2": [
+            2023020
+        ],
+        "EventIDList1": [
+            {
+                "StageID": 30002051,
+                "StageType": "Challenge",
+                "StageName": 183859166,
+                "HardLevelGroup": 1,
+                "Level": 85,
+                "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+                "StageAbilityConfig": [],
+                "SubLevelGraphs": [],
+                "StageConfigData": [
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_Wave",
+                        "MOJJBFBKBNC": "2"
+                    },
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_IsEliteBattle",
+                        "MOJJBFBKBNC": "1"
+                    },
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_CreateBattleEvent",
+                        "MOJJBFBKBNC": "30031"
+                    }
+                ],
+                "MonsterList": [
+                    {
+                        "$type": "StageMonsterWave",
+                        "Monster0": 2022010,
+                        "Monster1": 2022010,
+                        "Monster2": 2022010
+                    },
+                    {
+                        "$type": "StageMonsterWave",
+                        "Monster0": 202301008
+                    }
+                ],
+                "LevelLoseCondition": [],
+                "LevelWinCondition": [],
+                "Release": true,
+                "ForbidExitBattle": true,
+                "MonsterWarningRatio": 1.1000000238419,
+                "TrialAvatarList": []
+            }
+        ],
+        "EventIDList2": [
+            {
+                "StageID": 30002052,
+                "StageType": "Challenge",
+                "StageName": -1382224775,
+                "HardLevelGroup": 1,
+                "Level": 85,
+                "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+                "StageAbilityConfig": [],
+                "SubLevelGraphs": [],
+                "StageConfigData": [
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_Wave",
+                        "MOJJBFBKBNC": "2"
+                    },
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_IsEliteBattle",
+                        "MOJJBFBKBNC": "1"
+                    },
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_CreateBattleEvent",
+                        "MOJJBFBKBNC": "30031"
+                    }
+                ],
+                "MonsterList": [
+                    {
+                        "$type": "StageMonsterWave",
+                        "Monster0": 2022050,
+                        "Monster1": 2022040,
+                        "Monster2": 2022050
+                    },
+                    {
+                        "$type": "StageMonsterWave",
+                        "Monster0": 2022040,
+                        "Monster1": 2023020,
+                        "Monster2": 2022040
+                    }
+                ],
+                "LevelLoseCondition": [],
+                "LevelWinCondition": [],
+                "Release": true,
+                "ForbidExitBattle": true,
+                "MonsterWarningRatio": 1.1000000238419,
+                "TrialAvatarList": []
+            }
+        ],
+        "BeginTime": "",
+        "EndTime": ""
+    },
+    {
+        "Id": 26,
+        "Name": "Memory of Xianzhou (VI)",
+        "GroupName": "The Voyage of Navis Astriger",
+        "Desc": "After an ally <color=#f29e38ff>uses their Skill</color> on any ally (including on themselves), dispels 1 <color=#f29e38ff>debuff</color> on the ally which the Skill was used on. For each <color=#f29e38ff>debuff</color> dispelled, increases the DMG dealt by all allies by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. This effect can stack up to <color=#f29e38ff><unbreak>#2[i]</unbreak></color> stacks.\\nDefeating the <color=#f29e38ff>Elite or stronger enemy</color> in the final wave will immediately result in victory.",
+        "Param": [
+            0.20000000018626451,
+            10
+        ],
+        "Challenge": [
+            {
+                "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+                "Param": 6
+            },
+            {
+                "Name": "Win with at least <unbreak>#1[i]</unbreak> Cycle(s) left",
+                "Param": 12
+            },
+            {
+                "Name": "Have no downed characters"
+            }
+        ],
+        "Countdown": 20,
+        "DamageType1": [
+            "Physical",
+            "Ice",
+            "Thunder"
+        ],
+        "DamageType2": [
+            "Physical",
+            "Wind",
+            "Imaginary"
+        ],
+        "MazeGroupID1": 8,
+        "MazeGroupID2": 9,
+        "NpcMonsterIDList1": [
+            2023030
+        ],
+        "NpcMonsterIDList2": [
+            2004010
+        ],
+        "EventIDList1": [
+            {
+                "StageID": 30002061,
+                "StageType": "Challenge",
+                "StageName": 1346658580,
+                "HardLevelGroup": 1,
+                "Level": 90,
+                "EliteGroup": 82,
+                "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+                "StageAbilityConfig": [],
+                "SubLevelGraphs": [],
+                "StageConfigData": [
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_Wave",
+                        "MOJJBFBKBNC": "2"
+                    },
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_IsEliteBattle",
+                        "MOJJBFBKBNC": "1"
+                    },
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_CreateBattleEvent",
+                        "MOJJBFBKBNC": "30035"
+                    }
+                ],
+                "MonsterList": [
+                    {
+                        "$type": "StageMonsterWave",
+                        "Monster0": 2012010,
+                        "Monster1": 2022010,
+                        "Monster2": 2012010,
+                        "Monster3": 2022010
+                    },
+                    {
+                        "$type": "StageMonsterWave",
+                        "Monster0": 201201003,
+                        "Monster1": 202303001,
+                        "Monster2": 201201003
+                    }
+                ],
+                "LevelLoseCondition": [],
+                "LevelWinCondition": [
+                    "[CDT_MonsterDie:202303001]"
+                ],
+                "Release": true,
+                "ForbidExitBattle": true,
+                "MonsterWarningRatio": 1.1000000238419,
+                "TrialAvatarList": []
+            }
+        ],
+        "EventIDList2": [
+            {
+                "StageID": 30002062,
+                "StageType": "Challenge",
+                "StageName": 2012067311,
+                "HardLevelGroup": 1,
+                "Level": 90,
+                "EliteGroup": 82,
+                "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+                "StageAbilityConfig": [],
+                "SubLevelGraphs": [],
+                "StageConfigData": [
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_Wave",
+                        "MOJJBFBKBNC": "2"
+                    },
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_IsEliteBattle",
+                        "MOJJBFBKBNC": "1"
+                    },
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_CreateBattleEvent",
+                        "MOJJBFBKBNC": "30035"
+                    }
+                ],
+                "MonsterList": [
+                    {
+                        "$type": "StageMonsterWave",
+                        "Monster0": 2002010,
+                        "Monster1": 2012010,
+                        "Monster2": 2002010,
+                        "Monster3": 2012010
+                    },
+                    {
+                        "$type": "StageMonsterWave",
+                        "Monster0": 201102001,
+                        "Monster1": 200401003,
+                        "Monster2": 201101001
+                    }
+                ],
+                "LevelLoseCondition": [],
+                "LevelWinCondition": [
+                    "[CDT_MonsterDie:200401003]"
+                ],
+                "Release": true,
+                "ForbidExitBattle": true,
+                "MonsterWarningRatio": 1.1000000238419,
+                "TrialAvatarList": []
+            }
+        ],
+        "BeginTime": "",
+        "EndTime": ""
+    }
+]

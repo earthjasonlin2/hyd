@@ -1,0 +1,202 @@
+{
+    "Type": "Character",
+    "Name": "达达利亚",
+    "Title": "「公子」·达达利亚",
+    "Desc": "牌局亦为战场，能者方可争先。",
+    "Source": "在猫尾酒馆中邀请达达利亚进行对局，在友好对局难度中获得胜利后获取",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Tartaglia",
+    "Hp": 10,
+    "Cost": 3,
+    "Tag": [
+        "水元素",
+        "弓",
+        "愚人众"
+    ],
+    "Talent": {
+        "12041": {
+            "Name": "断雨",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "12042": {
+            "Name": "魔王武装·狂澜",
+            "Desc": "切换为<color=#FFFFFFFF>$[C112042]</color>，然后造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，并使目标角色附属<color=#FFFFFFFF>$[C112043]</color>。",
+            "Child": {
+                "C112042": {
+                    "Name": "近战状态",
+                    "Desc": "角色造成的$[K100]转换为$[K102]。\\n<color=#FFFFFFFF>角色进行$[K51]后：</color>目标角色附属$[K1005]。\\n角色对附属有$[K1005]的角色造成的伤害+1；\\n<color=#FFFFFFFF>角色对已附属有$[K1005]的角色使用技能后：</color>对下一个敌方后台角色造成1点$[K5]。（每回合至多2次）\\n\\n<color=#FFFFFFFF>$[K4]：2</color>",
+                    "Child": {
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>",
+                            "Desc": "物理伤害不会附着元素，也不会发生元素反应。"
+                        },
+                        "K102": {
+                            "Name": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素伤害</color>",
+                            "Desc": "附着{SPRITE_PRESET#2102}水元素，可发生元素反应：\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2103}<color=#FFFFFFFF>蒸发</color>：本伤害+2\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}<color=#FFFFFFFF>感电</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2101}<color=#FFFFFFFF>冻结</color>：本伤害+1，使目标本回合无法行动（受到物理或火元素伤害后提前解除，但是伤害+2）\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}<color=#FFFFFFFF>绽放</color>：本伤害+1，生成使下次火元素或雷元素伤害+2的[<color=#FFFFFFFF>草原核</color>]"
+                        },
+                        "K51": {
+                            "Name": "<color=#FFFFFFFF>重击</color>",
+                            "Desc": "我方行动开始前，如果元素骰总数为偶数，则进行的「普通攻击」将被视为「重击」。"
+                        },
+                        "K1005": {
+                            "Name": "<color=#FFFFFFFF>断流</color>",
+                            "Desc": "<color=#FFFFFFFF>所附属角色被击倒后：</color>对所在阵营的出战角色附属「断流」。\\n（处于<color=#FFFFFFFF>「近战状态」</color>的<color=#FFFFFFFF>达达利亚</color>攻击所附属角色时，会造成额外伤害。）"
+                        },
+                        "K5": {
+                            "Name": "<color=#FFFFFFFF>穿透伤害</color>",
+                            "Desc": "穿透伤害无法受到伤害加成，但是也无法被护盾、伤害免疫等效果抵消。"
+                        },
+                        "K4": {
+                            "Name": "<color=#FFFFFFFF>持续回合</color>",
+                            "Desc": "每回合结束阶段，<color=#FFFFFFFF>持续回合</color>-1；\\n<color=#FFFFFFFF>持续回合</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                },
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "C112043": {
+                    "Name": "断流",
+                    "Desc": "<color=#FFFFFFFF>所附属角色被击倒后：</color>对所在阵营的出战角色附属「断流」。\\n（处于<color=#FFFFFFFF>「$[C112042]」</color>的<color=#FFFFFFFF>$[A1204]</color>攻击所附属角色时，会造成额外伤害。）",
+                    "Child": {
+                        "A1204": "达达利亚"
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3
+            }
+        },
+        "12043": {
+            "Name": "极恶技·尽灭闪",
+            "Desc": "依据<color=#FFFFFFFF>$[A1204]</color>当前所处的状态，进行不同的攻击：\\n<color=#FFFFFFFF>远程状态·魔弹一闪：</color>造成$[D__KEY__DAMAGE_5]点$[D__KEY__ELEMENT]，返还2点$[K310]，目标角色附属<color=#FFFFFFFF>$[C112043]</color>。\\n<color=#FFFFFFFF>近战状态·尽灭水光：</color>造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+            "Child": {
+                "A1204": "达达利亚",
+                "D__KEY__DAMAGE_5": 5,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "K310": {
+                    "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}充能</color>",
+                    "Desc": "角色使用「元素爆发」时，需要消耗{SPRITE_PRESET#1110}充能。\\n角色使用「元素战技」或「普通攻击」后，会获得1点{SPRITE_PRESET#1110}充能。"
+                },
+                "C112043": {
+                    "Name": "断流",
+                    "Desc": "<color=#FFFFFFFF>所附属角色被击倒后：</color>对所在阵营的出战角色附属「断流」。\\n（处于<color=#FFFFFFFF>「$[C112042]」</color>的<color=#FFFFFFFF>$[A1204]</color>攻击所附属角色时，会造成额外伤害。）",
+                    "Child": {
+                        "C112042": {
+                            "Name": "近战状态",
+                            "Desc": "角色造成的$[K100]转换为$[K102]。\\n<color=#FFFFFFFF>角色进行$[K51]后：</color>目标角色附属$[K1005]。\\n角色对附属有$[K1005]的角色造成的伤害+1；\\n<color=#FFFFFFFF>角色对已附属有$[K1005]的角色使用技能后：</color>对下一个敌方后台角色造成1点$[K5]。（每回合至多2次）\\n\\n<color=#FFFFFFFF>$[K4]：2</color>",
+                            "Child": {
+                                "K100": {
+                                    "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>",
+                                    "Desc": "物理伤害不会附着元素，也不会发生元素反应。"
+                                },
+                                "K102": {
+                                    "Name": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素伤害</color>",
+                                    "Desc": "附着{SPRITE_PRESET#2102}水元素，可发生元素反应：\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2103}<color=#FFFFFFFF>蒸发</color>：本伤害+2\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}<color=#FFFFFFFF>感电</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2101}<color=#FFFFFFFF>冻结</color>：本伤害+1，使目标本回合无法行动（受到物理或火元素伤害后提前解除，但是伤害+2）\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}<color=#FFFFFFFF>绽放</color>：本伤害+1，生成使下次火元素或雷元素伤害+2的[<color=#FFFFFFFF>草原核</color>]"
+                                },
+                                "K51": {
+                                    "Name": "<color=#FFFFFFFF>重击</color>",
+                                    "Desc": "我方行动开始前，如果元素骰总数为偶数，则进行的「普通攻击」将被视为「重击」。"
+                                },
+                                "K1005": {
+                                    "Name": "<color=#FFFFFFFF>断流</color>",
+                                    "Desc": "<color=#FFFFFFFF>所附属角色被击倒后：</color>对所在阵营的出战角色附属「断流」。\\n（处于<color=#FFFFFFFF>「近战状态」</color>的<color=#FFFFFFFF>达达利亚</color>攻击所附属角色时，会造成额外伤害。）"
+                                },
+                                "K5": {
+                                    "Name": "<color=#FFFFFFFF>穿透伤害</color>",
+                                    "Desc": "穿透伤害无法受到伤害加成，但是也无法被护盾、伤害免疫等效果抵消。"
+                                },
+                                "K4": {
+                                    "Name": "<color=#FFFFFFFF>持续回合</color>",
+                                    "Desc": "每回合结束阶段，<color=#FFFFFFFF>持续回合</color>-1；\\n<color=#FFFFFFFF>持续回合</color>耗尽后，立刻弃置此牌。"
+                                }
+                            }
+                        },
+                        "A1204": "达达利亚"
+                    }
+                },
+                "D__KEY__DAMAGE": 7
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3,
+                "GCG_COST_ENERGY": 3
+            }
+        },
+        "12044": {
+            "Name": "遏浪",
+            "Desc": "【被动】战斗开始时，初始附属<color=#FFFFFFFF>$[C112041]</color>。\\n角色所附属的<color=#FFFFFFFF>$[C112042]</color>效果结束时，重新附属<color=#FFFFFFFF>$[C112041]</color>。",
+            "Child": {
+                "C112041": {
+                    "Name": "远程状态",
+                    "Desc": "<color=#FFFFFFFF>所附属角色进行$[K51]后：</color>目标角色附属$[K1005]。",
+                    "Child": {
+                        "K51": {
+                            "Name": "<color=#FFFFFFFF>重击</color>",
+                            "Desc": "我方行动开始前，如果元素骰总数为偶数，则进行的「普通攻击」将被视为「重击」。"
+                        },
+                        "K1005": {
+                            "Name": "<color=#FFFFFFFF>断流</color>",
+                            "Desc": "<color=#FFFFFFFF>所附属角色被击倒后：</color>对所在阵营的出战角色附属「断流」。\\n（处于<color=#FFFFFFFF>「近战状态」</color>的<color=#FFFFFFFF>达达利亚</color>攻击所附属角色时，会造成额外伤害。）"
+                        }
+                    }
+                },
+                "C112042": {
+                    "Name": "近战状态",
+                    "Desc": "角色造成的$[K100]转换为$[K102]。\\n<color=#FFFFFFFF>角色进行$[K51]后：</color>目标角色附属$[K1005]。\\n角色对附属有$[K1005]的角色造成的伤害+1；\\n<color=#FFFFFFFF>角色对已附属有$[K1005]的角色使用技能后：</color>对下一个敌方后台角色造成1点$[K5]。（每回合至多2次）\\n\\n<color=#FFFFFFFF>$[K4]：2</color>",
+                    "Child": {
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>",
+                            "Desc": "物理伤害不会附着元素，也不会发生元素反应。"
+                        },
+                        "K102": {
+                            "Name": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素伤害</color>",
+                            "Desc": "附着{SPRITE_PRESET#2102}水元素，可发生元素反应：\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2103}<color=#FFFFFFFF>蒸发</color>：本伤害+2\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}<color=#FFFFFFFF>感电</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2101}<color=#FFFFFFFF>冻结</color>：本伤害+1，使目标本回合无法行动（受到物理或火元素伤害后提前解除，但是伤害+2）\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}<color=#FFFFFFFF>绽放</color>：本伤害+1，生成使下次火元素或雷元素伤害+2的[<color=#FFFFFFFF>草原核</color>]"
+                        },
+                        "K51": {
+                            "Name": "<color=#FFFFFFFF>重击</color>",
+                            "Desc": "我方行动开始前，如果元素骰总数为偶数，则进行的「普通攻击」将被视为「重击」。"
+                        },
+                        "K1005": {
+                            "Name": "<color=#FFFFFFFF>断流</color>",
+                            "Desc": "<color=#FFFFFFFF>所附属角色被击倒后：</color>对所在阵营的出战角色附属「断流」。\\n（处于<color=#FFFFFFFF>「近战状态」</color>的<color=#FFFFFFFF>达达利亚</color>攻击所附属角色时，会造成额外伤害。）"
+                        },
+                        "K5": {
+                            "Name": "<color=#FFFFFFFF>穿透伤害</color>",
+                            "Desc": "穿透伤害无法受到伤害加成，但是也无法被护盾、伤害免疫等效果抵消。"
+                        },
+                        "K4": {
+                            "Name": "<color=#FFFFFFFF>持续回合</color>",
+                            "Desc": "每回合结束阶段，<color=#FFFFFFFF>持续回合</color>-1；\\n<color=#FFFFFFFF>持续回合</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        },
+        "12045": {
+            "Name": "远程状态",
+            "Desc": "",
+            "Child": {},
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        },
+        "12046": {
+            "Name": "遏浪",
+            "Desc": "",
+            "Child": {},
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 212041
+}

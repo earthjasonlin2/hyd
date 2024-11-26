@@ -1,0 +1,114 @@
+{
+    "Type": "Character",
+    "Name": "Yun Jin",
+    "Title": "\"Stage Lucida\" Yun Jin",
+    "Desc": "Elegance on the stage, in decorous harmony.",
+    "Source": "Reward for inviting Yun Jin to a duel at The Cat's Tail and claiming victory in a Friendly Fracas with her",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Yunjin",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "Geo",
+        "Polearm",
+        "Liyue"
+    ],
+    "Talent": {
+        "16071": {
+            "Name": "Cloud-Grazing Strike",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "16072": {
+            "Name": "Opening Flourish",
+            "Desc": "Creates 1 <color=#FFFFFFFF>$[C116073]</color>, attaches <color=#FFFFFFFF>$[C116071]</color> to this character and $[K53]: <color=#FFFFFFFF>$[S16074]</color>.",
+            "Child": {
+                "C116073": {
+                    "Name": "Flying Cloud Flag Formation",
+                    "Desc": "<color=#FFFFFFFF>When your character uses a Normal Attack:</color> If you have no more than 1 card in your Hand, this Skill costs 1 less Elemental Die.\\n<color=#FFFFFFFF>$[K3]: 1</color> (Can stack. Max 4 stacks)",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        }
+                    }
+                },
+                "C116071": {
+                    "Name": "Shield of Swirling Clouds",
+                    "Desc": "<color=#FFFFFFFF>While preparing this Skill:</color> Grant 2 $[K6] points to the character to which this is attached.",
+                    "Child": {
+                        "K6": {
+                            "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>Shield</color>",
+                            "Desc": "This Shield will be consumed to protect the character who equips it from DMG."
+                        }
+                    }
+                },
+                "K53": {
+                    "Name": "<color=#FFFFFFFF>Prepare Skill</color>|s1:<color=#FFFFFFFF>prepares</color>",
+                    "Desc": "Some Skills cannot be used directly. Instead, they need to be <color=#FFFFFFFF>prepared</color> over a certain number of turns.\\nWhen it is a certain player's turn, and this player's active character is currently <color=#FFFFFFFF>preparing</color> a Skill, this player's turn will be skipped. If the Skill has finished being <color=#FFFFFFFF>prepared</color>, the character will directly use that Skill at this time. (Skills that require <color=#FFFFFFFF>preparing</color> cannot activate effects triggered by \"using a Skill\" or \"triggering an Elemental Reaction\" or other such effects.)\\nOnly active characters can <color=#FFFFFFFF>prepare</color> Skills, and if an active character who is <color=#FFFFFFFF>preparing</color> a Skill gets switched off-field, their <color=#FFFFFFFF>preparation</color> will be interrupted."
+                },
+                "S16074": "S16074"
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 3
+            }
+        },
+        "16073": {
+            "Name": "Cliffbreaker's Banner",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], creates 3 stacks of <color=#FFFFFFFF>$[C116073]</color>.",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_GEO",
+                "C116073": {
+                    "Name": "Flying Cloud Flag Formation",
+                    "Desc": "<color=#FFFFFFFF>When your character uses a Normal Attack:</color> If you have no more than 1 card in your Hand, this Skill costs 1 less Elemental Die.\\n<color=#FFFFFFFF>$[K3]: 1</color> (Can stack. Max 4 stacks)",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "16074": {
+            "Name": "Spear Flourish",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. If you have $[K56]ed or used at least 1 card for $[K57] this Round, this deals +1 DMG.",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_GEO",
+                "K56": {
+                    "Name": "<color=#FFFFFFFF>Discard</color>",
+                    "Desc": "Use Action Cards or Character Skill effects to Discard Action Cards from Hand or Deck."
+                },
+                "K57": {
+                    "Name": "<color=#FFFFFFFF>Tune</color>",
+                    "Desc": "Discard Action Cards from Hand to initiate Elemental Tuning"
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {}
+        },
+        "16075": {
+            "Name": "",
+            "Desc": "",
+            "Child": {},
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 216071
+}

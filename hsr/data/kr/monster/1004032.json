@@ -1,0 +1,159 @@
+{
+    "Id": 1004032,
+    "Name": "브로냐(환상)",
+    "Desc": "벨로보그 수호자의 계승자. 실버메인 철위대의 통솔자.\\n브로냐는 다양한 전술로 적을 공격하며, 아군의 작전 능력을 대폭 증가시킨다. 이곳에 나타난 건 당신의 기억을 바탕으로 시뮬레이션한 환영이다",
+    "MonsterCampID": null,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 3952.5000000004657,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/Monster_1004030.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "LittleBoss",
+    "SpeedBase": 119,
+    "StanceBase": 540,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.20000000018626451,
+    "Child": [
+        {
+            "Id": 1004032,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Fire",
+                "Imaginary"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.6000000005587935
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.40000000037252903
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 100403201,
+                    "SkillName": "바람의 탄환",
+                    "SkillDesc": "지정된 단일 아군에게 바람 속성 피해를 가한다",
+                    "DamageType": "Wind",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 100403202,
+                    "SkillName": "작전 재배치",
+                    "SkillDesc": "브로냐를 제외한 지정된 단일 적의 모든 디버프 효과를 해제하고 해당 목표는 즉시 행동한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100403203,
+                    "SkillName": "증원 협력",
+                    "SkillDesc": "[실버메인 포격병]을 소환한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100403204,
+                    "SkillName": "억제 사격",
+                    "SkillDesc": "지정된 단일 아군에게 바람 속성 피해를 가하며 피격된 아군은 행동 게이지가 감소한다",
+                    "DamageType": "Wind",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 100403205,
+                    "SkillName": "행군 명령",
+                    "SkillDesc": "모든 적의 속도가 증가한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 100403206,
+                    "SkillName": "작심",
+                    "SkillDesc": "브로냐의 턴 시작 시 자신의 속도와 공격력이 소폭 증가하며, 이 효과는 중첩된다. 해당 효과는 브로냐가 격파될 시 제거된다",
+                    "DamageType": "Wind",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 100403207,
+                    "SkillName": "공동의 적개심",
+                    "SkillDesc": "게파드가 전투 불능 상태가 될 시 즉시 행동하고 강화 상태에 진입해 자신의 속도를 증가시킨다. 해당 상태에서 브로냐는 더 많은 [실버메인 포격병]을 소환한다",
+                    "DamageType": "Wind",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 100403208,
+                    "SkillName": "환상의 파트너",
+                    "SkillDesc": "게파드와 브로냐가 번갈아서 공격 상태와 서포트 상태에 진입한다. 공격 상태일 시 자신은 강인성 보호가 해제되고 정상적으로 행동한다. 서포트 상태일 시 자신의 속도가 감소하고 강인성 보호를 획득하며 [증원 협력] 또는 [작전 재배치]만 발동된다",
+                    "DamageType": "Wind",
+                    "SPHitBase": 15
+                },
+                {
+                    "Id": 100403209,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 1004032,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1004032,
+            "WorldLevel": 1,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1004032,
+            "WorldLevel": 2,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1004032,
+            "WorldLevel": 3,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1004032,
+            "WorldLevel": 4,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1004032,
+            "WorldLevel": 5,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 1004032,
+            "WorldLevel": 6,
+            "DisplayItemList": []
+        }
+    ]
+}

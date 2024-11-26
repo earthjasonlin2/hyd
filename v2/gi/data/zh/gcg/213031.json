@@ -1,0 +1,44 @@
+{
+    "Type": "Action",
+    "Name": "冒险憧憬",
+    "Title": "班尼特·冒险憧憬",
+    "Desc": "最美妙的冒险永远是下一次。",
+    "Source": "在猫尾酒馆中邀请班尼特进行对局，完成相应挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Constellation_Bennett",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PYRO",
+            "count": 4
+        },
+        {
+            "costType": "GCG_COST_ENERGY",
+            "count": 2
+        }
+    ],
+    "Tag": [
+        "天赋",
+        "战斗行动"
+    ],
+    "Talent": {
+        "Name": "冒险憧憬",
+        "Desc": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1303]</color>时，装备此牌。\\n$[A1303]装备此牌后，立刻使用一次<color=#FFD780FF>$[S13033]</color>。\\n装备有此牌的$[A1303]生成的<color=#FFFFFFFF>$[C113031]</color>，其伤害提升效果改为总是生效，不再具有生命值限制。\\n（牌组中包含$[A1303]，才能加入牌组）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>战斗行动</color>",
+                "Desc": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+            },
+            "A1303": "冒险憧憬",
+            "S13033": "S13033",
+            "C113031": {
+                "Name": "鼓舞领域",
+                "Desc": "<color=#FFFFFFFF>我方角色使用技能时：</color>如果该角色生命值至少为7，则使此伤害额外+2；技能结算后，如果该角色生命值不多于6，则治疗该角色2点。\\n<color=#FFFFFFFF>$[K4]：2</color>",
+                "Child": {
+                    "K4": {
+                        "Name": "<color=#FFFFFFFF>持续回合</color>",
+                        "Desc": "每回合结束阶段，<color=#FFFFFFFF>持续回合</color>-1；\\n<color=#FFFFFFFF>持续回合</color>耗尽后，立刻弃置此牌。"
+                    }
+                }
+            }
+        }
+    }
+}

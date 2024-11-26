@@ -1,0 +1,54 @@
+{
+    "Type": "Action",
+    "Name": "落染五色",
+    "Title": "千織・落染五色",
+    "Desc": "「紅に染まって散りなさい。」",
+    "Source": "キャッツテールで千織を招待して対戦し、対応する挑戦目標をクリアすることで獲得",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Chiori",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_GEO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "天賦",
+        "戦闘アクション"
+    ],
+    "Talent": {
+        "Name": "落染五色",
+        "Desc": "$[K1]：味方の出撃キャラが<color=#FFFFFFFF>$[A1609]</color>の時、このカードを装備できる。\\n$[A1609]がこのカードを装備した後、直ちに<color=#FFD780FF>$[S16092]</color>を1回発動する。\\nこのカードを装備した$[A1609]が<color=#FFFFFFFF>$[S16092]</color>を発動すると、追加で<color=#FFFFFFFF>$[C116094]</color>を1体召喚し、4体の<color=#FFFFFFFF>$[C116097]</color>のうち1体を$[K59]してから召喚するように変更される。\\n（このカードはデッキに$[A1609]が含まれている場合のみ、デッキに追加できる）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>戦闘アクション</color>",
+                "Desc": "味方が戦闘アクションを1回行った後、相手のターンに移ります。\\n<color=#FFFFFFFF>このようなルールを持つ手札を出すのはクイックアクションではなく、戦闘アクションと見なされます。</color>"
+            },
+            "A1609": "落染五色",
+            "S16092": "S16092",
+            "C116094": {
+                "Name": "平常心のたもと",
+                "Desc": "<color=#FFFFFFFF>エンドフェーズ：</color>$[K106]を1与える。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+                "Child": {
+                    "K106": {
+                        "Name": "{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素ダメージ</color>",
+                        "Desc": "付着した元素と以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2101}<color=#FFFFFFFF>結晶（氷）</color>：ダメージ+1、味方の出撃キャラはシールドを1獲得する（最大2まで重ねられる）\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2102}<color=#FFFFFFFF>結晶（水）</color>：ダメージ+1、味方の出撃キャラはシールドを1獲得する（最大2まで重ねられる）\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2103}<color=#FFFFFFFF>結晶（炎）</color>：ダメージ+1、味方の出撃キャラはシールドを1獲得する（最大2まで重ねられる）\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2104}<color=#FFFFFFFF>結晶（雷）</color>：ダメージ+1、味方の出撃キャラはシールドを1獲得する（最大2まで重ねられる）"
+                    },
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                        "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                    }
+                }
+            },
+            "C116097": {
+                "Name": "千織の自動制御人形",
+                "Desc": "千織は様々な自動制御人形を持っている。自動で攻撃できるものもあれば、バフ効果を提供してくれるものもある。",
+                "Child": {}
+            },
+            "K59": {
+                "Name": "<color=#FFFFFFFF>選択</color>",
+                "Desc": "所定の複数枚のカードのうちから1枚を選択して発動させる。"
+            }
+        }
+    }
+}

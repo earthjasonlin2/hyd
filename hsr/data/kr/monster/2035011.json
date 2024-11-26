@@ -1,0 +1,159 @@
+{
+    "Id": 2035011,
+    "Name": "「비소」의 그림자",
+    "Desc": "「붉은 달」의 이전으로 인해 죽어서도 사라지지 않은 호뢰, 비소의 모습으로 나타나 마치 거울처럼 비소 본인과 마주 본다",
+    "MonsterCampID": null,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 4650,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/Monster_2033020.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "BigBoss",
+    "SpeedBase": 108,
+    "StanceBase": 540,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.3000000002793968,
+    "Child": [
+        {
+            "Id": 2035011,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Fire",
+                "Quantum"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 203501101,
+                    "SkillName": "권총검•검아",
+                    "SkillDesc": "지정된 단일 아군에게 바람 속성 피해를 가한다",
+                    "DamageType": "Wind",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 203501102,
+                    "SkillName": "거대 도끼•철조",
+                    "SkillDesc": "지정된 단일 아군에게 바람 속성 피해를 가하며, 피격된 아군은 높은 확률로 <u>허약</u> 상태에 빠진다",
+                    "DamageType": "Wind",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 203501103,
+                    "SkillName": "속박을 통한 초월",
+                    "SkillDesc": "자신을 강화하고 추가 행동을 획득한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 203501104,
+                    "SkillName": "바람의 투구, 뇌전의 가죽신",
+                    "SkillDesc": "식월 심수의 모든 부위와 공명하고 약점 격파 상태를 해제한다. 다음 행동 전까지 공격을 받을 수 없으며, 다음 행동 시 모든 아군에게 [건곤을 삼키는 기세]를 발동한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 203501105,
+                    "SkillName": "건곤을 삼키는 기세",
+                    "SkillDesc": "모든 아군에게 대량의 바람 속성 피해를 가하고, 약점 격파되지 않은 부위 수에 따라 강화된다. 격파되지 않은 부위가 1개 있을 때마다 해당 스킬의 피해가 증가하며, 동시에 대응하는 부위의 강화 효과가 부여된다",
+                    "DamageType": "Wind",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 203501106,
+                    "SkillName": "찰나의 선풍",
+                    "SkillDesc": "모든 아군에게 바람 속성 피해를 가한다",
+                    "DamageType": "Wind",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 203501107,
+                    "SkillName": "심수 협공",
+                    "SkillDesc": "[「비소」의 그림자]의 추가 행동은 식월 심수의 부위와 공명한다. 공명은 식월 심수 부위의 강인성을 일정량 회복하고, 피격 시 감소하는 강인성 수치를 증가시킨다. 다음 행동이 강화 행동으로 바뀐다. [구름을 삼키는 머리] 공명은 높은 확률로 모든 아군을 <u>노발대발</u> 상태에 빠트리고, [차원을 찢는 발톱] 공명은 추가로 피해를 대폭 증가시키며, [속세를 멸하는 꼬리] 공명은 높은 확률로 모든 아군을 <u>허약</u> 상태에 빠트린다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 203501108,
+                    "SkillName": "방비",
+                    "SkillDesc": "[방비] 상태에 진입한다. 약점이 격파되지 않을 시 받는 피해가 감소한다. 약점이 격파될 시 행동 게이지가 추가로 감소하고, 약점이 격파된 후 받는 피해가 증가한다",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 203501109,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 2035011,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2035011,
+            "WorldLevel": 1,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2035011,
+            "WorldLevel": 2,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2035011,
+            "WorldLevel": 3,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2035011,
+            "WorldLevel": 4,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2035011,
+            "WorldLevel": 5,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 2035011,
+            "WorldLevel": 6,
+            "DisplayItemList": []
+        }
+    ]
+}

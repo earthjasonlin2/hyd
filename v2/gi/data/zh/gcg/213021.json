@@ -1,0 +1,35 @@
+{
+    "Type": "Action",
+    "Name": "交叉火力",
+    "Title": "香菱·交叉火力",
+    "Desc": "在厨房里，这只是一种常规火力。",
+    "Source": "在猫尾酒馆中邀请香菱进行对局，完成相应挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Xiangling",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PYRO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "天赋",
+        "战斗行动"
+    ],
+    "Talent": {
+        "Name": "交叉火力",
+        "Desc": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1302]</color>时，装备此牌。\\n$[A1302]装备此牌后，立刻使用一次<color=#FFD780FF>$[S13022]</color>。\\n装备有此牌的$[A1302]使用<color=#FFFFFFFF>$[S13022]</color>时：自身也会造成1点$[K103]。\\n（牌组中包含$[A1302]，才能加入牌组）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>战斗行动</color>",
+                "Desc": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+            },
+            "A1302": "交叉火力",
+            "S13022": "S13022",
+            "K103": {
+                "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>火元素伤害</color>",
+                "Desc": "附着{SPRITE_PRESET#2103}火元素，可发生元素反应：\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>融化</color>：本伤害+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>蒸发</color>：本伤害+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>超载</color>：本伤害+2，目标强制切换到下一个角色\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>燃烧</color>：本伤害+1，生成回合结束时造成1点火元素伤害的[<color=#FFFFFFFF>燃烧烈焰</color>]（可用次数1，最多叠加到2）"
+            }
+        }
+    }
+}

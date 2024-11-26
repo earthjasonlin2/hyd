@@ -1,0 +1,45 @@
+{
+    "Type": "Action",
+    "Name": "지원은 저한테 맡기세요",
+    "Title": "노엘·지원은 저한테 맡기세요",
+    "Desc": "굳건한 마음은 단단한 바위 갑주와도 같다",
+    "Source": "캣테일 술집에서 노엘을 초대해 대전하고 상응하는 도전 목표 달성 후 획득",
+    "Icon": "UI_Gcg_CardFace_Modify_Constellation_Noel",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_GEO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "특성",
+        "전투 행동"
+    ],
+    "Talent": {
+        "Name": "지원은 저한테 맡기세요",
+        "Desc": "$[K1]: 아군 출전 캐릭터가 <color=#FFFFFFFF>$[A1602]</color>일 때 해당 카드를 장착할 수 있다.\\n$[A1602]이 해당 카드를 장착하면 즉시 <color=#FFD780FF>$[S16022]</color>을 1회 사용한다.\\n$[A1602]이 <color=#FFFFFFFF>일반 공격</color> 후: 해당 카드와 <color=#FFFFFFFF>$[C116021]</color>가 여전히 필드에 있을 경우, 모든 아군 캐릭터의 HP를 1pt 치유한다. (턴당 1회)\\n(카드 덱에 $[A1602]이 있어야만 카드 덱에 추가 가능)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>전투 행동</color>",
+                "Desc": "아군이 전투 행동을 1회 진행하면 행동 순서가 상대에게 넘어간다.\\n<color=#FFFFFFFF>해당 규칙에 속하는 카드는 사용 시 빠른 행동이 아닌 전투 행동으로 간주한다</color>."
+            },
+            "A1602": "지원은 저한테 맡기세요",
+            "S16022": "S16022",
+            "C116021": {
+                "Name": "바위 갑주",
+                "Desc": "아군 출전 캐릭터에게 <color=#FFFFFFFF>$[K6]을 2pt</color> 제공한다.\\n해당 $[K6]이 소진되기 전까지 아군이 받는 $[K100]가 50% 감소한다. (올림 처리)",
+                "Child": {
+                    "K6": {
+                        "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>보호막</color>",
+                        "Desc": "해당 보호막의 보호를 받는 캐릭터가 피격 시, 보호막을 소모해 피해를 상쇄한다."
+                    },
+                    "K100": {
+                        "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>",
+                        "Desc": "물리 피해는 원소를 부착할 수 없고, 원소 반응이 발생하지 않는다."
+                    }
+                }
+            }
+        }
+    }
+}

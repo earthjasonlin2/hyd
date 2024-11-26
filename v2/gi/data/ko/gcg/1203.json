@@ -1,0 +1,91 @@
+{
+    "Type": "Character",
+    "Name": "모나",
+    "Title": "별하늘의 물거울·모나",
+    "Desc": "승리와 패배는 모두 운명으로 정해진 것",
+    "Source": "캣테일 술집에서 모나 초대 및 친선 대전 난이도 승리 후 획득",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Mona",
+    "Hp": 10,
+    "Cost": 3,
+    "Tag": [
+        "물 원소",
+        "법구",
+        "몬드"
+    ],
+    "Talent": {
+        "12031": {
+            "Name": "인과 간파",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "D__KEY__DAMAGE": 1
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "12032": {
+            "Name": "수중 환원",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[C112031]</color>을 소환한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "D__KEY__DAMAGE": 1,
+                "C112031": {
+                    "Name": "허영",
+                    "Desc": "<color=#FFFFFFFF>아군 출전 캐릭터가 피해를 받을 시:</color> 피해를 1pt 상쇄한다.\\n<color=#FFFFFFFF>$[K3]: 1</color>, 사용 횟수를 소진해도 해당 카드를 버리지 않는다.\\n<color=#FFFFFFFF>종료 단계:</color> 해당 카드를 버리고 $[K102]를 1pt 준다.",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        },
+                        "K102": {
+                            "Name": "{SPRITE_PRESET#2102}<color=#80C0FFFF>물 원소 피해</color>",
+                            "Desc": "{SPRITE_PRESET#2102}물 원소 부착 시 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2103}<color=#FFFFFFFF>증발</color>: 이번 피해+2pt\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}<color=#FFFFFFFF>감전</color>: 이번 피해+1pt, 대상 이외의 모든 상대 캐릭터에게 관통 피해를 1pt 준다.\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2101}<color=#FFFFFFFF>빙결</color>: 이번 피해+1pt, 이번 턴에 대상을 행동 불가로 만든다. (물리 피해 또는 불 원소 피해를 받으면 조기 해제되지만, 해당 피해로 받는 피해량이 2pt 추가된다)\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}<color=#FFFFFFFF>개화</color>: 이번 피해+1pt, 다음번 불 원소 또는 번개 원소 피해를 2pt 증가시키는 [<color=#FFFFFFFF>풀 원핵</color>]을 생성한다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3
+            }
+        },
+        "12033": {
+            "Name": "별의 운명",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 <color=#FFFFFFFF>$[C112032]</color>을 생성한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "D__KEY__DAMAGE": 4,
+                "C112032": {
+                    "Name": "포영",
+                    "Desc": "<color=#FFFFFFFF>아군이 스킬 피해를 줄 시:</color> 해당 상태가 제거되고 이번에 주는 피해가 2배가 된다.",
+                    "Child": {}
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3,
+                "GCG_COST_ENERGY": 3
+            }
+        },
+        "12034": {
+            "Name": "흐르는 허와 실",
+            "Desc": "[패시브] <color=#FFFFFFFF>해당 캐릭터가 출전 캐릭터이며 아군이 「캐릭터 교체」 행동 진행 시:</color> 이번 교체를 「$[K1]」이 아닌 「$[K2]」으로 간주한다. (턴당 1회)",
+            "Child": {
+                "K1": {
+                    "Name": "<color=#FFFFFFFF>전투 행동</color>",
+                    "Desc": "아군이 전투 행동을 1회 진행하면 행동 순서가 상대에게 넘어간다.\\n<color=#FFFFFFFF>해당 규칙에 속하는 카드는 사용 시 빠른 행동이 아닌 전투 행동으로 간주한다</color>."
+                },
+                "K2": {
+                    "Name": "<color=#FFFFFFFF>빠른 행동</color>",
+                    "Desc": "빠른 행동을 1회 진행하면 아군은 계속해서 다른 행동을 진행할 수 있다.\\n전투 행동을 1회 진행해야만 행동 순서가 상대에게 넘어간다."
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 212031
+}

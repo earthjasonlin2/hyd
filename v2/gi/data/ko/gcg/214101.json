@@ -1,0 +1,52 @@
+{
+    "Type": "Action",
+    "Name": "적자 보충",
+    "Title": "도리·적자 보충",
+    "Desc": "「일단 상품 가격을 30% 올리고 20% 할인해서 파는 거야!」",
+    "Source": "캣테일 술집에서 도리를 초대해 대전하고 상응하는 도전 목표 달성 후 획득",
+    "Icon": "UI_Gcg_CardFace_Modify_Constellation_Dori",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_ELECTRO",
+            "count": 3
+        },
+        {
+            "costType": "GCG_COST_ENERGY",
+            "count": 2
+        }
+    ],
+    "Tag": [
+        "특성",
+        "전투 행동"
+    ],
+    "Talent": {
+        "Name": "적자 보충",
+        "Desc": "$[K1]: 아군 출전 캐릭터가 <color=#FFFFFFFF>$[A1410]</color>일 때 해당 카드를 장착할 수 있다.\\n$[A1410]가 해당 카드를 장착하면 즉시 <color=#FFD780FF>$[S14103]</color>을 1회 사용한다.\\n해당 카드를 장착한 $[A1410]가 소환한 <color=#FFFFFFFF>$[C114102]</color>이 HP가 6pt 이하인 캐릭터 치유 시 치유량+1pt 및 $[K310]를 보유하지 않은 캐릭터에게 $[K310] 제공 시 획득량+1pt\\n(카드 덱에 $[A1410]가 있어야만 카드 덱에 추가 가능)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>전투 행동</color>",
+                "Desc": "아군이 전투 행동을 1회 진행하면 행동 순서가 상대에게 넘어간다.\\n<color=#FFFFFFFF>해당 규칙에 속하는 카드는 사용 시 빠른 행동이 아닌 전투 행동으로 간주한다</color>."
+            },
+            "A1410": "적자 보충",
+            "S14103": "S14103",
+            "C114102": {
+                "Name": "램프의 정령",
+                "Desc": "<color=#FFFFFFFF>종료 단계:</color> 아군 출전 캐릭터의 HP를 2pt 치유하고 해당 캐릭터가 $[K310]를 1pt 획득한다.\\n<color=#FFFFFFFF>$[K3]: 2</color>",
+                "Child": {
+                    "K310": {
+                        "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}원소 에너지</color>",
+                        "Desc": "캐릭터가 「원소폭발」을 사용하려면 {SPRITE_PRESET#1110}원소 에너지를 소모해야 한다.\\n캐릭터가 「원소전투 스킬」 또는 「일반 공격」을 사용하면 {SPRITE_PRESET#1110}원소 에너지를 1pt 획득한다."
+                    },
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                        "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                    }
+                }
+            },
+            "K310": {
+                "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}원소 에너지</color>",
+                "Desc": "캐릭터가 「원소폭발」을 사용하려면 {SPRITE_PRESET#1110}원소 에너지를 소모해야 한다.\\n캐릭터가 「원소전투 스킬」 또는 「일반 공격」을 사용하면 {SPRITE_PRESET#1110}원소 에너지를 1pt 획득한다."
+            }
+        }
+    }
+}

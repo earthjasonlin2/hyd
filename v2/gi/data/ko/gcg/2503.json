@@ -1,0 +1,89 @@
+{
+    "Type": "Character",
+    "Name": "성해 날뱀",
+    "Title": "유해의 광풍·성해 날뱀",
+    "Desc": "위대한 존재를 삼켜 기이하게 뒤틀린 날뱀, 맹렬하고 세찬 바람을 몬다",
+    "Source": "캣테일 술집의 왕자님을 통해 술집 도전 진행 및 친선 대전 난이도의 성해 날뱀에게 승리 후 획득",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_ChrysopeleaSacred",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "바람 원소",
+        "기타 무기",
+        "마물",
+        "성해 짐승"
+    ],
+    "Talent": {
+        "25031": {
+            "Name": "꼬리 속공",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "25032": {
+            "Name": "맴도는 바람",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고, 카드를 1장 드로우한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO",
+                "D__KEY__DAMAGE": 3
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 3
+            }
+        },
+        "25033": {
+            "Name": "불규칙한 바람 소용돌이",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 핸드 카드에 있는 모든 <color=#FFFFFFFF>$[C124051]</color>를 $[K56]한다. 2장을 $[K56]할 때마다 이번 한 번의 피해가 두 배로 증가한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO",
+                "D__KEY__DAMAGE": 2,
+                "C124051": {
+                    "Name": "성해 에너지 덩어리",
+                    "Desc": "랜덤으로 기본 원소 주사위 코스트가 가장 높은 핸드 카드를 1장 $[K56]하고 아군 출전 캐릭터 타입의 원소 주사위를 1개 생성한다. (턴당 최대 1장 사용)",
+                    "Child": {
+                        "K56": {
+                            "Name": "<color=#FFFFFFFF>포기</color>",
+                            "Desc": "행동 카드 또는 캐릭터 스킬의 효과를 통해, 핸드 카드 또는 카드 더미에서 행동 카드를 버린다."
+                        }
+                    }
+                },
+                "K56": {
+                    "Name": "<color=#FFFFFFFF>포기</color>",
+                    "Desc": "행동 카드 또는 캐릭터 스킬의 효과를 통해, 핸드 카드 또는 카드 더미에서 행동 카드를 버린다."
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "25034": {
+            "Name": "불멸의 유해·바람",
+            "Desc": "[패시브] 전투 시작 시, <color=#FFFFFFFF>$[C124051]</color>를 6장 생성해 카드 더미에 넣는다.",
+            "Child": {
+                "C124051": {
+                    "Name": "성해 에너지 덩어리",
+                    "Desc": "랜덤으로 기본 원소 주사위 코스트가 가장 높은 핸드 카드를 1장 $[K56]하고 아군 출전 캐릭터 타입의 원소 주사위를 1개 생성한다. (턴당 최대 1장 사용)",
+                    "Child": {
+                        "K56": {
+                            "Name": "<color=#FFFFFFFF>포기</color>",
+                            "Desc": "행동 카드 또는 캐릭터 스킬의 효과를 통해, 핸드 카드 또는 카드 더미에서 행동 카드를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 225031
+}

@@ -1,0 +1,34 @@
+{
+    "Type": "Action",
+    "Name": "Terror for the Evildoers",
+    "Title": "Wriothesley: Terror for the Evildoers",
+    "Desc": "\"Stay cool and face your guilt!\"",
+    "Source": "Reward for inviting Wriothesley to a duel at The Cat's Tail and achieving all corresponding challenge objectives",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Wriothesley",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_CRYO",
+            "count": 1
+        },
+        {
+            "costType": "GCG_COST_DICE_VOID",
+            "count": 2
+        }
+    ],
+    "Tag": [
+        "Talent",
+        "Combat Action"
+    ],
+    "Talent": {
+        "Name": "Terror for the Evildoers",
+        "Desc": "$[K1]: When <color=#FFFFFFFF>$[A1111]</color> is your active character, equip this card.\\nAfter $[A1111] equips this card, immediately use <color=#FFD780FF>$[S11111]</color> once.\\nWhen $[A1111], who has this card equipped, takes DMG or is healed, accumulate 1 <color=#FFFFFFFF>\"Penalty\"</color> point.\\nWhen Wriothesley, with this card equipped, uses a Skill: If there are 3 <color=#FFFFFFFF>\"Penalty\"</color> points, consume 3 points to cause this Skill to deal +1 DMG.\\n(You must have $[A1111] in your deck to add this card to your deck.)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+            },
+            "A1111": "Terror for the Evildoers",
+            "S11111": "S11111"
+        }
+    }
+}

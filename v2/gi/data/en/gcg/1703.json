@@ -1,0 +1,106 @@
+{
+    "Type": "Character",
+    "Name": "Nahida",
+    "Title": "\"Physic of Purity\" Nahida",
+    "Desc": "The panacea brings purity, and from the palace depths is spring renewed.",
+    "Source": "Reward for inviting Nahida to a duel at The Cat's Tail and claiming victory in a Friendly Fracas with her",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Nahida",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "Dendro",
+        "Catalyst",
+        "Sumeru"
+    ],
+    "Talent": {
+        "17031": {
+            "Name": "Akara",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_DENDRO"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "17032": {
+            "Name": "All Schemes to Know",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], applies <color=#FFFFFFFF>$[C117031]</color> to target character. If the target character already has <color=#FFFFFFFF>$[C117031]</color> applied to them, then apply <color=#FFFFFFFF>$[C117031]</color> to all opposing characters instead.",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_DENDRO",
+                "C117031": {
+                    "Name": "Seed of Skandha",
+                    "Desc": "<color=#FFFFFFFF>After any character who has a Seed of Skandha takes Elemental Reaction DMG:</color> Deals 1 $[K5] to the character(s) to which the Seed of Skandha is attached on the same side of the field.\\n<color=#FFFFFFFF>$[K3]: 2</color>",
+                    "Child": {
+                        "K5": {
+                            "Name": "<color=#FFFFFFFF>Piercing DMG</color>",
+                            "Desc": "Piercing DMG cannot be increased by any bonuses, but cannot be defended against using Shields or DMG Immunity either."
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 3
+            }
+        },
+        "17033": {
+            "Name": "All Schemes to Know: Tathata",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. Applies <color=#FFFFFFFF>$[C117031]</color> to all opposing characters.",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_DENDRO",
+                "C117031": {
+                    "Name": "Seed of Skandha",
+                    "Desc": "<color=#FFFFFFFF>After any character who has a Seed of Skandha takes Elemental Reaction DMG:</color> Deals 1 $[K5] to the character(s) to which the Seed of Skandha is attached on the same side of the field.\\n<color=#FFFFFFFF>$[K3]: 2</color>",
+                    "Child": {
+                        "K5": {
+                            "Name": "<color=#FFFFFFFF>Piercing DMG</color>",
+                            "Desc": "Piercing DMG cannot be increased by any bonuses, but cannot be defended against using Shields or DMG Immunity either."
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 5
+            }
+        },
+        "17034": {
+            "Name": "Illusory Heart",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], creates 1 <color=#FFFFFFFF>$[C117032]</color>.",
+            "Child": {
+                "D__KEY__DAMAGE": 4,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_DENDRO",
+                "C117032": {
+                    "Name": "Shrine of Maya",
+                    "Desc": "<color=#FFFFFFFF>When your character triggers an Elemental Reaction: </color>+1 additional DMG.\\n<color=#FFFFFFFF>$[K4]: 2</color>",
+                    "Child": {
+                        "K4": {
+                            "Name": "<color=#FFFFFFFF>Duration (Rounds)</color>",
+                            "Desc": "Each time you reach the end of a Round, <color=#FFFFFFFF>Duration (Rounds)</color> -1.\\nThis card will be discarded immediately once <color=#FFFFFFFF>Duration (Rounds)</color> runs out."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 217031
+}

@@ -1,0 +1,202 @@
+{
+    "Type": "Character",
+    "Name": "타르탈리아",
+    "Title": "「귀공자」·타르탈리아",
+    "Desc": "카드 대전은 전장과도 같아서, 능력 있는 자가 앞설 수 있다",
+    "Source": "캣테일 술집에서 타르탈리아 초대 및 친선 대전 난이도 승리 후 획득",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Tartaglia",
+    "Hp": 10,
+    "Cost": 3,
+    "Tag": [
+        "물 원소",
+        "활",
+        "우인단"
+    ],
+    "Talent": {
+        "12041": {
+            "Name": "단우",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "12042": {
+            "Name": "마왕 무장·광란",
+            "Desc": "<color=#FFFFFFFF>$[C112042]</color>로 진입해 $[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 대상 캐릭터에게 <color=#FFFFFFFF>$[C112043]</color>를 부착한다.",
+            "Child": {
+                "C112042": {
+                    "Name": "근접 상태",
+                    "Desc": "캐릭터가 발동한 $[K100]가 $[K102]로 전환된다.\\n<color=#FFFFFFFF>캐릭터가 $[K51] 발동 후:</color> 대상 캐릭터에게 $[K1005]를 부착한다.\\n$[K1005]가 부착된 캐릭터에게 주는 피해가 1pt 증가한다.\\n<color=#FFFFFFFF>$[K1005]가 부착된 캐릭터에게 스킬 사용 후:</color> 상대의 다음 대기 캐릭터에게 $[K5]를 1pt 준다. (턴당 최대 2회)\\n\\n<color=#FFFFFFFF>$[K4]: 2</color>",
+                    "Child": {
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>",
+                            "Desc": "물리 피해는 원소를 부착할 수 없고, 원소 반응이 발생하지 않는다."
+                        },
+                        "K102": {
+                            "Name": "{SPRITE_PRESET#2102}<color=#80C0FFFF>물 원소 피해</color>",
+                            "Desc": "{SPRITE_PRESET#2102}물 원소 부착 시 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2103}<color=#FFFFFFFF>증발</color>: 이번 피해+2pt\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}<color=#FFFFFFFF>감전</color>: 이번 피해+1pt, 대상 이외의 모든 상대 캐릭터에게 관통 피해를 1pt 준다.\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2101}<color=#FFFFFFFF>빙결</color>: 이번 피해+1pt, 이번 턴에 대상을 행동 불가로 만든다. (물리 피해 또는 불 원소 피해를 받으면 조기 해제되지만, 해당 피해로 받는 피해량이 2pt 추가된다)\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}<color=#FFFFFFFF>개화</color>: 이번 피해+1pt, 다음번 불 원소 또는 번개 원소 피해를 2pt 증가시키는 [<color=#FFFFFFFF>풀 원핵</color>]을 생성한다."
+                        },
+                        "K51": {
+                            "Name": "<color=#FFFFFFFF>강공격</color>",
+                            "Desc": "아군이 행동을 시작하기 전에 원소 주사위 총개수가 짝수인 경우, 발동한 「일반 공격」을 「강공격」으로 간주한다."
+                        },
+                        "K1005": {
+                            "Name": "<color=#FFFFFFFF>단류</color>",
+                            "Desc": "<color=#FFFFFFFF>부착 캐릭터가 처치된 후:</color> 소속 진영의 출전 캐릭터에게 「단류」를 부착한다.\\n(<color=#FFFFFFFF>「근접 상태」</color>의 <color=#FFFFFFFF>타르탈리아</color>가 부착 캐릭터를 공격하면 추가 피해를 줄 수 있다)"
+                        },
+                        "K5": {
+                            "Name": "<color=#FFFFFFFF>관통 피해</color>",
+                            "Desc": "관통 피해는 피해 보너스를 획득할 수 없으나, 주는 피해가 보호막 또는 피해 면역과 같은 효과에 의해 상쇄되지 않는다."
+                        },
+                        "K4": {
+                            "Name": "<color=#FFFFFFFF>지속 턴</color>",
+                            "Desc": "턴이 종료 단계에 진입할 때마다 <color=#FFFFFFFF>지속 턴</color>이 1회씩 감소한다.\\n<color=#FFFFFFFF>지속 턴</color>이 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                },
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "D__KEY__DAMAGE": 2,
+                "C112043": {
+                    "Name": "단류",
+                    "Desc": "<color=#FFFFFFFF>부착 캐릭터가 처치된 후:</color> 소속 진영의 출전 캐릭터에게 「단류」를 부착한다.\\n(<color=#FFFFFFFF>「$[C112042]」</color>의 <color=#FFFFFFFF>$[A1204]</color>가 부착 캐릭터를 공격하면 추가 피해를 준다)",
+                    "Child": {
+                        "A1204": "타르탈리아"
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3
+            }
+        },
+        "12043": {
+            "Name": "극악기·진멸섬",
+            "Desc": "<color=#FFFFFFFF>$[A1204]</color>의 현재 상태에 따라 공격 방식이 달라진다.\\n<color=#FFFFFFFF>원거리 상태·마탄 일섬:</color> $[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE_5]pt 주고 $[K310]를 2pt 돌려받으며 대상에게 <color=#FFFFFFFF>$[C112043]</color>를 부착한다.\\n<color=#FFFFFFFF>근접 상태·진멸의 물빛:</color> $[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "A1204": "타르탈리아",
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "D__KEY__DAMAGE_5": 5,
+                "K310": {
+                    "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}원소 에너지</color>",
+                    "Desc": "캐릭터가 「원소폭발」을 사용하려면 {SPRITE_PRESET#1110}원소 에너지를 소모해야 한다.\\n캐릭터가 「원소전투 스킬」 또는 「일반 공격」을 사용하면 {SPRITE_PRESET#1110}원소 에너지를 1pt 획득한다."
+                },
+                "C112043": {
+                    "Name": "단류",
+                    "Desc": "<color=#FFFFFFFF>부착 캐릭터가 처치된 후:</color> 소속 진영의 출전 캐릭터에게 「단류」를 부착한다.\\n(<color=#FFFFFFFF>「$[C112042]」</color>의 <color=#FFFFFFFF>$[A1204]</color>가 부착 캐릭터를 공격하면 추가 피해를 준다)",
+                    "Child": {
+                        "C112042": {
+                            "Name": "근접 상태",
+                            "Desc": "캐릭터가 발동한 $[K100]가 $[K102]로 전환된다.\\n<color=#FFFFFFFF>캐릭터가 $[K51] 발동 후:</color> 대상 캐릭터에게 $[K1005]를 부착한다.\\n$[K1005]가 부착된 캐릭터에게 주는 피해가 1pt 증가한다.\\n<color=#FFFFFFFF>$[K1005]가 부착된 캐릭터에게 스킬 사용 후:</color> 상대의 다음 대기 캐릭터에게 $[K5]를 1pt 준다. (턴당 최대 2회)\\n\\n<color=#FFFFFFFF>$[K4]: 2</color>",
+                            "Child": {
+                                "K100": {
+                                    "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>",
+                                    "Desc": "물리 피해는 원소를 부착할 수 없고, 원소 반응이 발생하지 않는다."
+                                },
+                                "K102": {
+                                    "Name": "{SPRITE_PRESET#2102}<color=#80C0FFFF>물 원소 피해</color>",
+                                    "Desc": "{SPRITE_PRESET#2102}물 원소 부착 시 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2103}<color=#FFFFFFFF>증발</color>: 이번 피해+2pt\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}<color=#FFFFFFFF>감전</color>: 이번 피해+1pt, 대상 이외의 모든 상대 캐릭터에게 관통 피해를 1pt 준다.\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2101}<color=#FFFFFFFF>빙결</color>: 이번 피해+1pt, 이번 턴에 대상을 행동 불가로 만든다. (물리 피해 또는 불 원소 피해를 받으면 조기 해제되지만, 해당 피해로 받는 피해량이 2pt 추가된다)\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}<color=#FFFFFFFF>개화</color>: 이번 피해+1pt, 다음번 불 원소 또는 번개 원소 피해를 2pt 증가시키는 [<color=#FFFFFFFF>풀 원핵</color>]을 생성한다."
+                                },
+                                "K51": {
+                                    "Name": "<color=#FFFFFFFF>강공격</color>",
+                                    "Desc": "아군이 행동을 시작하기 전에 원소 주사위 총개수가 짝수인 경우, 발동한 「일반 공격」을 「강공격」으로 간주한다."
+                                },
+                                "K1005": {
+                                    "Name": "<color=#FFFFFFFF>단류</color>",
+                                    "Desc": "<color=#FFFFFFFF>부착 캐릭터가 처치된 후:</color> 소속 진영의 출전 캐릭터에게 「단류」를 부착한다.\\n(<color=#FFFFFFFF>「근접 상태」</color>의 <color=#FFFFFFFF>타르탈리아</color>가 부착 캐릭터를 공격하면 추가 피해를 줄 수 있다)"
+                                },
+                                "K5": {
+                                    "Name": "<color=#FFFFFFFF>관통 피해</color>",
+                                    "Desc": "관통 피해는 피해 보너스를 획득할 수 없으나, 주는 피해가 보호막 또는 피해 면역과 같은 효과에 의해 상쇄되지 않는다."
+                                },
+                                "K4": {
+                                    "Name": "<color=#FFFFFFFF>지속 턴</color>",
+                                    "Desc": "턴이 종료 단계에 진입할 때마다 <color=#FFFFFFFF>지속 턴</color>이 1회씩 감소한다.\\n<color=#FFFFFFFF>지속 턴</color>이 전부 소진되면 즉시 해당 패를 버린다."
+                                }
+                            }
+                        },
+                        "A1204": "타르탈리아"
+                    }
+                },
+                "D__KEY__DAMAGE": 7
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3,
+                "GCG_COST_ENERGY": 3
+            }
+        },
+        "12044": {
+            "Name": "파도 억제",
+            "Desc": "[패시브] 전투 시작 시, 시작부터 <color=#FFFFFFFF>$[C112041]</color>가 부착된다.\\n캐릭터에게 부착된 <color=#FFFFFFFF>$[C112042]</color> 효과 종료 시 <color=#FFFFFFFF>$[C112041]</color>를 다시 부착한다.",
+            "Child": {
+                "C112041": {
+                    "Name": "원거리 상태",
+                    "Desc": "<color=#FFFFFFFF>부착 캐릭터가 $[K51] 발동 후:</color> 대상 캐릭터에게 $[K1005]를 부착한다.",
+                    "Child": {
+                        "K51": {
+                            "Name": "<color=#FFFFFFFF>강공격</color>",
+                            "Desc": "아군이 행동을 시작하기 전에 원소 주사위 총개수가 짝수인 경우, 발동한 「일반 공격」을 「강공격」으로 간주한다."
+                        },
+                        "K1005": {
+                            "Name": "<color=#FFFFFFFF>단류</color>",
+                            "Desc": "<color=#FFFFFFFF>부착 캐릭터가 처치된 후:</color> 소속 진영의 출전 캐릭터에게 「단류」를 부착한다.\\n(<color=#FFFFFFFF>「근접 상태」</color>의 <color=#FFFFFFFF>타르탈리아</color>가 부착 캐릭터를 공격하면 추가 피해를 줄 수 있다)"
+                        }
+                    }
+                },
+                "C112042": {
+                    "Name": "근접 상태",
+                    "Desc": "캐릭터가 발동한 $[K100]가 $[K102]로 전환된다.\\n<color=#FFFFFFFF>캐릭터가 $[K51] 발동 후:</color> 대상 캐릭터에게 $[K1005]를 부착한다.\\n$[K1005]가 부착된 캐릭터에게 주는 피해가 1pt 증가한다.\\n<color=#FFFFFFFF>$[K1005]가 부착된 캐릭터에게 스킬 사용 후:</color> 상대의 다음 대기 캐릭터에게 $[K5]를 1pt 준다. (턴당 최대 2회)\\n\\n<color=#FFFFFFFF>$[K4]: 2</color>",
+                    "Child": {
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>",
+                            "Desc": "물리 피해는 원소를 부착할 수 없고, 원소 반응이 발생하지 않는다."
+                        },
+                        "K102": {
+                            "Name": "{SPRITE_PRESET#2102}<color=#80C0FFFF>물 원소 피해</color>",
+                            "Desc": "{SPRITE_PRESET#2102}물 원소 부착 시 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2103}<color=#FFFFFFFF>증발</color>: 이번 피해+2pt\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}<color=#FFFFFFFF>감전</color>: 이번 피해+1pt, 대상 이외의 모든 상대 캐릭터에게 관통 피해를 1pt 준다.\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2101}<color=#FFFFFFFF>빙결</color>: 이번 피해+1pt, 이번 턴에 대상을 행동 불가로 만든다. (물리 피해 또는 불 원소 피해를 받으면 조기 해제되지만, 해당 피해로 받는 피해량이 2pt 추가된다)\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}<color=#FFFFFFFF>개화</color>: 이번 피해+1pt, 다음번 불 원소 또는 번개 원소 피해를 2pt 증가시키는 [<color=#FFFFFFFF>풀 원핵</color>]을 생성한다."
+                        },
+                        "K51": {
+                            "Name": "<color=#FFFFFFFF>강공격</color>",
+                            "Desc": "아군이 행동을 시작하기 전에 원소 주사위 총개수가 짝수인 경우, 발동한 「일반 공격」을 「강공격」으로 간주한다."
+                        },
+                        "K1005": {
+                            "Name": "<color=#FFFFFFFF>단류</color>",
+                            "Desc": "<color=#FFFFFFFF>부착 캐릭터가 처치된 후:</color> 소속 진영의 출전 캐릭터에게 「단류」를 부착한다.\\n(<color=#FFFFFFFF>「근접 상태」</color>의 <color=#FFFFFFFF>타르탈리아</color>가 부착 캐릭터를 공격하면 추가 피해를 줄 수 있다)"
+                        },
+                        "K5": {
+                            "Name": "<color=#FFFFFFFF>관통 피해</color>",
+                            "Desc": "관통 피해는 피해 보너스를 획득할 수 없으나, 주는 피해가 보호막 또는 피해 면역과 같은 효과에 의해 상쇄되지 않는다."
+                        },
+                        "K4": {
+                            "Name": "<color=#FFFFFFFF>지속 턴</color>",
+                            "Desc": "턴이 종료 단계에 진입할 때마다 <color=#FFFFFFFF>지속 턴</color>이 1회씩 감소한다.\\n<color=#FFFFFFFF>지속 턴</color>이 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        },
+        "12045": {
+            "Name": "원거리 상태",
+            "Desc": "",
+            "Child": {},
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        },
+        "12046": {
+            "Name": "파도 억제",
+            "Desc": "",
+            "Child": {},
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 212041
+}

@@ -1,0 +1,42 @@
+{
+    "Type": "Action",
+    "Name": "最終解釈権",
+    "Title": "煙緋·最終解釈権",
+    "Desc": "「札遊びに関してはもちろん…法律に禁止されていない限りはしてよし。」",
+    "Source": "キャッツテールで煙緋を招待して対戦し、対応する挑戦目標をクリアすることで獲得",
+    "Icon": "UI_Gcg_CardFace_Modify_Constellation_Feiyan",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PYRO",
+            "count": 1
+        },
+        {
+            "costType": "GCG_COST_DICE_VOID",
+            "count": 2
+        }
+    ],
+    "Tag": [
+        "天賦",
+        "戦闘アクション"
+    ],
+    "Talent": {
+        "Name": "最終解釈権",
+        "Desc": "$[K1]：味方の出撃キャラが<color=#FFFFFFFF>$[A1308]</color>の時、このカードを装備できる。\\n$[A1308]がこのカードを装備した後、直ちに<color=#FFD780FF>$[S13081]</color>を1回発動する。\\nこのカードを装備した$[A1308]が$[K51]を行う時、HPが6以下の相手キャラに与えるダメージ+1。$[K1010]を発動した場合、スキル処理完了後、手札を1枚引く。\\n（このカードはデッキに$[A1308]が含まれている場合のみ、デッキに追加できる）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>戦闘アクション</color>",
+                "Desc": "味方が戦闘アクションを1回行った後、相手のターンに移ります。\\n<color=#FFFFFFFF>このようなルールを持つ手札を出すのはクイックアクションではなく、戦闘アクションと見なされます。</color>"
+            },
+            "A1308": "最終解釈権",
+            "S13081": "S13081",
+            "K51": {
+                "Name": "<color=#FFFFFFFF>重撃</color>",
+                "Desc": "味方のアクションが始まる前、元素サイコロの数が偶数の時に行われる「通常攻撃」は、「重撃」と見なされる。"
+            },
+            "K1010": {
+                "Name": "<color=#FFFFFFFF>丹火の印</color>",
+                "Desc": "<color=#FFFFFFFF>キャラが<color=#FFFFFFFF>重撃</color>を行う時</color>、与えるダメージ+2。\\n<color=#FFFFFFFF><color=#FFFFFFFF>使用可能回数</color>：1</color>（最大2まで重ねられる）"
+            }
+        }
+    }
+}

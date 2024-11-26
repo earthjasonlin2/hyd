@@ -1,0 +1,36 @@
+{
+    "Type": "Action",
+    "Name": "「诸君听我颂，共举爱之杯！」",
+    "Title": "芙宁娜·「诸君听我颂，共举爱之杯！」",
+    "Desc": "「让世界热闹起来吧。」",
+    "Source": "在猫尾酒馆中邀请芙宁娜进行对局，完成相应挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Furina",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_HYDRO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "天赋",
+        "战斗行动"
+    ],
+    "Talent": {
+        "Name": "「诸君听我颂，共举爱之杯！」",
+        "Desc": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1211]</color>时，装备此牌。\\n$[A1211]装备此牌后，立刻使用一次<color=#FFD780FF>$[S12112]</color>。\\n装备有此牌的$[A1211]使用<color=#FFFFFFFF>$[S12123]</color>时，会对自身附属<color=#FFFFFFFF>$[K1030]</color>。（角色普通攻击时根据形态触发不同效果）\\n（牌组中包含$[A1211]，才能加入牌组）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>战斗行动</color>",
+                "Desc": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+            },
+            "A1211": "「诸君听我颂，共举爱之杯！」",
+            "S12112": "S12112",
+            "S12123": "S12123",
+            "K1030": {
+                "Name": "<color=#FFFFFFFF>万众瞩目</color>",
+                "Desc": "<color=#FFFFFFFF>角色进行普通攻击时：</color>使角色造成的{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>变为{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素伤害</color>。如果角色处于「{SPRITE_PRESET#3504}荒」形态，则治疗我方所有后台角色1点；如果角色处于「{SPRITE_PRESET#3505}芒」形态，则此伤害+2，但是对一位受伤最少的我方角色造成1点穿透伤害。\\n<color=#FFFFFFFF>可用次数：1</color>"
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "Type": "Action",
+    "Name": "순수한 달빛 물결",
+    "Title": "순수한 달빛 물결",
+    "Desc": "「…이 심장, 마치 육신처럼 뛰고 있는 이 심장은 이미 여정길 위에서 같은 죄에 물들었어요. 고통스러운 후회가 이 심장을 괴롭히고 있는데, 어디서 평화를 얻을 수 있겠어요?」",
+    "Source": "",
+    "Icon": "UI_Gcg_CardFace_Modify_Weapon_ChunShui",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PAIMON",
+            "count": 1
+        },
+        {}
+    ],
+    "Tag": [
+        "무기",
+        "법구"
+    ],
+    "Talent": {
+        "Name": "순수한 달빛 물결",
+        "Desc": "<color=#FFFFFFFF>필드 입장 시 또는 턴 종료 시:</color> 캐릭터에게 <color=#FFFFFFFF>$[C122]</color>을 1스택 부착한다.\\n<color=#FFFFFFFF>양측이 행동을 선택하기 전:</color> 부착 캐릭터에게 <color=#FFFFFFFF>$[C122]</color>이 부착되지 않았다면 랜덤으로 일반 원소 주사위를 1개 생성하고 캐릭터가 다음번에 주는 피해+1pt (턴당 1회)\\n(<color=#FFFFFFFF>「{SPRITE_PRESET#3201}법구」 캐릭터</color>만 장착 가능. 캐릭터는 「{SPRITE_PRESET#3003}무기」를 1개만 장착할 수 있다)",
+        "Child": {
+            "C122": {
+                "Name": "생명의 계약",
+                "Desc": "<color=#FFFFFFFF>부착 캐릭터가 치유를 받을 시:</color> 해당 효과의 $[K3] 1회당 1회 소모해 받는 치유 효과를 1pt 상쇄한다.(부활 또는 HP 분배로 받은 치유는 상쇄할 수 없음)\\n<color=#FFFFFFFF>$[K3]: 1</color> (중첩 가능, 상한 없음)",
+                "Child": {
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                        "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                    }
+                }
+            }
+        }
+    }
+}

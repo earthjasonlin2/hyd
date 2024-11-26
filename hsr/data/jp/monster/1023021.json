@@ -1,0 +1,412 @@
+{
+    "Id": 1023021,
+    "Name": "冷寒徘徊者（バグ）",
+    "Desc": "コードが影響を受けた後、バグってしまった投影。裂界を彷徨う機械ユニットを参考にしている。だが紛れもなくこれは人間の造物ではない、裂界の歪んだ力が模倣して作った化け物だ。\\n冷寒徘徊者（バグ）は永冬の災影を引き寄せる、同時に味方の速度と氷属性耐性をダウンさせる。",
+    "MonsterCampID": null,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 1395,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/Monster_1023020.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "Elite",
+    "SpeedBase": 100,
+    "StanceBase": 360,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.20000000018626451,
+    "Child": [
+        {
+            "Id": 1023021,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Thunder",
+                "Quantum"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 102302101,
+                    "SkillName": "氷輪鉄拳",
+                    "SkillDesc": "指定した味方単体に氷属性ダメージを与える。",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 102302105,
+                    "SkillName": "誘導体召喚",
+                    "SkillDesc": "「永冬の災影」を召喚する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 102302106,
+                    "SkillName": "氷結の嵐",
+                    "SkillDesc": "味方全体に氷属性ダメージを与え、高確率で攻撃を受けた味方を「冷寒」状態にする。",
+                    "DamageType": "Ice",
+                    "SPHitBase": 5
+                },
+                {
+                    "Id": 102302107,
+                    "SkillName": "誘導体吸収",
+                    "SkillDesc": "指定した味方単体に氷属性ダメージを与え、高確率で攻撃を受けた味方を「冷寒」状態にする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 102302108,
+                    "SkillName": "誘導体吸収",
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 102302109,
+                    "SkillName": "氷輪破砕",
+                    "SkillDesc": "指定した味方単体に氷属性ダメージを与え、高確率で攻撃を受けた味方を冷寒状態にする。",
+                    "DamageType": "Ice",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 102302110,
+                    "SkillName": "誘導体吸収",
+                    "SkillDesc": "永冬の災影を1体吸収し、自身の攻撃力をアップし、次の行動で「極寒越境」を発動する。永冬の災影を多く吸収すればするほど、次回に発動する「極寒越境」の波数が多くなる。フィールドに永冬の災影がいなければ、自身の防御力がダウン。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 102302111,
+                    "SkillName": "極寒越境",
+                    "SkillDesc": "味方全体に大量の氷属性ダメージを与え、高確率で攻撃を受けた味方を「冷寒」状態にする。",
+                    "DamageType": "Ice",
+                    "SPHitBase": 5
+                },
+                {
+                    "Id": 102302112,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 102302101,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1.6666670010890812,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": 20,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Fire",
+                "Physical",
+                "Quantum"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Thunder",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Wind",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 102302101,
+                    "SkillName": "氷輪鉄拳",
+                    "SkillDesc": "指定した味方単体に氷属性ダメージを与える。",
+                    "DamageType": "Ice",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 102302105,
+                    "SkillName": "誘導体召喚",
+                    "SkillDesc": "「永冬の災影」を召喚する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 102302106,
+                    "SkillName": "氷結の嵐",
+                    "SkillDesc": "味方全体に氷属性ダメージを与え、高確率で攻撃を受けた味方を「冷寒」状態にする。",
+                    "DamageType": "Ice",
+                    "SPHitBase": 5
+                },
+                {
+                    "Id": 102302107,
+                    "SkillName": "誘導体吸収",
+                    "SkillDesc": "指定した味方単体に氷属性ダメージを与え、高確率で攻撃を受けた味方を「冷寒」状態にする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 102302108,
+                    "SkillName": "誘導体吸収",
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 102302109,
+                    "SkillName": "氷輪破砕",
+                    "SkillDesc": "指定した味方単体に氷属性ダメージを与え、高確率で攻撃を受けた味方を冷寒状態にする。",
+                    "DamageType": "Ice",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 102302110,
+                    "SkillName": "誘導体吸収",
+                    "SkillDesc": "永冬の災影を1体吸収し、自身の攻撃力をアップし、次の行動で「極寒越境」を発動する。永冬の災影を多く吸収すればするほど、次回に発動する「極寒越境」の波数が多くなる。フィールドに永冬の災影がいなければ、自身の防御力がダウン。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 102302111,
+                    "SkillName": "極寒越境",
+                    "SkillDesc": "味方全体に大量の氷属性ダメージを与え、高確率で攻撃を受けた味方を「冷寒」状態にする。",
+                    "DamageType": "Ice",
+                    "SPHitBase": 5
+                },
+                {
+                    "Id": 102302112,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 1023021,
+            "AvatarExpReward": 150,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112011
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182006
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183002
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 1023021,
+            "WorldLevel": 1,
+            "AvatarExpReward": 200,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112011
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112012
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182006
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183002
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 1023021,
+            "WorldLevel": 2,
+            "AvatarExpReward": 250,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112011
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112012
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182006
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183002
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 1023021,
+            "WorldLevel": 3,
+            "AvatarExpReward": 300,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112011
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112012
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182006
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183002
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 1023021,
+            "WorldLevel": 4,
+            "AvatarExpReward": 350,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112012
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112013
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182006
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183002
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 1023021,
+            "WorldLevel": 5,
+            "AvatarExpReward": 400,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112012
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112013
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182006
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183002
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 1023021,
+            "WorldLevel": 6,
+            "AvatarExpReward": 400,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112012
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112013
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 182006
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 183002
+                }
+            ]
+        }
+    ]
+}

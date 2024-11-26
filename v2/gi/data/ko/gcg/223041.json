@@ -1,0 +1,37 @@
+{
+    "Type": "Action",
+    "Name": "용암철갑",
+    "Title": "용암철갑 제왕·용암철갑",
+    "Desc": "「이런 세상을 상상해 보라: 티바트의 모든 사람들이 사라지고, 무한으로 성장한 용암철갑 제왕이 결국 멜모니아궁을 아름답고 화려한 대리석 중갑으로 삼아 입은 모습을」",
+    "Source": "캣테일 술집의 왕자님을 통해 술집 도전 진행 및 친선 대전 난이도의 용암철갑 제왕 도전 목표 달성 후 획득",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_HermitCrabPrimo",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PYRO",
+            "count": 1
+        },
+        {}
+    ],
+    "Tag": [
+        "특성"
+    ],
+    "Talent": {
+        "Name": "용암철갑",
+        "Desc": "<color=#FFFFFFFF>필드 입장 시: </color>해당 카드를 장착한 <color=#FFFFFFFF>$[A2304]</color>에게 $[K203] 효과를 준다.\\n아군이 $[K1023] 이외의 $[K6] 상태 또는 $[K6] 출전 상태가 제거된 후: 해당 카드를 장착한 $[A2304]에게 $[K1023] 2스택이 부착된다. (턴당 1회)\\n(카드 덱에 $[A2304]이 있어야만 카드 덱에 추가 가능)",
+        "Child": {
+            "A2304": "용암철갑",
+            "K203": {
+                "Name": "<color=#FF9999FF>{SPRITE_PRESET#2103}불 원소 부착</color>",
+                "Desc": "피해를 입히지 않고 {SPRITE_PRESET#2103}불 원소를 부착하여 발생한 원소 반응은 피해 효과를 무시한다.\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>융해</color>: 효과 없음.\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>증발</color>: 효과 없음.\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>과부하</color>: 대상이 다음 캐릭터로 강제 교체된다.\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>연소</color>: 턴 종료 시 불 원소 피해를 1pt 주는 [<color=#FFFFFFFF>불타는 화염</color>]을 생성한다. (사용 가능 횟수: 1, 최대 중첩수: 2)"
+            },
+            "K1023": {
+                "Name": "<color=#FFFFFFFF>중갑 게딱지</color>",
+                "Desc": "스택마다 {SPRITE_PRESET#4007}<color=#FFFFFFFF>보호막</color>을 1pt 제공해 부착 캐릭터를 보호한다."
+            },
+            "K6": {
+                "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>보호막</color>",
+                "Desc": "해당 보호막의 보호를 받는 캐릭터가 피격 시, 보호막을 소모해 피해를 상쇄한다."
+            }
+        }
+    }
+}

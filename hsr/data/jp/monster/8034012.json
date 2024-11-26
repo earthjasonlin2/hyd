@@ -1,0 +1,1006 @@
+{
+    "Id": 8034012,
+    "Name": "大博打の賽を振る者",
+    "Desc": "スターピースカンパニー「戦略投資部」の高級幹部であり、「十の石心」の1人。基石を通して「存護」の使令の権能を手に入れた。その身をダイスとして、死地に立ちながら生を手にする。",
+    "MonsterCampID": null,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 8137.500000000466,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/Monster_8034010.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "LittleBoss",
+    "SpeedBase": 120,
+    "StanceBase": 570,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.3000000002793968,
+    "Child": [
+        {
+            "Id": 8034012,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Ice",
+                "Thunder",
+                "Wind"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Fire",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.40000000037252903
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 803401201,
+                    "SkillName": "一か八か",
+                    "SkillDesc": "指定した味方単体に虚数属性ダメージを与える。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 803401202,
+                    "SkillName": "分散投資",
+                    "SkillDesc": "連続でランダムな味方単体に少量の虚数属性ダメージを与える。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 5
+                },
+                {
+                    "Id": 803401203,
+                    "SkillName": "収益の取り分",
+                    "SkillDesc": "味方全体に少量の虚数属性ダメージを与え、EPを減らす。第二段階の時、追加で味方の「ポイント」を減らす。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401204,
+                    "SkillName": "ギャンブルタイム",
+                    "SkillDesc": "「オール・オア・ナッシング」を召喚し、味方単体をギャンブルデュエルに引きずり込む。「オール・オア・ナッシング」はギャンブルデュエルに参加している味方の攻撃を受けた後、攻撃者に1～6のポイントをランダムで与える。ギャンブルデュエルに参加している味方単体のターン終了時、ポイントが博戯の砂金石より小さい場合は敗北となり、攻撃を受ける。ポイントが博戯の砂金石より大きい場合は勝利となり、必殺技を発動できるようになる。また、ギャンブルデュエルに参加していない味方は「観戦者は語る勿れ」状態になり、ギャンブルデュエルが終了した後に解除される。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401205,
+                    "SkillName": "博打の宴",
+                    "SkillDesc": "「オール・オア・ナッシング」を召喚し、味方全体をギャンブルデュエルに引きずり込む。「オール・オア・ナッシング」は味方の攻撃を受けた後、攻撃者に1～6のポイントをランダムで与える。博戯の砂金石の次の行動時、ポイントが博戯の砂金石より小さい味方は敗北となり、攻撃を受ける。ポイントが博戯の砂金石より大きい味方は勝利となり、必殺技を発動できるようになる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401206,
+                    "SkillName": "敗者の退席",
+                    "SkillDesc": "ギャンブルデュエルに負けた味方単体に虚数属性ダメージを与え、高確率で攻撃を受けた味方単体を禁錮状態にする。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 803401207,
+                    "SkillName": "勝者総取り",
+                    "SkillDesc": "ギャンブルデュエルに負けたすべての味方に大量の虚数属性ダメージを与え、高確率で攻撃を受けた味方を禁錮状態にする。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 803401208,
+                    "SkillName": "博戯",
+                    "SkillDesc": "ギャンブルデュエルに勝った味方は「豪運」の効果を獲得し、与ダメージがアップする。ギャンブルデュエルに負けた味方は「不運」の効果を獲得し、受けるダメージがアップする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401209,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401210,
+                    "SkillName": "フロップにベット",
+                    "SkillDesc": "「オール・オア・ナッシング」を2つアクティベートする。さらに、味方単体をロックオンし、次の行動時にロックオンした味方単体に「大博打」を発動する。アクティベートされた「オール・オア・ナッシング」をすべて倒すと、「大博打」は発動されず、ランダムな味方単体が必殺技を発動できるようになる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401211,
+                    "SkillName": "オールイン",
+                    "SkillDesc": "すべての「オール・オア・ナッシング」をアクティベートし、次の行動時に「賭けに出れば必ず負ける」を発動する。アクティベートされた「オール・オア・ナッシング」をすべて倒すと、「賭けに出れば必ず負ける」は発動されず、味方全体が必殺技を発動できるようになる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401212,
+                    "SkillName": "大博打",
+                    "SkillDesc": "ロックオンした味方単体に虚数属性ダメージを与え、高確率で禁錮状態にする。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 803401213,
+                    "SkillName": "賭けに出れば必ず負ける",
+                    "SkillDesc": "味方全体に虚数属性ダメージを与え、高確率で禁錮状態にする。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 803401214,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401215,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401216,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401217,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401218,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401219,
+                    "SkillName": "ポイント",
+                    "SkillDesc": "戦闘中、すべてのユニットに一定数の「ポイント」が付与される、段階が進むとポイントがリセットされる。味方の「ポイント」が敵より小さい時、敵の受けるダメージが大幅に軽減され、靭性保護を獲得する。味方の「ポイント」が敵と同じ、またはそれより大きい時、敵の受けるダメージがアップする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401220,
+                    "SkillName": "コール",
+                    "SkillDesc": "段階開始時、または召喚物が倒された時、「オール・オア・ナッシング」を最大<unbreak>#1[i]</unbreak>体召喚する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401221,
+                    "SkillName": "ブラインドベット",
+                    "SkillDesc": "段階開始時または召喚物が倒された時、「オール・オア・ナッシング」または「オール・オア・ナッシング・ダブルラック」を最大<unbreak>#1[i]</unbreak>体召喚する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401222,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 803401201,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Ice",
+                "Thunder",
+                "Wind"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Fire",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.40000000037252903
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 803401201,
+                    "SkillName": "一か八か",
+                    "SkillDesc": "指定した味方単体に虚数属性ダメージを与える。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 803401202,
+                    "SkillName": "分散投資",
+                    "SkillDesc": "連続でランダムな味方単体に少量の虚数属性ダメージを与える。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 5
+                },
+                {
+                    "Id": 803401203,
+                    "SkillName": "収益の取り分",
+                    "SkillDesc": "味方全体に少量の虚数属性ダメージを与え、EPを減らす。第二段階の時、追加で味方の「ポイント」を減らす。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401204,
+                    "SkillName": "ギャンブルタイム",
+                    "SkillDesc": "「オール・オア・ナッシング」を召喚し、味方単体をギャンブルデュエルに引きずり込む。「オール・オア・ナッシング」はギャンブルデュエルに参加している味方の攻撃を受けた後、攻撃者に1～6のポイントをランダムで与える。ギャンブルデュエルに参加している味方単体のターン終了時、ポイントが博戯の砂金石より小さい場合は敗北となり、攻撃を受ける。ポイントが博戯の砂金石より大きい場合は勝利となり、必殺技を発動できるようになる。また、ギャンブルデュエルに参加していない味方は「観戦者は語る勿れ」状態になり、ギャンブルデュエルが終了した後に解除される。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401205,
+                    "SkillName": "博打の宴",
+                    "SkillDesc": "「オール・オア・ナッシング」を召喚し、味方全体をギャンブルデュエルに引きずり込む。「オール・オア・ナッシング」は味方の攻撃を受けた後、攻撃者に1～6のポイントをランダムで与える。博戯の砂金石の次の行動時、ポイントが博戯の砂金石より小さい味方は敗北となり、攻撃を受ける。ポイントが博戯の砂金石より大きい味方は勝利となり、必殺技を発動できるようになる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401206,
+                    "SkillName": "敗者の退席",
+                    "SkillDesc": "ギャンブルデュエルに負けた味方単体に虚数属性ダメージを与え、高確率で攻撃を受けた味方単体を禁錮状態にする。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 803401207,
+                    "SkillName": "勝者総取り",
+                    "SkillDesc": "ギャンブルデュエルに負けたすべての味方に大量の虚数属性ダメージを与え、高確率で攻撃を受けた味方を禁錮状態にする。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 803401208,
+                    "SkillName": "博戯",
+                    "SkillDesc": "ギャンブルデュエルに勝った味方は「豪運」の効果を獲得し、与ダメージがアップする。ギャンブルデュエルに負けた味方は「不運」の効果を獲得し、受けるダメージがアップする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401209,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401210,
+                    "SkillName": "フロップにベット",
+                    "SkillDesc": "「オール・オア・ナッシング」を2つアクティベートする。さらに、味方単体をロックオンし、次の行動時にロックオンした味方単体に「大博打」を発動する。アクティベートされた「オール・オア・ナッシング」をすべて倒すと、「大博打」は発動されず、ランダムな味方単体が必殺技を発動できるようになる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401211,
+                    "SkillName": "オールイン",
+                    "SkillDesc": "すべての「オール・オア・ナッシング」をアクティベートし、次の行動時に「賭けに出れば必ず負ける」を発動する。アクティベートされた「オール・オア・ナッシング」をすべて倒すと、「賭けに出れば必ず負ける」は発動されず、味方全体が必殺技を発動できるようになる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401212,
+                    "SkillName": "大博打",
+                    "SkillDesc": "ロックオンした味方単体に虚数属性ダメージを与え、高確率で禁錮状態にする。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 803401213,
+                    "SkillName": "賭けに出れば必ず負ける",
+                    "SkillDesc": "味方全体に虚数属性ダメージを与え、高確率で禁錮状態にする。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 803401214,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401215,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401216,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401217,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401218,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401219,
+                    "SkillName": "ポイント",
+                    "SkillDesc": "戦闘中、すべてのユニットに一定数の「ポイント」が付与される、段階が進むとポイントがリセットされる。味方の「ポイント」が敵より小さい時、敵の受けるダメージが大幅に軽減され、靭性保護を獲得する。味方の「ポイント」が敵と同じ、またはそれより大きい時、敵の受けるダメージがアップする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401220,
+                    "SkillName": "コール",
+                    "SkillDesc": "段階開始時、または召喚物が倒された時、「オール・オア・ナッシング」を最大<unbreak>#1[i]</unbreak>体召喚する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401221,
+                    "SkillName": "ブラインドベット",
+                    "SkillDesc": "段階開始時または召喚物が倒された時、「オール・オア・ナッシング」または「オール・オア・ナッシング・ダブルラック」を最大<unbreak>#1[i]</unbreak>体召喚する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401222,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 803401202,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Ice",
+                "Thunder",
+                "Wind"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Fire",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.40000000037252903
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 803401201,
+                    "SkillName": "一か八か",
+                    "SkillDesc": "指定した味方単体に虚数属性ダメージを与える。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 803401202,
+                    "SkillName": "分散投資",
+                    "SkillDesc": "連続でランダムな味方単体に少量の虚数属性ダメージを与える。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 5
+                },
+                {
+                    "Id": 803401203,
+                    "SkillName": "収益の取り分",
+                    "SkillDesc": "味方全体に少量の虚数属性ダメージを与え、EPを減らす。第二段階の時、追加で味方の「ポイント」を減らす。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401204,
+                    "SkillName": "ギャンブルタイム",
+                    "SkillDesc": "「オール・オア・ナッシング」を召喚し、味方単体をギャンブルデュエルに引きずり込む。「オール・オア・ナッシング」はギャンブルデュエルに参加している味方の攻撃を受けた後、攻撃者に1～6のポイントをランダムで与える。ギャンブルデュエルに参加している味方単体のターン終了時、ポイントが博戯の砂金石より小さい場合は敗北となり、攻撃を受ける。ポイントが博戯の砂金石より大きい場合は勝利となり、必殺技を発動できるようになる。また、ギャンブルデュエルに参加していない味方は「観戦者は語る勿れ」状態になり、ギャンブルデュエルが終了した後に解除される。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401205,
+                    "SkillName": "博打の宴",
+                    "SkillDesc": "「オール・オア・ナッシング」を召喚し、味方全体をギャンブルデュエルに引きずり込む。「オール・オア・ナッシング」は味方の攻撃を受けた後、攻撃者に1～6のポイントをランダムで与える。博戯の砂金石の次の行動時、ポイントが博戯の砂金石より小さい味方は敗北となり、攻撃を受ける。ポイントが博戯の砂金石より大きい味方は勝利となり、必殺技を発動できるようになる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401206,
+                    "SkillName": "敗者の退席",
+                    "SkillDesc": "ギャンブルデュエルに負けた味方単体に虚数属性ダメージを与え、高確率で攻撃を受けた味方単体を禁錮状態にする。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 803401207,
+                    "SkillName": "勝者総取り",
+                    "SkillDesc": "ギャンブルデュエルに負けたすべての味方に大量の虚数属性ダメージを与え、高確率で攻撃を受けた味方を禁錮状態にする。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 803401208,
+                    "SkillName": "博戯",
+                    "SkillDesc": "ギャンブルデュエルに勝った味方は「豪運」の効果を獲得し、与ダメージがアップする。ギャンブルデュエルに負けた味方は「不運」の効果を獲得し、受けるダメージがアップする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401209,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401210,
+                    "SkillName": "フロップにベット",
+                    "SkillDesc": "「オール・オア・ナッシング」を2つアクティベートする。さらに、味方単体をロックオンし、次の行動時にロックオンした味方単体に「大博打」を発動する。アクティベートされた「オール・オア・ナッシング」をすべて倒すと、「大博打」は発動されず、ランダムな味方単体が必殺技を発動できるようになる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401211,
+                    "SkillName": "オールイン",
+                    "SkillDesc": "すべての「オール・オア・ナッシング」をアクティベートし、次の行動時に「賭けに出れば必ず負ける」を発動する。アクティベートされた「オール・オア・ナッシング」をすべて倒すと、「賭けに出れば必ず負ける」は発動されず、味方全体が必殺技を発動できるようになる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401212,
+                    "SkillName": "大博打",
+                    "SkillDesc": "ロックオンした味方単体に虚数属性ダメージを与え、高確率で禁錮状態にする。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 803401213,
+                    "SkillName": "賭けに出れば必ず負ける",
+                    "SkillDesc": "味方全体に虚数属性ダメージを与え、高確率で禁錮状態にする。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 803401214,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401215,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401216,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401217,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401218,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401219,
+                    "SkillName": "ポイント",
+                    "SkillDesc": "戦闘中、すべてのユニットに一定数の「ポイント」が付与される、段階が進むとポイントがリセットされる。味方の「ポイント」が敵より小さい時、敵の受けるダメージが大幅に軽減され、靭性保護を獲得する。味方の「ポイント」が敵と同じ、またはそれより大きい時、敵の受けるダメージがアップする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401220,
+                    "SkillName": "コール",
+                    "SkillDesc": "段階開始時、または召喚物が倒された時、「オール・オア・ナッシング」を最大<unbreak>#1[i]</unbreak>体召喚する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401221,
+                    "SkillName": "ブラインドベット",
+                    "SkillDesc": "段階開始時または召喚物が倒された時、「オール・オア・ナッシング」または「オール・オア・ナッシング・ダブルラック」を最大<unbreak>#1[i]</unbreak>体召喚する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401222,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 803401203,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Ice",
+                "Thunder",
+                "Wind"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Fire",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.40000000037252903
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 803401201,
+                    "SkillName": "一か八か",
+                    "SkillDesc": "指定した味方単体に虚数属性ダメージを与える。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 803401202,
+                    "SkillName": "分散投資",
+                    "SkillDesc": "連続でランダムな味方単体に少量の虚数属性ダメージを与える。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 5
+                },
+                {
+                    "Id": 803401203,
+                    "SkillName": "収益の取り分",
+                    "SkillDesc": "味方全体に少量の虚数属性ダメージを与え、EPを減らす。第二段階の時、追加で味方の「ポイント」を減らす。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401204,
+                    "SkillName": "ギャンブルタイム",
+                    "SkillDesc": "「オール・オア・ナッシング」を召喚し、味方単体をギャンブルデュエルに引きずり込む。「オール・オア・ナッシング」はギャンブルデュエルに参加している味方の攻撃を受けた後、攻撃者に1～6のポイントをランダムで与える。ギャンブルデュエルに参加している味方単体のターン終了時、ポイントが博戯の砂金石より小さい場合は敗北となり、攻撃を受ける。ポイントが博戯の砂金石より大きい場合は勝利となり、必殺技を発動できるようになる。また、ギャンブルデュエルに参加していない味方は「観戦者は語る勿れ」状態になり、ギャンブルデュエルが終了した後に解除される。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401205,
+                    "SkillName": "博打の宴",
+                    "SkillDesc": "「オール・オア・ナッシング」を召喚し、味方全体をギャンブルデュエルに引きずり込む。「オール・オア・ナッシング」は味方の攻撃を受けた後、攻撃者に1～6のポイントをランダムで与える。博戯の砂金石の次の行動時、ポイントが博戯の砂金石より小さい味方は敗北となり、攻撃を受ける。ポイントが博戯の砂金石より大きい味方は勝利となり、必殺技を発動できるようになる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401206,
+                    "SkillName": "敗者の退席",
+                    "SkillDesc": "ギャンブルデュエルに負けた味方単体に虚数属性ダメージを与え、高確率で攻撃を受けた味方単体を禁錮状態にする。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 803401207,
+                    "SkillName": "勝者総取り",
+                    "SkillDesc": "ギャンブルデュエルに負けたすべての味方に大量の虚数属性ダメージを与え、高確率で攻撃を受けた味方を禁錮状態にする。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 803401208,
+                    "SkillName": "博戯",
+                    "SkillDesc": "ギャンブルデュエルに勝った味方は「豪運」の効果を獲得し、与ダメージがアップする。ギャンブルデュエルに負けた味方は「不運」の効果を獲得し、受けるダメージがアップする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401209,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401210,
+                    "SkillName": "フロップにベット",
+                    "SkillDesc": "「オール・オア・ナッシング」を2つアクティベートする。さらに、味方単体をロックオンし、次の行動時にロックオンした味方単体に「大博打」を発動する。アクティベートされた「オール・オア・ナッシング」をすべて倒すと、「大博打」は発動されず、ランダムな味方単体が必殺技を発動できるようになる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401211,
+                    "SkillName": "オールイン",
+                    "SkillDesc": "すべての「オール・オア・ナッシング」をアクティベートし、次の行動時に「賭けに出れば必ず負ける」を発動する。アクティベートされた「オール・オア・ナッシング」をすべて倒すと、「賭けに出れば必ず負ける」は発動されず、味方全体が必殺技を発動できるようになる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401212,
+                    "SkillName": "大博打",
+                    "SkillDesc": "ロックオンした味方単体に虚数属性ダメージを与え、高確率で禁錮状態にする。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 803401213,
+                    "SkillName": "賭けに出れば必ず負ける",
+                    "SkillDesc": "味方全体に虚数属性ダメージを与え、高確率で禁錮状態にする。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 803401214,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401215,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401216,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401217,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401218,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401219,
+                    "SkillName": "ポイント",
+                    "SkillDesc": "戦闘中、すべてのユニットに一定数の「ポイント」が付与される、段階が進むとポイントがリセットされる。味方の「ポイント」が敵より小さい時、敵の受けるダメージが大幅に軽減され、靭性保護を獲得する。味方の「ポイント」が敵と同じ、またはそれより大きい時、敵の受けるダメージがアップする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401220,
+                    "SkillName": "コール",
+                    "SkillDesc": "段階開始時、または召喚物が倒された時、「オール・オア・ナッシング」を最大<unbreak>#1[i]</unbreak>体召喚する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401221,
+                    "SkillName": "ブラインドベット",
+                    "SkillDesc": "段階開始時または召喚物が倒された時、「オール・オア・ナッシング」または「オール・オア・ナッシング・ダブルラック」を最大<unbreak>#1[i]</unbreak>体召喚する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401222,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        },
+        {
+            "Id": 803401204,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 1,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Physical",
+                "Ice",
+                "Thunder",
+                "Wind"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Fire",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Quantum",
+                    "Value": 0.40000000037252903
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.40000000037252903
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 803401201,
+                    "SkillName": "一か八か",
+                    "SkillDesc": "指定した味方単体に虚数属性ダメージを与える。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 803401202,
+                    "SkillName": "分散投資",
+                    "SkillDesc": "連続でランダムな味方単体に少量の虚数属性ダメージを与える。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 5
+                },
+                {
+                    "Id": 803401203,
+                    "SkillName": "収益の取り分",
+                    "SkillDesc": "味方全体に少量の虚数属性ダメージを与え、EPを減らす。第二段階の時、追加で味方の「ポイント」を減らす。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401204,
+                    "SkillName": "ギャンブルタイム",
+                    "SkillDesc": "「オール・オア・ナッシング」を召喚し、味方単体をギャンブルデュエルに引きずり込む。「オール・オア・ナッシング」はギャンブルデュエルに参加している味方の攻撃を受けた後、攻撃者に1～6のポイントをランダムで与える。ギャンブルデュエルに参加している味方単体のターン終了時、ポイントが博戯の砂金石より小さい場合は敗北となり、攻撃を受ける。ポイントが博戯の砂金石より大きい場合は勝利となり、必殺技を発動できるようになる。また、ギャンブルデュエルに参加していない味方は「観戦者は語る勿れ」状態になり、ギャンブルデュエルが終了した後に解除される。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401205,
+                    "SkillName": "博打の宴",
+                    "SkillDesc": "「オール・オア・ナッシング」を召喚し、味方全体をギャンブルデュエルに引きずり込む。「オール・オア・ナッシング」は味方の攻撃を受けた後、攻撃者に1～6のポイントをランダムで与える。博戯の砂金石の次の行動時、ポイントが博戯の砂金石より小さい味方は敗北となり、攻撃を受ける。ポイントが博戯の砂金石より大きい味方は勝利となり、必殺技を発動できるようになる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401206,
+                    "SkillName": "敗者の退席",
+                    "SkillDesc": "ギャンブルデュエルに負けた味方単体に虚数属性ダメージを与え、高確率で攻撃を受けた味方単体を禁錮状態にする。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 803401207,
+                    "SkillName": "勝者総取り",
+                    "SkillDesc": "ギャンブルデュエルに負けたすべての味方に大量の虚数属性ダメージを与え、高確率で攻撃を受けた味方を禁錮状態にする。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 803401208,
+                    "SkillName": "博戯",
+                    "SkillDesc": "ギャンブルデュエルに勝った味方は「豪運」の効果を獲得し、与ダメージがアップする。ギャンブルデュエルに負けた味方は「不運」の効果を獲得し、受けるダメージがアップする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401209,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401210,
+                    "SkillName": "フロップにベット",
+                    "SkillDesc": "「オール・オア・ナッシング」を2つアクティベートする。さらに、味方単体をロックオンし、次の行動時にロックオンした味方単体に「大博打」を発動する。アクティベートされた「オール・オア・ナッシング」をすべて倒すと、「大博打」は発動されず、ランダムな味方単体が必殺技を発動できるようになる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401211,
+                    "SkillName": "オールイン",
+                    "SkillDesc": "すべての「オール・オア・ナッシング」をアクティベートし、次の行動時に「賭けに出れば必ず負ける」を発動する。アクティベートされた「オール・オア・ナッシング」をすべて倒すと、「賭けに出れば必ず負ける」は発動されず、味方全体が必殺技を発動できるようになる。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401212,
+                    "SkillName": "大博打",
+                    "SkillDesc": "ロックオンした味方単体に虚数属性ダメージを与え、高確率で禁錮状態にする。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 803401213,
+                    "SkillName": "賭けに出れば必ず負ける",
+                    "SkillDesc": "味方全体に虚数属性ダメージを与え、高確率で禁錮状態にする。",
+                    "DamageType": "Imaginary",
+                    "SPHitBase": 20
+                },
+                {
+                    "Id": 803401214,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401215,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401216,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401217,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401218,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401219,
+                    "SkillName": "ポイント",
+                    "SkillDesc": "戦闘中、すべてのユニットに一定数の「ポイント」が付与される、段階が進むとポイントがリセットされる。味方の「ポイント」が敵より小さい時、敵の受けるダメージが大幅に軽減され、靭性保護を獲得する。味方の「ポイント」が敵と同じ、またはそれより大きい時、敵の受けるダメージがアップする。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401220,
+                    "SkillName": "コール",
+                    "SkillDesc": "段階開始時、または召喚物が倒された時、「オール・オア・ナッシング」を最大<unbreak>#1[i]</unbreak>体召喚する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401221,
+                    "SkillName": "ブラインドベット",
+                    "SkillDesc": "段階開始時または召喚物が倒された時、「オール・オア・ナッシング」または「オール・オア・ナッシング・ダブルラック」を最大<unbreak>#1[i]</unbreak>体召喚する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 803401222,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 8034012,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 8034012,
+            "WorldLevel": 1,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 8034012,
+            "WorldLevel": 2,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 8034012,
+            "WorldLevel": 3,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 8034012,
+            "WorldLevel": 4,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 8034012,
+            "WorldLevel": 5,
+            "DisplayItemList": []
+        },
+        {
+            "MonsterTemplateID": 8034012,
+            "WorldLevel": 6,
+            "DisplayItemList": []
+        }
+    ]
+}

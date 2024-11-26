@@ -1,0 +1,57 @@
+{
+    "Type": "Action",
+    "Name": "Conqueror of Evil: Guardian Yaksha",
+    "Title": "Xiao: Conqueror of Evil",
+    "Desc": "Evil shall be dispersed, and the vile will be scattered.",
+    "Source": "Reward for inviting Xiao to a duel at The Cat's Tail and achieving all corresponding challenge objectives",
+    "Icon": "UI_Gcg_CardFace_Modify_Constellation_Xiao",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_ANEMO",
+            "count": 3
+        },
+        {
+            "costType": "GCG_COST_ENERGY",
+            "count": 2
+        }
+    ],
+    "Tag": [
+        "Talent",
+        "Combat Action"
+    ],
+    "Talent": {
+        "Name": "Conqueror of Evil: Guardian Yaksha",
+        "Desc": "$[K1]: When your active character is <color=#FFFFFFFF>$[A1504]</color>, equip this card.\\nAfter $[A1504] equips this card, immediately use <color=#FFD780FF>$[S15043]</color> once.\\nWhile your $[A1504] has <color=#FFFFFFFF>$[C115041]</color> attached, your use of <color=#FFFFFFFF>$[S15042]</color> will cost 1 less {SPRITE_PRESET#1105}<color=#80FFD7FF>Anemo Die</color>. (Every attachment of <color=#FFFFFFFF>$[C115041]</color> allows the effect to be triggered twice)\\n(You must have $[A1504] in your deck to add this card to your deck.)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+            },
+            "A1504": "Conqueror of Evil: Guardian Yaksha",
+            "S15043": "S15043",
+            "C115041": {
+                "Name": "Yaksha's Mask",
+                "Desc": "The character to which this is attached has their $[K100] dealt converted to $[K105], and they will deal +1 $[K105].\\n<color=#FFFFFFFF>When the character to which this is attached uses a $[K52]:</color> +2 additional DMG.\\n<color=#FFFFFFFF>If the character this card is attached to is the active character, when you perform \"Switch Character\":</color> Spend 1 less Elemental Die. (Once per Round)\\n<color=#FFFFFFFF>$[K4]: 2</color>",
+                "Child": {
+                    "K100": {
+                        "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>",
+                        "Desc": "Physical DMG will not apply any Elements, nor can it engage in Elemental Reactions."
+                    },
+                    "K105": {
+                        "Name": "{SPRITE_PRESET#2105}<color=#80FFD7FF>Anemo DMG</color>",
+                        "Desc": "Reacts with Elements if they are already applied:\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Cryo Swirl</color>: Deals 1 Cryo DMG to all opposing characters except the target\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Hydro Swirl</color>: Deals 1 Hydro DMG to all opposing characters except the target\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Pyro Swirl</color>: Deals 1 Pyro DMG to all opposing characters except the target\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Electro Swirl</color>: Deals 1 Electro DMG to all opposing characters except the target"
+                    },
+                    "K52": {
+                        "Name": "<color=#FFFFFFFF>Plunging Attack</color>",
+                        "Desc": "After a character is switched in to be the Active Character, should their next Combat Action within this Round be a Normal Attack, it will be considered a Plunging Attack for the instance."
+                    },
+                    "K4": {
+                        "Name": "<color=#FFFFFFFF>Duration (Rounds)</color>",
+                        "Desc": "Each time you reach the end of a Round, <color=#FFFFFFFF>Duration (Rounds)</color> -1.\\nThis card will be discarded immediately once <color=#FFFFFFFF>Duration (Rounds)</color> runs out."
+                    }
+                }
+            },
+            "S15042": "S15042"
+        }
+    }
+}

@@ -1,0 +1,56 @@
+{
+    "Type": "Action",
+    "Name": "官吏の才知",
+    "Title": "トーマ·官吏の才知",
+    "Desc": "「君の分も一緒に頑張るよ。」",
+    "Source": "キャッツテールでトーマを招待して対戦し、対応する挑戦目標をクリアすることで獲得",
+    "Icon": "UI_Gcg_CardFace_Modify_Constellation_Thoma",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PYRO",
+            "count": 3
+        },
+        {
+            "costType": "GCG_COST_ENERGY",
+            "count": 2
+        }
+    ],
+    "Tag": [
+        "天賦",
+        "戦闘アクション"
+    ],
+    "Talent": {
+        "Name": "官吏の才知",
+        "Desc": "$[K1]：味方の出撃キャラが<color=#FFFFFFFF>$[A1311]</color>の時、このカードを装備できる。\\n$[A1311]がこのカードを装備した後、直ちに<color=#FFD780FF>$[S13113]</color>を1回発動する。\\nこのカードを装備した$[A1311]の生成した<color=#FFFFFFFF>$[C113112]</color>は、初期$[K3]+1。\\n（このカードはデッキに$[A1311]が含まれている場合のみ、デッキに追加できる）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>戦闘アクション</color>",
+                "Desc": "味方が戦闘アクションを1回行った後、相手のターンに移ります。\\n<color=#FFFFFFFF>このようなルールを持つ手札を出すのはクイックアクションではなく、戦闘アクションと見なされます。</color>"
+            },
+            "A1311": "官吏の才知",
+            "S13113": "S13113",
+            "C113112": {
+                "Name": "熾炎の大鎧",
+                "Desc": "<color=#FFFFFFFF>味方のキャラが通常攻撃を発動した後</color>、$[K103]を1与え、<color=#FFFFFFFF>$[K1018]</color>を生成する。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+                "Child": {
+                    "K103": {
+                        "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>炎元素ダメージ</color>",
+                        "Desc": "{SPRITE_PRESET#2103}炎元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>溶解</color>：ダメージ+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>蒸発</color>：ダメージ+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>過負荷</color>：ダメージ+2、目標を強制的に次のキャラにチェンジさせる\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>燃焼</color>：ダメージ+1、ラウンド終了時に炎元素ダメージを1与える「<color=#FFFFFFFF>燃焼烈焔</color>」を生成する（使用可能回数1回、最大2まで重ねられる）"
+                    },
+                    "K1018": {
+                        "Name": "烈炎侍立シールド",
+                        "Desc": "味方の出撃キャラは<color=#FFFFFFFF>{SPRITE_PRESET#4007}<color=#FFFFFFFF>シールド</color>を1</color>獲得する。（最大3まで重ねられる）"
+                    },
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                        "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                    }
+                }
+            },
+            "K3": {
+                "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+            }
+        }
+    }
+}

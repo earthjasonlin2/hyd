@@ -1,0 +1,42 @@
+{
+    "Type": "Action",
+    "Name": "冰雅刺剑",
+    "Title": "霜役人·冰雅刺剑",
+    "Desc": "「恕我之前招待不周。」",
+    "Source": "在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度愚人众·霜役人中完成挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_EscadronIce",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_CRYO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "天赋",
+        "战斗行动"
+    ],
+    "Talent": {
+        "Name": "冰雅刺剑",
+        "Desc": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A2104]</color>时，装备此牌。\\n$[A2104]装备此牌后，立刻使用一次<color=#FFD780FF>$[S21042]</color>。\\n装备有此牌的<color=#FFFFFFFF>$[A2104]</color>触发<color=#FFFFFFFF>$[S21044]</color>后：使敌方出战角色的<color=#FFFFFFFF>$[C122]</color>层数翻倍。\\n（牌组中包含$[A2104]，才能加入牌组）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>战斗行动</color>",
+                "Desc": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+            },
+            "A2104": "冰雅刺剑",
+            "S21042": "S21042",
+            "S21044": "S21044",
+            "C122": {
+                "Name": "生命之契",
+                "Desc": "<color=#FFFFFFFF>所附属角色受到治疗时：</color>此效果每有1次$[K3]，就消耗1次，以抵消1点所受到的治疗。（无法抵消复苏或分配生命值引发的治疗）\\n<color=#FFFFFFFF>$[K3]：1</color>（可叠加，没有上限）。",
+                "Child": {
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>可用次数</color>",
+                        "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                    }
+                }
+            }
+        }
+    }
+}

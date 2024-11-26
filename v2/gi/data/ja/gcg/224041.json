@@ -1,0 +1,54 @@
+{
+    "Type": "Action",
+    "Name": "雷蛍閃光",
+    "Title": "雷蛍術師·雷蛍浮光",
+    "Desc": "「もしかしてぇ…私と遊びに来たの？」",
+    "Source": "キャッツテールのリトルプリンスのところで酒場挑戦を行い、ファデュイ·雷蛍術師に挑戦して友好対戦で対応する挑戦目標をクリアすることで獲得",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_FatuusSummoner",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_ELECTRO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "天賦",
+        "戦闘アクション"
+    ],
+    "Talent": {
+        "Name": "雷蛍浮光",
+        "Desc": "$[K1]：味方の出撃キャラが<color=#FFFFFFFF>$[A2404]</color>の時、このカードを装備できる。\\n$[A2404]がこのカードを装備した後、直ちに<color=#FFD780FF>$[S24042]</color>を1回発動する。\\nこのカードを装備した$[A2404]がフィールドに存在する時、味方がアクションをする前に、<color=#FFFFFFFF>$[C124041]</color>の$[K3]が3以上の場合、<color=#FFFFFFFF>$[C124041]</color>は直ちに$[K104]を1与える。（$[K3]の消費が必要、各ラウンドで1回のみ）\\n（このカードはデッキに$[A2404]が含まれている場合のみ、デッキに追加できる）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>戦闘アクション</color>",
+                "Desc": "味方が戦闘アクションを1回行った後、相手のターンに移ります。\\n<color=#FFFFFFFF>このようなルールを持つ手札を出すのはクイックアクションではなく、戦闘アクションと見なされます。</color>"
+            },
+            "A2404": "雷蛍閃光",
+            "S24042": "S24042",
+            "C124041": {
+                "Name": "雷蛍",
+                "Desc": "<color=#FFFFFFFF>エンドフェーズ：</color>$[K104]を1与える。\\n<color=#FFFFFFFF>$[K3]：3</color>\\n\\n<color=#FFFFFFFF>相手がアクションカードを累計3枚使用した後</color>、このカードの$[K3]+1。（最大3まで重ねられる）\\n<color=#FFFFFFFF>$[A2404]が元素反応によるダメージを受けた後</color>、このカードの$[K3]-1。",
+                "Child": {
+                    "K104": {
+                        "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素ダメージ</color>",
+                        "Desc": "{SPRITE_PRESET#2104}雷元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>過負荷</color>：ダメージ+2、目標を強制的に次のキャラにチェンジさせる\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>超電導</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>感電</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>原激化</color>：ダメージ+1、次の草元素または雷元素ダメージを2回まで+1できる「<color=#FFFFFFFF>激化領域</color>」を生成する"
+                    },
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                        "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                    },
+                    "A2404": "雷蛍閃光"
+                }
+            },
+            "K3": {
+                "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+            },
+            "K104": {
+                "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素ダメージ</color>",
+                "Desc": "{SPRITE_PRESET#2104}雷元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>過負荷</color>：ダメージ+2、目標を強制的に次のキャラにチェンジさせる\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>超電導</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>感電</color>：ダメージ+1、目標以外の相手チーム全員に貫通ダメージを1与える\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>原激化</color>：ダメージ+1、次の草元素または雷元素ダメージを2回まで+1できる「<color=#FFFFFFFF>激化領域</color>」を生成する"
+            }
+        }
+    }
+}

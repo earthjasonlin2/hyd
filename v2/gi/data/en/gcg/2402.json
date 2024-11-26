@@ -1,0 +1,105 @@
+{
+    "Type": "Character",
+    "Name": "Thunder Manifestation",
+    "Title": "\"Lingering Hatred\" Thunder Manifestation",
+    "Desc": "As long as the grudges of the land do not fade, so will the roaring thunder persist.",
+    "Source": "Reward for accepting the Tavern Challenge at The Cat's Tail and claiming victory in a Friendly Fracas with the Thunder Manifestation",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_Raijin",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "Electro",
+        "Other Weapons",
+        "Monster"
+    ],
+    "Talent": {
+        "24021": {
+            "Name": "Thunderous Wingslash",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "24022": {
+            "Name": "Strifeful Lightning",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT] to the opposing character affected by <color=#FFFFFFFF>$[C124022]</color>. (If there are no eligible opposing characters, deals DMG to the active character instead)",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO",
+                "C124022": {
+                    "Name": "Lightning Rod",
+                    "Desc": "<color=#FFFFFFFF>When the attached character takes DMG from $[A2402] or its summons:</color> Remove this state, cause this DMG instance to increase by 1.\\n(Only one of this status can exist on the field at once. Some of $[A2402]'s skills will target the character to which this is attached.)",
+                    "Child": {
+                        "A2402": "Thunder Manifestation"
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 3
+            }
+        },
+        "24023": {
+            "Name": "Thundering Shackles",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], summons 1 <color=#FFFFFFFF>$[C124023]</color>.",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO",
+                "C124023": {
+                    "Name": "Thundering Shackles",
+                    "Desc": "<color=#FFFFFFFF>End Phase:</color> Deals 3 $[K104] to the opposing character affected by <color=#FFFFFFFF>$[C124022]</color>. (If there are no eligible opposing characters, deals DMG to the active character instead)\\n<color=#FFFFFFFF>$[K3]: 1</color>",
+                    "Child": {
+                        "K104": {
+                            "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>Electro DMG</color>",
+                            "Desc": "Applies {SPRITE_PRESET#2104}Electro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Overloaded</color>: DMG +2 for this instance, the target is forcibly switched to the next character\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Superconduct</color>: DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Electro-Charged</color>: DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Quicken</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Catalyzing Field</color>] that grants +1 DMG to the next 2 instances of Dendro or Electro DMG"
+                        },
+                        "C124022": {
+                            "Name": "Lightning Rod",
+                            "Desc": "<color=#FFFFFFFF>When the attached character takes DMG from $[A2402] or its summons:</color> Remove this state, cause this DMG instance to increase by 1.\\n(Only one of this status can exist on the field at once. Some of $[A2402]'s skills will target the character to which this is attached.)",
+                            "Child": {
+                                "A2402": "Thunder Manifestation"
+                            }
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "24024": {
+            "Name": "Lightning Probe",
+            "Desc": "(Passive) When battle begins, create a <color=#FFFFFFFF>$[C124021]</color> on the opponent's side of the field.",
+            "Child": {
+                "C124021": {
+                    "Name": "Lightning Strike Probe",
+                    "Desc": "<color=#FFFFFFFF>After a character on whose side of the field this card is on uses a Skill:</color> Attach <color=#FFFFFFFF>$[C124022]</color> to the active character on that side. (Once per Round)",
+                    "Child": {
+                        "C124022": {
+                            "Name": "Lightning Rod",
+                            "Desc": "<color=#FFFFFFFF>When the attached character takes DMG from $[A2402] or its summons:</color> Remove this state, cause this DMG instance to increase by 1.\\n(Only one of this status can exist on the field at once. Some of $[A2402]'s skills will target the character to which this is attached.)",
+                            "Child": {
+                                "A2402": "Thunder Manifestation"
+                            }
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 224021
+}

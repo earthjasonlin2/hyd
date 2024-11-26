@@ -1,0 +1,102 @@
+{
+    "Type": "Character",
+    "Name": "愚人众·霜役人",
+    "Title": "汰换之果·霜役人",
+    "Desc": "自幼就被选中的人，经长久年月的教化与训练，在无数次的汰换后才能成为所谓的「役人」。",
+    "Source": "在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度愚人众·霜役人中获得胜利后获取",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_EscadronIce",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "冰元素",
+        "其他武器",
+        "愚人众"
+    ],
+    "Talent": {
+        "21041": {
+            "Name": "迅捷剑锋",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "21042": {
+            "Name": "霜刃截击",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO"
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3
+            }
+        },
+        "21043": {
+            "Name": "掠袭之刺",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，本角色附属<color=#FFFFFFFF>$[C121042]</color>。",
+            "Child": {
+                "D__KEY__DAMAGE": 4,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "C121042": {
+                    "Name": "掠袭锐势",
+                    "Desc": "<color=#FFFFFFFF>结束阶段：</color>对所有附属有<color=#FFFFFFFF>$[C122]</color>的敌方角色造成1点$[K5]。\\n<color=#FFFFFFFF>$[K4]：2</color>",
+                    "Child": {
+                        "C122": {
+                            "Name": "生命之契",
+                            "Desc": "<color=#FFFFFFFF>所附属角色受到治疗时：</color>此效果每有1次$[K3]，就消耗1次，以抵消1点所受到的治疗。（无法抵消复苏或分配生命值引发的治疗）\\n<color=#FFFFFFFF>$[K3]：1</color>（可叠加，没有上限）。",
+                            "Child": {
+                                "K3": {
+                                    "Name": "<color=#FFFFFFFF>可用次数</color>",
+                                    "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                                }
+                            }
+                        },
+                        "K5": {
+                            "Name": "<color=#FFFFFFFF>穿透伤害</color>",
+                            "Desc": "穿透伤害无法受到伤害加成，但是也无法被护盾、伤害免疫等效果抵消。"
+                        },
+                        "K4": {
+                            "Name": "<color=#FFFFFFFF>持续回合</color>",
+                            "Desc": "每回合结束阶段，<color=#FFFFFFFF>持续回合</color>-1；\\n<color=#FFFFFFFF>持续回合</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "21044": {
+            "Name": "血契掠影",
+            "Desc": "【被动】<color=#FFFFFFFF>本角色使用技能后：</color>对敌方出战角色附属$[K3]为（本技能最终伤害值-2）的<color=#FFFFFFFF>$[C122]</color>。（最多5层）",
+            "Child": {
+                "K3": {
+                    "Name": "<color=#FFFFFFFF>可用次数</color>",
+                    "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                },
+                "C122": {
+                    "Name": "生命之契",
+                    "Desc": "<color=#FFFFFFFF>所附属角色受到治疗时：</color>此效果每有1次$[K3]，就消耗1次，以抵消1点所受到的治疗。（无法抵消复苏或分配生命值引发的治疗）\\n<color=#FFFFFFFF>$[K3]：1</color>（可叠加，没有上限）。",
+                    "Child": {
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>可用次数</color>",
+                            "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 221041
+}

@@ -1,0 +1,116 @@
+{
+    "Type": "Character",
+    "Name": "Lyney",
+    "Title": "\"Spectacle of Phantasmagoria\" Lyney",
+    "Desc": "Those flowers in the mirror... who are they for?",
+    "Source": "Reward for inviting Lyney to a duel at The Cat's Tail and claiming victory in a Friendly Fracas with him",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Liney",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "Pyro",
+        "Bow",
+        "Fontaine",
+        "Fatui",
+        "Arkhe: Pneuma"
+    ],
+    "Talent": {
+        "13101": {
+            "Name": "Card Force Translocation",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "13102": {
+            "Name": "Prop Arrow",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], summons a <color=#FFFFFFFF>$[C113101]</color>, and gains 1 stack of <color=#FFFFFFFF>$[C113102]</color>.\\nIf this character has at least 6 HP, then they deal 1 $[K5] to themself.",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO",
+                "C113101": {
+                    "Name": "Grin-Malkin Hat",
+                    "Desc": "<color=#FFFFFFFF>End Phase:</color> Deal 1 $[K103].\\n<color=#FFFFFFFF>$[K3]: 1</color> (Can stack. Max 2 stacks.)",
+                    "Child": {
+                        "K103": {
+                            "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>Pyro DMG</color>",
+                            "Desc": "Applies {SPRITE_PRESET#2103}Pyro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Melt</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Vaporize</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Overloaded</color>: DMG +2 for this instance, the target is forcibly switched to the next character\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Burning</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Burning Flame</color>] that will deal 1 Pyro DMG at the end of the Round (Takes effect once, max 2 stacks)"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        }
+                    }
+                },
+                "C113102": {
+                    "Name": "Prop Surplus",
+                    "Desc": "<color=#FFFFFFFF>$[C113102]</color> can stack up to 3 times.\\n<color=#FFFFFFFF>When this character uses <color=#FFFFFFFF>$[S13103]</color>:</color> +1 DMG for each <color=#FFFFFFFF>$[C113102]</color> stack. After the skill is finalized, consume all <color=#FFFFFFFF>$[C113102]</color>, healing 1 HP for this character per stack.",
+                    "Child": {
+                        "S13103": "S13103"
+                    }
+                },
+                "K5": {
+                    "Name": "<color=#FFFFFFFF>Piercing DMG</color>",
+                    "Desc": "Piercing DMG cannot be increased by any bonuses, but cannot be defended against using Shields or DMG Immunity either."
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 3
+            }
+        },
+        "13103": {
+            "Name": "Bewildering Lights",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO"
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 3
+            }
+        },
+        "13104": {
+            "Name": "Wondrous Trick: Miracle Parade",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], summons 1 <color=#FFFFFFFF>$[C113101]</color>, and gains 1 stack of <color=#FFFFFFFF>$[C113102]</color>.",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO",
+                "C113101": {
+                    "Name": "Grin-Malkin Hat",
+                    "Desc": "<color=#FFFFFFFF>End Phase:</color> Deal 1 $[K103].\\n<color=#FFFFFFFF>$[K3]: 1</color> (Can stack. Max 2 stacks.)",
+                    "Child": {
+                        "K103": {
+                            "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>Pyro DMG</color>",
+                            "Desc": "Applies {SPRITE_PRESET#2103}Pyro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Melt</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Vaporize</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Overloaded</color>: DMG +2 for this instance, the target is forcibly switched to the next character\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Burning</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Burning Flame</color>] that will deal 1 Pyro DMG at the end of the Round (Takes effect once, max 2 stacks)"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        }
+                    }
+                },
+                "C113102": {
+                    "Name": "Prop Surplus",
+                    "Desc": "<color=#FFFFFFFF>$[C113102]</color> can stack up to 3 times.\\n<color=#FFFFFFFF>When this character uses <color=#FFFFFFFF>$[S13103]</color>:</color> +1 DMG for each <color=#FFFFFFFF>$[C113102]</color> stack. After the skill is finalized, consume all <color=#FFFFFFFF>$[C113102]</color>, healing 1 HP for this character per stack.",
+                    "Child": {
+                        "S13103": "S13103"
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 213101
+}

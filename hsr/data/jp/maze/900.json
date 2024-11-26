@@ -1,0 +1,883 @@
+[
+    {
+        "Id": 21,
+        "Name": "仙舟の記憶・1",
+        "GroupName": "天艟求仙放浪記",
+        "Desc": "敵が受けるダメージは、<color=#f29e38ff>敵全体で分担する</color>。味方が<color=#f29e38ff>全体攻撃または拡散攻撃</color>を行った時、与ダメージ+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。",
+        "Param": [
+            0.5000000004656613
+        ],
+        "Challenge": [
+            {
+                "Name": "勝利時、残りラウンドが<unbreak>#1[i]</unbreak>以上",
+                "Param": 6
+            },
+            {
+                "Name": "勝利時、残りラウンドが<unbreak>#1[i]</unbreak>以上",
+                "Param": 12
+            },
+            {
+                "Name": "戦闘不能になったキャラがいない"
+            }
+        ],
+        "Countdown": 20,
+        "DamageType1": [
+            "Physical",
+            "Thunder"
+        ],
+        "DamageType2": [
+            "Fire",
+            "Wind",
+            "Imaginary"
+        ],
+        "MazeGroupID1": 8,
+        "MazeGroupID2": 9,
+        "NpcMonsterIDList1": [
+            8002010
+        ],
+        "NpcMonsterIDList2": [
+            2002010
+        ],
+        "EventIDList1": [
+            {
+                "StageID": 30002011,
+                "StageType": "Challenge",
+                "StageName": 1729957931,
+                "HardLevelGroup": 1,
+                "Level": 50,
+                "EliteGroup": 93,
+                "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+                "StageAbilityConfig": [],
+                "SubLevelGraphs": [],
+                "StageConfigData": [
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_Wave",
+                        "MOJJBFBKBNC": "3"
+                    },
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_IsEliteBattle",
+                        "MOJJBFBKBNC": "1"
+                    },
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_CreateBattleEvent",
+                        "MOJJBFBKBNC": "30036"
+                    }
+                ],
+                "MonsterList": [
+                    {
+                        "$type": "StageMonsterWave",
+                        "Monster0": 8001010,
+                        "Monster1": 8001050,
+                        "Monster2": 8001010,
+                        "Monster3": 8001050,
+                        "Monster4": 8001050
+                    },
+                    {
+                        "$type": "StageMonsterWave",
+                        "Monster0": 2012010,
+                        "Monster1": 2012010,
+                        "Monster2": 2012010,
+                        "Monster3": 2012010
+                    },
+                    {
+                        "$type": "StageMonsterWave",
+                        "Monster0": 8002010,
+                        "Monster1": 8002010,
+                        "Monster2": 8002010
+                    }
+                ],
+                "LevelLoseCondition": [],
+                "LevelWinCondition": [],
+                "Release": true,
+                "ForbidExitBattle": true,
+                "MonsterWarningRatio": 1.1000000238419,
+                "TrialAvatarList": []
+            }
+        ],
+        "EventIDList2": [
+            {
+                "StageID": 30002012,
+                "StageType": "Challenge",
+                "StageName": 1729742309,
+                "HardLevelGroup": 1,
+                "Level": 50,
+                "EliteGroup": 93,
+                "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+                "StageAbilityConfig": [],
+                "SubLevelGraphs": [],
+                "StageConfigData": [
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_Wave",
+                        "MOJJBFBKBNC": "3"
+                    },
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_IsEliteBattle",
+                        "MOJJBFBKBNC": "1"
+                    },
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_CreateBattleEvent",
+                        "MOJJBFBKBNC": "30036"
+                    }
+                ],
+                "MonsterList": [
+                    {
+                        "$type": "StageMonsterWave",
+                        "Monster0": 8001020,
+                        "Monster1": 8001020,
+                        "Monster2": 8001040,
+                        "Monster3": 8001020,
+                        "Monster4": 8001040
+                    },
+                    {
+                        "$type": "StageMonsterWave",
+                        "Monster0": 2022050,
+                        "Monster1": 2022050
+                    },
+                    {
+                        "$type": "StageMonsterWave",
+                        "Monster0": 2002010,
+                        "Monster1": 2002010,
+                        "Monster2": 2002010,
+                        "Monster3": 2002010
+                    }
+                ],
+                "LevelLoseCondition": [],
+                "LevelWinCondition": [],
+                "Release": true,
+                "ForbidExitBattle": true,
+                "MonsterWarningRatio": 1.1000000238419,
+                "TrialAvatarList": []
+            }
+        ],
+        "BeginTime": "",
+        "EndTime": ""
+    },
+    {
+        "Id": 22,
+        "Name": "仙舟の記憶・2",
+        "GroupName": "天艟求仙放浪記",
+        "Desc": "敵全体の<color=#f29e38ff>持続被ダメージ</color>+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。\\n各ラウンド開始時、高確率で敵全体に<color=#f29e38ff>裂創</color>、<color=#f29e38ff>感電</color>、<color=#f29e38ff>燃焼</color>、<color=#f29e38ff>風化</color>状態を付与する、<color=#f29e38ff><unbreak>#3[i]</unbreak></color>ターン継続。",
+        "Param": [
+            0.5000000004656613,
+            1,
+            2,
+            0.20000000018626451
+        ],
+        "Challenge": [
+            {
+                "Name": "勝利時、残りラウンドが<unbreak>#1[i]</unbreak>以上",
+                "Param": 6
+            },
+            {
+                "Name": "勝利時、残りラウンドが<unbreak>#1[i]</unbreak>以上",
+                "Param": 12
+            },
+            {
+                "Name": "戦闘不能になったキャラがいない"
+            }
+        ],
+        "Countdown": 20,
+        "DamageType1": [
+            "Thunder",
+            "Wind",
+            "Quantum"
+        ],
+        "DamageType2": [
+            "Thunder",
+            "Wind",
+            "Imaginary"
+        ],
+        "MazeGroupID1": 8,
+        "MazeGroupID2": 9,
+        "NpcMonsterIDList1": [
+            2013010
+        ],
+        "NpcMonsterIDList2": [
+            2004020
+        ],
+        "EventIDList1": [
+            {
+                "StageID": 30002021,
+                "StageType": "Challenge",
+                "StageName": 183864545,
+                "HardLevelGroup": 1,
+                "Level": 60,
+                "EliteGroup": 85,
+                "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+                "StageAbilityConfig": [],
+                "SubLevelGraphs": [],
+                "StageConfigData": [
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_Wave",
+                        "MOJJBFBKBNC": "2"
+                    },
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_IsEliteBattle",
+                        "MOJJBFBKBNC": "1"
+                    },
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_CreateBattleEvent",
+                        "MOJJBFBKBNC": "30032"
+                    }
+                ],
+                "MonsterList": [
+                    {
+                        "$type": "StageMonsterWave",
+                        "Monster0": 2012010,
+                        "Monster1": 2022060,
+                        "Monster2": 2012010,
+                        "Monster3": 2022060
+                    },
+                    {
+                        "$type": "StageMonsterWave",
+                        "Monster0": 2013010,
+                        "Monster1": 2013010
+                    }
+                ],
+                "LevelLoseCondition": [],
+                "LevelWinCondition": [],
+                "Release": true,
+                "ForbidExitBattle": true,
+                "MonsterWarningRatio": 1.1000000238419,
+                "TrialAvatarList": []
+            }
+        ],
+        "EventIDList2": [
+            {
+                "StageID": 30002022,
+                "StageType": "Challenge",
+                "StageName": -716816044,
+                "HardLevelGroup": 1,
+                "Level": 60,
+                "EliteGroup": 85,
+                "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+                "StageAbilityConfig": [],
+                "SubLevelGraphs": [],
+                "StageConfigData": [
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_Wave",
+                        "MOJJBFBKBNC": "2"
+                    },
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_IsEliteBattle",
+                        "MOJJBFBKBNC": "1"
+                    },
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_CreateBattleEvent",
+                        "MOJJBFBKBNC": "30032"
+                    }
+                ],
+                "MonsterList": [
+                    {
+                        "$type": "StageMonsterWave",
+                        "Monster0": 2002010,
+                        "Monster1": 2002010,
+                        "Monster2": 2002010
+                    },
+                    {
+                        "$type": "StageMonsterWave",
+                        "Monster0": 2004020
+                    }
+                ],
+                "LevelLoseCondition": [],
+                "LevelWinCondition": [],
+                "Release": true,
+                "ForbidExitBattle": true,
+                "MonsterWarningRatio": 1.1000000238419,
+                "TrialAvatarList": []
+            }
+        ],
+        "BeginTime": "",
+        "EndTime": ""
+    },
+    {
+        "Id": 23,
+        "Name": "仙舟の記憶・3",
+        "GroupName": "天艟求仙放浪記",
+        "Desc": "味方が<color=#f29e38ff>通常攻撃</color>を行った後、自身及び隣接する味方の与ダメージ+<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>、被ダメージ-<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>、<color=#f29e38ff><unbreak>#2[i]</unbreak></color>ターン継続。",
+        "Param": [
+            0.5000000004656613,
+            1,
+            0.5000000004656613
+        ],
+        "Challenge": [
+            {
+                "Name": "勝利時、残りラウンドが<unbreak>#1[i]</unbreak>以上",
+                "Param": 6
+            },
+            {
+                "Name": "勝利時、残りラウンドが<unbreak>#1[i]</unbreak>以上",
+                "Param": 12
+            },
+            {
+                "Name": "戦闘不能になったキャラがいない"
+            }
+        ],
+        "Countdown": 20,
+        "DamageType1": [
+            "Physical",
+            "Thunder",
+            "Quantum"
+        ],
+        "DamageType2": [
+            "Wind"
+        ],
+        "MazeGroupID1": 8,
+        "MazeGroupID2": 9,
+        "NpcMonsterIDList1": [
+            2013010
+        ],
+        "NpcMonsterIDList2": [
+            8013010
+        ],
+        "EventIDList1": [
+            {
+                "StageID": 30002031,
+                "StageType": "Challenge",
+                "StageName": 183864545,
+                "HardLevelGroup": 1,
+                "Level": 70,
+                "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+                "StageAbilityConfig": [],
+                "SubLevelGraphs": [],
+                "StageConfigData": [
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_Wave",
+                        "MOJJBFBKBNC": "2"
+                    },
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_IsEliteBattle",
+                        "MOJJBFBKBNC": "1"
+                    },
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_CreateBattleEvent",
+                        "MOJJBFBKBNC": "30033"
+                    }
+                ],
+                "MonsterList": [
+                    {
+                        "$type": "StageMonsterWave",
+                        "Monster0": 202202003,
+                        "Monster1": 202202003,
+                        "Monster2": 202202003
+                    },
+                    {
+                        "$type": "StageMonsterWave",
+                        "Monster0": 201301002
+                    }
+                ],
+                "LevelLoseCondition": [],
+                "LevelWinCondition": [],
+                "Release": true,
+                "ForbidExitBattle": true,
+                "MonsterWarningRatio": 1.1000000238419,
+                "TrialAvatarList": []
+            }
+        ],
+        "EventIDList2": [
+            {
+                "StageID": 30002032,
+                "StageType": "Challenge",
+                "StageName": 184080167,
+                "HardLevelGroup": 1,
+                "Level": 70,
+                "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+                "StageAbilityConfig": [],
+                "SubLevelGraphs": [],
+                "StageConfigData": [
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_Wave",
+                        "MOJJBFBKBNC": "2"
+                    },
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_IsEliteBattle",
+                        "MOJJBFBKBNC": "1"
+                    },
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_CreateBattleEvent",
+                        "MOJJBFBKBNC": "30033"
+                    }
+                ],
+                "MonsterList": [
+                    {
+                        "$type": "StageMonsterWave",
+                        "Monster0": 8012030,
+                        "Monster1": 8012020,
+                        "Monster2": 8012030,
+                        "Monster3": 8012010
+                    },
+                    {
+                        "$type": "StageMonsterWave",
+                        "Monster0": 8013010,
+                        "Monster1": 202302001
+                    }
+                ],
+                "LevelLoseCondition": [],
+                "LevelWinCondition": [],
+                "Release": true,
+                "ForbidExitBattle": true,
+                "MonsterWarningRatio": 1.1000000238419,
+                "TrialAvatarList": []
+            }
+        ],
+        "BeginTime": "",
+        "EndTime": ""
+    },
+    {
+        "Id": 24,
+        "Name": "仙舟の記憶・4",
+        "GroupName": "天艟求仙放浪記",
+        "Desc": "味方が<color=#f29e38ff>必殺技</color>または<color=#f29e38ff>追加攻撃</color>を行った後、攻撃を受けた敵に<color=#f29e38ff>固定ダメージ</color>を与える。",
+        "Param": [
+            1.2000000001862645
+        ],
+        "Challenge": [
+            {
+                "Name": "勝利時、残りラウンドが<unbreak>#1[i]</unbreak>以上",
+                "Param": 6
+            },
+            {
+                "Name": "勝利時、残りラウンドが<unbreak>#1[i]</unbreak>以上",
+                "Param": 12
+            },
+            {
+                "Name": "戦闘不能になったキャラがいない"
+            }
+        ],
+        "Countdown": 20,
+        "DamageType1": [
+            "Quantum"
+        ],
+        "DamageType2": [
+            "Fire",
+            "Ice",
+            "Quantum"
+        ],
+        "MazeGroupID1": 8,
+        "MazeGroupID2": 9,
+        "NpcMonsterIDList1": [
+            8003010
+        ],
+        "NpcMonsterIDList2": [
+            2024010
+        ],
+        "EventIDList1": [
+            {
+                "StageID": 30002041,
+                "StageType": "Challenge",
+                "StageName": 184076966,
+                "HardLevelGroup": 1,
+                "Level": 80,
+                "EliteGroup": 83,
+                "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+                "StageAbilityConfig": [],
+                "SubLevelGraphs": [],
+                "StageConfigData": [
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_Wave",
+                        "MOJJBFBKBNC": "3"
+                    },
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_IsEliteBattle",
+                        "MOJJBFBKBNC": "1"
+                    },
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_CreateBattleEvent",
+                        "MOJJBFBKBNC": "30034"
+                    }
+                ],
+                "MonsterList": [
+                    {
+                        "$type": "StageMonsterWave",
+                        "Monster0": 800101006,
+                        "Monster1": 800105001,
+                        "Monster2": 800105001,
+                        "Monster3": 800101006,
+                        "Monster4": 800105001
+                    },
+                    {
+                        "$type": "StageMonsterWave",
+                        "Monster0": 800104001,
+                        "Monster1": 800102008,
+                        "Monster2": 800102008,
+                        "Monster3": 800104001,
+                        "Monster4": 800104001
+                    },
+                    {
+                        "$type": "StageMonsterWave",
+                        "Monster0": 8003010,
+                        "Monster1": 8003020
+                    }
+                ],
+                "LevelLoseCondition": [],
+                "LevelWinCondition": [],
+                "Release": true,
+                "ForbidExitBattle": true,
+                "MonsterWarningRatio": 1.1000000238419,
+                "TrialAvatarList": []
+            }
+        ],
+        "EventIDList2": [
+            {
+                "StageID": 30002042,
+                "StageType": "Challenge",
+                "StageName": 2012065133,
+                "HardLevelGroup": 1,
+                "Level": 80,
+                "EliteGroup": 81,
+                "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+                "StageAbilityConfig": [],
+                "SubLevelGraphs": [],
+                "StageConfigData": [
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_Wave",
+                        "MOJJBFBKBNC": "2"
+                    },
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_IsEliteBattle",
+                        "MOJJBFBKBNC": "1"
+                    },
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_CreateBattleEvent",
+                        "MOJJBFBKBNC": "30034"
+                    }
+                ],
+                "MonsterList": [
+                    {
+                        "$type": "StageMonsterWave",
+                        "Monster0": 2022070,
+                        "Monster1": 2022090,
+                        "Monster2": 2022090,
+                        "Monster3": 2022070
+                    },
+                    {
+                        "$type": "StageMonsterWave",
+                        "Monster0": 2024010
+                    }
+                ],
+                "LevelLoseCondition": [],
+                "LevelWinCondition": [],
+                "Release": true,
+                "ForbidExitBattle": true,
+                "MonsterWarningRatio": 1.1000000238419,
+                "TrialAvatarList": []
+            }
+        ],
+        "BeginTime": "",
+        "EndTime": ""
+    },
+    {
+        "Id": 25,
+        "Name": "仙舟の記憶・5",
+        "GroupName": "天艟求仙放浪記",
+        "Desc": "各ラウンド開始時、<color=#f29e38ff>魔陰の身・兵卒</color>または<color=#f29e38ff>豊穣の霊獣・婁金</color>を2体召喚する。\\n敵が倒された後、敵全体に<color=#f29e38ff>固定ダメージ</color>を与える。",
+        "Param": [
+            0.5000000004656613,
+            0.6000000005587935
+        ],
+        "Challenge": [
+            {
+                "Name": "勝利時、残りラウンドが<unbreak>#1[i]</unbreak>以上",
+                "Param": 6
+            },
+            {
+                "Name": "勝利時、残りラウンドが<unbreak>#1[i]</unbreak>以上",
+                "Param": 12
+            },
+            {
+                "Name": "戦闘不能になったキャラがいない"
+            }
+        ],
+        "Countdown": 20,
+        "DamageType1": [
+            "Ice",
+            "Wind",
+            "Imaginary"
+        ],
+        "DamageType2": [
+            "Fire",
+            "Ice",
+            "Wind"
+        ],
+        "MazeGroupID1": 8,
+        "MazeGroupID2": 9,
+        "NpcMonsterIDList1": [
+            2023010
+        ],
+        "NpcMonsterIDList2": [
+            2023020
+        ],
+        "EventIDList1": [
+            {
+                "StageID": 30002051,
+                "StageType": "Challenge",
+                "StageName": 183859166,
+                "HardLevelGroup": 1,
+                "Level": 85,
+                "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+                "StageAbilityConfig": [],
+                "SubLevelGraphs": [],
+                "StageConfigData": [
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_Wave",
+                        "MOJJBFBKBNC": "2"
+                    },
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_IsEliteBattle",
+                        "MOJJBFBKBNC": "1"
+                    },
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_CreateBattleEvent",
+                        "MOJJBFBKBNC": "30031"
+                    }
+                ],
+                "MonsterList": [
+                    {
+                        "$type": "StageMonsterWave",
+                        "Monster0": 2022010,
+                        "Monster1": 2022010,
+                        "Monster2": 2022010
+                    },
+                    {
+                        "$type": "StageMonsterWave",
+                        "Monster0": 202301008
+                    }
+                ],
+                "LevelLoseCondition": [],
+                "LevelWinCondition": [],
+                "Release": true,
+                "ForbidExitBattle": true,
+                "MonsterWarningRatio": 1.1000000238419,
+                "TrialAvatarList": []
+            }
+        ],
+        "EventIDList2": [
+            {
+                "StageID": 30002052,
+                "StageType": "Challenge",
+                "StageName": -1382224775,
+                "HardLevelGroup": 1,
+                "Level": 85,
+                "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+                "StageAbilityConfig": [],
+                "SubLevelGraphs": [],
+                "StageConfigData": [
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_Wave",
+                        "MOJJBFBKBNC": "2"
+                    },
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_IsEliteBattle",
+                        "MOJJBFBKBNC": "1"
+                    },
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_CreateBattleEvent",
+                        "MOJJBFBKBNC": "30031"
+                    }
+                ],
+                "MonsterList": [
+                    {
+                        "$type": "StageMonsterWave",
+                        "Monster0": 2022050,
+                        "Monster1": 2022040,
+                        "Monster2": 2022050
+                    },
+                    {
+                        "$type": "StageMonsterWave",
+                        "Monster0": 2022040,
+                        "Monster1": 2023020,
+                        "Monster2": 2022040
+                    }
+                ],
+                "LevelLoseCondition": [],
+                "LevelWinCondition": [],
+                "Release": true,
+                "ForbidExitBattle": true,
+                "MonsterWarningRatio": 1.1000000238419,
+                "TrialAvatarList": []
+            }
+        ],
+        "BeginTime": "",
+        "EndTime": ""
+    },
+    {
+        "Id": 26,
+        "Name": "仙舟の記憶・6",
+        "GroupName": "天艟求仙放浪記",
+        "Desc": "味方が、任意の味方に対して<color=#f29e38ff>戦闘スキル</color>を発動した後、戦闘スキルのターゲットとなった味方の<color=#f29e38ff>デバフ</color>を1つ解除する。味方の<color=#f29e38ff>デバフ</color>を1つ解除するたびに、味方全体の与ダメージ+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>、この効果は最大で<color=#f29e38ff><unbreak>#2[i]</unbreak></color>層累積できる。\\n最終ウエーブで<color=#f29e38ff>精鋭およびそれ以上の敵</color>を倒すことで直接勝利できる。",
+        "Param": [
+            0.20000000018626451,
+            10
+        ],
+        "Challenge": [
+            {
+                "Name": "勝利時、残りラウンドが<unbreak>#1[i]</unbreak>以上",
+                "Param": 6
+            },
+            {
+                "Name": "勝利時、残りラウンドが<unbreak>#1[i]</unbreak>以上",
+                "Param": 12
+            },
+            {
+                "Name": "戦闘不能になったキャラがいない"
+            }
+        ],
+        "Countdown": 20,
+        "DamageType1": [
+            "Physical",
+            "Ice",
+            "Thunder"
+        ],
+        "DamageType2": [
+            "Physical",
+            "Wind",
+            "Imaginary"
+        ],
+        "MazeGroupID1": 8,
+        "MazeGroupID2": 9,
+        "NpcMonsterIDList1": [
+            2023030
+        ],
+        "NpcMonsterIDList2": [
+            2004010
+        ],
+        "EventIDList1": [
+            {
+                "StageID": 30002061,
+                "StageType": "Challenge",
+                "StageName": 1346658580,
+                "HardLevelGroup": 1,
+                "Level": 90,
+                "EliteGroup": 82,
+                "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+                "StageAbilityConfig": [],
+                "SubLevelGraphs": [],
+                "StageConfigData": [
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_Wave",
+                        "MOJJBFBKBNC": "2"
+                    },
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_IsEliteBattle",
+                        "MOJJBFBKBNC": "1"
+                    },
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_CreateBattleEvent",
+                        "MOJJBFBKBNC": "30035"
+                    }
+                ],
+                "MonsterList": [
+                    {
+                        "$type": "StageMonsterWave",
+                        "Monster0": 2012010,
+                        "Monster1": 2022010,
+                        "Monster2": 2012010,
+                        "Monster3": 2022010
+                    },
+                    {
+                        "$type": "StageMonsterWave",
+                        "Monster0": 201201003,
+                        "Monster1": 202303001,
+                        "Monster2": 201201003
+                    }
+                ],
+                "LevelLoseCondition": [],
+                "LevelWinCondition": [
+                    "[CDT_MonsterDie:202303001]"
+                ],
+                "Release": true,
+                "ForbidExitBattle": true,
+                "MonsterWarningRatio": 1.1000000238419,
+                "TrialAvatarList": []
+            }
+        ],
+        "EventIDList2": [
+            {
+                "StageID": 30002062,
+                "StageType": "Challenge",
+                "StageName": 2012067311,
+                "HardLevelGroup": 1,
+                "Level": 90,
+                "EliteGroup": 82,
+                "LevelGraphPath": "Config/Level/StageCommonTemplate.json",
+                "StageAbilityConfig": [],
+                "SubLevelGraphs": [],
+                "StageConfigData": [
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_Wave",
+                        "MOJJBFBKBNC": "2"
+                    },
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_IsEliteBattle",
+                        "MOJJBFBKBNC": "1"
+                    },
+                    {
+                        "$type": "ILKEMJNAEKE",
+                        "JDKAMOANICM": "_CreateBattleEvent",
+                        "MOJJBFBKBNC": "30035"
+                    }
+                ],
+                "MonsterList": [
+                    {
+                        "$type": "StageMonsterWave",
+                        "Monster0": 2002010,
+                        "Monster1": 2012010,
+                        "Monster2": 2002010,
+                        "Monster3": 2012010
+                    },
+                    {
+                        "$type": "StageMonsterWave",
+                        "Monster0": 201102001,
+                        "Monster1": 200401003,
+                        "Monster2": 201101001
+                    }
+                ],
+                "LevelLoseCondition": [],
+                "LevelWinCondition": [
+                    "[CDT_MonsterDie:200401003]"
+                ],
+                "Release": true,
+                "ForbidExitBattle": true,
+                "MonsterWarningRatio": 1.1000000238419,
+                "TrialAvatarList": []
+            }
+        ],
+        "BeginTime": "",
+        "EndTime": ""
+    }
+]

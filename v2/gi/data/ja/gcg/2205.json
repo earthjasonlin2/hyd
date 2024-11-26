@@ -1,0 +1,102 @@
+{
+    "Type": "Character",
+    "Name": "ヒルチャールレンジャー·水",
+    "Title": "シャープな波に乗って·ヒルチャールレンジャー·水",
+    "Desc": "どの部族にも属さないヒルチャールの流浪者。己を追放するかのように荒野を徘徊している。",
+    "Source": "キャッツテールのリトルプリンスのところで酒場挑戦を行い、ヒルチャールレンジャー·水に挑戦して友好対戦に勝利することで獲得",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_HilistrayWater",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "水元素",
+        "他の武器",
+        "魔物",
+        "ヒルチャール"
+    ],
+    "Talent": {
+        "22051": {
+            "Name": "鎌の回転斬り",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "22052": {
+            "Name": "狂瀾の斬撃",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。\\n相手のキャラに<color=#FFFFFFFF>$[C106]</color>または<color=#FFFFFFFF>$[C122052]</color>が付与されている場合、本キャラは$[K310]を1獲得する。（各ラウンドで1回のみ）",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "D__KEY__DAMAGE": 3,
+                "C106": {
+                    "Name": "凍結",
+                    "Desc": "<color=#FFFFFFFF>キャラはスキルを発動できなくなる。</color>（ラウンド終了まで続く）\\nキャラが$[K103]や$[K100]を受けた時、この効果は解除され、受けるダメージ+2。",
+                    "Child": {
+                        "K103": {
+                            "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>炎元素ダメージ</color>",
+                            "Desc": "{SPRITE_PRESET#2103}炎元素付着では、以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>溶解</color>：ダメージ+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>蒸発</color>：ダメージ+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>過負荷</color>：ダメージ+2、目標を強制的に次のキャラにチェンジさせる\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>燃焼</color>：ダメージ+1、ラウンド終了時に炎元素ダメージを1与える「<color=#FFFFFFFF>燃焼烈焔</color>」を生成する（使用可能回数1回、最大2まで重ねられる）"
+                        },
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理ダメージ</color>",
+                            "Desc": "物理ダメージは元素付着させたり、元素反応を起こしたりはしません。"
+                        }
+                    }
+                },
+                "C122052": {
+                    "Name": "バブルの檻",
+                    "Desc": "<color=#FFFFFFFF>キャラはスキルを発動できなくなる。</color>（ラウンド終了まで続く）",
+                    "Child": {}
+                },
+                "K310": {
+                    "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}チャージ</color>",
+                    "Desc": "キャラが「元素爆発」を発動するには、{SPRITE_PRESET#1110}チャージを消費する必要があります。\\nキャラが「元素スキル」や「通常攻撃」を発動した後、{SPRITE_PRESET#1110}チャージを1獲得できます。"
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3
+            }
+        },
+        "22053": {
+            "Name": "バブル攻勢",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、手札<color=#FFFFFFFF>$[C122051]</color>を生成する。\\n（<color=#FFFFFFFF>$[C122051]</color>を装備したキャラは特技<color=#FFFFFFFF>$[S1220511]</color>を使用できる。）",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "D__KEY__DAMAGE": 3,
+                "C122051": {
+                    "Name": "バブルスライム",
+                    "Desc": "$[K58]：$[S1220511]\\n<color=#FFFFFFFF>$[K3]：2</color>\\n（キャラが装備できる「{SPRITE_PRESET#3008}特技」は1つのみ）",
+                    "Child": {
+                        "K58": {
+                            "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#3008}特技</color>",
+                            "Desc": "出撃キャラが「{SPRITE_PRESET#3008}特技」カードを装備している場合、対応する「{SPRITE_PRESET#3008}特技」を使用できる。\\n「{SPRITE_PRESET#3008}特技」の使用は「戦闘アクション」と見なされる。キャラが凍結、石化、スタンなどの原因でスキルを発動できない時、「{SPRITE_PRESET#3008}特技」も発動できなくなる。\\nキャラが「{SPRITE_PRESET#3008}特技」を発動した場合、スキル発動として見なされることなく、対応する効果（「スキルを発動した後」「キャラが元素反応を起こした後」などによって発動される効果）も発動されない。また、キャラが「{SPRITE_PRESET#3008}特技」で与えたダメージは、キャラ自身のダメージとして見なされない。"
+                        },
+                        "S1220511": "S1220511",
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                            "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                        }
+                    }
+                },
+                "S1220511": "S1220511"
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "22054": {
+            "Name": "狂瀾の斬撃",
+            "Desc": "",
+            "Child": {},
+            "Cost": {}
+        }
+    },
+    "Related": 222051
+}

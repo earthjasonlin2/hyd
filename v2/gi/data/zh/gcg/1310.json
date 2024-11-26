@@ -1,0 +1,116 @@
+{
+    "Type": "Character",
+    "Name": "林尼",
+    "Title": "惑光幻戏·林尼",
+    "Desc": "镜中捧花，赠予何人。",
+    "Source": "在猫尾酒馆中邀请林尼进行对局，在友好对局难度中获得胜利后获取",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Liney",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "火元素",
+        "弓",
+        "枫丹",
+        "愚人众",
+        "始基力：芒性"
+    ],
+    "Talent": {
+        "13101": {
+            "Name": "迫牌易位式",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "13102": {
+            "Name": "隐具魔术箭",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，召唤<color=#FFFFFFFF>$[C113101]</color>，累积1层<color=#FFFFFFFF>$[C113102]</color>。\\n如果本角色生命值至少为6，则对自身造成1点$[K5]。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO",
+                "C113101": {
+                    "Name": "怪笑猫猫帽",
+                    "Desc": "<color=#FFFFFFFF>结束阶段：</color>造成1点$[K103]。\\n<color=#FFFFFFFF>$[K3]：1</color>（可叠加，最多叠加到2次）",
+                    "Child": {
+                        "K103": {
+                            "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>火元素伤害</color>",
+                            "Desc": "附着{SPRITE_PRESET#2103}火元素，可发生元素反应：\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>融化</color>：本伤害+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>蒸发</color>：本伤害+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>超载</color>：本伤害+2，目标强制切换到下一个角色\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>燃烧</color>：本伤害+1，生成回合结束时造成1点火元素伤害的[<color=#FFFFFFFF>燃烧烈焰</color>]（可用次数1，最多叠加到2）"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>可用次数</color>",
+                            "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                },
+                "C113102": {
+                    "Name": "隐具余数",
+                    "Desc": "<color=#FFFFFFFF>$[C113102]</color>最多可以叠加到3层。\\n<color=#FFFFFFFF>角色使用<color=#FFFFFFFF>$[S13103]</color>时：</color>每层<color=#FFFFFFFF>$[C113102]</color>使伤害+1。技能结算后，耗尽<color=#FFFFFFFF>$[C113102]</color>，每层治疗角色1点。",
+                    "Child": {
+                        "S13103": "S13103"
+                    }
+                },
+                "K5": {
+                    "Name": "<color=#FFFFFFFF>穿透伤害</color>",
+                    "Desc": "穿透伤害无法受到伤害加成，但是也无法被护盾、伤害免疫等效果抵消。"
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 3
+            }
+        },
+        "13103": {
+            "Name": "眩惑光戏法",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO"
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 3
+            }
+        },
+        "13104": {
+            "Name": "大魔术·灵迹巡游",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，召唤<color=#FFFFFFFF>$[C113101]</color>，累积1层<color=#FFFFFFFF>$[C113102]</color>。",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO",
+                "C113101": {
+                    "Name": "怪笑猫猫帽",
+                    "Desc": "<color=#FFFFFFFF>结束阶段：</color>造成1点$[K103]。\\n<color=#FFFFFFFF>$[K3]：1</color>（可叠加，最多叠加到2次）",
+                    "Child": {
+                        "K103": {
+                            "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>火元素伤害</color>",
+                            "Desc": "附着{SPRITE_PRESET#2103}火元素，可发生元素反应：\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>融化</color>：本伤害+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>蒸发</color>：本伤害+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>超载</color>：本伤害+2，目标强制切换到下一个角色\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>燃烧</color>：本伤害+1，生成回合结束时造成1点火元素伤害的[<color=#FFFFFFFF>燃烧烈焰</color>]（可用次数1，最多叠加到2）"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>可用次数</color>",
+                            "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                },
+                "C113102": {
+                    "Name": "隐具余数",
+                    "Desc": "<color=#FFFFFFFF>$[C113102]</color>最多可以叠加到3层。\\n<color=#FFFFFFFF>角色使用<color=#FFFFFFFF>$[S13103]</color>时：</color>每层<color=#FFFFFFFF>$[C113102]</color>使伤害+1。技能结算后，耗尽<color=#FFFFFFFF>$[C113102]</color>，每层治疗角色1点。",
+                    "Child": {
+                        "S13103": "S13103"
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 213101
+}

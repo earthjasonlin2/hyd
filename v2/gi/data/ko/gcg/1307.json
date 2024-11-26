@@ -1,0 +1,80 @@
+{
+    "Type": "Character",
+    "Name": "호두",
+    "Title": "눈 그친 뒤의 매화향·호두",
+    "Desc": "「전부 보내줄게」",
+    "Source": "캣테일 술집에서 호두 초대 및 친선 대전 난이도 승리 후 획득",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Hutao",
+    "Hp": 10,
+    "Cost": 3,
+    "Tag": [
+        "불 원소",
+        "장병기",
+        "리월"
+    ],
+    "Talent": {
+        "13071": {
+            "Name": "왕생 비법 창술",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "13072": {
+            "Name": "나비의 서",
+            "Desc": "본 캐릭터에게 <color=#FFFFFFFF>$[C113071]</color>를 부착한다.",
+            "Child": {
+                "C113071": {
+                    "Name": "피안접무",
+                    "Desc": "부착 캐릭터가 주는 $[K100]가 $[K103]로 전환되며, 캐릭터가 주는 $[K103]+1pt\\n<color=#FFFFFFFF>부착 캐릭터가 $[K51] 시:</color> 대상 캐릭터에게 $[K1009]을 부착한다.\\n<color=#FFFFFFFF>$[K4]: 2</color>",
+                    "Child": {
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>",
+                            "Desc": "물리 피해는 원소를 부착할 수 없고, 원소 반응이 발생하지 않는다."
+                        },
+                        "K103": {
+                            "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>불 원소 피해</color>",
+                            "Desc": "{SPRITE_PRESET#2103}불 원소 부착 시 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>융해</color>: 이번 피해+2pt\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>증발</color>: 이번 피해+2pt\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>과부하</color>: 이번 피해+2pt, 대상이 다음 캐릭터로 강제 교체된다.\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>연소</color>: 이번 피해+1pt, 턴 종료 시 불 원소 피해를 1pt 주는 [<color=#FFFFFFFF>불타는 화염</color>]을 생성한다. (사용 가능 횟수: 1, 최대 중첩수: 2)"
+                        },
+                        "K51": {
+                            "Name": "<color=#FFFFFFFF>강공격</color>",
+                            "Desc": "아군이 행동을 시작하기 전에 원소 주사위 총개수가 짝수인 경우, 발동한 「일반 공격」을 「강공격」으로 간주한다."
+                        },
+                        "K1009": {
+                            "Name": "<color=#FFFFFFFF>혈매향</color>",
+                            "Desc": "<color=#FFFFFFFF>종료 단계: </color>부착 캐릭터에게 {SPRITE_PRESET#2103}<color=#FF9999FF>불 원소 피해</color>를 1pt 준다.\\n<color=#FFFFFFFF><color=#FFFFFFFF>사용 가능 횟수</color>: 1</color>"
+                        },
+                        "K4": {
+                            "Name": "<color=#FFFFFFFF>지속 턴</color>",
+                            "Desc": "턴이 종료 단계에 진입할 때마다 <color=#FFFFFFFF>지속 턴</color>이 1회씩 감소한다.\\n<color=#FFFFFFFF>지속 턴</color>이 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 2
+            }
+        },
+        "13073": {
+            "Name": "평안의 서",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고 자신의 HP를 2pt 치유한다. 본 캐릭터의 HP가 6pt 이하인 경우 주는 피해와 치유량이 각각 1pt 증가한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_PYRO",
+                "D__KEY__DAMAGE": 4
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_PYRO": 3,
+                "GCG_COST_ENERGY": 3
+            }
+        }
+    },
+    "Related": 213071
+}

@@ -1,0 +1,49 @@
+{
+    "Type": "Action",
+    "Name": "진기 토납",
+    "Title": "중운·진기 토납",
+    "Desc": "안정된 숨결은 심신을 가라앉힌다",
+    "Source": "캣테일 술집에서 중운을 초대해 대전하고 상응하는 도전 목표 달성 후 획득",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Chongyun",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_CRYO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "특성",
+        "전투 행동"
+    ],
+    "Talent": {
+        "Name": "진기 토납",
+        "Desc": "$[K1]: 아군 출전 캐릭터가 <color=#FFFFFFFF>$[A1104]</color>일 때 해당 카드를 장착할 수 있다.\\n$[A1104]이 해당 카드를 장착하면 즉시 <color=#FFD780FF>$[S11042]</color>를 1회 사용한다.\\n해당 카드를 장착한 $[A1104]이 생성한 <color=#FFFFFFFF>$[C111041]</color>이 아래의 효과를 획득한다.\\n아군의 한손검, 양손검 혹은 장병기 캐릭터가 <color=#FFFFFFFF>일반 공격</color>으로 주는 피해+1pt\\n(카드 덱에 $[A1104]이 있어야만 카드 덱에 추가 가능)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>전투 행동</color>",
+                "Desc": "아군이 전투 행동을 1회 진행하면 행동 순서가 상대에게 넘어간다.\\n<color=#FFFFFFFF>해당 규칙에 속하는 카드는 사용 시 빠른 행동이 아닌 전투 행동으로 간주한다</color>."
+            },
+            "A1104": "진기 토납",
+            "S11042": "S11042",
+            "C111041": {
+                "Name": "중첩의 서리 영역",
+                "Desc": "아군의 한손검, 양손검 혹은 장병기 캐릭터가 주는 $[K100]가 $[K101]로 전환된다.\\n<color=#FFFFFFFF>$[K4]: 2</color>",
+                "Child": {
+                    "K100": {
+                        "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>물리 피해</color>",
+                        "Desc": "물리 피해는 원소를 부착할 수 없고, 원소 반응이 발생하지 않는다."
+                    },
+                    "K101": {
+                        "Name": "{SPRITE_PRESET#2101}<color=#99FFFFFF>얼음 원소 피해</color>",
+                        "Desc": "{SPRITE_PRESET#2101}얼음 원소 부착 시 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2103}<color=#FFFFFFFF>융해</color>: 이번 피해+2pt\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2104}<color=#FFFFFFFF>초전도</color>: 이번 피해+1pt, 대상 이외의 모든 상대 캐릭터에게 관통 피해를 1pt 준다.\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2102}<color=#FFFFFFFF>빙결</color>: 이번 피해+1pt, 이번 턴에 대상을 행동 불가로 만든다. (물리 피해 또는 불 원소 피해를 받으면 조기 해제되지만, 해당 피해로 받는 피해량이 2pt 추가된다)"
+                    },
+                    "K4": {
+                        "Name": "<color=#FFFFFFFF>지속 턴</color>",
+                        "Desc": "턴이 종료 단계에 진입할 때마다 <color=#FFFFFFFF>지속 턴</color>이 1회씩 감소한다.\\n<color=#FFFFFFFF>지속 턴</color>이 전부 소진되면 즉시 해당 패를 버린다."
+                    }
+                }
+            }
+        }
+    }
+}

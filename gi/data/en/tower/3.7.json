@@ -1,0 +1,924 @@
+{
+    "Leyline": {
+        "71": {
+            "Icon": "UI_TowerBlessing_66",
+            "Name": "Drumming Moon",
+            "Desc": "After the character's Normal Attack hits an opponent, this opponent will be afflicted with a Sign of Snaring. After 3s, the Sign will be removed, dealing True DMG to this opponent. After a character's Normal Attack hits an opponent <color=#F39000FF>with a Sign of Snaring</color>, the DMG dealt by the Sign's removal will be increased. This DMG can be increased for no more than 9 times."
+        },
+        "72": {
+            "Icon": "UI_TowerBlessing_40",
+            "Name": "Potent Moon",
+            "Desc": "After the active character's Normal Attacks hit opponents, the DMG dealt by this character will increase by <color=#F39000FF>12%</color> for 2s. This effect can stack up to <color=#F39000FF>5</color> times. Each stack's duration is counted independently. This effect can be triggered once every 0.05s. This effect will be canceled when the character leaves the field."
+        },
+        "73": {
+            "Icon": "UI_TowerBlessing_67",
+            "Name": "Willowy Moon",
+            "Desc": "After the character's Normal Attack hits an opponent, the Physical or Elemental RES of this opponent will <color=#F39000FF>decrease by 6%</color> for 2s, matching the Attribute of that attack. This can stack up to <color=#F39000FF>6</color> times. RES decreases of different types can co-exist, and their stacks and timers will be independent of each other."
+        }
+    },
+    "Floor": {
+        "9": {
+            "Open": "2023-06-01 04:00:00",
+            "Close": "2023-07-16 03:59:59",
+            "Buff": [
+                "DMG dealt by the explosion of Dendro Cores produced by characters' Bloom reaction is increased by 125%. DMG dealt by Burgeon and Hyperbloom reactions triggered by characters is increased by 125%."
+            ],
+            "Room": {
+                "1": {
+                    "Level": 72,
+                    "Cond": [
+                        [
+                            2,
+                            60
+                        ],
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 26120201,
+                            "Hp": 89510.16528361938,
+                            "Name": "Winged Cryoshroom",
+                            "Icon": "UI_MonsterIcon_Fungus_Amanita_Unu_Svarita_Ice"
+                        },
+                        {
+                            "Id": 20011101,
+                            "Hp": 55222.10909720505,
+                            "Name": "Large Hydro Slime",
+                            "Icon": "UI_MonsterIcon_Slime_Water_03"
+                        },
+                        {
+                            "Id": 26090701,
+                            "Hp": 31967.916813958524,
+                            "Name": "Stretchy Pyro Fungus",
+                            "Icon": "UI_MonsterIcon_Fungus_Deux_Alpha_Fire"
+                        },
+                        {
+                            "Id": 26090901,
+                            "Hp": 31967.916813958524,
+                            "Name": "Stretchy Geo Fungus",
+                            "Icon": "UI_MonsterIcon_Fungus_Deux_Beta_Rock"
+                        },
+                        {
+                            "Id": 26090401,
+                            "Hp": 31967.916813958524,
+                            "Name": "Whirling Electro Fungus",
+                            "Icon": "UI_MonsterIcon_Fungus_Trois_Epsilon_Electric"
+                        },
+                        {
+                            "Id": 26090501,
+                            "Hp": 31967.916813958524,
+                            "Name": "Whirling Cryo Fungus",
+                            "Icon": "UI_MonsterIcon_Fungus_Trois_Alpha_Ice"
+                        },
+                        {
+                            "Id": 26090101,
+                            "Hp": 31967.916813958524,
+                            "Name": "Floating Hydro Fungus",
+                            "Icon": "UI_MonsterIcon_Fungus_Un_Gamma_Water"
+                        },
+                        {
+                            "Id": 26090201,
+                            "Hp": 31967.916813958524,
+                            "Name": "Floating Dendro Fungus",
+                            "Icon": "UI_MonsterIcon_Fungus_Un_Delta_Grass"
+                        },
+                        {
+                            "Id": 20011001,
+                            "Hp": 22088.844026572744,
+                            "Name": "Hydro Slime",
+                            "Icon": "UI_MonsterIcon_Slime_Water_02"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 25310101,
+                            "Hp": 115084.50591664299,
+                            "Name": "Eremite Desert Clearwater",
+                            "Icon": "UI_MonsterIcon_Eremite_Female_Slim_PushDagger"
+                        },
+                        {
+                            "Id": 25210501,
+                            "Hp": 51148.66780006554,
+                            "Name": "Eremite Sword-Dancer",
+                            "Icon": "UI_MonsterIcon_Eremite_MuscleMan_Simitar"
+                        },
+                        {
+                            "Id": 25210401,
+                            "Hp": 51148.66780006554,
+                            "Name": "Eremite Linebreaker",
+                            "Icon": "UI_MonsterIcon_Eremite_MuscleMan_Gloves"
+                        },
+                        {
+                            "Id": 25210301,
+                            "Hp": 38361.50197221425,
+                            "Name": "Eremite Ravenbeak Halberdier",
+                            "Icon": "UI_MonsterIcon_Eremite_Male_Standard_Pole"
+                        },
+                        {
+                            "Id": 25210201,
+                            "Hp": 38361.50197221425,
+                            "Name": "Eremite Crossbow",
+                            "Icon": "UI_MonsterIcon_Eremite_Male_Standard_Crossbow"
+                        },
+                        {
+                            "Id": 25210101,
+                            "Hp": 51148.66780006554,
+                            "Name": "Eremite Axe Vanguard",
+                            "Icon": "UI_MonsterIcon_Eremite_Female_Hatchet"
+                        }
+                    ]
+                },
+                "2": {
+                    "Level": 74,
+                    "Cond": [
+                        [
+                            2,
+                            60
+                        ],
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 21020101,
+                            "Hp": 87025.89365386966,
+                            "Name": "Wooden Shieldwall Mitachurl",
+                            "Icon": "UI_MonsterIcon_Brute_None_01"
+                        },
+                        {
+                            "Id": 21020201,
+                            "Hp": 87025.89365386966,
+                            "Name": "Blazing Axe Mitachurl",
+                            "Icon": "UI_MonsterIcon_Brute_None_01"
+                        },
+                        {
+                            "Id": 21020301,
+                            "Hp": 87025.89365386966,
+                            "Name": "Rock Shieldwall Mitachurl",
+                            "Icon": "UI_MonsterIcon_Brute_None_01"
+                        },
+                        {
+                            "Id": 21020701,
+                            "Hp": 87025.89365386966,
+                            "Name": "Crackling Axe Mitachurl",
+                            "Icon": "UI_MonsterIcon_Brute_None_01"
+                        },
+                        {
+                            "Id": 21030401,
+                            "Hp": 29008.631217956623,
+                            "Name": "Geo Samachurl",
+                            "Icon": "UI_MonsterIcon_Shaman_Rock_01"
+                        },
+                        {
+                            "Id": 21030501,
+                            "Hp": 29008.631217956623,
+                            "Name": "Cryo Samachurl",
+                            "Icon": "UI_MonsterIcon_Shaman_Ice_01"
+                        },
+                        {
+                            "Id": 21010301,
+                            "Hp": 29008.631217956623,
+                            "Name": "Wooden Shield Hilichurl Guard",
+                            "Icon": "UI_MonsterIcon_Hili_None_01"
+                        },
+                        {
+                            "Id": 21010701,
+                            "Hp": 29008.631217956623,
+                            "Name": "Hilichurl Berserker",
+                            "Icon": "UI_MonsterIcon_Hili_Fire_Range"
+                        },
+                        {
+                            "Id": 21010501,
+                            "Hp": 23206.90538167951,
+                            "Name": "Pyro Hilichurl Shooter",
+                            "Icon": "UI_MonsterIcon_Hili_Fire_Range"
+                        },
+                        {
+                            "Id": 21010901,
+                            "Hp": 23206.90538167951,
+                            "Name": "Cryo Hilichurl Shooter",
+                            "Icon": "UI_MonsterIcon_Hili_Ice_Range"
+                        },
+                        {
+                            "Id": 21011001,
+                            "Hp": 23206.90538167951,
+                            "Name": "Electro Hilichurl Shooter",
+                            "Icon": "UI_MonsterIcon_Hili_Electric_Range"
+                        },
+                        {
+                            "Id": 21010601,
+                            "Hp": 29008.631217956623,
+                            "Name": "Hilichurl Grenadier",
+                            "Icon": "UI_MonsterIcon_Hili_Fire_Range"
+                        },
+                        {
+                            "Id": 21011301,
+                            "Hp": 23206.90538167951,
+                            "Name": "Cryo Hilichurl Grenadier",
+                            "Icon": "UI_MonsterIcon_Hili_Ice_Range"
+                        },
+                        {
+                            "Id": 21011601,
+                            "Hp": 29008.631217956623,
+                            "Name": "Electro Hilichurl Grenadier",
+                            "Icon": "UI_MonsterIcon_Hili_Electric_Range"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 22010301,
+                            "Hp": 58017.262435913035,
+                            "Name": "Hydro Abyss Mage",
+                            "Icon": "UI_MonsterIcon_Abyss_Water_01"
+                        },
+                        {
+                            "Id": 21030201,
+                            "Hp": 29008.631217956623,
+                            "Name": "Dendro Samachurl",
+                            "Icon": "UI_MonsterIcon_Shaman_Grass_01"
+                        },
+                        {
+                            "Id": 20011101,
+                            "Hp": 58017.262435913035,
+                            "Name": "Large Hydro Slime",
+                            "Icon": "UI_MonsterIcon_Slime_Water_03"
+                        },
+                        {
+                            "Id": 20011301,
+                            "Hp": 58017.262435913035,
+                            "Name": "Large Pyro Slime",
+                            "Icon": "UI_MonsterIcon_Slime_Fire_03"
+                        }
+                    ]
+                },
+                "3": {
+                    "Level": 76,
+                    "Cond": [
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ],
+                        [
+                            2,
+                            420
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 26120301,
+                            "Hp": 77136.03884236507,
+                            "Name": "Grounded Hydroshroom",
+                            "Icon": "UI_MonsterIcon_Fungus_Amanita_Du_Anudatta_Water"
+                        },
+                        {
+                            "Id": 26120101,
+                            "Hp": 77136.03884236507,
+                            "Name": "Winged Dendroshroom",
+                            "Icon": "UI_MonsterIcon_Fungus_Amanita_Unu_Anudatta_Grass"
+                        },
+                        {
+                            "Id": 26090401,
+                            "Hp": 38568.01942118268,
+                            "Name": "Whirling Electro Fungus",
+                            "Icon": "UI_MonsterIcon_Fungus_Trois_Epsilon_Electric"
+                        },
+                        {
+                            "Id": 26090201,
+                            "Hp": 38568.01942118268,
+                            "Name": "Floating Dendro Fungus",
+                            "Icon": "UI_MonsterIcon_Fungus_Un_Delta_Grass"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 25310201,
+                            "Hp": 138844.8764147256,
+                            "Name": "Eremite Sunfrost",
+                            "Icon": "UI_MonsterIcon_Eremite_Male_Standard_Glaive"
+                        },
+                        {
+                            "Id": 25310301,
+                            "Hp": 154272.07768473044,
+                            "Name": "Eremite Daythunder",
+                            "Icon": "UI_MonsterIcon_Eremite_Male_Standard_Polearm"
+                        },
+                        {
+                            "Id": 25210401,
+                            "Hp": 61708.83215697009,
+                            "Name": "Eremite Linebreaker",
+                            "Icon": "UI_MonsterIcon_Eremite_MuscleMan_Gloves"
+                        }
+                    ]
+                }
+            }
+        },
+        "10": {
+            "Open": "2023-06-01 04:00:00",
+            "Close": "2023-07-16 03:59:59",
+            "Buff": [
+                "When Spread or Aggravate reactions are triggered on opponents, DMG dealt by these reactions will be increased by 75%."
+            ],
+            "Room": {
+                "1": {
+                    "Level": 80,
+                    "Cond": [
+                        [
+                            2,
+                            60
+                        ],
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 26120201,
+                            "Hp": 132365.05269524074,
+                            "Name": "Winged Cryoshroom",
+                            "Icon": "UI_MonsterIcon_Fungus_Amanita_Unu_Svarita_Ice"
+                        },
+                        {
+                            "Id": 20010601,
+                            "Hp": 74262.91016200923,
+                            "Name": "Large Electro Slime",
+                            "Icon": "UI_MonsterIcon_Slime_Electric_03"
+                        },
+                        {
+                            "Id": 20010701,
+                            "Hp": 74262.91016200923,
+                            "Name": "Mutant Electro Slime",
+                            "Icon": "UI_MonsterIcon_Slime_Electric_03_Positive"
+                        },
+                        {
+                            "Id": 26090501,
+                            "Hp": 47273.23405368639,
+                            "Name": "Whirling Cryo Fungus",
+                            "Icon": "UI_MonsterIcon_Fungus_Trois_Alpha_Ice"
+                        },
+                        {
+                            "Id": 26090401,
+                            "Hp": 47273.23405368639,
+                            "Name": "Whirling Electro Fungus",
+                            "Icon": "UI_MonsterIcon_Fungus_Trois_Epsilon_Electric"
+                        },
+                        {
+                            "Id": 26090201,
+                            "Hp": 47273.23405368639,
+                            "Name": "Floating Dendro Fungus",
+                            "Icon": "UI_MonsterIcon_Fungus_Un_Delta_Grass"
+                        },
+                        {
+                            "Id": 20010501,
+                            "Hp": 29705.164586171708,
+                            "Name": "Electro Slime",
+                            "Icon": "UI_MonsterIcon_Slime_Electric_02"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 26050601,
+                            "Hp": 378185.8724294901,
+                            "Name": "Primordial Bathysmal Vishap",
+                            "Icon": "UI_MonsterIcon_Drake_Deepsea_Water"
+                        }
+                    ]
+                },
+                "2": {
+                    "Level": 82,
+                    "Cond": [
+                        [
+                            2,
+                            60
+                        ],
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 25100101,
+                            "Hp": 251228.77827933797,
+                            "Name": "Kairagi: Dancing Thunder",
+                            "Icon": "UI_MonsterIcon_Samurai_Kairagi_01"
+                        },
+                        {
+                            "Id": 25100201,
+                            "Hp": 251228.77827933797,
+                            "Name": "Kairagi: Fiery Might",
+                            "Icon": "UI_MonsterIcon_Samurai_Kairagi_02"
+                        },
+                        {
+                            "Id": 25210201,
+                            "Hp": 62807.1945698344,
+                            "Name": "Eremite Crossbow",
+                            "Icon": "UI_MonsterIcon_Eremite_Male_Standard_Crossbow"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 22010401,
+                            "Hp": 77333.54409485303,
+                            "Name": "Electro Abyss Mage",
+                            "Icon": "UI_MonsterIcon_Abyss_Electric_01"
+                        },
+                        {
+                            "Id": 21020801,
+                            "Hp": 348000.9484268391,
+                            "Name": "Thunderhelm Lawachurl",
+                            "Icon": "UI_MonsterIcon_Brute_Electric_01"
+                        }
+                    ]
+                },
+                "3": {
+                    "Level": 85,
+                    "Cond": [
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ],
+                        [
+                            2,
+                            420
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 25310101,
+                            "Hp": 217426.71283354243,
+                            "Name": "Eremite Desert Clearwater",
+                            "Icon": "UI_MonsterIcon_Eremite_Female_Slim_PushDagger"
+                        },
+                        {
+                            "Id": 25310201,
+                            "Hp": 217426.71283354243,
+                            "Name": "Eremite Sunfrost",
+                            "Icon": "UI_MonsterIcon_Eremite_Male_Standard_Glaive"
+                        },
+                        {
+                            "Id": 25310301,
+                            "Hp": 241585.22517460608,
+                            "Name": "Eremite Daythunder",
+                            "Icon": "UI_MonsterIcon_Eremite_Male_Standard_Polearm"
+                        },
+                        {
+                            "Id": 23010601,
+                            "Hp": 122546.15571190421,
+                            "Name": "Fatui Skirmisher - Pyroslinger Bracer",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Standard_Rifle_Fire_01"
+                        },
+                        {
+                            "Id": 23010201,
+                            "Hp": 122546.15571190421,
+                            "Name": "Fatui Skirmisher - Hydrogunner Legionnaire",
+                            "Icon": "UI_MonsterIcon_Skirmisher_Male_Fat_SprayGun_Water_01"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 23050101,
+                            "Hp": 362377.8377619089,
+                            "Name": "Mirror Maiden",
+                            "Icon": "UI_MonsterIcon_Fatuus_Maiden_Water"
+                        },
+                        {
+                            "Id": 23030101,
+                            "Hp": 204243.59285317358,
+                            "Name": "Fatui Electro Cicin Mage",
+                            "Icon": "UI_MonsterIcon_Fatuus_Summoner_01"
+                        }
+                    ]
+                }
+            }
+        },
+        "11": {
+            "Open": "2023-06-01 04:00:00",
+            "Close": "2023-07-16 03:59:59",
+            "Buff": [
+                "All party members' Normal Attack DMG increased by 50%."
+            ],
+            "Room": {
+                "1": {
+                    "Level": 88,
+                    "Cond": [
+                        [
+                            233753003,
+                            3024,
+                            20
+                        ],
+                        [
+                            233753003,
+                            3024,
+                            40
+                        ],
+                        [
+                            233753003,
+                            3024,
+                            60
+                        ]
+                    ],
+                    "Type": "TOWER_COND_LEFT_HP_GREATER_THAN",
+                    "First": [
+                        {
+                            "Id": 21020401,
+                            "Hp": 390927.96587894496,
+                            "Name": "Frostarm Lawachurl",
+                            "Icon": "UI_MonsterIcon_Brute_Ice_01"
+                        },
+                        {
+                            "Id": 21020201,
+                            "Hp": 130309.32195964832,
+                            "Name": "Blazing Axe Mitachurl",
+                            "Icon": "UI_MonsterIcon_Brute_None_01"
+                        },
+                        {
+                            "Id": 20060401,
+                            "Hp": 109110.0723610398,
+                            "Name": "Cryo Specter",
+                            "Icon": "UI_MonsterIcon_Sylph_Ice_01"
+                        },
+                        {
+                            "Id": 20060101,
+                            "Hp": 109110.0723610398,
+                            "Name": "Hydro Specter",
+                            "Icon": "UI_MonsterIcon_Sylph_Water_01"
+                        },
+                        {
+                            "Id": 20060201,
+                            "Hp": 109110.0723610398,
+                            "Name": "Geo Specter",
+                            "Icon": "UI_MonsterIcon_Sylph_Rock_01"
+                        },
+                        {
+                            "Id": 20060501,
+                            "Hp": 109110.0723610398,
+                            "Name": "Electro Specter",
+                            "Icon": "UI_MonsterIcon_Sylph_Electric_01"
+                        },
+                        {
+                            "Id": 20060701,
+                            "Hp": 109110.0723610398,
+                            "Name": "Dendro Specter",
+                            "Icon": "UI_MonsterIcon_Sylph_Grass_01"
+                        },
+                        {
+                            "Id": 20060301,
+                            "Hp": 109110.0723610398,
+                            "Name": "Anemo Specter",
+                            "Icon": "UI_MonsterIcon_Sylph_Wind_01"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 25410301,
+                            "Hp": 300052.7013866567,
+                            "Name": "Eremite Scorching Loremaster",
+                            "Icon": "UI_MonsterIcon_Eremite_Female_Standard_Oracle"
+                        },
+                        {
+                            "Id": 25310201,
+                            "Hp": 245497.66999373032,
+                            "Name": "Eremite Sunfrost",
+                            "Icon": "UI_MonsterIcon_Eremite_Male_Standard_Glaive"
+                        },
+                        {
+                            "Id": 21040101,
+                            "Hp": 340968.9701437577,
+                            "Name": "Anemo Hilichurl Rogue",
+                            "Icon": "UI_MonsterIcon_Hilistray_Wind"
+                        },
+                        {
+                            "Id": 21040201,
+                            "Hp": 340968.9701437577,
+                            "Name": "Hydro Hilichurl Rogue",
+                            "Icon": "UI_MonsterIcon_Hilistray_Water"
+                        },
+                        {
+                            "Id": 21020201,
+                            "Hp": 130309.32195964832,
+                            "Name": "Blazing Axe Mitachurl",
+                            "Icon": "UI_MonsterIcon_Brute_None_01"
+                        }
+                    ]
+                },
+                "2": {
+                    "Level": 90,
+                    "Cond": [
+                        [
+                            2,
+                            60
+                        ],
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 22030101,
+                            "Hp": 389665.38683876395,
+                            "Name": "Abyss Lector: Violet Lightning",
+                            "Icon": "UI_MonsterIcon_Invoker_Deacon_Electric_01"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 25410201,
+                            "Hp": 326482.5382988715,
+                            "Name": "Eremite Galehunter",
+                            "Icon": "UI_MonsterIcon_Eremite_Female_Standard_Longbow"
+                        },
+                        {
+                            "Id": 25410301,
+                            "Hp": 326482.5382988715,
+                            "Name": "Eremite Scorching Loremaster",
+                            "Icon": "UI_MonsterIcon_Eremite_Female_Standard_Oracle"
+                        },
+                        {
+                            "Id": 26120101,
+                            "Hp": 148401.14998362944,
+                            "Name": "Winged Dendroshroom",
+                            "Icon": "UI_MonsterIcon_Fungus_Amanita_Unu_Anudatta_Grass"
+                        },
+                        {
+                            "Id": 26120201,
+                            "Hp": 207761.60580963816,
+                            "Name": "Winged Cryoshroom",
+                            "Icon": "UI_MonsterIcon_Fungus_Amanita_Unu_Svarita_Ice"
+                        },
+                        {
+                            "Id": 26120301,
+                            "Hp": 148401.14998362944,
+                            "Name": "Grounded Hydroshroom",
+                            "Icon": "UI_MonsterIcon_Fungus_Amanita_Du_Anudatta_Water"
+                        },
+                        {
+                            "Id": 26120401,
+                            "Hp": 207761.60580963816,
+                            "Name": "Grounded Geoshroom",
+                            "Icon": "UI_MonsterIcon_Fungus_Amanita_Du_Udatta_Rock"
+                        }
+                    ]
+                },
+                "3": {
+                    "Level": 92,
+                    "Cond": [
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ],
+                        [
+                            2,
+                            420
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 23050101,
+                            "Hp": 478287.3871839793,
+                            "Name": "Mirror Maiden",
+                            "Icon": "UI_MonsterIcon_Fatuus_Maiden_Water"
+                        },
+                        {
+                            "Id": 24030101,
+                            "Hp": 398572.8226533159,
+                            "Name": "Ruin Drake: Skywatch",
+                            "Icon": "UI_MonsterIcon_Gargoyle"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 22020101,
+                            "Hp": 409134.41553264856,
+                            "Name": "Abyss Herald: Wicked Torrents",
+                            "Icon": "UI_MonsterIcon_Invoker_Herald_Water_01"
+                        },
+                        {
+                            "Id": 22010101,
+                            "Hp": 102283.60388316205,
+                            "Name": "Pyro Abyss Mage",
+                            "Icon": "UI_MonsterIcon_Abyss_Fire_01"
+                        },
+                        {
+                            "Id": 22010201,
+                            "Hp": 102283.60388316205,
+                            "Name": "Cryo Abyss Mage",
+                            "Icon": "UI_MonsterIcon_Abyss_Ice_01"
+                        },
+                        {
+                            "Id": 22010301,
+                            "Hp": 102283.60388316205,
+                            "Name": "Hydro Abyss Mage",
+                            "Icon": "UI_MonsterIcon_Abyss_Water_01"
+                        }
+                    ]
+                }
+            }
+        },
+        "12": {
+            "Open": "2023-06-01 04:00:00",
+            "Close": "2023-07-16 03:59:59",
+            "Buff": [
+                "For this floor only, the Ley Line flow will be normal."
+            ],
+            "Room": {
+                "1": {
+                    "Level": 95,
+                    "Cond": [
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ],
+                        [
+                            2,
+                            420
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 26010101,
+                            "Hp": 208116.28469212918,
+                            "Name": "Cryo Whopperflower",
+                            "Icon": "UI_MonsterIcon_Mimik_Ice"
+                        },
+                        {
+                            "Id": 26010201,
+                            "Hp": 208116.28469212918,
+                            "Name": "Pyro Whopperflower",
+                            "Icon": "UI_MonsterIcon_Mimik_Fire"
+                        },
+                        {
+                            "Id": 24040101,
+                            "Hp": 386143.6133766592,
+                            "Name": "Primal Construct: Repulsor",
+                            "Icon": "UI_MonsterIcon_Monolith_Ordinator"
+                        },
+                        {
+                            "Id": 24040201,
+                            "Hp": 386143.6133766592,
+                            "Name": "Primal Construct: Reshaper",
+                            "Icon": "UI_MonsterIcon_Monolith_Ordinator"
+                        },
+                        {
+                            "Id": 24040301,
+                            "Hp": 386143.6133766592,
+                            "Name": "Primal Construct: Prospector",
+                            "Icon": "UI_MonsterIcon_Monolith_Ordinator"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 22020201,
+                            "Hp": 554976.759179011,
+                            "Name": "Abyss Herald: Frost Fall",
+                            "Icon": "UI_MonsterIcon_Invoker_Herald_Ice"
+                        },
+                        {
+                            "Id": 22020101,
+                            "Hp": 554976.759179011,
+                            "Name": "Abyss Herald: Wicked Torrents",
+                            "Icon": "UI_MonsterIcon_Invoker_Herald_Water_01"
+                        },
+                        {
+                            "Id": 22010201,
+                            "Hp": 138744.18979475263,
+                            "Name": "Cryo Abyss Mage",
+                            "Icon": "UI_MonsterIcon_Abyss_Ice_01"
+                        },
+                        {
+                            "Id": 22010301,
+                            "Hp": 138744.18979475263,
+                            "Name": "Hydro Abyss Mage",
+                            "Icon": "UI_MonsterIcon_Abyss_Water_01"
+                        }
+                    ]
+                },
+                "2": {
+                    "Level": 98,
+                    "Cond": [
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ],
+                        [
+                            2,
+                            420
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 26110101,
+                            "Hp": 1802520.6730464848,
+                            "Name": "Jadeplume Terrorshroom",
+                            "Icon": "UI_MonsterIcon_Fungus_Raptor"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 20070101,
+                            "Hp": 1802520.6730464848,
+                            "Name": "Thunder Manifestation",
+                            "Icon": "UI_MonsterIcon_Raijin"
+                        }
+                    ]
+                },
+                "3": {
+                    "Level": 100,
+                    "Cond": [
+                        [
+                            2,
+                            180
+                        ],
+                        [
+                            2,
+                            300
+                        ],
+                        [
+                            2,
+                            420
+                        ]
+                    ],
+                    "Type": "TOWER_COND_CHALLENGE_LEFT_TIME_MORE_THAN",
+                    "First": [
+                        {
+                            "Id": 26100101,
+                            "Hp": 970550.3172040819,
+                            "Name": "Consecrated Horned Crocodile",
+                            "Icon": "UI_MonsterIcon_Gator_Sacred_Water"
+                        },
+                        {
+                            "Id": 26100201,
+                            "Hp": 970550.3172040819,
+                            "Name": "Consecrated Fanged Beast",
+                            "Icon": "UI_MonsterIcon_Panther_Sacred_Grass"
+                        }
+                    ],
+                    "Second": [
+                        {
+                            "Id": 22100201,
+                            "Hp": 1386500.453148689,
+                            "Name": "Iniquitous Baptist - Bringer of Flood, Flame, and Frost",
+                            "Icon": "UI_MonsterIcon_Invoker_Archdeacon"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "Type": "Action",
+    "Name": "予行恶者以惩惧",
+    "Title": "莱欧斯利·予行恶者以惩惧",
+    "Desc": "「无需畏惧，直面罪责。」",
+    "Source": "在猫尾酒馆中邀请莱欧斯利进行对局，完成相应挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Wriothesley",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_CRYO",
+            "count": 1
+        },
+        {
+            "costType": "GCG_COST_DICE_VOID",
+            "count": 2
+        }
+    ],
+    "Tag": [
+        "天赋",
+        "战斗行动"
+    ],
+    "Talent": {
+        "Name": "予行恶者以惩惧",
+        "Desc": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1111]</color>时，装备此牌。\\n$[A1111]装备此牌后，立刻使用一次<color=#FFD780FF>$[S11111]</color>。\\n装备有此牌的$[A1111]受到伤害或治疗后，此牌累积1点<color=#FFFFFFFF>「惩戒计数」</color>。\\n装备有此牌的莱欧斯利使用技能时：如果已有3点<color=#FFFFFFFF>「惩戒计数」</color>，则消耗3点使此技能伤害+1。\\n（牌组中包含$[A1111]，才能加入牌组）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>战斗行动</color>",
+                "Desc": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+            },
+            "A1111": "予行恶者以惩惧",
+            "S11111": "S11111"
+        }
+    }
+}

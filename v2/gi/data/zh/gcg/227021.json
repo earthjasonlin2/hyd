@@ -1,0 +1,49 @@
+{
+    "Type": "Action",
+    "Name": "万千子嗣",
+    "Title": "阿佩普的绿洲守望者·万千子嗣",
+    "Desc": "阿佩普曾与诸多子嗣一同在芳草之海、百尺巨木与千里之藤蔓中，如游鱼穿行于水。直到最终草木枯萎化为尘埃，如同砂砾般渺小的诸多生灵在它原本的土地上建立起脆弱的城国。\\n阿佩普曾与诸多子嗣一同令沙海如沸水般翻腾，将城楼如落叶般吹散。直到新的沙海之王与失去故土的王相互和解，从此日光之下的沙丘都属于人与神，而龙的绿洲留在龙的心中。\\n阿佩普曾与诸多子嗣一同分享进化的知识，因为流水不腐，而朽木必定倾倒。直到最终它践行了与沙之王的约定得到了终极的智慧，从此它只能看见终末的风景，漫无边际的末日…",
+    "Source": "在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度阿佩普的绿洲守望者中完成挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Apep",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_DENDRO",
+            "count": 2
+        },
+        {}
+    ],
+    "Tag": [
+        "天赋"
+    ],
+    "Talent": {
+        "Name": "万千子嗣",
+        "Desc": "<color=#FFFFFFFF>入场时：</color>生成4张<color=#FFFFFFFF>$[C127021]</color>，随机置入我方牌库。\\n装备有此牌的<color=#FFFFFFFF>$[A2702]</color>在场时:我方<color=#FFFFFFFF>$[C127022]</color>造成的伤害+1。\\n（牌组中包含$[A2702]，才能加入牌组）",
+        "Child": {
+            "C127021": {
+                "Name": "唤醒眷属",
+                "Desc": "<color=#FFFFFFFF>打出此牌或$[K56]此牌时：</color>召唤一个独立的$[C127022]。",
+                "Child": {
+                    "K56": {
+                        "Name": "<color=#FFFFFFFF>舍弃</color>",
+                        "Desc": "通过行动牌或角色技能的效果，将行动牌从手牌或牌库中弃置。"
+                    },
+                    "C127022": {
+                        "Name": "增殖生命体",
+                        "Desc": "<color=#FFFFFFFF>结束阶段：</color>造成1点$[K107]。\\n<color=#FFFFFFFF>$[K3]：1</color>",
+                        "Child": {
+                            "K107": {
+                                "Name": "{SPRITE_PRESET#2107}<color=#7EC236FF>草元素伤害</color>",
+                                "Desc": "附着{SPRITE_PRESET#2107}草元素，可发生元素反应：\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>绽放</color>：本伤害+1，生成使下次火元素或雷元素伤害+2的[<color=#FFFFFFFF>草原核</color>]\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>燃烧</color>：本伤害+1，生成回合结束时造成1点火元素伤害的[<color=#FFFFFFFF>燃烧烈焰</color>]（可用次数1，最多叠加到2）\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>原激化</color>：本伤害+1，生成使下2次草元素或雷元素伤害+1的[<color=#FFFFFFFF>激化领域</color>]"
+                            },
+                            "K3": {
+                                "Name": "<color=#FFFFFFFF>可用次数</color>",
+                                "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                            }
+                        }
+                    }
+                }
+            },
+            "A2702": "万千子嗣"
+        }
+    }
+}

@@ -1,0 +1,106 @@
+{
+    "Type": "Character",
+    "Name": "纳西妲",
+    "Title": "白草净华·纳西妲",
+    "Desc": "白草净华，幽宫启蛰。",
+    "Source": "在猫尾酒馆中邀请纳西妲进行对局，在友好对局难度中获得胜利后获取",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Nahida",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "草元素",
+        "法器",
+        "须弥"
+    ],
+    "Talent": {
+        "17031": {
+            "Name": "行相",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_DENDRO"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "17032": {
+            "Name": "所闻遍计",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，目标角色附属<color=#FFFFFFFF>$[C117031]</color>；如果在附属前目标角色已附属有<color=#FFFFFFFF>$[C117031]</color>，就改为对所有敌方角色附属<color=#FFFFFFFF>$[C117031]</color>。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_DENDRO",
+                "C117031": {
+                    "Name": "蕴种印",
+                    "Desc": "<color=#FFFFFFFF>任意具有「蕴种印」的所在阵营角色受到元素反应伤害后：</color>对所附属角色造成1点$[K5]。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+                    "Child": {
+                        "K5": {
+                            "Name": "<color=#FFFFFFFF>穿透伤害</color>",
+                            "Desc": "穿透伤害无法受到伤害加成，但是也无法被护盾、伤害免疫等效果抵消。"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>可用次数</color>",
+                            "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 3
+            }
+        },
+        "17033": {
+            "Name": "所闻遍计·真如",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，所有敌方角色附属<color=#FFFFFFFF>$[C117031]</color>。",
+            "Child": {
+                "D__KEY__DAMAGE": 3,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_DENDRO",
+                "C117031": {
+                    "Name": "蕴种印",
+                    "Desc": "<color=#FFFFFFFF>任意具有「蕴种印」的所在阵营角色受到元素反应伤害后：</color>对所附属角色造成1点$[K5]。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+                    "Child": {
+                        "K5": {
+                            "Name": "<color=#FFFFFFFF>穿透伤害</color>",
+                            "Desc": "穿透伤害无法受到伤害加成，但是也无法被护盾、伤害免疫等效果抵消。"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>可用次数</color>",
+                            "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 5
+            }
+        },
+        "17034": {
+            "Name": "心景幻成",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，生成<color=#FFFFFFFF>$[C117032]</color>。",
+            "Child": {
+                "D__KEY__DAMAGE": 4,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_DENDRO",
+                "C117032": {
+                    "Name": "摩耶之殿",
+                    "Desc": "<color=#FFFFFFFF>我方引发元素反应时：</color>伤害额外+1。\\n<color=#FFFFFFFF>$[K4]：2</color>",
+                    "Child": {
+                        "K4": {
+                            "Name": "<color=#FFFFFFFF>持续回合</color>",
+                            "Desc": "每回合结束阶段，<color=#FFFFFFFF>持续回合</color>-1；\\n<color=#FFFFFFFF>持续回合</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_DENDRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 217031
+}

@@ -1,0 +1,119 @@
+{
+    "Type": "Character",
+    "Name": "Neuvillette",
+    "Title": "\"Ordainer of Inexorable Judgment\" Neuvillette",
+    "Desc": "He who looks down on all that are haughty.",
+    "Source": "Reward for inviting Neuvillette to a duel at The Cat's Tail and claiming victory in a Friendly Fracas with him",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Neuvillette",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "Hydro",
+        "Catalyst",
+        "Fontaine",
+        "Arkhe: Pneuma"
+    ],
+    "Talent": {
+        "12101": {
+            "Name": "As Water Seeks Equilibrium",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "12102": {
+            "Name": "O Tears, I Shall Repay",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], creates 1 <color=#FFFFFFFF>$[C112101]</color>.",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "C112101": {
+                    "Name": "Sourcewater Droplet",
+                    "Desc": "<color=#FFFFFFFF>After $[A1210] uses a Normal Attack:</color> Heals $[A1210] for 2 HP. If $[A1210] is your active character, then $[K53]: <color=#FFFFFFFF>$[K1020]</color>.\\n<color=#FFFFFFFF>$[K3]: 1</color> (Can stack. Max 3 stacks.)",
+                    "Child": {
+                        "A1210": "Neuvillette",
+                        "K53": {
+                            "Name": "<color=#FFFFFFFF>Prepare Skill</color>|s1:<color=#FFFFFFFF>prepares</color>",
+                            "Desc": "Some Skills cannot be used directly. Instead, they need to be <color=#FFFFFFFF>prepared</color> over a certain number of turns.\\nWhen it is a certain player's turn, and this player's active character is currently <color=#FFFFFFFF>preparing</color> a Skill, this player's turn will be skipped. If the Skill has finished being <color=#FFFFFFFF>prepared</color>, the character will directly use that Skill at this time. (Skills that require <color=#FFFFFFFF>preparing</color> cannot activate effects triggered by \"using a Skill\" or \"triggering an Elemental Reaction\" or other such effects.)\\nOnly active characters can <color=#FFFFFFFF>prepare</color> Skills, and if an active character who is <color=#FFFFFFFF>preparing</color> a Skill gets switched off-field, their <color=#FFFFFFFF>preparation</color> will be interrupted."
+                        },
+                        "K1020": {
+                            "Name": "<color=#FFFFFFFF>Equitable Judgment</color>",
+                            "Desc": "<color=#D3BC8E>Normal Attack</color>\\n(Prepare for 1 turn)\\nDeals 2 {SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro DMG</color>. If this character has at least 6 HP, then this DMG is increased by 1 and this character deals 1 Piercing DMG to self."
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3
+            }
+        },
+        "12103": {
+            "Name": "O Tides, I Have Returned",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], deals 1 <color=#FFFFFFFF>$[K5]</color> to all opposing characters on standby, then creates a <color=#FFFFFFFF>$[C112101]</color> with 2 Usages.",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "K5": {
+                    "Name": "<color=#FFFFFFFF>Piercing DMG</color>",
+                    "Desc": "Piercing DMG cannot be increased by any bonuses, but cannot be defended against using Shields or DMG Immunity either."
+                },
+                "C112101": {
+                    "Name": "Sourcewater Droplet",
+                    "Desc": "<color=#FFFFFFFF>After $[A1210] uses a Normal Attack:</color> Heals $[A1210] for 2 HP. If $[A1210] is your active character, then $[K53]: <color=#FFFFFFFF>$[K1020]</color>.\\n<color=#FFFFFFFF>$[K3]: 1</color> (Can stack. Max 3 stacks.)",
+                    "Child": {
+                        "A1210": "Neuvillette",
+                        "K53": {
+                            "Name": "<color=#FFFFFFFF>Prepare Skill</color>|s1:<color=#FFFFFFFF>prepares</color>",
+                            "Desc": "Some Skills cannot be used directly. Instead, they need to be <color=#FFFFFFFF>prepared</color> over a certain number of turns.\\nWhen it is a certain player's turn, and this player's active character is currently <color=#FFFFFFFF>preparing</color> a Skill, this player's turn will be skipped. If the Skill has finished being <color=#FFFFFFFF>prepared</color>, the character will directly use that Skill at this time. (Skills that require <color=#FFFFFFFF>preparing</color> cannot activate effects triggered by \"using a Skill\" or \"triggering an Elemental Reaction\" or other such effects.)\\nOnly active characters can <color=#FFFFFFFF>prepare</color> Skills, and if an active character who is <color=#FFFFFFFF>preparing</color> a Skill gets switched off-field, their <color=#FFFFFFFF>preparation</color> will be interrupted."
+                        },
+                        "K1020": {
+                            "Name": "<color=#FFFFFFFF>Equitable Judgment</color>",
+                            "Desc": "<color=#D3BC8E>Normal Attack</color>\\n(Prepare for 1 turn)\\nDeals 2 {SPRITE_PRESET#2102}<color=#80C0FFFF>Hydro DMG</color>. If this character has at least 6 HP, then this DMG is increased by 1 and this character deals 1 Piercing DMG to self."
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "12104": {
+            "Name": "Equitable Judgment",
+            "Desc": "(Prepare for 1 turn)\\nDeals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. If this character has at least 6 HP, then this DMG is increased by 1 and this character deals 1 $[K5] to himself.",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "K5": {
+                    "Name": "<color=#FFFFFFFF>Piercing DMG</color>",
+                    "Desc": "Piercing DMG cannot be increased by any bonuses, but cannot be defended against using Shields or DMG Immunity either."
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {}
+        },
+        "12105": {
+            "Name": "Sourcewater Droplet",
+            "Desc": "",
+            "Child": {},
+            "Cost": {}
+        }
+    },
+    "Related": 212101
+}

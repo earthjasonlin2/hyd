@@ -1,0 +1,59 @@
+{
+    "Type": "Character",
+    "Name": "Chiori",
+    "Title": "\"The Thundering Seamstress\" Chiori",
+    "Desc": "Couturiere of Countless Colors",
+    "Source": "Reward for inviting Chiori to a duel at The Cat's Tail and claiming victory in a Friendly Fracas with her",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Chiori",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "Geo",
+        "Sword",
+        "Inazuma"
+    ],
+    "Talent": {
+        "16091": {
+            "Name": "Weaving Blade",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "16092": {
+            "Name": "Fluttering Hasode",
+            "Desc": "Select 1 Summon from 3 <color=#FFFFFFFF>$[C116097]</color>",
+            "Child": {
+                "C116097": {
+                    "Name": "Chiori's Automaton Dolls",
+                    "Desc": "Varied humanoid automatons of Chiori's that can not only attack autonomously but also provide varied buffs.",
+                    "Child": {}
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 3
+            }
+        },
+        "16093": {
+            "Name": "Hiyoku: Twin Blades",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 5,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_GEO"
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 216091
+}

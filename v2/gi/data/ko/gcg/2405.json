@@ -1,0 +1,113 @@
+{
+    "Type": "Character",
+    "Name": "성해 독전갈",
+    "Title": "유해의 독·성해 독전갈",
+    "Desc": "위대한 존재를 삼켜 기이하게 뒤틀린 독전갈. 사악한 번개를 조종한다",
+    "Source": "캣테일 술집의 왕자님을 통해 술집 도전 진행 및 친선 대전 난이도의 성해 독전갈에게 승리 후 획득",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_ScorpionSacred",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "번개 원소",
+        "기타 무기",
+        "마물",
+        "성해 짐승"
+    ],
+    "Talent": {
+        "24051": {
+            "Name": "전갈 집게 공격",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "24052": {
+            "Name": "전갈 꼬리 공격",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 준다.\\n<color=#FFFFFFFF>$[C124051]</color>를 1장 생성해 아군 카드 더미 맨 위의 카드 2장 중에 랜덤으로 넣는다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO",
+                "D__KEY__DAMAGE": 3,
+                "C124051": {
+                    "Name": "성해 에너지 덩어리",
+                    "Desc": "랜덤으로 기본 원소 주사위 코스트가 가장 높은 핸드 카드를 1장 $[K56]하고 아군 출전 캐릭터 타입의 원소 주사위를 1개 생성한다. (턴당 최대 1장 사용)",
+                    "Child": {
+                        "K56": {
+                            "Name": "<color=#FFFFFFFF>포기</color>",
+                            "Desc": "행동 카드 또는 캐릭터 스킬의 효과를 통해, 핸드 카드 또는 카드 더미에서 행동 카드를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 3
+            }
+        },
+        "24053": {
+            "Name": "번개침 난사",
+            "Desc": "$[D__KEY__ELEMENT]를 $[D__KEY__DAMAGE]pt 주고, 핸드 카드에서 <color=#FFFFFFFF>$[C124051]</color>를 최대 3장 $[K56]한 뒤, 상대 필드에 <color=#FFFFFFFF>$[C124052]</color>을 생성한다.",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ELECTRO",
+                "D__KEY__DAMAGE": 3,
+                "C124051": {
+                    "Name": "성해 에너지 덩어리",
+                    "Desc": "랜덤으로 기본 원소 주사위 코스트가 가장 높은 핸드 카드를 1장 $[K56]하고 아군 출전 캐릭터 타입의 원소 주사위를 1개 생성한다. (턴당 최대 1장 사용)",
+                    "Child": {
+                        "K56": {
+                            "Name": "<color=#FFFFFFFF>포기</color>",
+                            "Desc": "행동 카드 또는 캐릭터 스킬의 효과를 통해, 핸드 카드 또는 카드 더미에서 행동 카드를 버린다."
+                        }
+                    }
+                },
+                "K56": {
+                    "Name": "<color=#FFFFFFFF>포기</color>",
+                    "Desc": "행동 카드 또는 캐릭터 스킬의 효과를 통해, 핸드 카드 또는 카드 더미에서 행동 카드를 버린다."
+                },
+                "C124052": {
+                    "Name": "번개침 함정",
+                    "Desc": "<color=#FFFFFFFF>소속 진영의 캐릭터가 스킬 사용 후: </color>소속 진영의 출전 캐릭터에게 $[K104]를 2pt 준다.\\n$[K3]: 시작 값은 생성 시 버린 <color=#FFFFFFFF>$[C124051]</color>의 개수에 해당한다. (최대 중첩수: 3회)",
+                    "Child": {
+                        "K104": {
+                            "Name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>번개 원소 피해</color>",
+                            "Desc": "{SPRITE_PRESET#2104}번개 원소 부착 시 다음 원소 반응이 발생할 수 있다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>과부하</color>: 이번 피해+2pt, 대상이 다음 캐릭터로 강제 교체된다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>초전도</color>: 이번 피해+1pt, 대상 이외의 모든 상대 캐릭터에게 관통 피해를 1pt 준다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>감전</color>: 이번 피해+1pt, 대상 이외의 모든 상대 캐릭터에게 관통 피해를 1pt 준다.\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>활성</color>: 이번 피해+1pt, 다음 2회의 풀 원소 또는 번개 원소 피해를 1pt 증가시키는 [<color=#FFFFFFFF>격화 영역</color>]을 생성한다."
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>사용 가능 횟수</color>",
+                            "Desc": "해당 카드의 효과가 발동하면 <color=#FFFFFFFF>사용 가능 횟수</color>가 1회 차감된다.\\n<color=#FFFFFFFF>사용 가능 횟수</color>가 전부 소진되면 즉시 해당 패를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_ELECTRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "24054": {
+            "Name": "불멸의 유해·번개",
+            "Desc": "[패시브] 턴 종료 시, <color=#FFFFFFFF>$[C124051]</color>를 2장 생성해 아군 카드 더미 맨 위의 카드 10장 중에 랜덤으로 넣는다.",
+            "Child": {
+                "C124051": {
+                    "Name": "성해 에너지 덩어리",
+                    "Desc": "랜덤으로 기본 원소 주사위 코스트가 가장 높은 핸드 카드를 1장 $[K56]하고 아군 출전 캐릭터 타입의 원소 주사위를 1개 생성한다. (턴당 최대 1장 사용)",
+                    "Child": {
+                        "K56": {
+                            "Name": "<color=#FFFFFFFF>포기</color>",
+                            "Desc": "행동 카드 또는 캐릭터 스킬의 효과를 통해, 핸드 카드 또는 카드 더미에서 행동 카드를 버린다."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 224051
+}

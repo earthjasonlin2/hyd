@@ -1,0 +1,44 @@
+{
+    "Type": "Action",
+    "Name": "荘諧併持",
+    "Title": "雲菫·荘諧併持",
+    "Desc": "「戮力同心！」",
+    "Source": "キャッツテールで雲菫を招待して対戦し、対応する挑戦目標をクリアすることで獲得",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Yunjin",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_GEO",
+            "count": 3
+        },
+        {
+            "costType": "GCG_COST_ENERGY",
+            "count": 2
+        }
+    ],
+    "Tag": [
+        "天賦",
+        "戦闘アクション"
+    ],
+    "Talent": {
+        "Name": "荘諧併持",
+        "Desc": "$[K1]：味方の出撃キャラが<color=#FFFFFFFF>$[A1607]</color>の時、このカードを装備できる。\\n$[A1607]がこのカードを装備した後、直ちに<color=#FFD780FF>$[S16073]</color>を1回発動する。\\nこのカードを装備した$[A1607]がフィールドにいる、かつ味方が<color=#FFFFFFFF>$[C116073]</color>の効果を発動したとき、味方の手札の数が0だった場合、このスキルのダメージ+2。\\n（このカードはデッキに$[A1607]が含まれている場合のみ、デッキに追加できる）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>戦闘アクション</color>",
+                "Desc": "味方が戦闘アクションを1回行った後、相手のターンに移ります。\\n<color=#FFFFFFFF>このようなルールを持つ手札を出すのはクイックアクションではなく、戦闘アクションと見なされます。</color>"
+            },
+            "A1607": "荘諧併持",
+            "S16073": "S16073",
+            "C116073": {
+                "Name": "飛雲旗陣",
+                "Desc": "<color=#FFFFFFFF>味方のキャラが通常攻撃を行う時</color>、味方の手札の数が1枚以下の場合、このスキルの必要な元素サイコロの数-1。\\n<color=#FFFFFFFF>$[K3]：1</color>（最大4回まで重ねられる）",
+                "Child": {
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                        "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                    }
+                }
+            }
+        }
+    }
+}

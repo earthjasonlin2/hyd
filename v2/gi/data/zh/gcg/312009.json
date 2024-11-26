@@ -1,0 +1,38 @@
+{
+    "Type": "Action",
+    "Name": "将帅兜鍪",
+    "Title": "誓愿无渝·将帅兜鍪",
+    "Desc": "「直至最后一滴血汇入大地，琉璃砂终又显露光泽。」",
+    "Source": "",
+    "Icon": "UI_Gcg_CardFace_Modify_Artifact_Jiangshuai",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PAIMON",
+            "count": 2
+        },
+        {}
+    ],
+    "Tag": [
+        "圣遗物"
+    ],
+    "Talent": {
+        "Name": "将帅兜鍪",
+        "Desc": "<color=#FFFFFFFF>行动阶段开始时：</color>为角色附属<color=#FFFFFFFF>「$[C301201]」</color>。（提供2点$[K6]，保护该角色。）\\n（角色最多装备1件「{SPRITE_PRESET#3004}圣遗物」）",
+        "Child": {
+            "C301201": {
+                "Name": "重嶂不移",
+                "Desc": "提供2点$[K6]，保护所附属的角色。",
+                "Child": {
+                    "K6": {
+                        "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>护盾</color>",
+                        "Desc": "此护盾所保护的角色受到伤害时，将会消耗护盾来抵消伤害。"
+                    }
+                }
+            },
+            "K6": {
+                "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>护盾</color>",
+                "Desc": "此护盾所保护的角色受到伤害时，将会消耗护盾来抵消伤害。"
+            }
+        }
+    }
+}

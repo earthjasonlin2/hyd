@@ -1,0 +1,34 @@
+{
+    "Type": "Action",
+    "Name": "地狱里摇摆",
+    "Title": "辛焱·地狱里摇摆",
+    "Desc": "「听我的最强音！」",
+    "Source": "在猫尾酒馆中邀请辛焱进行对局，完成相应挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Xinyan",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PYRO",
+            "count": 1
+        },
+        {
+            "costType": "GCG_COST_DICE_VOID",
+            "count": 2
+        }
+    ],
+    "Tag": [
+        "天赋",
+        "战斗行动"
+    ],
+    "Talent": {
+        "Name": "地狱里摇摆",
+        "Desc": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1312]</color>时，装备此牌。\\n$[A1312]装备此牌后，立刻使用一次<color=#FFD780FF>$[S13121]</color>。\\n装备有此牌的$[A1312]使用技能时：如果我方手牌数量不多于1，则造成的伤害+2。（每回合1次）\\n（牌组中包含$[A1312]，才能加入牌组）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>战斗行动</color>",
+                "Desc": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+            },
+            "A1312": "地狱里摇摆",
+            "S13121": "S13121"
+        }
+    }
+}

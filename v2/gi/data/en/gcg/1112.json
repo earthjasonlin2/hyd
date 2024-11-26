@@ -1,0 +1,83 @@
+{
+    "Type": "Character",
+    "Name": "Freminet",
+    "Title": "\"Yearning for Unseen Depths\" Freminet",
+    "Desc": "Alone under the cold light of stars.",
+    "Source": "Reward for inviting Freminet to a duel at The Cat's Tail and claiming victory in a Friendly Fracas with him",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Freminet",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "Cryo",
+        "Claymore",
+        "Fontaine",
+        "Fatui",
+        "Arkhe: Pneuma"
+    ],
+    "Talent": {
+        "11121": {
+            "Name": "Flowing Eddies",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "11122": {
+            "Name": "Pressurized Floe",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. If this character has not yet gained <color=#FFFFFFFF>$[C111121]</color>, they will gain <color=#FFFFFFFF>$[C111121]</color>.",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "C111121": {
+                    "Name": "Pers Timer",
+                    "Desc": "<color=#FFFFFFFF>For every 1 card you draw:</color> This card will gain 1 <color=#FFFFFFFF>Pressure Level</color>.\\n<color=#FFFFFFFF>When the attached character uses $[S11122]:</color> If <color=#FFFFFFFF>Pressure Level</color> is at least 2, cancel this effect, and the Skill costs 1 less Elemental Die. If, after the Skill is finalized, the Pressure Level is at least 4, deal 2 additional $[K100].",
+                    "Child": {
+                        "S11122": "S11122",
+                        "K100": {
+                            "Name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>Physical DMG</color>",
+                            "Desc": "Physical DMG will not apply any Elements, nor can it engage in Elemental Reactions."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3
+            }
+        },
+        "11123": {
+            "Name": "Shadowhunter's Ambush",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. Attaches <color=#FFFFFFFF>$[C111122]</color> to this character.",
+            "Child": {
+                "D__KEY__DAMAGE": 4,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "C111122": {
+                    "Name": "Subnautical Hunter Mode",
+                    "Desc": "<color=#FFFFFFFF>After you draw 3 cards:</color> Grants 1 $[K6] point to defend the attached character. (Can stack. Max 2 points.)\\n<color=#FFFFFFFF>After the attached character uses a Normal Attack or Elemental Skill:</color> Place up to 2 cards with the highest Elemental Dice Cost in your Hand at the bottom of your deck, then draw the same number of cards.\\n<color=#FFFFFFFF>$[K4]: 2</color>",
+                    "Child": {
+                        "K6": {
+                            "Name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>Shield</color>",
+                            "Desc": "This Shield will be consumed to protect the character who equips it from DMG."
+                        },
+                        "K4": {
+                            "Name": "<color=#FFFFFFFF>Duration (Rounds)</color>",
+                            "Desc": "Each time you reach the end of a Round, <color=#FFFFFFFF>Duration (Rounds)</color> -1.\\nThis card will be discarded immediately once <color=#FFFFFFFF>Duration (Rounds)</color> runs out."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 211121
+}

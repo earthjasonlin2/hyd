@@ -1,0 +1,89 @@
+{
+    "Type": "Character",
+    "Name": "聖骸トビヘビ",
+    "Title": "亡骸の悪風·聖骸トビヘビ",
+    "Desc": "偉大なる生命体を蝕むことで歪み、変異したトビヘビ。凄まじい狂風を操る。",
+    "Source": "キャッツテールのリトルプリンスのところで酒場挑戦を行い、聖骸トビヘビに挑戦して友好対戦に勝利することで獲得",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_ChrysopeleaSacred",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "風元素",
+        "他の武器",
+        "魔物",
+        "聖骸獣"
+    ],
+    "Talent": {
+        "25031": {
+            "Name": "尻尾回転アタック",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "25032": {
+            "Name": "旋風の吸引",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、手札を1枚引く。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO",
+                "D__KEY__DAMAGE": 3
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 3
+            }
+        },
+        "25033": {
+            "Name": "入り乱れる渦",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、手札にある<color=#FFFFFFFF>$[C124051]</color>を全て$[K56]する。2枚$[K56]するたび、ダメージが倍になる。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO",
+                "D__KEY__DAMAGE": 2,
+                "C124051": {
+                    "Name": "喰骸エネルギークラスター",
+                    "Desc": "元素サイコロの初期コストが最も高い手札をランダムで1枚$[K56]し、味方の出撃キャラの元素タイプに応じた元素サイコロを1個生成する。（各ラウンドで1枚のみ使用可能）",
+                    "Child": {
+                        "K56": {
+                            "Name": "<color=#FFFFFFFF>破棄</color>",
+                            "Desc": "アクションカードまたはキャラのスキル効果によって、手札または山札からアクションカードを破棄する。"
+                        }
+                    }
+                },
+                "K56": {
+                    "Name": "<color=#FFFFFFFF>破棄</color>",
+                    "Desc": "アクションカードまたはキャラのスキル効果によって、手札または山札からアクションカードを破棄する。"
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "25034": {
+            "Name": "朽ちぬ亡骸·風",
+            "Desc": "【固有】戦闘開始時、<color=#FFFFFFFF>$[C124051]</color>を6枚生成し、均等に山札に配置する。",
+            "Child": {
+                "C124051": {
+                    "Name": "喰骸エネルギークラスター",
+                    "Desc": "元素サイコロの初期コストが最も高い手札をランダムで1枚$[K56]し、味方の出撃キャラの元素タイプに応じた元素サイコロを1個生成する。（各ラウンドで1枚のみ使用可能）",
+                    "Child": {
+                        "K56": {
+                            "Name": "<color=#FFFFFFFF>破棄</color>",
+                            "Desc": "アクションカードまたはキャラのスキル効果によって、手札または山札からアクションカードを破棄する。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        }
+    },
+    "Related": 225031
+}

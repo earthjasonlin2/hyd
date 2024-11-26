@@ -1,0 +1,35 @@
+{
+    "Type": "Action",
+    "Name": "Lightless Feeding",
+    "Title": "All-Devouring Narwhal: Lightless Feeding",
+    "Desc": "Phosphorescent creatures float all about the dark, moonless seas of dreams — perhaps they are as food for some titanic leviathan.",
+    "Source": "Reward for accepting the Tavern Challenge against the All-Devouring Narwhal at The Cat's Tail and achieving all corresponding challenge objectives in a Friendly Fracas",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Ptahur",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_HYDRO",
+            "count": 4
+        },
+        {}
+    ],
+    "Tag": [
+        "Talent",
+        "Combat Action"
+    ],
+    "Talent": {
+        "Name": "Lightless Feeding",
+        "Desc": "$[K1]: When your active character is <color=#FFFFFFFF>$[A2204]</color>, equip this card.\\nAfter $[A2204] equips this card, immediately use <color=#FFD780FF>$[S22042]</color> once.\\nAfter your $[A2204], who has this card equipped, uses <color=#FFFFFFFF>$[S22042]</color> to $[K56] 1 card: Heal this character for that card's Elemental Dice Cost (Once per Round)\\n(You must have $[A2204] in your deck to add this card to your deck.)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+            },
+            "A2204": "Lightless Feeding",
+            "S22042": "S22042",
+            "K56": {
+                "Name": "<color=#FFFFFFFF>Discard</color>",
+                "Desc": "Use Action Cards or Character Skill effects to Discard Action Cards from Hand or Deck."
+            }
+        }
+    }
+}

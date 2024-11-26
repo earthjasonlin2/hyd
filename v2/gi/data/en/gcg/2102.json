@@ -1,0 +1,130 @@
+{
+    "Type": "Character",
+    "Name": "La Signora",
+    "Title": "\"The Eighth Harbinger\" La Signora",
+    "Desc": "The crimson dawn was reflected in her pupils, and at last, she unfolded her flaming wings and flew towards the light.\\n\"But that light is not the dawn, dear Rosalyne. That is a sea of flame that will consume everything.\"\\nYet it mattered not, for she knew in her heart that the flames had devoured her long ago.",
+    "Source": "Reward for accepting the Tavern Challenge at The Cat's Tail and claiming victory in a Friendly Fracas with La Signora",
+    "Icon": "UI_Gcg_CardFace_Char_Monster_LaSignora",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "Cryo",
+        "Other Weapons",
+        "Fatui"
+    ],
+    "Talent": {
+        "21021": {
+            "Name": "Frostblade Hailstorm",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT].",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "21022": {
+            "Name": "Biting Shards",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT]. The target character receives <color=#FFFFFFFF>$[C121022]</color>.",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "C121022": {
+                    "Name": "Sheer Cold",
+                    "Desc": "<color=#FFFFFFFF>End Phase:</color> Deals 1 $[K101] to attached character.\\n<color=#FFFFFFFF>$[K3]: 1</color>\\n\\nWhen attached character has <color=#FFFFFFFF>$[C163011]</color> attached, remove this effect.",
+                    "Child": {
+                        "K101": {
+                            "Name": "{SPRITE_PRESET#2101}<color=#99FFFFFF>Cryo DMG</color>",
+                            "Desc": "Applies {SPRITE_PRESET#2101}Cryo and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Melt</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Superconduct</color>: DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Frozen</color>: DMG +1 for this instance, the target is unable to perform any Actions this Round (Can be removed in advance after the target receives Physical or Pyro DMG, in which case they will take +2 DMG)"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                            "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                        },
+                        "C163011": {
+                            "Name": "Blazing Heat",
+                            "Desc": "<color=#FFFFFFFF>End Phase:</color> Deals 1 $[K103] to attached character.\\n<color=#FFFFFFFF>$[K3]: 1</color>\\n\\nWhen attached character has <color=#FFFFFFFF>$[C121022]</color> attached, remove this effect.",
+                            "Child": {
+                                "K103": {
+                                    "Name": "{SPRITE_PRESET#2103}<color=#FF9999FF>Pyro DMG</color>",
+                                    "Desc": "Applies {SPRITE_PRESET#2103}Pyro and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>Melt</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Vaporize</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Overloaded</color>: DMG +2 for this instance, the target is forcibly switched to the next character\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>Burning</color>: DMG +1 for this instance, creates a [<color=#FFFFFFFF>Burning Flame</color>] that will deal 1 Pyro DMG at the end of the Round (Takes effect once, max 2 stacks)"
+                                },
+                                "K3": {
+                                    "Name": "<color=#FFFFFFFF>Usage(s)</color>",
+                                    "Desc": "After this card's effect is triggered, 1 <color=#FFFFFFFF>Usage</color> of it will be consumed.\\nThis card will be discarded immediately once it has 0 <color=#FFFFFFFF>Usages</color> remaining."
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3
+            }
+        },
+        "21023": {
+            "Name": "Carmine Chrysalis",
+            "Desc": "Deals $[D__KEY__DAMAGE] $[D__KEY__ELEMENT], heals this character for 2 HP. Removes <color=#FFFFFFFF>$[C121021]</color>. This character permanently switches to $[K1013] state.",
+            "Child": {
+                "D__KEY__DAMAGE": 4,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_CRYO",
+                "C121021": {
+                    "Name": "Ice-Sealed Crimson Witch of Embers",
+                    "Desc": "<color=#FFFFFFFF>When the Action Phase starts:</color> If the attached character has no more than 4 HP, remove this effect.\\n<color=#FFFFFFFF>When attached character is defeated:</color> Remove this effect, ensure that character $[K54|s1] and heal them to 1 HP.\\n\\n<color=#FFFFFFFF>When this effect is removed:</color> Attached character will transform into the $[K1013] state.",
+                    "Child": {
+                        "K54": {
+                            "Name": "<color=#FFFFFFFF>Immunity to Defeat</color>|s1:<color=#FFFFFFFF>will not be defeated</color>",
+                            "Desc": "Certain effects will grant characters an <color=#FFFFFFFF>immunity to being defeated</color> when their HP hits 0, and will heal them for a certain amount thereafter.\\nWhen this occurs, characters will not be regarded as having experienced a <color=#FFFFFFFF>defeat.</color> (Hence, their attached equipment and statuses will not be removed, and their Energy will remain uncleared.)"
+                        },
+                        "K1013": {
+                            "Name": "<color=#FFFFFFFF>Crimson Witch of Embers</color>",
+                            "Desc": "La Signora can permanently change into the \"Crimson Witch of Embers\" state.\\nAfter changing, La Signora's Elemental Type changes from {SPRITE_PRESET#2101}<color=#99FFFFFF>Cryo</color> to {SPRITE_PRESET#2103}<color=#FF9999FF>Pyro</color>.\\nAfter changing, this character can use the skills of the Crimson Witch of Embers, but can no longer use La Signora's original skills."
+                        }
+                    }
+                },
+                "K1013": {
+                    "Name": "<color=#FFFFFFFF>Crimson Witch of Embers</color>",
+                    "Desc": "La Signora can permanently change into the \"Crimson Witch of Embers\" state.\\nAfter changing, La Signora's Elemental Type changes from {SPRITE_PRESET#2101}<color=#99FFFFFF>Cryo</color> to {SPRITE_PRESET#2103}<color=#FF9999FF>Pyro</color>.\\nAfter changing, this character can use the skills of the Crimson Witch of Embers, but can no longer use La Signora's original skills."
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_CRYO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        },
+        "21024": {
+            "Name": "Might of Delusion",
+            "Desc": "(Passive) When the battle begins, this character gains <color=#FFFFFFFF>$[C121021]</color>.",
+            "Child": {
+                "C121021": {
+                    "Name": "Ice-Sealed Crimson Witch of Embers",
+                    "Desc": "<color=#FFFFFFFF>When the Action Phase starts:</color> If the attached character has no more than 4 HP, remove this effect.\\n<color=#FFFFFFFF>When attached character is defeated:</color> Remove this effect, ensure that character $[K54|s1] and heal them to 1 HP.\\n\\n<color=#FFFFFFFF>When this effect is removed:</color> Attached character will transform into the $[K1013] state.",
+                    "Child": {
+                        "K54": {
+                            "Name": "<color=#FFFFFFFF>Immunity to Defeat</color>|s1:<color=#FFFFFFFF>will not be defeated</color>",
+                            "Desc": "Certain effects will grant characters an <color=#FFFFFFFF>immunity to being defeated</color> when their HP hits 0, and will heal them for a certain amount thereafter.\\nWhen this occurs, characters will not be regarded as having experienced a <color=#FFFFFFFF>defeat.</color> (Hence, their attached equipment and statuses will not be removed, and their Energy will remain uncleared.)"
+                        },
+                        "K1013": {
+                            "Name": "<color=#FFFFFFFF>Crimson Witch of Embers</color>",
+                            "Desc": "La Signora can permanently change into the \"Crimson Witch of Embers\" state.\\nAfter changing, La Signora's Elemental Type changes from {SPRITE_PRESET#2101}<color=#99FFFFFF>Cryo</color> to {SPRITE_PRESET#2103}<color=#FF9999FF>Pyro</color>.\\nAfter changing, this character can use the skills of the Crimson Witch of Embers, but can no longer use La Signora's original skills."
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_PASSIVE",
+            "Cost": {}
+        },
+        "21025": {
+            "Name": "Inferno's Awakening",
+            "Desc": "",
+            "Child": {},
+            "Cost": {}
+        }
+    },
+    "Related": 221021
+}

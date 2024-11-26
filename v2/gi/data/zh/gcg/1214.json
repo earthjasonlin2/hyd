@@ -1,0 +1,89 @@
+{
+    "Type": "Character",
+    "Name": "玛拉妮",
+    "Title": "哗啦啦逐浪客·玛拉妮",
+    "Desc": "流泉不息，踏浪前行。",
+    "Source": "在猫尾酒馆中邀请玛拉妮进行对局，在友好对局难度中获得胜利后获取",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Mualani",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "水元素",
+        "法器",
+        "纳塔"
+    ],
+    "Talent": {
+        "12141": {
+            "Name": "降温处理",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+            "Child": {
+                "D__KEY__DAMAGE": 1,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO"
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "12142": {
+            "Name": "踏鲨破浪",
+            "Desc": "自身附属<color=#FFFFFFFF>$[C112142]</color>，然后进入<color=#FFFFFFFF>$[C112141]</color>，并获得2点<color=#FFFFFFFF>「夜魂值」</color>。（角色进入<color=#FFFFFFFF>$[C112141]</color>后不可使用此技能）",
+            "Child": {
+                "C112142": {
+                    "Name": "咬咬鲨鱼",
+                    "Desc": "<color=#FFFFFFFF>双方切换角色后，且$[A1214]为出战角色时：</color>消耗1点<color=#FFFFFFFF>「夜魂值」</color>，使敌方出战角色附属<color=#FFFFFFFF>$[K1034]</color>。\\n$[K58]：$[S1121422]\\n所附属角色<color=#FFFFFFFF>「夜魂值」</color>为0时，弃置此牌；此牌被弃置时，所附属角色结束<color=#FFFFFFFF>$[C112141]</color>。",
+                    "Child": {
+                        "A1214": "玛拉妮",
+                        "K1034": {
+                            "Name": "<color=#FFFFFFFF>啃咬目标</color>",
+                            "Desc": "<color=#FFFFFFFF>受到玛拉妮或<color=#FFFFFFFF>鲨鲨飞弹</color>伤害时：</color>移除此效果，每层使此伤害+2。\\n（层数可叠加，没有上限）"
+                        },
+                        "K58": {
+                            "Name": "<color=#FFFFFFFF>{SPRITE_PRESET#3008}特技</color>",
+                            "Desc": "出战角色装备有「{SPRITE_PRESET#3008}特技」卡牌时，就可以使用对应的「{SPRITE_PRESET#3008}特技」。\\n使用「{SPRITE_PRESET#3008}特技」是一种「战斗行动」。角色因冻结、石化、眩晕等原因无法使用技能时，也会同时无法使用「{SPRITE_PRESET#3008}特技」。\\n角色使用「{SPRITE_PRESET#3008}特技」时不视为使用技能，无法触发「使用技能后」「角色引发元素反应后」等效果；角色使用「{SPRITE_PRESET#3008}特技」造成的伤害不被视为角色造成的伤害。"
+                        },
+                        "S1121422": "S1121422",
+                        "C112141": {
+                            "Name": "夜魂加持",
+                            "Desc": "所附属角色可累积<color=#FFFFFFFF>「夜魂值」</color>。（最多累积到2点）",
+                            "Child": {}
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 2
+            }
+        },
+        "12143": {
+            "Name": "爆瀑飞弹",
+            "Desc": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，召唤<color=#FFFFFFFF>$[C112144]</color>。",
+            "Child": {
+                "D__KEY__DAMAGE": 2,
+                "D__KEY__ELEMENT": "GCG_ELEMENT_HYDRO",
+                "C112144": {
+                    "Name": "鲨鲨飞弹",
+                    "Desc": "<color=#FFFFFFFF>结束阶段：</color>造成2点$[K102]。\\n<color=#FFFFFFFF>$[K3]：2</color>（可叠加，没有上限）",
+                    "Child": {
+                        "K102": {
+                            "Name": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素伤害</color>",
+                            "Desc": "附着{SPRITE_PRESET#2102}水元素，可发生元素反应：\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2103}<color=#FFFFFFFF>蒸发</color>：本伤害+2\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}<color=#FFFFFFFF>感电</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2101}<color=#FFFFFFFF>冻结</color>：本伤害+1，使目标本回合无法行动（受到物理或火元素伤害后提前解除，但是伤害+2）\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}<color=#FFFFFFFF>绽放</color>：本伤害+1，生成使下次火元素或雷元素伤害+2的[<color=#FFFFFFFF>草原核</color>]"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>可用次数</color>",
+                            "Desc": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_HYDRO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 212141
+}

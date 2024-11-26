@@ -1,0 +1,41 @@
+{
+    "Type": "Action",
+    "Name": "我界",
+    "Title": "九条裟羅·我界",
+    "Desc": "「心を保ち、弦を正す——敵を排除するのみ！」",
+    "Source": "キャッツテールで九条裟羅を招待して対戦し、対応する挑戦目標をクリアすることで獲得",
+    "Icon": "UI_Gcg_CardFace_Modify_Constellation_Sara",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_ELECTRO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "天賦",
+        "戦闘アクション"
+    ],
+    "Talent": {
+        "Name": "我界",
+        "Desc": "$[K1]：味方の出撃キャラが<color=#FFFFFFFF>$[A1406]</color>の時、このカードを装備できる。\\n$[A1406]がこのカードを装備した後、直ちに<color=#FFD780FF>$[S14062]</color>を1回発動する。\\nこのカードを装備した$[A1406]がフィールドにいる時、<color=#FFFFFFFF>$[C114063]</color>が付与されている味方の{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素</color>キャラの<color=#FFFFFFFF>元素スキル</color>および<color=#FFFFFFFF>元素爆発</color>の与えるダメージがさらに+1。\\n（このカードはデッキに$[A1406]が含まれている場合のみ、デッキに追加できる）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>戦闘アクション</color>",
+                "Desc": "味方が戦闘アクションを1回行った後、相手のターンに移ります。\\n<color=#FFFFFFFF>このようなルールを持つ手札を出すのはクイックアクションではなく、戦闘アクションと見なされます。</color>"
+            },
+            "A1406": "我界",
+            "S14062": "S14062",
+            "C114063": {
+                "Name": "鳴煌護持",
+                "Desc": "付与されたキャラの<color=#FFFFFFFF>元素スキル</color>および<color=#FFFFFFFF>元素爆発</color>の与えるダメージ+1。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+                "Child": {
+                    "K3": {
+                        "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                        "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                    }
+                }
+            }
+        }
+    }
+}

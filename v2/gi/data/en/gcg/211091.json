@@ -1,0 +1,41 @@
+{
+    "Type": "Action",
+    "Name": "Light's Remit",
+    "Title": "Layla: Light's Remit",
+    "Desc": "\"My guiding stars.\"",
+    "Source": "Reward for inviting Layla to a duel at The Cat's Tail and achieving all corresponding challenge objectives",
+    "Icon": "UI_Gcg_CardFace_Modify_Constellation_Layla",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_CRYO",
+            "count": 3
+        },
+        {}
+    ],
+    "Tag": [
+        "Talent",
+        "Combat Action"
+    ],
+    "Talent": {
+        "Name": "Light's Remit",
+        "Desc": "$[K1]: When your active character is <color=#FFFFFFFF>$[A1109]</color>, equip this card.\\nAfter $[A1109] equips this card, immediately use <color=#FFD780FF>$[S11092]</color>.\\nWhen $[A1109] is on the field and has this card equipped, every time <color=#FFFFFFFF>$[C111092]</color> deals DMG, draw 1 card.\\n(You must have $[A1109] in your deck to add this card to your deck.)",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>Combat Action</color>",
+                "Desc": "After you finish 1 Combat Action, it will be your opponent's turn.\\n<color=#FFFFFFFF>Playing a card from your Hand with this rule is also a Combat Action rather than a Fast Action</color>."
+            },
+            "A1109": "Light's Remit",
+            "S11092": "S11092",
+            "C111092": {
+                "Name": "Shooting Star",
+                "Desc": "<color=#FFFFFFFF>After your character uses a Skill:</color> Accumulate 1 <color=#FFFFFFFF>Night Star</color>. If you have at least 4 <color=#FFFFFFFF>Night Stars</color>, consume 4 <color=#FFFFFFFF>Night Stars</color> and deal 1 $[K101]. (The Skill that causes this Combat Status will also trigger this effect)\\n<color=#FFFFFFFF>When causing this Combat Status again:</color> Accumulate 2 <color=#FFFFFFFF>Night Stars</color>.",
+                "Child": {
+                    "K101": {
+                        "Name": "{SPRITE_PRESET#2101}<color=#99FFFFFF>Cryo DMG</color>",
+                        "Desc": "Applies {SPRITE_PRESET#2101}Cryo and can trigger the following Elemental Reactions:\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2103}<color=#FFFFFFFF>Melt</color>: DMG +2 for this instance\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2104}<color=#FFFFFFFF>Superconduct</color>: DMG +1 for this instance, deal 1 Piercing DMG to all opposing characters except the target\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2102}<color=#FFFFFFFF>Frozen</color>: DMG +1 for this instance, the target is unable to perform any Actions this Round (Can be removed in advance after the target receives Physical or Pyro DMG, in which case they will take +2 DMG)"
+                    }
+                }
+            }
+        }
+    }
+}

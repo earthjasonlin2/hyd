@@ -1,0 +1,86 @@
+{
+    "Type": "Character",
+    "Name": "リネット",
+    "Title": "綺影で魅せるエレガンス·リネット",
+    "Desc": "水中の輪郭を窺い、月影を見透かす。",
+    "Source": "キャッツテールでリネットを招待し、友好対戦に勝利することで獲得",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Linette",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "風元素",
+        "片手剣",
+        "フォンテーヌ",
+        "ファデュイ",
+        "アルケー：ウーシア"
+    ],
+    "Talent": {
+        "15081": {
+            "Name": "ラピッド·レイピア",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "15082": {
+            "Name": "エニグマティック·フェイント",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。本ラウンドでこのスキルを初めて発動する、かつ自身のHPが8以下の場合、自身のHPを2回復する。ただし、<color=#FFFFFFFF>$[C115081]</color>が付与される。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO",
+                "D__KEY__DAMAGE": 3,
+                "C115081": {
+                    "Name": "襲撃の余威",
+                    "Desc": "<color=#FFFFFFFF>エンドフェーズ：</color>キャラのHPが6以上の場合、$[K5]を2受ける。\\n<color=#FFFFFFFF>$[K4]：1</color>",
+                    "Child": {
+                        "K5": {
+                            "Name": "<color=#FFFFFFFF>貫通ダメージ</color>",
+                            "Desc": "貫通ダメージはダメージアップ効果を受けられません。また、シールド、ダメージ無効化などの効果で相殺されることもありません。"
+                        },
+                        "K4": {
+                            "Name": "<color=#FFFFFFFF>継続ラウンド数</color>",
+                            "Desc": "各ラウンドのエンドフェーズで、<color=#FFFFFFFF>継続ラウンド数</color>が1マイナスされます。\\n<color=#FFFFFFFF>継続ラウンド数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 3
+            }
+        },
+        "15083": {
+            "Name": "魔術·アストニシングシフト",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与え、<color=#FFFFFFFF>$[C115082]</color>を召喚する。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_ANEMO",
+                "D__KEY__DAMAGE": 2,
+                "C115082": {
+                    "Name": "ビックラキャット·ボックス",
+                    "Desc": "<color=#FFFFFFFF>エンドフェーズ：</color>$[K105]を1与える。\\n<color=#FFFFFFFF>$[K3]：2</color>\\n\\n<color=#FFFFFFFF>味方の出撃キャラがダメージを受けた時</color>、ダメージを1相殺してくれる。（各ラウンドで1回のみ）\\n<color=#FFFFFFFF>味方キャラが{SPRITE_PRESET#2101}<color=#99FFFFFF>氷</color>/{SPRITE_PRESET#2102}<color=#80C0FFFF>水</color>/{SPRITE_PRESET#2103}<color=#FF9999FF>炎</color>/{SPRITE_PRESET#2104}<color=#FFACFFFF>雷</color>元素ダメージを受けた時</color>、このカードの元素タイプが変わり、受けた元素タイプのダメージを与えるようになる。（退場するまでの間、1回のみ変化可能）",
+                    "Child": {
+                        "K105": {
+                            "Name": "{SPRITE_PRESET#2105}<color=#80FFD7FF>風元素ダメージ</color>",
+                            "Desc": "付着した元素と以下の元素反応を起こすことができます。\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2101}<color=#FFFFFFFF>拡散（氷）</color>：目標以外の相手チーム全員に氷元素ダメージを1与える\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2102}<color=#FFFFFFFF>拡散（水）</color>：目標以外の相手チーム全員に水元素ダメージを1与える\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2103}<color=#FFFFFFFF>拡散（炎）</color>：目標以外の相手チーム全員に炎元素ダメージを1与える\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2104}<color=#FFFFFFFF>拡散（雷）</color>：目標以外の相手チーム全員に雷元素ダメージを1与える"
+                        },
+                        "K3": {
+                            "Name": "<color=#FFFFFFFF>使用可能回数</color>",
+                            "Desc": "このカードの効果が発動された後、<color=#FFFFFFFF>使用可能回数</color>が1回消費されます。\\n<color=#FFFFFFFF>使用可能回数</color>が尽きてしまうと、このカードは直ちに破棄されます。"
+                        }
+                    }
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_ANEMO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 215081
+}

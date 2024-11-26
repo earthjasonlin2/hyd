@@ -1,0 +1,275 @@
+{
+    "Id": 1012042,
+    "Name": "マニピュレーターユニット",
+    "Desc": "スヴァローグに操られる機械装置。\\nマニピュレーターは一定ターンを経て、味方を猛攻撃する。",
+    "MonsterCampID": null,
+    "AttackBase": 18,
+    "CriticalDamageBase": 0.20000000018626451,
+    "DefenceBase": 210,
+    "HPBase": 325.50000000046566,
+    "InitialDelayRatio": 1,
+    "ImagePath": "SpriteOutput/MonsterFigure/Monster_1012040.png",
+    "MinimumFatigueRatio": 0.20000000018626451,
+    "Rank": "MinionLv2",
+    "SpeedBase": 120,
+    "StanceBase": 90,
+    "StanceCount": 1,
+    "StatusResistanceBase": 0.10000000009313226,
+    "Child": [
+        {
+            "Id": 1012042,
+            "AttackModifyRatio": 1,
+            "DefenceModifyRatio": 1,
+            "EliteGroup": 1,
+            "HPModifyRatio": 0.5000000004656613,
+            "SpeedModifyRatio": 1,
+            "SpeedModifyValue": null,
+            "StanceModifyRatio": 1,
+            "StanceWeakList": [
+                "Thunder",
+                "Wind",
+                "Quantum"
+            ],
+            "HardLevelGroup": 1,
+            "DamageTypeResistance": [
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Physical",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Fire",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Ice",
+                    "Value": 0.20000000018626451
+                },
+                {
+                    "$type": "ElementResistanceConfig",
+                    "DamageType": "Imaginary",
+                    "Value": 0.20000000018626451
+                }
+            ],
+            "SkillList": [
+                {
+                    "Id": 101204201,
+                    "SkillName": null,
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101204202,
+                    "SkillName": "巨大なる掌",
+                    "SkillDesc": "「束縛」状態の味方に、その味方のHPの割合に応じた物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 101204203,
+                    "SkillName": "指示を待つ",
+                    "SkillDesc": null,
+                    "DamageType": "",
+                    "SPHitBase": ""
+                },
+                {
+                    "Id": 101204204,
+                    "SkillName": "巨大なる掌",
+                    "SkillDesc": "指定した味方単体を「束縛」状態にし、物理属性ダメージを1回与える。自身が弱点撃破されるかHPが一定値を下回ると、味方の「束縛」状態は解除される。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 101204205,
+                    "SkillName": "失力電場",
+                    "SkillDesc": "「束縛」状態の味方に、HPの割合に応じたの物理属性ダメージを与える。",
+                    "DamageType": "",
+                    "SPHitBase": 10
+                },
+                {
+                    "Id": 101204206,
+                    "SkillName": "制御起爆",
+                    "SkillDesc": "マニピュレーターユニットが爆発し、指定した味方単体に大量の物理属性ダメージを与える。",
+                    "DamageType": "Physical",
+                    "SPHitBase": 25
+                },
+                {
+                    "Id": 101204207,
+                    "SkillName": "過負荷警告",
+                    "SkillDesc": "マニピュレーターユニットが「過負荷」状態に入り、味方の「束縛」状態を解除する。この状態に入ると、マニピュレーターユニットが次の行動で「制御起爆」を発動する。",
+                    "DamageType": "",
+                    "SPHitBase": ""
+                }
+            ]
+        }
+    ],
+    "Drop": [
+        {
+            "MonsterTemplateID": 1012042,
+            "AvatarExpReward": 36,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112011
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 181001
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 1012042,
+            "WorldLevel": 1,
+            "AvatarExpReward": 48,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112011
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 181001
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 1012042,
+            "WorldLevel": 2,
+            "AvatarExpReward": 60,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112011
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112012
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 181001
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 1012042,
+            "WorldLevel": 3,
+            "AvatarExpReward": 72,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112011
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112012
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 181001
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 1012042,
+            "WorldLevel": 4,
+            "AvatarExpReward": 84,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112011
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112012
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112013
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 181001
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 1012042,
+            "WorldLevel": 5,
+            "AvatarExpReward": 96,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112011
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112012
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112013
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 181001
+                }
+            ]
+        },
+        {
+            "MonsterTemplateID": 1012042,
+            "WorldLevel": 6,
+            "AvatarExpReward": 108,
+            "DisplayItemList": [
+                {
+                    "$type": "ItemConfig",
+                    "ID": 2
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112011
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112012
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 112013
+                },
+                {
+                    "$type": "ItemConfig",
+                    "ID": 181001
+                }
+            ]
+        }
+    ]
+}

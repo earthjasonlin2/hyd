@@ -1,0 +1,39 @@
+{
+    "Type": "Action",
+    "Name": "严霜棱晶",
+    "Title": "无相之冰·严霜棱晶",
+    "Desc": "即便有着高度稳定的形态与机械般的行动方式，也需要谨慎屏护要害…",
+    "Source": "在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度无相之冰中完成挑战目标后获取",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_EffigyIce",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_CRYO",
+            "count": 1
+        },
+        {}
+    ],
+    "Tag": [
+        "天赋"
+    ],
+    "Talent": {
+        "Name": "严霜棱晶",
+        "Desc": "我方出战角色为<color=#FFFFFFFF>$[A2103]</color>时，才能打出：使其附属<color=#FFFFFFFF>$[C121034]</color>。\\n装备有此牌的$[A2103]触发<color=#FFFFFFFF>$[C121034]</color>后：对敌方出战角色附属<color=#FFFFFFFF>$[K1016]</color>。\\n（牌组中包含$[A2103]，才能加入牌组）",
+        "Child": {
+            "A2103": "严霜棱晶",
+            "C121034": {
+                "Name": "冰晶核心",
+                "Desc": "<color=#FFFFFFFF>所附属角色被击倒时：</color>移除此效果，使角色$[K54]，并治疗该角色到1点生命值。",
+                "Child": {
+                    "K54": {
+                        "Name": "<color=#FFFFFFFF>免于被击倒</color>",
+                        "Desc": "一些效果会使角色在生命值被降为0的时候<color=#FFFFFFFF>免于被击倒</color>，并治疗该角色到一定生命值。\\n此时，角色不视为被<color=#FFFFFFFF>击倒</color>过。（因此，角色所附属的装备和状态不会被弃置，充能也不会被清空。）"
+                    }
+                }
+            },
+            "K1016": {
+                "Name": "严寒",
+                "Desc": "<color=#FFFFFFFF>结束阶段：</color>对附属角色造成1点{SPRITE_PRESET#2101}<color=#99FFFFFF>冰元素伤害</color>。\\n<color=#FFFFFFFF><color=#FFFFFFFF>可用次数</color>：1</color>（所附属角色被附属<color=#FFFFFFFF>炽热</color>时，移除此效果。）"
+            }
+        }
+    }
+}

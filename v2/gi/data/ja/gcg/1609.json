@@ -1,0 +1,59 @@
+{
+    "Type": "Character",
+    "Name": "千織",
+    "Title": "雷鳴の裁錦師・千織",
+    "Desc": "千紅の曙染、裁つは綴織。",
+    "Source": "キャッツテールで千織を招待し、友好対戦に勝利することで獲得",
+    "Icon": "UI_Gcg_CardFace_Char_Avatar_Chiori",
+    "Hp": 10,
+    "Cost": 2,
+    "Tag": [
+        "岩元素",
+        "片手剣",
+        "稲妻"
+    ],
+    "Talent": {
+        "16091": {
+            "Name": "心織刀流",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_VOID",
+                "D__KEY__DAMAGE": 2
+            },
+            "Tag": "GCG_SKILL_TAG_A",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 1,
+                "GCG_COST_DICE_VOID": 2
+            }
+        },
+        "16092": {
+            "Name": "羽袖一触",
+            "Desc": "3体の<color=#FFFFFFFF>$[C116097]</color>のうちから1体を選択して召喚する。",
+            "Child": {
+                "C116097": {
+                    "Name": "千織の自動制御人形",
+                    "Desc": "千織は様々な自動制御人形を持っている。自動で攻撃できるものもあれば、バフ効果を提供してくれるものもある。",
+                    "Child": {}
+                }
+            },
+            "Tag": "GCG_SKILL_TAG_E",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 3
+            }
+        },
+        "16093": {
+            "Name": "二刀の型・比翼",
+            "Desc": "$[D__KEY__ELEMENT]を$[D__KEY__DAMAGE]与える。",
+            "Child": {
+                "D__KEY__ELEMENT": "GCG_ELEMENT_GEO",
+                "D__KEY__DAMAGE": 5
+            },
+            "Tag": "GCG_SKILL_TAG_Q",
+            "Cost": {
+                "GCG_COST_DICE_GEO": 3,
+                "GCG_COST_ENERGY": 2
+            }
+        }
+    },
+    "Related": 216091
+}

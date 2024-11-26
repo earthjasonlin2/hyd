@@ -1,0 +1,40 @@
+{
+    "Type": "Action",
+    "Name": "朝夕の千引",
+    "Title": "若陀龍王·朝夕の千引",
+    "Desc": "「今こそ全ての怨嗟を祓う時なり！」",
+    "Source": "キャッツテールのリトルプリンスのところで酒場挑戦を行い、若陀龍王に挑戦して友好対戦で対応する挑戦目標をクリアすることで獲得",
+    "Icon": "UI_Gcg_CardFace_Modify_Talent_Dahaka",
+    "Cost": [
+        {
+            "costType": "GCG_COST_DICE_PAIMON",
+            "count": 2
+        },
+        {}
+    ],
+    "Tag": [
+        "天賦",
+        "戦闘アクション"
+    ],
+    "Talent": {
+        "Name": "朝夕の千引",
+        "Desc": "$[K1]：味方の出撃キャラが<color=#FFFFFFFF>$[A2602]</color>の時、該当キャラに使用できる。$[A2602]に<color=#FFFFFFFF>$[C126022]</color>を付与し、味方キャラの元素タイプが1種類につき、対応する元素サイコロを1個生成する。\\n（このカードはデッキに$[A2602]が含まれている場合のみ、デッキに追加できる）",
+        "Child": {
+            "K1": {
+                "Name": "<color=#FFFFFFFF>戦闘アクション</color>",
+                "Desc": "味方が戦闘アクションを1回行った後、相手のターンに移ります。\\n<color=#FFFFFFFF>このようなルールを持つ手札を出すのはクイックアクションではなく、戦闘アクションと見なされます。</color>"
+            },
+            "A2602": "朝夕の千引",
+            "C126022": {
+                "Name": "磐岩百相·元素凝晶",
+                "Desc": "<color=#FFFFFFFF>キャラが{SPRITE_PRESET#2101}<color=#99FFFFFF>氷</color>/{SPRITE_PRESET#2102}<color=#80C0FFFF>水</color>/{SPRITE_PRESET#2103}<color=#FF9999FF>炎</color>/{SPRITE_PRESET#2104}<color=#FFACFFFF>雷</color>元素のダメージを受けた後</color>、キャラが該当元素の力を吸収していない場合、該当状態は解除される。その後、キャラは$[K1012]。",
+                "Child": {
+                    "K1012": {
+                        "Name": "<color=#FFFFFFFF>対応元素の力を吸収する</color>",
+                        "Desc": "若陀龍王は、{SPRITE_PRESET#2101}<color=#99FFFFFF>氷</color>/{SPRITE_PRESET#2102}<color=#80C0FFFF>水</color>/{SPRITE_PRESET#2103}<color=#FF9999FF>炎</color>/{SPRITE_PRESET#2104}<color=#FFACFFFF>雷</color>元素の力を吸収することができる。（同時に1つの元素のみ吸収可能）\\n<color=#FFFFFFFF>若陀龍王が上記元素の力を吸収した時</color>、吸収した元素のタイプに応じて、スキル{SPRITE_PRESET#2101}<color=#99FFFFFF>氷棘の強襲</color>/{SPRITE_PRESET#2102}<color=#80C0FFFF>激流の掃討</color>/{SPRITE_PRESET#2103}<color=#FF9999FF>熾焔の掃討</color>/{SPRITE_PRESET#2104}<color=#FFACFFFF>雷霆の強襲</color>を獲得する。"
+                    }
+                }
+            }
+        }
+    }
+}
